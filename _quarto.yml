@@ -67,6 +67,7 @@ bibliography: references.bib
 format:
   html:
     theme: lumen
+    css: custom.css
     page-break-after: always
 
 
