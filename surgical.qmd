@@ -1,0 +1,171 @@
+---
+number-depth: 2
+---
+
+# Surgical/Derm/Ophtho Considerations
+
+## Surgery
+
+### Craniofacial abnormalities
+
+<br/>
+
+#### Cleft lip and/or palate {#sec-cleft}
+
+**Follow-up arrangement**  
+
+* Consult genetics for workup.
+* Consult craniofacal team at West LA for feeding and follow-up instructions
+  - Dr. Trevor Hoffman  
+    +1-949-233-8009 (team contact)  
+    +1-323-857-2368 (clinic)  
+
+**General Practice guidelines**  
+
+* make an inpatient Occupational Therapy referral for all cleft babies for a cleft feeding assessment. 
+* Newborns with isolated cleft lip can breastfeed, but we still recommend occupational therapy and lactation involvement.  
+* Newborns with cleft palate need extensive feeding support, including cleft-specific bottle systems.  This is provided prenatally and all Kaiser NICU’s have inhouse supplies.
+* Cleft infants may need extra inpatient days to establish metabolically effective feeding. 
+  * Babies feeding less than 30 ml each feed after 3 days are at risk for poor weight gain. 
+* Consider using fortified breast milk or 22-Kcal concentrated formula if cleft baby not adequately gaining weight after several days of occupational therapy-lead feeding.
+  * This is usually continued until cleft surgical repair. 
+* Please make sure you have consulted with an experienced OT, communicate with Dr. Guillen, Craniofacial Speech Coordinator, or place an outpatient referral/Dr. Advice to the craniofacial team prior to placing a G-Tube.
+* Close coordination with the baby's primary pediatrician and frequent weight checks are vital as the babies are discharged home.  Please consider getting them directly involved as discharge approaches. 
+* Cleft babies with underlying cardiac genetic conditions or prematurity are at higher risk for poor weigh gain and warrant close follow up. 
+* Please include several Haiku photos of the baby’s cleft- the frontal view, lateral view and worms eye view from below are extremely helpful to determine if oral orthosis/orthodontic care or taping is indicated.  
+* Please call or place a tapestry referral for all cleft babies to the Regional Cleft & Craniofacial Team before discharge.  Note this requires an outpatient order only encounter to West LA Plastic Surgery subcategory craniofacial.  This will allow us to see the referral even while baby is in hospital and set up a telephone visit with the family. 
+* Cleft babies may have more feeding and weight gain concerns around 4-6 months of age as the jaw and oral structure changes. If you are starting to see an emerging concern, please contact the team for assistance. 
+
+::: {.callout-info}
+
+The SoCal Regional Cleft & Craniofacial Team exists exclusively to support you and our cleft babies/families. Please feel free to contact Bernardo Duran, RN, Craniofacial Nurse Case Manager. Phone number: (323) 857- 2368.
+
+Dr.  Adriana M. Guillen, DBH: Regional Speech Coordinator Craniofacial Team  
+Dr. Stacey Francis, MD: Regional Craniofacial Surgical Director  
+Dr. Michael Nelson, MD: Regional Craniofacial Medical Director  
+
+:::
+
+### Pierre Robin Sequence and Mandibular Distraction {#sec-prs}
+
+#### 2024 KPSC Presentation
+
+<a href="files/PRS_2024.pdf" target="_blank">Click to open PDF</a>
+
+<a href="files/PRS_2024.pptx" download>Click to download PowerPoint version</a>
+
+<br/>
+
+#### Ordering CT scan for surgical planning {#sec-ct-jaw}
+
+##### Order name: CT head and facial bonrs, non-contrast
+
+**Paste the following comments in the Comments box**
+
+CT scan head and facial bones, non contrast, vertex to menton, thin 1 mm slices, using Stryker protocol. Need measurements mandibular rami. Stryker protocol as follows:
+ 
+STRYKER PROTOCOL FOR CF RECONSTRUCTION  
+ 
+Pre-surgical planning for cranial reconstruction and skull prosthetic.  
+Page 699-0944 with questions.  
+ 
+Please follow Stryker protocol below:  
+ 
+Patient positioning:  
+
+* Head Alignment: Remain straight in neutral position. No oblique angle of locator/survery lines.  
+* Gantry Tilt: 0 degree tilt.  
+
+Scan length/Field of View:  
+
+* Scan length: For cranial defects, encompass the entrie skull, including at least 2 slices superior to skull  
+* FOV: Select FOV to include all surrounding anatomy  
+ 
+  
+ 
+Scanning process:  
+
+* Patient movement: Avoid patient motion. If scan shows motion artifact, scan cannot be used.  
+ 
+  
+ 
+Acquisition:  
+
+* Slice thickness: Maximum = 1.5mm (1mm preferred)  
+* Beam collimation: Width and detector configuration necessary to achieve actual slice thickness.  
+* Table increment: Constant table increment, no gaps. Smaller than or equal to slice thickness.  
+* Sequential scanners: No overlap and no gap.  
+* Single-slice helical scanners: Beam pitch = 1  
+* Multi-slice helical scanners: Beam pitch < 1 (GE: High Quality; Toshiba: Detail)  
+* Slice orientation: Axial slice orientation.  
+* Algorithm (Kernel): Bone algorithm.  
+* Warning: DO NOT post process to alter slice orientation or thickness  
+ 
+
+ 
+Data:  
+
+* Series ID: All images of a scan should be stored in one series.  
+* File format: DICOM format. No cone beam scans. Contrast not required. No raw data. Do not compress. Inclusion of CT Viewer not recommended.  
+* No raw data: Archive only the relevant examination in uncompressed DICOM (CD-R preferred).  
+* Data storage: Recommendation: Save raw data for at least 14 days after scan.
+
+
+### Gastrostomy Tube
+
+<br/>
+
+#### Consultation
+
+Dr. Edward Yoo at Fontana Medical Center
+
+#### Booklet for discharge education
+
+<a href="files/gTubeParentEducation.pdf" target="_blank">Click to download the booklet</a>
+
+
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Dermatology
+
+### Telederm/Virtual Dermatology Consultation Steps {#sec-derm-consult}
+
+1. **Capture Photos**  
+   Have patient or staff take 3 photos using iPod/Haiku Clinical Image app/digital camera:
+   - Far view to note the anatomic site  
+   - Close-up view  
+   - Angle view  
+   *(Skip this step if photos are already submitted)*
+
+2. **Create Encounter**  
+   Create a Telephone Encounter.
+
+3. **Specify Reason**  
+   Enter Reason for Call: "Virtual Visit Dermatology Visit" [Code 2563].
+
+4. **Document Visit**  
+   Document using SmartPhrase `.VDRMCONSULT`.
+
+5. **Route Encounter**  
+   Route to:  
+   - Adult TeleDerm Pool: "P RI TELDRM DERM" [P 18430]  
+   - OR Pediatric TeleDerm Pool: "P IE TELEDERM PEDS" [P 19709]
+
+6. **Enter Diagnosis**  
+   Enter a diagnosis.
+
+7. **Sign Encounter**  
+   Sign your encounter.
+
+8. **Exit Workspace**  
+   Exit Workspace.
+   
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Ophthalmology

@@ -1,0 +1,117 @@
+
+
+::: {.column-margin}
+
+# &nbsp; {.unnumbered}
+
+<div style="place-items:center;">
+<div id="donate-button-container">
+<div id="donate-button"></div>
+<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script>
+PayPal.Donation.Button({
+env:'production',
+hosted_button_id:'8XWMV5GD7FJVE',
+image: {
+src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+alt:'Donate with PayPal button',
+title:'PayPal - The safer, easier way to pay online!',
+}
+}).render('#donate-button');
+</script>
+</div>
+</div>
+
+::: {.callout-important}
+
+## NEW UPDATE - Apr 9, 2026
+
+* Antibiotic Management of Suspected Sepsis in the NICU
+  * @sec-antibiotics-sepsis
+
+:::
+
+::: {.callout-important}
+
+## NEW UPDATE - Mar 13, 2026
+
+* Guide for Selenium Adjustment
+  * @sec-selenium
+
+:::
+
+::: {.callout-warning}
+
+## NEW UPDATE - Jan 11, 2026
+
+* Emergency blood release protocol
+  * @sec-emergency-blood-release
+
+:::
+
+::: {.callout-warning}
+
+## NEW UPDATE - Jan 9, 2026
+
+* Rounding Sheet for small babies
+  * @sec-small-baby-rounding-sheet
+
+:::
+
+::: {.callout-warning}
+
+## NEW UPDATE - Jan 9, 2026
+
+* Apparatus weight for BW subtraction
+  * @sec-weight-for-subtraction
+
+:::
+
+::: {.callout-note}
+
+## NEW UPDATE - Nov 29, 2025
+
+* Extubation protocol for ELGAN/ELBW
+  * @sec-extubation
+
+:::
+
+::: {.callout-note}
+
+## NEW UPDATE - Nov 29, 2025
+
+* Pediatric subspecialty consultation
+  * @sec-subspecialty-consult
+
+:::
+
+::: {.callout-note}
+
+## NEW UPDATE - Nov 29, 2025
+
+* Family and Medical Leave Act (FMLA) electronic paperwork
+  * @sec-fmla
+
+:::
+
+
+:::
+
+
+![Kaiser Permanente Riverside Medical Center](https://api.coarchitects.com/wp-content/uploads/2022/07/18030_000_N4_print-1536x768.jpg)
+
+
+## Goal
+
+The goal of this handbook is to centralize clinical protocols and guidelines approved by the neonatologists and NICU staff in one place for easy reference.
+
+## Arrangement
+
+This handbook is arranged by into three parts:
+
+* NICU Operations\
+* General Care
+* System-Based Protocols and Guidelines\
+* Special Considerations\
+* Health Maintenance
+* Appendices

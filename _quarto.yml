@@ -1,0 +1,73 @@
+project:
+  type: book
+
+book:
+  sidebar: 
+    title: NICU Manual
+    search: true
+    background: light
+  title: KP Riverside Neonatal ICU Manual
+  subtitle: <em style="font-size;14px;">Fu-Sheng Chou, MD PhD</em>
+  author: 
+    - <em>(alphabetical)</em>
+    - Michael Chang, MD
+    - Edgar Chernin, MD
+    - Fu-Sheng Chou, MD PhD
+    - Michael Doti, MD
+    - Giulia M. Faison, MD MA
+    - Kasee L. Houston, MD
+    - Gary Laborada, MD
+    - James A. Washington III, MD
+    - Zoltan Zentay, MD
+  date: last-modified
+  date-format: "[Last Updated on] MMMM DD, YYYY"
+  chapters:
+    - index.qmd
+    - part: "NICU Operations"
+      chapters: 
+        - telemedicine.qmd
+        - phone-numbers.qmd
+        - operations.qmd
+        - publications.qmd
+    - part: "General Care"
+      chapters:
+        - admission.qmd
+        - transfer.qmd
+        - discharge.qmd
+        - documentation.qmd
+        - death-workflows.qmd
+    - part: "System-Based Protocols"
+      chapters: 
+        - respiratory.qmd
+        - cardiovascular.qmd
+        - nutrition-fluid.qmd
+        - gastrointestinal.qmd
+        - renal-urology.qmd
+        - infectious-disease.qmd
+        - endocrine.qmd
+        - neurology.qmd
+        - hemonc.qmd
+        - genetics-lluch.qmd
+    - part: "Special Considersations"
+      chapters: 
+        - periviability.qmd
+        - VLBW.qmd
+        - DR.qmd
+        - surgical.qmd
+    - part: "Health Maintenance"
+      chapters:
+        - vaccine.qmd
+  appendices: 
+    - lluch-formulary.qmd
+    - dotPhrases.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: lumen
+    page-break-after: always
+    embed-resources: true
+
+editor: source

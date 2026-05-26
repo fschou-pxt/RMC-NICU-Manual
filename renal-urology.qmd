@@ -1,0 +1,95 @@
+---
+number-depth: 2
+---
+
+# Nephrology & Urology
+
+<br/> <br/> {{< pagebreak >}}
+
+## Hydronephrosis
+
+<br/>
+
+### Prenatal Hydronephrosis
+
+* If prenatal ultrasound measures **\>7mm & \<10mm in third trimester**, please obtain a postnatal US at 2-4 weeks of age as an outpatient
+
+  - If first postnatal ultrasound (kidney + bladder ultrasound #1) continues to show a dilated pelvis **\<10mm**, please obtain another ultrasound (#2) at 3 months of age and refer to pediatric urology after 3-month ultrasound if there is a persistent dilatation.
+  - If the postnatal ultrasound (#1 or #2) shows a dilated pelvis **\>10mm** or read as **"severe hydronephrosis"**, please order a VCUG and refer patient to pediatric urology. Please cover patients with 3 days of antibiotics around the time of the procedure (pre, day of, post)
+  - Please arrange for the baby to be placed on antibiotics for UTI prophylaxis (cephalexin 10-20 mg/kg/day in 1-2 doses) for patients with Grade 4-5 VUR
+
+* If prenatal ultrasound measures **\>10mm or "severe" hydronephrosis**, please obtain a kidney + bladder sonogram in the NICU/newborn nursery after birth.
+
+  - If postnatal ultrasound confirms the measurements of **10 mm** or **"severe"**, please obtain a VCUG prior to discharge. Please cover patients with 3 days of antibiotics around the time of the procedure (pre, day of, post)
+  - Please arrange for the baby to be placed on antibiotics for UTI prophylaxis (cephalexin 10-20 mg/kg/day in 1-2 doses) for patients with Grade 4-5 VUR.
+    - Please arrange for a repeat ultrasound at 1 month of age and refer to Pediatric Urology.
+    - If postnatal US does NOT confirm the measurements of \>10mm, please have a repeat US (kidney + bladder) scheduled for 2-4 weeks as an outpatient.
+
+* Please contact Pediatric Urology during the admission for all patients with a severe (unilateral or bilateral) hydronephrosis **(\>15mm)**.
+
+* Please contact Pediatric Urology during the admission for all patients with posterior urethral valves on VCUG.
+
+::: column-screen-right
+```{mermaid}
+flowchart TD
+  A["Prenatal ultrasound showing hydronephrosis"] --> B[">7mm and <10mm in the 3<sup>rd</sup> trimester"]
+  A --> C["≥10mm or <q>severe</q> hydronephrosis"]
+  B --> D["Postnatal ultrasound at 2-4 weeks of age"]
+  C --> E["Obtain postnatal ultrasound in NICU/Nursery"]
+  D --> F["If <10mm, repeat at 3 months of age"]
+  D --> G["If ≥10mm or <q>severe</q> hydronephrosis <br> Order VCUG and refer to pediatric urology <br>Antibotics before/during/after VCUG (3 days)"]
+  E --> G
+  G --> H["Continue antibiotics prophylaxis for Grade 4/5 VUR <br> Consult Pediatric urology if PUV"]
+  G --> I["Repeat ultrasound at 1 month of age <br> Refer to pediatric urology"]
+  H --> I
+  E --> J["If <10mm, repeat at 2-4 weeks of age as outpatient"]
+  C --> K["If >15mm, inpatient pediatric urology consult"]
+  K --> E
+```
+:::
+
+<br/>
+
+### New Diagnosis After Birth
+
+-   Refer to Pediatric Urology -- see Urology guidelines
+
+<br/> <br/> {{< pagebreak >}}
+
+## Cryptorchidism
+
+Undescended testes can spontaneously descend in many patients by 6 months of age. Advise normal physical examinations at well child visits until 6 months of age. The recommended timing of orchiopexy, if needed, is 6-18 months of age.
+
+If at 6 months of age the testis or testes are still felt to be undescended, then recommend referral to pediatric urology at that time.
+
+<br/> <br/> {{< pagebreak >}}
+
+## Before you refer to PEDIATRIC UROLOGY -- read this! E-Mail
+
+<br/>
+
+### Hydronephrosis
+
+VERY common prenatal diagnosis and no clear guidelines to manage. Most babies will outgrow mild to moderate hydro without problems. Uncomplicated hydronephrosis can be managed by Nephrology. Urologists are surgeons so we need to see patients that might require surgery: SEVERE hydronephrosis, bilateral hydro in a male (possible posterior urethral valves), Hydronephrosis with hydroureter, Ureteral Duplication, Ureteroceles. If you have other questions, use Dr Advice and we can guide you. Typically: renal ultrasound at birth, another about 3-4 weeks postnatally, and if mild to moderate can then check at 3 mos if no UTIs. If severe, refer. Lasix renograms are done after 2 months of age. Routine VCUG not needed for mild to moderate unilateral hydro without hydroureter.
+
+<br/>
+
+### Undescended Testes
+
+No ultrasound is needed! If there is concern for UDT please send a referral. We will operate on these starting at 6 MONTHS of age at LAMC. If they are not down at 6 months they will not drop later. It can be difficult to distinguish between a retractile testis and an undescended testis. I use warm soapy water on my hands when I examine the boy. If I can easily feel the testes in the scrotum, or if I see them down before I touch him, then they are likely OK. (They will usually pull up and down if you touch the thigh or if he cries) Retractile testes should be able to be brought into the scrotum and should stay there (if the child is quiet) until you touch him, then they will usually pull up. Parents can check him sitting cross legged in warm water. That relaxes the cremasteric muscle and both testes should be down. Another option is to check him when he is sleeping. He needs to be a sound sleeper and they need warm hands. If they can feel both testicles down, he probably does not need surgery. When in doubt, they need a FACE TO FACE visit for us to examine him.
+
+<br/>
+
+### Hydroceles
+
+Communicating hydroceles are common and should resolve by age 2. If fluctuating scrotal swelling after age 2, they can be referred. VERY LARGE, TENSE HYDROCELES should be sent at any time. CAN ALSO REFER TO PEDS GENERAL SURGERY FOR HERNIA/HYDROCELE. (I prefer obvious bowel hernias to be managed by Peds General Surgery)
+
+<br/>
+
+<iframe width="560" height="315" src='https://kp.qumucloud.com/view/hydrocele' allowfullscreen frameborder=0></iframe>
+
+<br/>
+
+### Phimosis
+
+The foreskin is a normal anatomic structure if cared for properly. It should never be forcibly retracted, but it does require just a little gentle stretching to clean. When the boy is toilet trained he should be taught to hold it when voiding and gently pull back on the foreskin to stretch it a bit. (Like touching your toes, it will gradually stretch). If the foreskin is causing UTIs, balanitis, difficulty voiding: You can try topical Betamethasone Diproprionate 0.05% - THEY NEED TO STRETCH DOWN AND RUB A DROP OF CREAM IN FOR 60 SECONDS 2 TIMES A DAY (RUB IT IN WHILE THE FORESKIN IS ON STRETCH). If no improvement after 4 weeks send referral for possible circumcision. If severe problems with voiding or infections, just send referral.

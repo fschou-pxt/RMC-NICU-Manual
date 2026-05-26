@@ -1,0 +1,83 @@
+---
+number-depth: 2
+---
+
+# Delivery Room Management
+
+## Delivery Room Attendance {#sec-dr-attendance}
+
+[Click to Download PDF Postcard](files/OBNICU_Deliveries_fv2.pdf){target="_blank"}
+
+<br/>
+
+#### Level 0: Routine delivery
+Attendance: L&D RN with or without RT
+
+#### Level I: low risk for resuscitation  
+Attendance: NICU RN & RT
+
+* 35-36 weeks
+* < 2kg
+* Breech C/S
+* Maternal meds: opiates/ SSRI/ Mg/ etc.
+* Maternal exposure to illicit drugs (+U tox on admission)
+* Presence of meconium
+* No prenatal care
+* Multiples 
+
+#### Level II: high risk for resuscitation  
+Attendance: NICU RN, RT and MD
+
+* < 35 weeks GA
+* Category III FHR tracing
+* Vacuum / forceps delivery
+* Vaginal breech
+* Urgent or Emergent C/S
+* Hydrops with minimal fluid
+* Mother under general anesthesia
+* Placenta previa
+* Placental abruption
+* Placenta percreta/ increta/ accreta
+* Shoulder dystocia
+* Cardiac dysrhythmia (tachyarrhythmia, bradycardia, heart block, etc.)
+* Eclampsia
+
+#### Level III: complex resuscitation  
+Attendance: 2 NICU RN, RT, and MD
+
+* 2 RNs & 2RTs **required** for <25 weeks GA unless staffing shortage
+* 2 RNs & 2 RTs recommended for 25 - 27 weeks GA
+* Hydrops with projected need for tapping
+* Multiple congenital defects
+* Projected severe/ compromised/ lethal outcome
+
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Thermoregulation and Heat Loss Prevention
+
+### Labor & Delivery / OR
+
+* Maintain L&D/OR temperature at 70-74<span>&#8457;</span>
+* Preheat the radiant warmer before birth and set on servo-control mode
+* Use prewarmed blanket to dry the newborn during delayed cord clamping
+* use prewarmed blanket to receive the newborn and dry under the warmer
+* Place temperature probe as soon as baby is under the warmer
+* Monitor temperature frequently (every 5-10 minutes) prior to transfer to the NICU
+* Maintain axillary temperature between 36.5<span>&#8451;</span> - 37.5<span>&#8451;</span>
+* Place a thermal mattress under the blanket on the radiant warmer
+* Wrap the baby in a polyethylene plastic bag or wrap (<28 weeks and/or < 1,000 grams)
+* Place a prewarmed hat on the baby's head (as soon as possible)
+* Keep the newborn fully covered during resuscitation and stabilization
+
+<br/>
+
+### Delayed Cord Clamping
+
+* All infants who emerged with active tone should receive delayed cord clamping for at least 30 sec unless:
+  - Mono/di twins with TTTS or significant fetal wegith deiscrepency
+  - Mono/mono twins
+  - Need immediate evaluation and/or resuscitation (e.g., placenal abruption)
+

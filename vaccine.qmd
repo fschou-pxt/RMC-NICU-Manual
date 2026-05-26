@@ -1,0 +1,25 @@
+---
+number-depth: 2
+---
+
+# Vaccine schedule
+
+## Hepatitis B Vaccine
+
+* At birth if infant's birth weight ≥ 2,000g  
+* At 30 days of life if infant's birth weight < 2,000g  
+*The 2-kg criteria has been disregarded*
+
+<br><br>{{< pagebreak >}}
+
+## 2-month vaccine
+
+* Pediarix (dTaP, HepB, Polio)
+* PCV
+* HiB
+
+<br><br>{{< pagebreak >}}
+
+## RSV prophylaxis with nirsevemab
+
+* Refer to @sec-nirsevemab

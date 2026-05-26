@@ -1,0 +1,200 @@
+---
+number-depth: 2
+---
+
+# Dot Phrases
+
+## NICU Operations
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## General Care
+
+<br/>
+
+### Discharging an Infant
+
+<br/>
+
+#### .synopsis {#sec-dotPhrase-synopsis}
+
+*** is a former *** week preemie who is being discharged from the NICU at *** weeks corrected gestational age. *** required *** for respiratory distress, *** and received BPD prevention meds (Epo/Fe/Vit E), but is now stable on room air without any significant A/B/D events for at least *** hours prior to discharge, per unit policy. *** also received caffeine for apnea of prematurity prophylaxis. *** required TPN and gavage feeds, but is now nippling all and nippling well on *** cal/oz feeds. *** received a brief course of empiric antibiotics, which were discontinued when blood culture returned negative. *** received phototherapy. 
+
+*** Head ultrasound demonstrated *** IVH. *** will follow-up with HRIF and will be referred to Inland Regional Center.
+
+*** will require a hip ultrasound to evaluate for congenital dysplasia of the hip (referral placed). 
+
+*** will need follow-up with ophthalmology re: retinopathy of prematurity eval (referral placed)
+
+<br/>
+
+#### .treatment {#sec-dotPhrase-treatment}
+
+TPN/IL  
+Gavage  
+Probiotics  
+UAC/UVC/PICC  
+Surfactant  
+HFOV/SIMV/NIMV/NCPAP/NC  
+Caffeine  
+BPD protocol (Epo/Fe/Vit E)  
+pRBC/platelet transfusions  
+Antibiotics  
+Epo/Fe  
+Phototherapy  
+
+
+<br/>
+
+### General Documentation
+
+<br/>
+
+#### .picc  {#sec-dotPhrase-picc}
+
+Central line/dates: peripherally inserted central catheter: date placed: ***. PICC central line assessed today, is functioning well with no signs of inflammation. Plan: Will continue the use of the catheter fo rlong-term paretneral nutrition and/or blood draw.  
+
+[Text](#sec-picc)
+
+<br/>
+
+#### .bloodtransfusion {#sec-dotPhrase-blood-transfusion}
+
+Discussed with the parents in details about need for blood transfusion and blood products for the baby through out the hospital stay. Risks and benefits explained to them. They agree to their use. Also discussed with them the donor directed Blood Donation program.  Parent has been provided with a copy of the Paul Gann Blood Act 'A Patient's Guide to Blood Transfusion'.  
+  
+PHYSICIAN'S STATEMENT CONCERNING TRANSFUSION INFORMATION   
+(Paul Gann Blood Safety Act. Health and Safety Code #1645)  
+  
+I have informed the patient's parents by means of a standardized written summary prepared by the California Department of Health Services concerning the positive and negative aspects of receiving autologous blood and directed and nondirected homologous blood from volunteers. Except if they have waived it, or there are medical contraindications or a life threatening emergency, I have allowed adequate time prior to the procedure for pre-donation to occur. 
+  
+The patient's parents have been informed of the potential need for, risks of (including but not limited to: blood reaction, infection and possible death), benefits of and alternatives to blood transfusion. They have given their informed consent.   
+
+[text](#sec-blood-transfusion)
+
+<br/>
+
+#### .parentsts {#sec-dotphrase-skin-to-skin}
+
+When parents are visiting, please request to perform Skin to Skin by either parent for the duration of one hour in a 24hour period, followed by documentation.
+
+[Text](#sec-skin-to-skin)
+
+<br/>
+
+#### .back1 {#sec-dotphrase-back1}
+
+American Academy of Pediatrics recommends:
+Back to sleep for every infant — To reduce the risk of Sudden Infant Death Syndrome (SIDS), infants should be placed for sleep in a supine position
+(wholly on the back) for every sleep by every caregiver until 1 year of life. Side sleeping is not safe and is not advised.
+
+[Text](#sec-discharge-navigator)
+
+<br/>
+
+#### .circconsent {#sec-dotphrase-circconsent}
+
+The parents of the patient have requested their newborn to undergo neonatal circumcision. The parents were informed regarding the nature, risks, benefits and alternatives to circumcision. They were informed that circumcision is the procedure of removing a portion of the foreskin from the tip of the penis and it is an elective surgical procedure and it is not medically indicated. They were informed regarding possible benefits of circumcision such as a lower risk of urinary tract infections as an infant and a lower risk of penile cancers as an adult.  
+Additionally, circumcised males have fewer problems with balanitis or phimosis.  
+The risks of newborn circumcision were discussed in detail and included those of any surgical procedure, and include, but are not limited to, infection, bleeding, scarring, injury to penis/urethra, poor cosmetic outcome and the need for future surgical revisions. Although these are rare events, these complications can be significant.  
+The parents were given ample period of time to ask questions and their questions were addressed and a written informed consent was obtained.
+Orders placed, circumcision to be performed by Pediatrics or OB on duty.  
+
+[Text](#sec-circumcision)
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## System-Based Protocols and Guidelines
+
+<br/>
+
+#### .donorbreastmilk {#sec-dotPhrase-donor-breast-milk}
+
+I have discussed the indications, risks, benefits, and alternatives of donor breast milk with the mother of the patient.  In the absence of maternal breast milk, donor milk offers many of the benefits of human milk for the infant, including:  infection-fighting factors, reduced incidence of necrotizing enterocolitis, improved digestion, ideal nutrition.  Donor milk will generally be provided until mother's milk volume becomes sufficient or when infant reaches 34 weeks gestation, at which point infant will be switched over to the appropriate standard infant formula in the absence of mother's milk.  Donor milk is the milk from several donors pooled together and then heat-treated to kill any bacteria or viruses.  Although every precaution is taken, there is a very small chance that an infectious agent may nevertheless be transmitted and the infant could become sick.  The parent consented for donor breastmilk. 
+
+[Text](#sec-donor-breast-milk)
+
+<br/>
+
+#### .NICUCREAM {#sec-dotPhrase-nicucream}
+
+Please give \*\*\*mL of Prolacta Cream followed by \*\*\*mL of EBM/DBM with Prolacta +6.  
+Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
+
+[Text](#sec-nicucream)
+
+<br/>
+
+#### .tcb2{#sec-dotphrase-tcb2}
+
+dot-phrase for most recent TCB levels and the corresponding hour of life.
+
+<br/>
+
+#### .tcbiliprotocol{#sec-dotphrase-tcbiliprotocol}
+
+Please do transcutaneous bilirubin QAM for next 10 days. 
+
+If tcb = or > number below, please draw stat total serum bilirubin (tsb). 
+Add serum direct bilirubin if none done yet (and notify MD if D-Bilirubin > =1.5 mg/dl).  
+ 
+For < 28 wks CGA: TCB >=2, Notify MD if TSB >= 5 mg/dl  
+For 28 to 29 wks CGA: TCB >=3, Notify MD if TSB >= 6 mg/dl  
+For 30 to 31 wks CGA: TCB >=5, Notify MD if TSB >= 8 mg/dl  
+For 32 to 33 wks CGA: TCB >=7, Notify MD if TSB >= 10 mg/dl  
+For 34 wks CGA, TCB >=9, Notify MD if TSB >= 12 mg/dl  
+
+For 35 wks and above, please use www.bilitool.org (up to 146 hrs) or www.peditools.org (for >146 hrs): if tcb in HIRZ (>75%ile of Bhutani nomogram) or tcb => 13, draw stat TSB and notify MD if TSB is HRZ or =>13 mg/dl.  
+
+If DAT-positive & 32+ wks, check TCB at 6 hours. If 4-5, recheck TCB at 12 hours. If >=5, check TSB and notify MD if TSB is >5  
+  
+[Text](#sec-tcb)
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Quality Improvement
+
+<br/>
+
+### Breast before bottle (2024; PI: Dr. Kasee Houston) {#sec-dotphrase-bbb}
+
+#### .BB4B {#sec-dotphrase-bb4b}
+
+Infant qualifies for Breast/Chest before bottle.  
+Please assist mother in providing baby's first feed as a direct breast/chestfeed. Allow infant 24 hours from MD order to start PO feeds to complete first feed as a breast/chestfeed.  
+Subsequent feeds may be breast/chestfeed, bottle, or gavage pending MD order. Thank you!
+
+
+
+#### .BFGAVAGE {#sec-dotphrase-bfgavage}
+
+Okay to breastfeed with gavage as needed:  
+If QS 1-5 for 0-5 minutes- gavage full feed  
+If QS 1-3 for 6-10 minutes- gavage 2/3 volume   
+If QS 1-3 for 11-15 minutes- gavage 1/3 volume  
+If QS 1-3 for  >15 minutes- no gavage  
+QS=quality of nippling scale  
+
+<br/>
+
+#### .BFPOGAVAGE {#sec-dotphrase-bfpogavage}
+
+Okay to breastfeed with gavage/PO supplementation as needed:  
+If QS 1-5 for 0-5 minutes supplement full feed  
+If QS 1-3 for 6-10 minutes supplement 2/3 volume  
+If QS 1-3 for 11-15 minutes supplement 1/3 volume  
+If QS 1-3 for >15 minutes no supplement  
+QS=quality of nippling scale  
+
+[Text](#sec-bb4b)
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Health Maintenance

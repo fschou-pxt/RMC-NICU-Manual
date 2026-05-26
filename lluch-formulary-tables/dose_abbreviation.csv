@@ -1,0 +1,15 @@
+﻿DO NOT USE,USE THESE
+Q day,daily
+QOD,every other day
+BID,twice daily
+TID,three times daily
+q12h,every 12 hrs
+U,unit
+IU,international unit
+Trailing zero (x.0mg),x mg
+Lack of leading zero (.x mg),0.x mg
+MS / MSO4 ,morphine sulfate
+MgSO4,magnesium sulfate
+> or <,greater than or less than
+cc,mL
+ug,microgram

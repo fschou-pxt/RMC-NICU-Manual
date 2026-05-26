@@ -1,0 +1,70 @@
+---
+number-depth: 2
+---
+
+# Physician Operations
+
+## Launch remote session
+
+* Click on the Epic pull-down menu on the left upper corner
+* Select **Launch Sessions**
+* Click on the magnification glass to select the session to launch
+
+Each session has a designated two-letter code. Use the following table to find the session for the hospital to launch:
+
+| Hospital ID | Hospital Location | Session Code |
+|-------------|-------------------|--------------|
+| 954         | Downey            | TC           |
+| 197         | LAMC              | ML           |
+| 200         | SDMC              | SD           |
+| 337         | OCMC - Anaheim    | OC           |
+| 393         | Panorama City     | VA           |
+| 391         | Baldwin Park      | TC           |
+| 199         | Fontana           | IE           |
+| 338         | West LA           | ML           |
+| 201         | Wooden Hill       | VA           |
+| 392         | Riverside         | IE           |
+| 400         | South Bay         | TC           |
+| 893         | OC - Irvine       | OC           |
+| 1072        | Ontario           | IE           |
+| 1433        | MoVal             | IE           |
+
+
+<br/><br/>
+{{< pagebreak >}}
+
+## Census and extra duty
+
+* < 7 patients: no extra duty
+* 8-11 patients: 0.5W
+* &ge;12 patients: 1W
+
+<br/><br/>
+{{< pagebreak >}}
+
+## Cortext
+
+<https://cortext.imprivata.com/>
+
+* Username: NUID@kp.org
+* Password: KP single sign-on password
+
+<br/><br/>
+{{< pagebreak >}}
+
+## Daily Rounds Process
+
+Checklist
+
+* NICU accordion summary
+* Review labs
+* Review meds
+* Review growth and flowsheet
+* Revise the problem list
+* Orders
+* E&M coding
+* [Progress note](#sec-daily-progress-note)
+* Call parents to provide update, or update at bedside
+
+<br/><br/>
+{{< pagebreak >}}

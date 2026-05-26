@@ -1,0 +1,19 @@
+---
+number-depth: 3
+---
+
+# Infectious Disease
+
+In summary, this book has no content whatsoever.
+
+```{r}
+1 + 1
+```
+
+## This is the first-level subsection
+
+See @sec-introduction for details.
+
+### This is the second-level {#sec-secondlevel}
+
+![this is the cover image](cover.png){#fig-cover fig-align="left" width="200"}

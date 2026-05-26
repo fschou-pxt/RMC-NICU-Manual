@@ -1,0 +1,334 @@
+---
+number-depth: 2
+---
+
+# Respiratory
+
+## Respiratory Support Guide
+
+<br/>
+
+### Neurally adjusted ventilatory assist (NAVA)
+
+#### Initial settings
+
+[(need verify)]{style="color:red"}
+
+* NAVA Level: 1 cmH~2~O/mcV
+* Editrigger 0.5 mcV
+* Pressure alarm 30-40 cmH~2~O
+* Apnea time 2 seconds
+* Place catheter 
+* Backup settings
+  - PC 20
+  - PS 20
+  - PEEP 5
+  - Rate 30
+  - iTime 0.35
+
+#### Formula
+
+$PIP\ =\ PEEP\ +\ Level\ \times\ (Edi_{peak}-Edi_{min})$
+
+#### Setting adjustment
+
+* Titrate to neonates comfort and Edi peak 10-15 mcV.
+* If there is increased work of breathing and Edi peak > 20mcV, increase the NAVA level by 0.5 increments until the patient is comfortable and the Edi peaks are < 15mcV.
+* If patient is comfortable and the Edi peaaks are < 5 then decrease NAVA level by 0.5 increments until Edi peak values are > 5.
+
+<br/>
+<br/>
+
+{{< pagebreak >}}
+
+## Cardiopulmonary Events - Spells
+
+<br/>
+
+### Regional Definition
+
+#### Apnea {#sec-apnea}
+
+* Pause in breathing for 20 seconds, or
+* Pause in breathing with heart rate < 80 and/or SpO~2~ < 80% for at least 10 seconds.
+
+#### Bradycardia {#sec-bradycardia}
+
+* Any drift in heart rate < 80 for at least 10 seconds
+  - spontaneous self-resolved bradycardia are not included
+  - feeding associated bradycardia (resolved when bottle is removed and does not require vigorous stimulation) are *not* included
+
+#### Desaturation {#sec-desaturation}
+
+* SpO~2~ 80% or less for at least 10 seconds
+  - spontaneous self-resolved bradycardia are not included
+  - feeding associated bradycardia (resolved when bottle is removed and does not require vigorous stimulation) are *not* included
+
+<br/>
+
+### Types of B/D spells
+
+#### Feeding-related spells (feeding spells)  
+
+* [Apnea](#sec-apnea) or [bradycardia](#sec-bradycardia) occurred during oral feeding and/or up to 30 min after completion of feeding.
+
+#### Sleep spells
+
+* Spells that are not considered feeding-related.
+
+<br/>
+
+### Bedside Practice Update
+
+#### Update 1:  
+
+*Do not intervene in the first 10 sec of a spell, unless:*  
+
+*	Life-threatening (e.g. aspiration, airway compromise, etc.).  
+*	Heart rate progress to < 60/min.  
+
+#### Update 2:  
+
+*Do not document events where lowest HR ≥ 80/min and lowest SpO~2~ ≥ 80% in the flowsheet Apnea/Bradycardia tab:*  
+
+*	These are not A/B/D events by definition.  
+*	If persistent/recurrent SpO~2~ 80-89% and intervention (e.g. stimulation, flow/O~2~) is needed, please notify MD and document in the notes.  
+
+<br/>
+
+### Sleep spells monitoring {#sec-protocol-sleep-spells-monitoring}
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-r28n{font-size:18px;text-align:center;vertical-align:middle}
+.tg .tg-mjre{color:#f56b00;font-size:18px;text-align:center;vertical-align:middle}
+.tg .tg-13pz{font-size:18px;text-align:center;vertical-align:top}
+.tg .tg-9apd{background-color:#c0c0c0;font-size:18px;text-align:center;vertical-align:top}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 480px">
+<colgroup>
+<col style="width: 80px">
+<col style="width: 80px">
+<col style="width: 160px">
+<col style="width: 160px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-mjre" colspan="2" rowspan="2">Requiring intervention</th>
+    <th class="tg-13pz" colspan="2">Heart rate</th>
+  </tr>
+  <tr>
+    <th class="tg-13pz"><span style="font-weight:400;font-style:normal;text-decoration:none">≥ 80/min</span></th>
+    <th class="tg-13pz">&lt; 80/min</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-r28n" rowspan="2">SpO~2~</td>
+    <td class="tg-13pz"><span style="font-weight:400;font-style:normal;text-decoration:none">≥</span> 80%</td>
+    <td class="tg-9apd">Not a spell</td>
+    <td class="tg-r28n" rowspan="2">3 days</td>
+  </tr>
+  <tr>
+    <td class="tg-r28n">&lt; 80%</td>
+    <td class="tg-r28n">1 day</td>
+  </tr>
+</tbody>
+</table>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-r28n{font-size:18px;text-align:center;vertical-align:middle}
+.tg .tg-mjre{color:#f56b00;font-size:18px;text-align:center;vertical-align:middle}
+.tg .tg-15qn{background-color:#c0c0c0;font-size:18px;text-align:center;vertical-align:middle}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 640px">
+<colgroup>
+<col style="width: 80px">
+<col style="width: 80px">
+<col style="width: 240px">
+<col style="width: 240px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-mjre" colspan="2" rowspan="2">Self-resolved</th>
+    <th class="tg-r28n" colspan="2">Heart rate</th>
+  </tr>
+  <tr>
+    <th class="tg-r28n"><span style="font-weight:400;font-style:normal;text-decoration:none">≥ 80/min</span></th>
+    <th class="tg-r28n">&lt; 80/min</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-r28n" rowspan="2">SpO~2~</td>
+    <td class="tg-r28n"><span style="font-weight:400;font-style:normal;text-decoration:none">≥</span> 80%</td>
+    <td class="tg-15qn">Not a spell</td>
+    <td class="tg-r28n">No color change: insignificant  <br>With color change: 1 day</td>
+  </tr>
+  <tr>
+    <td class="tg-r28n">&lt; 80%</td>
+    <td class="tg-r28n">No color change: insignificant  <br>With color change: 1 day  </td>
+    <td class="tg-r28n">1 day</td>
+  </tr>
+</tbody>
+</table>
+
+:::{.callout-tip}
+
+* This algorithm is meant for preterm infants whose baseline SpO~2~ is within normal range not requiring any respiratory support who are otherwise taking full or near-full PO and are close to NICU discharge.  
+*	This algorithm may not be applicable to term infants who respiratory control and suck-swallow-breath coordination are mature at birth. Spells in these infants are usually due to maternal influence, airway abnormalities, or ongoing pulmonary pathologies.  
+*	This algorithm should not be applied to A/B/D events that occur in the delivery room or around time of admission.  
+*	Isolated obstructive apnea is rare. Skin-to-skin-related spells are usually obstructive in nature. Clinical ruling of those events should be at the treating neonatologist’s discretion.  
+*	**Isolated SpO~2~ in the 80-89% range on the day of hospital discharge, although not a spell by definition, is equal to a failed CCHD screening, and therefore should not be ignored if occurred within 1 day of discharge.**
+
+:::
+
+<br/>
+
+### Feeding spells monitoring {#sec-protocol-feeding-spells-monitoring}  
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-na62{font-size:18px;font-weight:bold;text-align:left;vertical-align:middle}
+.tg .tg-axmw{font-size:18px;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-r28n{font-size:18px;text-align:center;vertical-align:middle}
+.tg .tg-ewmv{font-size:18px;text-align:left;vertical-align:middle}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 562px">
+<colgroup>
+<col style="width: 361px">
+<col style="width: 201px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-na62">Intervention</th>
+    <th class="tg-axmw">Monitoring period</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-ewmv">Remove bottle only, no color change</td>
+    <td class="tg-r28n">insignificant</td>
+  </tr>
+  <tr>
+    <td class="tg-ewmv">Remove bottle only, with color change</td>
+    <td class="tg-r28n">1 day</td>
+  </tr>
+  <tr>
+    <td class="tg-ewmv">Stimulation and/or flow/O~2~</td>
+    <td class="tg-r28n">1 day</td>
+  </tr>
+</tbody>
+</table>
+
+:::{.callout-tip}
+
+* Before discharge, designated primary home caregiver should be competent in identifying feeding-related distress and knowledge of timely intervention.  
+
+:::
+
+<br/>
+
+### Spell watch after Hepatitis B vaccine administration
+
+#### During spell watch
+
+If Hepatitis B vaccine is administered during spell watch, the spell watch period will be modified to include 48 hrs of monitoring following vaccine administration.
+
+* Example: if baby is being monitored from 2/10 to 2/13 (72 hrs), and Hepatitis B vaccine if administered on 2/12, the monitoring period will be extended to 2/14.
+
+#### Not during spell watch
+
+No need to monitor for spells after vaccine administration.
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Bronchouplmonary dysplasia (BPD)
+
+<br/>
+
+### No-BPD Prevention Bundle (BPD Bundle){#sec-bpd-bundle}
+
+#### **Vitamin A**
+
+Indication  
+
+* < 1,000 grams and/or < GA 28 weeks
+* Respiratory support after birth
+
+Dose  
+
+* 5,000 units 3 times per week for 12 doses (4 weeks)  
+
+#### **Epogen**
+
+*  250 units/kg/dose SQ Mon Wed Fr starting at DOL7
+
+#### Enteral meds
+
+When at 100ml/kg/day of enteral feeds:  
+
+* **Ferrous sulfate** 3 mg/kg/dose PO twice daily
+* **Vitamin E** 25 units oral twice daily
+
+<br/>
+
+### DART protocol
+
+10-day tapering course of dexamethasone sodium phosphate  
+
+* 0.15 mg/kg/day for 3 days
+* 0.10 mg/kg/day for 3 days
+* 0.05 mg/kg/day for 2 days
+* 0.02 mg/kg/day for 2 days
+
+*Total of 0.89 mg/kg over 10 days*
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Pneumothorax
+
+### Needle thoractocentesis
+
+### Chest tube placement
+
+#### Turkel<span>&#8482;</span>
+
+* Size: 12-14 Fr
+* Suction: -15 cmH~2~O with the Pleur-evac<span>&reg;</span> Chest Drainage System
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OlRUg7H1AGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Airway Edema
+
+<br/>
+
+### Treatment
+
+Method 1:  
+
+* IV dexamethasone 0.25mg/kg/dose given ~4 hrs prior to scheduled extubastion then q8hrs for a total of 3 doses (Couser 1992).
+
+Method 2:
+
+* IV dexamethasone 0.5mg/kg/dose q8 hrs for 3 doses with last dose administered 1 hr prior to scheduled extubation (Davis 2001).
+
+
+

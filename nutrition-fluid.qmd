@@ -1,0 +1,851 @@
+---
+number-depth: 2
+---
+
+# Nutrition, Fluid and Electrolytes
+
+## Feeding Advancement Protocol
+
+
+[Click Here](https://shiny.nicugrowth.app/feeding-protocol/){target="_blank"} to open in a new tab
+
+:::{.column-screen-inset-right}
+
+<iframe src="https://shiny.nicugrowth.app/feeding-protocol/" width="100%" height="1200px" align="left"></iframe>
+:::
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+
+## Fluid Management
+
+### Initial total fluid guide
+
+* Term: 60-80 ml/kg/day
+* Preterm ≥ GA 28 weeks: 80 ml/kg/day
+* Preterm < GA 28 weeeks: 90-100 ml/kg/day
+
+### Glucose infusion rate (GIR)
+
+Formula 1:
+
+$mg/kg/min\ =\ \displaystyle \frac{(\%\ Dextrose)\ \times\ total\ fluid\ (ml/kg/day)}{144}$
+
+Formula 2:
+
+$mg/kg/min\ =\ \displaystyle \frac{(\%\ Dextrose)\ \times\ hourly\ rate\ (ml/hr)}{6\ \times\ weight}$
+
+### Custom fluid builder (Not TPN)
+
+Order code: 66686
+Order name: IV Fluid Composer Adjustable Neonatal IV Continuous
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Total Parenteral Nutrition (TPN)
+
+### "Standard" concentration
+
+"Standard" concentration is the default concentration for pharmacy
+
+| "Standard" concentration | **Na**       | **K**    | **Ca**       | **Phos**   | **Mg**       |
+|--------------------------|--------------|----------|--------------|------------|--------------|
+| **Peripheral**           | 30mEq/L      | 20mEq/L  | 9mEq/L       | 9mmol/L    | 4mEq/L       |
+| **Central**              | 30mEq/L      | 20mEq/L  | 25mEq/L      | 12.5mmol/L | 4mEq/L       |
+| **Goal range**           | 135-145mEq/L | 3-6mEq/L | 8.5-11 mg/dL | 5-8 mg/dL  | 1.7-2.8mg/dL |
+
+### Monitoring
+
+* Consider frequent monitoring electrolytes, Ca, Phos, and Mg while on TPN for > 50% of total fluid.
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Hyperkalemia
+
+<br/>
+
+### Treatment
+
+* Albuterol
+  - 0.4mg/kg/dose med nebulizer q2hrs.
+  - 1 unit dose vial = 3mL = 2.5mg.
+* Calcium gluconate
+* Lasix
+* Insulin
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Hypokalemia
+
+<br/>
+
+### Treatment
+
+KCl 0.5mEq/kg over 2 hrs
+
+
+<br/><br/>
+{{< pagebreak >}}
+
+## Guide for Selenium Adjustment {#sec-selenium}
+
+#### Goal for total selenium intake
+
+* ~7–8 mcg/kg/day (TPN + enteral)
+
+#### Prolacta +6 (Higher Selenium Contribution)
+
+* Preterm EBM + Prolacta +6 (4.5 mcg selenium per 100 mL)
+
+| Enteral Feeds (mL/kg/day) | Enteral Se (mcg/kg/day) | TPN Se (mcg/kg/day) | Total Se (mcg/kg/day) |
+|---------------------------|--------------------------|----------------------|------------------------|
+| 60                        | 2.7                      | 5.0                  | 7.7                    |
+| 80                        | 3.6                      | 4.0                  | 7.6                    |
+| 100                       | 4.5                      | 3.0                  | 7.5                    |
+| 120                       | 5.4                      | 2.0                  | 7.4                    |
+
+#### Enfamil HMF (Standard Protein) – Lower Selenium Contribution
+
+* 22 kcal/oz (2.2 mcg selenium per 100 mL)
+
+| Enteral Feeds (mL/kg/day) | Enteral Se (mcg/kg/day) |
+|---------------------------|--------------------------|
+| 60                        | 1.32                     |
+| 80                        | 1.76                     |
+| 100                       | 2.20                     |
+
+* 24 kcal/oz (2.0 mcg selenium per 100 mL)
+
+| Enteral Feeds (mL/kg/day) | Enteral Se (mcg/kg/day) |
+|---------------------------|--------------------------|
+| 80                        | 1.60                     |
+| 100                       | 2.00                     |
+| 120                       | 2.40                     |
+
+Assumptions: Preterm EBM used for calculations. Enteral selenium values exclude TPN.  
+
+<br/><br/>
+{{< pagebreak >}}
+
+
+## Postnatal Enteral Nutrition and Growth
+
+<br/>
+
+### Feeding Advancement Protocol
+
+The **NICU Feeding Advancement Calculator.mht** file should only be opened using Microsoft Edge browser for the App to be active.
+
+<br/>
+
+### Growth goal
+
+* Weight gain by 15-20 g/kg/day
+* Length increase by 0.8-1 cm/week
+* Head circumference increase by 0.8-1 cm/week 
+* Weight/length/head circumference to follow growth chart curve
+
+<br/>
+
+### Nutrition intake goal
+
+* Calories: 120-130 KCal/kg/day
+* Protein: 3.0-3.5 g/kg/day [[Link](https://www.nejm.org/doi/full/10.1056/NEJMoa2204886#:~:text=This%20trial%20provided%20robust%20evidence,corrected%20age%20of%202%20years.)]
+* Fluids: 120-180 ml/kg/day
+
+<br/>
+
+### Nutrition survelleince
+
+* Obtain Na, Phos, ALP, BUN, every Monday once full enteral feeds achieved
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## ESPGHAN Guidelines Links
+
+ESPGHAN: European Society for Paediatric Gastroenterology, Hepatology and Nutrition
+
+<br/>
+
+### Parenteral Nutrition
+
+Last update in 2018:  
+<https://espghan.info/published-guidelines/>
+
+* Fluid and electrolytes [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31167-1/pdf){target="_blank"}]
+* Energy [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31163-4/pdf"){target="_blank"}]
+* Carbohydrates [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31166-X/pdf){target="_blank"}]
+* Amino acids [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31164-6/pdf){target="_blank"}]
+* Lipids [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31165-8/pdf){target="_blank"}]
+* Calcium, phosphorous and magnesium [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31169-5/pdf){target="_blank"}]
+* Iron and minerals [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31168-3/pdf){target="_blank"}]
+* Vitamins [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31170-1/pdf){target="_blank"}]
+* Venous access [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31171-3/pdf){target="_blank"}]
+
+
+<br/>
+
+### Enteral Nutrition
+
+Last update in 2022:  
+<https://www.espghan.org/knowledge-center/publications/Nutrition/2022-enteral-nutrition>
+
+* Position paper [[Download](https://www.espghan.org/dam/jcr:092f7f5a-6557-433c-98d6-7259ab1a9cfa/Enteral_Nutrition_in_Preterm_Infants__2022___A.204.pdf){target="_blank"}]
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Oral Care with Colostrum {#sec-oral-care-colostrum}
+
+<br/>
+
+### Target population
+
+Infants of any GA admitted to the NICU < 72 hrs of age who cannot be orally fed safely
+
+<br/>
+
+### Order oral care on admission
+
+Place a PERFORM ORAL CARE order
+
+* Frequency: 3 TIMES A DAY
+* Comments: Please provide oral care with colostrum while not orally fed. After each care, please document under Shift NICU / Hygiene / **Oral Care with Colostrum**
+
+<br/>
+
+### Documentation
+
+Use the dot-phrase **.oralcare** to pull nursing documentation of oral care into daily progress note, or alternatively, document manually.
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Donor Breast Milk {#sec-donor-breast-milk}
+
+<br/>
+
+### Eligibility criteria
+
+GA < 32 weeks or BW < 1,500g
+
+<br/>
+
+### Consent
+
+Physician to consent parents verbally, and place proper documentation in the daily progress note.
+
+[dotPhrase](#sec-dotPhrase-donor-breast-milk)
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Prolacta Prolact+ H^2^MF Products
+
+<br/>
+
+### Eligibility criteria
+
+* GA < 32 weeks or BW < 1,500g  
+[Remember to update the feeding advancement protocol to reflect Prolacta use as indicated]{style="color:red;"}
+
+<br/>
+
+### Protocol
+
+* Use Prolacta instead of HMF when fortifying milk for infants who meet criteria for Prolacta. 
+* Start at 26 KCal (Prolact +6 H^2^MF). 
+* Increase calories per nutritionist recommendations and at rounding neonatologist's discretion based on the infant's clinical condition.
+
+<br/>
+
+### QI Project on Prolact+ H^2^MF cost
+
+* Process measure
+  * Use [Postnatal growth charts](https://nicugrowth.app) to determine fortificationp plan beyond 26KCal/oz
+* Outcome measure
+  * cost of Prolact+ H^2^MF product
+* Balance measure
+  * Length of stay
+  * BPD
+  * ROP
+
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Prolacta Cream {#sec-nicucream}
+
+<br/>
+
+### Eligibility criteria
+
+When using Prolacta Prolac+ H^2^MF  
+*Note: not to be used before breast milk fortification*
+
+<br/>
+
+### Indication
+
+1. Overcome fat absorption by gavage tube - feeding rate-dependent
+2. Overcome low fat content in mother's milk
+
+<br/>
+
+### Usage
+
+#### Route
+
+1. Administer by itself through gavage tube before fortified milk
+2. Mix with fortified milk
+
+#### Volume
+
+Dedepding on the fortified milk feeding volume, three ratios can be used:
+
+* 3mL Cream per 100mL fortified milk - increase calculated calories by 2.4 KCal/oz
+* 4mL Cream per 100mL fortified milk - increase calculated calories by 3.1 KCal/oz
+* 5mL Cream per 100mL fortified milk - increase calculated calories by 3.9 KCal/oz
+
+#### Possible combinations
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-s7mi{background-color:#E9EBF5;text-align:center;vertical-align:top}
+.tg .tg-63bg{background-color:#E9EBF5;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-baqh">&nbsp;&nbsp;&nbsp;<br><span style="font-weight:bold;color:#002774">Regimen</span>&nbsp;&nbsp;&nbsp;</th>
+    <th class="tg-0lax">&nbsp;&nbsp;&nbsp;<br><span style="font-weight:bold;color:#002774">Details</span>&nbsp;&nbsp;&nbsp;</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-s7mi"><span style="color:#002774">1</span></td>
+    <td class="tg-63bg"><span style="color:#002774">20kcal milk</span>   </td>
+  </tr>
+  <tr>
+    <td class="tg-baqh"><span style="color:#002774">2</span></td>
+    <td class="tg-0lax"><span style="color:#002774">Cream before milk + 26kcal milk</span>   </td>
+  </tr>
+  <tr>
+    <td class="tg-s7mi">3</td>
+    <td class="tg-63bg"><span style="color:#002774">Cream before milk + 26kcal milk mixed with cream</span>   </td>
+  </tr>
+  <tr>
+    <td class="tg-baqh"><span style="color:#002774">4</span></td>
+    <td class="tg-0lax"><span style="color:#002774">Cream before milk + 28kcal milk</span>   </td>
+  </tr>
+  <tr>
+    <td class="tg-s7mi"><span style="color:#002774">5</span></td>
+    <td class="tg-63bg"><span style="color:#002774">Cream before milk + 28kcal milk mixed with cream</span>   </td>
+  </tr>
+  <tr>
+    <td class="tg-baqh"><span style="color:#002774">6</span></td>
+    <td class="tg-0lax"> <span style="color:#002774">Cream before milk + 30kcal milk</span>   </td>
+  </tr>
+  <tr>
+    <td class="tg-s7mi">7</td>
+    <td class="tg-63bg"><span style="color:#002774">Cream before milk + 30kcal milk mixed with cream</span>   </td>
+  </tr>
+</tbody>
+</table>
+<br/>
+
+### Feeding order {#sec-feeding-order}
+
+Use the [.NICUCREAM](#sec-dotPhrase-nicucream) dot-phrase in the comment field to indicate administration route and volume:
+
+*Example:*  
+Please give \*\*\*mL of Prolacta Cream followed by \*\*\*mL of EBM/DBM with Prolacta +6.  
+Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-4vkt{background-color:#D9E1F2;text-align:center;vertical-align:bottom}
+.tg .tg-dj9l{background-color:#4472C4;color:#FFF;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-8d8j{text-align:center;vertical-align:bottom}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-dj9l"><span style="font-weight:700;text-decoration:none;color:white;background-color:#4472C4">Fortified&nbsp;milk (mL)</span></th>
+    <th class="tg-dj9l"><span style="font-weight:700;text-decoration:none;color:white;background-color:#4472C4">4mL cream per 100mL milk (mL)</span></th>
+    <th class="tg-dj9l"><span style="font-weight:700;text-decoration:none;color:white;background-color:#4472C4">5mL cream per 100mL milk (mL)</span></th>
+    <th class="tg-dj9l"><span style="font-weight:700;text-decoration:none;color:white;background-color:#4472C4">6mL cream per 100mL milk (mL)</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">5</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.2</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.3</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.3</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">6</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.2</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.3</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.4</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">7</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.3</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.3</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.4</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">8</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.3</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.4</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.5</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">9</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.4</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.5</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.5</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">10</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.4</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.5</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.6</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">11</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.4</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.6</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.7</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">12</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.5</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.6</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.7</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">13</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.5</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.7</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.8</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">14</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.6</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.7</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.8</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">15</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.6</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.8</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.9</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">16</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.6</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.8</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.0</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">17</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.7</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.9</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.1</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">18</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.7</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.9</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.1</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">19</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.8</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.0</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.1</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">20</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.8</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.0</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.1</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">21</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.8</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.1</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.3</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">22</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.9</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.1</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.3</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">23</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.9</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.2</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.4</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">24</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.0</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.2</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.4</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">25</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.0</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.3</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.5</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">26</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.0</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.3</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.6</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">27</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.1</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.4</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.6</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">28</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.1</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.4</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.7</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">29</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.2</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.5</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.7</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">30</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.2</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.5</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.8</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">31</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.2</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.6</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.9</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">32</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.3</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.6</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.9</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">33</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.3</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.7</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.0</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">34</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.4</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.7</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.0</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">35</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.4</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.8</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.1</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">36</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.4</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.8</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.2</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">37</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.5</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.9</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.2</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">38</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.5</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.9</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.3</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">39</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.6</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.0</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.3</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">40</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.6</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.0</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.4</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">41</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.6</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.1</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.5</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">42</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.7</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.1</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.5</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">43</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.7</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.2</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.6</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">44</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.8</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.2</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.6</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">45</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.8</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.3</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.7</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">46</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.8</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.3</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.8</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">47</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.9</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.4</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.8</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">48</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.9</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.4</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.9</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">49</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.0</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.5</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.9</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">50</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.0</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.5</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">3.0</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">51</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.0</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.6</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">3.1</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">52</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.1</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.6</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">3.1</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">53</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.1</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.7</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">3.2</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">54</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.2</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.7</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">3.2</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">55</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.2</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.8</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">3.3</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">56</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.2</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.8</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">3.4</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">57</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.3</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.9</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">3.4</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">58</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.3</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.9</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">3.5</span></td>
+  </tr>
+  <tr>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">59</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">2.4</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">3.0</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">3.5</span></td>
+  </tr>
+  <tr>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">60</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">2.4</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">3.0</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">3.6</span></td>
+  </tr>
+</tbody>
+</table>
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Probiotics (Evivo) {#sec-probiotics}
+
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## NTrainer Use Regional Guidelines {#sec-ntrainer}
+
+<br/>
+
+### Criteria for initiating NTrainer therapy
+
+* For infants ≤ 30 weeks at birth:
+  * Start training as early as 30 0/7 weeks PMA
+  * Medically Stable (not on continuous vasopressor medications or invasive ventilator support, if on CPAP, or HFNC Fi0~2~ ≤ 40%)
+  * Tolerating enteral feed in previous 48 hours
+  * Tolerating non-nutritive sucking with minimal bradycardic and desaturation events
+* For infants > 30 weeks at birth:
+  * Care team’s concern for the baby’s nipple feeding skills development
+  * Medically Stable (not on invasive ventilator support, if on CPAP, or HFNC Fi0~2~ ≤ 40%)
+
+<br/>
+
+### Assessment
+
+* All initial assessments are performed by OT/PT.
+  * OT/PT will place instructions at bedside when nursing and/or family are able to initiate therapy.
+* For infants ≤ 30 weeks at birth:
+  * Initial assessment at 30 weeks PMA.
+  * If at 30 weeks PMA infant experiences cardiorespiratory event that does not resolve with removing the appliance, repeat assessment at 31 weeks PMA.
+* For infants > 30 weeks at birth:
+  * Timing of initial assessment based on OT/PT evaluation 
+* Ongoing assessments for all infants: 1-2/week until full PO feeding
+
+<br/>
+
+### Therapy
+
+* Choose NTrainer length of therapy based on OT evaluation:
+* Standard therapy mode will be used for all therapy sessions
+  * NTrainer (Standard program):
+    If PMA < 33 weeks, gavage feeding via pump for at least 20 minutes. Do not attempt to nipple feed until the next feeding.
+  * Pre-Oral NTrainer (Standard program for one 3-minute cycle then progress to nipple feeding):
+    Pt recommend to transition, If PMA > 33 weeks, Readiness Score < 3 on Infant-Driven Feeding Scale (see Appendix A) and nippling ≥ 1/3 volume in the previous feeding.
+* Perform training: 2 times/day (try once per shift):
+  * Done by OT/PT, bedside nurses, or parents
+* Length of NTraining:
+  * Initiate training for two weeks
+  * Continue training until **PO ≥ 75% of feedings** and cueing and nippling each feed with a well-coordinated suck
+
+<br/>
+
+### Usage
+
+* For all infants born at GA ≤ 32 weeks, start upon enteral feeds initiation, discontinue when reaching 34 weeks PMA.
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## Breastfeeding and Bonding Education Material
+
+### Medications and medical procedures while you are Breastfeeding 
+
+<span style="color:red;">MOST medications, medical procedures, and imaging studies DO NOT require you to stop breastfeeding or even temporarily discard your breast milk.</span>
+
+**Imaging procedures**. Some of the more common imaging procedures and their relative risks:
+
+*	**X-rays, ultrasound, mammograms, CT scans, and MRIs**. Radiation from these tests will not affect your breasts or breast milk.
+*	**Aspiration and breast biopsy procedures**. These do not typically affect your breast milk.
+
+**Contrast agents for imaging procedures**. A small amount of contrast could be excreted into your breast milk (American College of Radiologists- 2021). Since this amount is so small, **the available data suggests that it is safe to continue breastfeeding**. Oral barium is sometimes used as a contrast agent. Because barium is not absorbed, it will not go into your breast milk.
+
+If you are worried about any potential effects to your child, you may wish to stop breastfeeding for 12 to 24 hours from the time of contrast use. Discard breast milk from both breasts during that time. You may use a breast pump before your procedure, so you have milk to feed your child during the 24 hours after the exam.
+
+**Radiation for breast cancer treatment**. Radiation can damage breast tissue and decrease milk production. This effect is usually permanent. However, lactation will not be affected on the breast that does not receive radiation. If you have radiation, your child can breastfeed on the other breast.
+
+**Surgery with anesthesia**. Anesthetic drugs appear in low levels in breast milk. You should continue breastfeeding as soon as possible after surgery (American Society of Anesthesiologists, 2019).
+
+**If you temporarily stop breastfeeding**, use a breast pump regularly. This helps you keep your milk supply and return to breastfeeding easily, when appropriate.
+
+<span style="color:red;">Ultimately, the decision to temporarily stop breastfeeding is yours.</span>
+
+<br/>
+<br/>
+{{< pagebreak >}}
+
+## THC Use During Breastfeeding
+
+<br/>
+
+### Consultation
+
+Consult all moms with a known history of THC use during or prior to pregnancy, or if toxicology screen is positive for THC, that there is unknown effect of THC on the developing brains, so THC use is strongly discouraged while moms are providing breast milk.
+
+<br/>
+
+### Documentation
+
+Document the following in the Nutrition section of the daily progress note:
+
+> Mom verbally agreed to not use any THC products while breast feeding due to neurodevelopmental risks for her newborn
+

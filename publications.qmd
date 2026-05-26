@@ -1,0 +1,70 @@
+---
+number-depth: 2
+---
+
+# Research/QI activities {#sec-research-qi}
+
+<br><br>{{< pagebreak >}}
+
+## QI Projects
+
+<br/>
+
+### Breast Before Bottle (2024; PI: Dr. Kasee Houston) {#sec-bb4b}
+
+#### Summary
+
+**The goal is for our infant's *first* PO feeding to be a direct breast/chestfeeding rather than a bottle feed.**  Lactating parents that are interested will be able to provide the first oral feed as a direct breast/chestfeed, and the parent will have 24 hours to complete this once the infant is determined to be ready to feed by mouth (after which we will not delay oral feeding and will introduce bottles). A breast/chest before bottle card will be placed on the infant's isolette to identify these infants, and nurses will arrange for this to be completed. 
+
+<span style='color:red;'>Babies that are < 33weeks, on >2LHFNC or that have other contraindications to breastmilk will not be included. </span>. 
+
+After the breast/chestfeed, supplementation PG or PO will be determined based on the quality and time of the chestfeed, ranging from no supplementation to full volume supplementation (see chart on flyer). You may use your discretion to adjust feeds as needed. 
+
+#### Resources
+[dot-phrase](#sec-dotphrase-bbb) for feeding orders that should be placed in the feeding orders or in a RN communication order if character limit is exceeded.
+
+<br/>
+<a href="files/BB4B.pptx" target="_blank">PowerPoint Presentation (Right click to Save Link As...)</a>
+<br/>
+<a href="files/BreastChest Before Bottle.pdf" target="_blank">Breast/Chest Before Bottle flyer</a>
+<br/>
+<a href="files/BreastChest Before Bottle RN Algorithm Canva.pdf" target="_blank">Breast/Nursing Algorithm</a>
+
+<br><br>{{< pagebreak >}}
+
+## Publications
+
+<br/>
+
+### Year 2025
+
+**Chou, FS**, Zhang, J, Villosis, MFB, & Lakshmanan, A (2025). Exclusive human milk diet is associated with lower risk of motor function impairment at three years of corrected age. Journal of Perinatology: Official Journal of the California Perinatal Association. <https://doi.org/10.1038/s41372-025-02296-z>
+
+### Year 2024
+
+**Chou FS**, Zhang J, **Nguyen C**, **Faison GM**, Thompson LR, Villosis MFB, Barseghyan K, Lakshmanan A. The impact of exclusive human milk diet on short-term growth of very preterm infants. J Perinatol [Internet]. 2024 Apr 27; Available from: <http://dx.doi.org/10.1038/s41372-024-01980-w>
+
+**Chou FS**, Yeh HW, Clark RH. Postnatal weight growth trajectory in infants born between 30 4/7 weeks and 34 3/7 weeks of gestation. J Perinatol [Internet]. 2024 Apr [cited 2023 Nov 30];44(4):575–7. Available from: <http://dx.doi.org/10.1038/s41372-023-01837-8>
+
+**Chou FS**, Clark RH, Yeh HW. The association between antenatal corticosteroids exposure and postnatal growth in infants born between 23 and 29 weeks of gestation. J Perinatol [Internet]. 2024 Apr [cited 2024 Jan 16];44(4):561–7. Available from: <http://dx.doi.org/10.1038/s41372-024-01871-0>
+
+**Houston K**, Arellano F, Imany-Shakibai H, Jackson A, Saleeby E, Dudovitz R, Schickedanz A. “MAMA’s is like a second mom:” Client and Staff Experiences in a Comprehensive Social Risk Care Management Program Within a Perinatal Medical Home. Matern Child Health J [Internet]. 2024 Jan 31; Available from: <http://dx.doi.org/10.1007/s10995-024-03896-5>
+
+<br><br>{{< pagebreak >}}
+
+### Year 2023
+
+**Faison G**, **Chou FS**, Feudtner C, Janvier A. When the Unknown Is Unknowable: Confronting Diagnostic Uncertainty. Pediatrics [Internet]. 2023 Oct 1;152(4). Available from: <http://dx.doi.org/10.1542/peds.2023-061193>
+
+**Chou FS**, Yeh HW, Clark RH. A comparative study of postnatal anthropometric growth in very preterm infants and intrauterine growth. Nat Commun [Internet]. 2023 Sep 19 [cited 2023 Sep 19];14(1):5626. Available from: <http://dx.doi.org/10.1038/s41467-023-41069-0>
+
+**Chou FS**, Leigh RM, Rao SS, Narang A, Yeh HW. Oxygenation index in the first three weeks of life is a predictor of bronchopulmonary dysplasia grade in very preterm infants. BMC Pediatr [Internet]. 2023 Jan 13 [cited 2023 Jan 13];23(1):18. Available from: <http://dx.doi.org/10.1186/s12887-023-03835-3>
+
+<br><br>{{< pagebreak >}}
+
+
+## Year 2022
+
+Leigh RM, Pham A, Rao SS, Vora FM, Hou G, Kent C, Rodriguez A, Narang A, Tan JBC, **Chou FS**. Machine learning for prediction of bronchopulmonary dysplasia-free survival among very preterm infants. BMC Pediatr [Internet]. 2022 Sep 13 [cited 2022 Sep 13];22(1):542. Available from: <http://dx.doi.org/10.1186/s12887-022-03602-w>
+
+<br><br>{{< pagebreak >}}

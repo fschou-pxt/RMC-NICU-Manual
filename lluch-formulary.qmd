@@ -1,0 +1,1802 @@
+---
+number-depth: 3
+---
+
+# LLUCH NICU Formulary {#formulary}
+
+*Authored by NICU Pharmacist Kim Wan*  
+
+## Guidelines for Writing Medication Orders  
+
+<br/>
+
+**Joint Committee Prohibited Abbreviations**  
+```{r dose-abbreviation, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
+library(kableExtra)
+library(tidyverse)
+
+table <- as.data.frame(read_csv(paste0(getwd(), "/lluch-formulary-tables/dose_abbreviation.csv")
+))
+
+table %>% knitr::kable(align = "l", caption = "Joint Committee Prohibited Abbreviations", booktabs = TRUE) %>% column_spec(1:ncol(table), background = "white")
+
+```
+
+<br/>
+
+## How to Write IV Drips
+
+<br/>
+**General Considerations**
+
+* Before writing IV drip, check to see if the drip you want is included in Standard Concentration Infusions (It is important to know these in the event of an emergency power outage or mass triage situation).  
+* Even though templates are used at this institution, you should learn how to write drips without a template. Drips are easy once you've done a few. Simply solve for the open variable (X), which is the amount of drug you want to mix with the solution.  
+* Remember, the units must match on both sides of the equation: mg = mg or microgram = microgram.  
+
+<br/>
+**Sedation Drips**
+
+* Usually in **microgram**/kg/<u>hr</u> or **mg**/kg/<u>hr</u>.  
+    * midazolam, fentanyl, morphine: <u>**microgram**</u>/kg/hr.  
+    * vecuronium: <u>**mg**</u>/kg/hr.  
+* Equation for calculating absolute dose for IV drip medication:     
+\begin{equation}
+dose\ in\ microgram/kg/hr = \frac{(\mathbf{X}\ microgram)\ (pump\ rate\ in\ mL/hr)}{(weight\ in\ kg)\ (vial\ size\ in\ mL)}
+\end{equation}
+
+    * *Example*: You want to start *medication X* at 10 microgram/kg/hr for a 2-kg infant, using a 25-mL vial, and you choose a pump rate of 1 mL/hr (to make it easy to titrate):  
+\begin{equation}
+10\ microgram/kg/hr = \frac{(\mathbf{X}\ microgram)\ (1\ mL/hr)}{(2\ kg)\ (25\ mL)}
+\end{equation}
+\begin{equation}
+\mathbf{X}\ microgram = \frac{(10\ microgram/kg/hr)\ (2\ kg)\ (25\ mL)}{1\ ml/hr}
+\end{equation}
+\begin{equation}
+\mathbf{X}\ microgram = 500\ micrograms 
+\end{equation}
+    * *Order reads*: For infant with a weight of 2 kg, mix 500 micrograms of *medication X* in 25 mL of D5W and run at 1 mL/hr to give 10 microgram/kg/hr.  
+
+<br/>
+**Cardiac Drips**
+
+* Usually in **microgram**/kg/<u>**min**</u>.
+* Equation for calculating absolute dose for cardiac IV drip medication:     
+\begin{equation}
+dose\ in\ microgram/kg/min = \frac{(\mathbf{Y}\ microgram)\ (pump\ rate\ in\ mL/hr)}{(weight\ in\ kg)\ (vial\ size\ in\ mL)\ (60\ min/hr)}
+\end{equation}
+
+    * Why ÷ 60? Because dosing is per <u>*minute*</u>, but the pump runs in mL per <u>*hour*</u>.  
+    * *Example*: You want to start *medication Y* at 3 microgram/kg/min for a 3-kg infant, using a 25-mL vial, and you choose a pump rate of 0.3 mL/hr (to make it easy to titrate):  
+\begin{equation}
+3\ microgram/kg/min = \frac{(\mathbf{Y}\ microgram)\ (0.3\ mL/hr)}{(3\ kg)\ (25\ mL)\ (60\ min/hr)}
+\end{equation}
+\begin{equation}
+\mathbf{Y}\ microgram = \frac{(3\ microgram/kg/min)\ (3\ kg)\ (25\ mL)\ (60\ min/hr)}{0.3\ ml/hr}
+\end{equation}
+\begin{equation}
+\mathbf{Y}\ microgram = 45,000\ micrograms 
+\end{equation}
+    * *Order reads*: For infant with a weight of 3 kg, mix 45,000 micrograms (or 45mg) of *medication Y* in 25 mL of D5W and run at 0.3 mL/hr to give 3 microgram/kg/min.  
+
+<br/>
+**Tips for Writing Drips**
+
+* For fluid-restricted patients, the solution may be made more concentrated and run at a lower rate that is still nursing friendly (e.g., dosing of 0.6 microgram/kg/min can run at 0.3 mL/hr rather than 0.6 mL/hr, if it is double-concentrated)  
+* Be aware that pumps cannot run at a rate of less than 0.1 mL/hr.  
+* Prostin must run at 2 mL/hr through a peripheral line and may run at 1 mL/hr through a central line.  
+* Using **Standard Concentration Infusions**  
+    * Standard concentrations are used by the pharmacy to reduce formulation errors.  
+    * Before writing IV drips, check to see if the drip you want is included in the list of Standard Concentration Infusions.  
+    * The list is updated when new drips are added.  
+* Usual starting rates for drips (please cross reference with the formulary)  
+    * morphine: 20-50 microgram/kg/hr (after major surgery)  
+    * fentanyl: 3 microgram/kg/hr  
+    * midazolam: 10 microgram/kg/hr  
+    * vecuronium: 0.1 mg/kg/hr  
+    * PGE-1: 0.05 microgram/kg/min  
+    * dopamine 5-10 microgram/kg/min  
+    * dobutamine 5-10 microgram/kg/min  
+    * epinephrine 0.1-0.5 microgram/kg/min  
+
+<br/><br/>{{< pagebreak >}}
+
+## A {#med-a}
+
+### acetaminophen (Tylenol&reg;)
+
+* Regular dosing: 10-15 mg/kg/dose PO/PR q 4-6hrs  
+    
+* IV acetaminophen post-operative pain dosing (NICU pain management):  
+    * use up to 5 days post-operatively, and could be shorter if bowel function recovers and patient is extubated  
+    * 38-40 weeks: 10-15 mg/kg/dose q 6hrs  
+    * 32-38 weeks: 10-15 mg/kg/dose q 8hrs  
+    * < 31 weeks: 10-15 mg/kg/dose q 12hrs  
+    
+<br/>
+
+### acetazolamide (Diamox&reg;)  
+
+* Diuretic: 20 mg/kg/day PO/IM/IV divided q 8hrs  
+* Hydrocephalus: 100 mg/kg/day divided q 6-8hrs (Give with Lasix 1 mg/kg/day)  
+
+<br/>
+
+### activase (Alteplase&reg;)  
+
+* Line clot: 2 mg powder to be reconstituted with 2 mL of sterile water (resulting in 1 mg/mL) to be reconstituted by bedside RN. Place in a clotted line for 2-4 hrs, then aspirate out the catheter. May repeat x1.  
+* Systemic clot: Discuss with the team attending physician.  
+
+<br/>
+
+### acetylcysteine (Mucomyst)  
+
+* Regular dosing for meconium ileus: 2-3 mL PO q 12hrs.  
+
+<br/>
+
+### acyclovir  
+
+* Regular dosing: 60 mg/kg/day IV divided q 8hrs for 14-21 days to infuse over 1 hr  
+* Acute kidney injury: 20 mg/kg/dose q 24hrs  
+
+<br/>
+
+### adenosine  
+
+* Regular dosing: 100 microgram/kg IV rapid push. May repeat dose q 2min 
+    * May increase by 50 microgram/kg to max 250 microgram/kg.  
+    * Follow dosing with a rapid bolus of 5-10 mL normal saline.  
+
+<br/>
+
+### agar
+
+* Preparation: mix 250 mg in 5 mL sterile water.  
+* Regular dosing: 5 mL PO q 3hrs, or 500 mg q 6hrs.  
+
+<br/>
+
+### albumin 5% (1g/20mL)
+
+* Regular dosing: 0.5 g/kg/dose *or* 10 mL/kg/dose.  
+
+<br/>
+
+### albumin 25% (1g/4mL)
+
+* Regular dosing: 0.5g/kg/dose *or* 2mL/kg/dose.  
+* Instruction: use only with a central line when fluid-restricting.  
+
+<br/>
+
+### alprostadil (PGE-1, Prostin&reg;)
+
+*Use Standard Concentration Infusions for drips*  
+
+* Starting dose: IV drip 0.05 microgram/kg/min.  
+* Taper to 0.01-0.025 microgram/kg/min as directed by Cardiology.  
+* Order carrier fluid as needed:  
+    * Peripheral line needs minimum rate of 2 mL/hr.  
+    * Central line needs a minimum rate of 1 mL/hr (add heparin 1 unit/mL if running by itself).  
+
+<br/>
+
+### amphotericin B liposome (AmBisome&reg;)  
+
+* Regular dosing: 3-5 mg/kg/dose IV q Day to infuse over 2 hrs.  
+* *Note*: use amphotericin B and NOT AmBisome&reg; if a renal fungal ball is suspected or confirmed.  
+
+<br/>
+
+### amikacin  
+
+* GA < 30 weeks  
+    * ≤ 14 days: 15 mg/kg/dose q 48hrs.  
+    * \> 14 days: 15 mg/kg/dose q 24hrs.  
+* GA 30-34 weeks  
+    * 15 mg/kg/dose q 24hrs.  
+* GA ≥ 35 weeks  
+    * ≤ 7 days: 15 mg/kg/dose q 24hrs.  
+    * \> 7 days: 18 mg/kg/dose q 24hrs.  
+
+<br/>
+
+### amiodarone
+
+*Use Standard Concentration Infusions on VIP page for drips*  
+
+* Loading dose: 5 mg/kg IV over 30 min.  
+    * repeat in 1 hr if no response.  
+    * Max loading dose: 20 mg/kg.  
+* Maintenance dose: 5-15 microgram/kg/min or 3-5 mg/kg/day PO divided q 12hrs.  
+
+<br/>
+
+### amlodipine (Norvasc&reg;)
+
+* Starting dose for hypertension: 0.05-0.1 mg/kg/day PO divided q 12-24hrs.  
+    * May increase up to 0.6 mg/kg/day.  
+
+<br/>
+
+### amoxicillin
+
+* Regular dosing: 20-30 mg/kg/day PO divided q 12hrs.  
+* UTI prophylaxis dosing: 10-15 mg/kg/dose PO q 24hrs.  
+* Prophylaxis for asplenia: 20 mg divided q 12hrs (dosing is NOT per kg).  
+
+<br/>
+
+### amphotericin B  
+
+* Regular dosing: 1 mg/kg/day IV q 24hrs to infuse over 6 hrs.  
+* *Note*: If given with 5-fluorocytosine (5-FC), max dose is 0.6 mg/kg/day.  
+
+<br/>
+
+### ampicillin
+
+* Regular dosing: *Dosing adapted from NeoFax*  
+    * GA ≤ 34 weeks:  
+        * ≤ 7 days: 100 mg/kg/day divided q 12hrs.
+        * 8–28 days: 150 mg/kg/day divided q 12hrs.  
+        * ≥ 29 days: 200 mg/kg/day divided q 6hrs (max dose 8 g/day).  
+    * GA > 34 weeks:  
+        * ≤ 7 days: 150 mg/kg/day divided q 8hrs.  
+        * \> 7 days: 200 mg/kg/day divided q 6hrs (max dose 8 g/day).  
+    * Meningitis Dosing:  
+        * ≤ 7 days: 200–300 mg/kg/day divided q 8hrs.  
+        * 8–28 days: 300 mg/kg/day divided q 6hrs.  
+        * ≥ 29 days: 300–400 mg/kg/day divided q 4–6hrs (max dose 12 g/day).  
+
+* Regular dosing for GBS bacteremia *[2019 AAP Clinical Report](https://doi.org/10.1542/peds.2019-1881 ){target="_blank"}*:  
+    * GA ≤ 34 weeks:  
+        * ≤ 7 days: 50 mg/kg/dose q 12hrs IV.  
+        * \> 7 days: 75 mg/kg/dose q 12hrs IV.    
+    * GA > 34 weeks:  
+        * ≤ 7 days: 50 mg/kg/dose q 8hrs IV.  
+        * \> 7 days: 50 mg/kg/day q 8hrs IV.  
+
+* Regular dosing for GBS meningitis *[2019 AAP Clinical Report](https://doi.org/10.1542/peds.2019-1881 ){target="_blank"}*:  
+    * GA ≤ 34 weeks:  
+        * ≤ 7 days: 100 mg/kg/dose q 8hrs IV.  
+        * \> 7 days: 75 mg/kg/dose q 6hrs IV.    
+    * GA > 34 weeks:  
+        * ≤ 7 days: 100 mg/kg/dose q 8hrs IV.  
+        * \> 7 days: 75 mg/kg/day q 6hrs IV.  
+
+
+* Prophylaxis for urinary tract abnormality  
+    * 30-50 mg/kg/dose PO q 24hrs (or use amoxicillin)  
+
+* *Note*: Remember, even 200 mg/kg/day is a "meningitic dose", so avoid the use of the term "septic dose".  
+
+<br/>
+
+### ampicillin/sulbactam (Unasyn&reg;)
+
+* GA < 37 weeks:
+    * 100 mg ampicillin/kg/day IV divided q 12hrs.  
+* GA ≥ 37 weeks:
+    * Regular dosing: 100 mg ampicillin/kg/day IV divided q 8hrs.  
+    * Severe infection: 200-400 mg/kg/day IV divided q 12hrs.  
+    * *Note*: change interval to q 8hrs after 1 week of life; q6hrs after 1 month of life.  
+* Dosing based on ampicillin component:  
+    * *X* mg amipicillin equivalent dose = *1.5X* mg ampicillin/sulbactam dose.  
+
+<br/>
+### AquADEKs&reg; (multivitamins with water-soluble ADEK & minerals)
+
+* Regular dosing for cholestasis:  
+    * < 4.5 kg: 0.5 mL PO q 12hrs.  
+    * ≥ 4.5 kg: 1 mL PO q 12hrs.  
+
+<br/>
+
+### Aqua-E&reg; (water-soluble vitamin E)
+
+* Regular dosing for cholestasis:  
+    * \> 3 kg only: 1 mL PO divided 12 hrs  
+
+<br/>
+
+### arginine chloride  
+
+* Starting dose for metabolic alkalosis: 1 mL/kg/dose PO q 3-6hrs.  
+    * May dose according to Cl needs.
+    * 1 mL provides 100 mg arginine + 0.475 mEq $Cl^{-}$ & $H^{+}$.  
+    
+<br/>
+
+### aspirin  
+
+* Regular dosing for thrombophilia: 5 mg/kg/dose PO q 24hrs.  
+* Regular dosing for anticoagulation: 5-10 mg/kg/dose PO q 24hrs.  
+
+<br/>
+
+### antithrombin III (AT-3)
+
+* used for ECMO patients or patients on enoxaparin (Lovenox&reg;) therapy.  
+
+<br/>
+
+### atropine
+
+* Regular dosing: 0.01-0.03 mg/kg/dose SC/IM/IV/ETT.  
+    * May repeat q 2-4hrs.  
+
+<br/>
+
+### azithromycin
+
+* Regular dosing for ureaplasma or pertussis: 10 mg/kg/day IV q 24hrs for 5-10 days.  
+* <span style="color:red;">[Add dosing for chlamydia/gonorhea infections]</span>
+
+<hr/>
+<br/><br/>{{< pagebreak }}
+
+## B {#med-b}
+
+
+### bevacizumab (Avastin&reg;) intravitreal injection
+
+* Regularing dosing: 0.625 mg/dose for each eye.  
+* *Note*: pharmacy to dispense 0.5 mL per Ophthalmology request.  
+
+<br/>
+
+### bicitra (Na citrate)
+
+* Regular dosing: 1 mEq/kg/dose PO q 6hrs.  
+* *Note*: 1 mL provides 1 mEq $Na^{+}$, 1 mEq $HCO_{3}^{-}$ equivalent).  
+
+<br/>
+
+### bosentan (suspension)
+
+* Starting dose: 1 mg/kg/dose q 12hrs per Cardiology/Pulmonology.  
+* Increase to a max of 2 mg/kg/dose q 12hrs.  
+* *Note*: must enroll patient to RAM program.  
+
+<br/>
+
+### bumetanide (Bumex&reg;)
+
+* Regular dosing: 0.05-0.1 mg/kg/dose IV q 24-48hrs
+* <span style="color:red;">[Add drip dosing]</span>
+
+<hr/>
+
+<br/><br/>
+{{< pagebreak >}}
+
+## C {#med-c}
+
+### caffeine citrate
+
+* Loading dose: 20 mg/kg IV/PO.
+* Maintenance dose: 5-10 mg/kg/dose IV/PO q 24hrs to start 24 hrs after the loading dose.
+
+<br/>
+
+### calcium carbonate  
+
+* Regular dosing: 20 mg/kg/day (elemental calcium) up to 80 mg/kg/day divided q 4hrs or q 6hrs.  
+* *Note*: 1 mL provides 100 mg of elemental calcium.  
+
+<br/>
+
+### calcium gluconate 10%  
+
+* Acute dosing: 100-200 mg/kg/dose Slow IV Push.  
+* Maintenance dosing: 200-800 mg/kg/day IV/PO divided q 6hrs.  
+* *Note*: 100 mg calcium gluconate = 9 mg elemental calcium.  
+
+<br/>
+
+### calcium chloride 10%  
+
+* Regular dosing: 10-20 mg/kg/dose PO q 4-6hrs.  
+* *Note*: 1mL provides 27.2 mg elemental calcium, or 1.4 mEq $Ca^{2+}$ and 1.4 mEq $Cl^{-}$
+
+<br/>
+
+### calcitriol (Rocaltrol&reg;)  
+
+*Synthetic vitamin D analog*  
+
+* Regular dosing: 0.01 microgram/kg PO q 24hrs.  
+
+<br>
+
+### captopril  
+
+* Regular dosing: 0.1-0.4 mg/kg/dose PO q 6-24hrs (max dose 2 mg/kg/day).  
+* *Note*: ACE inhibitor can increase K or worsen acidosis.  
+
+<br/>
+
+### carbamazepine (Tegretol&reg;)
+
+* Regular dosing: 5-10 mg/kg/day PO divided q 12-24hrs (max dose 20 mg/kg/day).  
+
+<br/>
+
+### carnitine (L carnitine)
+
+* Regular dosing for PO: 150-200 mg/k/day PO divided q 4-6hrs.  
+* Regular dosing for IV: 50 mg/kg/day IV divided q 4-6hrs or 24-hr infusion.  
+
+<br/>
+
+### cefazolin (Ancef&reg;)
+
+* ≤ 2 kg  
+    * ≤ 7 days: 50 mg/kg/day divided q 12hrs.  
+    * 8-28 days: 75 mg/kg/day divided q 8hrs.  
+    * 29-60 days: 100-150 mg/kg/day divided q 6-8hrs.  
+* \> 2 kg  
+    * ≤ 7 days: 100 mg/kg/day divided q 12hrs.  
+    * 8-28 days: 150 mg/kg/day divided q 8hrs.  
+    * 29-60 days: 100-150 mg/kg/day divided q 6-8hrs.  
+    
+<br/>
+
+### cefepime
+
+* GA < 36 weeks (≤ 2 kg)  
+    * ≤ 28 days: 30 mg/kg/dose IV q 12hrs.  
+    * \> 28 days: 50 mg/kg/dose IV q 8hrs.  
+* GA ≥ 36 weeks (> 2 kg)  
+    * ≤ 28 days: 50 mg/kg/dose IV q 12hrs.  
+    * \> 28 days: 50 mg/kg/dose IV q 8hrs.  
+    
+<br/>
+
+### cefotaxime
+
+* GA < 32 weeks  
+    * < 14 days: 100 mg/kg/day divided q 12hrs.  
+    * ≥ 14 days: 150 mg/kg/day divided q 8hrs.  
+* GA ≥ 32 weeks  
+    * ≤ 7 days: 100 mg/kg/day divided q 12hrs.  
+    * \> 7 days: 150 mg/kg/day divided q 8hrs.  
+* Meningitis  
+    * ≤ 7 days: 150 mg/kg/day divided q 8-12hrs.  
+    * \> 7 days: 200 mg/kg/day divided q 6-8hrs.  
+    
+<br/>
+
+### cefoxitin  
+
+* Regular dosing: 90-100mg/kg/day divided q 8hrs.  
+
+<br/>
+
+### ceftazidime (Fortaz&reg;)
+
+* GA < 32 weeks  
+    * < 14 days: 100 mg/kg/day divided q 12hrs.  
+    * ≥ 14 days: 150 mg/kg/day divided q 8hrs.  
+* GA ≥ 32 weeks  
+    * ≤ 7 days: 100 mg/kg/day divided q 12hrs.  
+    * \> 7 days: 150 mg/kg/day divided q 8hrs.  
+* Meningitis  
+    * ≤ 7 days: 100-150 mg/kg/day divided q 8-12hrs.  
+    * \> 7 days: 150 mg/kg/day divided q 8hrs.  
+    
+<br/>
+
+### ceftriaxone (Rocephin&reg;)
+
+* Regular dosing for Gonococcus: 25-50 mg/kg/dose q 24hrs.  
+    * 7 days for disseminated infection.  
+    * 10-14 days for meningitis.  
+* Regular dosing Non-Gonococcus:  
+    * < 14 days: 50 mg/kg/dose once daily.
+    * ≥ 14 days: 100 mg/kg for one dose, followed by 80-100 mg/kg/dose once daily.  
+* *Note*: Prefer use of cefotaxime: Not to be given within 48 h of IV $Ca^{2+}$ administration in infants < 28 days of age. Must flush lines thoroughly between infusions. May be fatal. Cautious use in infants with hyperbilirubinemia.
+
+<br/>
+
+### clindamycin
+
+* < 1 kg  
+    * ≤14 days: 5 mg/kg/dose q 12hrs.  
+    * 15-28 days: 5 mg/kg/dose q 8hrs.  
+* 1-2 kg  
+    * ≤7 days: 5 mg/kg/dose q 12hrs.  
+    * 8-28 days: 5 mg/kg/dose q 8hrs.  
+* \> 2 kg  
+    * ≤ 7 days: 5 mg/kg/dose q 8hrs.  
+    * 8-28 days: 5 mg/kg/dose q 6hrs.  
+
+<br/>
+
+### clonazepam (Klonopin&reg;)
+
+* Regular dosing: 0.01-0.03 mg/kg/day PO divided q 6-8hrs.  
+
+<br/>
+
+### clonidine
+
+* Regular dosing: 0.75 microgram/kg/dose PO q 3hrs.
+* *Note*: Use with diluted oral morphine for narcotic withdrawal.  
+
+<br/>
+
+### chlorothiazide (Diuril&reg;)
+
+* Regular dosing: 20-30 mg/kg/day IV/PO divided q 12hrs (max dose 40 mg/kg/day).  
+
+<br/>
+
+### cholestyramine
+
+* Regularing dosing for diarrhea: 2 g PO q 3-6hrs with feeds (max dose 4 g PO q 6hrs with feeds).  
+
+<br/>
+
+### cod liver oil
+
+* < 1.5kg  
+    * 0.5mL PO q 12hrs.
+* ≥ 1.5kg  
+    * 1mL PO q 12 hrs.  
+    
+<br/>
+
+### cosyntropin
+
+* Regular dosing: 1 mcg (NOT per kg).
+* *Note*: other dosing regimen will be guided by Endocrine.  
+
+<br/>
+
+### Curosurf&reg; (poractant 80mg/mL)
+
+* Regular dosing:  
+    * Initial dose: 2.5ml/kg/dose (200mg/kg/dose).  
+    * Repeat dose: 1.25ml/kg/dose at 12-hr interval up to 2 additional doses (max total dose 5ml/kg).  
+
+<hr/>
+<br/><br/>{{< pagebreak>}}
+
+## D {#med-d}
+
+### daptomycin
+
+* Regular dosing: 4-6 mg/kg/dose IV q Day.  
+* *Note*: Need ID approval.  
+
+<br/>
+
+### desmopressin (DDAVP)
+* Regular dosing for nasal solution: 5-30 micrograms/day divided q 8-12hrs.  
+* Regular dosing for IV/SC: 2-4 mcg/day divided q 6hrs.  
+
+<br/>
+
+### dexamethasone (Decadron&reg;)
+
+* Regular dosing for tracheal/laryngeal edema: 0.25 mg/kg/dose IV q 8hrs for 3 doses.  
+* Regular dosing for BPD ([Doyle 2006](https://doi.org/10.1542/peds.2004-2843)):  
+    *10-day tapering dose*  
+    * 0.15mg/kg/day divided q 12hrs for 3 days, then  
+    * 0.10mg/kg/day divided q 12hrs for 3 days, then  
+    * 0.05mg/kg/day divided q 12hrs for 2 days, then  
+    * 0.02mg/kg/day divided q 12hrs for 2 days  
+    
+<br/>
+
+### diazepam (Valium&reg;)
+
+* Regular dosing: 0.2-0.5 mg/kg/dose IV.<span style="color:red;">[dosing interval]</span>
+
+<br/>
+
+### diazoxide (Proglycem&reg;)
+
+* Regular dosing for refractory hypoglycemia: 2-5 mg/kg/dose PO q 8hrs.  
+    * *Note*: Goal to start at higher dose and taper by the response.  
+    
+<br/>
+
+### diphenhydramine (Benadryl&reg;)
+
+* Regular dosing: 1 mg/kg/dose IV/PO q 6hrs.  
+
+<br/>
+
+### digoxin  
+
+* Administration strategy: give 1/2 dose Total Digitalizing Dose (TDD), then give 1/4 TDD in each of 2 subsequent doses at 6-12-hr intervals.  
+* TDD for GA < 37 weeks  
+    * 20-30 microgram/kg/dose PO, *or*  
+    * 15-25 microgram/kg/dose IV/IM.  
+* Maintenance dose for GA < 37 weeks  
+    * 5-7.5 microgram/kg/day PO divided q 12hrs, *or*  
+    * 4-6 microgram/kg/day IV divided q 12hrs.  
+* TDD for GA ≥ 37 weeks  
+    * 25-35 microgram/kg/dose PO, *or*  
+    * 20-30 microgram/kg/dose IV/IM.  
+* Maintenance dose for GA ≥ 37 weeks  
+    * 6-10 microgram/kg/day PO divided q 12hrs, *or*  
+    * 5-8 microgram/kg/day IV divided q 12hrs.  
+* *Note*: Adjust dose if renal dysfunction is present.  
+
+<br/>
+
+### dobutamine
+
+*Use Standard Concentration Infusions for drips*  
+
+* Regular dosing: 2.5-15 microgram/kg/min (max dose 20 microgram/kg/min).  
+* *NOTE*: NOT to be administered via UAC or arterial line.  
+
+<br/>
+
+### dopamine
+
+*Use Standard Concentration Infusions for drips*  
+
+* Regular dosing: 2.5-15 microgram/kg/min (max dose 20 microgram/kg/min).  
+* *NOTE*: NOT to be administered via UAC or arterial line.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## E {#med-e}
+
+### enealapril (Vasotec&reg;)
+
+* Regular dosing for hypertension: 5-10 microgram/kg/dose IV q 8-24hrs over 5 min.
+* Regular dosing for congestive heart failure: 0.1 mg/kg/day PO divded q 12-24hrs (max dose 0.43 mg/kg/day).
+    * Consult Cardiology for dosing co-management.
+    * *Note*: ACE inhibitor can increase $K^{+}$ and/or cause acidosis.  
+
+<br/>
+
+### enoxaparin (Lovenox&reg;)
+
+* Regular dosing for prophylaxis:  
+    * < 8 weeks of age: 0.75 mg/kg/dose SQ q 12hrs.
+    * ≥ 8 weeks of age: 0.5 mg/kg/dose SQ q 12hrs.
+* Regular dosing for treatment:  
+    * < 8 weeks of age: 1.5 mg/kg/dose SQ q 12hrs.
+    * ≥ 8 weeks of age: 1 mg/kg/dose SQ q 12hrs. 
+* Tips:
+    * Round dose up or down to th enearest 0.5mg so the volume conversion is easier for the pharmacy.  
+    * Order LMX-4 to be appplied to the site 30-60 min prior to injections.
+* Titration:
+    * By **anti-Xa** levels (0.5-1.5 IU/mL).  
+    * Check levels 4 hrs after a dose is given.
+    * Begin checking levels after the 3^rd^ day of treatment.  
+* Dosing adjustment table: 
+```{r lovenox, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
+library(kableExtra)
+library(tidyverse)
+
+table <- as.data.frame(read_csv(paste0(getwd(), "/lluch-formulary-tables/lovenox.csv")
+))
+
+table %>% knitr::kable(align = "l", caption = "Vanderbilt Enoxaparin (Lovenox&reg;) Dosage Titration Nomogram", booktabs = TRUE) %>% 
+    column_spec(1, width = "25%") %>% 
+    column_spec(2, width = "35%") %>%
+    column_spec(1:(ncol(table)-1), border_right = TRUE) %>% 
+    column_spec(1:ncol(table), background = "white")
+```
+
+<br/>
+
+### epinephrine
+
+*Use Standard Concentration Infusions for drips IV drip*
+
+* Regular dosing for resuscitation:  
+    * 0.1-0.3 mL/kg (0.1 mg/mL) IV.  
+    * 0.3-1 mL/kg (0.1 mg/mL) ETT with saline flush, *OR*  
+    * 0.1-0.3 mL/kg (1 mg/mL) ETT with saline flush.  
+* Starting dose for septic shock: 0.1-0.5 mcg/kg/min.  
+* Starting dose for cardiogenic shock: 0.02-0.08 mcg/kg/min.  
+
+
+### epoetin alfa (Epogen&reg;)
+
+* Regular dosing for anemia of prematurity:  
+    * ≤ 30 weeks GA or ≤ 1,250g: 200 units/kg SQ Mon/Wed/Fri to begin on DOL 5 for 18 doses.
+* *Note*:
+    * Order LMX-4 to be placed 30-60 minutes prior to injections.  
+    * At the time of order or within 7 days, start supplemental Fe to increase total Fe intake (including feeds) to 6 mg/kg/day while on Epogen&reg;.  
+    * If serum ferritin < 65 nanogram/mL, increase Fe to 8-10 mg/kg/day.  
+
+<br/>
+
+### erythromycin
+
+* Body weight < 1 kg:  
+    * ≤ 14 days of life: 10 mg/kg/dose PO q 12hrs. 
+    * 15-28 days: 10 mg/kg/dose PO q 8hrs.  
+* Body weight 1-2 kg:  
+    * ≤ 7 days: 10 mg/kg/dose PO q 12hrs.  
+    * 8-28 days: 10 mg/kg/dose PO q 8 hrs.  
+* Body weight > 2 kg:  
+    * ≤7 days: 10 mg/kg/dose PO q 12hrs.  
+    * 8-28 days: 10 mg/kg/dose PO q 8hrs.  
+* Regular dosing as prokinetics: 5-10 mg/kg/dose PO q 8hrs.  
+
+<br/>
+
+### esmolol
+
+*Use Standard Concentration Infusions for drips*
+
+* Regular dosing for SVT:  
+    * Loading dose: 100-500 microgram/kg IV over 1 minute, then  
+    * Maintenance dose: 200 microgram/kg/min IV. 
+    * *Note*:  
+        * May increase by 50 microgram/kg q 5-10min to a max dose of 1,000 microgram/kg/min. 
+        * Consult Cardiology for dosing co-management.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## F {#med-f}  
+
+### famotidine (Pepcid&reg;)
+
+* < 3 months of age: 0.5 mg/kg/dose PO/IV q Day.  
+* ≥ 3 months of age: 0.5 mg/kg/dose PO/IV q 12hrs.  
+* For TPN: 0.5 mg/kg/day (< 3 months of age) or 1 mg/kg/day (≥ 3 months of age).
+
+<br/>
+
+### fentanyl (Sublimaze&reg;)
+
+*Use Standard Concentration Infusions for drips*
+
+* Regular dosing for rapid sequence intubation: 0.5-2 microgram/kg/dose IV to administer slowly over 3 min (to lower risk of *Rigid Chest Syndrome*).
+* Pain management of non-intubated infants: 0.5-1 microgram/kg/dose IV to administer over 5 min.  
+* Pain management for intubated infants: 1-3 microgram/kg/dose IV to administer over 10 min.  
+* Regular dosing for IV drip: 1-3 microgram/kg/hr for long-term sedation.  
+
+<br/>
+
+### filgrastim (Neupogen&reg;)
+
+*This medication requires Hematology approvals*
+
+* Regular dosing for neutropenia: 5-10 microgram/kg/dose IV/SQ q Day for 3-5 days.
+    * May continue until WBC > 10,000/μL or ANC > 1,500/μL.  
+    * *Note*: If giving SQ injection, order LMX4 to be applied to the site 30-60 min prior to injection.
+
+<br/>
+
+### fluconazole (Diflucan&reg;)
+
+* Prophylaxis in ELBW infants: 3 mg/kg/dose IV q Tues/Fri (twice weekly) for 6 weeks (Lexicomp).  
+    * May discontinue fungal prophylaxis prior to completion of a 6-week course if IV lines are removed and the patient is extubated.  
+* Systemic candidiasis:  
+    * *First treatment option for infants who have not received fluconazole prophylaxis*.
+    * maintenance dose: 12 mg/kg/dose IV q 24hrs.  
+        * *Note*: Consider q24-48 hrs dosing intervals for ELBW infants < 8 days of life.  
+* Candidal meningitis:  
+    * Loading dose: 12 mg/kg/dose, followed by   
+    * Maintenance dose: 6-12 mg/kg/dose IV q 24hrs.
+    * Consult Infectious Disease specialist for co-management and total duration of treatment.
+* Persistent oral thrush:
+    * GA 26-29 weeks:
+        * PNA ≤ 14 days: Loading with 6 mg/kg/dose PO, followed by 3-6 mg/kg/dose q 72hrs, for 14 days, may change dosing interval to q 24hrs if continuing treatment > 14 days.  
+        * PNA > 14 days: Loading with 6 mg/kg/dose PO, followed by 3-6 mg/kg/dose q 24hrs.  
+    * GA >29 weeks:  
+        * Load 6 mg/kg/dose PO, followed by 3–6 mg/kg/dose q 24hrs.  
+
+<br/>
+
+### flumazenil
+
+* Starting dose for benzodiazepine antagonist: 0.01 mg/kg/ose IV over 15 sec (max dose 0.2mg).
+* may repeat q 60sec up to a cumulative dose of 0.05 mg/kg or 1mg, whichever is lower.  
+
+<br/>
+
+### fosphenytoin
+
+* Loading dose: 20 mg phenytoin equivalent/kg IV to administer over 10 min.  
+* Maintenance: 4-8 mg phenytoin equivalent/kg/day IV/IM divided q 8-12hrs (slow push).  
+
+<br/>
+
+### furosemide (Lasix&reg;)
+
+*Use Standard Concentration Infusions on VIP pages for drips*
+
+* Regular dosing for diuresis:
+    * PO: 1-4 mg/kg/day PO divided q 12-24hrs.  
+    * IV: 1-2 mg/kg/dose IV q 12hrs (≥ 29 weeks GA) or q 24hrs (< 29 weeks GA).  
+    * IV drip: Loading with 0.1mg/kg/dose IV followed by 0.1 mg/kg/hr (max dose 0.4 mg/kg/hr).
+* *Note*: Interaction between furosemide and ACE inhibitor may increase $K^{+}$ and/or acidosis. Remember that furosemide is also a PAGE agonist.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## G {#med-g}
+
+### ganciclovir
+
+* Regular dosing: 12 mg/kg/day IV divided q 12hrs. 
+    * *Note*: Preferred route: via a central line over 1 hr.  
+    
+<br/>
+
+### gentamicin
+
+*It is preferred for the empirical treatment of sepsis.*
+
+* Regular dosing for empiric coverage during sepsis evaluation:  
+    * GA ≤ 29 weeks:  
+        * ≤ 14 days: 5 mg/kg/dose q 48hrs.  
+        * 15-28 days: 5 mg/kg/dose q 36hrs.  
+        * ≥ 29 days: 5 mg/kg/dose q 24hrs.  
+    * GA 30–34 weeks:  
+        * ≤ 14 days: 5 mg/kg/dose q 36hrs.  
+        * ≥ 15 day: 5 mg/kg/dose q 24hrs.  
+    * GA ≥ 35 weeks:  
+        * ≤ 7 days: 4 mg/kg/dose q 24hrs.  
+        * ≥ 8 days: 5 mg/kg/dose q 24hrs.  
+* Regular dosing duirng therapeutic hyperthermia: 5 mg/kg/dose q 36hrs.  
+* Monitor levels:
+    * Peak: 5-10 microgram/mL is acceptable.  
+    * Trough:  
+        * After the second dose *for most infants* being treated > 48 hrs.
+        * After 24 hrs for infants with severe infections, asphyxia, PDA, or renal failure. If a 24-hr trough is done, choose the next doing interval as follows:
+        * 24-hr trough level ≤ 1: q 24hrs.  
+        * 24-hr trough level 1.1-2.3: q 36hrs.
+        * 24-hr trough level 2.4-3.2: q 48hrs.  
+        * *Note*: if level > 3: check level before next dose.  
+    * For gentamicin toxicity, give ticarcillin to deactivate gentamicin.  
+* *Note*:  
+    * AVOID use with other ototoixic/nephrotoxic medications.  
+    * DO NOT order levels if uncertain about continuing beyond 48hrs unless a 24-hr trough level is deemed clinically necessary.  
+    * Dosing for inhalational use is available [here](#med-ih).
+    
+<br/>
+
+### glucagon
+
+* Regular dosing for refractory hypoglycemia:  
+    * 0.2 mg/kg/dose IM/IV (max dose 1 mg, NOT 1 mg/kg).  
+* Regular dosing for IV drip:  
+    * Starting dose: 10-20 microgram/kg/hr (max dose 1mg/day).  
+    
+<br/>
+
+### glycopyrrolate (Robinul&reg;)
+
+* Regular dosing for oral secretions suppression:  
+    * 40-100 microgram/kg/dose PO q6-8hrs, or 4-10 microgram/kg/dose IV q3-4hrs.
+    * *Note*: only for infants > 1 month of age.  
+    
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## H {#med-h}
+
+### hyaluronidase 150 units/mL (Hylenex&reg;)
+
+* Regular dosing for IV infiltrations: 1 mL SQ or intradermal administered within 1 hr of extravasation for best results; may repeat in 30-60 min.
+    * Give undiluted. Divide into five separate 0.2 mL syringes and inject around the periphery of the extravasation site.  
+    * Use a 25 G or 26 G needle. Change needle position after each injection.  
+    * *Note*: NOT indicated for the treatment of extravasation of vasoconstrictive agents (dopamine, etc.).  
+    
+<br/>
+
+### hydralazine
+
+* Starting dose for hypertension: 
+    * 0.15-0.6 mg/kg/dose IV q 4hrs (max dose 2mg/dose q 6hrs). [[Ref]](https://doi.org/10.1007/s00467-019-04273-z)  
+    * 0.25-1 mg/kg/dose PO q 6-8hrs (max dose 7.5 mg/kg/day)
+    * *Note*: Often given PRN for systolic blood pressure above a pre-determined threshold.  
+
+<br/>
+
+### hydrocortisone (Solu-Cortef&reg;)
+
+* Hypotension suspected to be due to adrenal insufficiency:  
+    * Test dose: 1mg/kg. 
+        * *No further dosing if no increase in BP (or inotropes weaning) 2-4 hrs following administration*.  
+        * If evidence of increase in BP (or inotropes weaning) within 2-4 hrs:
+            * ≤ 34 weeks GA: 0.5 mg/kg/dose q 12hrs.
+            * \> 34 weeks GA: 0.5 mg/kg/dose q 6-8hrs. [[Ref]](https://doi.org/10.1016/j.jpeds.2016.04.005)  
+* Regular dosing for adrenal insufficiency:  
+    * < 37 weeks GA: Loading with 1 mg/kg/dose IV, followed by maintenance dose 0.5 mg/kg/dose IV q 12hrs.  
+    * ≥ 37 weeks GA: Loading with 1 mg/kg/dose IV, followed by maintenance dose 0.5 mg/kg/dose IV q 6-8hrs.  
+* Regular dosing for hypoglycemia: 5-10 mg/kg/day IV/IM/PO divided q 12hrs.  
+* Stress dosing: 10 mg/kg/day IV divided q 6-8hrs.<span style="color:red;">[Need to verify]</span>  
+* Adrenal crisis: 50 mg/m^2^/day IV divided q6-8hrs until stable, followed by 0.5-0.75 mg/kg/day IV/PO divided q 8hrs. Once stable, may proceed with weaning (0.5 mg/kg/dose q 12hrs for 12 days, followed by 0.25 mg/kg/dose q 12hrs for 3 days).<span style="color:red;">[Need to verify]</span>   
+
+* Experimental dosing for BPD [[NCT01353313]](https://clinicaltrials.gov/ct2/show/NCT01353313): 
+    * 4 mg/kg/day divided q 6hrs for 2 days, then  
+    * 2 mg/kg/day divided q 6hrs for 3 days, then  
+    * 1 mg/kg/day divided q 12hrs for 3 days, then  
+    * 0.5 mg/kg/day q 24hrs for 2 days.  
+
+<br/>
+
+### hydroxyzine (Atarax&reg;)
+
+* Up to 44 weeks GA: 2 mg/kg/day PO divided q 6hrs.<span style="color:red;">[Need to verify]</span>  
+* ≥ 44 weeks GA: 50 mg/day PO divided q 6hrs (NOT per kg).  
+* *Note*: Use injectable form for PO dosing.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## I {#med-i}
+
+### iLEX (petroleum polyermized)
+
+* Apply a thick layer topically to skin breakdown in the diaper area or around the stoma site. May leave in place ≥ 24 hrs.  
+* Order to remove with mineral oil ONLY.  
+
+<br/>
+
+### Imipenem
+
+*Requires ID approval*  
+
+* Regular dosing for sepsis:  
+    * < 1.2 kg: 20mg/kg/dose IV q 18-24hrs.  
+    * 1.2-1.5 kg: 20 mg/kg/dose IV q 12hrs.  
+    * \> 1.5 kg: 25 mg/kg/dose IV q 12hrs (≤ 1 week of life), or 25 mg/kg/dose IV q 8hrs (> 1 week of life). <span style="color:red;">[Need to verify]</span>   
+* Regular doing for maningitis: 25 mg/kg/ dose IV q 6hrs.  
+
+<br/>
+
+### indomethacin (Indocin)  
+
+*Use preprinted Order Sets*  
+
+* Dosing for IVH prophylaxis: 0.2 mg/kg/dose for 1 dose administered within 6 hrs of age.  
+    * ONLY for infants born < 27 weeks GA. 
+    * Check with the attending physician before ordering.  
+* Dosing for [PDA closure](#pda):  0.2 mg/kg/dose q 12hs for 4 doses, may repeat for 2 more doses within 24 hrs of last dose.  
+    * Echocardiogram or CCHD screening prior to PDA closure is required to rule out ductal-dependent CHD or pulmonary hypertension, as in both cases, indomethacin would be contraindicated.  
+    * Refer to [Patent Ductus Arteriosus](#pda) for details and protocol.  
+
+<br/>
+
+### insulin  
+
+* Regular dosing for hyperglycemia: 0.02-0.1 unit/kg/hr.  
+\begin{equation}
+insulin\ in\ 40 mL\ D5W\ (unit)\ =\ 2\ (weight\ in\ kg)
+\end{equation}
+    * With this preparation, a rate of 0.4 mL/h delivers 0.02 unit/kg/hr of insulin.  
+    * Prime all tubing with insulin for at least 30 min before delivering.  
+* Refer to [Hyperglycemia](#hyperglycemia) for details.  
+<br/>
+* Regular dosing for hyperkalemia: 
+    * Bolus: 0.1 unit/kg in 0.5 g/kg glucose to infuse over 15-20 min.  
+        * 0.5 grams glucose: 5 mL D10W or 2 mL D25W.  
+    * IV drip: 0.1 unit/kg in 1 g/kg/hr glucose.  
+        * 1 gram glucose: 10 mL D10W or 4 mL D25W.  
+* *Note*: Discontinue when $K^{+}$ > 7 mEq/L.  
+
+<br/>
+
+### iron (oral)  
+
+* Regular dosing for infants born ≥ 37 weeks GA: 1 mg/kg/day.  
+* Regular dosing for infants born < 37 weeks GA: 2-4 mg/kg/day.  
+* Dosing while on epoetin (Epogen^%reg;^): 6 mg/kg/day.  
+* *Note*:  
+    * Infants on iron-fortified formula are receiving around 2 mg/kg/day formula.  
+    * Hold iron supplementation for 1 week after a PRBC transfusion.  
+    * Fer-In-Sol&reg;: 15mg/mL elemental iron.  
+    * Poly-Vi-Sol&reg;: 10mg/mL elemental iron.  
+
+<br/>
+
+### iron dextran (IV)  
+
+* Regular dosing: 1 mg/kg/ IV while on epoetin (Epogen&reg;) to infuse over 2 hrs.  Follow iron status (Ferritin, transferrin, TIBC) q 2-3 weeks.  
+
+<br/>
+
+### IVIG  
+
+* Regular dosing for hemolytic disease: 1 g/kg/dose IV to infuse over 4 hrs (periphearl or central).  
+* *Note*: Delay immunizations with life-virus vaccines until > 3 months after IVIG administration (i.e. Rotavirus, MMR, Varicella).  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## K {#med-k}
+
+### kayexalate (sodium polystyrene)  
+
+* Regular dosing for hyperkalemia: 1 g/kg/dose diluted in sterile water (0.5 g/mL), use as retention enema q 2-4hrs.  
+    * Minimum retention of 30 minutes.  
+    * Should lower K+ levels by 1 mEq/L.  
+    * *Note*: DO NOT use it on patients with NEC or bowel obstruction.  
+    * *Note*: Use with caution in VLBW infants (prone to bowel hypomobility).  
+    
+<br/>
+
+### ketamine   
+
+*Use Standard Concentration Infusions for drips*  
+
+* Regular dosing for bolus: 0.5-2 mg/kg/dose IV, 3-7 mg/kg/dose IM.  
+* Regular dosing for IV drip: 1 mg/kg/hr (max dose 2 mg/kg/hr).  
+    * *Note*: Needs attending physician approval for use  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## L {#med-l}
+
+### Lansoprazole (Prevacid&reg;)  
+
+* Regular dosing for acid suppression: 0.5-1.6 mg/kg/dose PO q 24hrs (max dose 7.5mg PO q 24hrs [NOT mg/kg]).  
+
+
+<br/>
+
+### levetiracetam (Keppra&reg;)  
+
+* Regular dosing for seizure: loading dose 25 mg/kg/dose IV; maintenance dose 10mg/kg/dose q 12hrs IV/PO.  
+    * *Note*: can be given up to 60 mg/kg/day IV/PO. Consult Pediatric Neurology for co-management.  
+
+<br/>
+
+### lidocaine cream 4% (LMX-4)  
+
+* Regular dosing for topical analgesia: Massage into 1-3 cm of skin, then apply a drop of cream to the area, leave for 30-60 min.  
+    * *Note*: DO NOT use in VLBW infants until 5 days of age. DO NOT apply to broken skin. Use sparingly.  
+    * May apply to groin and penis, 60 minutes prior to circumcision.  
+    
+<br/>
+
+### linezolid  
+
+*Need Pediatric ID approval*  
+
+* Regular dosing:  
+    * < GA 34 weeks:  
+        * ≤ 7 days: 10 mg/kg/dose q 12hrs.  
+        * > 7 days: 10 mg/kg/dose q 8hrs.  
+    * ≥ GA 34 weeks:  
+        * 10 mg/kg/dose q 8hrs.  
+
+<br/>
+
+### lorazepam (Ativan)  
+
+* Regular dosing for sedation: 0.05-0.1 mg/kg/dose IV q 2-3hrs, or 0.025-0.2 mg/kg/hr IV drip.   
+* Regular dosing for seizures: 0.1 mg/kg/dose.  
+    * *Note*: DO NOT give via UAC. Use with great caution in preterm infants due to the presence of benzyl alcohol.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## M {#med-m}
+
+### magnesium chloride  
+
+* Regular dosing for hypochloremia: 2-4 mEq/kg/day PO divided q 6-12hrs.
+
+<br/>
+
+### magnesium sulfate
+
+* Regular dosing for hypomagnesemia: 0.2-0.4 mEq/kg/dose IV q 4-6hrs for 3-4 doses.
+* Infants during the rewarming phase of therapeutic hypothermia is at risk for hypomagensemia.  
+* Need to monitor $Mg^{2+}$, $Ca^{2+}$, and $iCa$ levels closely.  
+
+<br/>
+
+### meperidine (Demerol&reg;)
+
+* Regular dosing: 1 mg/kg/dose IV/IM prior to bronchoscopy.  
+
+<br/>
+
+### meropenem
+
+*Requires ID approval*  
+
+* GA < 32 weeks:  
+    * < 14 days: 20 mg/kg/dose IV q 12hrs.  
+    * ≥ 14 days: 20 mg/kg/dose IV q 8hrs.  
+* GA ≥ 32 weeks:  
+    * < 14 days: 20 mg/kg/dose IV q 8hrs.  
+    * ≥ 14 days: 30 mg/kg/dose IV q 8hrs.  
+* Meningitis: 40 mg/kg/dose IV q 8hrs.  
+
+<br/>
+
+### methadone  
+
+* Regular dosing for opioid withdrawal: 0.05-0.2 mg/kg/dose PO q 12-24hrs.  
+* *Note*: Taper by 10-20% q week; adjust the schedule based on symptoms.  
+
+<br/>
+
+### metoclopramide (Reglan)
+
+* Regular dosing for slow GI motility: 0.1-0.2 mg/kg/dose IV/PO q 6hrs to administer 30 min prior to feeds.  
+* *Note*: Treatment for > 12 weeks should be avoided if possible. *Black Box Warning* due to side effect of tardive dyskinesia, which is with no known treatment.  
+
+<br/>
+
+### metronidazole (Flagyl)  
+
+* GA ≤ 34 weeks: 7.5 mg/kg/dose q 12hrs.  
+* GA 34-40 weeks: 7.5 mg/kg/dose q 8hrs.  
+* GA > 40 weeks: 10 mg/kg/dose q 8hrs.  
+
+<br/>
+
+### micafungin  
+
+*Requires ID approval*  
+
+* Regular dosing: 10 mg/kg/dose IV q Day.  
+
+<br/>
+
+### midazolam (Versed)  
+
+*Use Standard Concentrations Infusions for drips*  
+
+* Regular dosing for sedation (scheduled/PRN dosing): 0.1-0.2 mg/kg/dose IV q2-4hrs PRN agitation. * Regular dosing for sedation (continuous infusion): 30-60 microgram/kg/hr IV infusion.  
+* *Note*: Use very cautiously in ELBW infants, as midazolam may cause seizure and may have long-term negative neurodevelopment impact.  
+
+<br/>
+
+### milrinone  
+
+*Use Standard Concentrations Infusions for drips*  
+
+* Regular dosing: 0.375-0.75 microgram/kg/min.  
+
+<br/>
+
+### miraLAX&reg;  
+
+* Regular dosing for constipation: start with 0.5 g/kg/day. May increase to 1 g/kg/day.  
+* *Note*: Make sure to provide sufficiency fluid.  
+* In case of constipation, consider trialing pear or prune juice first: 0.5-1 mL PO q 6-12hrs.  
+
+<br/>
+
+### morphine sulfate  
+
+*Use Standard Concentrations Infusions for drips*  
+
+* Regular dosing for analgesia/sedation (scheduled/PRN dosing): 0.05-0.1 mg/kg/dose IV/SQ q 4-6hrs PRN pain.  
+* Regular dosing for analgesia/sedation (continuous infusion): 5-40 microgram/kg/hr.  
+
+<br/>
+
+### morphine 2mg/mL (oral)
+
+* Regular dosing for analgesia: 0.2-0.6 mg/kg/dose PO q 4-6hrs PRN pain.  
+* For Neonatal Abstinence Syndrome:  
+```{r morphine-nas, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%"}
+library(kableExtra)
+library(tidyverse)
+
+table <- as.data.frame(read_csv(paste0(getwd(), "/lluch-formulary-tables/morphine-nas.csv")))
+
+table %>% knitr::kable(align = "l", caption = "Morphine Dosing According to Finnegan Score") %>% 
+  column_spec(1:(ncol(table)-1), border_right = TRUE) %>% 
+  column_spec(1:ncol(table), background = "white") %>%
+    column_spec(1, width = "25%") %>%
+    column_spec(2, width = "50%")
+``` 
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## N {#med-n}
+
+### nafcillin  
+
+* GA ≤ 34 weeks:  
+    * ≤ 7 days: 50 mg/kg/day divided q 12hrs.  
+    * 8–28 days: 75 mg/kg/day divided q 8hrs.  
+    * ≥ 29 days: 150 mg/kg/day divided q 6hrs (max dose 12 g/day).  
+* GA >34 weeks:  
+    * ≤ 7 days: 75 mg/kg/day divided q 8hrs.  
+    * 8-28 days: 100 mg/kg/day divided q 6hrs.  
+    * ≥ 29 days: 150 mg/kg/day divided q 6hrs (max dose 12 g/day).  
+    
+<br/>
+
+### naloxone (Narcan)  
+
+* Regular dosing for reversal of opioid overdose: 0.1 mg/kg IV/IM/ETT q 20-60min.  
+
+<br/>
+
+### nitroprusside (Nipride)  
+
+*Use Standard Concentration Infusions for drips IV Drip*  
+
+* Regular dosing for hypertension: 0.3-6 microgram/kg/min IV infusion.  
+
+<br/>
+
+### norepinephrine  
+
+*Use Standard Concentration Infusions for drips IV Drip*  
+
+* Starting dose for hypotension: 0.05-0.1 microgram/kg/min, titrate as needed to maintain Bp at goal range. 
+* *Note*: DO NOT give via UAC or other arterial line.
+
+<br/>
+
+### nystatin  
+
+* Regular dosing for oral candidiasis: 100,000-400,000 units divided equally for each side of mounth q 6hrs. Give after feeds.  
+* Regular dosing for skin candidiasis: Topical ointment or cream to the affected area q 6hrs.  
+* *Note*: continue oral or topical application for 3 days after resolution of fungal infection.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## O {#med-o}
+
+### octreotide  
+
+* Regular dosing for chylothorax: 1-7 microgram/kg/hr IV drip or in TPN.  
+* Regular dosing for hyperinsulinemia (scheduled dosing): 10 microgram/kg/day IV/SQ divided q 6hrs. Administer 1 hr after meals. May icnrease the dose up to 40 microgram/kg/day.  
+* Regular dosing for hyperinsulinemia (continuous infusion): 1 microgram/kg/hr (may include in TPN).  
+
+<br/>
+
+### omegaven  
+
+* Start dosing for cholestasis: 0.5 g/kg/day for serum direct bilirubin level > 5 mg/dL. Increase by 0.25-0.5 g/kg/day to a goal of 1 g/kg/day. May use 1.5 g/kg/day if growth is suboptimal.  
+* *Note*: 
+    * In infants with short bowel syndrome, may start omegaven if serum direct bilirubin level is > 2 mg/dL. 
+    * Administer to infants who are anticipated to require TPN for more than 2 weeks.  
+    * Consider discontnuation if serum direct blirubin is < 2 mg/dL and the infant is not at risk for recurrence anymore (off TPN and tolerating feeds).  
+
+<br/>
+
+### oseltamivir (Tamiflu&reg;)  
+
+*Begin treatment within 48 hrs of symptoms*  
+
+* GA < 38 weeks: 1 mg/kg/dose q 12hrs PO for 5 days.  
+* GA 38-40 weeks: 1.5 mg/kg/dose q 12hrs PO for 5 days.  
+* GA > 40 weeks: 3 mg/kg/dose q 12hrs PO for 5 days.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## P {#med-p}
+
+### palivizumab (Synagis&reg;)  
+
+* Regular dosing for RSV prophylaxis: 15 mg/kg IM q month during the RSV season.
+* *Note*: Order LMX-4 to be applied to the injection site 30-60min prior to injection.  
+
+<br/>
+
+### pantoprazole  
+
+* Regular dosing for acide suppression: 1-1.2 mg/kg/day IV q 24hrs.  
+
+<br/>
+
+### penicillin G  
+
+*Crystalline Pencillin G IV/IM*  
+
+* Regular dosing for Gram(+) bacterial infection: 100,000-150,000 unit/kg/day IV/IM divided q 8-12hrs.  
+* Regular dosing for GBS bacteremia (same for all GA) *[2019 AAP Clinical Report](https://doi.org/10.1542/peds.2019-1881 ){target="_blank"}*:    
+    * ≤ 7 days: 50,000 U/kg/dose q 12hrs IV.  
+    * \> 7 days: 50,000 U/kg/dose q 8hrs IV.  
+* Regular dosing for GBS meningitis (same for all GA): *[2019 AAP Clinical Report](https://doi.org/10.1542/peds.2019-1881 ){target="_blank"}*:    
+    * ≤ 7 days: 150,000 U/kg/dose q 8hrs IV.  
+    * \> 7 days: 125,000 U/kg/dose q 6hrs IV.  
+* Regular dosing for congenital syphilis: 50,000 unit/kg/dose q 12hrs in the first 7 days of life, followed by 50,000 unit/kg/dose q 8hrs after 7 days of life, for a total of 10 days.
+
+*Procaine Penicillin G IM only*  
+
+* Regular dosing for Gram-positive baterial infection: 50,000 unit/kg/day q 24hrs (max dose 1.2 million unit/kg/day).  
+* *Note*: Order LMX-4 to be applied to the injection site 30-60min prior to injection.  
+
+<br/>
+
+### phenobarbital  
+
+* Starting dose for seizure: loading dose 10-20 mg/kg/ IV slow push, followed by maintenance dose 3-8 mg/kg/day IV/PO divided q 12hrs.  
+* Regular dosing for HIDA scan: 5 mg;kg;day for 5 days. NO loading dose.  
+* Regalar dosing for drug withdrawal: Refer to [Neonatal Drug Withdrawal](#drug-withdrawal).  
+
+<br/>
+
+### phenylephrine (Neo-Synephrine 0.25%)  
+
+* Regular dosing for nasal congestion: One drop each naris q 3hrs for tiral treatment only (no longer than q 48-72hrs).  
+
+<br/>
+
+### phosphate  
+
+*Use Standard Concentration Infusions for drips*  
+
+* Regular dosing for hypophosphotemia (continuous infusion): Provides 10 mg/kg/ phosphorus and 0.43 mEq/kg $Na^{+}$ over a 5-hr infusion.  
+* Regular dosing for hypophosphotemia (oral): PhosNaK 25-40 mg/kg/day divdided q 6-8hrs.  
+    * *Note*: 25 mg PhosNaK provides 0.71 mEq $K^{+}$ and 0.71 meQ $Na^{+}$.  
+    * Consult dietitian for co-management.  
+
+<br/>
+
+### phytonadione (vitamin K)  
+
+* Regular dosing for vitamin K deficiency prophylaxis:  
+    * ≥ 1 kg: 1 mg IM.  
+    * < 1 kg: 0.5 mg IM.  
+    * *Note*: To be given within 4 hrs of life.  
+
+<br/>
+
+### piperacillin-tazobactam (Zosyn&reg;)  
+
+* GA ≤ 30 weeks: 100 mg/kg/dose q 8hrs.  
+* GA > 30 weeks: 80 mg/kg/dose q 6hrs.  
+* *Note*: Dosing based on piperacillin, with a factor of 1.125 for total dose. For example, 100 mg piperacillin is equivalent to 112.5 mg piperacillin-tazobactam.  
+
+<br/>
+
+### polycitra  
+
+* Regular dosing for oral replacement: 1mEq/kg/dose PO q 6hrs.  
+    * 1 mL provides 1 mEq $K^{+}$, 2 mEq $HCO_{3}^{-}$ equivalent, and 1 mEq $Na^{+}$.  
+
+<br/>
+
+### polycitra $\mathbf{K^{+}}$  
+
+* Regular dosing for oral replacement: 1mEq/kg/dose PO q 6hrs.  
+    * 1 mL provides 2 mEq $K^{+}$, 2 mEq $HCO_{3}^{-}$ equivalent, and NO $Na^{+}$.  
+
+<br/>
+
+### Poly-Vi-Sol&reg; with Iron  
+
+* For preterm or anemic term infants discharged on breastmilk: 1 mL PO divided q 12-24hrs.  
+* For preterm infants discharged on the post-discharge formula: 0.5 mL PO q 24hrs (if birth weight < 2 kg).  
+* *Note*:  Poly-Vi-Sol with iron contains 10 mg elemental iron per 1 mL.
+
+<br/>
+
+### potassium acetate  
+
+* Regularing dosing for oral replacement: 1-3 mEq/kg/day PO divided q 12hrs.  
+    * 1 mL provides 2 mEq $K^{+}$, 2 mEq acetate.  
+
+<br/>
+
+### potassium chloride  
+
+*Use Standard Concentration Infusions for drips*
+
+* If $K^{+}$ < 2.7 mEq/L, administer 0.3 mEq/kg/hr for 4 hrs, or a total dose of 1.2 mEq/kg over 4 hrs.  
+    * With a standard concentration of 0.2 mEq/mL in water, this amount is equivalent to 6 mL/kg.  
+    * *Note*:  If administered peripherally, infuse together with other IV fluids.  
+* Regular dosing for oral replacement: 1-3 mEq/kg/day PO divided q 12hrs. Advance as needed.  
+    * 1 mL provides 2 mEq $K^{+}$, 2 mEq $Cl^{-}$.  
+
+<br/>
+
+### prednisone  
+
+* Regular dosing for airway reactivity: 0.5 mg/kg/dose PO q 6hrs (max dose 3 mg/kg/day).  
+* Regularing dosing for intractable hypoglycemia: 2-5 mg/kg/day PO divided q 6hrs.  
+
+<br/>
+
+### propranolol  
+
+* Starting dose for cardiac indications (IV): 0.01 mg/kg/dose IV q 6-8hrs PRN based on cardiac parameters. Increase slowly to a max dose of 0.15 mg/kg/dose IV.  
+* Starting dose for cardiac indications (PO): 0.75-1 mg/kg/day PO divided q6-8hrs (max dose 5 mg/kg/day).  
+* Regular dosing for hemangioma: 0.5-1 mg/kg/day divdided q 8hrs, advance slowly over 3-5 days by 0.5 mg/kg/day to a target of 1-3 mg/kg/day. Adminiser with feeds.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## R {#med-q}
+
+### remodulin IV  
+
+*Cardiologist only to order; please coordinate with the pharmacy and pediatric cardiology/pediatric pulmonary hypertension team for order and titration table*
+
+<br/>
+
+### rifampin  
+
+* Regular dosing for synergy: 5-20 mg/kg/day IV divdied q 12hrs.
+* *Note*: use with vancomycin or aminoglycsides for persistet *staphylococcus* infection.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## S {#med-s}
+
+### sildenafil (Revatio&reg;)  
+
+* Regular dosing for PPHN: 0.5 mg/kg/dose PO q 6-8hrs. Increase by 0.5 mg/kg q 2-3days up to 2 mg/kg/dose.  
+* Regular dosing for IV drip: Loading dose 0.4mg/kg over 3 hrs, followed by maintenance dose 0.067 mg/kg/hr (1.6 mg/kg/day) or 0.5 mg/kg/dose IV q 8hrs over 1-2 hrs (1.5 mg/kg/day). <span style="color:red;">[Need to verify]</span>  
+* *Note*: when converting to oral dose, use IV:PO of 1:2 ratio for conversion: For example, 0.5 mg/kg/dose IV equals 1 mg/kg/dose PO.  
+
+<br/>
+
+### sodium acetate  
+
+* Regular dosing for metabolic acidosis: May order 0.45% (77mEq/L) or 0.9% (154 mEq/L) $Na^{+} Acetate$ with heparin 1 unit/mL to run in arterial line as an alternative to 0.45% or 0.9% $NaCl$ (normal saline) in cases of metabolic acidosis. May also write order as 77 mEq/L $Na^{+} Acetate$ in sterile water with heparin 2 unit/mL to run at 0.5 mL/hr.  
+
+<br/>
+
+### sodium bicarbonate 4.2%  
+
+* Regular dosing for metabolic acidosis: 1-2 mEq/kg IV run over 10-60 min (or slower).  
+* *Note*: Premixed 4.2% solution provides 1 mEq of $NaHCO^{-}_{3}$ in 2 mL. Check with the attending physician or a senior clinician before ordering.  
+
+<br/>
+
+### sodium chloride 14.6% IV for PO  
+
+* Starting dose for hyponatremia: 2 mEq/kg/dose PO divided q 12hrs.  
+* *Note*: 1 mL IV pvoides 2.5 mEq $Na^{+}$ and 2.5mEq $Cl^{-}$.
+
+<br/>
+
+### spironolactone (Aldactone)  
+
+* Starting dose for hyponatremia: 1-3 mg/kg/day PO divided q 12-24hrs.  
+
+<br/>
+
+### sucralfate (Carafate)  
+
+* Regular dosing for GI bleeding: 40-80 mg/kg/day PO divided q 6hrs. May also be used for topical applications.  
+
+<br/>
+
+### sulfamethoxazol-trimethoprim (Bactrim)
+
+* Regular dosing for infection: 6-10 mg/kg/day IV/PO divided q 12hrs for mild-to-moderate infection; or 15-20 mg/kg/day IV divided q 6-8hrs for severe infections.  
+* *Note*: Avoid administering to infants < 30 days of life, as it may worsen hyperbilirubinemia.
+
+<br/>
+
+### sucrose 24% (Sweet-Ease)  
+
+* Regular dosing for analgesia: 0.2 mL/dose PO. Administer 2 doses before a painful proceudre, repeat based on weight:  
+    * < 1.5 kg: may repeat up to 3 doses.  
+    * 1.5-2.5 kg: may repeat up to 5 doses.  
+    * \> 2.5 kg: may repeat up to 10 doses.  
+* *Note*: should administer 2-3 in prior to a painful procedure. Obligatory for circumcision.  
+
+<br/>
+
+### simethicone (Mylicon)  
+
+* Regular dosing for excessive gas: 0.3 mL PO q 3hrs.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## T {#med-t}
+
+### theophylline  
+
+* Regular dosing for bronchodilation: loading dose 4-6 mg/kg IV/PO, followed by maintenance dose 2 mg/kg/dose IV/PO q 8-12hrs. 
+* *Note*: Narrow therapeutic index. Normal therapeutic range: 10-20 mg/L. As levels exceed 15 mg/L, the frequency of side effects increases.  
+
+<br/>
+
+### tobramycin  
+
+* GA < 30 weeks:  
+    * ≤ 14 days: 5 mg/kg/dose q48hr.  
+    * \> 14 days: 5 mg/kg/dose q36hr.  
+* GA 30-34 weeks:  
+    * ≤ 10 days:4.5 mg/kg/dose q36hr.  
+    * \> 10 days: 5 mg/kg/dose q24hr.  
+* GA ≥ 35 weeks:  
+    * ≤ 7 days: 4 mg/kg/dose q24hr.  
+    * \> 7 days: 5 mg/kg/dose q24h.  
+* Obtain levels after the 2^nd^ dose, prior to the 3^rd^ dose.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## U {#med-u}
+
+### ursodiol (Actigall, URSO)
+
+* Regular dosing for biliary atresia: 10-15 mg/kg/dose PO q 24hrs.  
+* Regular dosing for TPN-induced cholestasis: 20-45 mg/kg/day PO divided q 8hrs.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## V {#med-v}
+
+### valganciclovir
+
+* Regular dosing for congenital CMV:  
+    * GA ≥ 32 weeks and ≥ 1.8 kg: 16 mg/kg/dose PO q 12hrs for 6 months.  
+
+<br/>
+
+### valproic acid (Depakene&reg;)
+
+* Regular dosing: 20 mg/kg/day PO divided q 8-12hrs.  
+
+<br/>
+
+### vancomycin
+
+* General Considerations  
+
+    * Do not use vancomycin as a first-line drug-of-choice.  
+    * Reserve for patients with a history of previous CONS or with proven organism resistance.  
+
+* Dosing table and timing of trough level check for infants < GA 44 weeks: 
+```{r vanc-young, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
+library(kableExtra)
+library(tidyverse)
+
+table <- as.data.frame(read_csv(paste0(getwd(), "/lluch-formulary-tables/vanc_young.csv")
+))
+
+table %>% knitr::kable(align = "l", caption = "Vancomycin Dosing for ≤ GA 28 weeks", booktabs = TRUE) %>% column_spec(1:(ncol(table)-1), border_right = TRUE) %>% column_spec(1:ncol(table), background = "white")
+```
+```{r vanc-old, echo=FALSE, message=FALSE, warning=FALSE, out.width="80%"}
+library(kableExtra)
+library(tidyverse)
+
+table <- as.data.frame(read_csv(paste0(getwd(), "/lluch-formulary-tables/vanc_old.csv")
+))
+
+table %>% knitr::kable(align = "l", caption = "Vancomycin Dosing for infants > GA 28 weeks", booktabs = TRUE) %>% column_spec(1:(ncol(table)-1), border_right = TRUE) %>%
+    column_spec(1:ncol(table), background = "white")
+```   
+
+* Regular dosing for GA \> 44 weeks:  
+    * 10-15 mg/kg/dose IV q 8hrs.  
+    * 20-40 mg/kg/day PO divided q 6hrs (use IV form which is 50mg/mL).  
+
+<br/>
+
+### vasopressin
+
+*Use Standard Concentration Infusions for drips*
+
+* Vasodilatory shock with hypotension unresponsive to fluid resuscitation or exogenous catecholamines: 0.001 units/kg/min IV drip.  
+
+<br/>
+
+### vecuronium (Norcuron&reg;)
+
+*Use Standard Concentration Infusions for drips*
+
+* Starting dose for paralysis: 0.05-0.1 mg/kg/hr.  
+* Regular dosing for rapid sequence intubation: 0.1 mg/kg/dose IV.  
+
+<br/>
+
+### vitamin A
+
+* Regular dosing for BPD prevention: 5,000 units IM q Mon/Wed/Fri for 12 doses (4 weeks).
+    * *Note*: Use in very preterm infants with birth weight < 1,250 g. Order LMX-4 to be applied to the injection site 30-60 min prior to injection.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## Z {#med-z}
+
+### zidovudine
+
+* GA ≥35 weeks at birth: 
+    * 4 mg/kg/dose PO q12hrs, *or* 3 mg/kg/dose IV q 12hrs.
+        * Started as soon after birth as possible, preferably within 6–12 hrs of delivery.  
+* GA ≥ 30 to < 35 weeks at birth:  
+    * 2 mg/kg/dose PO q 12hrs, *or* 1.5 mg/kg/dose IV q 12hrs.  
+        * Started as soon after birth as possible, preferably within 6–12 hrs of delivery.
+        * Advance dose to 3 mg/kg/dose PO, *or* 2.3 mg/kg/dose IV q 12hrs on DOL 15.  
+* GA < 30 weeks at birth:  
+    * 2 mg/kg/dose q 12hrs PO, *or* 1.5 mg/kg/dose IV q 12hrs.  
+        * Started as soon after birth as possible, preferably within 6–12 hrs of delivery.  
+        * Advance dose to 3 mg/kg/dose PO, *or* 2.3 mg/kg/dose IV q 12hrs on DOL 29.  
+
+<hr/>
+
+<br/><br/>{{< pagebreak >}}
+
+## Inhalational Medications {#med-ih}
+
+*MUST write order as <u>Med Neb</u>, <u>SVN (Small Volume Neb)</u>, or <u>AeroNeb Pro</u>*
+
+
+### albuterol (Proventil&reg;)
+
+* Regular dosing: 0.5 mL of 0.5% (or 2.5 mg/dose) Med Neb q 6-12hrs.  
+
+<br/>
+
+### ipratropium (Atrovent&reg;)  
+
+* Regular dosing: 2.5 mL of 0.02% Med Neb q 6-8hrs.  
+
+<br/>
+
+### budesonide (Pulmicort&reg;)  
+
+* Regular dosing: 0.5 mg Med Neb q 12hrs.  
+
+<br/>
+
+### dornase (Pulmozyme&reg;)  
+
+* Regular dosing: 2.5 mg Med Neb q 12-24hrs for 2-7 days.  
+
+<br/>
+
+### acetylcysteine (Mucomyst&reg;)  
+
+* Regular dosing: 1 mL of 10 % solution AeroNeb Pro q 4-6hrs for 2 doses.  
+* *Note*: 
+    * Must give with a bronchodilator (for example, albuterol).  
+    * Avoid using as possible - acetylcysteine kills pulmonary cilia!  
+
+<br/>
+
+### tobramycin/gentamicin  
+
+* Regular dosing: 1.5-2 mg/kg AeroNeb Pro q 8hrs  
+* *Note*:  DO NOT suction for 30 min after administering a dose.  
+
+<br/>
+
+### racemic epinephrine  
+
+* Regular dosing for stridor: 0.25-0.5 mL of 2.25% Med Neb q 1-2hrs PRN.  
+
+<br/>
+
+### levalbuterol (Xopenex&reg;)  
+
+* Regular dosing: 0.63 mg Med Neb q 6-12hrs.  
+    * *Note*: a costly alternative to albuterol; the order must be signed by the attending physician.  
+    * May have fewer cardiac side effects (less tachycardia).  
+    
+<br/>
+
+<br/><br/>{{< pagebreak >}}
+
+## Therapeutic Drug Levels
+
+### amikacin  
+
+* Peak: 20-30 microgram/mL.  
+    * Timing: 1/2 h after the end of infusion of the 2^nd^ dose for infants being treated more than 24 hrs. 
+* Trough: 5-10 microgram/mL.  
+    * Timing: Just before next dose after peak level (usually prior to the 3^rd^ dose).
+    * *NOTE*: Obtain a 24-hr trough level for infants with severe infections, asphyxia, PDA, or renal failure. See dosing guidelines for gentamicin.  
+    
+<br/>
+
+### caffeine  
+
+* No level necessary up to 10 mg/kg/day.  
+* Titrate for severity of apnea and monitor heart rate.  
+* If obtaining a caffeine level, a random sample is fine as long as the steady-state for the drug is reached.  
+
+<br/>
+
+### cyclosporine (CSA)  
+
+* 300-400 microgram/mL.  
+
+<br/>
+
+### divalproex (Depakote&reg;)
+
+* 50-100 microgram/mL.  
+
+<br/>
+
+### digoxin  
+
+* 1-2 nanogram/mL.  
+* Prefer level as trough (at least 6-8 hrs after administration).  
+
+<br/>
+
+### phenytoin (Dilantin&reg;)  
+
+* 5-29 microgram/mL.  
+* Obtain trough level 48hrs post IV loading dose.  
+
+<br/>
+
+### gentamicin  
+
+* Peak: 5-10 microgram/mL.  
+    * Timing: 1/2 hrs after the end of infusion of the 2^nd^ dose for infants being treated more than 24 hrs. 
+* Trough: < 1 microgram/mL.  
+    * Timing: Just before next dose after peak level (usually prior to the 3^rd^ dose).
+    * *NOTE*: Obtain a 24-hr trough level for infants with severe infections, asphyxia, PDA, or renal failure. See dosing guidelines for gentamicin.  
+    * *NOTE*: DO NOT order levels when gentamicin is given only for 48-hr sepsis evaluation if the infant is not clinically ill. Order levels only if a decision is made to continue gentamicin beyond 48 hrs.  
+
+<br/>
+
+### phenobarbital  
+
+* 20-30 microgram/mL.  
+* Draw on the 4^th^ day of therapy, random sample is fine.  
+
+<br/>
+
+### carbamazepine (Tegretol^reg;^)  
+
+* 4-12 mg/L  
+
+<br/>
+
+### theophylline  
+
+* For apnea of prematurity: 6-12 microgram/mL.
+* For bronchodilation: 10-18 microgram/mL (trough prior to the 5^th^ dose).  
+
+<br/>
+
+### tobramycin   
+
+* Peak: 5-10 microgram/mL.   
+* Trough: < 1 microgram/mL.  
+
+<br/>
+
+### vancomycin  
+
+* Peak: 20-40 microgram/mL.
+    * Peak levels not usually required. Check with ID specialists.  
+* Trough: 5-10 microgram/mL.  
+    * Timing: See Table \@ref(tab:vanc-young) & Table \@ref(tab:vanc-old).
+
+<br/>
+<br/>
+<br/>
+
+

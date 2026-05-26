@@ -1,0 +1,9 @@
+﻿Anti-Xa Level,Dose Titration (Round dose to nearest 0.5 mg),Next Level Check
+≤ 0.1 IU/mL ,Increase dose by 40% ,4-5 hrs after 2^nd^ new dose then follow dosing nomogram 
+0.11 - 0.35 IU/ mL ,Increase dose by 25% ,4-5 hrs after 2^nd^ new dose then follow dosing nomogram 
+0.36 - 0.44 IU/ mL ,Increase dose by 20% ,4-5 hrs after 2^nd^ new dose then follow dosing nomogram 
+0.45 - 0.59 IU/ mL ,Increase dose by 10% ,4-5 hrs after 2^nd^ new dose then follow dosing nomogram 
+0.6 - 1 IU/mL,Keep same dose ,See monitoring nomogram
+1.1 - 1.5 IU/mL ,Decrease dose by 20% ,4-5 hrs after 2^nd^ new dose then follow dosing nomogram 
+1.6 - 2 IU/mL ,Hold one dose and decrease dose by 30% ,4-5 hrs after 2^nd^ new dose then follow dosing nomogram 
+>2 IU/mL ,"Hold until anti-Xa level < 1 IU/mL, then decrease previous dose by 40% ","Daily until anti-Xa level consistently at 0.5 - 1 IU/mL, then follow dosing nomogram"

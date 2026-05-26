@@ -1,0 +1,6 @@
+Serum Creatinine (mg/dL),Dose,Trough Level
+< 0.5,15 mg/kg/dose q 12hrs,prior to 4^th^ dose
+0.5-0.7,20 mg/kg/dose q 24hrs,prior to 3^rd^ dose
+0.8-1.0,15 mg/kg/dose q 24hrs,prior to 2^nd^ dose
+1.1-1.4,10 mg/kg/dose q 24hrs,prior to 2^nd^ dose
+> 1.4,15 mg/kg/dose q 48hrs,prior to 2^nd^ dose

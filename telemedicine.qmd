@@ -1,0 +1,33 @@
+---
+number-depth: 2
+---
+
+# Telemedicine
+
+<br/>
+
+### Use
+
+Between Riverside Medical Center and Moreno Valley Medical Center
+
+<br/>
+
+### Platform
+
+#### Clinicians Caregility
+
+<span style="color:red;">**ONLY use Google Chrome browser**</span>
+
+[https://uheweb.kp.org/home/conference](https://uheweb.kp.org/home/conference){target="\"_blankd"}
+
+
+<br/>
+
+#### Settings
+
+In the **Dial Patient** dialogue box:  
+
+* Customer: SCAL
+* Location: Moreno Valley
+* Unit: Carts
+* Room: Moreno Valley 4 General Cart

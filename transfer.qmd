@@ -1,0 +1,61 @@
+---
+number-depth: 2
+---
+
+# Transfer an Infant Out {#sec-introduction}
+
+## CCS Information for Transferring {#sec-ccs-information}
+
+### Insurance Plans
+
+| Insurance                          | Definition                                                                 | Candidate for Non CCS Facility? |
+|------------------------------------|---------------------------------------------------------------------------|---------------------------------|
+| KP 1000                           | Kaiser Plan Insurance from Employer HMO - set copay                       | Yes                             |
+| KP 1001                           | Kaiser Plan Insurance from Employer DHMO - Deductible HMO - Inpatient High $ Deductible | Yes                             |
+| KP Health Care Reform HMO         | Kaiser Plan Purchased by Individual HMO - set Copay                       | Yes                             |
+| KP Health Care Reform DHMO        | KP Health Care Reform - DHMO Deductible HMO - Inpatient High $ Deductible | Yes                             |
+| Medical Financial Assistance      | Kaiser Charity for those without any insurance. 30 days Kaiser Insurance then must enroll in an insurance after 30 days – Medi-Cal or purchased plan. Contact Case Manager for current insurance eligibility |                                 |
+| KP 1003                           | Kaiser Inland Empire Health Plan Inland Med-Cal Medi-Cal                  | No*                             |
+| Inland Empire Health Plan         | Medi-Cal                                                                  | No*                             |
+
+*Note: Unless they do NOT meet CCS criteria below.
+
+### CCS Criteria for Critically Ill Neonates and Infants
+
+#### Critically Ill Neonates
+Neonates who do not have an identified CCS-eligible condition but require one or more of the following services in a CCS-approved NICU:
+
+- Invasive or non-invasive positive pressure ventilatory assistance
+- Supplemental oxygen concentration by hood of ≥40%
+- UAC or Peripheral Art Line
+- UVC, Central Venous Catheter, PICC
+- Peripheral Line for pharmacological support of the cardiovascular support
+- TPN – Central or Peripheral
+- Chest Tube
+
+#### Neonates and Infants
+Neonates and infants who do not have an identified CCS-eligible condition but require 2 or more of the following services in a CCS-approved NICU:
+
+- Supplemental inspired oxygen
+- Peripheral IV Line for meds, blood products, and/or meds for cardiac support
+- Caffeine: Pharmacological support for apnea and/or bradycardia episodes
+- Tube feedings
+
+<br/> <br/> {{< pagebreak >}}
+
+## Transfer to Another KP Facility
+
+<br/>
+
+### Discharge summary
+
+Use **TRANSFER DISCHARGE SUMMARY NOTE PEDS IP SCAL** to compose the discharge summary.
+
+<br/> <br/> {{< pagebreak >}}
+
+## Transfer to a Non-KP Facility
+
+<br/>
+
+### Discharge summary
+Use **DISCHARGE (CCS) SUMMARY NOTE NICU IP SCAL** to compose the discharge summary.

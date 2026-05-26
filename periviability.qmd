@@ -1,0 +1,98 @@
+---
+number-depth: 2
+---
+
+# Periviability
+
+## Online Outcome Calculator
+
+<br/>
+
+### Information needed
+
+* GA
+* BW/EFW
+* Sex
+* Number of gestation (singleton vs. multiple)
+* Any antenatal steroids
+
+<br/>
+
+### Link {#sec-outcome-link}
+
+[NICHD Extremely Preterm Birth Outcomes Tool](https://www.nichd.nih.gov/research/supported/EPBO/use){target="_blank"}
+
+<br/><br/>{{< pagebreak >}}
+
+## Antenatal Consult {#sec-antenatal-consult}
+
+<br/>
+
+### \<GA22w0d
+
+DO NOT OFFER or recommend resuscitation. Please refer to the [NICHD Extremely Preterm Birth Outcomes Tool](#sec-outcome-link)
+
+<br/>
+
+### GA22w0d-22w6d
+
+Counsel parents regarding NICHD statistics AND KPSD NICU/region statistics. In general **discourage against resuscitation/intervention**, but after counseling with NICU, if parents opt for it, then perinatology team will administer steroids and discuss other interventions such as tocolysis, mag for neuroprotection, fetal monitoring and c/s (also classical) if clinically indicated and write plan in chart for OB MD providers. perinatology team will offer everything if patients elect for resuscitation.
+
+<br/>
+
+### GA23w0d-23w6d
+
+Counsel parents regarding NICHD statistics AND KPSD NICU/region statistics. After counseling with NICU, if parents opt for it, then perinatology team will administer steroids and discuss other interventions such as tocolysis, mag for neuroprotection, fetal monitoring and c/s (also classical) if indicated and write plan in chart for OB MD providers. perinatology team will offer everything if patients elect for resuscitation. Parents may elect to NOT intervene/resuscitate until 24 weeks.
+
+<br/>
+
+### ≥GA24w0d
+
+Counsel parents regarding NICHD statistics AND KPSD NICU/region statistics. **In general, the NICU team 100% of the time will resuscitate any infant born at or after 24w0d regardless of parents' desires**.
+
+<br/>
+
+### Risks of Autism Spectrum Disorder by GA
+
+ASD prevalences by gestational age at birth:  
+
+**Preterm**: overall 1 in 48 or 2.1% for all preterm (<37 weeks)  
+
+* 1 in 16  or 6.1% for extremely preterm (22–27 weeks)
+* 1 in 38 or 2.6% for very to moderate preterm (28–33 weeks)
+* 1 in 53 or 1.9% for late preterm (34–36 weeks)
+
+<hr/>
+**Term**:  
+
+* 1 in 62 or 1.6% for early term (37–38 weeks)
+* 1 in 71 or 1.4% for full-term (39–41 weeks)
+
+
+<br/><br/>{{< pagebreak >}}
+
+## Neonatologists' Role {#sec-neo-role}
+
+Updated: April 18, 2024
+
+<br/>
+
+### < 22 0/7 weeks' GA (&le; 21 6/7 weeks)
+
+* No involvement regardless of whether the newborn has a heartbeat or not. If called, defer to the OB physician in charge.
+
+* Do NOT resuscitate any newborn with a GA of < 22 0/7 weeks.
+
+<br/>
+
+### &ge; 22 0/7 weeks' GA
+
+* If the newborn is born WITH a heartbeat but comfort care is already planned, the neonatologist on call is responsible for the following:
+  * Admission H&P
+  * Discharge summary
+  * Death certificate
+  
+* If the newborn is born WITHOUT a heartbeat, it is considered fetal demise; defer all paperwork to the OB physician in charge.
+
+
+<br/><br/>{{< pagebreak >}}
