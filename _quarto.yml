@@ -68,6 +68,6 @@ format:
   html:
     theme: lumen
     page-break-after: always
-    embed-resources: true
+
 
 editor: source
