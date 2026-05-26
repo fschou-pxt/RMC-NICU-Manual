@@ -1,0 +1,7 @@
+.column-margin a,
+.column-margin p,
+.column-margin li {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
