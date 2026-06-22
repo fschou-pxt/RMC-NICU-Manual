@@ -5,3 +5,7 @@
   overflow-wrap: break-word;
   white-space: normal;
 }
+
+.column-margin {
+  margin-top: -50px;
+}
