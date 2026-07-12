@@ -1,5 +1,3 @@
-
-
 ::: {.column-margin}
 
 # &nbsp; {.unnumbered}

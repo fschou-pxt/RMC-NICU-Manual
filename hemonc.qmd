@@ -349,7 +349,14 @@ Most infants remain asymptomatic.
 
 ### Consent
 
-Refer to @sec-blood-transfusion.
+#### Refer to @sec-blood-transfusion for very and extremely preterm infants.
+
+<br/>
+
+#### Blood consent documentation
+
+![](Figures/blood-consent-form.png)
+
 
 <br/>
 

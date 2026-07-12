@@ -466,7 +466,7 @@ Source: Geddes GC, et al.. *Curr Opin Pediatr*. 2018 Dec;30(6):707-713. [[Link]]
     
 <br></br>
 
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 ## Aneuploidy Syndromes {#aneuploidy}
 
@@ -916,7 +916,7 @@ Document the physical features of the infant:
 * Request an inpatient Pediatric Genetics consult when additional anomalies not consistent with 47,XYY syndrome are identified or if mosaicism is identified on chromosome analysis; otherwise, refer the family for an outpatient Genetics counseling appointment.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Microdeletion Syndrome {#microdeletion}
@@ -1153,7 +1153,7 @@ o Hearing loss: Conductive, sensorineural.
     * Genetics will see patients there. No need for separate Genetics outpatient appointment if referred to the <a href="https://lluch.org/services/specialty-team-centers/craniofacial-team" target="_blank">Craniofacial Team Center</a>.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Craniosynostosis {#craniosynostosis}
@@ -1212,7 +1212,7 @@ o Hearing loss: Conductive, sensorineural.
     * No need for a separate Genetics clinic referral.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Cystic Fibrosis (CF) {#cf}
@@ -1260,7 +1260,7 @@ o Hearing loss: Conductive, sensorineural.
     * Genetics will follow patient with the CF team.  
     
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Diabetic Embryopathy {#diabetic-embryopathy}
@@ -1328,7 +1328,7 @@ o Hearing loss: Conductive, sensorineural.
 * Other consults based on infant’s presentation.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Disorders of Sexual Determination or Differentiation {#dsd}
@@ -1416,7 +1416,7 @@ o Hearing loss: Conductive, sensorineural.
 1. León NY, Reyes AP, Harley VR. A clinical algorithm to diagnose differences of sex development [published correction appears in *Lancet Diabetes Endocrinol*. 2019 Mar 7]. *Lancet Diabetes Endocrinol*. 2019; 7(7):560‐574. [[Link]](https://doi.org/10.1016/s2213-8587(18)30339-5)  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Facial Palsy {#facial-palsy}
@@ -1466,7 +1466,7 @@ o Hearing loss: Conductive, sensorineural.
     * Genetics will follow the referred infant with the Craniofacial Team.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Fetal Alcohol Spectrum Disorder {#fetal-alcohol}
@@ -1545,7 +1545,7 @@ o Hearing loss: Conductive, sensorineural.
 * FASworld Organization. [[Link]](https://www.fasworld.com/)  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Holoprosencephaly {#holoprosencephaly}
@@ -1624,7 +1624,7 @@ o Hearing loss: Conductive, sensorineural.
     * Isolated HPE, negative family and pregnancy history, normal or pending microarray/gene panel.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Hydrocephalus {#hydrocephalus}
@@ -1706,7 +1706,7 @@ o Hearing loss: Conductive, sensorineural.
     * Negative family history.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Macrocephaly {#macrocephaly}
@@ -1772,7 +1772,7 @@ o Hearing loss: Conductive, sensorineural.
     * There are no other associated anomalies or dysmorphic features.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Microcephaly {#microcephaly}
@@ -1855,7 +1855,7 @@ thumb hypoplasia, ambiguous genitalia.
 * Pediatricians should monitor all infants with congenital microcephaly closely for developmental delay, failure to thrive, cerebral palsy, seizures. Refer to Genetics and Neurology promptly if any of these develop.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Microtia/Hemifacial Microsomia {#microtia}
@@ -1924,7 +1924,7 @@ knitr::include_graphics("Figures/ears.png")
     * Ear anomaly is isolated and non-syndromic.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Orofacial Clefts {#clefts}
@@ -2013,7 +2013,7 @@ origins and cellular and genetic etiologies, with exceptions.
     * Genetics is part of the team and can evaluate the infant there. No need for a separate Genetics clinic referral.  
 
 <br></br>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Neural Tube Defects (NTD) {#ntd}
@@ -2070,7 +2070,7 @@ origins and cellular and genetic etiologies, with exceptions.
 <span style="color:red;">[Consider adding initial NICU managment, including positioning, covering of the lesion, fluid, etc.]</span>
 
 <br/><br/>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Osteogenesis Imperfecta {#oi}
@@ -2161,7 +2161,7 @@ knitr::include_graphics("Figures/oi.png")
     * The main issue is reproductive Genetics counseling.  
 
 <br/><br/>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Overgrowth/Macrosomia {#macrosomia}
@@ -2236,7 +2236,7 @@ knitr::include_graphics("Figures/oi.png")
     * Family history is positive.  
 
 <br/><br/>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Skeletal Dysplasia {#skeletal-dysplasia}
@@ -2338,7 +2338,7 @@ knitr::include_graphics("https://i0.wp.com/radiologykey.com/wp-content/uploads/2
 1. Cho SY, Jin DK. Guidelines for genetic skeletal dysplasias for pediatricians. *Ann Pediatr Endocrinol Metab*. 2015;20(4):187‐191. [[Link]](https://doi.org/10.6065/apem.2015.20.4.187)  
 
 <br/><br/>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## SGA/IUGR/Low Birth Weight {#sga-iugr}
@@ -2427,7 +2427,7 @@ knitr::include_graphics("https://i0.wp.com/radiologykey.com/wp-content/uploads/2
 1. Finken MJJ, van der Steen M, Smeets CCJ, et al. Children Born Small for Gestational Age: Differential Diagnosis, Molecular Genetic Evaluation, and Implications. *Endocr Rev*. 2018 Dec 1;39(6):851-894. Erratum in: Endocr Rev. 2019 Feb 1;40(1):96. [[Link]](https://doi.org/10.1210/er.2018-00083)  
 
 <br/><br/>
-{{< pgaebreak >}}
+{{< pagebreak >}}
 
 
 ## Valproic Acid Embryopathy {#valproic-acid}
