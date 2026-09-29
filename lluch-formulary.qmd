@@ -334,7 +334,7 @@ dose\ in\ microgram/kg/min = \frac{(\mathbf{Y}\ microgram)\ (pump\ rate\ in\ mL/
 * <span style="color:red;">[Add dosing for chlamydia/gonorhea infections]</span>
 
 <hr/>
-<br/><br/>{{< pagebreak }}
+<br/><br/>{{< pagebreak >}}
 
 ## B {#med-b}
 

@@ -22,6 +22,15 @@ title:'PayPal - The safer, easier way to pay online!',
 
 ::: {.callout-important}
 
+## NEW UPDATE - Sep 28, 2026
+
+* NTrainer feeding workflow
+  * @sec-ntrainer
+
+:::
+
+::: {.callout-warning}
+
 ## NEW UPDATE - Apr 9, 2026
 
 * Antibiotic Management of Suspected Sepsis in the NICU
@@ -29,7 +38,7 @@ title:'PayPal - The safer, easier way to pay online!',
 
 :::
 
-::: {.callout-important}
+::: {.callout-warning}
 
 ## NEW UPDATE - Mar 13, 2026
 
@@ -38,7 +47,7 @@ title:'PayPal - The safer, easier way to pay online!',
 
 :::
 
-::: {.callout-warning}
+::: {.callout-note}
 
 ## NEW UPDATE - Jan 11, 2026
 
@@ -47,7 +56,7 @@ title:'PayPal - The safer, easier way to pay online!',
 
 :::
 
-::: {.callout-warning}
+::: {.callout-note}
 
 ## NEW UPDATE - Jan 9, 2026
 
@@ -56,39 +65,12 @@ title:'PayPal - The safer, easier way to pay online!',
 
 :::
 
-::: {.callout-warning}
+::: {.callout-note}
 
 ## NEW UPDATE - Jan 9, 2026
 
 * Apparatus weight for BW subtraction
   * @sec-weight-for-subtraction
-
-:::
-
-::: {.callout-note}
-
-## NEW UPDATE - Nov 29, 2025
-
-* Extubation protocol for ELGAN/ELBW
-  * @sec-extubation
-
-:::
-
-::: {.callout-note}
-
-## NEW UPDATE - Nov 29, 2025
-
-* Pediatric subspecialty consultation
-  * @sec-subspecialty-consult
-
-:::
-
-::: {.callout-note}
-
-## NEW UPDATE - Nov 29, 2025
-
-* Family and Medical Leave Act (FMLA) electronic paperwork
-  * @sec-fmla
 
 :::
 
