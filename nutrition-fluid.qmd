@@ -756,6 +756,12 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
 
 <br/>
 
+### Workflow overview
+
+![NTrainer workflow for infants at risk for feeding difficulty.](Figures/NTrainer-workflow.png){#fig-ntrainer width=85%}
+
+<br/>
+
 ### Criteria for initiating NTrainer therapy
 
 * For infants ≤ 30 weeks at birth:
