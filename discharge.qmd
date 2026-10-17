@@ -341,6 +341,66 @@ When an infant who met criteria is expected to be dicharged from the NICU within
 
 {{< pagebreak >}}
 
+## Newborn Humerus Fracture: Discharge Instructions {#sec-humerus-fracture}
+
+There is no KP patient education handout for newborn humerus fractures (unlike collarbone fractures — search "fracture" in Patient Education for **Broken Collarbone: Newborn: Pediatric: General Info**). Our NICU PT made a handout with pictures on handling and positioning the arm, and Dr. Kasee Houston built it into a shared dot phrase so families can get written instructions even when PT is not available.
+
+<br/>
+
+### Dot phrase: .humerusfx
+
+Add **`.humerusfx`** (see @sec-dotphrase-humerusfx) to the discharge patient instructions:
+
+Go to discharge navigator &rarr; select **Patient Instructions** in the AVS documentation on the left menu bar &rarr; type `.humerusfx`
+
+The handout can also be sent to the family via kp.org.
+
+![Adding .humerusfx in the Patient Instructions section of the Discharge Navigator.](Figures/humerus-fracture-discharge-navigator.png){#fig-humerus-fracture-navigator width=85%}
+
+<br/>
+
+### Handout content (.humerusfx)
+
+![Optimal position for baby's arm (NICU PT).](Figures/humerusfx-1-arm-position.png){#fig-humerusfx-arm-position width=70%}
+
+**Optimal position for baby's arm:**
+
+* At side, with elbow comfortably bent
+* Limit to as little to no movement of both shoulder and elbow as possible, until cleared by **Orthopedics**
+
+**Movement will be limited to:**
+
+* Cleaning underarms (see directions below)
+* Changing cotton pads every shift and as needed
+* Checking for skin breakdown every shift (if home, check for skin breakdown twice daily, AM and PM)
+
+![Moving baby's arm for cleaning (NICU PT).](Figures/humerusfx-2-arm-cleaning.png){#fig-humerusfx-arm-cleaning width=70%}
+
+**To move baby's arm for cleaning:**
+
+* Support entire arm gently
+* Maintain elbow bent as shown in picture
+* With the arm supported, move the elbow and shoulder **as one unit** to open the side/armpit slightly
+* Do skin check and cares as needed
+* Place cotton pad/soft cotton gauze between arm and side to prevent skin breakdown. Change pad 2x daily and as needed
+
+<br/>
+
+### Positioning
+
+Additional positioning guidance from NICU PT (added to the patient instructions in addition to `.humerusfx`):
+
+![Positioning guidance (NICU PT).](Figures/humerus-fracture-sleep-positioning.png){#fig-humerus-fracture-positioning width=70%}
+
+* OK to position baby on back and opposite sides
+* Avoid side lying over fracture arm
+* Opposite arm: allow functional movement — do not overstretch
+* Position arm GENTLY across body
+
+<br/> <br/>
+
+{{< pagebreak >}}
+
 ## Inland Regional Center Early Start Program {#sec-irc}
 
 <br/>
@@ -534,11 +594,12 @@ Find your signed D/C summary within the Notes tab and click once:
 
 <br/>
 
-### Step 5: Patient Instructions
+### Step 5: Patient Instructions {#sec-discharge-navigator}
 
-Go to discharge navigator &rarr; select **Patient Instructions** in the AVS documentation on the left menu bar  
+Go to discharge navigator &rarr; select **Patient Instructions** in the AVS documentation on the left menu bar
 
 1. From D/C summary, cut and paste from “brief synopsis” to “D/C summary”
+2. For infants with a humerus fracture, add `.humerusfx` (see @sec-humerus-fracture)
 
 <br/>
 

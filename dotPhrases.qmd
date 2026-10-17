@@ -104,6 +104,18 @@ Orders placed, circumcision to be performed by Pediatrics or OB on duty.
 [Text](#sec-circumcision)
 
 <br/>
+
+#### .humerusfx {#sec-dotphrase-humerusfx}
+
+Shared dot phrase (Dr. Kasee Houston) containing the NICU PT handout for handling and positioning of a newborn humerus fracture. Add to discharge Patient Instructions in the Discharge Navigator.
+
+![](Figures/humerusfx-1-arm-position.png){width=70%}
+
+![](Figures/humerusfx-2-arm-cleaning.png){width=70%}
+
+[Text](#sec-humerus-fracture)
+
+<br/>
 <br/>
 {{< pagebreak >}}
 

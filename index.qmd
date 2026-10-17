@@ -22,6 +22,15 @@ title:'PayPal - The safer, easier way to pay online!',
 
 ::: {.callout-important}
 
+## NEW UPDATE - Oct 17, 2026
+
+* Newborn humerus fracture discharge instructions (.humerusfx)
+  * @sec-humerus-fracture
+
+:::
+
+::: {.callout-warning}
+
 ## NEW UPDATE - Sep 28, 2026
 
 * NTrainer feeding workflow
@@ -29,7 +38,7 @@ title:'PayPal - The safer, easier way to pay online!',
 
 :::
 
-::: {.callout-warning}
+::: {.callout-note}
 
 ## NEW UPDATE - Apr 9, 2026
 
@@ -38,39 +47,12 @@ title:'PayPal - The safer, easier way to pay online!',
 
 :::
 
-::: {.callout-warning}
+::: {.callout-note}
 
 ## NEW UPDATE - Mar 13, 2026
 
 * Guide for Selenium Adjustment
   * @sec-selenium
-
-:::
-
-::: {.callout-note}
-
-## NEW UPDATE - Jan 11, 2026
-
-* Emergency blood release protocol
-  * @sec-emergency-blood-release
-
-:::
-
-::: {.callout-note}
-
-## NEW UPDATE - Jan 9, 2026
-
-* Rounding Sheet for small babies
-  * @sec-small-baby-rounding-sheet
-
-:::
-
-::: {.callout-note}
-
-## NEW UPDATE - Jan 9, 2026
-
-* Apparatus weight for BW subtraction
-  * @sec-weight-for-subtraction
 
 :::
 
