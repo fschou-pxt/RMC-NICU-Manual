@@ -250,7 +250,7 @@ Consider transfer to an outside facility with 24-hr inpatient pediatric cardiolo
 ### Screening
 
 * Routine screening on DOL7, sooner if clinically indicated
-* Iowa's early echo protocol (Dr. Patrick MacNamara)
+* Iowa's early echo protocol (Dr. Patrick McNamara)
 
 ![](Figures/iowa-early-echo.png)
 
