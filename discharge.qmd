@@ -343,10 +343,6 @@ When an infant who met criteria is expected to be dicharged from the NICU within
 
 ## Newborn Humerus Fracture: Discharge Instructions {#sec-humerus-fracture}
 
-There is no KP patient education handout for newborn humerus fractures (unlike collarbone fractures — search "fracture" in Patient Education for **Broken Collarbone: Newborn: Pediatric: General Info**). Our NICU PT made a handout with pictures on handling and positioning the arm, and Dr. Kasee Houston built it into a shared dot phrase so families can get written instructions even when PT is not available.
-
-<br/>
-
 ### Dot phrase: .humerusfx
 
 Add **`.humerusfx`** (see @sec-dotphrase-humerusfx) to the discharge patient instructions:
