@@ -205,21 +205,15 @@ Use the **PNL NICU EYE (ROP) EXAM MEDICATIONS IP SCAL** order set. Default medic
 
 1. Use the BPAM orderset
 
-::: column-page-right
-![](Figures/ordering-blood-product-step1.png){.lightbox group="blood-product"}
-:::
+![](Figures/ordering-blood-product-step1.png){.lightbox group="blood-product" width=720px}
 
 2. Select the blood product type
 
-::: column-page-right
-![](Figures/ordering-blood-product-step2.png){.lightbox group="blood-product"}
-:::
+![](Figures/ordering-blood-product-step2.png){.lightbox group="blood-product" width=720px}
 
 3. Enter the volume and the duration
 
-::: column-page-right
-![](Figures/ordering-blood-product-step3.png){.lightbox group="blood-product"}
-:::
+![](Figures/ordering-blood-product-step3.png){.lightbox group="blood-product" width=720px}
 
 
 <br/> <br/> {{< pagebreak >}}
