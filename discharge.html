@@ -1101,39 +1101,6 @@ Make sure the discharge order is a <strong>CONDITIONAL</strong> order</p>
 </section>
 
 </main> <!-- /main -->
-<script>
-// Full-screen image viewer for buttons like:
-// <button class="fullscreen-btn" data-img="Figures/x.png" onclick="openImageFullscreen(this)">
-// Shows the image in a full-window overlay (works everywhere, including iPhone Safari) and
-// switches to true full screen where the browser allows it. Click or Esc to close.
-function openImageFullscreen(btn) {
-  var viewer = document.createElement('div');
-  viewer.className = 'fullscreen-viewer';
-  viewer.title = 'Click or press Esc to close';
-  var img = document.createElement('img');
-  img.src = btn.getAttribute('data-img');
-  img.alt = '';
-  viewer.appendChild(img);
-  document.body.appendChild(viewer);
-
-  function close() {
-    document.removeEventListener('keydown', onKey);
-    document.removeEventListener('fullscreenchange', onChange);
-    viewer.remove();
-    if (document.fullscreenElement) document.exitFullscreen();
-  }
-  function onKey(e) { if (e.key === 'Escape') close(); }
-  function onChange() { if (!document.fullscreenElement) close(); }
-
-  viewer.addEventListener('click', close);
-  document.addEventListener('keydown', onKey);
-  if (viewer.requestFullscreen) {
-    viewer.requestFullscreen()
-      .then(function () { document.addEventListener('fullscreenchange', onChange); })
-      .catch(function () {});
-  }
-}
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

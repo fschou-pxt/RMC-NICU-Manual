@@ -698,7 +698,6 @@ Figure&nbsp;21.1: ROP exam medications order set.
 </figcaption>
 </figure>
 </div>
-<button type="button" class="btn btn-outline-primary btn-sm fullscreen-btn" data-img="Figures/rop-exam-orderset.png" onclick="openImageFullscreen(this)">⛶ View full screen</button>
 <p><br></p>
 </section>
 </section>
@@ -722,19 +721,19 @@ Figure&nbsp;21.1: ROP exam medications order set.
 <li>Use the BPAM orderset</li>
 </ol>
 <div class="column-page-right">
-<p><img src="Figures/ordering-blood-product-step1.png" class="img-fluid"></p>
+<p><a href="Figures/ordering-blood-product-step1.png" class="lightbox" data-gallery="blood-product"><img src="Figures/ordering-blood-product-step1.png" class="img-fluid"></a></p>
 </div>
 <ol start="2" type="1">
 <li>Select the blood product type</li>
 </ol>
 <div class="column-page-right">
-<p><img src="Figures/ordering-blood-product-step2.png" class="img-fluid"></p>
+<p><a href="Figures/ordering-blood-product-step2.png" class="lightbox" data-gallery="blood-product"><img src="Figures/ordering-blood-product-step2.png" class="img-fluid"></a></p>
 </div>
 <ol start="3" type="1">
 <li>Enter the volume and the duration</li>
 </ol>
 <div class="column-page-right">
-<p><img src="Figures/ordering-blood-product-step3.png" class="img-fluid"></p>
+<p><a href="Figures/ordering-blood-product-step3.png" class="lightbox" data-gallery="blood-product"><img src="Figures/ordering-blood-product-step3.png" class="img-fluid"></a></p>
 </div>
 <p><br> <br> </p><div style="page-break-after: always;"></div><p></p>
 </section>
@@ -764,39 +763,6 @@ Figure&nbsp;21.1: ROP exam medications order set.
 </section>
 
 </main> <!-- /main -->
-<script>
-// Full-screen image viewer for buttons like:
-// <button class="fullscreen-btn" data-img="Figures/x.png" onclick="openImageFullscreen(this)">
-// Shows the image in a full-window overlay (works everywhere, including iPhone Safari) and
-// switches to true full screen where the browser allows it. Click or Esc to close.
-function openImageFullscreen(btn) {
-  var viewer = document.createElement('div');
-  viewer.className = 'fullscreen-viewer';
-  viewer.title = 'Click or press Esc to close';
-  var img = document.createElement('img');
-  img.src = btn.getAttribute('data-img');
-  img.alt = '';
-  viewer.appendChild(img);
-  document.body.appendChild(viewer);
-
-  function close() {
-    document.removeEventListener('keydown', onKey);
-    document.removeEventListener('fullscreenchange', onChange);
-    viewer.remove();
-    if (document.fullscreenElement) document.exitFullscreen();
-  }
-  function onKey(e) { if (e.key === 'Escape') close(); }
-  function onChange() { if (!document.fullscreenElement) close(); }
-
-  viewer.addEventListener('click', close);
-  document.addEventListener('keydown', onKey);
-  if (viewer.requestFullscreen) {
-    viewer.requestFullscreen()
-      .then(function () { document.addEventListener('fullscreenchange', onChange); })
-      .catch(function () {});
-  }
-}
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
