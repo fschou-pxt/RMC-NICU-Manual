@@ -67,6 +67,7 @@ format:
   html:
     theme: lumen
     css: custom.css
+    include-after-body: fullscreen.html
     page-break-after: always
 
 

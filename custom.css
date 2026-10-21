@@ -9,3 +9,25 @@
 .column-margin {
   margin-top: -50px;
 }
+
+/* Full-screen image viewer (see openImageFullscreen in fullscreen.html) */
+.fullscreen-btn {
+  margin: 0.25rem 0 1rem;
+}
+
+.fullscreen-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.fullscreen-viewer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

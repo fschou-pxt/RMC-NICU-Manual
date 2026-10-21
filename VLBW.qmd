@@ -186,8 +186,13 @@ Use the **PNL NICU EYE (ROP) EXAM MEDICATIONS IP SCAL** order set. Default medic
 
 -   Cyclomydril requires at least 30 minutes prior to exam and lasts up to 4 hours
 -   Try to target timing to be given 1–2 hours before the scheduled exam
+-   You can order in advance, but remember to change the date/time
 
-![ROP exam medications order set.](Figures/rop-exam-orderset.png){#fig-rop-exam-orderset width=85%}
+![ROP exam medications order set.](Figures/rop-exam-orderset.png){#fig-rop-exam-orderset width=720px .lightbox}
+
+```{=html}
+<button type="button" class="btn btn-outline-primary btn-sm fullscreen-btn" data-img="Figures/rop-exam-orderset.png" onclick="openImageFullscreen(this)">&#x26F6; View full screen</button>
+```
 
 <br/>
 
