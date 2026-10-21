@@ -180,6 +180,15 @@ a.  This guideline should be considered tentative rather than evidence-based for
 b.  Consider timing based on severity of comorbidities.\
 :::
 
+#### Eye exam medications {#sec-rop-exam-meds}
+
+Use the **PNL NICU EYE (ROP) EXAM MEDICATIONS IP SCAL** order set. Default medications: Cyclomydril and Tetracaine.
+
+-   Cyclomydril requires at least 30 minutes prior to exam and lasts up to 4 hours
+-   Try to target timing to be given 1–2 hours before the scheduled exam
+
+![ROP exam medications order set.](Figures/rop-exam-orderset.png){#fig-rop-exam-orderset width=85%}
+
 <br/>
 
 ## Blood transfusion {#sec-blood-transfusion}

@@ -22,6 +22,15 @@ title:'PayPal - The safer, easier way to pay online!',
 
 ::: {.callout-important}
 
+## NEW UPDATE - Oct 21, 2026
+
+* ROP exam medications order set
+  * @sec-rop-exam-meds
+
+:::
+
+::: {.callout-important}
+
 ## NEW UPDATE - Oct 17, 2026
 
 * Newborn humerus fracture discharge instructions (.humerusfx)
@@ -44,15 +53,6 @@ title:'PayPal - The safer, easier way to pay online!',
 
 * Antibiotic Management of Suspected Sepsis in the NICU
   * @sec-antibiotics-sepsis
-
-:::
-
-::: {.callout-note}
-
-## NEW UPDATE - Mar 13, 2026
-
-* Guide for Selenium Adjustment
-  * @sec-selenium
 
 :::
 
