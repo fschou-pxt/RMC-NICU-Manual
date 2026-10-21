@@ -45,6 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ab9a0a4e0698b5410a6d6c29fb8c72b9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -683,17 +686,19 @@ Note
 <ul>
 <li>Cyclomydril requires at least 30 minutes prior to exam and lasts up to 4 hours</li>
 <li>Try to target timing to be given 1–2 hours before the scheduled exam</li>
+<li>You can order in advance, but remember to change the date/time</li>
 </ul>
-<div id="fig-rop-exam-orderset" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-rop-exam-orderset" class="lightbox quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-rop-exam-orderset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figures/rop-exam-orderset.png" class="img-fluid figure-img" style="width:85.0%">
+<a href="Figures/rop-exam-orderset.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;21.1: ROP exam medications order set."><img src="Figures/rop-exam-orderset.png" class="img-fluid figure-img" width="720"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rop-exam-orderset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;21.1: ROP exam medications order set.
 </figcaption>
 </figure>
 </div>
+<button type="button" class="btn btn-outline-primary btn-sm fullscreen-btn" data-img="Figures/rop-exam-orderset.png" onclick="openImageFullscreen(this)">⛶ View full screen</button>
 <p><br></p>
 </section>
 </section>
@@ -759,6 +764,39 @@ Figure&nbsp;21.1: ROP exam medications order set.
 </section>
 
 </main> <!-- /main -->
+<script>
+// Full-screen image viewer for buttons like:
+// <button class="fullscreen-btn" data-img="Figures/x.png" onclick="openImageFullscreen(this)">
+// Shows the image in a full-window overlay (works everywhere, including iPhone Safari) and
+// switches to true full screen where the browser allows it. Click or Esc to close.
+function openImageFullscreen(btn) {
+  var viewer = document.createElement('div');
+  viewer.className = 'fullscreen-viewer';
+  viewer.title = 'Click or press Esc to close';
+  var img = document.createElement('img');
+  img.src = btn.getAttribute('data-img');
+  img.alt = '';
+  viewer.appendChild(img);
+  document.body.appendChild(viewer);
+
+  function close() {
+    document.removeEventListener('keydown', onKey);
+    document.removeEventListener('fullscreenchange', onChange);
+    viewer.remove();
+    if (document.fullscreenElement) document.exitFullscreen();
+  }
+  function onKey(e) { if (e.key === 'Escape') close(); }
+  function onChange() { if (!document.fullscreenElement) close(); }
+
+  viewer.addEventListener('click', close);
+  document.addEventListener('keydown', onKey);
+  if (viewer.requestFullscreen) {
+    viewer.requestFullscreen()
+      .then(function () { document.addEventListener('fullscreenchange', onChange); })
+      .catch(function () {});
+  }
+}
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1172,6 +1210,38 @@ Figure&nbsp;21.1: ROP exam medications order set.
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
