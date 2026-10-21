@@ -190,10 +190,6 @@ Use the **PNL NICU EYE (ROP) EXAM MEDICATIONS IP SCAL** order set. Default medic
 
 ![ROP exam medications order set.](Figures/rop-exam-orderset.png){#fig-rop-exam-orderset width=720px .lightbox}
 
-```{=html}
-<button type="button" class="btn btn-outline-primary btn-sm fullscreen-btn" data-img="Figures/rop-exam-orderset.png" onclick="openImageFullscreen(this)">&#x26F6; View full screen</button>
-```
-
 <br/>
 
 ## Blood transfusion {#sec-blood-transfusion}
@@ -210,19 +206,19 @@ Use the **PNL NICU EYE (ROP) EXAM MEDICATIONS IP SCAL** order set. Default medic
 1. Use the BPAM orderset
 
 ::: column-page-right
-![](Figures/ordering-blood-product-step1.png)
+![](Figures/ordering-blood-product-step1.png){.lightbox group="blood-product"}
 :::
 
 2. Select the blood product type
 
 ::: column-page-right
-![](Figures/ordering-blood-product-step2.png)
+![](Figures/ordering-blood-product-step2.png){.lightbox group="blood-product"}
 :::
 
 3. Enter the volume and the duration
 
 ::: column-page-right
-![](Figures/ordering-blood-product-step3.png)
+![](Figures/ordering-blood-product-step3.png){.lightbox group="blood-product"}
 :::
 
 
