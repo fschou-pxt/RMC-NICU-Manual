@@ -1,5 +1,7 @@
 project:
   type: book
+  resources:
+    - chatbot/nicu-manual-knowledge.md
 
 book:
   sidebar: 
@@ -67,6 +69,7 @@ format:
   html:
     theme: lumen
     css: custom.css
+    include-after-body: chatbot/widget.html
     page-break-after: always
 
 
