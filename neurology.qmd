@@ -636,7 +636,7 @@ OR
 ### Imaging
 
 * Head ultrasound
-* Brain MRI without contrast
+* Brain MRI without contrast (where MRI can be done: see @sec-agreement-radiology)
 
 
 <br/><br/>
@@ -685,7 +685,7 @@ Upon discovery of an infant fall:
 
 #### Imaging
 *	Significant abnormal physical exam: STAT Head CT Scan and Neurosurgical consult
-*	Less severe cases, MRI can be attempted in lieu of CT scan to avoid radiation exposure. MRI to be completed within 24 hours.
+*	Less severe cases, MRI can be attempted in lieu of CT scan to avoid radiation exposure. MRI to be completed within 24 hours (where MRI can be done: see @sec-agreement-radiology).
 *	Consider skeletal x-rays and head ultrasound as needed on case by case basis.
 
 

@@ -42,6 +42,40 @@ $mg/kg/min\ =\ \displaystyle \frac{(\%\ Dextrose)\ \times\ hourly\ rate\ (ml/hr)
 Order code: 66686
 Order name: IV Fluid Composer Adjustable Neonatal IV Continuous
 
+### Line KVO rates {#sec-line-kvo}
+
+NICU Line KVO Rates Quick Reference (NICU CNS, sent to Pharmacy, October 2026).
+
+| Line | Minimum KVO rate | ELBW / ELGAN minimum |
+|------|:----------------:|:--------------------:|
+| **PICC** (single or double lumen) | **1 mL/hr** | — |
+| **UVC** (single or double lumen) | **0.5–1 mL/hr** | **0.3 mL/hr** |
+| **UAC** | **0.5–1 mL/hr** | — |
+| **PAL** | **1 mL/hr** | **0.5 mL/hr** |
+
+::: {.callout-note}
+## Standard KVO solution — all NICU lines (UVC, UAC, PICC, PAL)
+**½ Na-Acetate with heparin 0.5 units/mL** to infuse at **1 mL/hr**
+:::
+
+::: {.callout-important}
+## Heparin reminder — central lines
+* Fluid must be heparinized at a minimum of **0.5 units/mL**.
+* Rate **< 1 mL/hr** → increase heparin to **1 unit/mL**.
+:::
+
+::: {.callout-note}
+## Alprostadil minimum rate
+Central line **1 mL/hr** · Peripheral line **2 mL/hr**
+:::
+
+::: {.callout-note}
+## Non-central infusions
+Max osmolality **900–1,000** with Neonatology collaboration
+:::
+
+ELBW: extremely low birth weight (< 1,000 g); ELGAN: extremely low gestational age newborn (< 28 weeks); PICC: peripherally inserted central venous catheter; UVC: umbilical venous catheter; UAC: umbilical arterial catheter; PAL: peripheral arterial line.
+
 <br/>
 <br/>
 {{< pagebreak >}}

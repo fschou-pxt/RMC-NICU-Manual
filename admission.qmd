@@ -63,9 +63,11 @@ Initial fluid
       - 1U/mL heparin at 0.5mL/hr
 * Port 2: 
     - NaAce 77mEq/L or 154mEq/L 
-        - 2U/mL heparin at 0.3mL/hr
+        - 1U/mL heparin at 0.3mL/hr
         - 1U/mL heparin at 0.5mL/hr
         - 0.5U/mL heparin at 1mL/hr
+
+Minimum KVO rates and heparin concentration by line: see @sec-line-kvo.
 
 ### UVC Securement {#sec-uvc-securement}
 

@@ -22,6 +22,18 @@ title:'PayPal - The safer, easier way to pay online!',
 
 ::: {.callout-important}
 
+## NEW UPDATE - Oct 23, 2026
+
+* Interdepartmental Agreements
+  * Radiology: @sec-agreement-radiology
+  * Pediatrics–Neonatology FCC coverage: @sec-agreement-fcc
+* NICU line KVO rates quick reference
+  * @sec-line-kvo
+
+:::
+
+::: {.callout-important}
+
 ## NEW UPDATE - Oct 21, 2026
 
 * ROP exam medications order set
