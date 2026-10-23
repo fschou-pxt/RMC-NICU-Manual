@@ -887,6 +887,8 @@ Minimum KVO rates and heparin concentration by line: see [Section 12.2.4](https:
 ## 5 NICU Admission › 5.2 Central line placement › UAC Placement › Indication
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#indication
 
+Either of the following:
+
 - Frequent blood draw
 - Hemodynamic monitoring
 
@@ -1351,6 +1353,8 @@ A combination of **two or more** medical factors that requires early interventio
 ## 7 Discharging an Infant › 7.9 Inland Regional Center Early Start Program › Short list of criteria
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#short-list-of-criteria
 
+Any of the following:
+
 - Hypoglycemia with IV > 48 hrs ?
 - Bilirubin > 20 mg/dL
 - Intubated for > 24 hrs
@@ -1379,6 +1383,8 @@ For infnats with birth weight > 1,500g and birth GA ≥ 32 weeks, one of the fol
 ## 7 Discharging an Infant › 7.10 High-Risk Infant Follow-Up › Short list of criteria
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#short-list-of-criteria-1
 
+Any of the following:
+
 - Bilirubin > 25 mg/dL
 - pH < 7.0
 - Congenital heart defect requiring surgical correction
@@ -1392,6 +1398,8 @@ Pediatrics (2016) 138 (6): e20163107.\
 
 ## 7 Discharging an Infant › 7.11 Screening for Developmental Dysplasia of Hip › Risk factors
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#risk-factors
+
+Any of the following:
 
 - Breech position
 - Female sex
@@ -1769,7 +1777,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html
 ## 10 Respiratory › 10.1 Least Invasive Surfactant Administration › Indication
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#indication
 
-- FiO~2~ ≥ 30%\
+Either of the following:
+
+- FiO~2~ ≥ 30%
 - Increased work of breathing
 
 ## 10 Respiratory › 10.1 Least Invasive Surfactant Administration › Procedure
@@ -1886,7 +1896,7 @@ Refer to the **SERVO-u/n User’s Manual** for operation of the ventilator.
 ## 10 Respiratory › 10.4 High-Frequency Jet Ventilator (HFJV) › Indications
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#indications
 
-HFJV is indicated for neonates with specific conditions requiring gentle, high-frequency support:
+HFJV is indicated for neonates with any of the following conditions requiring gentle, high-frequency support:
 
 - Pulmonary interstitial emphysema (PIE)
 - Respiratory distress syndrome complicated by pneumothorax
@@ -2541,6 +2551,8 @@ iNO, in conjunction with ventilatory support and other appropriate agents, is in
 ## 11 Cardiovascular › 11.1 Persistent Pulmonary Hypertension of Newborn (PPHN) › Inhaled nitric oxide (iNO) › Contraindications
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#contraindications
 
+Any of the following:
+
 - iNO should not be used in the treatment of neonates known to be dependent on right-to-left shunting (present in many forms of congenital cardiac disease).
 - Severe left ventricular dysfunction.
 - Non-pulmonary terminal illness.
@@ -2875,6 +2887,8 @@ When using Prolacta Prolac+ H^2^MF\
 ## 12 Nutrition, Fluid and Electrolytes › 12.12 Prolacta Cream › Indication
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#indication
 
+Either of the following:
+
 1.  Overcome fat absorption by gavage tube - feeding rate-dependent
 2.  Overcome low fat content in mother’s milk
 
@@ -2976,6 +2990,8 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
 
 ## 12 Nutrition, Fluid and Electrolytes › 12.14 NTrainer Use Regional Guidelines › Criteria for initiating NTrainer therapy
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#criteria-for-initiating-ntrainer-therapy
+
+All criteria for the infant’s gestational age group must be met:
 
 - For infants ≤ 30 weeks at birth:
   - Start training as early as 30 0/7 weeks PMA
@@ -4276,6 +4292,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#inclusion-crite
 
 ## 17 Neurology › 17.4 Practice Guideline: Therapeutic Hypothermia › Eligibility Criteria › Exclusion Criteria
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#exclusion-criteria
+
+Any of the following:
 
 - Inability to initiate therapeutic hypothermia by 6 hours of age, or per neonatologist’s discretion.
 - Gestation age less than 35 weeks.
@@ -7059,6 +7077,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#ga-32-weeks-or-bw-15
 ## 21 VLBW/ELGAN/ELBW Infants › 21.4 Screening › Thyroid screening › Indication
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#indication
 
+Any of the following:
+
 - BW ≤ 1,500g
 - Same-sex if chorionic status not known
 
@@ -7094,6 +7114,8 @@ Pediatrics (2013) 131 (1): 189–195. <https://doi.org/10.1542/peds.2012-2996>
 
 ## 21 VLBW/ELGAN/ELBW Infants › 21.4 Screening › Retinopathy of prematurity › Indication
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#indication-2
+
+Any of the following:
 
 - GA < 31 weeks or BW ≤ 1,500 grams
 - GA ≥ 31 weeks or BW > 1,500 grams with risk factors

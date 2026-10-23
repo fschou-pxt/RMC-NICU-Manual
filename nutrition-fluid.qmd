@@ -335,6 +335,8 @@ When using Prolacta Prolac+ H^2^MF
 
 ### Indication
 
+Either of the following:
+
 1. Overcome fat absorption by gavage tube - feeding rate-dependent
 2. Overcome low fat content in mother's milk
 
@@ -797,6 +799,8 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
 <br/>
 
 ### Criteria for initiating NTrainer therapy
+
+All criteria for the infant's gestational age group must be met:
 
 * For infants ≤ 30 weeks at birth:
   * Start training as early as 30 0/7 weeks PMA

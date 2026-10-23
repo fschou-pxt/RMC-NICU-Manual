@@ -82,6 +82,8 @@ Minimum KVO rates and heparin concentration by line: see @sec-line-kvo.
 
 #### Indication
 
+Either of the following:
+
 * Frequent blood draw 
 * Hemodynamic monitoring
 

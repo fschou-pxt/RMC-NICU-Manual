@@ -500,6 +500,9 @@ Neonatologist to determine whether the infant meets criteria to initiate therape
 - Infants must meet either criteria A1 OR A2, AND criteria B to be eligible for therapeutic hypothermia.
 
 #### Exclusion Criteria
+
+Any of the following:
+
 - Inability to initiate therapeutic hypothermia by 6 hours of age, or per neonatologist's discretion.
 - Gestation age less than 35 weeks.
 - Birth weight less than 1800 grams.

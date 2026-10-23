@@ -160,7 +160,46 @@ def sections(md, page, chap_title):
     return out
 
 
+CRITERIA_HEAD = re.compile(r"indicat|criteri|eligib|inclusion|exclusion|contraindic|risk factor|candidate|qualif", re.I)
+QUANTIFIER = re.compile(r"\b(all|any|either|both|one or more|at least|none|each|including)\b|\bor\b|\band\b", re.I)
+
+
+def warn_unlabeled_lists():
+    """Flag criteria lists that don't say whether all or any items must apply (the chatbot can't tell)."""
+    found = 0
+    for name in chapter_files():
+        path = os.path.join(ROOT, name + ".qmd")
+        if not os.path.exists(path) or name.startswith(("genetics-lluch", "lluch-formulary")):
+            continue
+        lines = open(path, encoding="utf-8").read().splitlines()
+        for i, line in enumerate(lines):
+            m = re.match(r"^#{2,6}\s+(.*)$", line)
+            if not m or not CRITERIA_HEAD.search(re.sub(r"\(.*?\)", "", m.group(1))):
+                continue
+            intro, items, bullets = [], [], 0
+            for nxt in lines[i + 1:]:
+                if re.match(r"^#{1,6}\s", nxt):
+                    break
+                if re.match(r"^([*-]|\d+\.)\s+", nxt):
+                    bullets += 1
+                    items.append(nxt)
+                elif nxt.strip() and not bullets:
+                    intro.append(nxt)
+                elif nxt.strip() and bullets and not nxt.startswith((" ", "\t")):
+                    break
+            # labeled in the intro, or the items themselves spell out the logic (e.g. "meet both ...")
+            labeled = any(QUANTIFIER.search(t) for t in intro) or \
+                any(re.search(r"\b(both|either|all|any)\b", t, re.I) for t in items)
+            if bullets >= 2 and not labeled:
+                found += 1
+                print(f"  check: {name}.qmd:{i + 1} '{m.group(1).strip()}' lists {bullets} items "
+                      "without saying 'Any of' or 'All of'")
+    if found:
+        print(f"{found} criteria list(s) may be read ambiguously by the chatbot (see above).")
+
+
 def main():
+    warn_unlabeled_lists()
     pandoc = find_pandoc()
     lua_path = os.path.join(os.path.dirname(OUT), ".sections.lua")
     with open(lua_path, "w") as f:

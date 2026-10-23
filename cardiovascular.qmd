@@ -167,6 +167,8 @@ iNO, in conjunction with ventilatory support and other appropriate agents, is in
 
 #### Contraindications
 
+Any of the following:
+
 - iNO should not be used in the treatment of neonates known to be dependent on right-to-left shunting (present in many forms of congenital cardiac disease).
 - Severe left ventricular dysfunction.
 - Non-pulmonary terminal illness.

@@ -10,7 +10,9 @@ number-depth: 2
 
 ### Indication
 
-* FiO~2~ &ge; 30%  
+Either of the following:
+
+* FiO~2~ &ge; 30%
 * Increased work of breathing
 
 ### Procedure
@@ -172,7 +174,7 @@ Refer to the **SERVO-u/n User’s Manual** for operation of the ventilator.
 
 ### Indications
 
-HFJV is indicated for neonates with specific conditions requiring gentle, high-frequency support:
+HFJV is indicated for neonates with any of the following conditions requiring gentle, high-frequency support:
 
 - Pulmonary interstitial emphysema (PIE)
 - Respiratory distress syndrome complicated by pneumothorax

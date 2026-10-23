@@ -427,6 +427,8 @@ A combination of **two or more** medical factors that requires early interventio
 
 ### Short list of criteria
 
+Any of the following:
+
 * Hypoglycemia with IV > 48 hrs [?]{style="color:red"}
 * Bilirubin > 20 mg/dL
 * Intubated for > 24 hrs
@@ -463,6 +465,8 @@ For infnats with birth weight \> 1,500g and birth GA ≥ 32 weeks, one of the fo
 
 ### Short list of criteria
 
+Any of the following:
+
 * Bilirubin > 25 mg/dL
 * pH < 7.0
 * Congenital heart defect requiring surgical correction
@@ -480,6 +484,8 @@ Pediatrics (2016) 138 (6): e20163107.
 <br/>
 
 ### Risk factors
+
+Any of the following:
 
 * Breech position
 * Female sex
