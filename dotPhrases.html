@@ -561,10 +561,10 @@ QS=quality of nippling scale</p>
 
 </main> <!-- /main -->
 <!-- NICU Manual chat: answers from the manual, opens and highlights the source.
-     Runs entirely in the browser with the user's own API key (Anthropic or xAI). -->
+     Runs entirely in the browser with the user's own API key (Anthropic, OpenAI, or xAI). -->
 <div id="nicu-chat-root"></div>
 <style>
-#nicu-chat-root { --nc-blue: #158cba; --nc-blue-dark: #0f6f94; --nc-bg: #ffffff; --nc-soft: #f3f7fa;
+#nicu-chat-root { --nc-blue: #003b71; --nc-blue-dark: #002a52; --nc-bg: #ffffff; --nc-soft: #f3f7fa;
   --nc-text: #222; --nc-muted: #6b7280; --nc-border: #d9e1e7; font-size: 14px; line-height: 1.45; }
 #nicu-chat-root * { box-sizing: border-box; }
 .nc-launch { position: fixed; right: 20px; bottom: 20px; z-index: 1050; width: 56px; height: 56px;
@@ -618,12 +618,27 @@ mark.nicu-hl { background: #ffe066; color: inherit; padding: 0 1px; border-radiu
 <script type="module">
 const SDK_URL = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.133.0/+esm";
 const LIVE_BASE = "https://fschou-pxt.github.io/RMC-NICU-Manual/";
-const CLAUDE_MODELS = [
-  ["claude-opus-5-5", "Claude Opus 5.5"],
-  ["claude-sonnet-5-5", "Claude Sonnet 5.5"],
-  ["claude-haiku-5-5", "Claude Haiku 5.5"],
+// one list of every provider/model offered (model IDs checked October 2026)
+const PROVIDERS = {
+  anthropic: { name: "Anthropic", keyHint: "sk-ant-…", console: "console.anthropic.com",
+    keyOk: (k) => k.startsWith("sk-ant-") },
+  openai: { name: "OpenAI", keyHint: "sk-…", console: "platform.openai.com",
+    keyOk: (k) => k.startsWith("sk-") && !k.startsWith("sk-ant-") },
+  xai: { name: "xAI", keyHint: "xai-…", console: "console.x.ai", keyOk: (k) => k.startsWith("xai-") },
+};
+const MODELS = [
+  { id: "claude-opus-5-5", label: "Claude Opus 5.5", provider: "anthropic" },
+  { id: "claude-sonnet-5-5", label: "Claude Sonnet 5.5", provider: "anthropic" },
+  { id: "claude-haiku-5-5", label: "Claude Haiku 5.5 (fastest, cheapest)", provider: "anthropic" },
+  { id: "claude-fable-5-1", label: "Claude Fable 5.1 (most capable, costliest)", provider: "anthropic" },
+  { id: "gpt-6-astra", label: "GPT-6 Astra", provider: "openai" },
+  { id: "gpt-6.1-sol", label: "GPT-6.1 Sol", provider: "openai" },
+  { id: "gpt-6-luna", label: "GPT-6 Luna (fastest, cheapest)", provider: "openai" },
+  { id: "grok-4.7", label: "Grok 4.7", provider: "xai" },
+  { id: "grok-4.3", label: "Grok 4.3 (cheaper)", provider: "xai" },
 ];
-const FALLBACK_MODELS = ["claude-opus-5-5", "claude-sonnet-5-5"];
+const modelInfo = (id) => MODELS.find((m) => m.id === id) || MODELS[0];
+const FALLBACK_MODELS = ["claude-opus-5-5", "claude-sonnet-5-5", "claude-fable-5-1"];
 const K = { history: "nicuChat.history", open: "nicuChat.open", pending: "nicuChat.pending",
   key: "nicuChat.key", settings: "nicuChat.settings" };
 
@@ -636,18 +651,26 @@ const store = {
 const S = window.sessionStorage, L = window.localStorage;
 const readJSON = (area, k, d) => { try { return JSON.parse(store.get(area, k)) ?? d; } catch { return d; } };
 
-function getKey() { return store.get(S, K.key) || store.get(L, K.key) || ""; }
-function saveKey(key, remember) {
-  store.del(S, K.key); store.del(L, K.key);
-  if (key) store.set(remember ? L : S, K.key, key);
+// one saved key per provider: nicuChat.key.anthropic, nicuChat.key.openai, nicuChat.key.xai
+const keyName = (provider) => K.key + "." + provider;
+function getKey(provider) { return store.get(S, keyName(provider)) || store.get(L, keyName(provider)) || ""; }
+function keyRemembered() { return Object.keys(PROVIDERS).some((p) => store.get(L, keyName(p))); }
+function saveKey(provider, key, remember) {
+  store.del(S, keyName(provider)); store.del(L, keyName(provider));
+  if (key) store.set(remember ? L : S, keyName(provider), key);
 }
 function settings() {
-  return { model: "claude-opus-5-5", xaiModel: "", autoJump: true, ...readJSON(L, K.settings, {}) };
+  const st = { model: "claude-opus-5-5", autoJump: true, ...readJSON(L, K.settings, {}) };
+  st.model = modelInfo(st.model).id;
+  return st;
 }
-function providerFor(key) {
-  if (key.startsWith("sk-ant-")) return "anthropic";
-  if (key.startsWith("xai-")) return "xai";
-  return null;
+// keys saved by the first version of the widget (single slot) move to their provider's slot
+for (const area of [S, L]) {
+  const old = store.get(area, K.key);
+  if (!old) continue;
+  const p = Object.keys(PROVIDERS).find((id) => PROVIDERS[id].keyOk(old));
+  if (p && !store.get(area, keyName(p))) store.set(area, keyName(p), old);
+  store.del(area, K.key);
 }
 
 // ---------- site paths ----------
@@ -787,21 +810,36 @@ async function askClaude(key, model, messages) {
   if (!text) throw new Error("Empty response from the model.");
   return JSON.parse(text);
 }
-async function askGrok(key, model, messages) {
-  if (!model) throw new Error("Enter the Grok model name in settings.");
-  const r = await fetch("https://api.x.ai/v1/chat/completions", {
+// OpenAI and xAI share the chat-completions request shape
+const CHAT_URLS = { openai: "https://api.openai.com/v1/chat/completions", xai: "https://api.x.ai/v1/chat/completions" };
+async function askChatCompletions(provider, key, model, messages) {
+  const body = { model, messages: [{ role: "system", content: SYSTEM }, ...messages],
+    response_format: { type: "json_schema", json_schema: { name: "manual_answer", schema: SCHEMA, strict: true } } };
+  if (provider === "openai") body.reasoning_effort = "low";
+  const r = await fetch(CHAT_URLS[provider], {
     method: "POST",
     headers: { "Content-Type": "application/json", Authorization: "Bearer " + key },
-    body: JSON.stringify({ model, messages: [{ role: "system", content: SYSTEM }, ...messages],
-      response_format: { type: "json_schema", json_schema: { name: "manual_answer", schema: SCHEMA, strict: true } } }),
+    body: JSON.stringify(body),
   });
-  if (!r.ok) throw new Error(`xAI error ${r.status}: ${(await r.text()).slice(0, 200)}`);
+  if (!r.ok) {
+    const detail = await r.text();
+    const err = new Error(`${PROVIDERS[provider].name} error ${r.status}: ${detail.slice(0, 200)}`);
+    err.status = r.status;
+    try { err.error = { error: JSON.parse(detail).error }; } catch {}
+    throw err;
+  }
   const data = await r.json();
-  return JSON.parse(data.choices?.[0]?.message?.content || "{}");
+  const choice = data.choices?.[0];
+  if (choice?.message?.refusal) throw new Error("The model declined to answer this question.");
+  if (choice?.finish_reason === "length") throw new Error("The answer was cut off. Try a narrower question.");
+  return JSON.parse(choice?.message?.content || "{}");
 }
-function friendlyError(e) {
+function friendlyError(e, provider) {
   const status = e?.status;
-  if (status === 401) return "Your API key was rejected. Check it in settings (⚙).";
+  if (status === 401 || (status === 400 && /api key/i.test(e.message))) return "Your API key was rejected. Check it in settings (⚙).";
+  // OpenAI omits CORS headers on error replies, so a bad key surfaces as a network failure
+  if (provider === "openai" && e instanceof TypeError)
+    return "Couldn't get a reply from OpenAI. Check your OpenAI key in settings (⚙) and your connection.";
   if (status === 403) return "This API key doesn't have access to that model.";
   if (status === 429) return "Rate limited by the API. Wait a moment and try again.";
   if (status >= 500) return "The AI service is busy or unavailable. Try again shortly.";
@@ -922,9 +960,10 @@ function setOpen(open) {
   if (open) { render(); if (view === "chat") input.focus(); }
 }
 function render() {
-  if (!getKey() || view === "settings") return renderSettings();
+  const model = modelInfo(settings().model);
+  if (!getKey(model.provider) || view === "settings") return renderSettings();
   form.hidden = false;
-  const notice = `<p class="nc-note">Answers come only from this manual and may be wrong; verify with the linked source. Do not enter patient identifiers.</p>`;
+  const notice = `<p class="nc-note">Using <b>${esc(model.label.replace(/ \(.*\)$/, ""))}</b> (change in ⚙). Answers come only from this manual and may be wrong; verify with the linked source. Do not enter patient identifiers.</p>`;
   body.innerHTML = notice + history.map((m, i) => {
     if (m.role === "user") return `<div class="nc-msg nc-user">${esc(m.text)}</div>`;
     if (m.error) return `<div class="nc-msg nc-bot nc-err">${esc(m.text)}</div>`;
@@ -937,24 +976,36 @@ function render() {
 }
 function renderSettings() {
   form.hidden = true;
-  const st = settings(), key = getKey(), remembered = !!store.get(L, K.key);
-  const opts = CLAUDE_MODELS.map(([v, l]) => `<option value="${v}"${v === st.model ? " selected" : ""}>${l}</option>`).join("");
+  const st = settings(), current = modelInfo(st.model);
+  const opts = Object.entries(PROVIDERS).map(([pid, p]) =>
+    `<optgroup label="${p.name}">` + MODELS.filter((m) => m.provider === pid).map((m) =>
+      `<option value="${m.id}"${m.id === current.id ? " selected" : ""}>${esc(m.label)}</option>`).join("") + "</optgroup>").join("");
   body.innerHTML = `<div class="nc-set">
-    <p class="nc-note">This assistant uses <b>your own API key</b> from Anthropic (<code>sk-ant-…</code>, console.anthropic.com) or xAI (<code>xai-…</code>). Your questions and the relevant manual sections go directly from this browser to that company and are billed to your account. Do not enter patient identifiers.</p>
-    <label for="nc-key">API key</label>
-    <input id="nc-key" type="password" autocomplete="off" placeholder="sk-ant-… or xai-…" value="${esc(key)}">
-    <label class="nc-check"><input id="nc-remember" type="checkbox"${remembered ? " checked" : ""}> Remember on this device (don't check on shared NICU computers)</label>
-    <label for="nc-model">Claude model</label>
+    <p class="nc-note">This assistant uses <b>your own API key</b> from Anthropic, OpenAI, or xAI. Your questions and the relevant manual sections go directly from this browser to that company and are billed to your account. Do not enter patient identifiers.</p>
+    <label for="nc-model">AI model</label>
     <select id="nc-model">${opts}</select>
-    <label for="nc-xai">Grok model (only for xAI keys)</label>
-    <input id="nc-xai" type="text" placeholder="e.g. the model name from your xAI console" value="${esc(st.xaiModel)}">
+    <label for="nc-key" id="nc-key-label"></label>
+    <input id="nc-key" type="password" autocomplete="off">
+    <label class="nc-check"><input id="nc-remember" type="checkbox"${keyRemembered() ? " checked" : ""}> Remember on this device (don't check on shared NICU computers)</label>
     <label class="nc-check"><input id="nc-jump" type="checkbox"${st.autoJump ? " checked" : ""}> Open and highlight the source automatically</label>
     <div class="nc-row">
       <button type="button" class="nc-btn" data-act="save">Save</button>
-      ${key ? `<button type="button" class="nc-btn nc-ghost" data-act="forget">Forget key</button>` : ""}
-      ${key ? `<button type="button" class="nc-btn nc-ghost" data-act="back">Back</button>` : ""}
+      <button type="button" class="nc-btn nc-ghost" data-act="forget">Forget key</button>
+      <button type="button" class="nc-btn nc-ghost" data-act="back">Back</button>
     </div>
     <p class="nc-note" id="nc-set-msg"></p></div>`;
+  syncKeyField();
+  $("#nc-model").addEventListener("change", syncKeyField);
+}
+// show the selected model's provider key (each provider keeps its own)
+function syncKeyField() {
+  const provider = modelInfo($("#nc-model").value).provider, p = PROVIDERS[provider], key = getKey(provider);
+  $("#nc-key-label").textContent = `${p.name} API key (${p.keyHint}, from ${p.console})`;
+  $("#nc-key").placeholder = p.keyHint;
+  $("#nc-key").value = key;
+  root.querySelector('[data-act="forget"]').hidden = !key;
+  root.querySelector('[data-act="back"]').hidden = !getKey(modelInfo(settings().model).provider);
+  $("#nc-set-msg").textContent = "";
 }
 
 root.addEventListener("click", (ev) => {
@@ -966,13 +1017,15 @@ root.addEventListener("click", (ev) => {
   else if (act === "new") { history = []; saveHistory(); clearHighlights(); view = "chat"; render(); }
   else if (act === "settings") { view = view === "settings" ? "chat" : "settings"; render(); }
   else if (act === "back") { view = "chat"; render(); }
-  else if (act === "forget") { saveKey("", false); view = "settings"; render(); }
+  else if (act === "forget") { saveKey(modelInfo($("#nc-model").value).provider, "", false); syncKeyField(); }
   else if (act === "save") {
-    const key = $("#nc-key").value.trim();
-    if (!providerFor(key)) { $("#nc-set-msg").textContent = "That doesn't look like an Anthropic (sk-ant-…) or xAI (xai-…) key."; return; }
-    saveKey(key, $("#nc-remember").checked);
-    store.set(L, K.settings, JSON.stringify({ model: $("#nc-model").value, xaiModel: $("#nc-xai").value.trim(),
-      autoJump: $("#nc-jump").checked }));
+    const model = modelInfo($("#nc-model").value), p = PROVIDERS[model.provider];
+    const key = $("#nc-key").value.trim(), remember = $("#nc-remember").checked;
+    if (!p.keyOk(key)) { $("#nc-set-msg").textContent = `That doesn't look like an ${p.name} key (${p.keyHint}).`; return; }
+    saveKey(model.provider, key, remember);
+    // move the other providers' saved keys to match the "remember" choice
+    for (const other of Object.keys(PROVIDERS)) if (other !== model.provider && getKey(other)) saveKey(other, getKey(other), remember);
+    store.set(L, K.settings, JSON.stringify({ model: model.id, autoJump: $("#nc-jump").checked }));
     view = "chat"; render(); input.focus();
   } else if (t.dataset.msg !== undefined) {
     const src = history[+t.dataset.msg]?.sources?.[+t.dataset.src];
@@ -986,8 +1039,8 @@ form.addEventListener("submit", async (ev) => {
   ev.preventDefault();
   const question = input.value.trim();
   if (!question || busy) return;
-  const key = getKey(), provider = providerFor(key), st = settings();
-  if (!provider) { view = "settings"; return render(); }
+  const st = settings(), provider = modelInfo(st.model).provider, key = getKey(provider);
+  if (!key) { view = "settings"; return render(); }
   const prior = history.filter((m) => m.role === "user").slice(-1).map((m) => m.text).join(" ");
   const past = history.slice();
   history.push({ role: "user", text: question });
@@ -997,7 +1050,8 @@ form.addEventListener("submit", async (ev) => {
     const sections = await loadSections();
     const excerpts = retrieve(sections, question + " " + prior);
     const messages = buildMessages(past, question, excerpts);
-    const out = provider === "anthropic" ? await askClaude(key, st.model, messages) : await askGrok(key, st.xaiModel, messages);
+    const out = provider === "anthropic" ? await askClaude(key, st.model, messages)
+      : await askChatCompletions(provider, key, st.model, messages);
     const byId = new Map(excerpts.map((s) => [s.id, s]));
     const seen = new Set();
     const sources = (out.sources || []).filter((s) => byId.has(s.id) && !seen.has(s.id) && seen.add(s.id)).map((s) => {
@@ -1007,7 +1061,7 @@ form.addEventListener("submit", async (ev) => {
     });
     reply = { role: "assistant", text: out.answer || "(no answer)", sources: out.not_in_manual ? sources.slice(0, 1) : sources };
   } catch (e) {
-    reply = { role: "assistant", error: true, text: friendlyError(e) };
+    reply = { role: "assistant", error: true, text: friendlyError(e, provider) };
   }
   busy = false;
   history.push(reply); saveHistory(); render();
