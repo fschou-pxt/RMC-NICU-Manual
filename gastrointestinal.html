@@ -504,6 +504,470 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<!-- NICU Manual chat: answers from the manual, opens and highlights the source.
+     Runs entirely in the browser with the user's own API key (Anthropic or xAI). -->
+<div id="nicu-chat-root"></div>
+<style>
+#nicu-chat-root { --nc-blue: #158cba; --nc-blue-dark: #0f6f94; --nc-bg: #ffffff; --nc-soft: #f3f7fa;
+  --nc-text: #222; --nc-muted: #6b7280; --nc-border: #d9e1e7; font-size: 14px; line-height: 1.45; }
+#nicu-chat-root * { box-sizing: border-box; }
+.nc-launch { position: fixed; right: 20px; bottom: 20px; z-index: 1050; width: 56px; height: 56px;
+  border-radius: 50%; border: 0; background: var(--nc-blue); color: #fff; cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25); display: flex; align-items: center; justify-content: center; }
+.nc-launch:hover { background: var(--nc-blue-dark); }
+.nc-panel { position: fixed; right: 20px; bottom: 88px; z-index: 1050; width: 380px; max-width: calc(100vw - 32px);
+  height: 560px; max-height: calc(100vh - 110px); background: var(--nc-bg); color: var(--nc-text);
+  border: 1px solid var(--nc-border); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  display: flex; flex-direction: column; overflow: hidden; }
+.nc-panel[hidden] { display: none; }
+.nc-head { display: flex; align-items: center; gap: 4px; padding: 10px 10px 10px 14px; background: var(--nc-blue); color: #fff; }
+.nc-head strong { flex: 1; font-size: 15px; }
+.nc-icon { background: transparent; border: 0; color: #fff; cursor: pointer; padding: 4px 6px; border-radius: 6px; font-size: 13px; }
+.nc-icon:hover { background: rgba(255,255,255,.18); }
+.nc-body { flex: 1; overflow-y: auto; padding: 12px; background: var(--nc-soft); }
+.nc-msg { margin: 0 0 10px; padding: 8px 11px; border-radius: 10px; max-width: 92%; word-wrap: break-word; }
+.nc-user { margin-left: auto; background: var(--nc-blue); color: #fff; white-space: pre-wrap; }
+.nc-bot { background: #fff; border: 1px solid var(--nc-border); }
+.nc-bot p { margin: 0 0 6px; } .nc-bot p:last-child { margin-bottom: 0; }
+.nc-bot ul, .nc-bot ol { margin: 4px 0 6px; padding-left: 20px; }
+.nc-src { margin-top: 8px; padding-top: 6px; border-top: 1px dashed var(--nc-border); font-size: 12.5px; }
+.nc-src b { color: var(--nc-muted); font-weight: 600; }
+.nc-src button { display: block; text-align: left; width: 100%; background: none; border: 0; padding: 3px 0;
+  color: var(--nc-blue-dark); cursor: pointer; text-decoration: underline; font-size: 12.5px; }
+.nc-note { font-size: 12px; color: var(--nc-muted); margin: 0 0 10px; }
+.nc-err { background: #fdecea; border: 1px solid #f5c2bd; color: #8a1c12; }
+.nc-typing { color: var(--nc-muted); font-style: italic; }
+.nc-foot { display: flex; gap: 6px; padding: 8px; border-top: 1px solid var(--nc-border); background: #fff; }
+.nc-foot[hidden] { display: none; }
+.nc-foot textarea { flex: 1; resize: none; height: 54px; border: 1px solid var(--nc-border); border-radius: 8px;
+  padding: 6px 8px; font: inherit; }
+.nc-send { border: 0; border-radius: 8px; background: var(--nc-blue); color: #fff; padding: 0 14px; cursor: pointer; }
+.nc-send:disabled { opacity: .5; cursor: default; }
+.nc-set label { display: block; font-weight: 600; margin: 10px 0 4px; }
+.nc-set input[type=password], .nc-set input[type=text], .nc-set select { width: 100%; padding: 6px 8px;
+  border: 1px solid var(--nc-border); border-radius: 6px; font: inherit; }
+.nc-set .nc-check { font-weight: 400; display: flex; gap: 6px; align-items: flex-start; }
+.nc-set .nc-row { display: flex; gap: 8px; margin-top: 14px; }
+.nc-btn { border: 1px solid var(--nc-blue); background: var(--nc-blue); color: #fff; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+.nc-btn.nc-ghost { background: #fff; color: var(--nc-blue-dark); }
+mark.nicu-hl { background: #ffe066; color: inherit; padding: 0 1px; border-radius: 2px; scroll-margin-top: 120px; }
+.nicu-flash { animation: nicuFlash 2.5s ease-out; }
+@keyframes nicuFlash { from { background: #ffe066; } to { background: transparent; } }
+@media (max-width: 600px) {
+  .nc-panel { right: 8px; left: 8px; width: auto; max-width: none; bottom: 80px; height: calc(100vh - 100px); }
+  .nc-launch { right: 14px; bottom: 14px; }
+}
+@media print { #nicu-chat-root { display: none; } }
+</style>
+<script type="module">
+const SDK_URL = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.133.0/+esm";
+const LIVE_BASE = "https://fschou-pxt.github.io/RMC-NICU-Manual/";
+const CLAUDE_MODELS = [
+  ["claude-opus-5-5", "Claude Opus 5.5"],
+  ["claude-sonnet-5-5", "Claude Sonnet 5.5"],
+  ["claude-haiku-5-5", "Claude Haiku 5.5"],
+];
+const FALLBACK_MODELS = ["claude-opus-5-5", "claude-sonnet-5-5"];
+const K = { history: "nicuChat.history", open: "nicuChat.open", pending: "nicuChat.pending",
+  key: "nicuChat.key", settings: "nicuChat.settings" };
+
+// ---------- storage (every access guarded: private windows can throw) ----------
+const store = {
+  get(area, k) { try { return area.getItem(k); } catch { return null; } },
+  set(area, k, v) { try { area.setItem(k, v); } catch {} },
+  del(area, k) { try { area.removeItem(k); } catch {} },
+};
+const S = window.sessionStorage, L = window.localStorage;
+const readJSON = (area, k, d) => { try { return JSON.parse(store.get(area, k)) ?? d; } catch { return d; } };
+
+function getKey() { return store.get(S, K.key) || store.get(L, K.key) || ""; }
+function saveKey(key, remember) {
+  store.del(S, K.key); store.del(L, K.key);
+  if (key) store.set(remember ? L : S, K.key, key);
+}
+function settings() {
+  return { model: "claude-opus-5-5", xaiModel: "", autoJump: true, ...readJSON(L, K.settings, {}) };
+}
+function providerFor(key) {
+  if (key.startsWith("sk-ant-")) return "anthropic";
+  if (key.startsWith("xai-")) return "xai";
+  return null;
+}
+
+// ---------- site paths ----------
+const ROOT = (() => {
+  const s = document.querySelector('script[src*="site_libs/"]');
+  return s ? s.src.split("site_libs/")[0] : new URL("./", location.href).href;
+})();
+const localize = (url) => url.startsWith(LIVE_BASE) ? ROOT + url.slice(LIVE_BASE.length) : url;
+
+// ---------- knowledge + retrieval ----------
+let sectionsPromise = null;
+function loadSections() {
+  sectionsPromise ??= fetch(ROOT + "chatbot/nicu-manual-knowledge.md")
+    .then((r) => { if (!r.ok) throw new Error("Could not load the manual text (" + r.status + ")."); return r.text(); })
+    .then(parseSections)
+    .catch((e) => { sectionsPromise = null; throw e; });
+  return sectionsPromise;
+}
+function parseSections(md) {
+  const out = [];
+  for (const block of md.split(/\n(?=## )/)) {
+    const m = block.match(/^## (.+)\nURL: (\S+)\n([\s\S]*)$/);
+    if (!m) continue;
+    const text = m[3].replace(/\n# [^\n]*\nURL: \S+\s*$/, "").trim();
+    if (text) out.push({ title: m[1].trim(), url: m[2], text });
+  }
+  out.forEach((s, i) => { s.id = i + 1; s.tokens = tokenize(s.title + " " + s.title + " " + s.text); });
+  return out;
+}
+const STOP = new Set(("a an and are as at be by can do does for from has have how i if in is it its of on or " +
+  "should that the their there this to was we what when where which who why will with you your our me my " +
+  "please tell about").split(" "));
+function tokenize(text) {
+  return text.toLowerCase().replace(/[^a-z0-9.%/+-]+/g, " ").split(" ")
+    .map((t) => t.replace(/^[.%/+-]+|[.%/+-]+$/g, ""))
+    .filter((t) => t && !STOP.has(t))
+    .map((t) => (t.length > 4 && t.endsWith("s") && !t.endsWith("ss") ? t.slice(0, -1) : t));
+}
+// BM25 over sections, best first, within a character budget
+function retrieve(sections, query, maxSections = 12, maxChars = 60000) {
+  const q = [...new Set(tokenize(query))];
+  if (!q.length) return [];
+  const N = sections.length;
+  const avg = sections.reduce((a, s) => a + s.tokens.length, 0) / N;
+  const df = Object.fromEntries(q.map((t) => [t, sections.filter((s) => s.tokens.includes(t)).length]));
+  const scored = sections.map((s) => {
+    let score = 0;
+    for (const t of q) {
+      if (!df[t]) continue;
+      const tf = s.tokens.filter((x) => x === t).length;
+      if (!tf) continue;
+      const idf = Math.log(1 + (N - df[t] + 0.5) / (df[t] + 0.5));
+      score += idf * (tf * 2.2) / (tf + 1.2 * (0.25 + 0.75 * s.tokens.length / avg));
+    }
+    return { s, score };
+  }).filter((x) => x.score > 0).sort((a, b) => b.score - a.score);
+  const picked = [];
+  let chars = 0;
+  for (const { s } of scored) {
+    if (picked.length >= maxSections) break;
+    const text = s.text.length > 12000 ? s.text.slice(0, 12000) + "\n[section truncated]" : s.text;
+    if (chars + text.length > maxChars && picked.length) continue;
+    picked.push({ ...s, text });
+    chars += text.length;
+  }
+  return picked;
+}
+// letters/digits only (plus a few symbols), so quotes match regardless of markdown, spacing and table cells
+function squashChar(c) {
+  if (/\s/.test(c) || "*_`|\\#>".includes(c)) return "";
+  if (c === "‘" || c === "’") return "'";
+  if (c === "“" || c === "”") return '"';
+  return c.toLowerCase();
+}
+const squash = (t) => [...t.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")].map(squashChar).join("");
+
+// ---------- the model call ----------
+const SYSTEM = `You answer questions for clinicians in the KP Riverside NICU using only excerpts from the KP Riverside Neonatal ICU Manual. Each excerpt has a numeric id, a breadcrumb title, and its text.
+
+- Base every answer only on the excerpts. Do not add facts, doses, thresholds, or recommendations from general medical knowledge.
+- Lead with the direct answer in 1-4 short bullets or sentences. Copy numbers, doses, rates, order names and codes, phone numbers, and times exactly as written, with units.
+- If the excerpts do not answer the question, set not_in_manual to true, say "The manual does not address this," and suggest checking with the attending neonatologist or pharmacy. Do not fill the gap yourself.
+- If excerpts conflict, or the answer depends on site (RMC vs. MVMC), gestational age, or weight, give each version.
+- Say so when the manual marks something as pending, TBD, an open item, or temporarily suspended.
+- For a dose, rate, or treatment decision, end with one line reminding that the manual does not replace clinical judgment.
+- If the question contains patient names, MRNs, dates of birth, or other identifiers, do not repeat them and remind the user not to enter patient information.
+- Keep it brief and clinical. Use markdown bullets and **bold** only. Do not include URLs; links are added from sources.
+
+sources: list each excerpt you used, most important first, with its id and a quote copied character-for-character from that excerpt's text (one short sentence, phrase, or table row of at most 200 characters) that best supports the answer. Use an empty list when nothing applies.`;
+
+const SCHEMA = {
+  type: "object",
+  properties: {
+    answer: { type: "string" },
+    not_in_manual: { type: "boolean" },
+    sources: { type: "array", items: { type: "object",
+      properties: { id: { type: "integer" }, quote: { type: "string" } },
+      required: ["id", "quote"], additionalProperties: false } },
+  },
+  required: ["answer", "not_in_manual", "sources"],
+  additionalProperties: false,
+};
+
+function buildMessages(history, question, excerpts) {
+  const msgs = [];
+  for (const m of history.slice(-6)) {
+    if (m.role === "user") msgs.push({ role: "user", content: m.text });
+    else if (m.role === "assistant" && !m.error) msgs.push({ role: "assistant", content: m.text });
+  }
+  while (msgs.length && msgs[0].role !== "user") msgs.shift();
+  const ctx = excerpts.length
+    ? excerpts.map((s) => `<excerpt id="${s.id}" title="${s.title.replace(/"/g, "'")}">\n${s.text}\n</excerpt>`).join("\n\n")
+    : "(no matching excerpts found)";
+  msgs.push({ role: "user", content: `<manual_excerpts>\n${ctx}\n</manual_excerpts>\n\nQuestion: ${question}` });
+  return msgs;
+}
+
+let sdk = null;
+async function askClaude(key, model, messages) {
+  sdk ??= await import(SDK_URL);
+  const Anthropic = sdk.default;
+  const client = new Anthropic({ apiKey: key, dangerouslyAllowBrowser: true });
+  const params = { model, max_tokens: 8000, system: SYSTEM, messages,
+    output_config: { effort: "low", format: { type: "json_schema", schema: SCHEMA } } };
+  let resp;
+  try {
+    resp = FALLBACK_MODELS.includes(model)
+      ? await client.beta.messages.create({ ...params, betas: ["server-side-fallback-2026-07-01"], fallbacks: "default" })
+      : await client.messages.create(params);
+  } catch (e) {
+    if (!(e instanceof Anthropic.BadRequestError) || !FALLBACK_MODELS.includes(model)) throw e;
+    resp = await client.messages.create(params); // retry once without the fallback beta
+  }
+  if (resp.stop_reason === "refusal") throw new Error("The model declined to answer this question.");
+  if (resp.stop_reason === "max_tokens") throw new Error("The answer was cut off. Try a narrower question.");
+  const text = resp.content.find((b) => b.type === "text")?.text;
+  if (!text) throw new Error("Empty response from the model.");
+  return JSON.parse(text);
+}
+async function askGrok(key, model, messages) {
+  if (!model) throw new Error("Enter the Grok model name in settings.");
+  const r = await fetch("https://api.x.ai/v1/chat/completions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: "Bearer " + key },
+    body: JSON.stringify({ model, messages: [{ role: "system", content: SYSTEM }, ...messages],
+      response_format: { type: "json_schema", json_schema: { name: "manual_answer", schema: SCHEMA, strict: true } } }),
+  });
+  if (!r.ok) throw new Error(`xAI error ${r.status}: ${(await r.text()).slice(0, 200)}`);
+  const data = await r.json();
+  return JSON.parse(data.choices?.[0]?.message?.content || "{}");
+}
+function friendlyError(e) {
+  const status = e?.status;
+  if (status === 401) return "Your API key was rejected. Check it in settings (⚙).";
+  if (status === 403) return "This API key doesn't have access to that model.";
+  if (status === 429) return "Rate limited by the API. Wait a moment and try again.";
+  if (status >= 500) return "The AI service is busy or unavailable. Try again shortly.";
+  if (status === 400) return "The request was rejected: " + (e?.error?.error?.message || e.message);
+  if (sdk && e instanceof sdk.default.APIConnectionError || e instanceof TypeError)
+    return "Couldn't reach the AI service. Check your connection.";
+  return e?.message || String(e);
+}
+
+// ---------- highlighting on the page ----------
+function clearHighlights() {
+  document.querySelectorAll("mark.nicu-hl").forEach((m) => m.replaceWith(...m.childNodes));
+}
+function highlightOnPage(quote, hash) {
+  clearHighlights();
+  const main = document.querySelector("#quarto-document-content") || document.body;
+  if (quote) {
+    const nodes = [], map = [];
+    let flat = "";
+    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT, { acceptNode: (n) =>
+      n.parentElement.closest("script,style,#nicu-chat-root,.anchorjs-link") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+      const ni = nodes.push(n) - 1;
+      for (let i = 0; i < n.data.length; i++) {
+        const c = squashChar(n.data[i]);
+        if (c) { flat += c; map.push([ni, i]); }
+      }
+    }
+    let needle = squash(quote), at = flat.indexOf(needle);
+    if (at < 0 && needle.length > 30) { needle = needle.slice(0, 30); at = flat.indexOf(needle); }
+    if (at >= 0) {
+      const [sn, so] = map[at], [en, eo] = map[at + needle.length - 1];
+      const marks = [];
+      for (let ni = en; ni >= sn; ni--) {
+        let node = nodes[ni];
+        const s = ni === sn ? so : 0, e = ni === en ? eo + 1 : node.data.length;
+        if (e <= s || !node.data.slice(s, e).trim()) continue;
+        if (s > 0) node = node.splitText(s);
+        if (e - s < node.data.length) node.splitText(e - s);
+        const mark = document.createElement("mark");
+        mark.className = "nicu-hl";
+        node.replaceWith(mark);
+        mark.appendChild(node);
+        marks.unshift(mark);
+      }
+      if (marks.length) { marks[0].scrollIntoView({ behavior: "smooth", block: "center" }); return true; }
+    }
+  }
+  const target = hash && document.getElementById(decodeURIComponent(hash.slice(1)));
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    target.classList.remove("nicu-flash"); void target.offsetWidth; target.classList.add("nicu-flash");
+  }
+  return false;
+}
+function jumpTo(src) {
+  const target = new URL(localize(src.url), location.href);
+  if (window.innerWidth < 600) setOpen(false); // the panel covers the page on phones
+  if (target.pathname === location.pathname) {
+    if (target.hash && location.hash !== target.hash) history.replaceState(null, "", target.hash);
+    highlightOnPage(src.quote, target.hash);
+  } else {
+    store.set(S, K.pending, JSON.stringify({ quote: src.quote, hash: target.hash }));
+    location.href = target.href;
+  }
+}
+
+// ---------- tiny markdown renderer (escaped first) ----------
+function esc(s) { return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function inline(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/(^|[^*])\*([^*\n]+)\*/g, "$1<em>$2</em>"); }
+function renderMd(md) {
+  const out = [];
+  let list = null;
+  for (const raw of md.split("\n")) {
+    const line = raw.trimEnd();
+    const ul = line.match(/^\s*[-*•]\s+(.*)$/), ol = line.match(/^\s*\d+[.)]\s+(.*)$/);
+    const kind = ul ? "ul" : ol ? "ol" : null;
+    if (kind) {
+      if (list !== kind) { if (list) out.push(`</${list}>`); out.push(`<${kind}>`); list = kind; }
+      out.push(`<li>${inline((ul || ol)[1])}</li>`);
+      continue;
+    }
+    if (list) { out.push(`</${list}>`); list = null; }
+    if (line.trim()) out.push(`<p>${inline(line.trim())}</p>`);
+  }
+  if (list) out.push(`</${list}>`);
+  return out.join("");
+}
+
+// ---------- UI ----------
+const root = document.getElementById("nicu-chat-root");
+root.innerHTML = `
+  <button class="nc-launch" type="button" aria-label="Ask the NICU Manual" title="Ask the NICU Manual">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+  <section class="nc-panel" role="dialog" aria-label="Ask the NICU Manual" hidden>
+    <div class="nc-head">
+      <strong>Ask the NICU Manual</strong>
+      <button class="nc-icon" data-act="new" type="button" title="New chat">New</button>
+      <button class="nc-icon" data-act="settings" type="button" title="Settings">⚙</button>
+      <button class="nc-icon" data-act="close" type="button" title="Close" aria-label="Close">✕</button>
+    </div>
+    <div class="nc-body"></div>
+    <form class="nc-foot">
+      <textarea placeholder="Ask a question about the manual…" aria-label="Your question" maxlength="1500"></textarea>
+      <button class="nc-send" type="submit">Ask</button>
+    </form>
+  </section>`;
+const $ = (sel) => root.querySelector(sel);
+const panel = $(".nc-panel"), body = $(".nc-body"), form = $(".nc-foot"), input = $("textarea"), sendBtn = $(".nc-send");
+let history = readJSON(S, K.history, []);
+let busy = false, view = "chat";
+
+function saveHistory() { store.set(S, K.history, JSON.stringify(history.slice(-30))); }
+function setOpen(open) {
+  panel.hidden = !open;
+  store.set(S, K.open, open ? "1" : "0");
+  if (open) { render(); if (view === "chat") input.focus(); }
+}
+function render() {
+  if (!getKey() || view === "settings") return renderSettings();
+  form.hidden = false;
+  const notice = `<p class="nc-note">Answers come only from this manual and may be wrong; verify with the linked source. Do not enter patient identifiers.</p>`;
+  body.innerHTML = notice + history.map((m, i) => {
+    if (m.role === "user") return `<div class="nc-msg nc-user">${esc(m.text)}</div>`;
+    if (m.error) return `<div class="nc-msg nc-bot nc-err">${esc(m.text)}</div>`;
+    const src = (m.sources || []).map((s, j) =>
+      `<button type="button" data-msg="${i}" data-src="${j}">${esc(s.title)}</button>`).join("");
+    return `<div class="nc-msg nc-bot">${renderMd(m.text)}${src ? `<div class="nc-src"><b>Source</b>${src}</div>` : ""}</div>`;
+  }).join("") + (busy ? `<div class="nc-msg nc-bot nc-typing">Looking it up…</div>` : "");
+  body.scrollTop = body.scrollHeight;
+  sendBtn.disabled = busy;
+}
+function renderSettings() {
+  form.hidden = true;
+  const st = settings(), key = getKey(), remembered = !!store.get(L, K.key);
+  const opts = CLAUDE_MODELS.map(([v, l]) => `<option value="${v}"${v === st.model ? " selected" : ""}>${l}</option>`).join("");
+  body.innerHTML = `<div class="nc-set">
+    <p class="nc-note">This assistant uses <b>your own API key</b> from Anthropic (<code>sk-ant-…</code>, console.anthropic.com) or xAI (<code>xai-…</code>). Your questions and the relevant manual sections go directly from this browser to that company and are billed to your account. Do not enter patient identifiers.</p>
+    <label for="nc-key">API key</label>
+    <input id="nc-key" type="password" autocomplete="off" placeholder="sk-ant-… or xai-…" value="${esc(key)}">
+    <label class="nc-check"><input id="nc-remember" type="checkbox"${remembered ? " checked" : ""}> Remember on this device (don't check on shared NICU computers)</label>
+    <label for="nc-model">Claude model</label>
+    <select id="nc-model">${opts}</select>
+    <label for="nc-xai">Grok model (only for xAI keys)</label>
+    <input id="nc-xai" type="text" placeholder="e.g. the model name from your xAI console" value="${esc(st.xaiModel)}">
+    <label class="nc-check"><input id="nc-jump" type="checkbox"${st.autoJump ? " checked" : ""}> Open and highlight the source automatically</label>
+    <div class="nc-row">
+      <button type="button" class="nc-btn" data-act="save">Save</button>
+      ${key ? `<button type="button" class="nc-btn nc-ghost" data-act="forget">Forget key</button>` : ""}
+      ${key ? `<button type="button" class="nc-btn nc-ghost" data-act="back">Back</button>` : ""}
+    </div>
+    <p class="nc-note" id="nc-set-msg"></p></div>`;
+}
+
+root.addEventListener("click", (ev) => {
+  const t = ev.target.closest("button");
+  if (!t) return;
+  if (t.classList.contains("nc-launch")) return setOpen(panel.hidden);
+  const act = t.dataset.act;
+  if (act === "close") setOpen(false);
+  else if (act === "new") { history = []; saveHistory(); clearHighlights(); view = "chat"; render(); }
+  else if (act === "settings") { view = view === "settings" ? "chat" : "settings"; render(); }
+  else if (act === "back") { view = "chat"; render(); }
+  else if (act === "forget") { saveKey("", false); view = "settings"; render(); }
+  else if (act === "save") {
+    const key = $("#nc-key").value.trim();
+    if (!providerFor(key)) { $("#nc-set-msg").textContent = "That doesn't look like an Anthropic (sk-ant-…) or xAI (xai-…) key."; return; }
+    saveKey(key, $("#nc-remember").checked);
+    store.set(L, K.settings, JSON.stringify({ model: $("#nc-model").value, xaiModel: $("#nc-xai").value.trim(),
+      autoJump: $("#nc-jump").checked }));
+    view = "chat"; render(); input.focus();
+  } else if (t.dataset.msg !== undefined) {
+    const src = history[+t.dataset.msg]?.sources?.[+t.dataset.src];
+    if (src) jumpTo(src);
+  }
+});
+input.addEventListener("keydown", (ev) => {
+  if (ev.key === "Enter" && !ev.shiftKey) { ev.preventDefault(); form.requestSubmit(); }
+});
+form.addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  const question = input.value.trim();
+  if (!question || busy) return;
+  const key = getKey(), provider = providerFor(key), st = settings();
+  if (!provider) { view = "settings"; return render(); }
+  const prior = history.filter((m) => m.role === "user").slice(-1).map((m) => m.text).join(" ");
+  const past = history.slice();
+  history.push({ role: "user", text: question });
+  input.value = ""; busy = true; saveHistory(); render();
+  let reply;
+  try {
+    const sections = await loadSections();
+    const excerpts = retrieve(sections, question + " " + prior);
+    const messages = buildMessages(past, question, excerpts);
+    const out = provider === "anthropic" ? await askClaude(key, st.model, messages) : await askGrok(key, st.xaiModel, messages);
+    const byId = new Map(excerpts.map((s) => [s.id, s]));
+    const seen = new Set();
+    const sources = (out.sources || []).filter((s) => byId.has(s.id) && !seen.has(s.id) && seen.add(s.id)).map((s) => {
+      const sec = byId.get(s.id);
+      const ok = s.quote && squash(sec.text).includes(squash(s.quote));
+      return { title: sec.title, url: sec.url, quote: ok ? s.quote : "" };
+    });
+    reply = { role: "assistant", text: out.answer || "(no answer)", sources: out.not_in_manual ? sources.slice(0, 1) : sources };
+  } catch (e) {
+    reply = { role: "assistant", error: true, text: friendlyError(e) };
+  }
+  busy = false;
+  history.push(reply); saveHistory(); render();
+  if (!reply.error && reply.sources?.length && settings().autoJump) jumpTo(reply.sources[0]);
+});
+
+// restore state after navigating between chapters
+if (store.get(S, K.open) === "1") setOpen(true);
+const pending = readJSON(S, K.pending, null);
+if (pending) {
+  store.del(S, K.pending);
+  const go = () => setTimeout(() => highlightOnPage(pending.quote, pending.hash || location.hash), 300);
+  document.readyState === "complete" ? go() : window.addEventListener("load", go);
+}
+window.NICUChat = { loadSections, retrieve, highlightOnPage, jumpTo, squash }; // for debugging in the console
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
