@@ -1120,31 +1120,36 @@ D --&gt; H["If testes are high scrotum or
   border-radius: 50%; border: 0; background: var(--nc-blue); color: #fff; cursor: pointer;
   box-shadow: 0 4px 14px rgba(0,0,0,.25); display: flex; align-items: center; justify-content: center; }
 .nc-launch:hover { background: var(--nc-blue-dark); }
-.nc-panel { position: fixed; right: 20px; bottom: 88px; z-index: 1050; width: 380px; max-width: calc(100vw - 32px);
-  height: 560px; max-height: calc(100vh - 110px); background: var(--nc-bg); color: var(--nc-text);
+.nc-panel { position: fixed; right: 20px; bottom: 88px; z-index: 1050; width: var(--nc-w, 420px); max-width: calc(100vw - 32px);
+  height: 600px; max-height: calc(100vh - 110px); background: var(--nc-bg); color: var(--nc-text);
   border: 1px solid var(--nc-border); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.2);
-  display: flex; flex-direction: column; overflow: hidden; }
+  display: flex; flex-direction: column; overflow: hidden; font-size: var(--nc-fs, 16px); }
 .nc-panel[hidden] { display: none; }
-.nc-head { display: flex; align-items: center; gap: 4px; padding: 10px 10px 10px 14px; background: var(--nc-blue); color: #fff; }
-.nc-head strong { flex: 1; font-size: 15px; }
+/* near-full-window mode: content stays in a readable centered column */
+.nc-panel.nc-max { top: 16px; left: 16px; right: 16px; bottom: 16px; width: auto; height: auto; max-width: none; max-height: none; }
+.nc-max .nc-body, .nc-max .nc-foot { padding-left: max(16px, calc((100% - 860px) / 2)); padding-right: max(16px, calc((100% - 860px) / 2)); }
+#nicu-chat-root.nc-maxed .nc-launch { display: none; }
+.nc-head { display: flex; align-items: center; gap: 2px; padding: 10px 8px 10px 14px; background: var(--nc-blue); color: #fff; font-size: 14px; }
+.nc-head strong { flex: 1; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .nc-icon { background: transparent; border: 0; color: #fff; cursor: pointer; padding: 4px 6px; border-radius: 6px; font-size: 13px; }
 .nc-icon:hover { background: rgba(255,255,255,.18); }
+.nc-icon:disabled { opacity: .4; cursor: default; background: transparent; }
 .nc-body { flex: 1; overflow-y: auto; padding: 12px; background: var(--nc-soft); }
 .nc-msg { margin: 0 0 10px; padding: 8px 11px; border-radius: 10px; max-width: 92%; word-wrap: break-word; }
 .nc-user { margin-left: auto; background: var(--nc-blue); color: #fff; white-space: pre-wrap; }
 .nc-bot { background: #fff; border: 1px solid var(--nc-border); }
 .nc-bot p { margin: 0 0 6px; } .nc-bot p:last-child { margin-bottom: 0; }
 .nc-bot ul, .nc-bot ol { margin: 4px 0 6px; padding-left: 20px; }
-.nc-src { margin-top: 8px; padding-top: 6px; border-top: 1px dashed var(--nc-border); font-size: 12.5px; }
+.nc-src { margin-top: 8px; padding-top: 6px; border-top: 1px dashed var(--nc-border); font-size: .9em; }
 .nc-src b { color: var(--nc-muted); font-weight: 600; }
 .nc-src button { display: block; text-align: left; width: 100%; background: none; border: 0; padding: 3px 0;
-  color: var(--nc-blue-dark); cursor: pointer; text-decoration: underline; font-size: 12.5px; }
-.nc-note { font-size: 12px; color: var(--nc-muted); margin: 0 0 10px; }
+  color: var(--nc-blue-dark); cursor: pointer; text-decoration: underline; font-size: inherit; }
+.nc-note { font-size: .85em; color: var(--nc-muted); margin: 0 0 10px; }
 .nc-err { background: #fdecea; border: 1px solid #f5c2bd; color: #8a1c12; }
 .nc-typing { color: var(--nc-muted); font-style: italic; }
 .nc-foot { display: flex; gap: 6px; padding: 8px; border-top: 1px solid var(--nc-border); background: #fff; }
 .nc-foot[hidden] { display: none; }
-.nc-foot textarea { flex: 1; resize: none; height: 54px; border: 1px solid var(--nc-border); border-radius: 8px;
+.nc-foot textarea { flex: 1; resize: none; height: 3.6em; border: 1px solid var(--nc-border); border-radius: 8px;
   padding: 6px 8px; font: inherit; }
 .nc-send { border: 0; border-radius: 8px; background: var(--nc-blue); color: #fff; padding: 0 14px; cursor: pointer; }
 .nc-send:disabled { opacity: .5; cursor: default; }
@@ -1189,7 +1194,7 @@ const MODELS = [
 const modelInfo = (id) => MODELS.find((m) => m.id === id) || MODELS[0];
 const FALLBACK_MODELS = ["claude-opus-5-5", "claude-sonnet-5-5", "claude-fable-5-1"];
 const K = { history: "nicuChat.history", open: "nicuChat.open", pending: "nicuChat.pending",
-  key: "nicuChat.key", settings: "nicuChat.settings" };
+  key: "nicuChat.key", settings: "nicuChat.settings", ui: "nicuChat.ui" };
 
 // ---------- storage (every access guarded: private windows can throw) ----------
 const store = {
@@ -1300,13 +1305,15 @@ const squash = (t) => [...t.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")].map(squashC
 const SYSTEM = `You answer questions for clinicians in the KP Riverside NICU using only excerpts from the KP Riverside Neonatal ICU Manual. Each excerpt has a numeric id, a breadcrumb title, and its text.
 
 - Base every answer only on the excerpts. Do not add facts, doses, thresholds, or recommendations from general medical knowledge.
+- Answer every part of the question (for example both "whether" and "how"), using the procedure or steps sections when the manual has them.
+- Read criteria lists literally. Only treat bulleted criteria as all required when the manual says "all", "and", or "both"; when it says "either", "any", or "or", one criterion is enough; when it doesn't say, state that the manual lists these criteria without saying whether all are needed, rather than assuming.
 - Lead with the direct answer in 1-4 short bullets or sentences. Copy numbers, doses, rates, order names and codes, phone numbers, and times exactly as written, with units.
 - If the excerpts do not answer the question, set not_in_manual to true, say "The manual does not address this," and suggest checking with the attending neonatologist or pharmacy. Do not fill the gap yourself.
 - If excerpts conflict, or the answer depends on site (RMC vs. MVMC), gestational age, or weight, give each version.
 - Say so when the manual marks something as pending, TBD, an open item, or temporarily suspended.
 - For a dose, rate, or treatment decision, end with one line reminding that the manual does not replace clinical judgment.
 - If the question contains patient names, MRNs, dates of birth, or other identifiers, do not repeat them and remind the user not to enter patient information.
-- Keep it brief and clinical. Use markdown bullets and **bold** only. Do not include URLs; links are added from sources.
+- Keep it brief and clinical. Use markdown bullets and **bold** only. Do not include URLs or excerpt ids in the answer; source links are added automatically.
 
 sources: list each excerpt you used, most important first, with its id and a quote copied character-for-character from that excerpt's text (one short sentence, phrase, or table row of at most 200 characters) that best supports the answer. Use an empty list when nothing applies.`;
 
@@ -1447,11 +1454,12 @@ function highlightOnPage(quote, hash) {
 function jumpTo(src) {
   const target = new URL(localize(src.url), location.href);
   if (window.innerWidth < 600) setOpen(false); // the panel covers the page on phones
+  else if (ui.max) { maxPaused = true; applyUi(); } // shrink so the highlighted text is visible
   if (target.pathname === location.pathname) {
-    if (target.hash && location.hash !== target.hash) history.replaceState(null, "", target.hash);
+    if (target.hash && location.hash !== target.hash) window.history.replaceState(null, "", target.hash);
     highlightOnPage(src.quote, target.hash);
   } else {
-    store.set(S, K.pending, JSON.stringify({ quote: src.quote, hash: target.hash }));
+    store.set(S, K.pending, JSON.stringify({ quote: src.quote, hash: target.hash, unmax: maxPaused }));
     location.href = target.href;
   }
 }
@@ -1487,6 +1495,9 @@ root.innerHTML = `
   <section class="nc-panel" role="dialog" aria-label="Ask the NICU Manual" hidden>
     <div class="nc-head">
       <strong>Ask the NICU Manual</strong>
+      <button class="nc-icon" data-act="smaller" type="button" title="Smaller text" aria-label="Smaller text">A−</button>
+      <button class="nc-icon" data-act="bigger" type="button" title="Larger text" aria-label="Larger text">A+</button>
+      <button class="nc-icon" data-act="max" type="button"></button>
       <button class="nc-icon" data-act="new" type="button" title="New chat">New</button>
       <button class="nc-icon" data-act="settings" type="button" title="Settings">⚙</button>
       <button class="nc-icon" data-act="close" type="button" title="Close" aria-label="Close">✕</button>
@@ -1502,10 +1513,31 @@ const panel = $(".nc-panel"), body = $(".nc-body"), form = $(".nc-foot"), input 
 let history = readJSON(S, K.history, []);
 let busy = false, view = "chat";
 
+// text size (5 levels) and near-full-window mode, remembered per device
+const FONT_PX = [13, 14.5, 16, 18, 21], PANEL_W = [360, 390, 420, 470, 520];
+const ui = { font: 2, max: false, ...readJSON(L, K.ui, {}) };
+ui.font = Math.min(FONT_PX.length - 1, Math.max(0, ui.font | 0));
+let maxPaused = false; // un-maximized while showing a source on the page; ⤢ brings it back
+function applyUi() {
+  const max = ui.max && !maxPaused;
+  panel.style.setProperty("--nc-fs", FONT_PX[ui.font] + "px");
+  panel.style.setProperty("--nc-w", PANEL_W[ui.font] + "px");
+  panel.classList.toggle("nc-max", max);
+  root.classList.toggle("nc-maxed", max && !panel.hidden);
+  $('[data-act="smaller"]').disabled = ui.font === 0;
+  $('[data-act="bigger"]').disabled = ui.font === FONT_PX.length - 1;
+  const mb = $('[data-act="max"]');
+  mb.textContent = max ? "⤡" : "⤢";
+  mb.title = max ? "Restore panel size" : "Expand to full window";
+  mb.setAttribute("aria-label", mb.title);
+}
+function saveUi() { store.set(L, K.ui, JSON.stringify({ font: ui.font, max: ui.max })); applyUi(); }
+
 function saveHistory() { store.set(S, K.history, JSON.stringify(history.slice(-30))); }
 function setOpen(open) {
   panel.hidden = !open;
   store.set(S, K.open, open ? "1" : "0");
+  applyUi();
   if (open) { render(); if (view === "chat") input.focus(); }
 }
 function render() {
@@ -1563,6 +1595,12 @@ root.addEventListener("click", (ev) => {
   if (t.classList.contains("nc-launch")) return setOpen(panel.hidden);
   const act = t.dataset.act;
   if (act === "close") setOpen(false);
+  else if (act === "smaller" || act === "bigger") {
+    ui.font = Math.min(FONT_PX.length - 1, Math.max(0, ui.font + (act === "bigger" ? 1 : -1))); saveUi();
+  } else if (act === "max") {
+    if (maxPaused) maxPaused = false; else ui.max = !ui.max;
+    saveUi(); body.scrollTop = body.scrollHeight;
+  }
   else if (act === "new") { history = []; saveHistory(); clearHighlights(); view = "chat"; render(); }
   else if (act === "settings") { view = view === "settings" ? "chat" : "settings"; render(); }
   else if (act === "back") { view = "chat"; render(); }
@@ -1618,8 +1656,10 @@ form.addEventListener("submit", async (ev) => {
 });
 
 // restore state after navigating between chapters
-if (store.get(S, K.open) === "1") setOpen(true);
 const pending = readJSON(S, K.pending, null);
+if (pending?.unmax) maxPaused = true;
+applyUi();
+if (store.get(S, K.open) === "1") setOpen(true);
 if (pending) {
   store.del(S, K.pending);
   const go = () => setTimeout(() => highlightOnPage(pending.quote, pending.hash || location.hash), 300);
