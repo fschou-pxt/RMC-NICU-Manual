@@ -65,7 +65,7 @@ NICU Line KVO Rates Quick Reference (NICU CNS, sent to Pharmacy, October 2026).
 :::
 
 ::: {.callout-note}
-## Alprostadil minimum rate
+## Alprostadil (Prostin) minimum rate
 Central line **1 mL/hr** · Peripheral line **2 mL/hr**
 :::
 

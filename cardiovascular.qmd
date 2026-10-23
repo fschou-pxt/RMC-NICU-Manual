@@ -271,7 +271,7 @@ Consider transfer to an outside facility with 24-hr inpatient pediatric cardiolo
 
 ### Treatment
 
-* Alprostadil 2mcg/mL in D5W 25mL IV Soln
+* Alprostadil (Prostin) 2mcg/mL in D5W 25mL IV Soln
 * Starting dose: 0.05 mcg/kg/min
 * Minimum rate: central line 1 mL/hr, peripheral line 2 mL/hr (see @sec-line-kvo)
 
