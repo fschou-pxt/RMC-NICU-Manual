@@ -1,0 +1,755 @@
+{
+ "chapter": "respiratory",
+ "section": "Least Invasive Surfactant Administration",
+ "anchor": "respiratory.html#least-invasive-surfactant-administration",
+ "source": {
+  "file": "respiratory.qmd",
+  "lines": "7-36",
+  "manual_commit": "6347989"
+ },
+ "checked": "2026-10-24",
+ "generated_with": "Researcher, Comparer, Reviewer: claude-opus-5-5",
+ "triage": {
+  "clinical": 6,
+  "operational": 0,
+  "definition": 0,
+  "context": 1
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "Either of the following: * FiO~2~ &ge; 30% * Increased work of breathing",
+   "verdict": "partly_concordant",
+   "summary": "An FiO2 threshold of 0.30 in preterm infants on noninvasive support is supported by the 2025 European guideline and the main thin-catheter trials, while signs of respiratory distress are used within a combined judgement of RDS severity, as an early trigger in extremely preterm infants, in some trials as a graded Silverman score accepted as an alternative to FiO2, and in a US consensus as clinical measures that may precede FiO2 as an indication [Sweet2026; Dargaville2021; Gopel2011; AbdelLatif2021; Ramaswamy2023; Bhandari2023].",
+   "note": "Current evidence suggests an FiO2 threshold of 0.30 (≥0.30 or >0.30) is the usual trigger for thin-catheter surfactant in preterm infants already on CPAP or other noninvasive support in the 2025 European guideline and the main trials, and a UK consensus treats FiO2 above 30% in the first hours as a reasonable predictor of CPAP failure [Sweet2026; Dargaville2021; Gopel2011; Hartel2024; Banerjee2019]; the Canadian statement recommends early surfactant for escalating or sustained oxygen need with other clinical or radiological signs (Grade B) and surfactant for all infants above FiO2 0.5 (Grade A), and a US consensus table requires at least 3 of 4 criteria, one of them FiO2 ≥0.3 early (≤2 h) or ≥0.4 later [Ng2021; Bhandari2023]. Signs of respiratory distress are part of the European guideline's clinical judgement of RDS severity and its early-treatment trigger for extremely preterm infants, some thin-catheter trials accepted a graded score as an alternative entry criterion (Silverman score ≥5 and/or FiO2 ≥0.3 at 23–26 weeks; FiO2 >30% or Silverman score >4 in another trial), and the US consensus states that clinical measures of distress, alone or in combination, may precede FiO2 as an indication, while describing work of breathing as very subjective and not studied alone [Sweet2026; AbdelLatif2021; Ramaswamy2023; Bhandari2023]. The optimal threshold remains uncertain: a network meta-analysis, based on very-low-certainty findings, inferred that surfactant may be considered at FiO2 ≥40% in infants ≤30 weeks and found insufficient evidence to compare 30% with 40%, and a recent review argues for gestation- and age-specific thresholds, the 2025 European guideline for age-specific cut-offs [Ramaswamy2023; Hartel2024; Sweet2026].",
+   "evidence": [
+    {
+     "ref": "Sweet2026",
+     "quote": "For infants >28 weeks, surfactant should be given to infants with worsening RDS (A1). A suggested protocol would be to give surfactant to infants on NRS with a MAP of ≥6 cm H2O, an FiO2 of ≥0.3, or where lung ultrasound suggests surfactant need (A1).",
+     "location": "Surfactant Therapy, Recommendations, item 3"
+    },
+    {
+     "ref": "Sweet2026",
+     "quote": "Surfactant should be given early in the course of the disease while on NRS (A1). Consider selective prophylaxis within the first hour of life for infants <28 weeks with early signs of RDS after stabilisation (B2).",
+     "location": "Surfactant Therapy, Recommendations, item 1"
+    },
+    {
+     "ref": "Sweet2026",
+     "quote": "for extremely preterm infants consider an early (selective prophylaxis) dose of surfactant by thin catheter if there are early signs of RDS such as chest retractions, to reduce the risk of needing MV.",
+     "location": "Delivery Room Stabilisation, Early Surfactant Therapy and Intubation"
+    },
+    {
+     "ref": "Sweet2026",
+     "quote": "At present, RDS severity is determined clinically, using a combination of FiO2 requirements, coupled with judgement of work of breathing and other signs of respiratory distress alongside the degree of lung aeration on chest radiograph (or ultrasound), all of which can be influenced by CPAP [102–104].",
+     "location": "Surfactant Therapy, When to Treat with Surfactant?"
+    },
+    {
+     "ref": "Sweet2026",
+     "quote": "As RDS is typically progressive over the first days of life, it is no surprise that FiO2 cut-off for surfactant administration should be age-specific.",
+     "location": "Surfactant Therapy, When to Treat with Surfactant?"
+    },
+    {
+     "ref": "Dargaville2021",
+     "quote": "Randomized clinical trial including 485 preterm infants with a gestational age of 25 to 28 weeks who were supported with continuous positive airway pressure (CPAP) and required a fraction of inspired oxygen of 0.30 or greater within 6 hours of birth.",
+     "location": "Abstract, Design"
+    },
+    {
+     "ref": "Gopel2011",
+     "quote": "In the intervention group, infants received surfactant treatment during spontaneous breathing via a thin catheter inserted into the trachea by laryngoscopy if they needed a fraction of inspired oxygen more than 0·30.",
+     "location": "Abstract, Method"
+    },
+    {
+     "ref": "Hartel2024",
+     "quote": "The threshold for LISA treatment in many centres has moved down to a FiO2 of 0.30 (30%) which is mainly based on observations of CPAP failure rates [2]. Taken together, the available studies of CPAP failure argue for both gestation and age-specific FiO2 thresholds for surfactant administration [2, 9, 33, 45, 46].",
+     "location": "What Are the Current Uncertainties about LISA? / LISA: Indications and Timing"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "The reasonable inference that could be drawn from these findings is that surfactant administration may be considered in preterm neonates of ≤30 weeks' with RDS requiring an FiO2 ≥ 40%. There was insufficient evidence for the comparison of FiO2 thresholds: 30% vs. 40%.",
+     "location": "Abstract, Findings"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "Further, surfactant administration at an FiO2 40-45% possibly decreased mortality compared to rescue treatment when respiratory failure was diagnosed, certainty very low.",
+     "location": "Abstract, Findings"
+    },
+    {
+     "ref": "AbdelLatif2021",
+     "quote": "RDS with Silverman score ≥ 5 and/or FiO2 ≥ 0.3 to maintain oxygen saturation > 83%",
+     "location": "Characteristics of included studies, Kribs 2015, Participants, Inclusion criteria 2"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "-FiO2 > 30% and/or Silverman Anderson score ≥5",
+     "location": "Table 1 Characteristics of included studies, Kribs 2015 (Germany) row, criteria for surfactant administration"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "-FiO2 > 30% or—moderate to severe respiratory distress as defined as a Silverman Andersen score >4",
+     "location": "Table 1 Characteristics of included studies, Mohammadizadeh 2014 (Iran) row, criteria for surfactant administration"
+    },
+    {
+     "ref": "Banerjee2019",
+     "quote": "Inspired oxygen concentration above 30% in the first hours of life is a reasonable predictor of CPAP failure.",
+     "location": "Key recommendations, item 3"
+    },
+    {
+     "ref": "Ng2021",
+     "quote": "Infants with RDS whose oxygen requirements exceed FiO2 of 0.5 should receive SRT (Grade A).",
+     "location": "Summary of Recommendations, item 3"
+    },
+    {
+     "ref": "Bhandari2023",
+     "quote": "Surfactant indicator table. Considerations for Surfactant Administration for RDSa (Need to fulfill at least 3 of 4 criteria).",
+     "location": "Results, Table 1 title"
+    },
+    {
+     "ref": "Bhandari2023",
+     "quote": "≥0.3 if early (≤2 h of life)OR≥0.4 if late (>2 h of life)",
+     "location": "Results, Table 1, FiO2 requirement row"
+    },
+    {
+     "ref": "Bhandari2023",
+     "quote": "However, work of breathing (WOB) is very subjective and has not been studied alone.",
+     "location": "Results, Section 1, discussion of Statement 2"
+    },
+    {
+     "ref": "Ng2021",
+     "quote": "Early surfactant should be provided for newborns with increasing severity of RDS, demonstrated by escalating or sustained levels of oxygen requirement and other clinical or radiological indications (72) (Grade B).",
+     "location": "Summary of Recommendations, item 2"
+    },
+    {
+     "ref": "Bhandari2023",
+     "quote": "For preterm infants with RDS receiving positive pressure support, an elevated and increasing fraction of inspired oxygen (FiO2) is an important indicator of the need for surfactant treatment based on administration criteria; other clinical measures of respiratory distress and/or support, alone or in combination, may precede and preempt FiO2 as an indication of need for surfactant treatment.",
+     "location": "Results, Section 1, Statement 2"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "Remove the stylet and needle",
+   "verdict": "insufficient",
+   "summary": "Published thin-catheter methods use different devices, including a 16G Angiocath vascular catheter and purpose-built catheters (one with an integrated stylet that remains fixed in place), so this preparation step is device-specific and is not itself addressed in the retrieved literature [Dargaville2014; Hartel2024; AlHarthy2023; Jahmani2024].",
+   "evidence": [
+    {
+     "ref": "Dargaville2014",
+     "quote": "The surfactant delivery catheter used to date in the studies of the Hobart MIST method has been the 16G Angiocath (Becton Dickinson, Sandy, UT, USA).",
+     "location": "Background › Important considerations in trial protocol development › The surfactant delivery catheter"
+    },
+    {
+     "ref": "Hartel2024",
+     "quote": "Nowadays most centres use purpose-built catheters designed for LISA or umbilical catheters (3.5–6 French diameter).",
+     "location": "The Methodology of LISA Is Highly Variable"
+    },
+    {
+     "ref": "AlHarthy2023",
+     "quote": "BLEScath™ is 205 mm long, 5 FR with integrated stainless steel (SS) stylet that is anchored and remains fixed in place, with 7-10 cm marking on the catheter to determine tip-to-lip distance.",
+     "location": "Methods, MIST catheter description"
+    },
+    {
+     "ref": "Jahmani2024",
+     "quote": "During the specified study period, a variety of catheters were used, including 16 G Angiocath, as well as purpose-built catheters, such as BlesCath™ (BLESCath, London, ON, Canada) and Surfcath™ (Vygon (UK) Ltd., Swindon, UK).",
+     "location": "Methods 2.3, MIST Procedure Details"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "With the help of laryngoscope insert the catheter 2 cm past the Vocal cords",
+   "verdict": "partly_concordant",
+   "summary": "Published protocols place the catheter about 1–2.5 cm beyond the vocal cords according to gestational age, mostly 1–2 cm with 2 cm described for the more mature preterm infants (2.5 cm at 34–35 weeks in one trial), and the 2025 European guideline pairs thin-catheter administration with videolaryngoscopy [Hartel2024; Dargaville2014; Kakkilaya2023; Sweet2026].",
+   "note": "Current evidence suggests insertion depth beyond the vocal cords is adjusted to gestational age, with 2 cm described from about 27 weeks (from 29 weeks in one US sample protocol) and 1–1.5 cm in less mature infants, while one trial in infants of 32–35 weeks used 2–2.5 cm [Hartel2024; Dargaville2014; Kakkilaya2023]. Data on the optimal insertion depth are described as sparse, and one imaging study proposed a weight-based chart for catheter position [Maiwald2022]. The 2025 European guideline names the thin catheter as the preferred route in spontaneously breathing preterm infants (A1), with videolaryngoscopy graded C2 [Sweet2026].",
+   "evidence": [
+    {
+     "ref": "Hartel2024",
+     "quote": "Insertion depth beyond the vocal cords can be adjusted according to gestational age, with a pragmatic approach being: <27 weeks: 1.5 cm; ≥27 weeks: 2 cm [40, 41].",
+     "location": "The Methodology of LISA Is Highly Variable"
+    },
+    {
+     "ref": "Dargaville2014",
+     "quote": "The required depth is as follows: 25–26 weeks: 1.5 cm; 27–28 weeks 2.0 cm.",
+     "location": "Methods, Intervention – surfactant administration via MIST, Preparation step 1"
+    },
+    {
+     "ref": "Kakkilaya2023",
+     "quote": "will mark the insertion depth on the catheter with the pen (1 cm for ≤26 weeks GA, 1.5 cm for 27–28 weeks GA, 2 cm for ≥29 weeks GA)",
+     "location": "Implementing LISA › LISA procedure steps and safety"
+    },
+    {
+     "ref": "Maiwald2022",
+     "quote": "Different procedures are described, but data on the optimal catheter insertion depth are sparse.",
+     "location": "Abstract, Introduction"
+    },
+    {
+     "ref": "Maiwald2022",
+     "quote": "A weight-based chart and recommendations for the optimal intratracheal catheter position in infants with a body weight between 350 and 4000 g were created.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Sweet2026",
+     "quote": "Thin catheter (with videolaryngoscope [C2]) is the preferred route of surfactant administration for spontaneously breathing preterm babies (A1).",
+     "location": "Surfactant Therapy, Recommendations, item 4"
+    },
+    {
+     "ref": "Kakkilaya2023",
+     "quote": "6 Fr feeding tube, Cologne method (insertion depth: 2 cm for 32–34 weeks, 2.5 cm for 34–35 weeks GA)",
+     "location": "The evidence for LISA, table of RCTs, Yang et al., 2020"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "Attach Capnometer via 3.0 ETT adapter and wait for color change, once color change confirmed proceed to remove the ETT adapter/ capnometer",
+   "verdict": "insufficient",
+   "summary": "One small study (a retrospective arm of 20 infants given MIST and a prospective arm of 10 infants whose oesophageal gas was tested during nasogastric tube insertion) found that a CO2 detector distinguished tracheal from oesophageal catheter placement, whereas a narrative review and a cohort report state there is no reliable or objective method to confirm thin-catheter placement, and the 2025 European guideline addresses colorimetric CO2 detection only for endotracheal tube placement [Nitzan2023; Kakkilaya2023; Jahmani2024; Sweet2026].",
+   "evidence": [
+    {
+     "ref": "Nitzan2023",
+     "quote": "Retrospective arm: All infants had positive capnography. One infant that had no clinical response to MIST was diagnosed with total anomalous pulmonary venous return. All 10 infants of the prospective arm had a Negative capnography (P < 0.001, Fisher's exact test).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Nitzan2023",
+     "quote": "Readily available CO2 detectors can distinguish between tracheal and esophageal placement of MIST catheters prior to MIST.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Kakkilaya2023",
+     "quote": "There are no reliable methods of confirming the placement of thin catheter into the airway, and therefore there is a risk of inadvertent esophageal administration of surfactant if the catheter is misplaced.",
+     "location": "The LISA procedure, paragraph on remaining questions"
+    },
+    {
+     "ref": "Jahmani2024",
+     "quote": "In MIST, accurate endotracheal placement of the thin catheter is dependent on operator experience, as there is no objective method to confirm endotracheal placement.",
+     "location": "Discussion"
+    },
+    {
+     "ref": "Sweet2026",
+     "quote": "If intubation is required then confirmation that the tube is correctly placed should be done clinically by auscultation as well as using a colourimetric CO2 detection device if available [71].",
+     "location": "Delivery Room Stabilisation, Early Surfactant Therapy and Intubation"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "Attach syringe with Surfactant and administer it over 2-3 minutes",
+   "verdict": "practice_varies",
+   "summary": "Reported instillation times range from 15–30 seconds in the OPTIMIST-A protocol and usually <1 min in a US consensus statement to 1–2, 1–3 and 2–5 minutes in other published descriptions, UK and international consensus documents describe slow administration without a set time, and a 2026 trial protocol states that no consensus exists on the optimal duration [Dargaville2014; Bhandari2023; Hartel2024; Kakkilaya2023; AlHarthy2023; Jahmani2024; Banerjee2019; Breindahl2023; Wolfsberger2026].",
+   "evidence": [
+    {
+     "ref": "Dargaville2014",
+     "quote": "Connect the surfactant syringe to the catheter hub, and instil the surfactant in 2–4 boluses over 15–30 seconds.",
+     "location": "Performing MIST, step 5"
+    },
+    {
+     "ref": "Hartel2024",
+     "quote": "In most cases surfactant application can be completed in 1–2 min and the catheter can be removed.",
+     "location": "The Methodology of LISA Is Highly Variable"
+    },
+    {
+     "ref": "Kakkilaya2023",
+     "quote": "A second clinician will connect the syringe and instill surfactant in 4 aliquots over 1–2 min followed by 1 ml of air.",
+     "location": "Implementing LISA › LISA procedure steps and safety"
+    },
+    {
+     "ref": "AlHarthy2023",
+     "quote": "Bovine Lipid Extract Surfactant (BLES®) at 5 ml/kg was administered slowly over 1 to 3 minutes, synchronizing instillation with the neonate’s inspiration efforts.",
+     "location": "Methods › MIST procedure Details"
+    },
+    {
+     "ref": "Jahmani2024",
+     "quote": "Then, Bovine Lipid Extract Surfactant (BLES®) at 5 mL/kg was administered slowly over 1 to 3 min.",
+     "location": "Methods 2.3"
+    },
+    {
+     "ref": "Wolfsberger2026",
+     "quote": "Surfactant should then be instilled over 2–5 min at a rate of 0.5–1.0 ml/min.",
+     "location": "Background › Surfactant replacement therapy"
+    },
+    {
+     "ref": "Wolfsberger2026",
+     "quote": "To date, no consensus exists regarding the optimal duration of surfactant administration during the LISA procedure.",
+     "location": "Background › Surfactant replacement therapy"
+    },
+    {
+     "ref": "Bhandari2023",
+     "quote": "Bolus administration of surfactant is preferred when given via the ETT; using the LISA approach, surfactant administration can usually to be completed in <1 min, though it might require more time if apnea/bradycardia/surfactant reflux occur [8, 69, 70].",
+     "location": "Results, Section 2, discussion of Statement 11 (\"can usually to be\" as written in the source)"
+    },
+    {
+     "ref": "Banerjee2019",
+     "quote": "Surfactant is then given slowly whilst the infant continues to breathe.",
+     "location": "Key recommendations, item 5 narrative"
+    },
+    {
+     "ref": "Breindahl2023",
+     "quote": "Slow infusion to allow surfactant to be inhaled by the infant.",
+     "location": "Table 4, LISA assessment tool, Surfactant administration item"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "After completion give 1 ml of air slowly than remove the catheter",
+   "verdict": "practice_varies",
+   "summary": "Published protocols differ on air after the surfactant: OPTIMIST-A draws an additional 0.5 mL of air into the surfactant syringe (catheter dead volume ~0.3 mL), one registered trial flushes the catheter with 0.5 mL of air, a US sample protocol uses 1 mL, and a UK consensus describes removing the catheter once delivery is complete without mentioning air [Dargaville2014; AbdelLatif2021; Kakkilaya2023; Banerjee2019].",
+   "evidence": [
+    {
+     "ref": "Dargaville2014",
+     "quote": "Draw up an additional 0.5 mL of air into the syringe, taking account of the dead volume of the instillation catheter (~0.3 mL).",
+     "location": "Methods, Intervention – surfactant administration via MIST, Preparation step 2"
+    },
+    {
+     "ref": "Dargaville2014",
+     "quote": "Once the surfactant is instilled, immediately remove the instillation catheter and apply CPAP by prongs or facemask.",
+     "location": "Performing MIST, step 6"
+    },
+    {
+     "ref": "AbdelLatif2021",
+     "quote": "At the end of the procedure, the operator will flush the catheter with 0.5 mL of air before removing the catheter.",
+     "location": "Characteristics of ongoing studies, NCT01848262 (ECALMIST), Interventions"
+    },
+    {
+     "ref": "Kakkilaya2023",
+     "quote": "A nurse will draw up surfactant and 1 ml of air into a syringe.",
+     "location": "Implementing LISA › LISA procedure steps and safety"
+    },
+    {
+     "ref": "Kakkilaya2023",
+     "quote": "A second clinician will connect the syringe and instill surfactant in 4 aliquots over 1–2 min followed by 1 ml of air.The catheter is removed, and CPAP continued.",
+     "location": "Implementing LISA › LISA procedure steps and safety"
+    },
+    {
+     "ref": "Banerjee2019",
+     "quote": "The catheter is removed once the surfactant delivery is complete.",
+     "location": "Key recommendations, item 5 narrative"
+    }
+   ]
+  }
+ ],
+ "omissions": [
+  {
+   "id": "o1",
+   "related_claim": "c1",
+   "topic": "Noninvasive support pressure attached to the FiO2 indication",
+   "note": "Current evidence suggests the FiO2 threshold is typically applied to infants already on noninvasive support: the 2025 European guideline's suggested protocol for infants >28 weeks refers to infants on NRS with a MAP of ≥6 cm H2O, a US sample protocol specifies FiO2 >0.3 after ensuring optimal CPAP, and a 2024 review describes ongoing debate about whether applied pressure should be part of the decision [Sweet2026; Kakkilaya2023; Hartel2024]. A US consensus indicator table also lists a respiratory support level (CPAP or NIPPV MAP ≥6 at 23–27 weeks, ≥7 at 28–36 weeks) among its criteria [Bhandari2023].",
+   "evidence": [
+    {
+     "ref": "Sweet2026",
+     "quote": "A suggested protocol would be to give surfactant to infants on NRS with a MAP of ≥6 cm H2O, an FiO2 of ≥0.3, or where lung ultrasound suggests surfactant need (A1).",
+     "location": "Surfactant Therapy, Recommendations, item 3"
+    },
+    {
+     "ref": "Kakkilaya2023",
+     "quote": "Infants born ≤32 weeks gestation with respiratory distress requiring CPAP are eligible to receive LISA if they require FiO2 >0.3 after ensuring optimal CPAP therapy.",
+     "location": "Implementing LISA › Selection of cases for LISA"
+    },
+    {
+     "ref": "Hartel2024",
+     "quote": "There remains ongoing debate about the influence of airway pressure on oxygen requirement, and hence whether applied pressure should be included in the decision-making algorithm.",
+     "location": "LISA: Indications and Timing"
+    },
+    {
+     "ref": "Bhandari2023",
+     "quote": "NIPPV: MAP ≥ 6; CPAP ≥ 6",
+     "location": "Results, Table 1, Respiratory support status row, 23–27 weeks column"
+    },
+    {
+     "ref": "Bhandari2023",
+     "quote": "NIPPV: MAP ≥ 7; CPAP ≥ 7",
+     "location": "Results, Table 1, Respiratory support status row, 28–36 weeks column"
+    }
+   ]
+  }
+ ],
+ "references": [
+  {
+   "key": "Sweet2026",
+   "role": "source",
+   "authors": "Sweet DG, Carnielli VP, Greisen G, et al.",
+   "title": "European Consensus Guidelines on the Management of Respiratory Distress Syndrome: 2025",
+   "journal": "Neonatology",
+   "year": "2026",
+   "volume": "123",
+   "issue": "4",
+   "pages": "514-539",
+   "doi": "10.1159/000551062",
+   "pmid": "41802129",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41802129/",
+    "https://api.crossref.org/works/10.1159/000551062"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Polin2014",
+   "role": "source",
+   "authors": "Polin RA, Carlo WA",
+   "title": "Surfactant replacement therapy for preterm and term neonates with respiratory distress",
+   "journal": "Pediatrics",
+   "year": "2014",
+   "volume": "133",
+   "issue": "1",
+   "pages": "156-163",
+   "doi": "10.1542/peds.2013-3443",
+   "pmid": "24379227",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24379227/",
+    "https://api.crossref.org/works/10.1542/peds.2013-3443"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "COFN2014",
+   "role": "source",
+   "authors": "Committee on Fetus and Newborn, American Academy of Pediatrics",
+   "title": "Respiratory support in preterm infants at birth",
+   "journal": "Pediatrics",
+   "year": "2014",
+   "volume": "133",
+   "issue": "1",
+   "pages": "171-174",
+   "doi": "10.1542/peds.2013-3442",
+   "pmid": "24379228",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24379228/",
+    "https://api.crossref.org/works/10.1542/peds.2013-3442"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "AbdelLatif2021",
+   "role": "source",
+   "authors": "Abdel-Latif ME, Davis PG, Wheeler KI, De Paoli AG, Dargaville PA",
+   "title": "Surfactant therapy via thin catheter in preterm infants with or at risk of respiratory distress syndrome",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2021",
+   "volume": "5",
+   "issue": "5",
+   "pages": "CD011672",
+   "doi": "10.1002/14651858.CD011672.pub2",
+   "pmid": "33970483",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33970483/",
+    "https://api.crossref.org/works/10.1002/14651858.CD011672.pub2"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Ramaswamy2023",
+   "role": "source",
+   "authors": "Ramaswamy VV, Bandyopadhyay T, Abiramalatha T, et al.",
+   "title": "Clinical decision thresholds for surfactant administration in preterm infants: a systematic review and network meta-analysis",
+   "journal": "EClinicalMedicine",
+   "year": "2023",
+   "volume": "62",
+   "issue": "",
+   "pages": "102097",
+   "doi": "10.1016/j.eclinm.2023.102097",
+   "pmid": "37538537",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37538537/",
+    "https://api.crossref.org/works/10.1016/j.eclinm.2023.102097"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Dargaville2021",
+   "role": "source",
+   "authors": "Dargaville PA, Kamlin COF, Orsini F, et al.",
+   "title": "Effect of Minimally Invasive Surfactant Therapy vs Sham Treatment on Death or Bronchopulmonary Dysplasia in Preterm Infants With Respiratory Distress Syndrome: The OPTIMIST-A Randomized Clinical Trial",
+   "journal": "JAMA",
+   "year": "2021",
+   "volume": "326",
+   "issue": "24",
+   "pages": "2478-2487",
+   "doi": "10.1001/jama.2021.21892",
+   "pmid": "34902013",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34902013/",
+    "https://api.crossref.org/works/10.1001/jama.2021.21892"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Dargaville2014",
+   "role": "source",
+   "authors": "Dargaville PA, Kamlin CO, De Paoli AG, et al.",
+   "title": "The OPTIMIST-A trial: evaluation of minimally-invasive surfactant therapy in preterm infants 25-28 weeks gestation",
+   "journal": "BMC Pediatr",
+   "year": "2014",
+   "volume": "14",
+   "issue": "",
+   "pages": "213",
+   "doi": "10.1186/1471-2431-14-213",
+   "pmid": "25164872",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/25164872/",
+    "https://api.crossref.org/works/10.1186/1471-2431-14-213"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Katheria2023",
+   "role": "source",
+   "authors": "Katheria A, Ines F, Banerji A, et al.",
+   "title": "Caffeine and Less Invasive Surfactant Administration for Respiratory Distress Syndrome of the Newborn",
+   "journal": "NEJM Evid",
+   "year": "2023",
+   "volume": "2",
+   "issue": "12",
+   "pages": "EVIDoa2300183",
+   "doi": "10.1056/EVIDoa2300183",
+   "pmid": "38320499",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38320499/",
+    "https://api.crossref.org/works/10.1056/EVIDoa2300183"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Gopel2011",
+   "role": "source",
+   "authors": "Göpel W, Kribs A, Ziegler A, et al.",
+   "title": "Avoidance of mechanical ventilation by surfactant treatment of spontaneously breathing preterm infants (AMV): an open-label, randomised, controlled trial",
+   "journal": "Lancet",
+   "year": "2011",
+   "volume": "378",
+   "issue": "9803",
+   "pages": "1627-1634",
+   "doi": "10.1016/S0140-6736(11)60986-0",
+   "pmid": "21963186",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/21963186/",
+    "https://api.crossref.org/works/10.1016/S0140-6736(11)60986-0"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Kribs2015",
+   "role": "source",
+   "authors": "Kribs A, Roll C, Göpel W, et al.",
+   "title": "Nonintubated Surfactant Application vs Conventional Therapy in Extremely Preterm Infants: A Randomized Clinical Trial",
+   "journal": "JAMA Pediatr",
+   "year": "2015",
+   "volume": "169",
+   "issue": "8",
+   "pages": "723-730",
+   "doi": "10.1001/jamapediatrics.2015.0504",
+   "pmid": "26053341",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/26053341/",
+    "https://api.crossref.org/works/10.1001/jamapediatrics.2015.0504"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Hartel2024",
+   "role": "source",
+   "authors": "Härtel C, Kribs A, Göpel W, Dargaville P, Herting E",
+   "title": "Less Invasive Surfactant Administration for Preterm Infants - State of the Art",
+   "journal": "Neonatology",
+   "year": "2024",
+   "volume": "121",
+   "issue": "5",
+   "pages": "584-595",
+   "doi": "10.1159/000540078",
+   "pmid": "39226881",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/39226881/",
+    "https://api.crossref.org/works/10.1159/000540078"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Kakkilaya2023",
+   "role": "source",
+   "authors": "Kakkilaya V, Gautham KS",
+   "title": "Should less invasive surfactant administration (LISA) become routine practice in US neonatal units?",
+   "journal": "Pediatr Res",
+   "year": "2023",
+   "volume": "93",
+   "issue": "5",
+   "pages": "1188-1198",
+   "doi": "10.1038/s41390-022-02265-8",
+   "pmid": "35986148",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35986148/",
+    "https://api.crossref.org/works/10.1038/s41390-022-02265-8"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Wolfsberger2026",
+   "role": "source",
+   "authors": "Wolfsberger CH, Schwaberger B, Baik-Schneditz N, Avian A, Holter M, Pichler G",
+   "title": "Duration of surfactant administration and its impact on stabilisation of vital parameters in very preterm neonates <28 weeks of gestational age (SurfStab): 1 min versus 5 min-study protocol for a prospective randomised-controlled phase IV trial",
+   "journal": "Front Pediatr",
+   "year": "2026",
+   "volume": "14",
+   "issue": "",
+   "pages": "1939771",
+   "doi": "10.3389/fped.2026.1939771",
+   "pmid": "42877269",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42877269/",
+    "https://api.crossref.org/works/10.3389/fped.2026.1939771"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Maiwald2022",
+   "role": "source",
+   "authors": "Maiwald CA, Neuberger P, Franz AR, et al.",
+   "title": "Catheter insertion depths in less-invasive surfactant administration",
+   "journal": "Arch Dis Child Fetal Neonatal Ed",
+   "year": "2022",
+   "volume": "107",
+   "issue": "2",
+   "pages": "222-224",
+   "doi": "10.1136/archdischild-2021-321611",
+   "pmid": "34083353",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34083353/",
+    "https://api.crossref.org/works/10.1136/archdischild-2021-321611"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Nitzan2023",
+   "role": "source",
+   "authors": "Nitzan I, Abu Omar R, Mimouni FB, Burshtein-Sorotzkin D, Algavish-Landau N, Attia-Reches S",
+   "title": "Capnography for catheter location confirmation in minimally invasive surfactant administration",
+   "journal": "J Perinatol",
+   "year": "2023",
+   "volume": "43",
+   "issue": "3",
+   "pages": "300-304",
+   "doi": "10.1038/s41372-023-01624-5",
+   "pmid": "36720984",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36720984/",
+    "https://api.crossref.org/works/10.1038/s41372-023-01624-5"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Jahmani2024",
+   "role": "source",
+   "authors": "Jahmani T, Miller MR, da Silva O, Bhattacharya S",
+   "title": "Application of Video Laryngoscopy for Minimally Invasive Surfactant Therapy: A Retrospective Comparative Cohort Study",
+   "journal": "Biomedicines",
+   "year": "2024",
+   "volume": "12",
+   "issue": "3",
+   "pages": "618",
+   "doi": "10.3390/biomedicines12030618",
+   "pmid": "38540231",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38540231/",
+    "https://api.crossref.org/works/10.3390/biomedicines12030618"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "AlHarthy2023",
+   "role": "source",
+   "authors": "Al Harthy T, Miller MR, daSilva O, Bhattacharya S",
+   "title": "Purpose Built Catheters for Minimally Invasive Surfactant Therapy: Experience from a Canadian Tertiary Level Neonatal Intensive Care Unit",
+   "journal": "Can J Respir Ther",
+   "year": "2023",
+   "volume": "59",
+   "issue": "",
+   "pages": "137-144",
+   "doi": "10.29390/001c.77606",
+   "pmid": "37781350",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37781350/",
+    "https://api.crossref.org/works/10.29390/001c.77606"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Ng2021",
+   "role": "source",
+   "authors": "Ng EH, Shah V",
+   "title": "Guidelines for surfactant replacement therapy in neonates",
+   "journal": "Paediatr Child Health",
+   "year": "2021",
+   "volume": "26",
+   "issue": "1",
+   "pages": "35-49",
+   "doi": "10.1093/pch/pxaa116",
+   "pmid": "33552321",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33552321/",
+    "https://api.crossref.org/works/10.1093/pch/pxaa116"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Bhandari2023",
+   "role": "source",
+   "authors": "Bhandari V, Black R, Gandhi B, et al.",
+   "title": "RDS-NExT workshop: consensus statements for the use of surfactant in preterm neonates with RDS",
+   "journal": "J Perinatol",
+   "year": "2023",
+   "volume": "43",
+   "issue": "8",
+   "pages": "982-990",
+   "doi": "10.1038/s41372-023-01690-9",
+   "pmid": "37188774",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37188774/",
+    "https://api.crossref.org/works/10.1038/s41372-023-01690-9"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Breindahl2023",
+   "role": "source",
+   "authors": "Breindahl N, Tolsgaard MG, Henriksen TB, et al.",
+   "title": "Curriculum and assessment tool for less invasive surfactant administration: an international Delphi consensus study",
+   "journal": "Pediatr Res",
+   "year": "2023",
+   "volume": "94",
+   "issue": "3",
+   "pages": "1216-1224",
+   "doi": "10.1038/s41390-023-02621-2",
+   "pmid": "37142651",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37142651/",
+    "https://api.crossref.org/works/10.1038/s41390-023-02621-2"
+   ],
+   "verified_date": "2026-10-24"
+  },
+  {
+   "key": "Banerjee2019",
+   "role": "source",
+   "authors": "Banerjee S, Fernandez R, Fox GF, et al.",
+   "title": "Surfactant replacement therapy for respiratory distress syndrome in preterm infants: United Kingdom national consensus",
+   "journal": "Pediatr Res",
+   "year": "2019",
+   "volume": "86",
+   "issue": "1",
+   "pages": "12-14",
+   "doi": "10.1038/s41390-019-0344-5",
+   "pmid": "30780152",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/30780152/",
+    "https://api.crossref.org/works/10.1038/s41390-019-0344-5"
+   ],
+   "verified_date": "2026-10-24"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 3,
+  "date": "2026-10-24",
+  "quotes_checked": 173,
+  "references_verified": 21,
+  "known_limitations": [
+   "Polin2014 and COFN2014 author lists lack 'et al.' (refs.py cannot edit author strings)"
+  ]
+ }
+}
