@@ -69,8 +69,11 @@ bibliography: references.bib
 
 format:
   html:
-    theme: lumen
-    css: custom.css
+    theme:
+      light: [cosmo, theme/kp-light.scss]
+      dark: [cosmo, theme/kp-dark.scss]
+    respect-user-color-scheme: true
+    css: [custom.css, theme/kp.css]
     include-in-header: pwa/head.html
     include-after-body:
       - chatbot/widget.html

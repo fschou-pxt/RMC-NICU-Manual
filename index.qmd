@@ -1,6 +1,6 @@
 ::: {.column-margin}
 
-# &nbsp; {.unnumbered}
+# Home {.unnumbered}
 
 <div style="place-items:center;">
 <div id="donate-button-container">
@@ -19,6 +19,34 @@ title:'PayPal - The safer, easier way to pay online!',
 </script>
 </div>
 </div>
+
+:::
+
+```{=html}
+<div class="kp-hero">
+  <p class="kp-eyebrow">KP Riverside · Neonatal ICU</p>
+  <p class="kp-headline">Unit protocols, guidelines, and dot phrases, approved by our neonatologists and NICU staff.</p>
+  <div class="kp-actions">
+    <button type="button" class="kp-btn kp-primary" onclick="window.NICUChat && NICUChat.open()"><i class="bi bi-chat-dots"></i> Ask the manual</button>
+    <a class="kp-btn" href="phone-numbers.html"><i class="bi bi-telephone"></i> Phone numbers</a>
+    <a class="kp-btn" href="dotPhrases.html"><i class="bi bi-clipboard"></i> Dot phrases</a>
+  </div>
+</div>
+
+<p class="kp-section-label">Quick links</p>
+<div class="kp-cards">
+  <a class="kp-card" href="admission.html"><i class="bi bi-hospital"></i><b>Admission</b><span>Central lines, UVC/UAC, re-admission</span></a>
+  <a class="kp-card" href="respiratory.html"><i class="bi bi-lungs"></i><b>Respiratory</b><span>LISA, support guide, HFJV, extubation</span></a>
+  <a class="kp-card" href="nutrition-fluid.html"><i class="bi bi-droplet-half"></i><b>Nutrition and fluids</b><span>Feeding, TPN, KVO rates, Prolacta</span></a>
+  <a class="kp-card" href="neurology.html#sec-th-protocol"><i class="bi bi-snow"></i><b>Therapeutic hypothermia</b><span>Eligibility, passive cooling</span></a>
+  <a class="kp-card" href="VLBW.html"><i class="bi bi-heart-pulse"></i><b>VLBW / ELGAN</b><span>Thermoregulation, screening, ROP</span></a>
+  <a class="kp-card" href="discharge.html"><i class="bi bi-house-heart"></i><b>Discharge</b><span>Criteria, HRIF, navigator</span></a>
+  <a class="kp-card" href="operations.html#sec-interdept-agreements"><i class="bi bi-people"></i><b>Agreements</b><span>Radiology, Peds–Neo FCC</span></a>
+  <a class="kp-card" href="https://neostat.shinyapps.io/nicu_feeding_protocol/" target="_blank" rel="noopener"><i class="bi bi-calculator"></i><b>Feeding protocol</b><span>Advancement calculator</span></a>
+</div>
+
+<p class="kp-section-label">What's new</p>
+```
 
 ::: {.callout-important}
 
@@ -68,24 +96,17 @@ title:'PayPal - The safer, easier way to pay online!',
 
 :::
 
-
-:::
-
-
-![Kaiser Permanente Riverside Medical Center](https://api.coarchitects.com/wp-content/uploads/2022/07/18030_000_N4_print-1536x768.jpg)
-
-
-## Goal
+## About this manual
 
 The goal of this handbook is to centralize clinical protocols and guidelines approved by the neonatologists and NICU staff in one place for easy reference.
 
-## Arrangement
+This handbook is arranged into six parts:
 
-This handbook is arranged by into three parts:
-
-* NICU Operations\
+* NICU Operations
 * General Care
-* System-Based Protocols and Guidelines\
-* Special Considerations\
+* System-Based Protocols and Guidelines
+* Special Considerations
 * Health Maintenance
 * Appendices
+
+![Kaiser Permanente Riverside Medical Center](https://api.coarchitects.com/wp-content/uploads/2022/07/18030_000_N4_print-1536x768.jpg)

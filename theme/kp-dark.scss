@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+// KP-inspired dark theme for night shifts (layered on Quarto's cosmo). Shared layout rules live in theme/kp.css.
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size-root: 16px;
+$body-bg: #0f1722;
+$body-color: #dde5ee;
+$headings-color: #eef3f8;
+$headings-font-weight: 650;
+$h1h2h3-font-weight: 650;
+$primary: #6cb4ee;
+$link-color: #7cc0f5;
+$link-decoration: none;
+$border-color: #263445;
+$table-border-color: #263445;
+$border-radius: .6rem;
+$input-bg: #162131;
+$popover-bg: #162131;
+
+$sidebar-bg: #121c29;
+$sidebar-fg: #b9c6d4;
+$sidebar-hl: #7cc0f5;
+$sidebar-border: false;
+$toc-color: #9fb0c3;
+$toc-active-border: #7cc0f5;
+$toc-inactive-border: #263445;
+$callout-border-width: 4px;
+$code-bg: #1a2636;
+$code-color: #cfe3f5;
+$footer-bg: #0f1722;

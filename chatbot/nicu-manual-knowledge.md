@@ -1,6 +1,6 @@
 # KP Riverside Neonatal ICU Manual — knowledge export
 
-Source: https://fschou-pxt.github.io/RMC-NICU-Manual/ (exported October 23, 2026).
+Source: https://fschou-pxt.github.io/RMC-NICU-Manual/ (exported October 24, 2026).
 Each section starts with a '## breadcrumb' line and its 'URL:' on the live site.
 
 # KP Riverside Neonatal ICU Manual
@@ -8,6 +8,20 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html
 
 ## KP Riverside Neonatal ICU Manual
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html#section
+
+KP Riverside · Neonatal ICU
+
+Unit protocols, guidelines, and dot phrases, approved by our neonatologists and NICU staff.
+
+Ask the manual
+
+[ Phone numbers](https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html) [ Dot phrases](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html)
+
+Quick links
+
+[**Admission**Central lines, UVC/UAC, re-admission](https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html) [**Respiratory**LISA, support guide, HFJV, extubation](https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html) [**Nutrition and fluids**Feeding, TPN, KVO rates, Prolacta](https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html) [**Therapeutic hypothermia**Eligibility, passive cooling](https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-th-protocol) [**VLBW / ELGAN**Thermoregulation, screening, ROP](https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html) [**Discharge**Criteria, HRIF, navigator](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html) [**Agreements**Radiology, Peds–Neo FCC](https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-interdept-agreements) [**Feeding protocol**Advancement calculator](https://neostat.shinyapps.io/nicu_feeding_protocol/)
+
+What's new
 
 NEW UPDATE - Oct 23, 2026
 
@@ -37,20 +51,17 @@ NEW UPDATE - Apr 9, 2026
 - Antibiotic Management of Suspected Sepsis in the NICU
   - [Antibiotic Management of Suspected Sepsis in the NICU](https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#sec-antibiotics-sepsis)
 
-## KP Riverside Neonatal ICU Manual › Goal
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html#goal
+## KP Riverside Neonatal ICU Manual › About this manual
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html#about-this-manual
 
 The goal of this handbook is to centralize clinical protocols and guidelines approved by the neonatologists and NICU staff in one place for easy reference.
 
-## KP Riverside Neonatal ICU Manual › Arrangement
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html#arrangement
+This handbook is arranged into six parts:
 
-This handbook is arranged by into three parts:
-
-- NICU Operations\
+- NICU Operations
 - General Care
-- System-Based Protocols and Guidelines\
-- Special Considerations\
+- System-Based Protocols and Guidelines
+- Special Considerations
 - Health Maintenance
 - Appendices
 

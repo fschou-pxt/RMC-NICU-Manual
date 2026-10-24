@@ -69,6 +69,14 @@ mark.nicu-hl { background: #ffe066; color: inherit; padding: 0 1px; border-radiu
   .nc-panel { right: 8px; left: 8px; width: auto; max-width: none; bottom: 80px; height: calc(100vh - 100px); }
   .nc-launch { right: 14px; bottom: 14px; }
 }
+/* dark theme (Quarto's toggle adds body.quarto-dark) */
+body.quarto-dark #nicu-chat-root { --nc-blue: #2f6ea8; --nc-blue-dark: #7cc0f5; --nc-bg: #162131; --nc-soft: #0f1722;
+  --nc-text: #dde5ee; --nc-muted: #9fb0c3; --nc-border: #263445; }
+body.quarto-dark .nc-bot, body.quarto-dark .nc-foot, body.quarto-dark .nc-chip, body.quarto-dark .nc-btn.nc-ghost { background: #162131; color: var(--nc-text); }
+body.quarto-dark .nc-foot textarea, body.quarto-dark .nc-set input, body.quarto-dark .nc-set select { background: #0f1722; color: var(--nc-text); }
+body.quarto-dark .nc-ext { background: #2a2416; border-color: #6b5420; }
+body.quarto-dark .nc-ext-banner { background: #3a3018; color: #f3d48a; }
+body.quarto-dark .nc-err { background: #3a1d1d; border-color: #6b2c2c; color: #f5b5b0; }
 @media print { #nicu-chat-root { display: none; } }
 </style>
 <script type="module">
@@ -753,5 +761,6 @@ if (pending) {
   const go = () => setTimeout(() => highlightOnPage(pending.quote, pending.hash || location.hash), 300);
   document.readyState === "complete" ? go() : window.addEventListener("load", go);
 }
-window.NICUChat = { loadSections, retrieve, expandQuery, highlightOnPage, jumpTo, squash }; // for debugging in the console
+window.NICUChat = { open: () => setOpen(true), // used by the home page "Ask the manual" button
+  loadSections, retrieve, expandQuery, highlightOnPage, jumpTo, squash }; // the rest are for debugging in the console
 </script>

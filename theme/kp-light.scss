@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+// KP-inspired light theme (layered on Quarto's cosmo). Shared layout rules live in theme/kp.css.
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+$kp-navy: #003b71;
+$kp-blue: #0068a8;
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size-root: 16px;
+$body-bg: #ffffff;
+$body-color: #1d2733;
+$headings-color: #0b2e52;
+$headings-font-weight: 650;
+$h1h2h3-font-weight: 650;
+$primary: $kp-navy;
+$link-color: $kp-blue;
+$link-decoration: none;
+$border-color: #e3e8ef;
+$table-border-color: #e3e8ef;
+$border-radius: .6rem;
+
+$sidebar-bg: #f6f8fb;
+$sidebar-fg: #34445a;
+$sidebar-hl: $kp-navy;
+$sidebar-border: false;
+$toc-color: #5b6b80;
+$toc-active-border: $kp-navy;
+$toc-inactive-border: #e3e8ef;
+$callout-border-width: 4px;
+$code-bg: #eef2f7;
+$code-color: #0b2e52;
