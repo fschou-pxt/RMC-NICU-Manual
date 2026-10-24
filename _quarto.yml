@@ -73,7 +73,7 @@ format:
     css: custom.css
     include-in-header: pwa/head.html
     include-after-body:
-      - chatbot/widget.html
+      # chat assistant hidden on the live site until the January 2027 launch (pre-launch survey); it lives on the revamp branch
       - pwa/register.html
     page-break-after: always
 
