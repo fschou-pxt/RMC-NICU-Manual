@@ -68,11 +68,14 @@ const { editor, authors = [] } = Astro.props;
 
   <section>
     <h2 class="label">The manual</h2>
-    <div class="parts-grid">
+    <div class="parts-list not-content">
       {
         parts.map((p) => (
-          <div class="part">
-            <h3>{p.name}</h3>
+          <details class="part">
+            <summary>
+              <span class="pn">{p.name}</span>
+              <span class="pc">{p.items.length} {p.name === "Appendices" ? "appendices" : p.items.length === 1 ? "chapter" : "chapters"}</span>
+            </summary>
             <ul>
               {p.items.map((it) => (
                 <li>
@@ -83,7 +86,7 @@ const { editor, authors = [] } = Astro.props;
                 </li>
               ))}
             </ul>
-          </div>
+          </details>
         ))
       }
     </div>
