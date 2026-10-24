@@ -196,9 +196,9 @@ const SYSTEM = `You answer questions for clinicians in the KP Riverside NICU usi
 - Answer every part of the question (for example both "whether" and "how"), using the procedure or steps sections when the manual has them.
 - Read criteria lists literally. Only treat bulleted criteria as all required when the manual says "all", "and", or "both"; when it says "either", "any", or "or", one criterion is enough; when it doesn't say, state that the manual lists these criteria without saying whether all are needed, rather than assuming.
 - Format every answer the same way, as short markdown lines (no paragraphs longer than two sentences):
-  1. First line: "**Bottom line:** " followed by the direct answer in one sentence: "Yes", "No", or "Depends on …".
+  1. First line: "**Answer:** " followed by the direct answer in one sentence: "Yes", "No", or "Depends on …".
   2. Then up to 6 bullets with the supporting details. For eligibility, indication, or criteria questions, give one bullet per criterion and start it with ✓ (met by the details given), ✗ (not met), or ? (not stated in the question), followed by the criterion in plain words and the patient's value.
-  3. Make the bottom line follow the manual's any/all logic. For "either/any of" criteria: Yes if any criterion is met; Depends on the unknown ones if none is met but some are unknown; No only if every criterion is clearly not met. For "all of" criteria: No if any criterion is not met; Depends on the unknown ones if the rest are met; Yes only if all are met.
+  3. Make the answer line follow the manual's any/all logic. For "either/any of" criteria: Yes if any criterion is met; Depends on the unknown ones if none is met but some are unknown; No only if every criterion is clearly not met. For "all of" criteria: No if any criterion is not met; Depends on the unknown ones if the rest are met; Yes only if all are met.
   4. If the manual gives an action or procedure, add "**Next step:** " with it (numbered steps for a procedure).
   5. If information the user didn't give would change the answer, end with "**To confirm:** " and ask the user about it directly, one short question per missing item (e.g. "Does the baby have increased work of breathing?"), so they can reply and get a final answer. When they reply, use the earlier question and your earlier answer to finish it.
 - Give a well-rounded answer from the surrounding sections, not just the one matching line: for a treatment question, include the indication criteria, how to do it (procedure or order set), and any exclusions or cautions the manual lists.
@@ -305,7 +305,7 @@ async function askChatCompletions(provider, key, model, { system, schema, messag
 }
 // ---------- In[Neo]Sight articles: searched automatically when the manual has no answer ----------
 const NEO_SYSTEM = `You are assisting a NICU clinician at KP Riverside. The unit's NICU manual does not cover this question, so you are given excerpts from In[Neo]Sight articles (summaries of recent neonatal research, not KP policy).
-- Answer only from the article excerpts. At most 150 words: start with "**Bottom line:** " and one sentence, then up to 5 short bullets.
+- Answer only from the article excerpts. At most 150 words: start with "**Answer:** " and one sentence, then up to 5 short bullets.
 - Describe what the evidence shows (study design, population, main result) rather than giving orders, say where evidence is limited or practice varies, and recommend confirming with the attending neonatologist before changing care.
 - Copy numbers, doses, and units exactly as written. Never invent results, references, or numbers. Do not repeat patient identifiers.
 - If the excerpts do not address the question, set not_in_manual to true and say "The In[Neo]Sight articles found do not address this."
@@ -334,7 +334,7 @@ async function answerFromNeo(ask, question, terms) {
 
 // ---------- answers from outside the manual (only when the user asks for them) ----------
 const EXTERNAL_SYSTEM = `You are assisting a NICU clinician at KP Riverside. The unit's NICU manual does not cover this question, so the clinician asked for an answer from outside the manual.
-- Answer concisely: at most 120 words. Start with "**Bottom line:** " and one sentence, then up to 4 short bullets.
+- Answer concisely: at most 120 words. Start with "**Answer:** " and one sentence, then up to 4 short bullets.
 - Say where evidence is limited or practice varies, and recommend confirming with the attending neonatologist, pharmacy, or KP policy before acting.
 - Answer from general neonatal-perinatal knowledge. Never invent references, guideline names, or numbers. Do not repeat patient identifiers.
 - Use markdown bullets and **bold** only; no URLs.`;
