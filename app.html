@@ -122,11 +122,11 @@ main { overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .nc-btn.nc-ghost { background: transparent; color: var(--blue); border-color: var(--blue); }
 .nc-set { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px 16px; box-shadow: var(--shadow); }
 .nc-set label { display: block; font-weight: 600; margin: 12px 0 5px; font-size: .92em; }
-.nc-set input[type=password], .nc-set select { width: 100%; padding: 9px 11px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }
+.nc-set input[type=password], .nc-set select { width: 100%; height: var(--ctl, 2.75em); padding: 0 11px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }
 .nc-set .nc-check { font-weight: 400; display: flex; gap: 8px; align-items: flex-start; }
 .nc-set .nc-row { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
 .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-.seg button { border: 0; background: var(--surface-2); padding: 7px 12px; cursor: pointer; }
+.seg button { border: 0; background: var(--surface-2); padding: 7px 12px; cursor: pointer; white-space: nowrap; }
 .seg button.on { background: #003b71; color: #fff; }
 mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radius: 3px; }
 
@@ -166,12 +166,16 @@ mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radiu
 .calc-view { position: fixed; inset: 0; z-index: 40; background: var(--bg); display: flex; flex-direction: column; }
 .calc-view iframe { flex: 1; width: 100%; border: 0; background: #fff; }
 .feed-scroll { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-bottom: env(safe-area-inset-bottom); }
-.fd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: end; }
+/* forms: labels and buttons stay on one line; every field and button is the same height */
+:root { --ctl: 2.75em; }
+.fd-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: end; }
 .fd-grid > * { min-width: 0; } .fd-grid .full { grid-column: 1 / -1; }
+@media (max-width: 480px) { :root[data-fs="3"] .fd-grid, :root[data-fs="4"] .fd-grid { grid-template-columns: minmax(0, 1fr); } }
+.fd label, .nc-set label:not(.nc-check) { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .fd label { display: block; font-weight: 600; font-size: .85em; margin: 0 0 5px; }
-.fd input, .fd select { width: 100%; padding: 9px 11px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }
+.fd input, .fd select { width: 100%; height: var(--ctl); padding: 0 11px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }
 .fd select:disabled, .fd .seg button:disabled { opacity: .45; cursor: default; }
-.fd .seg { display: flex; width: 100%; } .fd .seg button { flex: 1; line-height: 1.25; }
+.fd .seg { display: flex; width: 100%; } .fd .seg button { flex: 1; height: var(--ctl); padding: 0 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .fd .seg button + button { border-left: 1px solid var(--border); }
 .fd-note { background: #fdf0d2; color: #7a4b00; border-radius: 12px; padding: 9px 12px; font-size: .85em; margin: 0 0 12px; }
 :root[data-theme="dark"] .fd-note { background: #3a3018; color: #f3d48a; }
@@ -289,6 +293,7 @@ const FONT_PX = [14, 15, 16, 18, 20];
 const ui = { font: 2, theme: "auto", ...readJSON(L, K.ui, {}) };
 function applyUi() {
   document.documentElement.style.setProperty("--fs", FONT_PX[Math.min(4, Math.max(0, ui.font | 0))] + "px");
+  document.documentElement.dataset.fs = Math.min(4, Math.max(0, ui.font | 0));
   if (ui.theme === "auto") document.documentElement.removeAttribute("data-theme");
   else document.documentElement.setAttribute("data-theme", ui.theme);
 }
@@ -642,15 +647,15 @@ function openFeeding() {
     box.innerHTML = `<p class="fd-note"><i class="bi bi-exclamation-triangle"></i> Prolacta / Cream criteria: GA &lt; 32 wk or BW &lt; 1,500 g.
         Formula allowed only if GA &ge; 32 wk and BW &ge; 1,500 g.</p>
       <div class="card"><div class="fd-grid">
-        <div><label for="fd-bw">Weight for calculation (g)</label><input id="fd-bw" inputmode="numeric" placeholder="e.g. 1200" autocomplete="off"></div>
-        <div><label for="fd-ga">Gestational age (wk)</label><select id="fd-ga"><option value="">Select…</option>${
+        <div><label for="fd-bw">Weight (g)</label><input id="fd-bw" inputmode="numeric" placeholder="e.g. 1200" autocomplete="off"></div>
+        <div><label for="fd-ga">GA (wk)</label><select id="fd-ga"><option value="">Select…</option>${
           Array.from({ length: 21 }, (_, i) => `<option>${22 + i}</option>`).join("")}</select></div>
         <div class="full"><label for="fd-protocol">Feeding advancement rate</label><select id="fd-protocol"><option value="">Select…</option>${
           Object.entries(Feed.PROTOCOL_LABELS).map(([k, l]) => `<option value="${k}">${l}</option>`).join("")}</select></div>
         <div class="full"><label>Milk base</label><div class="seg" id="fd-milk">
-          <button type="button" data-milk="human_milk">Human milk only</button><button type="button" data-milk="formula">Allow formula</button></div></div>
+          <button type="button" data-milk="human_milk">Human milk</button><button type="button" data-milk="formula">Allow formula</button></div></div>
         <div class="full"><label>Fortification</label><div class="seg" id="fd-fort">
-          <button type="button" data-fort="ehmd">EHMD (Prolacta)</button><button type="button" data-fort="hmf">Cow’s milk fortifier</button></div></div>
+          <button type="button" data-fort="ehmd">Prolacta</button><button type="button" data-fort="hmf">Cow’s milk</button></div></div>
         <div class="full"><label for="fd-cream">Cream:milk ratio</label><select id="fd-cream">
           <option value="0.04">4 mL cream per 100 mL milk</option><option value="0.05">5 mL cream per 100 mL milk</option><option value="0.06">6 mL cream per 100 mL milk</option></select></div>
         <div><label for="fd-day1">Day 1</label><input type="date" id="fd-day1"></div>
