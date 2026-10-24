@@ -1,6 +1,6 @@
 # KP Riverside Neonatal ICU Manual — knowledge export
 
-Source: https://fschou-pxt.github.io/RMC-NICU-Manual/ (exported October 23, 2026).
+Source: https://fschou-pxt.github.io/RMC-NICU-Manual/ (exported October 24, 2026).
 Each section starts with a '## breadcrumb' line and its 'URL:' on the live site.
 
 # KP Riverside Neonatal ICU Manual
@@ -736,7 +736,18 @@ Under the diagnosis of *Newborn, single liveborn…*:
   - On weekends or holidays, we book into the Pediatric “After Hours” clinic, which is in Riverside and Murrieta.
 - Conditional discharge note (also in [Section B.2.2.7](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-fcc-conditional-discharge)):
 
-> Infant may be discharged home today after \*\*\* once all of the following criteria have been met: A. Vital Signs are within Normal Limits (Temp 36.5–37.9 °C, HR 100–160, RR less than 60) B. Infant has voided and passed stool C. Infant has passed CCHD screening with O2 sat greater than 94% D. Newborn screening is complete E. Hearing Screening is complete; if referred, CMV buccal swab has been obtained and outpatient audiology follow-up has been scheduled F. Hepatitis B vaccine has been given, and if indicated, HBIG has been given. If parents refused hep B vaccine, declination waiver has been signed. G. Transcutaneous bilirubin levels have not exceeded the threshold to require a serum bili level H. If infant is being evaluated for hypoglycemia, all blood sugars have been completed and infant has not required any dextrose gel OR infant has had 3 serial glucose POCT levels greater than or equal to 45 mg/dL. I. Infant has had a recent repeat weight, with ≤ 6% weight loss from birth weight on day 1 or ≤ 8% weight loss from birth weight on day 2 or 3. If breastfeeding, a LATCH score of 8 or more is documented and mother has demonstrated ability to latch baby independently OR mother has worked with lactation and a discharge feeding plan has been documented. J. Follow-up appointment(s) scheduled per unit policy: 1) in Great Starts in 2 days, 2) at 3 weeks with PCP, and 3) at 2 months with PCP. If above criteria have not been met then please cancel discharge and notify MD on call.
+> Infant may be discharged home today after \*\*\* once all of the following criteria have been met:\
+> A. Vital Signs are within Normal Limits (Temp 36.5–37.9 °C, HR 100–160, RR less than 60)\
+> B. Infant has voided and passed stool\
+> C. Infant has passed CCHD screening with O2 sat greater than 94%\
+> D. Newborn screening is complete\
+> E. Hearing Screening is complete; if referred, CMV buccal swab has been obtained and outpatient audiology follow-up has been scheduled\
+> F. Hepatitis B vaccine has been given, and if indicated, HBIG has been given. If parents refused hep B vaccine, declination waiver has been signed.\
+> G. Transcutaneous bilirubin levels have not exceeded the threshold to require a serum bili level\
+> H. If infant is being evaluated for hypoglycemia, all blood sugars have been completed and infant has not required any dextrose gel OR infant has had 3 serial glucose POCT levels greater than or equal to 45 mg/dL.\
+> I. Infant has had a recent repeat weight, with ≤ 6% weight loss from birth weight on day 1 or ≤ 8% weight loss from birth weight on day 2 or 3. If breastfeeding, a LATCH score of 8 or more is documented and mother has demonstrated ability to latch baby independently OR mother has worked with lactation and a discharge feeding plan has been documented.\
+> J. Follow-up appointment(s) scheduled per unit policy: 1) in Great Starts in 2 days, 2) at 3 weeks with PCP, and 3) at 2 months with PCP.\
+> If above criteria have not been met then please cancel discharge and notify MD on call.
 
 **Miscellaneous**
 
@@ -9020,7 +9031,18 @@ Shared dot phrase (Dr. Kasee Houston) containing the NICU PT handout for handli
 ## Appendix B — Dot Phrases › B.2 General Care › General Documentation › Conditional discharge note (FCC)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-fcc-conditional-discharge
 
-Infant may be discharged home today after \*\*\* once all of the following criteria have been met: A. Vital Signs are within Normal Limits (Temp 36.5–37.9 °C, HR 100–160, RR less than 60) B. Infant has voided and passed stool C. Infant has passed CCHD screening with O2 sat greater than 94% D. Newborn screening is complete E. Hearing Screening is complete; if referred, CMV buccal swab has been obtained and outpatient audiology follow-up has been scheduled F. Hepatitis B vaccine has been given, and if indicated, HBIG has been given. If parents refused hep B vaccine, declination waiver has been signed. G. Transcutaneous bilirubin levels have not exceeded the threshold to require a serum bili level H. If infant is being evaluated for hypoglycemia, all blood sugars have been completed and infant has not required any dextrose gel OR infant has had 3 serial glucose POCT levels greater than or equal to 45 mg/dL. I. Infant has had a recent repeat weight, with ≤ 6% weight loss from birth weight on day 1 or ≤ 8% weight loss from birth weight on day 2 or 3. If breastfeeding, a LATCH score of 8 or more is documented and mother has demonstrated ability to latch baby independently OR mother has worked with lactation and a discharge feeding plan has been documented. J. Follow-up appointment(s) scheduled per unit policy: 1) in Great Starts in 2 days, 2) at 3 weeks with PCP, and 3) at 2 months with PCP. If above criteria have not been met then please cancel discharge and notify MD on call.
+Infant may be discharged home today after \*\*\* once all of the following criteria have been met:\
+A. Vital Signs are within Normal Limits (Temp 36.5–37.9 °C, HR 100–160, RR less than 60)\
+B. Infant has voided and passed stool\
+C. Infant has passed CCHD screening with O2 sat greater than 94%\
+D. Newborn screening is complete\
+E. Hearing Screening is complete; if referred, CMV buccal swab has been obtained and outpatient audiology follow-up has been scheduled\
+F. Hepatitis B vaccine has been given, and if indicated, HBIG has been given. If parents refused hep B vaccine, declination waiver has been signed.\
+G. Transcutaneous bilirubin levels have not exceeded the threshold to require a serum bili level\
+H. If infant is being evaluated for hypoglycemia, all blood sugars have been completed and infant has not required any dextrose gel OR infant has had 3 serial glucose POCT levels greater than or equal to 45 mg/dL.\
+I. Infant has had a recent repeat weight, with ≤ 6% weight loss from birth weight on day 1 or ≤ 8% weight loss from birth weight on day 2 or 3. If breastfeeding, a LATCH score of 8 or more is documented and mother has demonstrated ability to latch baby independently OR mother has worked with lactation and a discharge feeding plan has been documented.\
+J. Follow-up appointment(s) scheduled per unit policy: 1) in Great Starts in 2 days, 2) at 3 weeks with PCP, and 3) at 2 months with PCP.\
+If above criteria have not been met then please cancel discharge and notify MD on call.
 
 [Text](https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-agreement-fcc)
 
