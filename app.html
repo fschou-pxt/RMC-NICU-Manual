@@ -165,6 +165,23 @@ mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radiu
 .list .entry a { display: inline; width: auto; padding: 0; border: 0; font-weight: 600; color: var(--blue); }
 .calc-view { position: fixed; inset: 0; z-index: 40; background: var(--bg); display: flex; flex-direction: column; }
 .calc-view iframe { flex: 1; width: 100%; border: 0; background: #fff; }
+.feed-scroll { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-bottom: env(safe-area-inset-bottom); }
+.fd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: end; }
+.fd-grid > * { min-width: 0; } .fd-grid .full { grid-column: 1 / -1; }
+.fd label { display: block; font-weight: 600; font-size: .85em; margin: 0 0 5px; }
+.fd input, .fd select { width: 100%; padding: 9px 11px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }
+.fd select:disabled, .fd .seg button:disabled { opacity: .45; cursor: default; }
+.fd .seg { display: flex; width: 100%; } .fd .seg button { flex: 1; line-height: 1.25; }
+.fd .seg button + button { border-left: 1px solid var(--border); }
+.fd-note { background: #fdf0d2; color: #7a4b00; border-radius: 12px; padding: 9px 12px; font-size: .85em; margin: 0 0 12px; }
+:root[data-theme="dark"] .fd-note { background: #3a3018; color: #f3d48a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .fd-note { background: #3a3018; color: #f3d48a; } }
+.fd-plan { width: 100%; border-collapse: collapse; font-size: .9em; }
+.fd-plan th { text-align: left; font-size: .78em; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; padding: 0 8px 6px; }
+.fd-plan td { border-top: 1px solid var(--border); padding: 8px; vertical-align: top; }
+.fd-plan td:first-child, .fd-plan td:nth-child(2) { white-space: nowrap; color: var(--muted); }
+.fd-plan tr.today td { background: var(--tint); font-weight: 600; color: var(--text); }
+.fd-out-h { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; } .fd-out-h b { flex: 1; }
 
 /* ---------- source sheet (bottom sheet on phones, side panel on wide screens) ---------- */
 .backdrop { position: fixed; inset: 0; background: rgba(8, 16, 28, .45); z-index: 20; }
@@ -250,10 +267,17 @@ mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radiu
   <iframe id="calc-frame" title="Calculator" src="about:blank"></iframe>
 </div>
 
+<div class="calc-view" id="feed-view" hidden>
+  <header class="bar"><div class="brand">Feeding advancement</div>
+    <button class="icon-btn" type="button" data-act="close-feed" aria-label="Close"><i class="bi bi-x-lg"></i></button></header>
+  <div class="feed-scroll"><div class="view fd" id="feed-body"></div></div>
+</div>
+
 <script type="module">
 // The installed app: chat first, with the manual and unit tools as tabs. Shares its engine with the page widget.
 import { K, S, L, store, readJSON, localize, settings, hasKey, currentModel, shortLabel, loadHistory, saveHistory,
   loadKnowledge, answerQuestion, answerOutside, renderMessage, renderSettings, renderMd, highlightIn, esc, tokenize } from "./chatbot/engine.js";
+import * as Feed from "./tools/feeding.js";
 
 store.set(S, K.app, "1"); // book pages opened from here show the app's tab bar
 const $ = (s) => document.querySelector(s);
@@ -287,6 +311,7 @@ function show(name) {
 }
 function route() {
   const name = (location.hash || "#ask").slice(1);
+  if (name === "feeding") { show("calcs"); return openFeeding(); }
   show(["ask", "manual", "dots", "phones", "calcs"].includes(name) ? name : "ask");
   if (name === "ask" && !hasKey()) show("settings");
 }
@@ -517,13 +542,15 @@ async function renderDots() {
     if (pre.scrollHeight <= pre.clientHeight + 2) $(`[data-more="${i}"]`).hidden = true;
   });
 }
-async function copyDot(i, btn) {
-  const text = dots[i].text;
+async function writeClipboard(text) {
   try { await navigator.clipboard.writeText(text); }
   catch { // older browsers: copy through a temporary text box
     const ta = Object.assign(document.createElement("textarea"), { value: text });
     document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
   }
+}
+async function copyDot(i, btn) {
+  await writeClipboard(dots[i].text);
   btn.innerHTML = '<i class="bi bi-check2"></i> Copied';
   setTimeout(() => { btn.innerHTML = '<i class="bi bi-clipboard"></i> Copy'; }, 1800);
 }
@@ -591,7 +618,7 @@ const CALCS = [["gir", "GIR", "Glucose infusion rate"], ["total-fluid", "Total f
 const calcUrl = (slug) => `https://inneosight.org/en-US/calculators/${slug}`;
 function renderCalcs() {
   $("#v-calcs").innerHTML = `<p class="h2">KP Riverside</p><div class="list">
-      <a href="https://neostat.shinyapps.io/nicu_feeding_protocol/" target="_blank" rel="noopener"><span class="num"><i class="bi bi-cup-hot"></i></span><span class="t">Feeding advancement protocol<small>NICU feeding protocol app</small></span><i class="bi bi-box-arrow-up-right"></i></a></div>
+      <button type="button" data-act="open-feed"><span class="num"><i class="bi bi-cup-hot"></i></span><span class="t">Feeding advancement protocol<small>Daily plan to copy into Epic</small></span><i class="bi bi-chevron-right"></i></button></div>
     <p class="h2">In[Neo]Sight calculators</p><div class="list">${CALCS.map(([slug, name, sub], i) => CALC_EMBED
       ? `<button type="button" data-calc="${i}"><span class="t">${esc(name)}${sub ? `<small>${esc(sub)}</small>` : ""}</span><i class="bi bi-chevron-right"></i></button>`
       : `<a href="${calcUrl(slug)}" target="_blank" rel="noopener"><span class="t">${esc(name)}${sub ? `<small>${esc(sub)}</small>` : ""}</span><i class="bi bi-box-arrow-up-right"></i></a>`).join("")}</div>
@@ -603,6 +630,79 @@ function openCalc(i) {
   $("#calc-open").href = calcUrl(slug);
   $("#calc-frame").src = calcUrl(slug) + "?embed=1";
   $("#calc-view").hidden = false;
+}
+
+// ---------- Feeding advancement plan: same rules and text as the NICU Feeding Protocol app ----------
+// Inputs stay in memory only; nothing about the baby is saved on the device.
+const feed = { bw: "", ga: "", protocol: "", milk: "human_milk", fort: "", cream: "0.04", day1: Feed.todayISO() };
+function openFeeding() {
+  $("#feed-view").hidden = false;
+  const box = $("#feed-body");
+  if (!box.firstChild) {
+    box.innerHTML = `<p class="fd-note"><i class="bi bi-exclamation-triangle"></i> Prolacta / Cream criteria: GA &lt; 32 wk or BW &lt; 1,500 g.
+        Formula allowed only if GA &ge; 32 wk and BW &ge; 1,500 g.</p>
+      <div class="card"><div class="fd-grid">
+        <div><label for="fd-bw">Weight for calculation (g)</label><input id="fd-bw" inputmode="numeric" placeholder="e.g. 1200" autocomplete="off"></div>
+        <div><label for="fd-ga">Gestational age (wk)</label><select id="fd-ga"><option value="">Select…</option>${
+          Array.from({ length: 21 }, (_, i) => `<option>${22 + i}</option>`).join("")}</select></div>
+        <div class="full"><label for="fd-protocol">Feeding advancement rate</label><select id="fd-protocol"><option value="">Select…</option>${
+          Object.entries(Feed.PROTOCOL_LABELS).map(([k, l]) => `<option value="${k}">${l}</option>`).join("")}</select></div>
+        <div class="full"><label>Milk base</label><div class="seg" id="fd-milk">
+          <button type="button" data-milk="human_milk">Human milk only</button><button type="button" data-milk="formula">Allow formula</button></div></div>
+        <div class="full"><label>Fortification</label><div class="seg" id="fd-fort">
+          <button type="button" data-fort="ehmd">EHMD (Prolacta)</button><button type="button" data-fort="hmf">Cow’s milk fortifier</button></div></div>
+        <div class="full"><label for="fd-cream">Cream:milk ratio</label><select id="fd-cream">
+          <option value="0.04">4 mL cream per 100 mL milk</option><option value="0.05">5 mL cream per 100 mL milk</option><option value="0.06">6 mL cream per 100 mL milk</option></select></div>
+        <div><label for="fd-day1">Day 1</label><input type="date" id="fd-day1"></div>
+        <div><label for="fd-step">Today’s step</label><select id="fd-step"></select></div>
+      </div></div>
+      <div id="fd-out"></div>`;
+    const on = (sel, ev, fn) => box.querySelector(sel).addEventListener(ev, fn);
+    on("#fd-bw", "input", (e) => { feed.bw = e.target.value.trim(); updateFeeding("patient"); });
+    on("#fd-ga", "change", (e) => { feed.ga = e.target.value; updateFeeding("patient"); });
+    on("#fd-protocol", "change", (e) => { feed.protocol = e.target.value; updateFeeding("protocol"); });
+    on("#fd-milk", "click", (e) => { const b = e.target.closest("button"); if (b && !b.disabled) { feed.milk = b.dataset.milk; updateFeeding(); } });
+    on("#fd-fort", "click", (e) => { const b = e.target.closest("button"); if (b) { feed.fort = b.dataset.fort; updateFeeding(); } });
+    on("#fd-cream", "change", (e) => { feed.cream = e.target.value; updateFeeding(); });
+    on("#fd-day1", "change", (e) => { if (e.target.value) { feed.day1 = e.target.value; updateFeeding(); } });
+    on("#fd-step", "change", (e) => { feed.day1 = Feed.addDays(Feed.todayISO(), 1 - +e.target.value); updateFeeding(); });
+  }
+  updateFeeding();
+}
+function updateFeeding(changed) {
+  const box = $("#feed-body"), today = Feed.todayISO();
+  if (changed === "patient") feed.protocol = Feed.protocolFor(feed.bw, feed.ga);
+  if (changed === "patient" || changed === "protocol") feed.fort = Feed.fortificationFor(feed.bw, feed.ga, feed.protocol);
+  const formulaOk = Feed.formulaAllowed(feed.bw, feed.ga);
+  if (!formulaOk) feed.milk = "human_milk";
+  box.querySelector("#fd-protocol").value = feed.protocol;
+  box.querySelector("#fd-protocol").disabled = feed.bw === "";
+  box.querySelectorAll("#fd-milk button").forEach((b) => { b.classList.toggle("on", b.dataset.milk === feed.milk); b.disabled = !formulaOk; });
+  box.querySelectorAll("#fd-fort button").forEach((b) => b.classList.toggle("on", b.dataset.fort === feed.fort));
+  box.querySelector("#fd-cream").disabled = feed.fort !== "ehmd";
+  box.querySelector("#fd-day1").value = feed.day1;
+  const n = feed.protocol ? Feed.PROTOCOLS[feed.protocol].tf.length : 0, step = box.querySelector("#fd-step");
+  step.innerHTML = `<option value="" disabled>—</option>` + Array.from({ length: n }, (_, i) => `<option>${i + 1}</option>`).join("");
+  const k = Feed.daysBetween(feed.day1, today) + 1;
+  step.value = k >= 1 && k <= n ? String(k) : "";
+  step.disabled = !n;
+
+  const out = box.querySelector("#fd-out"), bw = Number(feed.bw);
+  if (feed.bw === "" || !feed.protocol) { out.innerHTML = '<p class="nc-note">Enter the weight and gestational age to see the plan.</p>'; return; }
+  if (!(bw >= 300 && bw <= 6000)) { out.innerHTML = '<p class="nc-note">Check the weight: enter it in grams (300 to 6000).</p>'; return; }
+  if (!feed.fort) { out.innerHTML = '<p class="nc-note">Choose the fortification type (or enter the gestational age).</p>'; return; }
+  const rows = Feed.buildPlan({ ...feed, bw });
+  feed.text = Feed.planText(rows);
+  out.innerHTML = `<div class="card"><div class="fd-out-h"><b>Feeding plan</b>
+      <button type="button" class="nc-btn" data-act="copy-feed"><i class="bi bi-clipboard"></i> Copy for Epic</button></div>
+    <table class="fd-plan"><thead><tr><th>Date</th><th>Step</th><th>Feeding plan</th></tr></thead><tbody>${rows.map((r) =>
+      `<tr class="${r.date === today ? "today" : ""}"><td>${r.date}</td><td>${r.step}</td><td>${esc(r.plan)}</td></tr>`).join("")}</tbody></table>
+    <p class="nc-note" style="margin:10px 0 0">Cream volume is not included in the total fluid calculation. Same rules as the
+      <a href="https://neostat.shinyapps.io/nicu_feeding_protocol/" target="_blank" rel="noopener">NICU Feeding Protocol app</a>.</p></div>`;
+}
+function closeFeeding() {
+  $("#feed-view").hidden = true;
+  if (location.hash === "#feeding") window.history.replaceState(null, "", "#calcs");
 }
 
 // ---------- clicks ----------
@@ -620,6 +720,14 @@ document.addEventListener("click", async (ev) => {
   }
   if (act === "open-manual") return openInManual(sheetCtx.list[sheetCtx.index]);
   if (act === "save-src") { toggleSaved(sheetCtx.list[sheetCtx.index]); syncStar(); if (view === "manual") renderManual(); return; }
+  if (act === "open-feed") return openFeeding();
+  if (act === "close-feed") return closeFeeding();
+  if (act === "copy-feed") {
+    await writeClipboard(feed.text);
+    t.innerHTML = '<i class="bi bi-check2"></i> Copied';
+    setTimeout(() => { t.innerHTML = '<i class="bi bi-clipboard"></i> Copy for Epic'; }, 1800);
+    return;
+  }
   if (act === "close-calc") { $("#calc-view").hidden = true; $("#calc-frame").src = "about:blank"; return; }
   if (t.dataset.hit !== undefined) return openSheet(manualHits.map((s) => ({ title: s.title, url: s.url, quote: "" })), +t.dataset.hit);
   if (t.dataset.item !== undefined) return openItem(manualItems[+t.dataset.item]);

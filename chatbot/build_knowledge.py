@@ -217,7 +217,7 @@ def write_service_worker():
                 keep.append(rel)
             elif top == "site_libs" and not f.endswith(".map"):
                 keep.append(rel)
-            elif top in ("pwa", "chatbot", "theme"):
+            elif top in ("pwa", "chatbot", "theme", "tools"):
                 keep.append(rel)
     keep = sorted(set(keep) - {"sw.js"})
     size = sum(os.path.getsize(os.path.join(BOOK, p)) for p in keep)

@@ -5,6 +5,7 @@ project:
     - manifest.webmanifest
     - app.html
     - chatbot/engine.js
+    - tools/feeding.js
     - pwa/*.png
 
 book:

@@ -49,6 +49,17 @@
       ]
     },
     {
+      "name": "Feeding advancement plan",
+      "short_name": "Feeding",
+      "url": "./app.html#feeding",
+      "icons": [
+        {
+          "src": "pwa/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
       "name": "Phone numbers",
       "short_name": "Phones",
       "url": "./app.html#phones",
