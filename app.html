@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NICU Manual</title>
+<meta name="description" content="Ask the KP Riverside NICU Manual: unit protocols, guidelines, and dot phrases.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#003b71">
+<link rel="icon" type="image/png" sizes="64x64" href="pwa/favicon-64.png">
+<link rel="apple-touch-icon" href="pwa/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NICU Manual">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site_libs/bootstrap/bootstrap-icons.css">
+<style>
+/* ---------- theme ---------- */
+:root {
+  --navy: #003b71; --blue: #0068a8; --bg: #f3f6fa; --surface: #ffffff; --surface-2: #f6f8fb; --text: #1d2733;
+  --muted: #5b6b80; --border: #e1e7ef; --tint: rgba(0, 59, 113, .07); --user: #003b71; --user-text: #fff;
+  --shadow: 0 1px 2px rgba(16, 32, 56, .05), 0 6px 18px rgba(16, 32, 56, .06);
+  --fs: 16px; color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --navy: #10345a; --blue: #7cc0f5; --bg: #0b131d; --surface: #142030; --surface-2: #1a2738; --text: #dde5ee;
+    --muted: #9fb0c3; --border: #263445; --tint: rgba(124, 192, 245, .10); --user: #2f6ea8; --user-text: #fff;
+    --shadow: none; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --navy: #10345a; --blue: #7cc0f5; --bg: #0b131d; --surface: #142030; --surface-2: #1a2738; --text: #dde5ee;
+  --muted: #9fb0c3; --border: #263445; --tint: rgba(124, 192, 245, .10); --user: #2f6ea8; --user-text: #fff;
+  --shadow: none; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+  font: 400 var(--fs)/1.5 "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-text-size-adjust: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: var(--blue); text-decoration: none; }
+[hidden] { display: none !important; }
+
+/* ---------- layout: header / content / composer / tabs (rail on wide screens) ---------- */
+.app { display: grid; grid-template-rows: auto 1fr auto auto; grid-template-columns: 1fr; height: 100dvh; }
+.bar { background: #003b71; color: #fff; display: flex; align-items: center; gap: 6px;
+  padding: calc(env(safe-area-inset-top) + 10px) 12px 10px 16px; }
+:root[data-theme="dark"] .bar { background: #0f2a47; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .bar { background: #0f2a47; } }
+.bar .brand { font-weight: 700; font-size: 17px; letter-spacing: -.01em; flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.bar .brand img { width: 26px; height: 26px; border-radius: 7px; }
+.icon-btn { background: transparent; border: 0; color: inherit; width: 38px; height: 38px; border-radius: 10px;
+  display: inline-flex; align-items: center; justify-content: center; cursor: pointer; font-size: 19px; }
+.icon-btn:hover { background: rgba(255, 255, 255, .14); }
+.model-pill { border: 1px solid rgba(255, 255, 255, .45); color: #fff; background: transparent; border-radius: 999px;
+  padding: 4px 10px; font-size: 12.5px; cursor: pointer; white-space: nowrap; max-width: 42vw; overflow: hidden; text-overflow: ellipsis; }
+main { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.view { max-width: 820px; margin: 0 auto; padding: 16px 14px 24px; }
+.composer { display: flex; gap: 8px; align-items: flex-end; padding: 10px 12px; background: var(--bg); }
+.composer .box { flex: 1; display: flex; align-items: flex-end; gap: 6px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 22px; padding: 6px 6px 6px 14px; box-shadow: var(--shadow); max-width: 820px; margin: 0 auto; width: 100%; }
+.composer textarea { flex: 1; border: 0; outline: 0; resize: none; background: transparent; max-height: 140px; min-height: 24px;
+  padding: 6px 0; line-height: 1.4; }
+.send { width: 38px; height: 38px; border-radius: 50%; border: 0; background: #003b71; color: #fff; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; font-size: 17px; flex: 0 0 auto; }
+.send:disabled { opacity: .45; cursor: default; }
+.tabs { display: flex; background: var(--surface); border-top: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom); }
+.tabs a { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 9px; font-size: 11px; color: var(--muted); }
+.tabs a i { font-size: 21px; line-height: 1; }
+.tabs a.on { color: var(--blue); font-weight: 600; }
+@media (min-width: 900px) {
+  .app { grid-template-columns: 96px 1fr; grid-template-rows: auto 1fr auto; }
+  .bar { grid-column: 1 / -1; }
+  .tabs { grid-row: 2 / 4; grid-column: 1; flex-direction: column; justify-content: flex-start; border-top: 0;
+    border-right: 1px solid var(--border); padding-top: 12px; }
+  .tabs a { flex: 0 0 auto; padding: 12px 0; }
+  main { grid-column: 2; } .composer { grid-column: 2; }
+}
+
+/* ---------- chat thread (message classes shared with the page widget's engine) ---------- */
+.hello { text-align: center; padding: 28px 8px 8px; }
+.hello img { width: 64px; height: 64px; border-radius: 16px; box-shadow: var(--shadow); }
+.hello h1 { font-size: 1.35rem; margin: 14px 0 4px; letter-spacing: -.01em; }
+.hello p { color: var(--muted); margin: 0 0 18px; font-size: .95em; }
+.suggest { display: flex; flex-direction: column; gap: 8px; max-width: 520px; margin: 0 auto; }
+.suggest button { text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 11px 14px; cursor: pointer; box-shadow: var(--shadow); display: flex; gap: 10px; align-items: center; }
+.suggest button i { color: var(--blue); font-size: 1.1em; }
+.suggest button:hover { border-color: var(--blue); }
+.nc-msg { margin: 0 0 12px; padding: 10px 13px; border-radius: 16px; max-width: 92%; overflow-wrap: anywhere; }
+.nc-user { margin-left: auto; background: var(--user); color: var(--user-text); border-bottom-right-radius: 6px; white-space: pre-wrap; width: fit-content; }
+.nc-bot { background: var(--surface); border: 1px solid var(--border); border-bottom-left-radius: 6px; box-shadow: var(--shadow); }
+.nc-bot p { margin: 0 0 7px; } .nc-bot p:last-child { margin-bottom: 0; }
+.nc-bot ul, .nc-bot ol { margin: 4px 0 8px; padding-left: 20px; }
+.nc-bot li { margin: 2px 0; }
+.nc-bot li.nc-crit { list-style: none; display: flex; gap: .45em; margin-left: -20px; }
+.nc-crit > b { flex: 0 0 1.1em; text-align: center; } .nc-crit > span { flex: 1; min-width: 0; }
+.nc-met > b { color: #1e7b34; } .nc-unmet > b { color: #c0362c; } .nc-unknown > b { color: #b26b00; }
+.nc-src { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--border); font-size: .9em; }
+.nc-src > b { color: var(--muted); font-weight: 600; font-size: .85em; text-transform: uppercase; letter-spacing: .05em; }
+.nc-sg { margin-top: 6px; } .nc-sg > span { display: block; font-weight: 600; margin-bottom: 4px; }
+.nc-chip { display: inline-block; margin: 0 6px 6px 0; padding: 4px 11px; border: 1px solid var(--blue); border-radius: 999px;
+  background: transparent; color: var(--blue); cursor: pointer; font-size: inherit; }
+.nc-chip:hover, .nc-chip.on { background: var(--blue); color: var(--surface); }
+.nc-note { font-size: .82em; color: var(--muted); margin: 0 0 10px; }
+.nc-typing { color: var(--muted); font-style: italic; }
+.nc-typing::after { content: ""; display: inline-block; width: 1em; animation: dots 1.2s steps(4) infinite; overflow: hidden; vertical-align: bottom; }
+@keyframes dots { 0% { width: 0 } 100% { width: 1em } }
+.nc-err { background: #fdecea; border: 1px solid #f5c2bd; color: #8a1c12; }
+.nc-offer { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nc-offer p { font-size: .85em; color: var(--muted); margin: 0 0 8px; }
+.nc-ext { border-color: #f0c36d; background: #fffaf0; }
+.nc-ext-banner { margin: -10px -13px 10px; padding: 6px 13px; background: #fdf0d2; color: #7a4b00; font-weight: 600; font-size: .82em; border-radius: 16px 16px 0 0; }
+:root[data-theme="dark"] .nc-ext { background: #2a2416; border-color: #6b5420; }
+:root[data-theme="dark"] .nc-ext-banner { background: #3a3018; color: #f3d48a; }
+:root[data-theme="dark"] .nc-err { background: #3a1d1d; border-color: #6b2c2c; color: #f5b5b0; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .nc-ext { background: #2a2416; border-color: #6b5420; }
+  :root:not([data-theme="light"]) .nc-ext-banner { background: #3a3018; color: #f3d48a; }
+  :root:not([data-theme="light"]) .nc-err { background: #3a1d1d; border-color: #6b2c2c; color: #f5b5b0; } }
+.nc-btn { border: 1px solid #003b71; background: #003b71; color: #fff; border-radius: 10px; padding: 8px 14px; cursor: pointer; }
+.nc-btn.nc-ghost { background: transparent; color: var(--blue); border-color: var(--blue); }
+.nc-set { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px 16px; box-shadow: var(--shadow); }
+.nc-set label { display: block; font-weight: 600; margin: 12px 0 5px; font-size: .92em; }
+.nc-set input[type=password], .nc-set select { width: 100%; padding: 9px 11px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }
+.nc-set .nc-check { font-weight: 400; display: flex; gap: 8px; align-items: flex-start; }
+.nc-set .nc-row { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.seg button { border: 0; background: var(--surface-2); padding: 7px 12px; cursor: pointer; }
+.seg button.on { background: #003b71; color: #fff; }
+mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radius: 3px; }
+
+/* ---------- manual, tools ---------- */
+.search { display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+  padding: 10px 14px; box-shadow: var(--shadow); margin-bottom: 14px; }
+.search i { color: var(--muted); } .search input { flex: 1; border: 0; outline: 0; background: transparent; }
+.list { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
+.list a, .list button { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 12px 14px;
+  border: 0; border-top: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer; }
+.list > :first-child { border-top: 0; }
+.list .t { flex: 1; min-width: 0; } .list .t small { display: block; color: var(--muted); font-size: .8em; margin-top: 2px; }
+.list .num { flex: 0 0 2.1em; height: 2.1em; border-radius: 10px; background: var(--tint); color: var(--blue); font-weight: 700; font-size: .82em;
+  display: flex; align-items: center; justify-content: center; }
+.list i.bi-chevron-right { color: var(--muted); }
+.h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin: 18px 4px 8px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); margin-bottom: 12px; }
+
+/* ---------- source sheet (bottom sheet on phones, side panel on wide screens) ---------- */
+.backdrop { position: fixed; inset: 0; background: rgba(8, 16, 28, .45); z-index: 20; }
+.sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 21; max-height: 82dvh; display: flex; flex-direction: column;
+  background: var(--surface); border-radius: 20px 20px 0 0; box-shadow: 0 -8px 30px rgba(0, 0, 0, .18); padding-bottom: env(safe-area-inset-bottom); }
+.sheet .grab { width: 40px; height: 5px; border-radius: 3px; background: var(--border); margin: 8px auto 2px; }
+.sheet header { display: flex; gap: 8px; align-items: flex-start; padding: 6px 12px 10px 18px; border-bottom: 1px solid var(--border); }
+.sheet header .t { flex: 1; min-width: 0; } .sheet header small { color: var(--muted); font-size: .78em; display: block; }
+.sheet header h2 { margin: 2px 0 0; font-size: 1.12rem; letter-spacing: -.01em; }
+.sheet header .icon-btn { color: var(--muted); }
+.sheet .body { flex: 1; overflow-y: auto; padding: 14px 18px; line-height: 1.6; }
+.sheet .body .nc-h { font-weight: 700; margin: 14px 0 6px; }
+.sheet .body ul, .sheet .body ol { padding-left: 22px; }
+.nc-table { overflow-x: auto; margin: 8px 0 12px; } .nc-table table { border-collapse: collapse; font-size: .9em; min-width: 100%; }
+.nc-table td { border: 1px solid var(--border); padding: 6px 8px; vertical-align: top; }
+.nc-table tr:first-child td { background: var(--surface-2); font-weight: 600; }
+.sheet footer { display: flex; gap: 8px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--border); }
+.sheet footer .grow { flex: 1; }
+@media (min-width: 900px) {
+  .backdrop { display: none !important; }
+  .sheet { left: auto; top: calc(env(safe-area-inset-top) + 58px); width: min(460px, 40vw); max-height: none; border-radius: 0;
+    border-left: 1px solid var(--border); box-shadow: -8px 0 30px rgba(0, 0, 0, .08); }
+  .sheet .grab { display: none; }
+  body.sheet-open main, body.sheet-open .composer { margin-right: min(460px, 40vw); }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="bar">
+    <div class="brand"><img src="pwa/icon-192.png" alt="">NICU Manual</div>
+    <button class="model-pill" type="button" data-go="settings" title="AI model and key"></button>
+    <button class="icon-btn" type="button" data-act="new" title="New chat" aria-label="New chat"><i class="bi bi-pencil-square"></i></button>
+    <button class="icon-btn" type="button" data-go="settings" title="Settings" aria-label="Settings"><i class="bi bi-gear"></i></button>
+  </header>
+  <main>
+    <section class="view" id="v-ask"><div id="thread"></div></section>
+    <section class="view" id="v-settings" hidden></section>
+    <section class="view" id="v-manual" hidden>
+      <label class="search"><i class="bi bi-search"></i><input id="q" type="search" placeholder="Search the manual" autocomplete="off"></label>
+      <div id="manual-list"></div>
+    </section>
+    <section class="view" id="v-dots" hidden></section>
+    <section class="view" id="v-phones" hidden></section>
+    <section class="view" id="v-calcs" hidden></section>
+  </main>
+  <form class="composer" id="composer">
+    <div class="box">
+      <textarea id="input" rows="1" placeholder="Ask about any unit protocol…" aria-label="Your question" maxlength="1500"></textarea>
+      <button class="send" type="submit" aria-label="Ask"><i class="bi bi-arrow-up"></i></button>
+    </div>
+  </form>
+  <nav class="tabs" aria-label="App sections">
+    <a href="#ask" data-tab="ask"><i class="bi bi-chat-dots"></i><span>Ask</span></a>
+    <a href="#manual" data-tab="manual"><i class="bi bi-book"></i><span>Manual</span></a>
+    <a href="#dots" data-tab="dots"><i class="bi bi-clipboard"></i><span>Dot phrases</span></a>
+    <a href="#phones" data-tab="phones"><i class="bi bi-telephone"></i><span>Phones</span></a>
+    <a href="#calcs" data-tab="calcs"><i class="bi bi-calculator"></i><span>Calculators</span></a>
+  </nav>
+</div>
+
+<div class="backdrop" id="backdrop" hidden></div>
+<aside class="sheet" id="sheet" hidden aria-label="Manual section">
+  <div class="grab"></div>
+  <header>
+    <div class="t"><small id="sheet-crumb"></small><h2 id="sheet-title"></h2></div>
+    <button class="icon-btn" type="button" data-act="close-sheet" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+  </header>
+  <div class="body" id="sheet-body"></div>
+  <footer>
+    <button class="icon-btn" type="button" data-act="prev-src" aria-label="Previous source"><i class="bi bi-chevron-left"></i></button>
+    <span class="grow nc-note" id="sheet-pos" style="margin:0;text-align:center"></span>
+    <button class="icon-btn" type="button" data-act="next-src" aria-label="Next source"><i class="bi bi-chevron-right"></i></button>
+    <button class="nc-btn" type="button" data-act="open-manual"><i class="bi bi-book"></i> Open in manual</button>
+  </footer>
+</aside>
+
+<script type="module">
+// The installed app: chat first, with the manual and unit tools as tabs. Shares its engine with the page widget.
+import { K, S, L, store, readJSON, localize, settings, hasKey, currentModel, shortLabel, loadHistory, saveHistory,
+  loadKnowledge, answerQuestion, answerOutside, renderMessage, renderSettings, renderMd, highlightIn, esc, tokenize } from "./chatbot/engine.js";
+
+store.set(S, K.app, "1"); // book pages opened from here show the app's tab bar
+const $ = (s) => document.querySelector(s);
+const thread = $("#thread"), input = $("#input"), composer = $("#composer");
+let history = loadHistory(), busy = false, typing = "Looking it up…", view = "ask";
+
+// ---------- appearance: text size and light/dark ----------
+const FONT_PX = [14, 15, 16, 18, 20];
+const ui = { font: 2, theme: "auto", ...readJSON(L, K.ui, {}) };
+function applyUi() {
+  document.documentElement.style.setProperty("--fs", FONT_PX[Math.min(4, Math.max(0, ui.font | 0))] + "px");
+  if (ui.theme === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", ui.theme);
+}
+function saveUi() { store.set(L, K.ui, JSON.stringify({ ...readJSON(L, K.ui, {}), font: ui.font, theme: ui.theme })); applyUi(); }
+applyUi();
+
+// ---------- views ----------
+function show(name) {
+  view = name;
+  for (const v of ["ask", "settings", "manual", "dots", "phones", "calcs"]) $("#v-" + v).hidden = v !== name;
+  composer.hidden = name !== "ask";
+  document.querySelectorAll(".tabs a").forEach((a) => a.classList.toggle("on", a.dataset.tab === (name === "settings" ? "ask" : name)));
+  $(".model-pill").textContent = shortLabel(currentModel());
+  if (name === "ask") renderThread();
+  if (name === "settings") renderSettingsView();
+  if (name === "manual") renderManual();
+  if (name === "dots") renderDots();
+  if (name === "phones") renderPhones();
+  if (name === "calcs") renderCalcs();
+}
+function route() {
+  const name = (location.hash || "#ask").slice(1);
+  show(["ask", "manual", "dots", "phones", "calcs"].includes(name) ? name : "ask");
+  if (name === "ask" && !hasKey()) show("settings");
+}
+window.addEventListener("hashchange", route);
+
+// ---------- Ask ----------
+const SUGGESTIONS = [
+  ["snow", "Baby with cord pH 6.9 and hypotonia. Should I cool?"],
+  ["lungs", "32 weeker on 28% FiO2 with increased work of breathing. Surfactant?"],
+  ["droplet-half", "Minimum KVO rate for a UVC in an ELBW baby?"],
+  ["eye", "How do I order ROP exam drops?"],
+  ["people", "Who covers the FCC overnight at RMC?"],
+];
+function renderThread() {
+  $(".model-pill").textContent = shortLabel(currentModel());
+  if (!history.length && !busy) {
+    thread.innerHTML = `<div class="hello"><img src="pwa/icon-192.png" alt=""><h1>Ask the NICU Manual</h1>
+      <p>Answers come from KP Riverside's NICU manual, with the source one tap away.</p>
+      <div class="suggest">${SUGGESTIONS.map(([i, q]) => `<button type="button" data-ask="${esc(q)}"><i class="bi bi-${i}"></i>${esc(q)}</button>`).join("")}</div></div>
+      <p class="nc-note" style="text-align:center;margin-top:18px">Using <b>${esc(shortLabel(currentModel()))}</b>. Do not enter patient identifiers.</p>`;
+    return;
+  }
+  thread.innerHTML = history.map((m, i) => renderMessage(m, i, busy)).join("") +
+    (busy ? `<div class="nc-msg nc-bot nc-typing">${esc(typing)}</div>` : "");
+  const main = $("main");
+  main.scrollTop = main.scrollHeight;
+}
+async function ask(question) {
+  if (!question || busy) return;
+  if (!hasKey()) return show("settings");
+  const past = history.slice();
+  history.push({ role: "user", text: question });
+  busy = true; typing = "Looking it up…"; saveHistory(history); renderThread();
+  const reply = await answerQuestion(question, past, (t) => { typing = t; renderThread(); });
+  busy = false; history.push(reply); saveHistory(history); renderThread();
+  // on wide screens the top source opens beside the answer
+  if (!reply.error && reply.sources?.length && settings().autoJump && innerWidth >= 900) openSource(history.length - 1, 0);
+}
+composer.addEventListener("submit", (ev) => {
+  ev.preventDefault();
+  const q = input.value.trim();
+  input.value = ""; input.style.height = "";
+  ask(q);
+});
+input.addEventListener("keydown", (ev) => {
+  if (ev.key === "Enter" && !ev.shiftKey) { ev.preventDefault(); composer.requestSubmit(); }
+});
+input.addEventListener("input", () => { input.style.height = ""; input.style.height = Math.min(140, input.scrollHeight) + "px"; });
+
+// ---------- settings ----------
+function renderSettingsView() {
+  const v = $("#v-settings");
+  const extra = `<label>Text size</label><div class="seg" id="font">${FONT_PX.map((px, i) =>
+      `<button type="button" data-font="${i}" class="${i === ui.font ? "on" : ""}" style="font-size:${px - 2}px">A</button>`).join("")}</div>
+    <label>Appearance</label><div class="seg" id="theme">${[["auto", "Auto"], ["light", "Light"], ["dark", "Dark"]].map(([k, l]) =>
+      `<button type="button" data-theme="${k}" class="${k === ui.theme ? "on" : ""}">${l}</button>`).join("")}</div>`;
+  renderSettings(v, { extraHTML: extra, onSaved: () => { location.hash = "#ask"; show("ask"); }, onBack: () => show("ask") });
+  v.querySelector("#font").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return;
+    ui.font = +b.dataset.font; saveUi(); renderSettingsView(); });
+  v.querySelector("#theme").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return;
+    ui.theme = b.dataset.theme; saveUi(); renderSettingsView(); });
+}
+
+// ---------- source sheet ----------
+let sheetCtx = null; // { list: [{title,url,quote}], index }
+async function openSheet(list, index) {
+  sheetCtx = { list, index };
+  const src = list[index];
+  const parts = src.title.split(" › ");
+  $("#sheet-crumb").textContent = parts.slice(0, -1).join(" › ");
+  $("#sheet-title").textContent = parts[parts.length - 1].replace(/:$/, "");
+  $("#sheet-pos").textContent = list.length > 1 ? `${index + 1} of ${list.length}` : "";
+  $('[data-act="prev-src"]').hidden = $('[data-act="next-src"]').hidden = list.length < 2;
+  const body = $("#sheet-body");
+  body.innerHTML = '<p class="nc-note">Loading…</p>';
+  $("#sheet").hidden = false; $("#backdrop").hidden = false; document.body.classList.add("sheet-open");
+  const { sections } = await loadKnowledge();
+  const sec = sections.find((s) => s.title === src.title && s.url === src.url) || sections.find((s) => s.url === src.url);
+  body.innerHTML = sec ? renderMd(sec.text) : '<p class="nc-note">This section could not be loaded. Use "Open in manual".</p>';
+  body.scrollTop = 0;
+  const marks = highlightIn(body, src.quote);
+  if (marks.length) marks[0].scrollIntoView({ block: "center" });
+}
+const openSource = (msgIndex, srcIndex) => openSheet(history[msgIndex].sources, srcIndex);
+function closeSheet() { $("#sheet").hidden = true; $("#backdrop").hidden = true; document.body.classList.remove("sheet-open"); }
+function openInManual(src) {
+  store.set(S, K.pending, JSON.stringify({ quote: src.quote || "", hash: new URL(localize(src.url)).hash }));
+  location.href = localize(src.url);
+}
+
+// ---------- Manual: chapters, or search results that open in the sheet ----------
+let manualHits = [];
+async function renderManual() {
+  const box = $("#manual-list"), q = $("#q").value.trim();
+  const { sections, chapters } = await loadKnowledge();
+  if (!q) {
+    box.innerHTML = `<div class="list">${chapters.map((c) => {
+      const m = c.title.match(/^(\d+|Appendix [A-Z])\s*[—-]?\s*(.*)$/);
+      const num = m ? m[1].replace("Appendix ", "") : "";
+      return `<a href="${esc(localize(c.url))}"><span class="num">${esc(num || "•")}</span><span class="t">${esc(m ? m[2] : c.title)}</span><i class="bi bi-chevron-right"></i></a>`;
+    }).join("")}</div>`;
+    return;
+  }
+  const words = tokenize(q);
+  manualHits = sections.map((s) => ({ s, score: words.reduce((a, w) => a + (s.tokens.includes(w) ? 1 : 0) + (tokenize(s.title).includes(w) ? 2 : 0), 0) }))
+    .filter((x) => x.score >= words.length).sort((a, b) => b.score - a.score).slice(0, 40).map((x) => x.s);
+  box.innerHTML = manualHits.length ? `<div class="list">${manualHits.map((s, i) => {
+    const parts = s.title.split(" › ");
+    const snippet = s.text.replace(/```[\s\S]*?```/g, " [diagram] ").replace(/[#*|_\\-]+/g, " ").replace(/\s+/g, " ").slice(0, 110);
+    return `<button type="button" data-hit="${i}"><span class="t">${esc(parts[parts.length - 1])}<small>${esc(parts.slice(0, -1).join(" › "))} — ${esc(snippet)}…</small></span><i class="bi bi-chevron-right"></i></button>`;
+  }).join("")}</div>` : `<p class="nc-note">No sections match “${esc(q)}”. Try fewer words, or ask in the Ask tab.</p>`;
+}
+$("#q").addEventListener("input", () => renderManual());
+
+// ---------- tools (full versions arrive in the next phase) ----------
+function renderDots() {
+  $("#v-dots").innerHTML = `<div class="card"><b>Dot phrases</b><p class="nc-note" style="margin:6px 0 12px">A searchable list with one-tap Copy for Epic is coming in the next update.</p>
+    <a class="nc-btn" href="dotPhrases.html"><i class="bi bi-book"></i> Open dot phrases in the manual</a></div>`;
+}
+function renderPhones() {
+  $("#v-phones").innerHTML = `<div class="card"><b>Phone numbers</b><p class="nc-note" style="margin:6px 0 12px">A searchable directory with tap-to-call is coming in the next update.</p>
+    <a class="nc-btn" href="phone-numbers.html"><i class="bi bi-book"></i> Open phone numbers in the manual</a></div>`;
+}
+const CALCS = [["gir", "GIR", "Glucose infusion rate"], ["total-fluid", "Total fluid", "mL/kg/day and rates"], ["fluid-tpn", "Fluid and TPN", ""],
+  ["nutrition-intake", "Nutrition intake", "kcal and protein"], ["uac-uvc", "UAC / UVC depth", ""], ["ett-tube", "ETT size and depth", ""],
+  ["therapeutic-hypothermia", "Therapeutic hypothermia", "Eligibility"], ["phototherapy", "Phototherapy", "Bilirubin thresholds"],
+  ["blood-gas", "Blood gas", "Interpretation"], ["oxygenation-index", "Oxygenation index", ""], ["a-a-gradient", "A–a gradient", ""],
+  ["bpd", "BPD risk", "Prediction"], ["corrected-age", "Corrected age", ""], ["growth-zscore", "Growth z-score", ""],
+  ["postnatal-growth", "Postnatal growth", ""], ["ballard", "Ballard score", ""], ["apgar", "Apgar", ""], ["unit-converter", "Unit converter", ""]];
+function renderCalcs() {
+  $("#v-calcs").innerHTML = `<p class="h2">KP Riverside</p><div class="list">
+      <a href="https://neostat.shinyapps.io/nicu_feeding_protocol/" target="_blank" rel="noopener"><span class="num"><i class="bi bi-cup-hot"></i></span><span class="t">Feeding advancement protocol<small>NICU feeding protocol app</small></span><i class="bi bi-box-arrow-up-right"></i></a></div>
+    <p class="h2">In[Neo]Sight calculators</p><div class="list">${CALCS.map(([slug, name, sub]) =>
+      `<a href="https://inneosight.org/en-US/calculators/${slug}" target="_blank" rel="noopener"><span class="t">${esc(name)}${sub ? `<small>${esc(sub)}</small>` : ""}</span><i class="bi bi-box-arrow-up-right"></i></a>`).join("")}</div>
+    <p class="nc-note" style="margin-top:10px">These open inneosight.org. Calculators are aids; check results against the manual and clinical judgment.</p>`;
+}
+
+// ---------- clicks ----------
+document.addEventListener("click", async (ev) => {
+  const t = ev.target.closest("button, a");
+  if (!t) return;
+  if (t.dataset.go === "settings") return show("settings");
+  if (t.dataset.ask) return ask(t.dataset.ask);
+  const act = t.dataset.act;
+  if (act === "new") { history = []; saveHistory(history); closeSheet(); location.hash = "#ask"; return show("ask"); }
+  if (act === "close-sheet") return closeSheet();
+  if (act === "prev-src" || act === "next-src") {
+    const n = sheetCtx.list.length;
+    return openSheet(sheetCtx.list, (sheetCtx.index + (act === "next-src" ? 1 : n - 1)) % n);
+  }
+  if (act === "open-manual") return openInManual(sheetCtx.list[sheetCtx.index]);
+  if (t.dataset.hit !== undefined) return openSheet(manualHits.map((s) => ({ title: s.title, url: s.url, quote: "" })), +t.dataset.hit);
+  if (t.dataset.ext) {
+    if (busy) return;
+    const i = +t.dataset.msg;
+    history[i].offerExternal = false;
+    busy = true; typing = "Asking the AI…"; saveHistory(history); renderThread();
+    const reply = await answerOutside(history, i);
+    busy = false; history.push(reply); saveHistory(history); renderThread();
+    return;
+  }
+  if (t.classList.contains("nc-chip")) return openSource(+t.dataset.msg, +t.dataset.src);
+});
+$("#backdrop").addEventListener("click", closeSheet);
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
+route();
+</script>
+</body>
+</html>

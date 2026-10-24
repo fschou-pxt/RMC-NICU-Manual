@@ -3,6 +3,8 @@ project:
   resources:
     - chatbot/nicu-manual-knowledge.md
     - manifest.webmanifest
+    - app.html
+    - chatbot/engine.js
     - pwa/*.png
 
 book:

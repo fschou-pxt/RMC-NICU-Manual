@@ -2,14 +2,62 @@
   "name": "KP Riverside NICU Manual",
   "short_name": "NICU Manual",
   "description": "KP Riverside Neonatal ICU Manual: unit protocols, guidelines, and dot phrases.",
-  "start_url": "./index.html",
+  "start_url": "./app.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#003b71",
   "icons": [
-    { "src": "pwa/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "pwa/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "pwa/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ask the manual",
+      "short_name": "Ask",
+      "url": "./app.html#ask",
+      "icons": [
+        {
+          "src": "pwa/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Browse the manual",
+      "short_name": "Manual",
+      "url": "./app.html#manual",
+      "icons": [
+        {
+          "src": "pwa/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Phone numbers",
+      "short_name": "Phones",
+      "url": "./app.html#phones",
+      "icons": [
+        {
+          "src": "pwa/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
   ]
 }

@@ -47,11 +47,11 @@ main ul.kp-chips > li { margin: 0; padding: .35rem .8rem; border: 1px solid var(
 main ul.kp-chips > li.kp-join { border: 0; background: none; padding: 0 .1rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--kp-muted); }
 
 /* jump-to chips at the top of each chapter (shown when the side table of contents is hidden) */
-.kp-jump { display: none; gap: .4rem; overflow-x: auto; padding: .2rem 0 .8rem; margin-bottom: .6rem; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.kp-jump { display: none; width: 0; min-width: 100%; gap: .4rem; overflow-x: auto; /* fills the column without widening it */ padding: .2rem 0 .8rem; margin-bottom: .6rem; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
 .kp-jump a { flex: 0 0 auto; font-size: .82rem; padding: .3rem .75rem; border-radius: 999px; border: 1px solid var(--kp-border); background: var(--kp-card); color: inherit; white-space: nowrap; }
 .kp-jump a:hover { border-color: var(--kp-blue); text-decoration: none; }
 @media (max-width: 991.98px) { .kp-jump { display: flex; } }
-main img { max-width: 100%; height: auto; }
+main img, main video { max-width: 100%; height: auto; }
 
 /* sidebar: quieter sections, pill-shaped active item */
 #quarto-sidebar .sidebar-item-text { line-height: 1.35; }
@@ -158,3 +158,11 @@ body.kp-has-authors .quarto-title-meta, body.kp-has-authors .quarto-title p.subt
 .kp-authors summary b { color: var(--bs-body-color); font-weight: 600; }
 .kp-authors p { margin: .5rem 0 0; padding: .7rem .9rem; border-radius: 10px; background: var(--kp-surface); border: 1px solid var(--kp-border); line-height: 1.6; }
 .kp-credit { font-size: .85rem; color: var(--kp-muted); }
+
+/* nothing wider than the screen: long web addresses wrap, wide formulas scroll, chapter nav wraps */
+main a { overflow-wrap: anywhere; }
+main .math mjx-container, main mjx-container[display="true"] { max-width: 100%; overflow-x: auto; overflow-y: hidden; vertical-align: middle; }
+main .math.inline mjx-container { display: inline-block; }
+.page-navigation { gap: .75rem; }
+.page-navigation .nav-page { max-width: 48%; }
+.page-navigation .nav-page-text { white-space: normal; overflow-wrap: anywhere; }
