@@ -15,6 +15,7 @@ import os
 import re
 import shutil
 import subprocess
+import tempfile
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -201,7 +202,7 @@ def warn_unlabeled_lists():
 def main():
     warn_unlabeled_lists()
     pandoc = find_pandoc()
-    lua_path = os.path.join(os.path.dirname(OUT), ".sections.lua")
+    lua_path = os.path.join(tempfile.gettempdir(), "nicu_sections.lua")  # outside the synced folder
     with open(lua_path, "w") as f:
         f.write(LUA)
     parts, n = [], 0
