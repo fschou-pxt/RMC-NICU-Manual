@@ -1,0 +1,117 @@
+---
+// Home page: hero with search and quick actions, quick-link cards, what's new, the manual by part, about.
+// The page text lives in src/content/docs/index.mdx; this component lays it out.
+import chapters from "../chapters.json";
+import Icon from "./KpIcon.astro";
+
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const href = (path) => (/^https?:/.test(path) ? path : base + path);
+
+const quick = [
+  ["hospital", "Admission", "Central lines, UVC/UAC, re-admission", "admission"],
+  ["lungs", "Respiratory", "LISA, support guide, HFJV, extubation", "respiratory"],
+  ["droplet", "Nutrition and fluids", "Feeding, TPN, KVO rates, Prolacta", "nutrition-fluid"],
+  ["snow", "Therapeutic hypothermia", "Eligibility, passive cooling", "neurology#sec-th-protocol"],
+  ["heart", "VLBW / ELGAN", "Thermoregulation, screening, ROP", "VLBW"],
+  ["home", "Discharge", "Criteria, HRIF, navigator", "discharge"],
+  ["people", "Agreements", "Radiology, Peds–Neo FCC", "operations#sec-interdept-agreements"],
+  ["calculator", "Feeding protocol", "Advancement calculator", "https://neostat.shinyapps.io/nicu_feeding_protocol/"],
+];
+
+// the manual's parts, in book order (titles read from each chapter)
+const docs = import.meta.glob("../content/docs/*.mdx", { eager: true });
+const titleOf = (slug) => docs[`../content/docs/${slug}.mdx`]?.frontmatter?.title ?? slug;
+const parts = [];
+for (const ch of chapters) {
+  if (ch.slug === "index") continue;
+  let p = parts.find((x) => x.name === ch.part);
+  if (!p) parts.push((p = { name: ch.part, items: [] }));
+  p.items.push({ slug: ch.slug, title: titleOf(ch.slug), number: ch.number });
+}
+const { editor, authors = [] } = Astro.props;
+---
+
+<div class="home">
+  <section class="home-hero">
+    <p class="eyebrow">KP Riverside · Neonatal ICU</p>
+    <h1>NICU Manual</h1>
+    <p class="lede">Unit protocols, guidelines, and dot phrases, approved by our neonatologists and NICU staff.</p>
+    <button type="button" class="home-search" data-home-search>
+      <Icon name="search" /><span class="long">Search protocols, doses, phone numbers…</span><span class="short">Search the manual</span><kbd>⌘K</kbd>
+    </button>
+    <div class="home-actions">
+      <a class="btn primary" href={href("app.html#ask")}><Icon name="chat" /><span>Ask<span class="wide"> the manual</span></span></a>
+      <a class="btn" href={href("phone-numbers")}><Icon name="phone" /><span>Phone<span class="wide"> numbers</span></span></a>
+      <a class="btn" href={href("dotPhrases")}><Icon name="clipboard" />Dot phrases</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="label">Quick links</h2>
+    <div class="quick-grid">
+      {
+        quick.map(([icon, title, sub, path]) => (
+          <a class="quick-card" href={href(path)} {...(/^https?:/.test(path) ? { target: "_blank", rel: "noopener" } : {})}>
+            <span class="qi"><Icon name={icon} /></span>
+            <b>{title}</b>
+            <span>{sub}</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="home-news">
+    <h2 class="label">What's new</h2>
+    <div class="news-list"><slot name="news" /></div>
+  </section>
+
+  <section>
+    <h2 class="label">The manual</h2>
+    <div class="parts-grid">
+      {
+        parts.map((p) => (
+          <div class="part">
+            <h3>{p.name}</h3>
+            <ul>
+              {p.items.map((it) => (
+                <li>
+                  <a href={href(it.slug)}>
+                    <span class="n">{it.number}</span>
+                    {it.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="home-about">
+    <slot />
+    <details class="people">
+      <summary>Edited by {editor} · {authors.length} contributors</summary>
+      <p class="muted">Contributors (alphabetical)</p>
+      <ul>{authors.map((a) => <li>{a}</li>)}</ul>
+    </details>
+  </section>
+</div>
+
+<script>
+  // the hero search box opens the site search
+  document.querySelector("[data-home-search]")?.addEventListener("click", () => {
+    document.querySelector("site-search button[data-open-modal]")?.click();
+  });
+  // What's new colors go by month: newest month red, next yellow, next blue (older ones are not shown)
+  const tones = ["red", "yellow", "blue"];
+  const months = [];
+  document.querySelectorAll(".news-item").forEach((el) => {
+    const m = el.dataset.month;
+    if (!months.includes(m)) months.push(m);
+    const i = months.indexOf(m);
+    if (i < tones.length) el.dataset.tone = tones[i];
+    else el.hidden = true;
+  });
+</script>

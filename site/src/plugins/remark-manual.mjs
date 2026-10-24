@@ -61,13 +61,21 @@ export default function remarkManual() {
       return [SKIP, index + out.length];
     });
 
+    // numbered lists that continue (start at 3, say) keep their numbers in the step circles
+    visit(tree, "list", (node) => {
+      if (node.ordered && node.start > 1) {
+        const hp = node.data?.hProperties || {};
+        node.data = { ...node.data, hProperties: { ...hp, style: `counter-reset: step ${node.start - 1}` } };
+      }
+    });
+
     visit(tree, "list", (node, index, parent) => {
       const prev = parent?.children[index - 1];
       if (!prev || prev.type !== "paragraph") return;
       const lead = prev.children.map((c) => c.value || "").join("").trim();
       const hit = LOGIC.find(([re]) => re.test(lead));
       if (!hit) return;
-      node.data = { ...node.data, hProperties: { className: ["criteria"], "data-logic": hit[1] } };
+      node.data = { ...node.data, hProperties: { ...(node.data?.hProperties || {}), className: ["criteria"], "data-logic": hit[1] } };
       prev.data = { ...prev.data, hProperties: { className: ["criteria-lead"] } };
     });
 

@@ -7,8 +7,9 @@ const chapter = chapters.find((c) => c.slug === entry.id);
 const sections = headings.filter((h) => h.depth === 2);
 ---
 
+{entry.data.template === "splash" ? <h1 id="_top" class="sr-only">{entry.data.title}</h1> : (
 <header class="chapter-hero">
-  {chapter?.part && <p class="eyebrow">{chapter.part}<span aria-hidden="true"> · </span>Chapter {chapter.number}</p>}
+  {chapter?.part && <p class="eyebrow">{chapter.part}<span aria-hidden="true"> · </span>{/^[A-Z]$/.test(String(chapter.number)) ? "Appendix" : "Chapter"} {chapter.number}</p>}
   <h1 id="_top">{entry.data.title}</h1>
   {
     sections.length > 1 && (
@@ -20,6 +21,7 @@ const sections = headings.filter((h) => h.depth === 2);
     )
   }
 </header>
+)}
 
 <script>
   // Flowcharts: drawn in the browser from the ```mermaid source, in the site's colors
@@ -44,4 +46,15 @@ const sections = headings.filter((h) => h.depth === 2);
     await mermaid.run({ nodes: blocks });
   }
   drawDiagrams();
+
+  // tap an image to see it full size (diagrams are hard to read at phone width)
+  document.querySelector(".sl-markdown-content")?.addEventListener("click", (ev) => {
+    const img = ev.target.closest("img");
+    if (!img || img.closest("a")) return;
+    const layer = document.createElement("div");
+    layer.className = "img-zoom";
+    layer.innerHTML = `<img src="${img.currentSrc || img.src}" alt="">`;
+    layer.addEventListener("click", () => layer.remove());
+    document.body.append(layer);
+  });
 </script>

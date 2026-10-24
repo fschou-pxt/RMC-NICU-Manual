@@ -1,10 +1,86 @@
 ---
 title: KP Riverside Neonatal ICU Manual
 template: splash
-hero:
-  tagline: Unit protocols, guidelines, dot phrases, and phone numbers for the KP Riverside NICU team.
-  actions:
-    - text: Respiratory
-      link: respiratory
-      icon: right-arrow
+slug: index
+description: Unit protocols, guidelines, and dot phrases for the KP Riverside NICU team.
 ---
+import Home from "../../components/Home.astro";
+import Update from "../../components/Update.astro";
+
+{/*
+  Home page. To add an update, put a new <Update date="YYYY-MM-DD"> block at the TOP of the "news" list,
+  with the changes as a bullet list and @sec-... links. Colors follow the month automatically
+  (newest month red, then yellow, then blue; older months are hidden).
+*/}
+
+<Home
+  editor="Fu-Sheng Chou, MD PhD"
+  authors={["Michael Chang, MD", "Anupama Chundu, MD", "Fu-Sheng Chou, MD PhD", "Michael Doti, MD", "Giulia M. Faison, MD MA", "Beverly Giang, MD", "Kasee L. Houston, MD", "Achyuth Sriram, MD", "James A. Washington III, MD"]}
+>
+<Fragment slot="news">
+<Update date="2026-10-23">
+
+- Interdepartmental Agreements
+  - Radiology: @sec-agreement-radiology
+  - Pediatrics–Neonatology FCC coverage: @sec-agreement-fcc
+- NICU line KVO rates quick reference
+  - @sec-line-kvo
+
+</Update>
+<Update date="2026-10-21">
+
+- ROP exam medications order set
+  - @sec-rop-exam-meds
+
+</Update>
+<Update date="2026-10-17">
+
+- Newborn humerus fracture discharge instructions (.humerusfx)
+  - @sec-humerus-fracture
+
+</Update>
+<Update date="2026-09-28">
+
+- NTrainer feeding workflow
+  - @sec-ntrainer
+
+</Update>
+<Update date="2026-04-09">
+
+- Antibiotic Management of Suspected Sepsis in the NICU
+  - @sec-antibiotics-sepsis
+
+</Update>
+</Fragment>
+
+## About this manual
+
+The goal of this handbook is to centralize clinical protocols and guidelines approved by the neonatologists and NICU staff in one place for easy reference.
+
+This handbook is arranged into six parts:
+
+- NICU Operations
+- General Care
+- System-Based Protocols and Guidelines
+- Special Considerations
+- Health Maintenance
+- Appendices
+
+<p class="credit">Site design, the chat assistant, and the app were built with Claude (Anthropic's AI) under Dr. Chou's direction. Clinical content is written and approved by the authors.</p>
+
+<div class="donate">
+<div id="donate-button-container"><div id="donate-button"></div></div>
+<script is:inline src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+<script is:inline>{`
+PayPal.Donation.Button({
+  env: 'production',
+  hosted_button_id: '8XWMV5GD7FJVE',
+  image: {
+    src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+    alt: 'Donate with PayPal button',
+    title: 'PayPal - The safer, easier way to pay online!',
+  }
+}).render('#donate-button');
+`}</script>
+</div>
+</Home>

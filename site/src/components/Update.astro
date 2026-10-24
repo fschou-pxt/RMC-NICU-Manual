@@ -1,0 +1,11 @@
+---
+// One "What's new" entry on the home page. date: "2026-10-23". The list of changes is the content.
+const { date } = Astro.props;
+const d = new Date(date + "T12:00:00");
+const label = d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+---
+
+<article class="news-item" data-month={date.slice(0, 7)}>
+  <time datetime={date}>{label}</time>
+  <div class="news-body"><slot /></div>
+</article>

@@ -126,17 +126,17 @@
  },
  {
   "slug": "lluch-formulary",
-  "part": "Health Maintenance",
-  "number": 25
+  "part": "Appendices",
+  "number": "A"
  },
  {
   "slug": "dotPhrases",
-  "part": "Health Maintenance",
-  "number": 26
+  "part": "Appendices",
+  "number": "B"
  },
  {
   "slug": "references",
-  "part": "Health Maintenance",
-  "number": 27
+  "part": "Appendices",
+  "number": "C"
  }
 ]

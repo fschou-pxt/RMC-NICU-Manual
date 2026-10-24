@@ -27,6 +27,9 @@ def book_chapters():
         if m:
             part = m.group(1).strip()
             continue
+        if re.match(r"\s+appendices:\s*$", line):
+            part = "Appendices"
+            continue
         m = re.match(r"\s+-\s+(\S+\.qmd)\s*$", line)
         if m:
             out.append((part, m.group(1)))
@@ -99,11 +102,14 @@ def main():
     order = []
     for n, (part, qmd) in enumerate(chapters):
         name = os.path.splitext(qmd)[0]
-        if qmd in wanted:
+        if qmd in wanted and qmd != "index.qmd":  # the home page is built by hand (src/content/docs/index.mdx)
             mdx, title = convert(qmd)
             open(os.path.join(OUT, name + ".mdx"), "w", encoding="utf-8").write(mdx)
             print(f"{qmd} -> site/src/content/docs/{name}.mdx  ({title})")
-        order.append({"slug": name, "part": part, "number": n})
+        # chapters are numbered 1, 2, … after the home page; appendices are lettered A, B, …
+        appendix = sum(1 for p, _ in chapters[:n] if p == "Appendices") if part == "Appendices" else None
+        number = chr(65 + appendix) if appendix is not None else n - sum(1 for p, _ in chapters[:n] if p == "Appendices")
+        order.append({"slug": name, "part": part, "number": number})
     json.dump(order, open(os.path.join(SITE, "src", "chapters.json"), "w"), indent=1)
 
 
