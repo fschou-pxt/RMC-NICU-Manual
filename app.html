@@ -136,6 +136,11 @@ main { overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .nc-art small { color: var(--muted); font-weight: 400; }
 :root[data-theme="dark"] .nc-neo { background: #2a2416; border-color: #6b5420; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .nc-neo { background: #2a2416; border-color: #6b5420; } }
+.nc-phi { background: var(--surface); border: 1px solid #e8b4b0; border-radius: 14px; padding: 10px 14px; font-size: .88em; text-align: left; }
+.nc-phi summary { cursor: pointer; color: var(--text); } .nc-phi summary b { color: #b3261e; }
+.nc-phi ul { margin: 6px 0 8px; padding-left: 20px; } .nc-phi li { margin: 2px 0; } .nc-phi p { margin: 8px 0 0; }
+:root[data-theme="dark"] .nc-phi summary b { color: #f5a5a0; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .nc-phi summary b { color: #f5a5a0; } }
 .nc-btn { border: 1px solid #003b71; background: #003b71; color: #fff; border-radius: 10px; padding: 8px 14px; cursor: pointer; }
 .nc-btn.nc-ghost { background: transparent; color: var(--blue); border-color: var(--blue); }
 .nc-set { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px 16px; box-shadow: var(--shadow); }
@@ -299,7 +304,7 @@ mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radiu
 <script type="module">
 // The installed app: chat first, with the manual and unit tools as tabs. Shares its engine with the page widget.
 import { K, S, L, store, readJSON, localize, settings, hasKey, currentModel, shortLabel, loadHistory, saveHistory,
-  loadKnowledge, answerQuestion, answerOutside, renderMessage, renderSettings, renderMd, highlightIn, esc, tokenize } from "./chatbot/engine.js";
+  loadKnowledge, answerQuestion, answerOutside, renderMessage, renderSettings, renderMd, highlightIn, esc, tokenize, phiNoticeHTML, phiConfirm } from "./chatbot/engine.js";
 import * as Feed from "./tools/feeding.js";
 
 store.set(S, K.app, "1"); // book pages opened from here show the app's tab bar
@@ -354,8 +359,9 @@ function renderThread() {
   if (!history.length && !busy) {
     thread.innerHTML = `<div class="hello"><img src="pwa/icon-192.png" alt=""><h1>Ask the NICU Manual</h1>
       <p>Answers come from KP Riverside's NICU manual, with the source one tap away.</p>
+      <div style="max-width:520px;margin:0 auto 14px">${phiNoticeHTML()}</div>
       <div class="suggest">${SUGGESTIONS.map(([i, q]) => `<button type="button" data-ask="${esc(q)}"><i class="bi bi-${i}"></i>${esc(q)}</button>`).join("")}</div></div>
-      <p class="nc-note" style="text-align:center;margin-top:18px">Using <b>${esc(shortLabel(currentModel()))}</b>. Do not enter patient identifiers.</p>`;
+      <p class="nc-note" style="text-align:center;margin-top:18px">Using <b>${esc(shortLabel(currentModel()))}</b>.</p>`;
     return;
   }
   thread.innerHTML = history.map((m, i) => renderMessage(m, i, busy) + (m.role === "assistant" && !m.error && !busy ? msgActions(m, i) : "")).join("") +
@@ -377,6 +383,7 @@ async function ask(question) {
 composer.addEventListener("submit", (ev) => {
   ev.preventDefault();
   const q = input.value.trim();
+  if (!q || !phiConfirm(q)) return;
   input.value = ""; input.style.height = "";
   ask(q);
 });

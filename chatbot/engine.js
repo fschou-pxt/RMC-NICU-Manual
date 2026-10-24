@@ -451,6 +451,50 @@ export async function answerOutside(history, msgIndex) {
   }
 }
 
+// ---------- patient information (PHI): never sent to the AI services ----------
+// The 18 HIPAA Safe Harbor identifiers, with NICU examples
+export const PHI_ITEMS = [
+  "Names: the baby's, parents', or family members' (including \"Baby Girl Smith\")",
+  "Addresses, cities, counties, or ZIP codes",
+  "Any date tied to the patient except the year: birth, admission, discharge, procedure, or death dates",
+  "Ages over 89 (for family members)",
+  "Phone and fax numbers",
+  "Email addresses",
+  "Social Security numbers",
+  "Medical record numbers (MRN)",
+  "Health plan or insurance numbers",
+  "Account or billing numbers",
+  "Certificate or license numbers",
+  "Vehicle identifiers, including license plates",
+  "Device identifiers and serial numbers",
+  "Web addresses (URLs) tied to the patient",
+  "IP addresses",
+  "Fingerprints, voiceprints, or other biometrics",
+  "Photos of the patient's or family's face",
+  "Any other unique number, code, or detail that could identify the patient (for example a bed number with a date)",
+];
+export function phiNoticeHTML(lead = "") {
+  return `<details class="nc-phi"><summary><b>Never enter patient information (PHI).</b> ${lead}What counts?</summary>
+    <p>Your question goes to an outside AI company. Leave out all of these:</p>
+    <ul>${PHI_ITEMS.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+    <p><b>Safe to ask:</b> gestational age, weight, day of life, lab values, and clinical findings, with no names or dates.</p></details>`;
+}
+// Things in a question that look like patient information; empty when nothing is found
+const MONTH = "jan(uary)?|feb(ruary)?|mar(ch)?|apr(il)?|june?|july?|aug(ust)?|sep(t(ember)?)?|oct(ober)?|nov(ember)?|dec(ember)?"; // "May" is checked case-sensitively below
+const PHI_CHECKS = [
+  ["a date", new RegExp(`\\b\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}\\b|\\b\\d{4}-\\d{2}-\\d{2}\\b|\\b(${MONTH})\\.? \\d{1,2}(st|nd|rd|th)?\\b`, "i")],
+  ["a date", /\bMay \d{1,2}(st|nd|rd|th)?\b/],
+  ["a record or ID number", /\b\d{7,}\b|\b(mrn|dob|ssn)\b/i],
+  ["a phone number", /\(?\b\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}\b/],
+  ["an email address", /[\w.+-]+@[\w-]+\.[\w.]+/],
+  ["a name", /\b[Bb]aby ([Bb]oy|[Gg]irl) [A-Z][a-z]+|\b(Mr|Mrs|Ms|Miss)\.? [A-Z][a-z]+/],
+];
+export const phiFlags = (text) => [...new Set(PHI_CHECKS.filter(([, re]) => re.test(text)).map(([label]) => label))];
+export function phiConfirm(text) {
+  const flags = phiFlags(text);
+  return !flags.length || confirm(`This question may contain patient information (${flags.join(", ")}).\n\nRemove it before asking. Send anyway?`);
+}
+
 // ---------- highlighting a quote inside any element ----------
 export function clearHighlights(scope = document) {
   scope.querySelectorAll("mark.nicu-hl").forEach((m) => m.replaceWith(...m.childNodes));

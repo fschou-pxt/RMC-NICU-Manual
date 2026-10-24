@@ -52,6 +52,10 @@
 .nc-neo .nc-src { border-top-color: #f0c36d; }
 .nc-art { display: block; margin: 5px 0 0; font-weight: 500; line-height: 1.35; }
 .nc-art small { color: var(--nc-muted); font-weight: 400; }
+.nc-phi { border: 1px solid #e8b4b0; border-radius: 10px; padding: 7px 10px; margin: 0 0 10px; font-size: .85em; }
+.nc-phi summary { cursor: pointer; } .nc-phi summary b { color: #b3261e; }
+.nc-phi ul { margin: 5px 0 6px; padding-left: 18px; } .nc-phi p { margin: 6px 0 0; }
+body.quarto-dark .nc-phi summary b { color: #f5a5a0; }
 .nc-typing { color: var(--nc-muted); font-style: italic; }
 .nc-foot { display: flex; gap: 6px; padding: 8px; border-top: 1px solid var(--nc-border); background: #fff; }
 .nc-foot[hidden] { display: none; }
@@ -102,7 +106,7 @@ body.nc-app-mode { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
 // rendering) is shared with the app in chatbot/engine.js.
 import { K, S, L, LIVE_BASE, store, readJSON, localize, settings, hasKey, loadHistory, saveHistory,
   answerQuestion, answerOutside, renderMessage, renderSettings, highlightIn, clearHighlights,
-  loadSections, retrieve, expandQuery, squash, esc, currentModel, shortLabel } from "./chatbot/engine.js";
+  loadSections, retrieve, expandQuery, squash, esc, currentModel, shortLabel, phiNoticeHTML, phiConfirm } from "./chatbot/engine.js";
 
 // ---------- highlighting on the page ----------
 function highlightOnPage(quote, hash) {
@@ -189,7 +193,7 @@ function render() {
     return renderSettings(body, { onSaved: () => { view = "chat"; render(); input.focus(); }, onBack: () => { view = "chat"; render(); } });
   }
   form.hidden = false;
-  const notice = `<p class="nc-note">Using <b>${esc(shortLabel(currentModel()))}</b> (change in ⚙). Answers come from this manual unless marked otherwise, and may be wrong; verify with the linked source. Do not enter patient identifiers.</p>`;
+  const notice = `<p class="nc-note">Using <b>${esc(shortLabel(currentModel()))}</b> (change in ⚙). Answers come from this manual unless marked otherwise, and may be wrong; verify with the linked source.</p>${phiNoticeHTML()}`;
   body.innerHTML = notice + history.map((m, i) => renderMessage(m, i, busy)).join("") +
     (busy ? `<div class="nc-msg nc-bot nc-typing">${esc(typingText)}</div>` : "");
   body.scrollTop = body.scrollHeight;
@@ -230,6 +234,7 @@ form.addEventListener("submit", async (ev) => {
   const question = input.value.trim();
   if (!question || busy) return;
   if (!hasKey()) { view = "settings"; return render(); }
+  if (!phiConfirm(question)) return;
   const past = history.slice();
   history.push({ role: "user", text: question });
   input.value = ""; busy = true; typingText = "Looking it up…"; saveHistory(history); render();
