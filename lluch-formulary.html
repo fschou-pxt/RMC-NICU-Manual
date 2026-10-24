@@ -3374,8 +3374,14 @@ insulin\ in\ 40 mL\ D5W\ (unit)\ =\ 2\ (weight\ in\ kg)
 .nc-bot ul, .nc-bot ol { margin: 4px 0 6px; padding-left: 20px; }
 .nc-src { margin-top: 8px; padding-top: 6px; border-top: 1px dashed var(--nc-border); font-size: .9em; }
 .nc-src b { color: var(--nc-muted); font-weight: 600; }
-.nc-src button { display: block; text-align: left; width: 100%; background: none; border: 0; padding: 3px 0;
-  color: var(--nc-blue-dark); cursor: pointer; text-decoration: underline; font-size: inherit; }
+.nc-bot li.nc-crit { list-style: none; margin-left: -18px; padding-left: 1.3em; text-indent: -1.3em; }
+.nc-crit > b { display: inline-block; width: 1.3em; }
+.nc-met > b { color: #1e7b34; } .nc-unmet > b { color: #b42318; } .nc-unknown > b { color: #b26b00; }
+.nc-sg { margin-top: 5px; }
+.nc-sg > span { display: block; color: var(--nc-text); font-weight: 600; margin-bottom: 3px; }
+.nc-chip { display: inline-block; margin: 0 5px 5px 0; padding: 2px 9px; border: 1px solid var(--nc-blue);
+  border-radius: 999px; background: #fff; color: var(--nc-blue-dark); cursor: pointer; font-size: inherit; line-height: 1.5; }
+.nc-chip:hover { background: var(--nc-blue); color: #fff; }
 .nc-note { font-size: .85em; color: var(--nc-muted); margin: 0 0 10px; }
 .nc-err { background: #fdecea; border: 1px solid #f5c2bd; color: #8a1c12; }
 .nc-typing { color: var(--nc-muted); font-style: italic; }
@@ -3489,14 +3495,47 @@ function parseSections(md) {
 const STOP = new Set(("a an and are as at be by can do does for from has have how i if in is it its of on or " +
   "should that the their there this to was we what when where which who why will with you your our me my " +
   "please tell about").split(" "));
+// crude stemming so cool/cooling/cooled and feed/feeds/feeding match
+function stem(t) {
+  if (t.length > 5 && t.endsWith("ing")) t = t.slice(0, -3);
+  else if (t.length > 4 && t.endsWith("ed")) t = t.slice(0, -2);
+  else if (t.length > 4 && t.endsWith("s") && !t.endsWith("ss")) t = t.slice(0, -1);
+  return t;
+}
 function tokenize(text) {
   return text.toLowerCase().replace(/[^a-z0-9.%/+-]+/g, " ").split(" ")
     .map((t) => t.replace(/^[.%/+-]+|[.%/+-]+$/g, ""))
     .filter((t) => t && !STOP.has(t))
-    .map((t) => (t.length > 4 && t.endsWith("s") && !t.endsWith("ss") ? t.slice(0, -1) : t));
+    .map(stem);
+}
+// Unit shorthand -> the manual's wording. A starter list, not exhaustive: questions the
+// manual "doesn't address" are also retried after the model rewrites them in formal terms.
+const GLOSSARY = [
+  [/\bcool(ing|ed)?\b/, "therapeutic hypothermia TH hypoxic ischemic encephalopathy HIE cooling"],
+  [/\bbili\b/, "bilirubin hyperbilirubinemia phototherapy"],
+  [/\blights\b/, "phototherapy bilirubin"],
+  [/\bsurf\b/, "surfactant LISA"],
+  [/\bjet\b/, "HFJV high frequency jet ventilation"],
+  [/\b(oscillator|oscillate|oscillating|osc)\b/, "HFOV high frequency oscillatory ventilation"],
+  [/\b(nows|withdrawal)\b/, "neonatal abstinence syndrome NAS opioid withdrawal"],
+  [/\bhead bleed\b/, "intraventricular hemorrhage IVH head ultrasound"],
+  [/\bhus\b/, "head ultrasound"],
+  [/\blines?\b/, "central line UVC UAC PICC"],
+  [/\b(mbm|ebm)\b/, "breast milk mother's milk"],
+  [/\bdbm\b/, "donor breast milk"],
+  [/\blytes\b/, "electrolytes"],
+  [/\b(synagis|beyfortus|nirsevimab|palivizumab)\b/, "RSV prevention"],
+  [/\bnitric\b/, "inhaled nitric oxide iNO"],
+  [/\bsats\b/, "oxygen saturation"],
+  [/\bductus\b/, "PDA patent ductus arteriosus"],
+  [/\b(mother[- ]baby|well baby|newborn nursery)\b/, "family care center FCC"],
+];
+function expandQuery(q) {
+  const lower = q.toLowerCase();
+  return [q, ...GLOSSARY.filter(([re]) => re.test(lower)).map(([, add]) => add)].join(" ");
 }
 // BM25 over sections, best first, within a character budget
-function retrieve(sections, query, maxSections = 12, maxChars = 60000) {
+function retrieve(sections, query, maxSections = 20, maxChars = 60000) {
   const q = [...new Set(tokenize(query))];
   if (!q.length) return [];
   const N = sections.length;
@@ -3512,10 +3551,23 @@ function retrieve(sections, query, maxSections = 12, maxChars = 60000) {
       score += idf * (tf * 2.2) / (tf + 1.2 * (0.25 + 0.75 * s.tokens.length / avg));
     }
     return { s, score };
-  }).filter((x) => x.score > 0).sort((a, b) => b.score - a.score);
+  }).filter((x) => x.score > 0).sort((a, b) => b.score - a.score).map((x) => x.s);
+  // Guidelines are split into small sections (e.g. Criteria A / Criteria B / Exclusion), so the
+  // best hits bring the rest of their subsection along: top hits, then their families, then the rest.
+  const ordered = [], seen = new Set();
+  const add = (s) => { if (!seen.has(s.id)) { seen.add(s.id); ordered.push(s); } };
+  const top = scored.slice(0, 3);
+  top.forEach(add);
+  for (const s of top) {
+    const parent = s.title.split(" › ").slice(0, -1).join(" › ");
+    if (parent.split(" › ").length < 2) continue; // never pull in a whole chapter
+    const family = sections.filter((x) => x.title === parent || x.title.startsWith(parent + " › "));
+    if (family.reduce((a, x) => a + x.text.length, 0) <= 20000) family.forEach(add);
+  }
+  scored.forEach(add);
   const picked = [];
   let chars = 0;
-  for (const { s } of scored) {
+  for (const s of ordered) {
     if (picked.length >= maxSections) break;
     const text = s.text.length > 12000 ? s.text.slice(0, 12000) + "\n[section truncated]" : s.text;
     if (chars + text.length > maxChars && picked.length) continue;
@@ -3531,7 +3583,8 @@ function squashChar(c) {
   if (c === "“" || c === "”") return '"';
   return c.toLowerCase();
 }
-const squash = (t) => [...t.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")].map(squashChar).join("");
+const squash = (t) => [...t.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+  .replace(/^\s*([-*•]|\d+[.)])\s+/gm, "")].map(squashChar).join(""); // list markers aren't page text
 
 // ---------- the model call ----------
 const SYSTEM = `You answer questions for clinicians in the KP Riverside NICU using only excerpts from the KP Riverside Neonatal ICU Manual. Each excerpt has a numeric id, a breadcrumb title, and its text.
@@ -3539,7 +3592,14 @@ const SYSTEM = `You answer questions for clinicians in the KP Riverside NICU usi
 - Base every answer only on the excerpts. Do not add facts, doses, thresholds, or recommendations from general medical knowledge.
 - Answer every part of the question (for example both "whether" and "how"), using the procedure or steps sections when the manual has them.
 - Read criteria lists literally. Only treat bulleted criteria as all required when the manual says "all", "and", or "both"; when it says "either", "any", or "or", one criterion is enough; when it doesn't say, state that the manual lists these criteria without saying whether all are needed, rather than assuming.
-- Lead with the direct answer in 1-4 short bullets or sentences. Copy numbers, doses, rates, order names and codes, phone numbers, and times exactly as written, with units.
+- Format every answer the same way, as short markdown lines (no paragraphs longer than two sentences):
+  1. First line: "**Bottom line:** " followed by the direct answer in one sentence (e.g. "Yes", "No", or "Not yet — depends on the neurologic exam").
+  2. Then up to 6 bullets with the supporting details. For eligibility, indication, or criteria questions, give one bullet per criterion and start it with ✓ (met by the details given), ✗ (not met), or ? (not stated in the question), followed by the criterion in plain words and the patient's value.
+  3. If the manual gives an action or procedure, add "**Next step:** " with it (numbered steps for a procedure).
+  4. If information the user didn't give would change the answer, end with "**To confirm:** " and ask the user about it directly, one short question per missing item (e.g. "Does the baby have increased work of breathing?"), so they can reply and get a final answer. When they reply, use the earlier question and your earlier answer to finish it.
+- Give a well-rounded answer from the surrounding sections, not just the one matching line: for a treatment question, include the indication criteria, how to do it (procedure or order set), and any exclusions or cautions the manual lists.
+- Spell out the manual's labels instead of using them bare: write "cord pH ≤ 7.0 (Criteria A)", not "A1".
+- Copy numbers, doses, rates, order names and codes, phone numbers, and times exactly as written, with units.
 - If the excerpts do not answer the question, set not_in_manual to true, say "The manual does not address this," and suggest checking with the attending neonatologist or pharmacy. Do not fill the gap yourself.
 - If excerpts conflict, or the answer depends on site (RMC vs. MVMC), gestational age, or weight, give each version.
 - Say so when the manual marks something as pending, TBD, an open item, or temporarily suspended.
@@ -3562,7 +3622,16 @@ const SCHEMA = {
   additionalProperties: false,
 };
 
-function buildMessages(history, question, excerpts) {
+// Second try when the manual "doesn't address" a question: rewrite it in formal terms, search again
+const REPHRASE_SYSTEM = `You help search a neonatal ICU manual. Rewrite the clinician's question as a clear, formal neonatal-perinatal medicine question, translating unit slang, shorthand, and abbreviations into standard clinical terms (for example, "cool" means therapeutic hypothermia for hypoxic-ischemic encephalopathy; "bili" means bilirubin). Then list 5-12 formal search terms, synonyms, and standard abbreviations that a hospital guideline on this topic would use. Do not answer the question. Leave out any patient identifiers.`;
+const REPHRASE_SCHEMA = {
+  type: "object",
+  properties: { question: { type: "string" }, terms: { type: "array", items: { type: "string" } } },
+  required: ["question", "terms"],
+  additionalProperties: false,
+};
+
+function buildMessages(history, question, excerpts, interpreted = "") {
   const msgs = [];
   for (const m of history.slice(-6)) {
     if (m.role === "user") msgs.push({ role: "user", content: m.text });
@@ -3572,17 +3641,18 @@ function buildMessages(history, question, excerpts) {
   const ctx = excerpts.length
     ? excerpts.map((s) => `<excerpt id="${s.id}" title="${s.title.replace(/"/g, "'")}">\n${s.text}\n</excerpt>`).join("\n\n")
     : "(no matching excerpts found)";
-  msgs.push({ role: "user", content: `<manual_excerpts>\n${ctx}\n</manual_excerpts>\n\nQuestion: ${question}` });
+  const interp = interpreted ? `\n(In formal terms: ${interpreted})` : "";
+  msgs.push({ role: "user", content: `<manual_excerpts>\n${ctx}\n</manual_excerpts>\n\nQuestion: ${question}${interp}` });
   return msgs;
 }
 
 let sdk = null;
-async function askClaude(key, model, messages) {
+async function askClaude(key, model, { system, schema, messages, maxTokens = 8000 }) {
   sdk ??= await import(SDK_URL);
   const Anthropic = sdk.default;
   const client = new Anthropic({ apiKey: key, dangerouslyAllowBrowser: true });
-  const params = { model, max_tokens: 8000, system: SYSTEM, messages,
-    output_config: { effort: "low", format: { type: "json_schema", schema: SCHEMA } } };
+  const params = { model, max_tokens: maxTokens, system, messages,
+    output_config: { effort: "low", format: { type: "json_schema", schema } } };
   let resp;
   try {
     resp = FALLBACK_MODELS.includes(model)
@@ -3600,9 +3670,9 @@ async function askClaude(key, model, messages) {
 }
 // OpenAI and xAI share the chat-completions request shape
 const CHAT_URLS = { openai: "https://api.openai.com/v1/chat/completions", xai: "https://api.x.ai/v1/chat/completions" };
-async function askChatCompletions(provider, key, model, messages) {
-  const body = { model, messages: [{ role: "system", content: SYSTEM }, ...messages],
-    response_format: { type: "json_schema", json_schema: { name: "manual_answer", schema: SCHEMA, strict: true } } };
+async function askChatCompletions(provider, key, model, { system, schema, messages }) {
+  const body = { model, messages: [{ role: "system", content: system }, ...messages],
+    response_format: { type: "json_schema", json_schema: { name: "manual_response", schema, strict: true } } };
   if (provider === "openai") body.reasoning_effort = "low";
   const r = await fetch(CHAT_URLS[provider], {
     method: "POST",
@@ -3708,7 +3778,8 @@ function renderMd(md) {
     const kind = ul ? "ul" : ol ? "ol" : null;
     if (kind) {
       if (list !== kind) { if (list) out.push(`</${list}>`); out.push(`<${kind}>`); list = kind; }
-      out.push(`<li>${inline((ul || ol)[1])}</li>`);
+      const item = (ul || ol)[1], mark = { "✓": "nc-met", "✗": "nc-unmet", "?": "nc-unknown" }[item[0]];
+      out.push(mark ? `<li class="nc-crit ${mark}"><b>${item[0]}</b>${inline(item.slice(1))}</li>` : `<li>${inline(item)}</li>`);
       continue;
     }
     if (list) { out.push(`</${list}>`); list = null; }
@@ -3743,7 +3814,8 @@ root.innerHTML = `
 const $ = (sel) => root.querySelector(sel);
 const panel = $(".nc-panel"), body = $(".nc-body"), form = $(".nc-foot"), input = $("textarea"), sendBtn = $(".nc-send");
 let history = readJSON(S, K.history, []);
-let busy = false, view = "chat";
+let busy = false, view = "chat", typingText = "Looking it up…";
+function setTyping(text) { typingText = text; if (!panel.hidden && view === "chat") render(); }
 
 // text size (5 levels) and near-full-window mode, remembered per device
 const FONT_PX = [13, 14.5, 16, 18, 21], PANEL_W = [360, 390, 420, 470, 520];
@@ -3780,12 +3852,28 @@ function render() {
   body.innerHTML = notice + history.map((m, i) => {
     if (m.role === "user") return `<div class="nc-msg nc-user">${esc(m.text)}</div>`;
     if (m.error) return `<div class="nc-msg nc-bot nc-err">${esc(m.text)}</div>`;
-    const src = (m.sources || []).map((s, j) =>
-      `<button type="button" data-msg="${i}" data-src="${j}">${esc(s.title)}</button>`).join("");
-    return `<div class="nc-msg nc-bot">${renderMd(m.text)}${src ? `<div class="nc-src"><b>Source</b>${src}</div>` : ""}</div>`;
-  }).join("") + (busy ? `<div class="nc-msg nc-bot nc-typing">Looking it up…</div>` : "");
+    const src = renderSources(m.sources || [], i);
+    const again = m.rephrased ? `<p class="nc-note">Searched again as: <i>${esc(m.rephrased)}</i></p>` : "";
+    return `<div class="nc-msg nc-bot">${again}${renderMd(m.text)}${src}</div>`;
+  }).join("") + (busy ? `<div class="nc-msg nc-bot nc-typing">${esc(typingText)}</div>` : "");
   body.scrollTop = body.scrollHeight;
   sendBtn.disabled = busy;
+}
+// sources grouped by guideline: the guideline name once, then a short tag per subsection
+function renderSources(sources, msgIndex) {
+  if (!sources.length) return "";
+  const groups = new Map();
+  sources.forEach((s, j) => {
+    const parts = s.title.split(" › ");
+    const head = parts.length > 2 ? parts[1] : parts[0];
+    let leaf = parts.length > 1 ? parts[parts.length - 1] : "Open section";
+    if (leaf.length > 32 && leaf.includes(":")) leaf = leaf.split(":")[0];
+    leaf = leaf.replace(/:$/, "");
+    if (!groups.has(head)) groups.set(head, []);
+    groups.get(head).push(`<button type="button" class="nc-chip" data-msg="${msgIndex}" data-src="${j}" title="${esc(s.title)}">${esc(leaf)}</button>`);
+  });
+  const body = [...groups].map(([head, chips]) => `<div class="nc-sg"><span>${esc(head)}</span>${chips.join("")}</div>`).join("");
+  return `<div class="nc-src"><b>Sources</b>${body}</div>`;
 }
 function renderSettings() {
   form.hidden = true;
@@ -3863,14 +3951,31 @@ form.addEventListener("submit", async (ev) => {
   const prior = history.filter((m) => m.role === "user").slice(-1).map((m) => m.text).join(" ");
   const past = history.slice();
   history.push({ role: "user", text: question });
-  input.value = ""; busy = true; saveHistory(); render();
+  input.value = ""; busy = true; typingText = "Looking it up…"; saveHistory(); render();
   let reply;
   try {
     const sections = await loadSections();
-    const excerpts = retrieve(sections, question + " " + prior);
-    const messages = buildMessages(past, question, excerpts);
-    const out = provider === "anthropic" ? await askClaude(key, st.model, messages)
-      : await askChatCompletions(provider, key, st.model, messages);
+    const ask = (req) => provider === "anthropic" ? askClaude(key, st.model, req)
+      : askChatCompletions(provider, key, st.model, req);
+    const answer = (excerpts, interpreted) =>
+      ask({ system: SYSTEM, schema: SCHEMA, messages: buildMessages(past, question, excerpts, interpreted) });
+    let excerpts = retrieve(sections, expandQuery(question + " " + prior));
+    let out = excerpts.length ? await answer(excerpts) : null;
+    let rephrased = "";
+    if (!out || out.not_in_manual) {
+      // second try: have the model restate the question in formal terms, then search again
+      setTyping("Rephrasing and searching again…");
+      const rq = await ask({ system: REPHRASE_SYSTEM, schema: REPHRASE_SCHEMA, maxTokens: 2000,
+        messages: [{ role: "user", content: (prior ? `Earlier question: ${prior}\n` : "") + `Question: ${question}` }] });
+      const again = retrieve(sections, expandQuery([rq.question, ...(rq.terms || []), question].join(" ")));
+      if (again.some((s) => !excerpts.some((e) => e.id === s.id))) { // only re-ask if the search found something new
+        rephrased = (rq.question || "").trim();
+        excerpts = again;
+        out = await answer(excerpts, rephrased);
+      }
+    }
+    out ??= { answer: "The manual does not address this. Check with the attending neonatologist or pharmacy.",
+      not_in_manual: true, sources: [] };
     const byId = new Map(excerpts.map((s) => [s.id, s]));
     const seen = new Set();
     const sources = (out.sources || []).filter((s) => byId.has(s.id) && !seen.has(s.id) && seen.add(s.id)).map((s) => {
@@ -3878,7 +3983,8 @@ form.addEventListener("submit", async (ev) => {
       const ok = s.quote && squash(sec.text).includes(squash(s.quote));
       return { title: sec.title, url: sec.url, quote: ok ? s.quote : "" };
     });
-    reply = { role: "assistant", text: out.answer || "(no answer)", sources: out.not_in_manual ? sources.slice(0, 1) : sources };
+    reply = { role: "assistant", text: out.answer || "(no answer)", rephrased,
+      sources: out.not_in_manual ? sources.slice(0, 1) : sources };
   } catch (e) {
     reply = { role: "assistant", error: true, text: friendlyError(e, provider) };
   }
@@ -3897,7 +4003,7 @@ if (pending) {
   const go = () => setTimeout(() => highlightOnPage(pending.quote, pending.hash || location.hash), 300);
   document.readyState === "complete" ? go() : window.addEventListener("load", go);
 }
-window.NICUChat = { loadSections, retrieve, highlightOnPage, jumpTo, squash }; // for debugging in the console
+window.NICUChat = { loadSections, retrieve, expandQuery, highlightOnPage, jumpTo, squash }; // for debugging in the console
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
