@@ -3,6 +3,8 @@
 
 export const SDK_URL = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.133.0/+esm";
 export const LIVE_BASE = "https://fschou-pxt.github.io/RMC-NICU-Manual/";
+// In[Neo]Sight article search: answers questions the manual doesn't cover (this site is allowed to call it)
+const NEO_API = "https://inneosight.org/api/manual-source";
 export const ROOT = new URL("../", import.meta.url).href; // site root (this file lives in chatbot/)
 
 // one list of every provider/model offered (model IDs checked October 2026)
@@ -238,7 +240,8 @@ function buildMessages(history, question, excerpts, interpreted = "") {
   for (const m of history.slice(-6)) {
     if (m.role === "user") msgs.push({ role: "user", content: m.text });
     else if (m.role === "assistant" && !m.error)
-      msgs.push({ role: "assistant", content: (m.external ? "[Answer from outside the manual] " : "") + m.text });
+      msgs.push({ role: "assistant", content: (m.external ? "[Answer from outside the manual] " : "") + m.text +
+        (m.neo ? "\n[From In[Neo]Sight articles, not the manual] " + m.neo.text : "") });
   }
   while (msgs.length && msgs[0].role !== "user") msgs.shift();
   const ctx = excerpts.length
@@ -300,6 +303,35 @@ async function askChatCompletions(provider, key, model, { system, schema, messag
   if (choice?.finish_reason === "length") throw new Error("The answer was cut off. Try a narrower question.");
   return JSON.parse(choice?.message?.content || "{}");
 }
+// ---------- In[Neo]Sight articles: searched automatically when the manual has no answer ----------
+const NEO_SYSTEM = `You are assisting a NICU clinician at KP Riverside. The unit's NICU manual does not cover this question, so you are given excerpts from In[Neo]Sight articles (summaries of recent neonatal research, not KP policy).
+- Answer only from the article excerpts. At most 150 words: start with "**Bottom line:** " and one sentence, then up to 5 short bullets.
+- Describe what the evidence shows (study design, population, main result) rather than giving orders, say where evidence is limited or practice varies, and recommend confirming with the attending neonatologist before changing care.
+- Copy numbers, doses, and units exactly as written. Never invent results, references, or numbers. Do not repeat patient identifiers.
+- If the excerpts do not address the question, set not_in_manual to true and say "The In[Neo]Sight articles found do not address this."
+- Use markdown bullets and **bold** only. Do not include URLs or article ids in the answer; links are added automatically.
+
+sources: list each article you used, most important first, with its id and a quote copied character-for-character from its text (at most 200 characters). Use an empty list when nothing applies.`;
+
+async function searchNeo(terms) {
+  const ctrl = new AbortController(), timer = setTimeout(() => ctrl.abort(), 20000);
+  try {
+    const r = await fetch(NEO_API + "?q=" + encodeURIComponent(terms.join(" ")), { signal: ctrl.signal });
+    return r.ok ? (await r.json()).articles || [] : [];
+  } catch { return []; } // offline or blocked: the other options still show
+  finally { clearTimeout(timer); }
+}
+async function answerFromNeo(ask, question, terms) {
+  const articles = await searchNeo(terms);
+  if (!articles.length) return null;
+  const ctx = articles.map((a, i) => `<article id="${i + 1}" title="${a.title.replace(/"/g, "'")}" reviewed="${a.reviewed}">\n${a.text}\n</article>`).join("\n\n");
+  const out = await ask({ system: NEO_SYSTEM, schema: SCHEMA, maxTokens: 4000,
+    messages: [{ role: "user", content: `<inneosight_articles>\n${ctx}\n</inneosight_articles>\n\nQuestion: ${question}` }] });
+  if (!out || out.not_in_manual) return null;
+  const used = [...new Set((out.sources || []).map((s) => s.id))].map((id) => articles[id - 1]).filter(Boolean);
+  return { text: out.answer, articles: (used.length ? used : articles).map((a) => ({ title: a.title, url: a.url, reviewed: a.reviewed })) };
+}
+
 // ---------- answers from outside the manual (only when the user asks for them) ----------
 const EXTERNAL_SYSTEM = `You are assisting a NICU clinician at KP Riverside. The unit's NICU manual does not cover this question, so the clinician asked for an answer from outside the manual.
 - Answer concisely: at most 120 words. Start with "**Bottom line:** " and one sentence, then up to 4 short bullets.
@@ -365,13 +397,14 @@ export async function answerQuestion(question, past, onStatus = () => {}) {
       ask({ system: SYSTEM, schema: SCHEMA, messages: buildMessages(past, question, excerpts, interpreted) });
     let excerpts = retrieve(sections, expandQuery(question + " " + prior));
     let out = excerpts.length ? await answer(excerpts) : null;
-    let rephrased = "";
+    let rephrased = "", terms = [];
     if (!out || out.not_in_manual) {
       // second try: have the model restate the question in formal terms, then search again
       onStatus("Rephrasing and searching again…");
       const rq = await ask({ system: REPHRASE_SYSTEM, schema: REPHRASE_SCHEMA, maxTokens: 2000,
         messages: [{ role: "user", content: (prior ? `Earlier question: ${prior}\n` : "") + `Question: ${question}` }] });
-      const again = retrieve(sections, expandQuery([rq.question, ...(rq.terms || []), question].join(" ")));
+      terms = rq.terms || [];
+      const again = retrieve(sections, expandQuery([rq.question, ...terms, question].join(" ")));
       if (again.some((s) => !excerpts.some((e) => e.id === s.id))) { // only re-ask if the search found something new
         rephrased = (rq.question || "").trim();
         excerpts = again;
@@ -380,6 +413,12 @@ export async function answerQuestion(question, past, onStatus = () => {}) {
     }
     out ??= { answer: "The manual does not address this. Check with the attending neonatologist or pharmacy.",
       not_in_manual: true, sources: [] };
+    let neo = null;
+    if (out.not_in_manual) {
+      onStatus("Checking In[Neo]Sight articles…");
+      const words = [...new Set(tokenize(terms.join(" ") + " " + question))];
+      neo = await answerFromNeo(ask, question, words).catch(() => null);
+    }
     const byId = new Map(excerpts.map((s) => [s.id, s]));
     const seen = new Set();
     const sources = (out.sources || []).filter((s) => byId.has(s.id) && !seen.has(s.id) && seen.add(s.id)).map((s) => {
@@ -387,7 +426,7 @@ export async function answerQuestion(question, past, onStatus = () => {}) {
       const ok = s.quote && squash(sec.text).includes(squash(s.quote));
       return { title: sec.title, url: sec.url, quote: ok ? s.quote : "" };
     });
-    return { role: "assistant", text: out.answer || "(no answer)", rephrased,
+    return { role: "assistant", text: out.answer || "(no answer)", rephrased, neo,
       sources: out.not_in_manual ? sources.slice(0, 1) : sources, offerExternal: !!out.not_in_manual };
   } catch (e) {
     return { role: "assistant", error: true, text: friendlyError(e, provider) };
@@ -523,10 +562,13 @@ export function renderMessage(m, i, busy) {
   if (m.external) return `<div class="nc-msg nc-bot nc-ext"><div class="nc-ext-banner">⚠ Not from the KP manual — general AI knowledge</div>
     ${renderMd(m.text)}</div>`;
   const again = m.rephrased ? `<p class="nc-note">Searched again as: <i>${esc(m.rephrased)}</i></p>` : "";
+  const neo = m.neo ? `<div class="nc-neo"><div class="nc-ext-banner">Not from the KP manual — In[Neo]Sight research summaries</div>
+    ${renderMd(m.neo.text)}<div class="nc-src"><b>Articles</b>${m.neo.articles.map((a) =>
+      `<a class="nc-art" href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}${a.reviewed ? ` <small>(${esc(a.reviewed.slice(0, 7))})</small>` : ""}</a>`).join("")}</div></div>` : "";
   const offer = m.offerExternal && !busy ? `<div class="nc-offer">
-    <p>Want an answer from the AI's general knowledge? It will <b>not</b> come from the KP manual and uses more of your API credit.</p>
+    <p>${m.neo ? "Still need more?" : "Want an answer from the AI's general knowledge?"} It will <b>not</b> come from the KP manual or In[Neo]Sight and uses more of your API credit.</p>
     <button type="button" class="nc-btn nc-ghost" data-ext="ai" data-msg="${i}">Ask AI (general knowledge)</button></div>` : "";
-  return `<div class="nc-msg nc-bot">${again}${renderMd(m.text)}${renderSources(m.sources || [], i)}${offer}</div>`;
+  return `<div class="nc-msg nc-bot">${again}${renderMd(m.text)}${renderSources(m.sources || [], i)}${neo}${offer}</div>`;
 }
 
 // ---------- settings form (model + key), rendered into any container ----------

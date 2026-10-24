@@ -65,10 +65,15 @@ main { overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .send { width: 38px; height: 38px; border-radius: 50%; border: 0; background: #003b71; color: #fff; cursor: pointer;
   display: inline-flex; align-items: center; justify-content: center; font-size: 17px; flex: 0 0 auto; }
 .send:disabled { opacity: .45; cursor: default; }
+.mic { width: 38px; height: 38px; border-radius: 50%; border: 0; background: transparent; color: var(--muted); cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto; }
+.mic.on { color: #fff; background: #d6342c; }
 .tabs { display: flex; background: var(--surface); border-top: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom); }
 .tabs a { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 0 9px; font-size: 11px; color: var(--muted); }
 .tabs a i { font-size: 21px; line-height: 1; }
 .tabs a.on { color: var(--blue); font-weight: 600; }
+.tabs a { position: relative; }
+.tabs a.has-news::after { content: ""; position: absolute; top: 6px; left: calc(50% + 8px); width: 8px; height: 8px; border-radius: 50%; background: #d6342c; }
 @media (min-width: 900px) {
   .app { grid-template-columns: 96px 1fr; grid-template-rows: auto 1fr auto; }
   .bar { grid-column: 1 / -1; }
@@ -104,6 +109,12 @@ main { overflow-y: auto; -webkit-overflow-scrolling: touch; }
   background: transparent; color: var(--blue); cursor: pointer; font-size: inherit; }
 .nc-chip:hover, .nc-chip.on { background: var(--blue); color: var(--surface); }
 .nc-note { font-size: .82em; color: var(--muted); margin: 0 0 10px; }
+.msg-acts { display: flex; gap: 6px; flex-wrap: wrap; margin: -4px 0 14px; }
+.msg-acts button { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--border); background: var(--surface);
+  color: var(--muted); border-radius: 999px; padding: 4px 11px; font-size: .82em; cursor: pointer; }
+.msg-acts button:hover { color: var(--blue); border-color: var(--blue); }
+.news-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #d6342c; margin-left: 6px; vertical-align: middle; }
+.entry .item { margin: 4px 0 0; font-size: .92em; } .entry .item a { font-weight: 500; }
 .nc-typing { color: var(--muted); font-style: italic; }
 .nc-typing::after { content: ""; display: inline-block; width: 1em; animation: dots 1.2s steps(4) infinite; overflow: hidden; vertical-align: bottom; }
 @keyframes dots { 0% { width: 0 } 100% { width: 1em } }
@@ -118,6 +129,13 @@ main { overflow-y: auto; -webkit-overflow-scrolling: touch; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .nc-ext { background: #2a2416; border-color: #6b5420; }
   :root:not([data-theme="light"]) .nc-ext-banner { background: #3a3018; color: #f3d48a; }
   :root:not([data-theme="light"]) .nc-err { background: #3a1d1d; border-color: #6b2c2c; color: #f5b5b0; } }
+.nc-neo { margin-top: 10px; border: 1px solid #f0c36d; background: #fffaf0; border-radius: 12px; padding: 10px 12px; }
+.nc-neo .nc-ext-banner { margin: -10px -12px 8px; border-radius: 12px 12px 0 0; }
+.nc-neo .nc-src { border-top-color: #f0c36d; }
+.nc-art { display: block; margin: 6px 0 0; color: var(--blue); font-weight: 500; line-height: 1.35; }
+.nc-art small { color: var(--muted); font-weight: 400; }
+:root[data-theme="dark"] .nc-neo { background: #2a2416; border-color: #6b5420; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .nc-neo { background: #2a2416; border-color: #6b5420; } }
 .nc-btn { border: 1px solid #003b71; background: #003b71; color: #fff; border-radius: 10px; padding: 8px 14px; cursor: pointer; }
 .nc-btn.nc-ghost { background: transparent; color: var(--blue); border-color: var(--blue); }
 .nc-set { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px 16px; box-shadow: var(--shadow); }
@@ -235,6 +253,7 @@ mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radiu
   <form class="composer" id="composer">
     <div class="box">
       <textarea id="input" rows="1" placeholder="Ask about any unit protocol…" aria-label="Your question" maxlength="1500"></textarea>
+      <button class="mic" type="button" id="mic" data-act="mic" hidden aria-label="Dictate your question" title="Dictate (never say patient identifiers)"><i class="bi bi-mic"></i></button>
       <button class="send" type="submit" aria-label="Ask"><i class="bi bi-arrow-up"></i></button>
     </div>
   </form>
@@ -339,7 +358,7 @@ function renderThread() {
       <p class="nc-note" style="text-align:center;margin-top:18px">Using <b>${esc(shortLabel(currentModel()))}</b>. Do not enter patient identifiers.</p>`;
     return;
   }
-  thread.innerHTML = history.map((m, i) => renderMessage(m, i, busy)).join("") +
+  thread.innerHTML = history.map((m, i) => renderMessage(m, i, busy) + (m.role === "assistant" && !m.error && !busy ? msgActions(m, i) : "")).join("") +
     (busy ? `<div class="nc-msg nc-bot nc-typing">${esc(typing)}</div>` : "");
   const main = $("main");
   main.scrollTop = main.scrollHeight;
@@ -366,13 +385,55 @@ input.addEventListener("keydown", (ev) => {
 });
 input.addEventListener("input", () => { input.style.height = ""; input.style.height = Math.min(140, input.scrollHeight) + "px"; });
 
+// Copy and share an answer as plain text, with where it came from; report a gap when the manual had no answer
+const GAP_EMAILS = []; // Drs. James Washington and Michael Chang: addresses to be added
+function msgActions(m, i) {
+  return `<div class="msg-acts">
+    <button type="button" data-act="copy-msg" data-msg="${i}"><i class="bi bi-clipboard"></i> Copy</button>
+    ${navigator.share ? `<button type="button" data-act="share-msg" data-msg="${i}"><i class="bi bi-share"></i> Share</button>` : ""}
+    ${m.offerExternal && GAP_EMAILS.length ? `<button type="button" data-act="gap" data-msg="${i}"><i class="bi bi-flag"></i> Report a gap</button>` : ""}</div>`;
+}
+const questionFor = (i) => history.slice(0, i).reverse().find((m) => m.role === "user")?.text || "";
+function plainAnswer(i) {
+  const m = history[i], strip = (t) => t.replace(/\*\*(.+?)\*\*/g, "$1");
+  let t = `Q: ${questionFor(i)}\n\n` + (m.external ? "[Not from the KP manual: general AI knowledge]\n" : "") + strip(m.text);
+  if (m.sources?.length) t += "\n\nSource (KP NICU Manual): " + [...new Set(m.sources.map((s) => s.title.split(" › ").slice(1, 3).join(" › ") || s.title))].join("; ");
+  if (m.neo) t += "\n\nFrom In[Neo]Sight (not the KP manual):\n" + strip(m.neo.text) + "\n" + m.neo.articles.map((a) => `${a.title}: ${a.url}`).join("\n");
+  return t;
+}
+function reportGap(i) {
+  const body = `This question had no answer in the NICU Manual:\n\n${questionFor(i)}\n\nWhat should the manual say (optional):\n\n\n` +
+    `Sent from the NICU Manual app on ${new Date().toLocaleDateString()}. Please don't include patient identifiers.`;
+  location.href = `mailto:${GAP_EMAILS.join(",")}?subject=${encodeURIComponent("NICU Manual gap: " + questionFor(i).slice(0, 80))}&body=${encodeURIComponent(body)}`;
+}
+function flash(btn, html) { const was = btn.innerHTML; btn.innerHTML = html; setTimeout(() => { btn.innerHTML = was; }, 1800); }
+
+// ---------- voice input: the browser's own speech service (Apple or Google), so never say patient identifiers ----------
+const Speech = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null;
+if (Speech) $("#mic").hidden = false;
+function toggleMic() {
+  if (rec) return rec.stop();
+  rec = new Speech();
+  Object.assign(rec, { lang: "en-US", interimResults: true, continuous: false });
+  const before = input.value.trim() ? input.value.trim() + " " : "";
+  rec.onresult = (e) => {
+    input.value = before + [...e.results].map((r) => r[0].transcript).join("");
+    input.dispatchEvent(new Event("input"));
+  };
+  rec.onend = () => { rec = null; $("#mic").classList.remove("on"); input.focus(); };
+  $("#mic").classList.add("on");
+  rec.start();
+}
+
 // ---------- settings ----------
 function renderSettingsView() {
   const v = $("#v-settings");
   const extra = `<label>Text size</label><div class="seg" id="font">${FONT_PX.map((px, i) =>
       `<button type="button" data-font="${i}" class="${i === ui.font ? "on" : ""}" style="font-size:${px - 2}px">A</button>`).join("")}</div>
     <label>Appearance</label><div class="seg" id="theme">${[["auto", "Auto"], ["light", "Light"], ["dark", "Dark"]].map(([k, l]) =>
-      `<button type="button" data-theme="${k}" class="${k === ui.theme ? "on" : ""}">${l}</button>`).join("")}</div>`;
+      `<button type="button" data-theme="${k}" class="${k === ui.theme ? "on" : ""}">${l}</button>`).join("")}</div>
+    <label>Share the app</label><p class="nc-note" style="margin:0"><a href="poster.html" target="_blank" rel="noopener"><i class="bi bi-qr-code"></i> Printable install poster with QR code</a></p>`;
   renderSettings(v, { extraHTML: extra, onSaved: () => { location.hash = "#ask"; show("ask"); }, onBack: () => show("ask") });
   v.querySelector("#font").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return;
     ui.font = +b.dataset.font; saveUi(); renderSettingsView(); });
@@ -467,6 +528,36 @@ async function openQuick(i) {
   showSheet();
 }
 
+// ---------- What's new: the home page's "NEW UPDATE" entries; a dot on the Manual tab until they're seen ----------
+const SEEN_UPDATE = "nicuChat.seenUpdate";
+function parseUpdates(sections) {
+  const home = sections.find((s) => /^NEW UPDATE - /m.test(s.text));
+  const entries = [];
+  for (const line of (home?.text || "").split("\n")) {
+    const d = line.match(/^NEW UPDATE - (.+)$/);
+    if (d) { entries.push({ date: d[1].trim(), items: [] }); continue; }
+    const e = entries[entries.length - 1];
+    if (!e) continue;
+    const top = line.match(/^- (.+)$/), sub = line.match(/^\s+- .*?\[([^\]]+)\]\((https?:[^)\s]+)\)/);
+    if (top) e.items.push({ title: top[1].replace(/\[([^\]]+)\]\([^)]*\)/g, "$1"), links: [] });
+    else if (sub && e.items.length) e.items[e.items.length - 1].links.push({ text: sub[1], url: sub[2] });
+  }
+  return entries;
+}
+let updates = [];
+async function checkUpdates() {
+  updates = parseUpdates((await loadKnowledge()).sections);
+  const latest = updates[0]?.date;
+  $('.tabs a[data-tab="manual"]').classList.toggle("has-news", !!latest && store.get(L, SEEN_UPDATE) !== latest);
+}
+function newsHTML() {
+  if (!updates.length) return "";
+  const seen = store.get(L, SEEN_UPDATE), unseen = updates.findIndex((u) => u.date === seen);
+  return `<p class="h2">What's new</p><div class="list">${updates.slice(0, 3).map((u, k) =>
+    `<div class="entry"><b>${esc(u.date)}${unseen === -1 || k < unseen ? '<span class="news-dot" title="New since your last visit"></span>' : ""}</b>${u.items.map((it) =>
+      `<div class="item">${esc(it.title)}${it.links.length ? ": " + it.links.map((l) => `<a href="${esc(localize(l.url))}" data-newslink="${esc(l.url)}">${esc(l.text)}</a>`).join(", ") : ""}</div>`).join("")}</div>`).join("")}</div>`;
+}
+
 // ---------- Manual: quick cards, saved, recent, chapters; or search results that open in the sheet ----------
 let manualHits = [], manualItems = [];
 const itemRow = (it, i) => {
@@ -479,7 +570,10 @@ async function renderManual() {
   if (!q) {
     const saved = savedList(), recent = readJSON(L, RECENT, []);
     manualItems = [...saved, ...recent];
-    box.innerHTML = `<p class="h2">Quick cards</p><div class="quick">${QUICK.map(([icon, name], i) =>
+    if (!updates.length) updates = parseUpdates(sections);
+    const news = newsHTML();
+    if (updates[0]) { store.set(L, SEEN_UPDATE, updates[0].date); $('.tabs a[data-tab="manual"]').classList.remove("has-news"); }
+    box.innerHTML = news + `<p class="h2">Quick cards</p><div class="quick">${QUICK.map(([icon, name], i) =>
         `<button type="button" data-quick="${i}"><i class="bi bi-${icon}"></i><b>${esc(name)}</b></button>`).join("")}</div>` +
       (saved.length ? `<p class="h2">Saved</p><div class="list">${saved.map((it, i) => itemRow(it, i)).join("")}</div>` : "") +
       (recent.length ? `<p class="h2">Recently viewed</p><div class="list">${recent.map((it, i) => itemRow(it, saved.length + i)).join("")}</div>` : "") +
@@ -725,6 +819,11 @@ document.addEventListener("click", async (ev) => {
   }
   if (act === "open-manual") return openInManual(sheetCtx.list[sheetCtx.index]);
   if (act === "save-src") { toggleSaved(sheetCtx.list[sheetCtx.index]); syncStar(); if (view === "manual") renderManual(); return; }
+  if (act === "mic") return toggleMic();
+  if (act === "copy-msg") { await writeClipboard(plainAnswer(+t.dataset.msg)); return flash(t, '<i class="bi bi-check2"></i> Copied'); }
+  if (act === "share-msg") { try { await navigator.share({ title: "NICU Manual", text: plainAnswer(+t.dataset.msg) }); } catch {} return; }
+  if (act === "gap") return reportGap(+t.dataset.msg);
+  if (t.dataset.newslink) { ev.preventDefault(); return openSheet([{ title: "", url: t.dataset.newslink, quote: "" }], 0); }
   if (act === "open-feed") return openFeeding();
   if (act === "close-feed") return closeFeeding();
   if (act === "copy-feed") {
@@ -756,6 +855,7 @@ $("#backdrop").addEventListener("click", closeSheet);
 
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
 route();
+checkUpdates();
 </script>
 </body>
 </html>

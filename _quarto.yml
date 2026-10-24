@@ -4,6 +4,7 @@ project:
     - chatbot/nicu-manual-knowledge.md
     - manifest.webmanifest
     - app.html
+    - poster.html
     - chatbot/engine.js
     - tools/feeding.js
     - pwa/*.png

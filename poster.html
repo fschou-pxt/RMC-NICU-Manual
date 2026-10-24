@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NICU Manual Poster</title>
+<meta name="description" content="Printable poster: scan to install the KP Riverside NICU Manual app on your phone.">
+<link rel="icon" type="image/png" sizes="64x64" href="pwa/favicon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site_libs/bootstrap/bootstrap-icons.css">
+<style>
+/* A one-page letter-size poster for the unit; prints in color or grayscale */
+:root { --navy: #003b71; --blue: #0068a8; --text: #1d2733; --muted: #5b6b80; --border: #dbe3ec; --tint: #eef4fa; color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #e9eef4; color: var(--text); font: 400 16px/1.45 "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.toolbar { max-width: 8.5in; margin: 16px auto 0; padding: 0 16px; display: flex; gap: 8px; justify-content: flex-end; }
+.toolbar button { border: 1px solid var(--navy); background: var(--navy); color: #fff; border-radius: 10px; padding: 8px 14px; font: inherit; cursor: pointer; }
+.page { width: 8.5in; max-width: calc(100% - 32px); min-height: 11in; margin: 12px auto 24px; background: #fff; box-shadow: 0 6px 30px rgba(16, 32, 56, .12);
+  display: flex; flex-direction: column; }
+header { background: var(--navy); color: #fff; padding: .55in .6in .45in; }
+header .kicker { font-size: 14px; letter-spacing: .12em; text-transform: uppercase; opacity: .85; font-weight: 600; }
+header h1 { margin: 8px 0 6px; font-size: 46px; line-height: 1.05; letter-spacing: -.02em; font-weight: 800; }
+header p { margin: 0; font-size: 19px; opacity: .92; }
+.main { flex: 1; padding: .45in .6in .3in; display: grid; grid-template-columns: 3.3in 1fr; gap: .45in; align-items: start; }
+.qr { border: 2px solid var(--navy); border-radius: 18px; padding: .2in; text-align: center; }
+.qr #code svg { width: 100%; height: auto; display: block; }
+.qr .scan { margin: 12px 0 2px; font-weight: 700; font-size: 18px; color: var(--navy); }
+.qr .url { font-size: 12px; color: var(--muted); overflow-wrap: anywhere; }
+h2 { margin: 0 0 10px; font-size: 20px; color: var(--navy); letter-spacing: -.01em; }
+ol { margin: 0 0 22px; padding-left: 22px; } li { margin: 4px 0; }
+.os { display: flex; align-items: center; gap: 8px; }
+.os i { font-size: 22px; }
+.features { margin: .1in .6in 0; padding: .25in .3in; background: var(--tint); border-radius: 16px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 20px; }
+.features div { display: flex; gap: 10px; align-items: flex-start; font-size: 14.5px; }
+.features i { color: var(--blue); font-size: 20px; line-height: 1.1; }
+.features b { display: block; }
+footer { padding: .3in .6in .45in; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; }
+footer b { color: #b3261e; }
+@media (max-width: 760px) {
+  .page { min-height: 0; } header { padding: 28px 20px 22px; } header h1 { font-size: 32px; }
+  .main { grid-template-columns: 1fr; padding: 24px 20px; } .features { margin: 0 20px; grid-template-columns: 1fr; } footer { padding: 20px; flex-direction: column; }
+}
+@page { size: letter; margin: 0; }
+@media print {
+  html, body { background: #fff; } .toolbar { display: none; }
+  .page { width: 8.5in; height: 11in; min-height: 0; max-width: none; margin: 0; box-shadow: none; overflow: hidden; }
+  header, .features { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<div class="toolbar"><button type="button" onclick="print()"><i class="bi bi-printer"></i> Print poster</button></div>
+<div class="page">
+  <header>
+    <div class="kicker">KP Riverside · Neonatal ICU</div>
+    <h1>The NICU Manual,<br>on your phone</h1>
+    <p>Protocols, dot phrases, phone numbers and calculators. Works offline.</p>
+  </header>
+  <div class="main">
+    <div class="qr">
+      <div id="code" role="img" aria-label="QR code for the NICU Manual app"></div>
+      <div class="scan">Scan with your camera</div>
+      <div class="url" id="url"></div>
+    </div>
+    <div>
+      <h2 class="os"><i class="bi bi-apple"></i> iPhone</h2>
+      <ol>
+        <li>Open the link in <b>Safari</b>.</li>
+        <li>Tap <b>Share</b> <i class="bi bi-box-arrow-up"></i>.</li>
+        <li>Tap <b>Add to Home Screen</b>, then <b>Add</b>.</li>
+      </ol>
+      <h2 class="os"><i class="bi bi-android2"></i> Android</h2>
+      <ol>
+        <li>Open the link in <b>Chrome</b>.</li>
+        <li>Tap the <b>⋮</b> menu.</li>
+        <li>Tap <b>Install app</b> (or <b>Add to Home screen</b>).</li>
+      </ol>
+      <h2 class="os"><i class="bi bi-laptop"></i> Computer</h2>
+      <ol><li>Open the link in Chrome or Edge and click <b>Install</b> in the address bar.</li></ol>
+    </div>
+  </div>
+  <div class="features">
+    <div><i class="bi bi-chat-dots"></i><span><b>Ask</b>Answers from the manual, with the source one tap away.</span></div>
+    <div><i class="bi bi-clipboard"></i><span><b>Dot phrases</b>One tap to copy into Epic.</span></div>
+    <div><i class="bi bi-telephone"></i><span><b>Phones</b>Searchable, tap to call.</span></div>
+    <div><i class="bi bi-cup-hot"></i><span><b>Feeding plan</b>Daily advancement to paste into Epic.</span></div>
+    <div><i class="bi bi-calculator"></i><span><b>Calculators</b>GIR, fluids, ETT, phototherapy and more.</span></div>
+    <div><i class="bi bi-star"></i><span><b>Saved</b>Bookmark the sections you use most.</span></div>
+  </div>
+  <footer>
+    <span>Ask needs your own AI key (set it up once in the app's settings).</span>
+    <span><b>Never enter patient identifiers.</b></span>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+// The app's address on this site (the live manual, or wherever this page is served from)
+const APP_URL = new URL("app.html", location.href).href.replace(/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//, "https://fschou-pxt.github.io/RMC-NICU-Manual/");
+document.getElementById("url").textContent = APP_URL.replace(/^https:\/\//, "");
+try {
+  const qr = qrcode(0, "M");
+  qr.addData(APP_URL);
+  qr.make();
+  document.getElementById("code").innerHTML = qr.createSvgTag({ cellSize: 8, margin: 0, scalable: true });
+} catch {
+  document.getElementById("code").textContent = "QR code unavailable offline. Use the link below.";
+}
+</script>
+</body>
+</html>
