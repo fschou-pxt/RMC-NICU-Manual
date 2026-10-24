@@ -79,6 +79,7 @@ export function buildPlan({ protocol, bw, ga, fort, milk, cream, day1 }) {
     kcal.forEach((k, i) => { if (k === 26) { kcal[i] = first ? 22 : 24; first = false; } });
   }
   const formula = milk === "formula" && fort === "hmf" && formulaAllowed(bw, ga);
+  const firstFortified = p.tf.findIndex((tf) => tf >= 60);
   return p.tf.map((tf, i) => {
     let vol = bw / 1000 * tf / 8;
     vol = vol < 0.8 ? 0.5 : trueRound(vol, 0);
@@ -87,11 +88,13 @@ export function buildPlan({ protocol, bw, ga, fort, milk, cream, day1 }) {
     const creamText = kcal[i] < 26 ? "" : `${c}mL cream,`;
     const volText = (vol < 1.1 && vol > 0 ? vol.toFixed(1) : String(vol)) + "mL";
     let kcalText = `${kcal[i]}kcal/oz`;
+    // Formula and breast milk (mother's or donor) at the same density: >2500 g Similac or BM 20 throughout;
+    // otherwise 20 until 60 mL/kg/day, then 22 (1800-2500 g stay at 22; 1500-1799 g go to 24 after one day)
     if (formula) {
-      if (bw > 2500) kcalText = "Similac or EBM 20 kcal/oz milk";
+      if (bw > 2500) kcalText = "Similac or BM 20 kcal/oz milk";
       else {
-        const f = bw >= 1800 || i === 0 ? 22 : 24; // 1500-1799 g: formula 22 on day 1, then 24
-        kcalText = `Formula ${f} kcal/oz or EBM ${tf >= 60 ? f : 20} kcal/oz milk`;
+        const f = tf < 60 ? 20 : bw >= 1800 || i === firstFortified ? 22 : 24;
+        kcalText = `Formula ${f} kcal/oz or BM ${f} kcal/oz milk`;
       }
     }
     // e.g. "0.5mL cream, 9mL (60ml/kg/d) 26kcal/oz": the rate follows the volume
