@@ -461,7 +461,6 @@ ul.task-list li input[type="checkbox"] {
 .nc-ext { border: 1px solid #f0c36d; background: #fffaf0; }
 .nc-ext-banner { margin: -8px -11px 8px; padding: 5px 11px; background: #fdf0d2; color: #7a4b00;
   font-weight: 600; font-size: .85em; border-radius: 10px 10px 0 0; }
-.nc-weblinks a { display: block; color: var(--nc-blue-dark); padding: 2px 0; word-break: break-word; }
 .nc-typing { color: var(--nc-muted); font-style: italic; }
 .nc-foot { display: flex; gap: 6px; padding: 8px; border-top: 1px solid var(--nc-border); background: #fff; }
 .nc-foot[hidden] { display: none; }
@@ -786,49 +785,23 @@ async function askChatCompletions(provider, key, model, { system, schema, messag
 const EXTERNAL_SYSTEM = `You are assisting a NICU clinician at KP Riverside. The unit's NICU manual does not cover this question, so the clinician asked for an answer from outside the manual.
 - Answer concisely: at most 120 words. Start with "**Bottom line:** " and one sentence, then up to 4 short bullets.
 - Say where evidence is limited or practice varies, and recommend confirming with the attending neonatologist, pharmacy, or KP policy before acting.
-- Never invent references or numbers. Do not repeat patient identifiers.
-- Use markdown bullets and **bold** only; do not put URLs or citation markers in the text.`;
-const WEB_EXTRA = `\n- Base the answer on the web search results, preferring professional guidelines (AAP, NRP, CDC, ACOG) and peer-reviewed sources.`;
-const WEB_TOOL_2026 = ["claude-opus-5-5", "claude-sonnet-5-5"]; // others use the basic web search tool
+- Answer from general neonatal-perinatal knowledge. Never invent references, guideline names, or numbers. Do not repeat patient identifiers.
+- Use markdown bullets and **bold** only; no URLs.`;
 
-async function askExternal(provider, key, model, messages, web) {
-  const system = EXTERNAL_SYSTEM + (web ? WEB_EXTRA : "");
+async function askExternal(provider, key, model, messages) {
   if (provider === "anthropic") {
     sdk ??= await import(SDK_URL);
     const client = new sdk.default({ apiKey: key, dangerouslyAllowBrowser: true });
-    const params = { model, max_tokens: 4000, system, messages, output_config: { effort: "low" } };
-    if (web) params.tools = [{ type: WEB_TOOL_2026.includes(model) ? "web_search_20260209" : "web_search_20250305",
-      name: "web_search", max_uses: 3 }];
-    let resp, convo = messages;
-    for (let i = 0; i < 3; i++) { // web search may pause a long turn; continue it
-      resp = await client.messages.create({ ...params, messages: convo });
-      if (resp.stop_reason !== "pause_turn") break;
-      convo = [...messages, { role: "assistant", content: resp.content }];
-    }
+    const resp = await client.messages.create({ model, max_tokens: 4000, system: EXTERNAL_SYSTEM, messages,
+      output_config: { effort: "low" } });
     if (resp.stop_reason === "refusal") throw new Error("The model declined to answer this question.");
-    const texts = resp.content.filter((b) => b.type === "text");
-    const links = texts.flatMap((b) => (b.citations || []).filter((c) => c.url).map((c) => ({ title: c.title || c.url, url: c.url })));
-    return { text: texts.map((b) => b.text).join(""), links };
+    return resp.content.filter((b) => b.type === "text").map((b) => b.text).join("");
   }
-  if (!web) {
-    const r = await fetch(CHAT_URLS[provider], { method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: "Bearer " + key },
-      body: JSON.stringify({ model, messages: [{ role: "system", content: system }, ...messages] }) });
-    if (!r.ok) throw await httpError(provider, r);
-    return { text: (await r.json()).choices?.[0]?.message?.content || "", links: [] };
-  }
-  // OpenAI and xAI both offer web search through the Responses API
-  const url = provider === "openai" ? "https://api.openai.com/v1/responses" : "https://api.x.ai/v1/responses";
-  const r = await fetch(url, { method: "POST",
+  const r = await fetch(CHAT_URLS[provider], { method: "POST",
     headers: { "Content-Type": "application/json", Authorization: "Bearer " + key },
-    body: JSON.stringify({ model, instructions: system, input: messages, tools: [{ type: "web_search" }] }) });
+    body: JSON.stringify({ model, messages: [{ role: "system", content: EXTERNAL_SYSTEM }, ...messages] }) });
   if (!r.ok) throw await httpError(provider, r);
-  const data = await r.json();
-  const parts = (data.output || []).filter((o) => o.type === "message").flatMap((o) => o.content || [])
-    .filter((c) => c.type === "output_text");
-  const links = parts.flatMap((c) => (c.annotations || []).filter((a) => a.url).map((a) => ({ title: a.title || a.url, url: a.url })));
-  for (const u of data.citations || []) if (typeof u === "string") links.push({ title: u, url: u }); // xAI
-  return { text: parts.map((c) => c.text).join("") || data.output_text || "", links };
+  return (await r.json()).choices?.[0]?.message?.content || "";
 }
 async function httpError(provider, r) {
   const detail = await r.text();
@@ -1009,23 +982,18 @@ function render() {
     const src = renderSources(m.sources || [], i);
     const again = m.rephrased ? `<p class="nc-note">Searched again as: <i>${esc(m.rephrased)}</i></p>` : "";
     const offer = m.offerExternal && !busy ? `<div class="nc-offer">
-      <p>Want an answer from outside the manual? It will <b>not</b> come from the KP manual and uses more of your API credit (a web search uses the most).</p>
-      <button type="button" class="nc-btn nc-ghost" data-ext="ai" data-msg="${i}">Ask AI (general knowledge)</button>
-      <button type="button" class="nc-btn nc-ghost" data-ext="web" data-msg="${i}">Search the web</button></div>` : "";
+      <p>Want an answer from the AI's general knowledge? It will <b>not</b> come from the KP manual and uses more of your API credit.</p>
+      <button type="button" class="nc-btn nc-ghost" data-ext="ai" data-msg="${i}">Ask AI (general knowledge)</button></div>` : "";
     return `<div class="nc-msg nc-bot">${again}${renderMd(m.text)}${src}${offer}</div>`;
   }).join("") + (busy ? `<div class="nc-msg nc-bot nc-typing">${esc(typingText)}</div>` : "");
   body.scrollTop = body.scrollHeight;
   sendBtn.disabled = busy;
 }
-// outside-the-manual answers carry a banner and open their web links in a new tab
+// outside-the-manual answers carry a banner so they can't be mistaken for the manual
 function renderExternal(m) {
-  const label = m.external === "web" ? "web search" : "general AI knowledge";
-  const seen = new Set();
-  const links = (m.links || []).filter((l) => /^https?:\/\//.test(l.url) && !seen.has(l.url) && seen.add(l.url)).slice(0, 6)
-    .map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.title.slice(0, 90))}</a>`).join("");
-  const text = m.text.replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, "$1"); // links are listed below instead
-  return `<div class="nc-msg nc-bot nc-ext"><div class="nc-ext-banner">⚠ Not from the KP manual — ${label}</div>
-    ${renderMd(text)}${links ? `<div class="nc-src"><b>Web sources</b><div class="nc-weblinks">${links}</div></div>` : ""}</div>`;
+  const text = m.text.replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, "$1");
+  return `<div class="nc-msg nc-bot nc-ext"><div class="nc-ext-banner">⚠ Not from the KP manual — general AI knowledge</div>
+    ${renderMd(text)}</div>`;
 }
 // sources grouped by guideline: the guideline name once, then a short tag per subsection
 function renderSources(sources, msgIndex) {
@@ -1103,20 +1071,20 @@ root.addEventListener("click", (ev) => {
     store.set(L, K.settings, JSON.stringify({ model: model.id, autoJump: $("#nc-jump").checked }));
     view = "chat"; render(); input.focus();
   } else if (t.dataset.ext) {
-    askOutside(+t.dataset.msg, t.dataset.ext);
+    askOutside(+t.dataset.msg);
   } else if (t.dataset.msg !== undefined) {
     const src = history[+t.dataset.msg]?.sources?.[+t.dataset.src];
     if (src) jumpTo(src);
   }
 });
 // the user chose to go outside the manual for the question answered at history[msgIndex]
-async function askOutside(msgIndex, kind) {
+async function askOutside(msgIndex) {
   if (busy) return;
   const st = settings(), provider = modelInfo(st.model).provider, key = getKey(provider);
   const q = history.slice(0, msgIndex).reverse().find((m) => m.role === "user")?.text;
   if (!key || !q) return;
   history[msgIndex].offerExternal = false;
-  busy = true; typingText = kind === "web" ? "Searching the web…" : "Asking the AI…"; saveHistory(); render();
+  busy = true; typingText = "Asking the AI…"; saveHistory(); render();
   let reply;
   try {
     const messages = [];
@@ -1126,8 +1094,8 @@ async function askOutside(msgIndex, kind) {
     }
     while (messages.length && messages[0].role !== "user") messages.shift();
     messages.push({ role: "user", content: q });
-    const out = await askExternal(provider, key, st.model, messages, kind === "web");
-    reply = { role: "assistant", external: kind, text: out.text || "(no answer)", links: out.links };
+    const text = await askExternal(provider, key, st.model, messages);
+    reply = { role: "assistant", external: "ai", text: text || "(no answer)" };
   } catch (e) {
     reply = { role: "assistant", error: true, text: friendlyError(e, provider) };
   }
