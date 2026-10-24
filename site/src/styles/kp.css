@@ -105,9 +105,10 @@
 .sl-markdown-content ul.criteria > li::before {
   content: ""; position: absolute; left: 1rem; top: 1.05rem; width: 0.8rem; height: 0.8rem; border-radius: 3px; border: 2px solid var(--sl-color-accent);
 }
-.sl-markdown-content ul.criteria > li + li { margin-top: 1.6rem; }
+.sl-markdown-content ul.criteria > li + li { margin-top: 2.4rem; }
 .sl-markdown-content ul.criteria > li + li::after {
-  position: absolute; left: 1rem; top: -1.35rem; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; color: var(--sl-color-accent);
+  /* the OR/AND pill sits centered in the 2.4rem gap, clear of both cards */
+  position: absolute; left: 1rem; top: -1.78rem; line-height: 1.4; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; color: var(--sl-color-accent);
   background: var(--sl-color-accent-low); padding: 0.1rem 0.45rem; border-radius: 999px;
 }
 .sl-markdown-content ul.criteria[data-logic="any"] > li + li::after { content: "OR"; }
@@ -178,7 +179,9 @@
   color: var(--sl-color-white); border: 1px solid var(--sl-color-gray-5); background: var(--kp-surface); }
 .home .btn.primary { background: var(--kp-navy); border-color: var(--kp-navy); color: #fff; }
 .home .btn:hover { border-color: var(--sl-color-accent); }
-.quick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.85rem; }
+/* ten cards: two rows of five on wide screens, two columns otherwise */
+.quick-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.85rem; }
+@media (min-width: 64rem) { .quick-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
 .quick-card { display: flex; flex-direction: column; gap: 0.3rem; padding: 1.1rem; border-radius: var(--kp-radius); text-decoration: none; border: 1px solid var(--sl-color-gray-5);
   background: var(--kp-surface); box-shadow: var(--kp-shadow); transition: border-color 0.15s, transform 0.15s; }
 .quick-card:hover { border-color: var(--sl-color-accent); transform: translateY(-1px); }

@@ -8,6 +8,8 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
 const href = (path) => (/^https?:/.test(path) ? path : base + path);
 
 const quick = [
+  ["phone", "Phone numbers", "RMC, regional NICUs, subspecialty consults", "phone-numbers"],
+  ["clipboard", "Dot phrases", "Note templates, ready to copy", "dotPhrases"],
   ["hospital", "Admission", "Central lines, UVC/UAC, re-admission", "admission"],
   ["lungs", "Respiratory", "LISA, support guide, HFJV, extubation", "respiratory"],
   ["droplet", "Nutrition and fluids", "Feeding, TPN, KVO rates, Prolacta", "nutrition-fluid"],
@@ -41,8 +43,6 @@ const { editor, authors = [], donate } = Astro.props;
     </button>
     <div class="home-actions">
       <a class="btn primary" href={href("app.html#ask")}><Icon name="chat" /><span>Ask<span class="wide"> the manual</span></span></a>
-      <a class="btn" href={href("phone-numbers")}><Icon name="phone" /><span>Phone<span class="wide"> numbers</span></span></a>
-      <a class="btn" href={href("dotPhrases")}><Icon name="clipboard" />Dot phrases</a>
     </div>
   </section>
 
