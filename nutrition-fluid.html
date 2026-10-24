@@ -72,6 +72,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<!-- Installable app (PWA): manifest, icons, and home-screen settings -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#003b71">
+<link rel="icon" type="image/png" sizes="64x64" href="pwa/favicon-64.png">
+<link rel="apple-touch-icon" href="pwa/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NICU Manual">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -2781,6 +2790,43 @@ if (pending) {
   document.readyState === "complete" ? go() : window.addEventListener("load", go);
 }
 window.NICUChat = { loadSections, retrieve, expandQuery, highlightOnPage, jumpTo, squash }; // for debugging in the console
+</script>
+<!-- Installable app (PWA): offline service worker and the "offline copy" banner -->
+<div id="nicu-offline" hidden=""></div>
+<style>
+#nicu-offline { position: fixed; top: 0; left: 0; right: 0; z-index: 1100; padding: 6px 12px; text-align: center;
+  background: #fdf0d2; color: #7a4b00; font-size: 14px; border-bottom: 1px solid #f0c36d; }
+#nicu-offline[hidden] { display: none; }
+@media print { #nicu-offline { display: none; } }
+</style>
+<script>
+(function () {
+  if (!("serviceWorker" in navigator)) return;
+  navigator.serviceWorker.register("sw.js").catch(function () {});
+  var banner = document.getElementById("nicu-offline");
+  // the service worker knows when the offline copy was published
+  function builtDate() {
+    return new Promise(function (resolve) {
+      var sw = navigator.serviceWorker.controller;
+      if (!sw) return resolve("");
+      var ch = new MessageChannel();
+      ch.port1.onmessage = function (e) { resolve(e.data && e.data.built || ""); };
+      sw.postMessage({ type: "built" }, [ch.port2]);
+      setTimeout(function () { resolve(""); }, 1500);
+    });
+  }
+  function update() {
+    if (navigator.onLine) { banner.hidden = true; return; }
+    builtDate().then(function (built) {
+      banner.textContent = "Offline copy" + (built ? " — last updated " + built : "") +
+        ". Check the live manual when you're back online. The chat needs internet.";
+      banner.hidden = false;
+    });
+  }
+  window.addEventListener("online", update);
+  window.addEventListener("offline", update);
+  update();
+})();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
