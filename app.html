@@ -393,7 +393,7 @@ input.addEventListener("keydown", (ev) => {
 input.addEventListener("input", () => { input.style.height = ""; input.style.height = Math.min(140, input.scrollHeight) + "px"; });
 
 // Copy and share an answer as plain text, with where it came from; "Let's discuss" (raised hand) when the manual had no answer
-const GAP_EMAILS = []; // Drs. James Washington and Michael Chang: addresses to be added
+const GAP_EMAILS = ["James.A.Washington@kp.org", "Michael.S.Chang@kp.org"]; // protocol leads
 function msgActions(m, i) {
   return `<div class="msg-acts">
     <button type="button" data-act="copy-msg" data-msg="${i}"><i class="bi bi-clipboard"></i> Copy</button>
