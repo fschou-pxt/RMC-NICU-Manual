@@ -4,8 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "build": "astro build && python3 scripts/prune_assets.py && python3 -E scripts/build_knowledge.py",
+    "preview": "astro preview",
+    "check": "python3 scripts/textcheck.py"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "7.3.4",

@@ -108,7 +108,8 @@ QUARTO = dict(
 )
 ASTRO = dict(
     roots=["div.sl-markdown-content", "header.chapter-hero"],
-    skip=["a.sl-anchor-link", "script", "style", "nav.jump", "p.eyebrow", "span.katex-html", "span.katex-mathml"],
+    skip=["a.sl-anchor-link", "script", "style", "nav.jump", "p.eyebrow", "span.katex-html", "span.katex-mathml",
+          "section.evidence"],  # evidence notes are new, AI-generated, and labeled as such
     math=["annotation"],
     xref=["a.xref"],
 )

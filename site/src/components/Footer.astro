@@ -1,0 +1,17 @@
+---
+// Starlight's footer, plus the parts every page shares with the old manual: the chat bubble
+// (chatbot/widget.html, built on chatbot/engine.js) and the offline service worker with its banner
+// (pwa/register.html). Both files are read at build time, so they stay the single source.
+import fs from "node:fs";
+import path from "node:path";
+import Default from "@astrojs/starlight/components/Footer.astro";
+
+// the build runs in site/; the shared files live in the project folder above it
+const read = (p) => fs.readFileSync(path.resolve(process.cwd(), "..", p), "utf8");
+const widget = read("chatbot/widget.html");
+const register = read("pwa/register.html");
+---
+
+<Default {...Astro.props}><slot /></Default>
+<Fragment set:html={widget} />
+<Fragment set:html={register} />

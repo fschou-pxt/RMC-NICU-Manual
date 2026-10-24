@@ -55,7 +55,7 @@
 .nc-phi { border: 1px solid #e8b4b0; border-radius: 10px; padding: 7px 10px; margin: 0 0 10px; font-size: .85em; }
 .nc-phi summary { cursor: pointer; } .nc-phi summary b { color: #b3261e; }
 .nc-phi ul { margin: 5px 0 6px; padding-left: 18px; } .nc-phi p { margin: 6px 0 0; }
-body.quarto-dark .nc-phi summary b { color: #f5a5a0; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-phi summary b { color: #f5a5a0; }
 .nc-typing { color: var(--nc-muted); font-style: italic; }
 .nc-foot { display: flex; gap: 6px; padding: 8px; border-top: 1px solid var(--nc-border); background: #fff; }
 .nc-foot[hidden] { display: none; }
@@ -79,14 +79,14 @@ mark.nicu-hl { background: #ffe066; color: inherit; padding: 0 1px; border-radiu
   .nc-launch { right: 14px; bottom: 14px; }
 }
 /* dark theme (Quarto's toggle adds body.quarto-dark) */
-body.quarto-dark #nicu-chat-root { --nc-blue: #2f6ea8; --nc-blue-dark: #7cc0f5; --nc-bg: #162131; --nc-soft: #0f1722;
+:is(body.quarto-dark, html[data-theme="dark"] body) #nicu-chat-root { --nc-blue: #2f6ea8; --nc-blue-dark: #7cc0f5; --nc-bg: #162131; --nc-soft: #0f1722;
   --nc-text: #dde5ee; --nc-muted: #9fb0c3; --nc-border: #263445; }
-body.quarto-dark .nc-bot, body.quarto-dark .nc-foot, body.quarto-dark .nc-chip, body.quarto-dark .nc-btn.nc-ghost { background: #162131; color: var(--nc-text); }
-body.quarto-dark .nc-foot textarea, body.quarto-dark .nc-set input, body.quarto-dark .nc-set select { background: #0f1722; color: var(--nc-text); }
-body.quarto-dark .nc-ext { background: #2a2416; border-color: #6b5420; }
-body.quarto-dark .nc-ext-banner { background: #3a3018; color: #f3d48a; }
-body.quarto-dark .nc-neo { background: #2a2416; border-color: #6b5420; }
-body.quarto-dark .nc-err { background: #3a1d1d; border-color: #6b2c2c; color: #f5b5b0; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-bot, :is(body.quarto-dark, html[data-theme="dark"] body) .nc-foot, :is(body.quarto-dark, html[data-theme="dark"] body) .nc-chip, :is(body.quarto-dark, html[data-theme="dark"] body) .nc-btn.nc-ghost { background: #162131; color: var(--nc-text); }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-foot textarea, :is(body.quarto-dark, html[data-theme="dark"] body) .nc-set input, :is(body.quarto-dark, html[data-theme="dark"] body) .nc-set select { background: #0f1722; color: var(--nc-text); }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-ext { background: #2a2416; border-color: #6b5420; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-ext-banner { background: #3a3018; color: #f3d48a; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-neo { background: #2a2416; border-color: #6b5420; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-err { background: #3a1d1d; border-color: #6b2c2c; color: #f5b5b0; }
 /* installed app: book pages get the app's bottom tab bar instead of the chat bubble */
 .nc-tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1040; display: flex; background: #fff;
   border-top: 1px solid #d9e1e7; padding-bottom: env(safe-area-inset-bottom); }
@@ -94,9 +94,9 @@ body.quarto-dark .nc-err { background: #3a1d1d; border-color: #6b2c2c; color: #f
   font-size: 11px; color: #6b7280; text-decoration: none; }
 .nc-tabbar a i { font-size: 20px; line-height: 1; }
 .nc-tabbar a.on { color: #003b71; font-weight: 600; }
-body.quarto-dark .nc-tabbar { background: #121c29; border-top-color: #263445; }
-body.quarto-dark .nc-tabbar a { color: #9fb0c3; }
-body.quarto-dark .nc-tabbar a.on { color: #7cc0f5; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-tabbar { background: #121c29; border-top-color: #263445; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-tabbar a { color: #9fb0c3; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-tabbar a.on { color: #7cc0f5; }
 body.nc-app-mode #nicu-chat-root .nc-launch { display: none; }
 body.nc-app-mode { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
 @media print { #nicu-chat-root, .nc-tabbar { display: none; } }
@@ -111,7 +111,8 @@ import { K, S, L, LIVE_BASE, store, readJSON, localize, settings, hasKey, loadHi
 // ---------- highlighting on the page ----------
 function highlightOnPage(quote, hash) {
   clearHighlights();
-  const marks = highlightIn(document.querySelector("#quarto-document-content") || document.body, quote);
+  const content = document.querySelector("#quarto-document-content, .sl-markdown-content") || document.body;
+  const marks = highlightIn(content, quote);
   if (marks.length) { marks[0].scrollIntoView({ behavior: "smooth", block: "center" }); return true; }
   const target = hash && document.getElementById(decodeURIComponent(hash.slice(1)));
   if (target) {
@@ -124,7 +125,8 @@ function jumpTo(src) {
   const target = new URL(localize(src.url), location.href);
   if (window.innerWidth < 600) setOpen(false); // the panel covers the page on phones
   else if (ui.max) { maxPaused = true; applyUi(); } // shrink so the highlighted text is visible
-  if (target.pathname === location.pathname) {
+  const samePage = (a, b) => a.replace(/\.html$/, "").replace(/\/index$/, "/") === b.replace(/\.html$/, "").replace(/\/index$/, "/");
+  if (samePage(target.pathname, location.pathname)) {
     if (target.hash && location.hash !== target.hash) window.history.replaceState(null, "", target.hash);
     highlightOnPage(src.quote, target.hash);
   } else {
@@ -259,8 +261,9 @@ if (appMode) {
 }
 
 // "Recently viewed" in the app's Manual tab includes chapters read here
-const chapterTitle = document.querySelector("h1.title")?.textContent.replace(/\s+/g, " ").trim();
-const page = location.pathname.split("/").pop() || "index.html";
+const chapterTitle = (document.querySelector("h1[data-chapter-title]")?.dataset.chapterTitle ||
+  document.querySelector("h1.title")?.textContent || "").replace(/\s+/g, " ").trim();
+const page = (location.pathname.split("/").pop() || "index").replace(/^(?!.*\.html$)(.+)$/, "$1.html"); // new site drops .html
 if (chapterTitle && page !== "index.html") {
   const recent = readJSON(L, "nicuChat.recent", []).filter((x) => !x.url.endsWith("/" + page));
   recent.unshift({ title: chapterTitle, url: LIVE_BASE + page });
