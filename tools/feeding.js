@@ -86,15 +86,16 @@ export function buildPlan({ protocol, bw, ga, fort, milk, cream, day1 }) {
     c = c < 10 ? trueRound(c, 1) : trueRound(c, 0);
     const creamText = kcal[i] < 26 ? "" : `${c}mL cream,`;
     const volText = (vol < 1.1 && vol > 0 ? vol.toFixed(1) : String(vol)) + "mL";
-    let kcalText = `${kcal[i]}Kcal/oz`;
+    let kcalText = `${kcal[i]}kcal/oz`;
     if (formula) {
-      if (bw > 2500) kcalText = "Similac or EBM 20 Kcal/oz milk";
+      if (bw > 2500) kcalText = "Similac or EBM 20 kcal/oz milk";
       else {
         const f = bw >= 1800 || i === 0 ? 22 : 24; // 1500-1799 g: formula 22 on day 1, then 24
-        kcalText = `Formula ${f} Kcal/oz or EBM ${tf >= 60 ? f : 20} Kcal/oz milk`;
+        kcalText = `Formula ${f} kcal/oz or EBM ${tf >= 60 ? f : 20} kcal/oz milk`;
       }
     }
-    return { date: addDays(day1, i), step: `Day${i + 1}`, plan: [creamText, volText, kcalText, `(${tf}ml/kg/d)`].join(" ").trim() };
+    // e.g. "0.5mL cream, 9mL (60ml/kg/d), 26kcal/oz": the rate follows the volume
+    return { date: addDays(day1, i), step: `Day${i + 1}`, plan: [creamText, volText, `(${tf}ml/kg/d),`, kcalText].join(" ").trim() };
   });
 }
 
