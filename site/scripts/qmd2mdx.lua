@@ -3,11 +3,25 @@
 -- Pass 1 reshapes blocks (callouts, HTML tables, shortcodes); pass 2 makes text and inline HTML MDX-safe.
 
 local VOID = { "br", "hr", "img", "col", "source", "input", "meta", "link", "area", "base", "embed", "param", "track", "wbr" }
-local CALLOUT = { note = "note", tip = "tip", important = "caution", warning = "caution", caution = "danger" }
+-- Quarto callout -> Starlight aside, keeping Quarto's own default title text
+local CALLOUT = { note = "note", tip = "tip", important = "danger", warning = "caution", caution = "caution" }
+local CALLOUT_TITLE = { note = "Note", tip = "Tip", important = "Important", warning = "Warning", caution = "Caution" }
+
+-- colored text in the chapters (red placeholders, blue/navy emphasis) keeps its meaning as a class
+local function color_class(style)
+  local c = (style or ""):lower():match("color%s*:%s*([#%w]+)")
+  if not c then return nil end
+  if c == "red" or c:match("^#[cdef]") then return "c-red" end
+  return "c-blue"
+end
 
 -- HTML written by hand in the chapters, made valid JSX: comments and <style> dropped, void tags self-closed
 local function jsx_html(s)
   s = s:gsub("<!%-%-.-%-%->", "")
+  s = s:gsub('(<span)%s+style="([^"]*)"', function(tag, style)
+    local cls = color_class(style)
+    return cls and (tag .. ' class="' .. cls .. '"') or tag
+  end)
   s = s:gsub("<style.-</style>", "")
   for _, tag in ipairs(VOID) do
     s = s:gsub("<(" .. tag .. ")(%f[%s/>][^>]-)%s*/?>", function(t, attrs) return "<" .. t .. attrs .. " />" end)
@@ -32,8 +46,8 @@ local pass1 = {
   Div = function(el)
     for _, c in ipairs(el.classes) do
       local kind = c:match("^callout%-(%a+)$")
-      if kind then
-        local title = el.attributes["title"] or ""
+      if kind and CALLOUT[kind] then
+        local title = el.attributes["title"] or CALLOUT_TITLE[kind] or ""
         local content = el.content
         if #content > 0 and content[1].t == "Header" then
           title = pandoc.utils.stringify(content[1].content)
@@ -50,6 +64,10 @@ local pass1 = {
   Para = function(el) if is_shortcode(el) then return {} end end,
   Plain = function(el) if is_shortcode(el) then return {} end end,
   RawBlock = function(el)
+    if el.format == "tex" or el.format == "latex" then
+      local body = el.text:gsub("^%s*\\begin{equation%*?}", ""):gsub("\\end{equation%*?}%s*$", "")
+      return pandoc.RawBlock("markdown", "$$\n" .. body:gsub("^%s+", ""):gsub("%s+$", "") .. "\n$$")
+    end
     if el.format ~= "html" then return el end
     if el.text:match("^%s*<style") then styles_seen = styles_seen .. el.text end
     if el.text:match("<table") then
@@ -102,6 +120,21 @@ local pass1 = {
     if s:match("^%s*$") then return {} end
     return pandoc.RawBlock("markdown", s)
   end,
+  Figure = function(el)
+    -- an image with a caption (Quarto shows the caption under it)
+    local img
+    el.content:walk({ Image = function(i) img = i end })
+    if not img then return nil end
+    local blocks = pandoc.List({ pandoc.RawBlock("markdown", "<figure>"), pandoc.Plain({ img }) })
+    local cap = pandoc.utils.stringify(el.caption.long)
+    if cap ~= "" then
+      blocks:insert(pandoc.RawBlock("markdown", "<figcaption>"))
+      blocks:extend(el.caption.long)
+      blocks:insert(pandoc.RawBlock("markdown", "</figcaption>"))
+    end
+    blocks:insert(pandoc.RawBlock("markdown", "</figure>"))
+    return blocks
+  end,
   CodeBlock = function(el)
     for _, c in ipairs(el.classes) do
       if c:match("mermaid") then return pandoc.CodeBlock(el.text, pandoc.Attr("", { "mermaid" })) end
@@ -125,7 +158,28 @@ local function escape_str(s)
   return out
 end
 
+-- After a hard line break, a line starting "- ", "+ ", "* " or "1. " is text in Quarto but a list item in MDX
+local function escape_line_starts(inlines)
+  for i = 2, #inlines do
+    local prev, cur = inlines[i - 1], inlines[i]
+    if (prev.t == "LineBreak" or prev.t == "SoftBreak") and cur.t == "Str" then
+      if cur.text:match("^[-+*]$") or cur.text:match("^#+$") then
+        inlines[i] = pandoc.RawInline("markdown", "\\" .. cur.text)
+      elseif cur.text:match("^%d+[.)]$") then
+        inlines[i] = pandoc.RawInline("markdown", cur.text:sub(1, -2) .. "\\" .. cur.text:sub(-1)) -- 1\.
+      end
+    end
+  end
+  return inlines
+end
+
+local function tex_to_math(text)
+  local body = text:gsub("^%s*\\begin{equation%*?}", ""):gsub("\\end{equation%*?}%s*$", "")
+  return body:gsub("^%s+", ""):gsub("%s+$", "")
+end
+
 local pass2 = {
+  Inlines = escape_line_starts,
   Str = function(el)
     if el.text:find("[{}<>]") then return escape_str(el.text) end
   end,
@@ -143,8 +197,19 @@ local pass2 = {
   end,
   RawInline = function(el)
     if el.format == "html" then return pandoc.RawInline("markdown", jsx_html(el.text)) end
+    if (el.format == "tex" or el.format == "latex") and el.text:match("\\begin{equation") then
+      -- an equation inside a list item: shown as display math on its own line
+      return pandoc.RawInline("markdown", "\n\n$$\n" .. tex_to_math(el.text) .. "\n$$\n\n")
+    end
   end,
   Span = function(el)
+    local cls = color_class(el.attributes["style"])
+    if cls then
+      local out = pandoc.List({ pandoc.RawInline("markdown", '<span class="' .. cls .. '">') })
+      out:extend(el.content)
+      out:insert(pandoc.RawInline("markdown", "</span>"))
+      return out
+    end
     if el.classes:includes("underline") then
       local out = pandoc.List({ pandoc.RawInline("markdown", "<u>") })
       out:extend(el.content)
@@ -152,6 +217,18 @@ local pass2 = {
       return out
     end
     return el.content
+  end,
+  Link = function(el)
+    -- a link whose text is its address: written out in full (MDX has no <https://...> shorthand)
+    local text = pandoc.utils.stringify(el.content)
+    if text == el.target or "mailto:" .. text == el.target then
+      return pandoc.RawInline("markdown", "[" .. text:gsub("([%[%]])", "\\%1") .. "](" .. el.target:gsub(" ", "%%20") .. ")")
+    end
+  end,
+  Math = function(el)
+    -- standard $...$ / $$...$$ for remark-math (pandoc's GitHub writer uses $`...`$)
+    if el.mathtype == "DisplayMath" then return pandoc.RawInline("markdown", "\n$$\n" .. el.text .. "\n$$\n") end
+    return pandoc.RawInline("markdown", "$" .. el.text .. "$")
   end,
   Cite = function(el)
     -- @sec-... cross-references stay as text; the site turns them into links

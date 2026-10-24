@@ -40,7 +40,7 @@ export default defineConfig({
       ],
       components: { PageTitle: "./src/components/PageTitle.astro" },
       sidebar,
-      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
+      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 }, // main sections only: a short, scannable rail
       lastUpdated: false,
       pagination: true,
     }),

@@ -155,3 +155,8 @@
 
 /* page footer: previous / next */
 .pagination-links a { border-radius: var(--kp-radius); box-shadow: var(--kp-shadow); background: var(--kp-surface); }
+
+/* colored text carried over from the manual: red placeholders/warnings, blue emphasis */
+.sl-markdown-content .c-red { color: #c62828; font-weight: 600; }
+.sl-markdown-content .c-blue { color: var(--sl-color-accent-high); font-weight: 600; }
+:root:not([data-theme="light"]) .sl-markdown-content .c-red { color: #ff8a80; }

@@ -1,0 +1,10 @@
+{
+  "_about": "Differences between the Quarto manual and the new site that were reviewed and accepted. Each needs a reason.",
+  "lluch-formulary": [
+    {
+      "quarto": "[Finnegan Score [(#nas)|Dose of Oral Morphine |Relative",
+      "site": "Finnegan Score Dose of Oral Morphine Relative Dose",
+      "reason": "Display fix: the CSV header cell is a Markdown link, [Finnegan Score](#nas); Quarto's table printed the raw symbols, the new site shows the link. No wording changed."
+    }
+  ]
+}
