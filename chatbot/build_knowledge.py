@@ -7,16 +7,18 @@ Run after `quarto render` (reads _book/*.html in _quarto.yml chapter order):
 
 Writes chatbot/nicu-manual-knowledge.md: one block per section (down to level 4),
 each with its breadcrumb and the live GitHub Pages URL, so answers can link to it.
-Also copies it into _book/chatbot/, where the chat widget (chatbot/widget.html) loads it.
+Also copies it into _book/chatbot/, where the chat widget (chatbot/widget.html) loads it,
+and writes _book/sw.js, the offline service worker for the installable app (pwa/).
 """
 
 import html as html_lib
+import json
 import os
 import re
 import shutil
 import subprocess
 import tempfile
-from datetime import date
+from datetime import date, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BOOK = os.path.join(ROOT, "_book")
@@ -199,6 +201,36 @@ def warn_unlabeled_lists():
         print(f"{found} criteria list(s) may be read ambiguously by the chatbot (see above).")
 
 
+def write_service_worker():
+    """Generate _book/sw.js (installable app / offline copy) from pwa/sw.template.js.
+
+    A new version string each build makes installed apps fetch the fresh chapters."""
+    keep = []
+    for dirpath, _, files in os.walk(BOOK):
+        rel_dir = os.path.relpath(dirpath, BOOK)
+        for f in files:
+            if re.search(r" \d+(\.[\w.]+)?$", f):  # "name 2.css": cloud-sync conflict copies
+                continue
+            rel = f if rel_dir == "." else os.path.join(rel_dir, f).replace(os.sep, "/")
+            top = rel.split("/")[0]
+            if rel_dir == "." and f.endswith((".html", ".json", ".css", ".webmanifest")):
+                keep.append(rel)
+            elif top == "site_libs" and not f.endswith(".map"):
+                keep.append(rel)
+            elif top in ("pwa", "chatbot"):
+                keep.append(rel)
+    keep = sorted(set(keep) - {"sw.js"})
+    size = sum(os.path.getsize(os.path.join(BOOK, p)) for p in keep)
+    now = datetime.now()
+    sw = open(os.path.join(ROOT, "pwa", "sw.template.js"), encoding="utf-8").read()
+    sw = (sw.replace("__VERSION__", now.strftime("%Y%m%d%H%M%S"))
+            .replace("__BUILT__", now.strftime("%B %d, %Y").replace(" 0", " "))
+            .replace("__PRECACHE__", json.dumps(["./"] + keep, indent=1)))
+    with open(os.path.join(BOOK, "sw.js"), "w", encoding="utf-8") as f:
+        f.write(sw)
+    print(f"sw.js: {len(keep)} files stored for offline use ({size / 1e6:.1f} MB)")
+
+
 def main():
     # The synced project folder can leave rendered chapters in the project root instead of _book/;
     # publishing that _book would take those chapters offline, so stop here instead.
@@ -234,6 +266,7 @@ def main():
     os.makedirs(os.path.join(BOOK, "chatbot"), exist_ok=True)
     shutil.copy(OUT, os.path.join(BOOK, "chatbot", os.path.basename(OUT)))
     print(f"{n} sections, {os.path.getsize(OUT):,} bytes -> {OUT} (+ _book copy)")
+    write_service_worker()
 
 
 if __name__ == "__main__":

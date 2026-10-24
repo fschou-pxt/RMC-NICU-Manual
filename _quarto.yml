@@ -2,6 +2,8 @@ project:
   type: book
   resources:
     - chatbot/nicu-manual-knowledge.md
+    - manifest.webmanifest
+    - pwa/*.png
 
 book:
   sidebar: 
@@ -69,7 +71,10 @@ format:
   html:
     theme: lumen
     css: custom.css
-    include-after-body: chatbot/widget.html
+    include-in-header: pwa/head.html
+    include-after-body:
+      - chatbot/widget.html
+      - pwa/register.html
     page-break-after: always
 
 
