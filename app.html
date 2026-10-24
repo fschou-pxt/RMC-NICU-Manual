@@ -145,6 +145,27 @@ mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radiu
 .h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin: 18px 4px 8px; }
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); margin-bottom: 12px; }
 
+.quick { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+.quick button { text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 12px 12px 11px;
+  box-shadow: var(--shadow); cursor: pointer; display: flex; flex-direction: column; gap: 6px; color: var(--text); }
+.quick button:hover { border-color: var(--blue); }
+.quick i { font-size: 1.3em; color: var(--blue); } .quick b { font-weight: 600; font-size: .92em; line-height: 1.3; }
+.qc-h { color: var(--blue); border-top: 1px solid var(--border); padding-top: 10px; }
+.dot { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 12px 14px; margin-bottom: 10px; box-shadow: var(--shadow); }
+.dot-h { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.dot-h code { font: 600 .95em ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--blue); }
+.dot-h span { color: var(--muted); font-size: .8em; }
+.dot-t { white-space: pre-wrap; font: inherit; font-size: .9em; margin: 0 0 10px; max-height: 6.4em; overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 70%, transparent); mask-image: linear-gradient(#000 70%, transparent); }
+.dot-t.open { max-height: none; -webkit-mask-image: none; mask-image: none; }
+.dot-a { display: flex; gap: 8px; flex-wrap: wrap; } .dot-a .nc-btn { padding: 6px 12px; font-size: .88em; }
+.entry { padding: 11px 14px; border-top: 1px solid var(--border); } .list > .entry:first-child { border-top: 0; }
+.entry b { display: block; font-weight: 600; margin-bottom: 2px; }
+.entry .f { font-size: .88em; color: var(--muted); } .entry .f span { color: var(--muted); }
+.list .entry a { display: inline; width: auto; padding: 0; border: 0; font-weight: 600; color: var(--blue); }
+.calc-view { position: fixed; inset: 0; z-index: 40; background: var(--bg); display: flex; flex-direction: column; }
+.calc-view iframe { flex: 1; width: 100%; border: 0; background: #fff; }
+
 /* ---------- source sheet (bottom sheet on phones, side panel on wide screens) ---------- */
 .backdrop { position: fixed; inset: 0; background: rgba(8, 16, 28, .45); z-index: 20; }
 .sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 21; max-height: 82dvh; display: flex; flex-direction: column;
@@ -210,6 +231,7 @@ mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radiu
   <div class="grab"></div>
   <header>
     <div class="t"><small id="sheet-crumb"></small><h2 id="sheet-title"></h2></div>
+    <button class="icon-btn" type="button" data-act="save-src" aria-label="Save this section"><i class="bi bi-star"></i></button>
     <button class="icon-btn" type="button" data-act="close-sheet" aria-label="Close"><i class="bi bi-x-lg"></i></button>
   </header>
   <div class="body" id="sheet-body"></div>
@@ -220,6 +242,13 @@ mark.nicu-hl { background: #ffe066; color: #1d2733; padding: 0 2px; border-radiu
     <button class="nc-btn" type="button" data-act="open-manual"><i class="bi bi-book"></i> Open in manual</button>
   </footer>
 </aside>
+
+<div class="calc-view" id="calc-view" hidden>
+  <header class="bar"><div class="brand" id="calc-title"></div>
+    <a class="model-pill" id="calc-open" target="_blank" rel="noopener">Open in browser</a>
+    <button class="icon-btn" type="button" data-act="close-calc" aria-label="Close"><i class="bi bi-x-lg"></i></button></header>
+  <iframe id="calc-frame" title="Calculator" src="about:blank"></iframe>
+</div>
 
 <script type="module">
 // The installed app: chat first, with the manual and unit tools as tabs. Shares its engine with the page widget.
@@ -321,8 +350,23 @@ function renderSettingsView() {
     ui.theme = b.dataset.theme; saveUi(); renderSettingsView(); });
 }
 
-// ---------- source sheet ----------
-let sheetCtx = null; // { list: [{title,url,quote}], index }
+// ---------- saved and recently viewed (kept on this device) ----------
+const SAVED = "nicuChat.saved", RECENT = "nicuChat.recent";
+const savedList = () => readJSON(L, SAVED, []);
+const isSaved = (url) => savedList().some((x) => x.url === url);
+function toggleSaved(item) {
+  const s = isSaved(item.url) ? savedList().filter((x) => x.url !== item.url) : [{ title: item.title, url: item.url }, ...savedList()];
+  store.set(L, SAVED, JSON.stringify(s.slice(0, 50)));
+}
+function addRecent(item) {
+  const r = readJSON(L, RECENT, []).filter((x) => x.url !== item.url);
+  r.unshift({ title: item.title, url: item.url });
+  store.set(L, RECENT, JSON.stringify(r.slice(0, 12)));
+}
+
+// ---------- source sheet: one section, or a quick card's stack of sections ----------
+let sheetCtx = null; // { list: [{title,url,quote}], index } or { stack: card }
+function showSheet() { $("#sheet").hidden = false; $("#backdrop").hidden = false; document.body.classList.add("sheet-open"); }
 async function openSheet(list, index) {
   sheetCtx = { list, index };
   const src = list[index];
@@ -331,13 +375,23 @@ async function openSheet(list, index) {
   $("#sheet-title").textContent = parts[parts.length - 1].replace(/:$/, "");
   $("#sheet-pos").textContent = list.length > 1 ? `${index + 1} of ${list.length}` : "";
   $('[data-act="prev-src"]').hidden = $('[data-act="next-src"]').hidden = list.length < 2;
+  $('[data-act="save-src"]').hidden = false;
+  syncStar();
   const body = $("#sheet-body");
   body.innerHTML = '<p class="nc-note">Loading…</p>';
-  $("#sheet").hidden = false; $("#backdrop").hidden = false; document.body.classList.add("sheet-open");
+  showSheet();
   const { sections } = await loadKnowledge();
   const sec = sections.find((s) => s.title === src.title && s.url === src.url) || sections.find((s) => s.url === src.url);
+  if (sec && !src.title) {
+    src.title = sec.title;
+    const p = sec.title.split(" › ");
+    $("#sheet-crumb").textContent = p.slice(0, -1).join(" › ");
+    $("#sheet-title").textContent = p[p.length - 1].replace(/:$/, "");
+    syncStar();
+  }
   body.innerHTML = sec ? renderMd(sec.text) : '<p class="nc-note">This section could not be loaded. Use "Open in manual".</p>';
   body.scrollTop = 0;
+  if (src.title) addRecent(src);
   const marks = highlightIn(body, src.quote);
   if (marks.length) marks[0].scrollIntoView({ block: "center" });
 }
@@ -347,18 +401,63 @@ function openInManual(src) {
   store.set(S, K.pending, JSON.stringify({ quote: src.quote || "", hash: new URL(localize(src.url)).hash }));
   location.href = localize(src.url);
 }
+function syncStar() {
+  const src = sheetCtx?.list?.[sheetCtx.index], on = !!src && isSaved(src.url), b = $('[data-act="save-src"]');
+  b.innerHTML = `<i class="bi bi-star${on ? "-fill" : ""}"></i>`;
+  b.title = on ? "Remove from saved" : "Save this section";
+  b.setAttribute("aria-label", b.title);
+}
 
-// ---------- Manual: chapters, or search results that open in the sheet ----------
-let manualHits = [];
+// Quick cards: one-screen views of high-use protocols, built from the manual's own sections (never rewritten)
+const QUICK = [
+  ["snow", "Cooling eligibility", "17 Neurology › 17.4 Practice Guideline: Therapeutic Hypothermia › Eligibility Criteria"],
+  ["thermometer-half", "Passive cooling", "17 Neurology › 17.3 Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Policy Statement"],
+  ["lungs", "LISA", "10 Respiratory › 10.1 Least Invasive Surfactant Administration"],
+  ["droplet-half", "Line KVO rates", "12 Nutrition, Fluid and Electrolytes › 12.2 Fluid Management › Line KVO rates"],
+  ["activity", "Central lines", "5 NICU Admission › 5.2 Central line placement"],
+  ["capsule", "Sepsis antibiotics", "15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU"],
+  ["person-walking", "Delivery room attendance", "22 Delivery Room Management › 22.1 Delivery Room Attendance"],
+  ["house-check", "FCC discharge criteria", "Appendix B — Dot Phrases › B.2 General Care › General Documentation › Conditional discharge note (FCC)"],
+];
+async function openQuick(i) {
+  const [, name, prefix] = QUICK[i];
+  const { sections } = await loadKnowledge();
+  const hits = sections.filter((s) => s.title === prefix || s.title.startsWith(prefix + " › "));
+  sheetCtx = { list: hits.slice(0, 1).map((s) => ({ title: s.title, url: s.url, quote: "" })), index: 0, stack: true };
+  $("#sheet-crumb").textContent = "Quick card · " + prefix.split(" › ").slice(0, -1).join(" › ");
+  $("#sheet-title").textContent = name;
+  $("#sheet-pos").textContent = "";
+  $('[data-act="prev-src"]').hidden = $('[data-act="next-src"]').hidden = true;
+  $('[data-act="save-src"]').hidden = true;
+  $("#sheet-body").innerHTML = hits.length ? hits.map((s) => {
+    const leaf = s.title.slice(prefix.length).replace(/^ › /, "");
+    return (leaf ? `<p class="nc-h qc-h">${esc(leaf.replace(/:$/, ""))}</p>` : "") + renderMd(s.text);
+  }).join("") : '<p class="nc-note">This card\'s section was not found in the current manual.</p>';
+  $("#sheet-body").scrollTop = 0;
+  showSheet();
+}
+
+// ---------- Manual: quick cards, saved, recent, chapters; or search results that open in the sheet ----------
+let manualHits = [], manualItems = [];
+const itemRow = (it, i) => {
+  const parts = it.title.split(" › ");
+  return `<button type="button" data-item="${i}"><span class="t">${esc(parts[parts.length - 1].replace(/:$/, ""))}${parts.length > 1 ? `<small>${esc(parts.slice(0, -1).join(" › "))}</small>` : ""}</span><i class="bi bi-chevron-right"></i></button>`;
+};
 async function renderManual() {
   const box = $("#manual-list"), q = $("#q").value.trim();
   const { sections, chapters } = await loadKnowledge();
   if (!q) {
-    box.innerHTML = `<div class="list">${chapters.map((c) => {
-      const m = c.title.match(/^(\d+|Appendix [A-Z])\s*[—-]?\s*(.*)$/);
-      const num = m ? m[1].replace("Appendix ", "") : "";
-      return `<a href="${esc(localize(c.url))}"><span class="num">${esc(num || "•")}</span><span class="t">${esc(m ? m[2] : c.title)}</span><i class="bi bi-chevron-right"></i></a>`;
-    }).join("")}</div>`;
+    const saved = savedList(), recent = readJSON(L, RECENT, []);
+    manualItems = [...saved, ...recent];
+    box.innerHTML = `<p class="h2">Quick cards</p><div class="quick">${QUICK.map(([icon, name], i) =>
+        `<button type="button" data-quick="${i}"><i class="bi bi-${icon}"></i><b>${esc(name)}</b></button>`).join("")}</div>` +
+      (saved.length ? `<p class="h2">Saved</p><div class="list">${saved.map((it, i) => itemRow(it, i)).join("")}</div>` : "") +
+      (recent.length ? `<p class="h2">Recently viewed</p><div class="list">${recent.map((it, i) => itemRow(it, saved.length + i)).join("")}</div>` : "") +
+      `<p class="h2">Chapters</p><div class="list">${chapters.map((c) => {
+        const m = c.title.match(/^(\d+|Appendix [A-Z])\s*[—-]?\s*(.*)$/);
+        const num = m ? m[1].replace("Appendix ", "") : "";
+        return `<a href="${esc(localize(c.url))}"><span class="num">${esc(num || "•")}</span><span class="t">${esc(m ? m[2] : c.title)}</span><i class="bi bi-chevron-right"></i></a>`;
+      }).join("")}</div>`;
     return;
   }
   const words = tokenize(q);
@@ -371,28 +470,139 @@ async function renderManual() {
   }).join("")}</div>` : `<p class="nc-note">No sections match “${esc(q)}”. Try fewer words, or ask in the Ask tab.</p>`;
 }
 $("#q").addEventListener("input", () => renderManual());
+// a saved or recent item: a section opens in the sheet, a whole chapter opens in the manual
+function openItem(it) {
+  if (it.title.includes(" › ")) return openSheet([{ title: it.title, url: it.url, quote: "" }], 0);
+  location.href = localize(it.url);
+}
 
-// ---------- tools (full versions arrive in the next phase) ----------
-function renderDots() {
-  $("#v-dots").innerHTML = `<div class="card"><b>Dot phrases</b><p class="nc-note" style="margin:6px 0 12px">A searchable list with one-tap Copy for Epic is coming in the next update.</p>
-    <a class="nc-btn" href="dotPhrases.html"><i class="bi bi-book"></i> Open dot phrases in the manual</a></div>`;
+// ---------- Dot phrases: search, preview, one-tap Copy for Epic ----------
+// Plain text exactly as the manual shows it: markdown escapes and markers removed, line breaks kept.
+function copyText(md) {
+  return md.split("\n").filter((l) => !/^\s*\[Text\]\(/i.test(l) && l.trim() !== "[image]").join("\n")
+    .replace(/\\\n/g, "\n").replace(/\\$/gm, "")
+    .replace(/\[([^\]]+)\]\((?:https?:)?[^)]*\)/g, "$1")
+    .replace(/\*\*(.+?)\*\*/g, "$1")
+    .replace(/\\([*_`\\<>#|[\]~^.-])/g, "$1")
+    .replace(/[‘’]/g, "'").replace(/[“”]/g, '"') // the site curls quotes; the source dot phrases use straight ones
+    .replace(/ /g, " ").replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
 }
-function renderPhones() {
-  $("#v-phones").innerHTML = `<div class="card"><b>Phone numbers</b><p class="nc-note" style="margin:6px 0 12px">A searchable directory with tap-to-call is coming in the next update.</p>
-    <a class="nc-btn" href="phone-numbers.html"><i class="bi bi-book"></i> Open phone numbers in the manual</a></div>`;
+let dots = [];
+async function renderDots() {
+  const v = $("#v-dots");
+  if (!v.querySelector("#dq")) {
+    v.innerHTML = `<label class="search"><i class="bi bi-search"></i><input id="dq" type="search" placeholder="Search dot phrases" autocomplete="off"></label>
+      <p class="nc-note">Tap Copy, then paste into Epic. Fill in every *** before signing.</p><div id="dot-list"><p class="nc-note">Loading…</p></div>`;
+    v.querySelector("#dq").addEventListener("input", renderDots);
+  }
+  const { sections } = await loadKnowledge();
+  dots = sections.filter((s) => s.title.startsWith("Appendix B")).map((s) => {
+    const parts = s.title.split(" › ");
+    return { name: parts[parts.length - 1], group: parts.slice(2, -1).join(" › ") || parts[1].replace(/^B\.\d+\s*/, ""),
+      url: s.url, related: (s.text.match(/\[Text\]\((https?:[^)\s]+)\)/i) || [])[1] || "", images: /^\[image\]$/m.test(s.text), text: copyText(s.text) };
+  });
+  const q = v.querySelector("#dq").value.trim().toLowerCase();
+  const shown = dots.map((d, i) => [d, i]).filter(([d]) => !q || (d.name + " " + d.group + " " + d.text).toLowerCase().includes(q));
+  v.querySelector("#dot-list").innerHTML = shown.length ? shown.map(([d, i]) => `<div class="dot">
+      <div class="dot-h"><code>${esc(d.name)}</code><span>${esc(d.group)}</span></div>
+      <pre class="dot-t" id="dot-${i}">${esc(d.text)}</pre>
+      ${d.images ? '<p class="nc-note">Includes images in the manual. Copy gives the text only.</p>' : ""}
+      <div class="dot-a">
+        <button type="button" class="nc-btn" data-copy="${i}"><i class="bi bi-clipboard"></i> Copy</button>
+        <button type="button" class="nc-btn nc-ghost" data-more="${i}">Show all</button>
+        ${d.related ? `<button type="button" class="nc-btn nc-ghost" data-related="${i}">Related protocol</button>` : ""}
+      </div></div>`).join("") : `<p class="nc-note">No dot phrases match “${esc(q)}”.</p>`;
+  shown.forEach(([, i]) => { // short phrases fit already: no "Show all"
+    const pre = $("#dot-" + i);
+    if (pre.scrollHeight <= pre.clientHeight + 2) $(`[data-more="${i}"]`).hidden = true;
+  });
 }
+async function copyDot(i, btn) {
+  const text = dots[i].text;
+  try { await navigator.clipboard.writeText(text); }
+  catch { // older browsers: copy through a temporary text box
+    const ta = Object.assign(document.createElement("textarea"), { value: text });
+    document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+  }
+  btn.innerHTML = '<i class="bi bi-check2"></i> Copied';
+  setTimeout(() => { btn.innerHTML = '<i class="bi bi-clipboard"></i> Copy'; }, 1800);
+}
+
+// ---------- Phones: the manual's phone tables and contact lists as a searchable directory ----------
+let phones = [];
+function parsePhones(sections) {
+  const out = [];
+  for (const s of sections.filter((x) => x.title.startsWith("2 Phone Numbers ›"))) {
+    const parts = s.title.split(" › ");
+    const group = parts[1].replace(/^[\d.]+\s*/, "");
+    const rows = s.text.split("\n").filter((l) => /^\s*\|.*\|\s*$/.test(l))
+      .map((l) => l.trim().slice(1, -1).split("|").map((c) => copyText(c.trim())))
+      .filter((cells) => !cells.every((c) => /^:?-{3,}:?$/.test(c)));
+    if (rows.length > 1) {
+      const head = rows[0];
+      let prev = "";
+      for (const cells of rows.slice(1)) {
+        if (cells.every((c) => !c)) continue;
+        const title = cells[0] || prev; // a blank first cell continues the department above
+        prev = title;
+        const fields = head.map((h, j) => [h, cells[j] || ""]).slice(1).filter(([, v]) => v);
+        if (!fields.length && !cells[0]) continue;
+        out.push({ group, title: title || "—", fields, url: s.url });
+      }
+    } else { // contact lists: one entry per section, each bullet a line
+      const lines = s.text.split("\n").filter((l) => /^\s*[-*]\s+/.test(l)).map((l) => copyText(l.replace(/^\s*[-*]\s+/, "")));
+      if (lines.length) out.push({ group, title: parts[parts.length - 1].replace(/:$/, ""), fields: lines.map((l) => ["", l]), url: s.url });
+    }
+  }
+  return out;
+}
+// phone numbers become tap-to-call links (KP tie lines and extensions stay as text); emails become mail links
+function linkify(text) {
+  return esc(text)
+    .replace(/(\+?1[-.\s])?\(?(\d{3})\)?[-.\s](\d{3})-(\d{4})/g, (m, c, a, b, d) => `<a href="tel:+1${a}${b}${d}">${m}</a>`)
+    .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, (m) => `<a href="mailto:${m}">${m}</a>`);
+}
+async function renderPhones() {
+  const v = $("#v-phones");
+  if (!v.querySelector("#pq")) {
+    v.innerHTML = `<label class="search"><i class="bi bi-search"></i><input id="pq" type="search" placeholder="Search names, units, numbers" autocomplete="off"></label>
+      <p class="nc-note">Tap a number to call. Numbers like 8-258-xxxx are KP tie lines; 4-digit numbers are extensions.</p><div id="phone-list"><p class="nc-note">Loading…</p></div>`;
+    v.querySelector("#pq").addEventListener("input", renderPhones);
+  }
+  if (!phones.length) phones = parsePhones((await loadKnowledge()).sections);
+  const q = v.querySelector("#pq").value.trim().toLowerCase();
+  const shown = phones.filter((p) => !q || (p.group + " " + p.title + " " + p.fields.flat().join(" ")).toLowerCase().includes(q));
+  const groups = [...new Set(shown.map((p) => p.group))];
+  v.querySelector("#phone-list").innerHTML = shown.length ? groups.map((g) => `<p class="h2">${esc(g)}</p><div class="list">${shown.filter((p) => p.group === g).map((p) =>
+      `<div class="entry"><b>${esc(p.title)}</b>${p.fields.map(([k, val]) => `<div class="f">${k ? `<span>${esc(k.charAt(0) + k.slice(1).toLowerCase())}:</span> ` : ""}${linkify(val)}</div>`).join("")}</div>`).join("")}</div>`).join("")
+    : `<p class="nc-note">No contacts match “${esc(q)}”.</p>`;
+}
+
+// ---------- Calculators ----------
+// In[Neo]Sight calculators open inside the app once inneosight.org allows this site to embed them;
+// until then they open in the browser.
+const CALC_EMBED = false;
 const CALCS = [["gir", "GIR", "Glucose infusion rate"], ["total-fluid", "Total fluid", "mL/kg/day and rates"], ["fluid-tpn", "Fluid and TPN", ""],
   ["nutrition-intake", "Nutrition intake", "kcal and protein"], ["uac-uvc", "UAC / UVC depth", ""], ["ett-tube", "ETT size and depth", ""],
   ["therapeutic-hypothermia", "Therapeutic hypothermia", "Eligibility"], ["phototherapy", "Phototherapy", "Bilirubin thresholds"],
   ["blood-gas", "Blood gas", "Interpretation"], ["oxygenation-index", "Oxygenation index", ""], ["a-a-gradient", "A–a gradient", ""],
   ["bpd", "BPD risk", "Prediction"], ["corrected-age", "Corrected age", ""], ["growth-zscore", "Growth z-score", ""],
   ["postnatal-growth", "Postnatal growth", ""], ["ballard", "Ballard score", ""], ["apgar", "Apgar", ""], ["unit-converter", "Unit converter", ""]];
+const calcUrl = (slug) => `https://inneosight.org/en-US/calculators/${slug}`;
 function renderCalcs() {
   $("#v-calcs").innerHTML = `<p class="h2">KP Riverside</p><div class="list">
       <a href="https://neostat.shinyapps.io/nicu_feeding_protocol/" target="_blank" rel="noopener"><span class="num"><i class="bi bi-cup-hot"></i></span><span class="t">Feeding advancement protocol<small>NICU feeding protocol app</small></span><i class="bi bi-box-arrow-up-right"></i></a></div>
-    <p class="h2">In[Neo]Sight calculators</p><div class="list">${CALCS.map(([slug, name, sub]) =>
-      `<a href="https://inneosight.org/en-US/calculators/${slug}" target="_blank" rel="noopener"><span class="t">${esc(name)}${sub ? `<small>${esc(sub)}</small>` : ""}</span><i class="bi bi-box-arrow-up-right"></i></a>`).join("")}</div>
-    <p class="nc-note" style="margin-top:10px">These open inneosight.org. Calculators are aids; check results against the manual and clinical judgment.</p>`;
+    <p class="h2">In[Neo]Sight calculators</p><div class="list">${CALCS.map(([slug, name, sub], i) => CALC_EMBED
+      ? `<button type="button" data-calc="${i}"><span class="t">${esc(name)}${sub ? `<small>${esc(sub)}</small>` : ""}</span><i class="bi bi-chevron-right"></i></button>`
+      : `<a href="${calcUrl(slug)}" target="_blank" rel="noopener"><span class="t">${esc(name)}${sub ? `<small>${esc(sub)}</small>` : ""}</span><i class="bi bi-box-arrow-up-right"></i></a>`).join("")}</div>
+    <p class="nc-note" style="margin-top:10px">Calculators are aids; check results against the manual and clinical judgment.</p>`;
+}
+function openCalc(i) {
+  const [slug, name] = CALCS[i];
+  $("#calc-title").textContent = name;
+  $("#calc-open").href = calcUrl(slug);
+  $("#calc-frame").src = calcUrl(slug) + "?embed=1";
+  $("#calc-view").hidden = false;
 }
 
 // ---------- clicks ----------
@@ -409,7 +619,15 @@ document.addEventListener("click", async (ev) => {
     return openSheet(sheetCtx.list, (sheetCtx.index + (act === "next-src" ? 1 : n - 1)) % n);
   }
   if (act === "open-manual") return openInManual(sheetCtx.list[sheetCtx.index]);
+  if (act === "save-src") { toggleSaved(sheetCtx.list[sheetCtx.index]); syncStar(); if (view === "manual") renderManual(); return; }
+  if (act === "close-calc") { $("#calc-view").hidden = true; $("#calc-frame").src = "about:blank"; return; }
   if (t.dataset.hit !== undefined) return openSheet(manualHits.map((s) => ({ title: s.title, url: s.url, quote: "" })), +t.dataset.hit);
+  if (t.dataset.item !== undefined) return openItem(manualItems[+t.dataset.item]);
+  if (t.dataset.quick !== undefined) return openQuick(+t.dataset.quick);
+  if (t.dataset.copy !== undefined) return copyDot(+t.dataset.copy, t);
+  if (t.dataset.more !== undefined) { const pre = $("#dot-" + t.dataset.more); pre.classList.toggle("open"); t.textContent = pre.classList.contains("open") ? "Show less" : "Show all"; return; }
+  if (t.dataset.related !== undefined) return openSheet([{ title: "", url: dots[+t.dataset.related].related, quote: "" }], 0);
+  if (t.dataset.calc !== undefined) return openCalc(+t.dataset.calc);
   if (t.dataset.ext) {
     if (busy) return;
     const i = +t.dataset.msg;

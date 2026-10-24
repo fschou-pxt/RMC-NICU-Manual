@@ -67,6 +67,8 @@ This handbook is arranged into six parts:
 
 Site design, the chat assistant, and the app were built with Claude (Anthropic’s AI) under Dr. Chou’s direction. Clinical content is written and approved by the authors.
 
+[image]
+
 # 1 Telemedicine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/telemedicine.html
 
@@ -526,6 +528,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-secure-cha
 
 Secure Chat can be accessed inside Health Connect. Instructions as follows:
 
+[image]
+
 ## 3 Physician Operations › 3.4 Daily Rounds Process
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#daily-rounds-process
 
@@ -540,6 +544,11 @@ Checklist
 - E&M coding
 - [Progress note](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-daily-progress-note)
 - Call parents to provide update, or update at bedside
+
+## 3 Physician Operations › 3.5 Quality Management › P-score process map
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#p-score-process-map
+
+[image]
 
 ## 3 Physician Operations › 3.5 Quality Management › Important notes:
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#important-notes
@@ -749,7 +758,18 @@ Under the diagnosis of *Newborn, single liveborn…*:
   - On weekends or holidays, we book into the Pediatric “After Hours” clinic, which is in Riverside and Murrieta.
 - Conditional discharge note (also in [Section B.2.2.7](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-fcc-conditional-discharge)):
 
-> Infant may be discharged home today after \*\*\* once all of the following criteria have been met: A. Vital Signs are within Normal Limits (Temp 36.5–37.9 °C, HR 100–160, RR less than 60) B. Infant has voided and passed stool C. Infant has passed CCHD screening with O2 sat greater than 94% D. Newborn screening is complete E. Hearing Screening is complete; if referred, CMV buccal swab has been obtained and outpatient audiology follow-up has been scheduled F. Hepatitis B vaccine has been given, and if indicated, HBIG has been given. If parents refused hep B vaccine, declination waiver has been signed. G. Transcutaneous bilirubin levels have not exceeded the threshold to require a serum bili level H. If infant is being evaluated for hypoglycemia, all blood sugars have been completed and infant has not required any dextrose gel OR infant has had 3 serial glucose POCT levels greater than or equal to 45 mg/dL. I. Infant has had a recent repeat weight, with ≤ 6% weight loss from birth weight on day 1 or ≤ 8% weight loss from birth weight on day 2 or 3. If breastfeeding, a LATCH score of 8 or more is documented and mother has demonstrated ability to latch baby independently OR mother has worked with lactation and a discharge feeding plan has been documented. J. Follow-up appointment(s) scheduled per unit policy: 1) in Great Starts in 2 days, 2) at 3 weeks with PCP, and 3) at 2 months with PCP. If above criteria have not been met then please cancel discharge and notify MD on call.
+> Infant may be discharged home today after \*\*\* once all of the following criteria have been met:\
+> A. Vital Signs are within Normal Limits (Temp 36.5–37.9 °C, HR 100–160, RR less than 60)\
+> B. Infant has voided and passed stool\
+> C. Infant has passed CCHD screening with O2 sat greater than 94%\
+> D. Newborn screening is complete\
+> E. Hearing Screening is complete; if referred, CMV buccal swab has been obtained and outpatient audiology follow-up has been scheduled\
+> F. Hepatitis B vaccine has been given, and if indicated, HBIG has been given. If parents refused hep B vaccine, declination waiver has been signed.\
+> G. Transcutaneous bilirubin levels have not exceeded the threshold to require a serum bili level\
+> H. If infant is being evaluated for hypoglycemia, all blood sugars have been completed and infant has not required any dextrose gel OR infant has had 3 serial glucose POCT levels greater than or equal to 45 mg/dL.\
+> I. Infant has had a recent repeat weight, with ≤ 6% weight loss from birth weight on day 1 or ≤ 8% weight loss from birth weight on day 2 or 3. If breastfeeding, a LATCH score of 8 or more is documented and mother has demonstrated ability to latch baby independently OR mother has worked with lactation and a discharge feeding plan has been documented.\
+> J. Follow-up appointment(s) scheduled per unit policy: 1) in Great Starts in 2 days, 2) at 3 weeks with PCP, and 3) at 2 months with PCP.\
+> If above criteria have not been met then please cancel discharge and notify MD on call.
 
 **Miscellaneous**
 
@@ -897,6 +917,11 @@ Initial fluid
 
 Minimum KVO rates and heparin concentration by line: see [Section 12.2.4](https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#sec-line-kvo).
 
+## 5 NICU Admission › 5.2 Central line placement › UVC Securement
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#sec-uvc-securement
+
+[image]
+
 ## 5 NICU Admission › 5.2 Central line placement › UAC Placement › Indication
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#indication
 
@@ -914,10 +939,13 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#important-note
 - The neonatologists are to prime (with the sterile normal saline) and attach **the Split Septum Micro T-Connector** under sterile conditions during the initial UAC placement:
 
 **The Split Septum Micro T-Connector**\
+[image]
 
 **UAC with stopcock attached**\
+[image]
 
 **UAC with the T-connector attached**\
+[image]
 
 ## 5 NICU Admission › 5.2 Central line placement › PICC placement
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#picc-placement
@@ -932,9 +960,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#sec-central-lin
 
 Close NS flush system is to be ordered when a central line is in place:
 
-To order, type “**closed**” in the order search box to search for the order:
+To order, type “**closed**” in the order search box to search for the order: [image]
 
-Do not change any parameters in the order, including the range of the flush dose:
+Do not change any parameters in the order, including the range of the flush dose: [image]
 
 ## 5 NICU Admission › 5.3 Re-Admission After FCC Discharge › From home
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#from-home
@@ -1214,6 +1242,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#clinical-guide
 
 [Click to download PDF](https://shiny.nicugrowth.app/rmc-nicu-manual/www/nirsevemab/Nirsevemab-Visual-Guide_Final.pdf)
 
+[image]
+
 ## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevemab (Beyfortus®) information › AAP Frequently Asked Questions
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-nirsevimab-aapfaq
 
@@ -1294,6 +1324,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#screenshot-from
 
 <https://www.evenflo.com/pages/faq>
 
+[image]
+
 ## 7 Discharging an Infant › 7.7 Carseat for Infants < 4lbs › Handout for parents
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#handout-for-parents
 
@@ -1308,8 +1340,12 @@ Go to discharge navigator → select **Patient Instructions** in the AVS documen
 
 The handout can also be sent to the family via kp.org.
 
+[image]
+
 ## 7 Discharging an Infant › 7.8 Newborn Humerus Fracture: Discharge Instructions › Handout content (.humerusfx)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#handout-content-.humerusfx
+
+[image]
 
 **Optimal position for baby’s arm:**
 
@@ -1321,6 +1357,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#handout-content
 - Cleaning underarms (see directions below)
 - Changing cotton pads every shift and as needed
 - Checking for skin breakdown every shift (if home, check for skin breakdown twice daily, AM and PM)
+
+[image]
 
 **To move baby’s arm for cleaning:**
 
@@ -1334,6 +1372,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#handout-content
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#positioning
 
 Additional positioning guidance from NICU PT (added to the patient instructions in addition to `.humerusfx`):
+
+[image]
 
 - OK to position baby on back and opposite sides
 - Avoid side lying over fracture arm
@@ -1609,12 +1649,16 @@ Deferred cord clamping (DCC) can be documented in the mother’s chart by going 
 
 Below are screenshots from Health Connect to locate the DCC section:
 
+[image] [image] [image] [image] [image]
+
 Important
 
 For multiple gestation, each infant has his/her own section to fill out.
 
 ## 8 Documentation › 8.5 Checking Oral Care Documentation
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-oral-care
+
+[image]
 
 - Step 1: Click “Flowsheets” tab
 
@@ -1633,15 +1677,15 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-oral-ca
 ## 8 Documentation › 8.6 Family and Medical Leave Act (FMLA) Document Preparation
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-fmla
 
-- Step 1: Click on arrow near the wrench for the drop down menu and locate “Activity Rx4”
+- Step 1: Click on arrow near the wrench for the drop down menu and locate “Activity Rx4” [image]
 
-- Step 2: Once on this page, select the “caregiver” button on the left
+- Step 2: Once on this page, select the “caregiver” button on the left [image]
 
 - Step 3: Fill out the appropriate dates you would like for FMLA, the requirements of the caregiver, and the diagnosis
 
 - Step 4: Select “Go to Preview, Print, & Sign.” Print if the parent is requesting a copy. Otherwise, ok to just e-sign.
 
-- Step 5: This process is then documented in the patient’s chart, where social work, case managent, etc. can locate the document ad lib:
+- Step 5: This process is then documented in the patient’s chart, where social work, case managent, etc. can locate the document ad lib: [image]
 
 # 9 Fetal and Neonatal Death Workflows and Documentation
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html
@@ -1804,12 +1848,22 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#procedure
 4.  Attach syringe with Surfactant and administer it over 2-3 minutes\
 5.  After completion give 1 ml of air slowly than remove the catheter
 
+## 10 Respiratory › 10.2 Respiratory Support Guide › Bubble CPAP (bCPAP) › Guide
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#guide
+
+[image]
+
 ## 10 Respiratory › 10.2 Respiratory Support Guide › Bubble CPAP (bCPAP) › Resources
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#resources
 
 [Download CPAP Guide PDF](https://fschou-pxt.github.io/RMC-NICU-Manual/files/CPAP_guide.pdf)
 
 [Download CPAP Presentation Slides](https://fschou-pxt.github.io/RMC-NICU-Manual/files/bCPAP-presentation.pptx)
+
+## 10 Respiratory › 10.2 Respiratory Support Guide › ELGAN/ELBW Respiratory Support Protocol for the First 72 Hrs › Protocol
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#protocol
+
+[image]
 
 ## 10 Respiratory › 10.2 Respiratory Support Guide › ELGAN/ELBW Respiratory Support Protocol for the First 72 Hrs › Resource
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#resource
@@ -1845,6 +1899,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#edi-catheter-
 ## 10 Respiratory › 10.3 Neurally adjusted ventilatory assist (NAVA) › Positioning Window
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#positioning-window
 
+[image]
+
 - **Correct position**:
   - Look for a diminishing ECG waveform progressing from the 1st to the 4th waveform.\
   - Presence of a pink color in the 2nd and 3rd waveforms (may fluctuate to the 1st and 4th waveforms at times).
@@ -1852,10 +1908,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#positioning-w
 ## 10 Respiratory › 10.3 Neurally adjusted ventilatory assist (NAVA) › Re-Positioning
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#re-positioning
 
+[image]
+
 - **Too deep**:
   - Pull out slightly.\
   - P waves gradually decrease and disappear in the lower leads.\
   - Dampened QRS.
+
+[image]
 
 - **Too shallow**:
   - Insert slightly further.\
@@ -2063,6 +2123,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#checklist
 
 [Click to Download Extubation Checklist](https://fschou-pxt.github.io/RMC-NICU-Manual/files/extubation-checklist.pdf)
 
+[image]
+
 ## 10 Respiratory › 10.5 Extubation Workflow for ELGAN/ELBW › Checklist › Interface choice
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#interface-choice
 
@@ -2098,14 +2160,19 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#medication
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#procedures
 
 1.  Set up resuscitation equipment\
+    [image]
 
 2.  Attach non-invasive interface to the infant.\
+    [image]
 
     *If planning to extubate to bubble CPAP, disconnect one limb first (either incoming or outgoing) before attaching the Flexitrunk and nasal interface to the infant.*\
+    [image]
 
     *In order for the F/P prong to fit in the nose, ETT tapes may need to be removed first, depending on whether the nostrils are partially obstructed by the tape or not.*\
+    [image]
 
 3.  Suction the ET tube\
+    [image]
 
 4.  Untape and remove the ET tube while connecting the previously disconnected limb to the bubble CPAP device, **or** switching the vent mode to NON-INVASIVE NAVA
 
@@ -2118,10 +2185,15 @@ Due to fluid shift, the lung fields are expected to **white out** following extu
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#pre-extubation-post-extubation-timeline
 
 - **Pre-extubation**\
+  [image]
 - **Post-extubation 12 hrs**\
+  [image]
 - **24 hrs**\
+  [image]
 - **36 hrs**\
+  [image]
 - **Four days later**\
+  [image]
 
 Adjust pressure and FiO~2~ accordingly to compensate during fluid shift, allowing time to recover.
 
@@ -2637,6 +2709,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#screening
 - Routine screening on DOL7, sooner if clinically indicated
 - Iowa’s early echo protocol (Dr. Patrick McNamara)
 
+[image]
+
 ## 11 Cardiovascular › 11.3 Patent Ductus Arteriosus › Treatment
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#treatment-1
 
@@ -3001,6 +3075,11 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
 | 59 | 2.4 | 3.0 | 3.5 |
 | 60 | 2.4 | 3.0 | 3.6 |
 
+## 12 Nutrition, Fluid and Electrolytes › 12.14 NTrainer Use Regional Guidelines › Workflow overview
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#workflow-overview
+
+[image]
+
 ## 12 Nutrition, Fluid and Electrolytes › 12.14 NTrainer Use Regional Guidelines › Criteria for initiating NTrainer therapy
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#criteria-for-initiating-ntrainer-therapy
 
@@ -3125,6 +3204,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#treatmen
 
 - Omeprazole 0.5-1.5mg/kg/dose once daily
 
+## 13 Gastroenterology › 13.3 Necrotizing Enterocolitis (NEC) › Moditified Bell’s criteria
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#moditified-bells-criteria
+
+[image]\
+
 ## 13 Gastroenterology › 13.3 Necrotizing Enterocolitis (NEC) › Workup
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#workup-1
 
@@ -3136,6 +3220,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#workup-1
 
 ## 13 Gastroenterology › 13.3 Necrotizing Enterocolitis (NEC) › Antibiotics Use
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#antibiotics-use
+
+[image]
 
 **Further Considerations**
 
@@ -3247,6 +3333,21 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#backgr
 Starting antibiotics for suspected bacterial sepsis is common in patients in the Neonatal Intensive Care Unit. Symptoms of bacterial sepsis are quite variable in NICU patients, ranging from poor improvement and isolated abnormal labs to fulminant shock. When antibiotics are started, the choice of antibiotics often varies between providers and among centers. Ultimately, most sepsis work ups are negative. When infections do occur, the bacteria that are likely to cause infections vary based on age, and not all bacteria are equally pathogenic. Furthermore, culture contamination is common, and the decision to treat likely contamination is based primarily on which antibiotic was initially started.
 
 To address these concerns, these guidelines were developed to help prioritize antibiotic choice based on the patient’s age, illness severity, and overall suspicion of an active infection with the ultimate goal to ensure that critically ill infants are covered broadly, while limiting antibiotic exposure in lower risk infants to preserve antibiotics for the future and decreasing the number of contaminants that are treated needlessly.
+
+## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU › Flowchart: Antibiotic Management in NICU Suspected Bacterial Sepsis
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#flowchart-antibiotic-management-in-nicu-suspected-bacterial-sepsis
+
+[image]
+
+## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU › Flowchart: Interpretation of Primary Blood Culture Results
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#flowchart-interpretation-of-primary-blood-culture-results
+
+[image]
+
+## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU › Flowchart: Interpretation of Follow-up Blood Culture Results
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#flowchart-interpretation-of-follow-up-blood-culture-results
+
+[image]
 
 ## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU › Further Considerations
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#further-considerations
@@ -3404,6 +3505,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#sec-cl
 
 - Order: PRN 0.9%NS flush 1.3mL (#59883)
 
+[image]
+
 ## 15 Infectious Disease › 15.5 Urinary Tract Infection › Lab studies
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#lab-studies
 
@@ -3504,10 +3607,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#hours-of-life
 
 Goal: Glucose ≥ 35 mg/dL
 
+[image]
+
 ## 16 Endocrinology › 16.1 Hypoglycemia › Family Care Center approach to hypoglycemia screening › 4-24 hours of life
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#hours-of-life-1
 
 Goal: Glucose ≥ 45 mg/dL
+
+[image]
 
 ## 16 Endocrinology › 16.1 Hypoglycemia › Critical labs for refractory hypoglycemia › Indication
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#indication
@@ -3998,6 +4105,13 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#discharge-crite
 **Additional Consideration:** Adequate weight gain as a proxy for withdrawal severity\
 **Follow-Up:** Primary care visit within 48 hours post-discharge to monitor weight and withdrawal signs
 
+## 17 Neurology › 17.1 Neonatal Abstinence Syndrome - Eat, Sleep, Console › Eat Sleep Console (ESC) Inpatient Protocol for Neonatal Abstinence Syndrome (NAS) - SCAL Regional Guidance › Algorithm
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#algorithm
+
+[image]
+
+[image]
+
 ## 17 Neurology › 17.1 Neonatal Abstinence Syndrome - Eat, Sleep, Console › Eat Sleep Console (ESC) Inpatient Protocol for Neonatal Abstinence Syndrome (NAS) - SCAL Regional Guidance › About This Resource
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#about-this-resource
 
@@ -4284,6 +4398,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-passive-coo
 
 Inside **ADMISSION NICU IP SCAL**
 
+[image]
+
 ## 17 Neurology › 17.4 Practice Guideline: Therapeutic Hypothermia › Passive Cooling Prior to the Initiation of Therapeutic Hypothermia (e.g., within Labor and Delivery)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#passive-cooling-prior-to-the-initiation-of-therapeutic-hypothermia-e.g.-within-labor-and-delivery
 
@@ -4493,6 +4609,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#consults
 - Consider pediatric neurology for non-traumatic MRI findings
 - Ophthalmology for retinal exam if concern for non-accidental trauma
 
+## 17 Neurology › 17.6 Management of Infant Fall › Clinical assessment and management › Order panel
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#order-panel
+
+[image]
+
 ## 17 Neurology › 17.6 Management of Infant Fall › References
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#references-1
 
@@ -4681,6 +4802,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#references
 - Khashu, Minesh, et al. 2022. “Current Understanding of Transfusion-Associated Necrotizing Enterocolitis: Review of Clinical and Experimental Studies and a Call for More Definitive Evidence.” *Newborn* 1 (1): 201–8.
 - Maria, Arti, Sheetal Agarwal, and Anu Sharma. 2017. “Acute Respiratory Distress Syndrome in a Neonate Due to Possible Transfusion-Related Acute Lung Injury.” *Asian Journal of Transfusion Science* 11 (2): 203–5.
 
+## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.5 Consent › Blood consent documentation
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#blood-consent-documentation
+
+[image]
+
 ## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.6 Procedure
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#procedure
 
@@ -4691,6 +4817,10 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#procedure
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#sec-order-prbc
 
 - The **BPAM BLOOD TRANSFUSION (ML) LESS THAN 20-30 KG BODY WEIGHT** Order Set should be used when ordering any blood product and will automatically prompt you to enter all the information needed, so you should not have to write a separate “transfuse” order.
+
+[image]
+
+[image]
 
 - In the case of emergency blood, we are still able to obtain uncross matched O- PRBCs from blood bank WITHOUT an order, within 20 minutes.
 - Please remember to document “Yes” under the Informed Consent Obtained section (unless it is an emergency transfusion and/or there was a reason that informed consent was not obtained). This is the section that the nurses reference to ensure that this has been done prior to beginning the transfusion and they document acknowledgement of that as well in their Flowsheet.
@@ -4866,6 +4996,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#abdominal-
   - **Gastroschisis** (Figure \@ref(fig:abd-wall-defect) Panel B) an open defect to the right of the umbilicus through which bowel protrudes.\
   - **Exstrophy of cloaca/bladder** (Figure \@ref(fig:abd-wall-defect) Panel C), in which there is a failure of septation of the early GU and GI tracts, and the urethra and bladder open onto the perineum.
 
+[image]
+
 - Gastroschisis Incidence of 4 per 10,000:
   - Male:female ratio: 1:1.\
   - 10-15% association with congenital anomalies such as cardiac (VSD), cleft palate, and intestinal atresia.\
@@ -4912,7 +5044,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#abdominal-
 - Describe the abdominal wall defect, including the location of the defect, size of the defect, contents of sac if present, umbilical cord size, vessels.\
 - When a massive abdominal wall defect (Figure \@ref(fig:massive-defect)) is associated with encephalocele, or amniotic bands, limb anomalies, and severe scoliosis, consider Limb-Body Wall defect, a lethal and sporadic disorder.
 
+[image]
+
 - When there is disruption of bladder, genital and anal anatomy, consider Exstrophy-Epispadias Complex (EEC) or Bladder-Exstrophy-Epispadias Complex (BEEC) or Omphalocele-Exstrophy-Imperforate Anus and Spine anomalies (OEIS) (Figure \@ref(fig:ECC-OEIS)).
+
+[image]
 
 **Orders**
 
@@ -5064,6 +5200,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#congenital
 **Orders**
 
 - Consider the type of cardiac lesion, extracardiac anomalies, and family history in determining the best testing strategy. See Table below:
+
+[image]
 
 Source: Geddes GC, et al.. *Curr Opin Pediatr*. 2018 Dec;30(6):707-713. [\[Link\]](10.1097/MOP.0000000000000682)
 
@@ -6403,6 +6541,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#microtia
   - Absent 4^th^ or 5^th^ fingers or toes: Miller syndrome.\
   - Thumb anomalies, anal malformation: Nager syndrome, Townes-Brocks syndrome.
 
+[image]
+
 **Orders**
 
 - Chromosome microarray.\
@@ -6564,6 +6704,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#oi
   - Sillence OI Types I and IV: usually mild to moderate forms and less common in the newborn period.\
   - Note that the disease severity can vary widely within a given type and even within an affected family.
 
+[image]
+
 **Family History**
 
 - Ask about consanguinity, fractures in other relatives, blue sclerae.\
@@ -6595,6 +6737,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#oi
 - Respiratory insufficiency, a paucity of spontaneous movement.\
 - Absence of other anomalies.\
 - Consider other disorders that cause fractures at birth: birth trauma, hypophosphatasia (hypercalcemia, low or absent alkaline phosphatase, decreased urinary phosphoethanolamine), rickets, fetal akinesia, and other conditions that cause muscle weakness.
+
+[image]
 
 **Orders**
 
@@ -6695,7 +6839,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#skeletal-d
 - The first concern in the immediate newborn period is *viability*, and the main issue is *respiratory insufficiency* due to small chest size and pulmonary hypoplasia or restriction.\
 - The illustration below offers useful terminology to describe primary sites of bony pathology on radiographs and clinical exam.
 
+[image]
+
 Source: Krakow D, Rimoin DL. The skeletal dysplasias. *Genet Med*. 2010;12(6):327-41.
+
+[image]
 
 **Family History**
 
@@ -7165,7 +7313,7 @@ Use the **PNL NICU EYE (ROP) EXAM MEDICATIONS IP SCAL** order set. Default medic
 - Try to target timing to be given 1–2 hours before the scheduled exam
 - You can order in advance, but remember to change the date/time
 
-[](Figures/rop-exam-orderset.png "Figure 21.1: ROP exam medications order set.")
+[[image]](Figures/rop-exam-orderset.png "Figure 21.1: ROP exam medications order set.")
 
 ## 21 VLBW/ELGAN/ELBW Infants › 21.5 Blood transfusion › For all ELGAN and ELBW infants
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#for-all-elgan-and-elbw-infants
@@ -7180,20 +7328,30 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#ordering-blood-produ
 
 1.  Use the BPAM orderset
 
-[](https://fschou-pxt.github.io/RMC-NICU-Manual/Figures/ordering-blood-product-step1.png)
+[[image]](Figures/ordering-blood-product-step1.png)
 
 2.  Select the blood product type
 
-[](https://fschou-pxt.github.io/RMC-NICU-Manual/Figures/ordering-blood-product-step2.png)
+[[image]](Figures/ordering-blood-product-step2.png)
 
 3.  Enter the volume and the duration
 
-[](https://fschou-pxt.github.io/RMC-NICU-Manual/Figures/ordering-blood-product-step3.png)
+[[image]](Figures/ordering-blood-product-step3.png)
 
 ## 21 VLBW/ELGAN/ELBW Infants › 21.6 Prophylaxis › Systemic fungal infection
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#systemic-fungal-infection
 
 Fluconazole 3mg/kg/dose twice weekly for 6 weeks (42 days) or until central line removed, whichever comes first.
+
+## 21 VLBW/ELGAN/ELBW Infants › 21.7 Neuroprotective Care › First 72 hrs of life
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#first-72-hrs-of-life
+
+[image]
+
+## 21 VLBW/ELGAN/ELBW Infants › 21.7 Neuroprotective Care › 4 to 7 days of life
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#to-7-days-of-life
+
+[image]
 
 # 22 Delivery Room Management
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/DR.html
@@ -9028,12 +9186,27 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-
 
 Shared dot phrase (Dr. Kasee Houston) containing the NICU PT handout for handling and positioning of a newborn humerus fracture. Add to discharge Patient Instructions in the Discharge Navigator.
 
+[image]
+
+[image]
+
 [Text](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-humerus-fracture)
 
 ## Appendix B — Dot Phrases › B.2 General Care › General Documentation › Conditional discharge note (FCC)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-fcc-conditional-discharge
 
-Infant may be discharged home today after \*\*\* once all of the following criteria have been met: A. Vital Signs are within Normal Limits (Temp 36.5–37.9 °C, HR 100–160, RR less than 60) B. Infant has voided and passed stool C. Infant has passed CCHD screening with O2 sat greater than 94% D. Newborn screening is complete E. Hearing Screening is complete; if referred, CMV buccal swab has been obtained and outpatient audiology follow-up has been scheduled F. Hepatitis B vaccine has been given, and if indicated, HBIG has been given. If parents refused hep B vaccine, declination waiver has been signed. G. Transcutaneous bilirubin levels have not exceeded the threshold to require a serum bili level H. If infant is being evaluated for hypoglycemia, all blood sugars have been completed and infant has not required any dextrose gel OR infant has had 3 serial glucose POCT levels greater than or equal to 45 mg/dL. I. Infant has had a recent repeat weight, with ≤ 6% weight loss from birth weight on day 1 or ≤ 8% weight loss from birth weight on day 2 or 3. If breastfeeding, a LATCH score of 8 or more is documented and mother has demonstrated ability to latch baby independently OR mother has worked with lactation and a discharge feeding plan has been documented. J. Follow-up appointment(s) scheduled per unit policy: 1) in Great Starts in 2 days, 2) at 3 weeks with PCP, and 3) at 2 months with PCP. If above criteria have not been met then please cancel discharge and notify MD on call.
+Infant may be discharged home today after \*\*\* once all of the following criteria have been met:\
+A. Vital Signs are within Normal Limits (Temp 36.5–37.9 °C, HR 100–160, RR less than 60)\
+B. Infant has voided and passed stool\
+C. Infant has passed CCHD screening with O2 sat greater than 94%\
+D. Newborn screening is complete\
+E. Hearing Screening is complete; if referred, CMV buccal swab has been obtained and outpatient audiology follow-up has been scheduled\
+F. Hepatitis B vaccine has been given, and if indicated, HBIG has been given. If parents refused hep B vaccine, declination waiver has been signed.\
+G. Transcutaneous bilirubin levels have not exceeded the threshold to require a serum bili level\
+H. If infant is being evaluated for hypoglycemia, all blood sugars have been completed and infant has not required any dextrose gel OR infant has had 3 serial glucose POCT levels greater than or equal to 45 mg/dL.\
+I. Infant has had a recent repeat weight, with ≤ 6% weight loss from birth weight on day 1 or ≤ 8% weight loss from birth weight on day 2 or 3. If breastfeeding, a LATCH score of 8 or more is documented and mother has demonstrated ability to latch baby independently OR mother has worked with lactation and a discharge feeding plan has been documented.\
+J. Follow-up appointment(s) scheduled per unit policy: 1) in Great Starts in 2 days, 2) at 3 weeks with PCP, and 3) at 2 months with PCP.\
+If above criteria have not been met then please cancel discharge and notify MD on call.
 
 [Text](https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-agreement-fcc)
 

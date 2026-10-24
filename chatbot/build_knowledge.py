@@ -26,9 +26,9 @@ OUT = os.path.join(ROOT, "chatbot", "nicu-manual-knowledge.md")
 BASE_URL = "https://fschou-pxt.github.io/RMC-NICU-Manual/"
 MAX_LEVEL = 4  # deeper sections are folded into their level-4 parent
 
-# Lua filter: mark each section start, drop images and other wrappers
+# Lua filter: mark each section start, mark images, drop other wrappers
 LUA = r"""
-function Image(el) return {} end
+function Image(el) return pandoc.RawInline("markdown", "[image]") end  -- marks where a figure sits (text-only export)
 function Span(el)
   if el.classes:includes('screen-reader-only') then return {} end
 end

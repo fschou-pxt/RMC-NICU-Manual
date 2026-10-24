@@ -481,6 +481,7 @@ export function renderMd(md) {
       continue;
     }
     closeTable();
+    if (line.trim() === "[image]") { closeList(); out.push('<p class="nc-note">[Image: open in manual]</p>'); continue; }
     const h = line.match(/^(#{1,6})\s+(.*)$/);
     if (h) { closeList(); out.push(`<p class="nc-h">${inline(h[2])}</p>`); continue; }
     const ul = line.match(/^\s*[-*•]\s+(.*)$/), ol = line.match(/^\s*\d+[.)]\s+(.*)$/);
