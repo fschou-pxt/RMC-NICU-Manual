@@ -15,6 +15,7 @@ import Update from "../../components/Update.astro";
 
 <Home
   editor="Fu-Sheng Chou, MD PhD"
+  donate="https://www.paypal.com/donate/?hosted_button_id=8XWMV5GD7FJVE"
   authors={["Michael Chang, MD", "Anupama Chundu, MD", "Fu-Sheng Chou, MD PhD", "Michael Doti, MD", "Giulia M. Faison, MD MA", "Beverly Giang, MD", "Kasee L. Houston, MD", "Achyuth Sriram, MD", "James A. Washington III, MD"]}
 >
 <Fragment slot="news">
@@ -59,19 +60,4 @@ The goal of this handbook is to centralize clinical protocols and guidelines app
 
 <p class="credit">Site design, the chat assistant, and the app were built with Claude (Anthropic's AI) under Dr. Chou's direction. Clinical content is written and approved by the authors.</p>
 
-<div class="donate">
-<div id="donate-button-container"><div id="donate-button"></div></div>
-<script is:inline src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-<script is:inline>{`
-PayPal.Donation.Button({
-  env: 'production',
-  hosted_button_id: '8XWMV5GD7FJVE',
-  image: {
-    src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-    alt: 'Donate with PayPal button',
-    title: 'PayPal - The safer, easier way to pay online!',
-  }
-}).render('#donate-button');
-`}</script>
-</div>
 </Home>

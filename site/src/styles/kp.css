@@ -218,14 +218,21 @@
 .part li a { display: flex; gap: 0.6rem; padding: 0.4rem 0.5rem; border-radius: 0.4rem; text-decoration: none; color: var(--sl-color-gray-1); font-size: 0.93rem; line-height: 1.4; }
 .part li a:hover { background: var(--sl-color-gray-6); color: var(--sl-color-accent-high); }
 .part .n { min-width: 1.4rem; color: var(--sl-color-gray-4); font-variant-numeric: tabular-nums; font-size: 0.85rem; padding-top: 0.08rem; }
-.home-about { max-width: 46rem; }
+/* about: text and donate on the left, editor and authors on the right */
+.home-about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem); gap: 2.5rem; align-items: start; }
 .home-about h2 { font-size: 1.35rem; margin: 0 0 0.75rem; border: 0; padding: 0; }
-.home-about .credit { font-size: 0.85rem; color: var(--sl-color-gray-3); border-top: 1px solid var(--sl-color-gray-5); padding-top: 1rem; margin-top: 1.5rem; }
-.home-about .people { margin-top: 1rem; font-size: 0.92rem; }
-.home-about .people summary { cursor: pointer; color: var(--sl-color-gray-2); font-weight: 600; }
-.home-about .people ul { columns: 2; padding-left: 1.1rem; } .home-about .muted { color: var(--sl-color-gray-3); font-size: 0.82rem; margin: 0.6rem 0 0.25rem; }
-.home-about .donate { margin-top: 1.25rem; }
-@media (max-width: 40rem) { .home-hero { padding-top: 1.5rem; } .home { gap: 2.25rem; } .home-about .people ul { columns: 1; } }
+.home-about .about-text > * + * { margin-top: 0.75rem; }
+.home-about .credit { font-size: 0.85rem; color: var(--sl-color-gray-3); margin-top: 1rem !important; }
+.home-about .btn.donate { margin-top: 1.25rem !important; }
+.home-about .btn.donate svg { color: #c2185b; }
+.about-people { padding: 1.1rem 1.25rem; border: 1px solid var(--sl-color-gray-5); border-radius: var(--kp-radius); background: var(--kp-surface); }
+.about-people p, .about-people ul { margin: 0 !important; }
+.about-people .role { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.09em; font-weight: 700; color: var(--sl-color-gray-3); }
+.about-people .editor { font-weight: 600; color: var(--sl-color-white); margin: 0.25rem 0 1rem !important; }
+.about-people ul { list-style: none; padding: 0 !important; margin-top: 0.35rem !important; display: grid; gap: 0.3rem; }
+.about-people li { margin: 0 !important; font-size: 0.92rem; color: var(--sl-color-gray-2); }
+@media (max-width: 50rem) { .home-about { grid-template-columns: 1fr; gap: 1.5rem; } }
+@media (max-width: 40rem) { .home-hero { padding-top: 1.5rem; } .home { gap: 2.25rem; } }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 /* Starlight spaces out consecutive content blocks; inside the home grids every card starts level */
 .home :is(.quick-grid, .news-list, .parts-list) > * { margin-top: 0 !important; }
@@ -300,3 +307,4 @@
 /* breathing room under the search box (the home-section rule above resets top margins) */
 .home .home-hero .home-actions { margin-top: 1.5rem; }
 @media (max-width: 40rem) { .home .home-hero .home-actions { margin-top: 1.1rem; } }
+.home-about .sl-anchor-link { display: none; }

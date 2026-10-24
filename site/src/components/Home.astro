@@ -28,7 +28,7 @@ for (const ch of chapters) {
   if (!p) parts.push((p = { name: ch.part, items: [] }));
   p.items.push({ slug: ch.slug, title: titleOf(ch.slug), number: ch.number });
 }
-const { editor, authors = [] } = Astro.props;
+const { editor, authors = [], donate } = Astro.props;
 ---
 
 <div class="home">
@@ -93,12 +93,16 @@ const { editor, authors = [] } = Astro.props;
   </section>
 
   <section class="home-about">
-    <slot />
-    <details class="people">
-      <summary>Edited by {editor} · {authors.length} contributors</summary>
-      <p class="muted">Contributors (alphabetical)</p>
+    <div class="about-text">
+      <slot />
+      <a class="btn donate" href={donate} target="_blank" rel="noopener"><Icon name="heart" />Donate</a>
+    </div>
+    <aside class="about-people" aria-label="Editor and authors">
+      <p class="role">Editor</p>
+      <p class="editor">{editor}</p>
+      <p class="role">Authors</p>
       <ul>{authors.map((a) => <li>{a}</li>)}</ul>
-    </details>
+    </aside>
   </section>
 </div>
 
