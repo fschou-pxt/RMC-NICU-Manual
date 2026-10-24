@@ -1,0 +1,73 @@
+<!-- Page enhancements for the KP theme: criteria chips, jump-to chips, home-page contributors line -->
+<script>
+(function () {
+  var main = document.querySelector("main#quarto-document-content");
+  if (!main) return;
+
+  // ordered lists that start past 1 keep their numbering in the step circles
+  main.querySelectorAll("ol[start]").forEach(function (ol) {
+    ol.style.counterReset = "kp-step " + (parseInt(ol.getAttribute("start"), 10) - 1);
+  });
+
+  // "Either/Any of the following:" + short items -> chips joined by OR ("All of the following" -> AND)
+  main.querySelectorAll("p").forEach(function (p) {
+    var m = p.textContent.trim().match(/^(either|any|all)\b.*\b(following|criteria)\b.*:$/i);
+    var ul = p.nextElementSibling;
+    if (!m || !ul || ul.tagName !== "UL") return;
+    var items = Array.prototype.slice.call(ul.children);
+    var short = items.length >= 2 && items.length <= 6 && items.every(function (li) {
+      return !li.querySelector("ul,ol,table") && li.textContent.trim().length <= 60;
+    });
+    if (!short) return;
+    ul.classList.add("kp-chips");
+    var join = m[1].toLowerCase() === "all" ? "and" : "or";
+    items.slice(1).forEach(function (li) { // a plain "or"/"and" between chips
+      var sep = document.createElement("li");
+      sep.className = "kp-join"; sep.setAttribute("aria-hidden", "true"); sep.textContent = join;
+      ul.insertBefore(sep, li);
+    });
+  });
+
+  // jump-to chips for chapters with several sections (visible when the side table of contents is hidden)
+  if (!document.querySelector(".kp-hero")) {
+    var heads = Array.prototype.slice.call(main.querySelectorAll("section.level2 > h2"));
+    if (heads.length >= 3) {
+      var nav = document.createElement("nav");
+      nav.className = "kp-jump";
+      nav.setAttribute("aria-label", "Jump to section");
+      heads.forEach(function (h) {
+        var id = h.parentElement.id || h.id;
+        if (!id) return;
+        var a = document.createElement("a");
+        a.href = "#" + id;
+        a.textContent = h.textContent.replace(/^\s*[\d.]+\s+/, "").trim();
+        nav.appendChild(a);
+      });
+      var header = document.querySelector("#title-block-header");
+      if (header) header.after(nav);
+    }
+  }
+
+  // home page: "Edited by … · N contributors" that expands to the full alphabetical list
+  if (document.querySelector(".kp-hero")) {
+    var meta = document.querySelector(".quarto-title-meta");
+    var sub = document.querySelector(".quarto-title p.subtitle");
+    if (!meta || !sub) return;
+    var people = Array.prototype.slice.call(meta.querySelectorAll(".quarto-title-meta-contents p"))
+      .map(function (p) { return p.textContent.trim(); })
+      .filter(function (t) { return t && !/^\(alphabetical\)$/i.test(t) && !/updated|\d{4}$/i.test(t); });
+    var updated = "";
+    meta.querySelectorAll(".quarto-title-meta-contents p").forEach(function (p) {
+      if (/updated/i.test(p.textContent)) updated = p.textContent.replace(/last updated on/i, "").trim();
+    });
+    var d = document.createElement("details");
+    d.className = "kp-authors";
+    d.innerHTML = "<summary>Edited by <b></b> · " + people.length + " contributors" +
+      (updated ? " · Updated " + updated : "") + "</summary><p></p>";
+    d.querySelector("b").textContent = sub.textContent.trim();
+    d.querySelector("p").textContent = people.join(" · ") + " (alphabetical)";
+    sub.after(d);
+    document.body.classList.add("kp-has-authors");
+  }
+})();
+</script>

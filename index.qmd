@@ -109,4 +109,8 @@ This handbook is arranged into six parts:
 * Health Maintenance
 * Appendices
 
+::: {.kp-credit}
+Site design, the chat assistant, and the app were built with Claude (Anthropic's AI) under Dr. Chou's direction. Clinical content is written and approved by the authors.
+:::
+
 ![Kaiser Permanente Riverside Medical Center](https://api.coarchitects.com/wp-content/uploads/2022/07/18030_000_N4_print-1536x768.jpg)

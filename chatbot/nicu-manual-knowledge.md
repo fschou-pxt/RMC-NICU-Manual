@@ -6,8 +6,8 @@ Each section starts with a '## breadcrumb' line and its 'URL:' on the live site.
 # KP Riverside Neonatal ICU Manual
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html
 
-## KP Riverside Neonatal ICU Manual
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html#section
+## KP Riverside Neonatal ICU Manual › Home
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html#home
 
 KP Riverside · Neonatal ICU
 
@@ -51,7 +51,7 @@ NEW UPDATE - Apr 9, 2026
 - Antibiotic Management of Suspected Sepsis in the NICU
   - [Antibiotic Management of Suspected Sepsis in the NICU](https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#sec-antibiotics-sepsis)
 
-## KP Riverside Neonatal ICU Manual › About this manual
+## KP Riverside Neonatal ICU Manual › Home › About this manual
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html#about-this-manual
 
 The goal of this handbook is to centralize clinical protocols and guidelines approved by the neonatologists and NICU staff in one place for easy reference.
@@ -64,6 +64,8 @@ This handbook is arranged into six parts:
 - Special Considerations
 - Health Maintenance
 - Appendices
+
+Site design, the chat assistant, and the app were built with Claude (Anthropic’s AI) under Dr. Chou’s direction. Clinical content is written and approved by the authors.
 
 # 1 Telemedicine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/telemedicine.html

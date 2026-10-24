@@ -21,9 +21,36 @@ body.quarto-dark {
 /* reading rhythm */
 #quarto-document-content { line-height: 1.65; }
 main h1.title { font-size: 2rem; letter-spacing: -.01em; }
-main h2 { margin-top: 2.4rem; padding-bottom: .4rem; border-bottom: 1px solid var(--kp-border); letter-spacing: -.005em; }
-main h3 { margin-top: 1.8rem; }
-main h4 { margin-top: 1.4rem; }
+main h2 { margin-top: 2.6rem; padding: .1rem 0 .1rem .7rem; border-left: 4px solid var(--kp-navy); border-bottom: 0; border-radius: 0; letter-spacing: -.005em; }
+body.quarto-dark main h2 { border-left-color: #7cc0f5; }
+main h3 { margin-top: 1.9rem; color: var(--kp-navy); }
+body.quarto-dark main h3 { color: #a9d4f7; }
+main h4 { margin-top: 1.5rem; font-size: .82rem; text-transform: uppercase; letter-spacing: .07em; color: var(--kp-muted); }
+main h5 { font-size: .95rem; }
+
+/* numbered lists read as steps */
+main ol:not(.footnotes ol):not(.breadcrumb):not(.callout ol.kp-plain) { list-style: none; counter-reset: kp-step; padding-left: 0; }
+main ol:not(.footnotes ol):not(.breadcrumb) > li { counter-increment: kp-step; position: relative; padding-left: 2.25rem; margin: .5rem 0; }
+main ol:not(.footnotes ol):not(.breadcrumb) > li::before {
+  content: counter(kp-step); position: absolute; left: 0; top: .12rem; width: 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: var(--kp-navy); color: #fff; font-size: .8rem; font-weight: 600; display: flex; align-items: center; justify-content: center;
+}
+body.quarto-dark main ol:not(.footnotes ol):not(.breadcrumb) > li::before { background: #2f6ea8; }
+main ol ol > li::before { width: 1.3rem; height: 1.3rem; font-size: .72rem; background: var(--kp-tint); color: var(--kp-navy); }
+main ol ol > li { padding-left: 1.9rem; }
+/* bullets: small navy dots */
+main ul:not(.kp-chips) > li::marker { color: var(--kp-blue); }
+
+/* "Either/Any of the following" lists with short items become chips (theme/enhance.html marks them) */
+main ul.kp-chips { list-style: none; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin: .4rem 0 1rem; }
+main ul.kp-chips > li { margin: 0; padding: .35rem .8rem; border: 1px solid var(--kp-border); border-radius: 10px; background: var(--kp-surface); font-weight: 500; }
+main ul.kp-chips > li.kp-join { border: 0; background: none; padding: 0 .1rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--kp-muted); }
+
+/* jump-to chips at the top of each chapter (shown when the side table of contents is hidden) */
+.kp-jump { display: none; gap: .4rem; overflow-x: auto; padding: .2rem 0 .8rem; margin-bottom: .6rem; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.kp-jump a { flex: 0 0 auto; font-size: .82rem; padding: .3rem .75rem; border-radius: 999px; border: 1px solid var(--kp-border); background: var(--kp-card); color: inherit; white-space: nowrap; }
+.kp-jump a:hover { border-color: var(--kp-blue); text-decoration: none; }
+@media (max-width: 991.98px) { .kp-jump { display: flex; } }
 main img { max-width: 100%; height: auto; }
 
 /* sidebar: quieter sections, pill-shaped active item */
@@ -120,3 +147,14 @@ body:has(.kp-hero) .quarto-title-meta-contents p:nth-child(n+3)::before { conten
   .kp-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
   .kp-card { padding: .75rem .8rem; }
 }
+
+/* home page contributors line (theme/enhance.html builds it from the book's author list) */
+body.kp-has-authors .quarto-title-meta, body.kp-has-authors .quarto-title p.subtitle { display: none !important; }
+.kp-authors { margin: .5rem 0 1rem; color: var(--kp-muted); font-size: .92rem; }
+.kp-authors summary { cursor: pointer; list-style: none; }
+.kp-authors summary::-webkit-details-marker { display: none; }
+.kp-authors summary::after { content: " ▸"; color: var(--kp-blue); }
+.kp-authors[open] summary::after { content: " ▾"; }
+.kp-authors summary b { color: var(--bs-body-color); font-weight: 600; }
+.kp-authors p { margin: .5rem 0 0; padding: .7rem .9rem; border-radius: 10px; background: var(--kp-surface); border: 1px solid var(--kp-border); line-height: 1.6; }
+.kp-credit { font-size: .85rem; color: var(--kp-muted); }

@@ -21,6 +21,7 @@ book:
     - Giulia M. Faison, MD MA
     - Beverly Giang, MD
     - Kasee L. Houston, MD
+    - Achyuth Sriram, MD
     - James A. Washington III, MD
   date: last-modified
   date-format: "[Last Updated on] MMMM DD, YYYY"
@@ -76,6 +77,7 @@ format:
     css: [custom.css, theme/kp.css]
     include-in-header: pwa/head.html
     include-after-body:
+      - theme/enhance.html
       - chatbot/widget.html
       - pwa/register.html
     page-break-after: always
