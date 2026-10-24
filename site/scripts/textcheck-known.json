@@ -6,5 +6,12 @@
       "site": "Finnegan Score Dose of Oral Morphine Relative Dose",
       "reason": "Display fix: the CSV header cell is a Markdown link, [Finnegan Score](#nas); Quarto's table printed the raw symbols, the new site shows the link. No wording changed."
     }
+  ],
+  "dotPhrases": [
+    {
+      "quarto": "NICU Operations",
+      "site": "",
+      "reason": "Empty heading removed at the editor's request (2026-10-24): the Dot Phrases appendix had a \"NICU Operations\" heading with no phrases under it."
+    }
   ]
 }
