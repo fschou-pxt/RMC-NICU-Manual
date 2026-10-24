@@ -288,3 +288,6 @@
 .evidence .ev-refs { counter-reset: none; padding-left: 1.4rem; list-style: decimal; font-size: 0.82rem; color: var(--sl-color-gray-2); }
 .evidence .ev-refs > li { padding-left: 0.2rem; min-height: 0; margin: 0.25rem 0; } .evidence .ev-refs > li::before { display: none; }
 .evidence .ev-fine { font-size: 0.8rem; color: var(--sl-color-gray-3); margin-top: 0.75rem !important; }
+/* breathing room under the search box (the home-section rule above resets top margins) */
+.home .home-hero .home-actions { margin-top: 1.5rem; }
+@media (max-width: 40rem) { .home .home-hero .home-actions { margin-top: 1.1rem; } }
