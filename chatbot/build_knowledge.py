@@ -200,6 +200,12 @@ def warn_unlabeled_lists():
 
 
 def main():
+    # The synced project folder can leave rendered chapters in the project root instead of _book/;
+    # publishing that _book would take those chapters offline, so stop here instead.
+    missing = [n for n in chapter_files() if not os.path.exists(os.path.join(BOOK, n + ".html"))]
+    if missing:
+        raise SystemExit("STOP: these chapters are missing from _book/ (render incomplete): "
+                         + ", ".join(missing) + "\nRe-run `quarto render`; do not publish yet.")
     warn_unlabeled_lists()
     pandoc = find_pandoc()
     lua_path = os.path.join(tempfile.gettempdir(), "nicu_sections.lua")  # outside the synced folder
