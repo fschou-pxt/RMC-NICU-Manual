@@ -94,8 +94,8 @@ export function buildPlan({ protocol, bw, ga, fort, milk, cream, day1 }) {
         kcalText = `Formula ${f} kcal/oz or EBM ${tf >= 60 ? f : 20} kcal/oz milk`;
       }
     }
-    // e.g. "0.5mL cream, 9mL (60ml/kg/d), 26kcal/oz": the rate follows the volume
-    return { date: addDays(day1, i), step: `Day${i + 1}`, plan: [creamText, volText, `(${tf}ml/kg/d),`, kcalText].join(" ").trim() };
+    // e.g. "0.5mL cream, 9mL (60ml/kg/d) 26kcal/oz": the rate follows the volume
+    return { date: addDays(day1, i), step: `Day${i + 1}`, plan: [creamText, volText, `(${tf}ml/kg/d)`, kcalText].join(" ").trim() };
   });
 }
 
