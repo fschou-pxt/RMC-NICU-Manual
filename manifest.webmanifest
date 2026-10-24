@@ -2,7 +2,7 @@
   "name": "KP Riverside NICU Manual",
   "short_name": "NICU Manual",
   "description": "KP Riverside Neonatal ICU Manual: unit protocols, guidelines, and dot phrases.",
-  "start_url": "./app.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -29,7 +29,7 @@
     {
       "name": "Ask the manual",
       "short_name": "Ask",
-      "url": "./app.html#ask",
+      "url": "./ask",
       "icons": [
         {
           "src": "pwa/icon-192.png",
@@ -38,20 +38,9 @@
       ]
     },
     {
-      "name": "Browse the manual",
-      "short_name": "Manual",
-      "url": "./app.html#manual",
-      "icons": [
-        {
-          "src": "pwa/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
-      "name": "Feeding advancement plan",
-      "short_name": "Feeding",
-      "url": "./app.html#feeding",
+      "name": "Dot phrases",
+      "short_name": "Dot phrases",
+      "url": "./dotPhrases",
       "icons": [
         {
           "src": "pwa/icon-192.png",
@@ -62,7 +51,18 @@
     {
       "name": "Phone numbers",
       "short_name": "Phones",
-      "url": "./app.html#phones",
+      "url": "./phone-numbers",
+      "icons": [
+        {
+          "src": "pwa/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Feeding advancement plan",
+      "short_name": "Feeding",
+      "url": "./calculators#feeding",
       "icons": [
         {
           "src": "pwa/icon-192.png",

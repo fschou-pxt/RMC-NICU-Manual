@@ -95,8 +95,8 @@ footer b { color: #b3261e; }
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 <script>
-// The app's address on this site (the live manual, or wherever this page is served from)
-const APP_URL = new URL("app.html", location.href).href.replace(/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//, "https://fschou-pxt.github.io/RMC-NICU-Manual/");
+// The manual's address (the live manual, or wherever this page is served from); it installs from any page
+const APP_URL = new URL("./", location.href).href.replace(/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//, "https://fschou-pxt.github.io/RMC-NICU-Manual/");
 document.getElementById("url").textContent = APP_URL.replace(/^https:\/\//, "");
 try {
   const qr = qrcode(0, "M");

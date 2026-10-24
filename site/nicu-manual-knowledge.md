@@ -44,15 +44,6 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/index.html#about-this-manual
 
 The goal of this handbook is to centralize clinical protocols and guidelines approved by the neonatologists and NICU staff in one place for easy reference.
 
-This handbook is arranged into six parts:
-
-- NICU Operations
-- General Care
-- System-Based Protocols and Guidelines
-- Special Considerations
-- Health Maintenance
-- Appendices
-
 # 1 Telemedicine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/telemedicine.html
 

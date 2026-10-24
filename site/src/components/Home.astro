@@ -17,7 +17,7 @@ const quick = [
   ["heart", "VLBW / ELGAN", "Thermoregulation, screening, ROP", "VLBW"],
   ["home", "Discharge", "Criteria, HRIF, navigator", "discharge"],
   ["people", "Agreements", "Radiology, Peds–Neo FCC", "operations#sec-interdept-agreements"],
-  ["calculator", "Feeding protocol", "Advancement calculator", "app.html#feeding"],
+  ["calculator", "Calculators", "Feeding plan, GIR, fluids, and more", "calculators"],
 ];
 
 // the manual's parts, in book order (titles read from each chapter)
@@ -42,8 +42,12 @@ const { editor, authors = [], donate } = Astro.props;
       <Icon name="search" /><span class="long">Search protocols, doses, phone numbers…</span><span class="short">Search the manual</span><kbd>⌘K</kbd>
     </button>
     <div class="home-actions">
-      <a class="btn primary" href={href("app.html#ask")}><Icon name="chat" /><span>Ask<span class="wide"> the manual</span></span></a>
+      <a class="btn primary" href={href("ask")}><Icon name="chat" /><span>Ask<span class="wide"> the manual</span></span></a>
     </div>
+    <nav class="home-recent" aria-label="Recently viewed" hidden>
+      <span class="lab">Recent</span>
+      <div class="chips"></div>
+    </nav>
   </section>
 
   <section>
@@ -61,7 +65,7 @@ const { editor, authors = [], donate } = Astro.props;
     </div>
   </section>
 
-  <section class="home-news">
+  <section class="home-news" data-pagefind-ignore>
     <h2 class="label">What's new</h2>
     <div class="news-list"><slot name="news" /></div>
   </section>
@@ -95,7 +99,10 @@ const { editor, authors = [], donate } = Astro.props;
   <section class="home-about">
     <div class="about-text">
       <slot />
-      <a class="btn donate" href={donate} target="_blank" rel="noopener"><Icon name="heart" />Donate</a>
+      <div class="about-actions">
+        <a class="btn donate" href={donate} target="_blank" rel="noopener"><Icon name="heart" />Donate</a>
+        <a class="btn" href={href("poster.html")} target="_blank" rel="noopener"><Icon name="phone" />Install poster (QR code)</a>
+      </div>
     </div>
     <aside class="about-people" aria-label="Editor and authors">
       <p class="role">Editor</p>
@@ -107,10 +114,31 @@ const { editor, authors = [], donate } = Astro.props;
 </div>
 
 <script>
-  // the hero search box opens the site search
+  // the hero search box opens the site search, after this click is done (a click that is still
+  // bubbling would land outside the new dialog and close it at once)
   document.querySelector("[data-home-search]")?.addEventListener("click", () => {
-    document.querySelector("site-search button[data-open-modal]")?.click();
+    setTimeout(() => document.querySelector<HTMLButtonElement>("site-search button[data-open-modal]")?.click());
   });
+  // Recently viewed on this device (chapters read, and sections opened from Ask); nothing is shown on a first visit
+  const LIVE = "https://fschou-pxt.github.io/RMC-NICU-Manual/";
+  const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+  const recentNav = document.querySelector<HTMLElement>(".home-recent");
+  try {
+    const recent = (JSON.parse(localStorage.getItem("nicuChat.recent") || "[]") as { title: string; url: string }[])
+      .filter((r) => r.url?.startsWith(LIVE)).slice(0, 6);
+    if (recentNav && recent.length) {
+      const chips = recentNav.querySelector(".chips")!;
+      for (const r of recent) {
+        const a = document.createElement("a");
+        a.href = base + r.url.slice(LIVE.length).replace(/\.html(?=#|$)/, "");
+        const parts = r.title.replace(/^(\d+|Appendix [A-Z] —)\s+/, "").split(" › ").map((x) => x.replace(/:$/, ""));
+        a.textContent = parts.length > 1 ? `${parts[0]} › ${parts[parts.length - 1]}` : parts[0];
+        a.title = r.title.replace(/^(\d+|Appendix [A-Z] —)\s+/, "");
+        chips.append(a);
+      }
+      recentNav.hidden = false;
+    }
+  } catch {}
   // What's new colors go by month: newest month red, next yellow, next blue (older ones are not shown)
   const tones = ["red", "yellow", "blue"];
   const months = [];

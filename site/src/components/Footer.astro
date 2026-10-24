@@ -1,10 +1,12 @@
 ---
-// Starlight's footer, plus the parts every page shares with the old manual: the chat bubble
+// Starlight's footer, plus the parts every page shares with the old manual: the chat bubble and the phone tab bar
 // (chatbot/widget.html, built on chatbot/engine.js) and the offline service worker with its banner
 // (pwa/register.html). Both files are read at build time, so they stay the single source.
+// PageTools adds search and copy/call to the dot phrase and phone pages.
 import fs from "node:fs";
 import path from "node:path";
 import Default from "@astrojs/starlight/components/Footer.astro";
+import PageTools from "./PageTools.astro";
 
 // the build runs in site/; the shared files live in the project folder above it
 const read = (p) => fs.readFileSync(path.resolve(process.cwd(), "..", p), "utf8");
@@ -13,5 +15,6 @@ const register = read("pwa/register.html");
 ---
 
 <Default {...Astro.props}><slot /></Default>
+<PageTools />
 <Fragment set:html={widget} />
 <Fragment set:html={register} />

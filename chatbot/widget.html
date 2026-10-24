@@ -87,8 +87,8 @@ mark.nicu-hl { background: #ffe066; color: inherit; padding: 0 1px; border-radiu
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-ext-banner { background: #3a3018; color: #f3d48a; }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-neo { background: #2a2416; border-color: #6b5420; }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-err { background: #3a1d1d; border-color: #6b2c2c; color: #f5b5b0; }
-/* installed app: book pages get the app's bottom tab bar instead of the chat bubble */
-.nc-tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1040; display: flex; background: #fff;
+/* phones (and the installed app on a phone): a bottom tab bar to the site's main pages instead of the chat bubble */
+.nc-tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1040; display: none; background: #fff;
   border-top: 1px solid #d9e1e7; padding-bottom: env(safe-area-inset-bottom); }
 .nc-tabbar a { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 7px 0 8px;
   font-size: 11px; color: #6b7280; text-decoration: none; }
@@ -97,14 +97,20 @@ mark.nicu-hl { background: #ffe066; color: inherit; padding: 0 1px; border-radiu
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-tabbar { background: #121c29; border-top-color: #263445; }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-tabbar a { color: #9fb0c3; }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-tabbar a.on { color: #7cc0f5; }
-body.nc-app-mode #nicu-chat-root .nc-launch { display: none; }
-body.nc-app-mode { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
+@media (max-width: 50rem) {
+  .nc-has-tabbar .nc-tabbar { display: flex; }
+  .nc-has-tabbar #nicu-chat-root .nc-launch { display: none; }
+  body.nc-has-tabbar { padding-bottom: calc(60px + env(safe-area-inset-bottom)); --nc-tabbar-h: calc(60px + env(safe-area-inset-bottom)); }
+  .nc-has-tabbar .sidebar-pane { bottom: var(--nc-tabbar-h); } /* Starlight's phone menu ends above the tab bar */
+}
+/* the Ask page is the chat itself */
+body:has(.ask-app) #nicu-chat-root { display: none; }
 @media print { #nicu-chat-root, .nc-tabbar { display: none; } }
 </style>
 <script type="module">
 // Page widget: the chat bubble on every manual page. The engine (search, prompts, model calls,
 // rendering) is shared with the app in chatbot/engine.js.
-import { K, S, L, LIVE_BASE, store, readJSON, localize, settings, hasKey, loadHistory, saveHistory,
+import { K, S, L, LIVE_BASE, ROOT, store, readJSON, localize, settings, hasKey, loadHistory, saveHistory,
   answerQuestion, answerOutside, renderMessage, renderSettings, highlightIn, clearHighlights,
   loadSections, retrieve, expandQuery, squash, esc, currentModel, shortLabel, phiNoticeHTML, phiConfirm } from "./chatbot/engine.js";
 
@@ -137,6 +143,7 @@ function jumpTo(src) {
 
 // ---------- UI ----------
 const root = document.getElementById("nicu-chat-root");
+document.body.append(root); // a direct child of <body>: page layouts with their own layers can't cover the bubble
 root.innerHTML = `
   <button class="nc-launch" type="button" aria-label="Ask the NICU Manual" title="Ask the NICU Manual">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
@@ -147,8 +154,8 @@ root.innerHTML = `
       <button class="nc-icon" data-act="smaller" type="button" title="Smaller text" aria-label="Smaller text">A−</button>
       <button class="nc-icon" data-act="bigger" type="button" title="Larger text" aria-label="Larger text">A+</button>
       <button class="nc-icon" data-act="max" type="button"></button>
-      <button class="nc-icon" data-act="new" type="button" title="New chat">New</button>
-      <button class="nc-icon" data-act="settings" type="button" title="Settings">⚙</button>
+      <button class="nc-icon" data-act="new" type="button" title="New chat" aria-label="New chat">New</button>
+      <button class="nc-icon" data-act="settings" type="button" title="Settings" aria-label="Settings">⚙</button>
       <button class="nc-icon" data-act="close" type="button" title="Close" aria-label="Close">✕</button>
     </div>
     <div class="nc-body"></div>
@@ -231,6 +238,9 @@ root.addEventListener("click", async (ev) => {
 input.addEventListener("keydown", (ev) => {
   if (ev.key === "Enter" && !ev.shiftKey) { ev.preventDefault(); form.requestSubmit(); }
 });
+document.addEventListener("keydown", (ev) => {
+  if (ev.key === "Escape" && !panel.hidden) { setOpen(false); $(".nc-launch").focus(); }
+});
 form.addEventListener("submit", async (ev) => {
   ev.preventDefault();
   const question = input.value.trim();
@@ -246,21 +256,24 @@ form.addEventListener("submit", async (ev) => {
   if (!reply.error && reply.sources?.length && settings().autoJump) jumpTo(reply.sources[0]);
 });
 
-// Inside the installed app (or after arriving from it), book pages show the app's tab bar instead of the bubble.
-const appMode = matchMedia("(display-mode: standalone)").matches || store.get(S, K.app) === "1";
-if (appMode) {
-  document.body.classList.add("nc-app-mode");
-  const bar = document.createElement("nav");
-  bar.className = "nc-tabbar";
-  bar.setAttribute("aria-label", "App sections");
-  bar.innerHTML = [["app.html#ask", "chat-dots", "Ask"], ["app.html#manual", "book", "Manual", true],
-    ["app.html#dots", "clipboard", "Dot phrases"], ["app.html#phones", "telephone", "Phones"],
-    ["app.html#calcs", "calculator", "Calculators"]]
-    .map(([href, icon, label, on]) => `<a href="${href}"${on ? ' class="on"' : ""}><i class="bi bi-${icon}"></i><span>${label}</span></a>`).join("");
-  document.body.appendChild(bar);
+// The tab bar to the site's main pages (shown on phones; the bubble covers Ask on wider screens).
+// Only on the Astro site (Starlight's search element is there); the Quarto book has no Ask or Calculators pages.
+const here = (location.pathname.split("/").pop() || "").replace(/\.html$/, "");
+const bar = document.querySelector("site-search") && document.createElement("nav");
+if (bar) {
+document.body.classList.add("nc-has-tabbar");
+bar.className = "nc-tabbar";
+bar.setAttribute("aria-label", "Main sections");
+bar.innerHTML = [["ask", "chat-dots", "Ask"], ["", "book", "Manual"], ["dotPhrases", "clipboard", "Dot phrases"],
+  ["phone-numbers", "telephone", "Phones"], ["calculators", "calculator", "Calculators"]]
+  .map(([path, icon, label]) => {
+    const on = path ? here === path : !["ask", "dotPhrases", "phone-numbers", "calculators"].includes(here);
+    return `<a href="${ROOT + path}"${on ? ' class="on" aria-current="page"' : ""}><i class="bi bi-${icon}"></i><span>${label}</span></a>`;
+  }).join("");
+document.body.appendChild(bar);
 }
 
-// "Recently viewed" in the app's Manual tab includes chapters read here
+// "Recently viewed" on the home page lists chapters read here
 const chapterTitle = (document.querySelector("h1[data-chapter-title]")?.dataset.chapterTitle ||
   document.querySelector("h1.title")?.textContent || "").replace(/\s+/g, " ").trim();
 const page = (location.pathname.split("/").pop() || "index").replace(/^(?!.*\.html$)(.+)$/, "$1.html"); // new site drops .html
@@ -274,7 +287,7 @@ if (chapterTitle && page !== "index.html") {
 const pending = readJSON(S, K.pending, null);
 if (pending?.unmax) maxPaused = true;
 applyUi();
-if (!appMode && store.get(S, K.open) === "1") setOpen(true);
+if (store.get(S, K.open) === "1" && innerWidth > 800) setOpen(true);
 if (pending) {
   store.del(S, K.pending);
   const go = () => setTimeout(() => highlightOnPage(pending.quote, pending.hash || location.hash), 300);

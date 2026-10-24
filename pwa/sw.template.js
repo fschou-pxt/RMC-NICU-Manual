@@ -35,8 +35,12 @@ self.addEventListener("fetch", (event) => {
   const req = event.request;
   const url = new URL(req.url);
   if (req.method !== "GET" || url.origin !== self.location.origin || !url.href.startsWith(self.registration.scope)) return;
+  if (url.pathname.includes("/api/")) return; // live data (e.g. "Let's discuss" counts): network only
   event.respondWith(isPage(req, url) ? networkFirst(req) : cacheFirst(req));
 });
+
+// a host may answer x.html with a redirect to x; browsers refuse a redirected response for a page, so copy it
+const fresh = (res) => (res.redirected ? new Response(res.body, { status: res.status, statusText: res.statusText, headers: res.headers }) : res);
 
 async function networkFirst(req) {
   const cache = await caches.open(CACHE);
@@ -46,8 +50,12 @@ async function networkFirst(req) {
     return res;
   } catch (e) {
     const hit = await cache.match(req, { ignoreSearch: true });
-    if (hit) return hit;
-    if (req.mode === "navigate") return (await cache.match("index.html")) || Response.error();
+    if (hit) return fresh(hit);
+    // the new site links pages without ".html" (respiratory); the offline copy stores respiratory.html
+    const url = new URL(req.url);
+    const page = await cache.match(url.origin + url.pathname.replace(/\/$/, "/index") + ".html");
+    if (page) return fresh(page);
+    if (req.mode === "navigate") { const home = await cache.match("index.html"); return home ? fresh(home) : Response.error(); }
     return Response.error();
   }
 }

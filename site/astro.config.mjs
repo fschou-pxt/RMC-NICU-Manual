@@ -12,8 +12,8 @@ import remarkEvidence from "./src/plugins/remark-evidence.mjs";
 const chapters = JSON.parse(fs.readFileSync("./src/chapters.json", "utf8"));
 const exists = (slug) => fs.existsSync(`./src/content/docs/${slug}.mdx`);
 
-// Sidebar: the book's parts, in book order (only chapters already converted)
-const sidebar = [];
+// Sidebar: the tools, then the book's parts in book order (only chapters already converted)
+const sidebar = [{ label: "Tools", items: ["ask", "calculators"] }];
 for (const ch of chapters) {
   if (ch.slug === "index" || !exists(ch.slug)) continue;
   let group = sidebar.find((g) => g.label === ch.part);
@@ -42,6 +42,7 @@ export default defineConfig({
         { tag: "link", attrs: { rel: "stylesheet", href: "site_libs/bootstrap/bootstrap-icons.css" } }, // icons used by the chat bubble
         { tag: "link", attrs: { rel: "manifest", href: "manifest.webmanifest" } },
         { tag: "meta", attrs: { name: "theme-color", content: "#003b71" } },
+        { tag: "meta", attrs: { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" } },
         { tag: "link", attrs: { rel: "apple-touch-icon", href: "pwa/apple-touch-icon.png" } },
         { tag: "meta", attrs: { name: "apple-mobile-web-app-capable", content: "yes" } },
         { tag: "meta", attrs: { name: "mobile-web-app-capable", content: "yes" } },

@@ -1,0 +1,186 @@
+---
+// Calculators page: the unit's feeding advancement plan (tools/feeding.js, same rules as the NICU Feeding
+// Protocol app) and In[Neo]Sight's calculators, which open in a panel on this page.
+import Icon from "./KpIcon.astro";
+
+const CALCS = [
+  ["gir", "GIR", "Glucose infusion rate"], ["total-fluid", "Total fluid", "mL/kg/day and rates"], ["fluid-tpn", "Fluid and TPN", "Fluids, dextrose, TPN"],
+  ["nutrition-intake", "Nutrition intake", "kcal and protein"], ["uac-uvc", "UAC / UVC depth", "Catheter insertion depth"], ["ett-tube", "ETT size and depth", "Tube size and depth"],
+  ["therapeutic-hypothermia", "Therapeutic hypothermia", "Eligibility"], ["phototherapy", "Phototherapy", "Bilirubin thresholds"],
+  ["blood-gas", "Blood gas", "Interpretation"], ["oxygenation-index", "Oxygenation index", "OI"], ["a-a-gradient", "A–a gradient", "Alveolar–arterial"],
+  ["bpd", "BPD risk", "Prediction"], ["corrected-age", "Corrected age", "Postmenstrual and corrected"], ["growth-zscore", "Growth z-score", "Weight, length, head"],
+  ["postnatal-growth", "Postnatal growth", "Growth curves"], ["ballard", "Ballard score", "Gestational age exam"], ["apgar", "Apgar", "Score"], ["unit-converter", "Unit converter", "Common conversions"],
+];
+---
+
+<div class="calcs not-content">
+  <h2 class="label">KP Riverside</h2>
+  <button type="button" class="calc-card kp" data-open="feeding">
+    <span class="qi"><Icon name="calculator" /></span>
+    <b>Feeding advancement plan</b>
+    <span>Daily plan from weight and gestational age, ready to copy into Epic</span>
+  </button>
+
+  <h2 class="label">In[Neo]Sight calculators</h2>
+  <p class="calc-intro">From In[Neo]Sight, an independent neonatal reference (not part of the KP manual). They open here; check results against the unit protocol.</p>
+  <div class="calc-grid">
+    {CALCS.map(([slug, name, sub]) => (
+      <button type="button" class="calc-card" data-calc={slug} data-name={name}>
+        <b>{name}</b>
+        <span>{sub}</span>
+      </button>
+    ))}
+  </div>
+  <p class="calc-note">Calculators are aids; check results against the manual and clinical judgment. In[Neo]Sight calculators are from <a href="https://inneosight.org" target="_blank" rel="noopener">inneosight.org</a>.</p>
+</div>
+
+<div class="calc-panel not-content" id="calc-panel" role="dialog" aria-modal="true" aria-labelledby="calc-title" hidden>
+  <div class="calc-box">
+    <header>
+      <p class="h" id="calc-title"></p>
+      <a class="calc-ext" id="calc-ext" target="_blank" rel="noopener" hidden><i class="bi bi-box-arrow-up-right"></i> Open in new tab</a>
+      <button type="button" class="calc-x" data-close aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </header>
+    <p class="calc-src" id="calc-src" hidden><i class="bi bi-info-circle"></i> From <b>In[Neo]Sight</b> (inneosight.org), not the KP Riverside manual. Check results against the unit protocol and clinical judgment. Not loading? Use “Open in new tab”.</p>
+    <iframe id="calc-frame" title="Calculator" src="about:blank" hidden></iframe>
+    <div class="calc-body fd" id="feed-body" hidden></div>
+  </div>
+</div>
+
+<script>
+  const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+  import(/* @vite-ignore */ base + "tools/feeding.js").then(start).catch(() => {
+    document.querySelector(".calcs")?.insertAdjacentHTML("afterbegin", '<p class="ask-fail">The calculators could not load. Check your connection and reload.</p>');
+  });
+
+  function start(Feed) {
+    const $ = (s) => document.querySelector(s);
+    const panel = $("#calc-panel"), frame = $("#calc-frame"), feedBox = $("#feed-body");
+    document.body.append(panel); // above the site header (the page content is its own layer)
+    const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+    const calcUrl = (slug) => `https://inneosight.org/en-US/calculators/${slug}`;
+
+    let opener = null, pushed = false; // focus returns to the card; Back closes a panel this page opened
+    function open(title, hash) {
+      opener = document.activeElement;
+      $("#calc-title").textContent = title;
+      panel.hidden = false;
+      document.body.classList.add("calc-open");
+      if (location.hash !== "#" + hash) { history.pushState(null, "", "#" + hash); pushed = true; }
+    }
+    function close(fromBack) {
+      if (panel.hidden) return;
+      panel.hidden = true;
+      frame.src = "about:blank";
+      document.body.classList.remove("calc-open");
+      if (!fromBack) { if (pushed) history.back(); else history.replaceState(null, "", location.pathname); }
+      pushed = false;
+      opener?.focus?.(); opener = null;
+    }
+    addEventListener("popstate", () => { if (!panel.hidden) close(true); else fromHash(); });
+    function openCalc(slug, name) {
+      frame.hidden = false; feedBox.hidden = true; $("#calc-src").hidden = false;
+      $("#calc-ext").href = calcUrl(slug); $("#calc-ext").hidden = false;
+      frame.src = calcUrl(slug) + "?embed=1";
+      open(name, slug);
+      panel.querySelector("[data-close]").focus();
+    }
+    function fromHash() {
+      const h = location.hash.slice(1), card = h && document.querySelector(`[data-calc="${CSS.escape(h)}"]`);
+      if (h === "feeding") openFeeding(); else if (card) openCalc(h, card.dataset.name);
+    }
+
+    // ---------- feeding advancement plan: inputs stay in memory only; nothing about the baby is saved ----------
+    const feed = { bw: "", ga: "", protocol: "", milk: "human_milk", fort: "", cream: "0.04", day1: Feed.todayISO(), text: "" };
+    function openFeeding() {
+      frame.hidden = true; feedBox.hidden = false; $("#calc-ext").hidden = true; $("#calc-src").hidden = true;
+      if (!feedBox.firstChild) buildFeeding();
+      updateFeeding();
+      open("Feeding advancement plan", "feeding");
+      feedBox.querySelector("#fd-bw").focus();
+    }
+    function buildFeeding() {
+      feedBox.innerHTML = `<p class="fd-note"><i class="bi bi-exclamation-triangle"></i> Prolacta / Cream criteria: GA &lt; 32 wk or BW &lt; 1,500 g.
+          Formula allowed only if GA &ge; 32 wk and BW &ge; 1,500 g.</p>
+        <div class="fd-card"><div class="fd-grid">
+          <div><label for="fd-bw">Weight (g)</label><input id="fd-bw" inputmode="numeric" placeholder="e.g. 1200" autocomplete="off"></div>
+          <div><label for="fd-ga">GA (wk)</label><select id="fd-ga"><option value="">Select…</option>${
+            Array.from({ length: 21 }, (_, i) => `<option>${22 + i}</option>`).join("")}</select></div>
+          <div class="full"><label for="fd-protocol">Feeding advancement rate</label><select id="fd-protocol"><option value="">Select…</option>${
+            Object.entries(Feed.PROTOCOL_LABELS).map(([k, l]) => `<option value="${k}">${l}</option>`).join("")}</select></div>
+          <div class="full"><label>Milk base</label><div class="seg" id="fd-milk">
+            <button type="button" data-milk="human_milk">Human milk</button><button type="button" data-milk="formula">Allow formula</button></div></div>
+          <div class="full"><label>Fortification</label><div class="seg" id="fd-fort">
+            <button type="button" data-fort="ehmd">Prolacta</button><button type="button" data-fort="hmf">Cow’s milk</button></div></div>
+          <div class="full"><label for="fd-cream">Cream:milk ratio</label><select id="fd-cream">
+            <option value="0.04">4 mL cream per 100 mL milk</option><option value="0.05">5 mL cream per 100 mL milk</option><option value="0.06">6 mL cream per 100 mL milk</option></select></div>
+          <div><label for="fd-day1">Day 1</label><input type="date" id="fd-day1"></div>
+          <div><label for="fd-step">Today’s step</label><select id="fd-step"></select></div>
+        </div></div>
+        <div id="fd-out"></div>`;
+      const on = (sel, ev, fn) => feedBox.querySelector(sel).addEventListener(ev, fn);
+      on("#fd-bw", "input", (e) => { feed.bw = e.target.value.trim(); updateFeeding("patient"); });
+      on("#fd-ga", "change", (e) => { feed.ga = e.target.value; updateFeeding("patient"); });
+      on("#fd-protocol", "change", (e) => { feed.protocol = e.target.value; updateFeeding("protocol"); });
+      on("#fd-milk", "click", (e) => { const b = e.target.closest("button"); if (b && !b.disabled) { feed.milk = b.dataset.milk; updateFeeding(); } });
+      on("#fd-fort", "click", (e) => { const b = e.target.closest("button"); if (b) { feed.fort = b.dataset.fort; updateFeeding(); } });
+      on("#fd-cream", "change", (e) => { feed.cream = e.target.value; updateFeeding(); });
+      on("#fd-day1", "change", (e) => { if (e.target.value) { feed.day1 = e.target.value; updateFeeding(); } });
+      on("#fd-step", "change", (e) => { feed.day1 = Feed.addDays(Feed.todayISO(), 1 - +e.target.value); updateFeeding(); });
+    }
+    function updateFeeding(changed) {
+      const box = feedBox, today = Feed.todayISO();
+      if (changed === "patient") feed.protocol = Feed.protocolFor(feed.bw, feed.ga);
+      if (changed === "patient" || changed === "protocol") feed.fort = Feed.fortificationFor(feed.bw, feed.ga, feed.protocol);
+      const formulaOk = Feed.formulaAllowed(feed.bw, feed.ga);
+      if (!formulaOk) feed.milk = "human_milk";
+      box.querySelector("#fd-protocol").value = feed.protocol;
+      box.querySelector("#fd-protocol").disabled = feed.bw === "";
+      box.querySelectorAll("#fd-milk button").forEach((b) => { b.classList.toggle("on", b.dataset.milk === feed.milk); b.disabled = !formulaOk; });
+      box.querySelectorAll("#fd-fort button").forEach((b) => b.classList.toggle("on", b.dataset.fort === feed.fort));
+      box.querySelector("#fd-cream").disabled = feed.fort !== "ehmd";
+      box.querySelector("#fd-day1").value = feed.day1;
+      const n = feed.protocol ? Feed.PROTOCOLS[feed.protocol].tf.length : 0, step = box.querySelector("#fd-step");
+      step.innerHTML = `<option value="" disabled>—</option>` + Array.from({ length: n }, (_, i) => `<option>${i + 1}</option>`).join("");
+      const k = Feed.daysBetween(feed.day1, today) + 1;
+      step.value = k >= 1 && k <= n ? String(k) : "";
+      step.disabled = !n;
+
+      const out = box.querySelector("#fd-out"), bw = Number(feed.bw);
+      if (feed.bw === "" || !feed.protocol) { out.innerHTML = '<p class="fd-hint">Enter the weight and gestational age to see the plan.</p>'; return; }
+      if (!(bw >= 300 && bw <= 6000)) { out.innerHTML = '<p class="fd-hint">Check the weight: enter it in grams (300 to 6000).</p>'; return; }
+      if (!feed.fort) { out.innerHTML = '<p class="fd-hint">Choose the fortification type (or enter the gestational age).</p>'; return; }
+      const rows = Feed.buildPlan({ ...feed, bw });
+      feed.text = Feed.planText(rows);
+      out.innerHTML = `<div class="fd-card"><div class="fd-out-h"><b>Feeding plan</b>
+          <button type="button" class="ask-btn" data-act="copy-feed"><i class="bi bi-clipboard"></i> Copy for Epic</button></div>
+        <div class="fd-scroll"><table class="fd-plan"><thead><tr><th>Date</th><th>Step</th><th>Feeding plan</th></tr></thead><tbody>${rows.map((r) =>
+          `<tr class="${r.date === today ? "today" : ""}"><td>${r.date}</td><td>${r.step}</td><td>${esc(r.plan)}</td></tr>`).join("")}</tbody></table></div>
+        <p class="fd-hint">Cream volume is not included in the total fluid calculation. Same rules as the
+          <a href="https://neostat.shinyapps.io/nicu_feeding_protocol/" target="_blank" rel="noopener">NICU Feeding Protocol app</a>.</p></div>`;
+    }
+    async function writeClipboard(text) {
+      try { await navigator.clipboard.writeText(text); }
+      catch {
+        const ta = Object.assign(document.createElement("textarea"), { value: text });
+        document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+      }
+    }
+
+    document.addEventListener("click", async (ev) => {
+      const t = ev.target.closest("button");
+      if (!t) return;
+      if (t.dataset.open === "feeding") return openFeeding();
+      if (t.dataset.calc) return openCalc(t.dataset.calc, t.dataset.name);
+      if (t.hasAttribute("data-close")) return close();
+      if (t.dataset.act === "copy-feed") {
+        await writeClipboard(feed.text);
+        t.innerHTML = '<i class="bi bi-check2"></i> Copied';
+        setTimeout(() => { t.innerHTML = '<i class="bi bi-clipboard"></i> Copy for Epic'; }, 1800);
+      }
+    });
+    panel.addEventListener("click", (ev) => { if (ev.target === panel) close(); }); // click outside the box
+    addEventListener("keydown", (ev) => { if (ev.key === "Escape" && !panel.hidden) close(); });
+    fromHash();
+  }
+</script>

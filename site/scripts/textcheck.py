@@ -150,7 +150,9 @@ def classify(qa, aa, ops, known):
 
 def main():
     book, dist = sys.argv[1], sys.argv[2]
-    names = sys.argv[3:] or sorted(f[:-5] for f in os.listdir(dist) if f.endswith(".html") and f not in ("404.html", "index.html"))
+    # pages in both builds (the site's own pages, such as ask and calculators, have no Quarto counterpart)
+    names = sys.argv[3:] or sorted(f[:-5] for f in os.listdir(dist) if f.endswith(".html") and f not in ("404.html", "index.html")
+                                   and os.path.exists(os.path.join(book, f)))
     bad = 0
     for name in names:
         qa, qm = page(os.path.join(book, name + ".html"), QUARTO)

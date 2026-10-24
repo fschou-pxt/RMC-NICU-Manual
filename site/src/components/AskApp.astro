@@ -1,0 +1,245 @@
+---
+// Ask page: the chat, full page, in the site's design. Same engine as the chat bubble (chatbot/engine.js):
+// answers come from the manual, each with its sources; a source opens in a side panel (bottom sheet on phones).
+---
+
+<div class="ask-app not-content" data-ask>
+  <div class="ask-bar">
+    <button class="ask-pill" type="button" data-go="settings" title="AI model and key"></button>
+    <button class="ask-icon" type="button" data-act="new" title="New chat" aria-label="New chat"><i class="bi bi-pencil-square"></i></button>
+    <button class="ask-icon" type="button" data-go="settings" title="Settings" aria-label="Settings"><i class="bi bi-gear"></i></button>
+  </div>
+  <div class="ask-thread" id="ask-thread"></div>
+  <div class="ask-settings" id="ask-settings" hidden></div>
+  <form class="ask-composer" id="ask-composer">
+    <div class="box">
+      <textarea id="ask-input" rows="1" placeholder="Ask about any unit protocol…" aria-label="Your question" maxlength="1500"></textarea>
+      <button class="mic" type="button" id="ask-mic" data-act="mic" hidden aria-label="Dictate your question" aria-pressed="false" title="Dictate (never say patient identifiers)"><i class="bi bi-mic"></i></button>
+      <button class="send" type="submit" aria-label="Ask"><i class="bi bi-arrow-up"></i></button>
+    </div>
+  </form>
+</div>
+
+<div class="ask-backdrop" id="ask-backdrop" hidden></div>
+<aside class="ask-sheet not-content" id="ask-sheet" hidden aria-label="Manual section">
+  <div class="grab"></div>
+  <header>
+    <div class="t"><small id="sheet-crumb"></small><p class="h" id="sheet-title"></p></div>
+    <button class="ask-icon" type="button" data-act="close-sheet" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+  </header>
+  <div class="body" id="sheet-body"></div>
+  <footer>
+    <button class="ask-icon" type="button" data-act="prev-src" aria-label="Previous source"><i class="bi bi-chevron-left"></i></button>
+    <span class="grow" id="sheet-pos"></span>
+    <button class="ask-icon" type="button" data-act="next-src" aria-label="Next source"><i class="bi bi-chevron-right"></i></button>
+    <button class="ask-btn" type="button" data-act="open-manual"><i class="bi bi-book"></i> Open in manual</button>
+  </footer>
+</aside>
+
+<script>
+  const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+  const composerEl = document.querySelector("#ask-composer");
+  composerEl.addEventListener("submit", (ev) => ev.preventDefault()); // until the engine is ready
+  import(/* @vite-ignore */ base + "chatbot/engine.js").then(start).catch(() => {
+    document.querySelector("#ask-thread").innerHTML = '<p class="ask-fail">Ask could not load. It needs an internet connection the first time; check your connection and reload.</p>';
+  });
+
+  function start(E) {
+    const { K, S, L, store, readJSON, localize, settings, hasKey, currentModel, shortLabel, loadHistory, saveHistory,
+      loadKnowledge, answerQuestion, answerOutside, renderMessage, renderSettings, renderMd, highlightIn, esc, phiNoticeHTML, phiConfirm } = E;
+    const $ = (s) => document.querySelector(s);
+    const app = $("[data-ask]"), thread = $("#ask-thread"), input = $("#ask-input"), composer = $("#ask-composer");
+    let history = loadHistory(), busy = false, typing = "Looking it up…", chatId = 0; // chatId: a reply for a cleared chat is dropped
+
+    // ---------- chat ----------
+    const SUGGESTIONS = [
+      ["snow", "Baby with cord pH 6.9 and hypotonia. Should I cool?"],
+      ["lungs", "32 weeker on 28% FiO2 with increased work of breathing. Surfactant?"],
+      ["droplet-half", "Minimum KVO rate for a UVC in an ELBW baby?"],
+      ["eye", "How do I order ROP exam drops?"],
+      ["people", "Who covers the FCC overnight at RMC?"],
+    ];
+    function showSettings(on) {
+      $(".ask-pill").textContent = shortLabel(currentModel());
+      $("#ask-settings").hidden = !on;
+      thread.hidden = composer.hidden = on;
+      if (on) { renderSettings($("#ask-settings"), {
+        onSaved: () => { showSettings(false); render(); input.focus(); },
+        onBack: () => { showSettings(false); render(); },
+      });
+      $("#ask-settings").insertAdjacentHTML("beforeend", `<p class="ask-nokey">No API key? <a href="${base}">Search the manual instead</a>, or use the Dot phrases and Phones tabs.</p>`); }
+    }
+    function render() {
+      $(".ask-pill").textContent = shortLabel(currentModel());
+      if (!history.length && !busy) {
+        thread.innerHTML = `<div class="ask-hello"><img src="${base}pwa/icon-192.png" alt="">
+          <p class="h">Ask the NICU Manual</p>
+          <p class="sub">Answers come from KP Riverside's NICU manual, with the source one tap away.</p>
+          <div class="phi">${phiNoticeHTML()}</div>
+          <div class="ask-suggest">${SUGGESTIONS.map(([i, q]) => `<button type="button" data-ask="${esc(q)}"><i class="bi bi-${i}"></i>${esc(q)}</button>`).join("")}</div>
+          <p class="nc-note">Using <b>${esc(shortLabel(currentModel()))}</b>. Answers may be wrong; check the linked source.</p></div>`;
+        return;
+      }
+      thread.innerHTML = history.map((m, i) => renderMessage(m, i, busy) + (m.role === "assistant" && !m.error && !busy ? msgActions(m, i) : "")).join("") +
+        (busy ? `<div class="nc-msg nc-bot nc-typing">${esc(typing)}</div>` : "");
+    }
+    // the newest message: its top in view (a long answer starts where it begins)
+    function toLatest() {
+      const last = thread.lastElementChild?.matches(".msg-acts") ? thread.lastElementChild.previousElementSibling : thread.lastElementChild;
+      last?.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+    async function ask(question) {
+      if (!question || busy) return;
+      if (!hasKey()) return showSettings(true);
+      const past = history.slice(), id = chatId;
+      history.push({ role: "user", text: question });
+      busy = true; typing = "Looking it up…"; saveHistory(history); render(); toLatest();
+      const reply = await answerQuestion(question, past, (t) => { if (id === chatId) { typing = t; render(); } });
+      if (id !== chatId) return; // the chat was cleared while this was being answered
+      busy = false; history.push(reply); saveHistory(history); render(); toLatest();
+      // on wide screens the top source opens beside the answer
+      if (!reply.error && reply.sources?.length && settings().autoJump && innerWidth >= 1000) openSource(history.length - 1, 0);
+    }
+    composer.addEventListener("submit", (ev) => {
+      ev.preventDefault();
+      const q = input.value.trim();
+      if (!q || !phiConfirm(q)) return;
+      input.value = ""; input.style.height = "";
+      ask(q);
+    });
+    input.addEventListener("keydown", (ev) => {
+      if (ev.key === "Enter" && !ev.shiftKey) { ev.preventDefault(); composer.requestSubmit(); }
+    });
+    input.addEventListener("input", () => { input.style.height = ""; input.style.height = Math.min(140, input.scrollHeight) + "px"; });
+
+    // Copy and share an answer as plain text, with where it came from; "Let's discuss" (raised hand) when the manual had no answer
+    const GAP_EMAILS = ["James.A.Washington@kp.org", "Michael.S.Chang@kp.org"]; // protocol leads
+    function msgActions(m, i) {
+      return `<div class="msg-acts">
+        <button type="button" data-act="copy-msg" data-msg="${i}"><i class="bi bi-clipboard"></i> Copy</button>
+        ${navigator.share ? `<button type="button" data-act="share-msg" data-msg="${i}"><i class="bi bi-share"></i> Share</button>` : ""}
+        ${m.offerExternal ? `<button type="button" data-act="gap" data-msg="${i}"><i class="bi bi-person-raised-hand"></i> Let's discuss</button>` : ""}</div>`;
+    }
+    const questionFor = (i) => history.slice(0, i).reverse().find((m) => m.role === "user")?.text || "";
+    function plainAnswer(i) {
+      const m = history[i], strip = (t) => t.replace(/\*\*(.+?)\*\*/g, "$1");
+      let t = `Q: ${questionFor(i)}\n\n` + (m.external ? "[Not from the KP manual: general AI knowledge]\n" : "") + strip(m.text);
+      if (m.sources?.length) t += "\n\nSource (KP NICU Manual): " + [...new Set(m.sources.map((s) => s.title.split(" › ").slice(1, 3).join(" › ") || s.title))].join("; ");
+      if (m.neo) t += "\n\nFrom In[Neo]Sight (not the KP manual):\n" + strip(m.neo.text) + "\n" + m.neo.articles.map((a) => `${a.title}: ${a.url}`).join("\n");
+      return t;
+    }
+    function reportGap(i) {
+      const body = `I'd like to discuss a question the NICU Manual doesn't answer yet:\n\n${questionFor(i)}\n\nMy thoughts (optional):\n\n\n` +
+        `Sent from the NICU Manual on ${new Date().toLocaleDateString()}. Please don't include patient identifiers.`;
+      location.href = `mailto:${GAP_EMAILS.join(",")}?subject=${encodeURIComponent("Let's discuss (NICU Manual): " + questionFor(i).slice(0, 80))}&body=${encodeURIComponent(body)}`;
+    }
+    function flash(btn, html) { const was = btn.innerHTML; btn.innerHTML = html; setTimeout(() => { btn.innerHTML = was; }, 1800); }
+    async function writeClipboard(text) {
+      try { await navigator.clipboard.writeText(text); }
+      catch { // older browsers: copy through a temporary text box
+        const ta = Object.assign(document.createElement("textarea"), { value: text });
+        document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+      }
+    }
+
+    // ---------- voice input: the browser's own speech service (Apple or Google), so never say patient identifiers ----------
+    const Speech = window.SpeechRecognition || window.webkitSpeechRecognition;
+    let rec = null;
+    if (Speech) $("#ask-mic").hidden = false;
+    function toggleMic() {
+      if (!Speech) return;
+      if (rec) return rec.stop();
+      rec = new Speech();
+      Object.assign(rec, { lang: "en-US", interimResults: true, continuous: false });
+      const before = input.value.trim() ? input.value.trim() + " " : "";
+      rec.onresult = (e) => {
+        input.value = before + [...e.results].map((r) => r[0].transcript).join("");
+        input.dispatchEvent(new Event("input"));
+      };
+      rec.onend = () => { rec = null; $("#ask-mic").classList.remove("on"); $("#ask-mic").setAttribute("aria-pressed", "false"); input.focus(); };
+      $("#ask-mic").classList.add("on"); $("#ask-mic").setAttribute("aria-pressed", "true");
+      rec.start();
+    }
+
+    // ---------- source panel: one section of the manual, with "Open in manual" ----------
+    const RECENT = "nicuChat.recent"; // shared with the home page's "Recently viewed"
+    function addRecent(item) {
+      const r = readJSON(L, RECENT, []).filter((x) => x.url !== item.url);
+      r.unshift({ title: item.title, url: item.url });
+      store.set(L, RECENT, JSON.stringify(r.slice(0, 12)));
+    }
+    let sheetCtx = null; // { list: [{title,url,quote}], index }
+    const sheet = $("#ask-sheet");
+    document.body.append($("#ask-backdrop"), sheet); // above the site header and the phone tab bar
+    let opener = null; // focus returns here when the panel closes
+    function showSheet() {
+      if (sheet.hidden) opener = document.activeElement;
+      sheet.hidden = false; $("#ask-backdrop").hidden = false; document.body.classList.add("ask-sheet-open");
+      sheet.querySelector('[data-act="close-sheet"]').focus({ preventScroll: true });
+    }
+    function closeSheet() {
+      if (sheet.hidden) return;
+      sheet.hidden = true; $("#ask-backdrop").hidden = true; document.body.classList.remove("ask-sheet-open");
+      opener?.focus?.({ preventScroll: true }); opener = null;
+    }
+    async function openSheet(list, index) {
+      sheetCtx = { list, index };
+      const src = list[index], parts = src.title.split(" › ");
+      $("#sheet-crumb").textContent = parts.slice(0, -1).join(" › ");
+      $("#sheet-title").textContent = parts[parts.length - 1].replace(/:$/, "");
+      $("#sheet-pos").textContent = list.length > 1 ? `${index + 1} of ${list.length}` : "";
+      sheet.querySelectorAll('[data-act="prev-src"], [data-act="next-src"]').forEach((b) => { b.hidden = list.length < 2; });
+      const body = $("#sheet-body");
+      body.innerHTML = '<p class="nc-note">Loading…</p>';
+      showSheet();
+      const { sections } = await loadKnowledge();
+      const sec = sections.find((s) => s.title === src.title && s.url === src.url) || sections.find((s) => s.url === src.url);
+      body.innerHTML = sec ? renderMd(sec.text) : '<p class="nc-note">This section could not be loaded. Use "Open in manual".</p>';
+      body.scrollTop = 0;
+      if (src.title) addRecent(src);
+      const marks = highlightIn(body, src.quote);
+      if (marks.length) marks[0].scrollIntoView({ block: "center" });
+    }
+    const openSource = (msgIndex, srcIndex) => openSheet(history[msgIndex].sources, srcIndex);
+    function openInManual(src) {
+      store.set(S, K.pending, JSON.stringify({ quote: src.quote || "", hash: new URL(localize(src.url)).hash }));
+      location.href = localize(src.url);
+    }
+
+    // ---------- clicks ----------
+    document.addEventListener("click", async (ev) => {
+      const t = ev.target.closest("button, a");
+      if (!t || !(app.contains(t) || sheet.contains(t))) return;
+      if (t.dataset.go === "settings") return showSettings($("#ask-settings").hidden);
+      if (t.dataset.ask) return ask(t.dataset.ask);
+      const act = t.dataset.act;
+      if (act === "new") { chatId++; busy = false; history = []; saveHistory(history); closeSheet(); showSettings(false); render(); return input.focus(); }
+      if (act === "close-sheet") return closeSheet();
+      if (act === "prev-src" || act === "next-src") {
+        const n = sheetCtx.list.length;
+        return openSheet(sheetCtx.list, (sheetCtx.index + (act === "next-src" ? 1 : n - 1)) % n);
+      }
+      if (act === "open-manual") return openInManual(sheetCtx.list[sheetCtx.index]);
+      if (act === "mic") return toggleMic();
+      if (act === "copy-msg") { await writeClipboard(plainAnswer(+t.dataset.msg)); return flash(t, '<i class="bi bi-check2"></i> Copied'); }
+      if (act === "share-msg") { try { await navigator.share({ title: "NICU Manual", text: plainAnswer(+t.dataset.msg) }); } catch {} return; }
+      if (act === "gap") return reportGap(+t.dataset.msg);
+      if (t.dataset.ext) {
+        if (busy) return;
+        const i = +t.dataset.msg, id = chatId;
+        history[i].offerExternal = false;
+        busy = true; typing = "Asking the AI…"; saveHistory(history); render(); toLatest();
+        const reply = await answerOutside(history, i);
+        if (id !== chatId) return;
+        busy = false; history.push(reply); saveHistory(history); render(); toLatest();
+        return;
+      }
+      if (t.classList.contains("nc-chip")) return openSource(+t.dataset.msg, +t.dataset.src);
+    });
+    $("#ask-backdrop").addEventListener("click", closeSheet);
+    addEventListener("keydown", (ev) => { if (ev.key === "Escape" && !sheet.hidden) closeSheet(); });
+
+    if (!hasKey()) showSettings(true);
+    else render();
+  }
+</script>

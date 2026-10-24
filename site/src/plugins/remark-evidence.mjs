@@ -1,6 +1,7 @@
 // Evidence notes: approved evidence checks (evidence/<chapter>/<section>.json, from the three-agent
 // pipeline in evidence/PIPELINE.md) shown at the end of the section they cover. Labeled as AI-generated;
-// the manual's own text is never changed. "Let's discuss" emails the protocol leads.
+// the manual's own text is never changed. On the page: one line per note (verdict, the manual's statement,
+// citations, and a "Let's discuss" count); the reviewed notes, all statements and references sit under Details.
 import fs from "node:fs";
 import path from "node:path";
 import { visit } from "unist-util-visit";
@@ -8,8 +9,6 @@ import { toString } from "mdast-util-to-string";
 import GithubSlugger from "github-slugger";
 
 const EVIDENCE = path.resolve("..", "evidence");
-const LEADS = ["James.A.Washington@kp.org", "Michael.S.Chang@kp.org"]; // same as the app's "Let's discuss"
-const LIVE = "https://fschou-pxt.github.io/RMC-NICU-Manual/";
 const VERDICT = {
   concordant: ["Supported", "ok"],
   partly_concordant: ["Partly supported", "partly"],
@@ -32,7 +31,7 @@ function load(page) {
     for (const f of fs.readdirSync(path.join(EVIDENCE, dir.name)).filter((x) => x.endsWith(".json"))) {
       const ev = JSON.parse(fs.readFileSync(path.join(EVIDENCE, dir.name, f), "utf8"));
       const [file, hash] = ev.anchor.split("#");
-      if (file.replace(/\.html$/, "") === page && ev.review?.verdict === "APPROVED") out.push({ ...ev, id: f.replace(/\.json$/, ""), hash });
+      if (file.replace(/\.html$/, "") === page && ev.review?.verdict === "APPROVED") out.push({ ...ev, id: `${dir.name}-${f.replace(/\.json$/, "")}`, hash });
     }
   }
   return out;
@@ -41,47 +40,52 @@ function load(page) {
 function render(ev) {
   const refs = ev.references, order = [];
   const num = (key) => { if (!order.includes(key)) order.push(key); return order.indexOf(key) + 1; };
+  const KEY = /\[([A-Za-z][\w-]*\d{4}[a-z]?(?:;\s*[A-Za-z][\w-]*\d{4}[a-z]?)*)\]/g;
+  const link = (n) => `<a href="#ev-${ev.id}-r${n}" onclick="this.closest('.evidence').querySelector('details').open=true">${n}</a>`;
   // "[Sweet2026; Dargaville2021]" -> superscript reference numbers
-  const cite = (text) => esc(text).replace(/\[([A-Za-z][\w-]*\d{4}[a-z]?(?:;\s*[A-Za-z][\w-]*\d{4}[a-z]?)*)\]/g, (m, keys) =>
-    "<sup class=\"ev-cite\">" + keys.split(/;\s*/).map((k) => `<a href="#ev-${ev.id}-r${num(k)}">${num(k)}</a>`).join(",") + "</sup>");
+  const cite = (text) => esc(text).replace(KEY, (m, keys) => "<sup class=\"ev-cite\">" + keys.split(/;\s*/).map((k) => link(num(k))).join(",") + "</sup>");
+  // all references a note cites, as one superscript: 1–4,7
+  const citeAll = (text) => {
+    const ns = [...new Set([...text.matchAll(KEY)].flatMap((m) => m[1].split(/;\s*/).map(num)))].sort((a, b) => a - b);
+    const runs = [];
+    for (const n of ns) { const r = runs[runs.length - 1]; if (r && n === r[1] + 1) r[1] = n; else runs.push([n, n]); }
+    return ns.length ? `<sup class="ev-cite">${runs.map(([a, b]) => b > a + 1 ? `${link(a)}–${link(b)}` : b > a ? `${link(a)},${link(b)}` : link(a)).join(",")}</sup>` : "";
+  };
   const claims = ev.claims, omissions = ev.omissions || [];
   const counts = {};
   for (const c of claims) counts[c.verdict] = (counts[c.verdict] || 0) + 1;
   const summary = Object.entries(counts).map(([v, n]) => `${n} ${VERDICT[v][0].toLowerCase()}`).join(" · ");
   const checked = new Date(ev.checked + "T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" });
-  const page = LIVE + ev.anchor;
-  const discuss = (subjectBit, manual, note) => {
-    const body = `I'd like to discuss an evidence note in the NICU Manual (${ev.section}).\n\nManual: ${manual}\n\nEvidence note (AI-generated, checked ${checked}): ${note}\n\nPage: ${page}\n\nMy thoughts (optional):\n\n\nPlease don't include patient identifiers.`;
-    const href = `mailto:${LEADS.join(",")}?subject=${encodeURIComponent(`Let's discuss (NICU Manual evidence): ${ev.section}, ${subjectBit}`)}&body=${encodeURIComponent(body)}`;
-    return `<a class="ev-discuss" href="${esc(href)}"><span aria-hidden="true">✋</span> Let's discuss</a>`;
-  };
   const notes = [
-    ...claims.filter((c) => c.note).map((c) => ({ label: VERDICT[c.verdict][0], tone: VERDICT[c.verdict][1], manual: c.manual_text, note: c.note, bit: manualText(c.manual_text).slice(0, 50) })),
-    ...omissions.map((o) => ({ label: "Related point", tone: "related", manual: claims.find((c) => c.id === o.related_claim)?.manual_text || "", note: o.note, bit: o.topic || "related point" })),
+    ...claims.filter((c) => c.note).map((c) => ({ id: c.id, label: VERDICT[c.verdict][0], tone: VERDICT[c.verdict][1], line: manualHtml(c.manual_text), note: c.note })),
+    ...omissions.map((o) => ({ id: o.id, label: "Related point", tone: "related", line: esc(o.topic || ""), note: o.note })),
   ];
-  const noteHtml = notes.map((n) => `<div class="ev-note ev-${n.tone}">
-<p class="ev-label">${esc(n.label)}</p>
-${n.manual ? `<p class="ev-manual"><span>Manual:</span> ${manualHtml(n.manual)}</p>` : ""}
-<p>${cite(n.note)}</p>
-${discuss(n.bit, manualText(n.manual), n.note.replace(/\s*\[[^\]]+\]/g, ""))}
-</div>`).join("\n");
+  // one "Let's discuss" per box: a count for the whole section
+  const discuss = `<button type="button" class="ev-discuss" data-discuss="${esc(ev.id)}" aria-pressed="false" title="Let the protocol leads know this section is worth discussing"><span aria-hidden="true">✋</span> Let's discuss<span class="ev-n"></span></button>`;
+  const lines = notes.map((n) => `<li class="ev-line ev-${n.tone}"><span class="ev-chip ev-${n.tone}">${esc(n.label)}</span> <span class="ev-what">${n.line}</span>${citeAll(n.note)}</li>`).join("\n");
+  // Details: the reviewed notes in full, every statement, and the references
+  const full = notes.map((n) => `<div class="ev-note ev-${n.tone}"><p class="ev-label">${esc(n.label)}: <span>${n.line}</span></p><p>${cite(n.note)}</p></div>`).join("\n");
   const rows = claims.map((c) => `<li><p class="ev-manual">${manualHtml(c.manual_text)} <span class="ev-chip ev-${VERDICT[c.verdict][1]}">${VERDICT[c.verdict][0]}</span></p><p>${cite(c.summary)}</p></li>`).join("\n");
   for (const r of refs) num(r.key); // uncited references go last
   const refHtml = order.map((key, i) => {
     const r = refs.find((x) => x.key === key) || { key };
     const where = [r.journal, [r.year, r.volume && `;${r.volume}${r.issue ? `(${r.issue})` : ""}`, r.pages && `:${r.pages}`].filter(Boolean).join("")].filter(Boolean).join(". ");
     const doi = r.doi ? ` <a href="https://doi.org/${esc(r.doi)}" target="_blank" rel="noopener">doi:${esc(r.doi)}</a>` : r.url ? ` <a href="${esc(r.url)}" target="_blank" rel="noopener">link</a>` : "";
-    return `<li id="ev-${ev.id}-r${i + 1}">${esc(r.citation || [r.authors, r.title].filter(Boolean).join(". "))}${where ? ". " + esc(where) : ""}.${doi}</li>`;
+    const who = (r.citation || [r.authors, r.title].filter(Boolean).join(". ")).replace(/\.+$/, ""); // "et al." keeps one period
+    return `<li id="ev-${ev.id}-r${i + 1}">${esc(who)}${where ? ". " + esc(where) : ""}.${doi}</li>`;
   }).join("\n");
   return `<section class="evidence not-content" aria-label="Evidence check">
-<div class="ev-head"><span class="ev-badge">Evidence check</span><span class="ev-meta">AI-generated · independently AI-reviewed · checked ${esc(checked)}</span></div>
-<p class="ev-sum">${claims.length} statements in this section compared with published evidence: ${esc(summary)}.</p>
-${noteHtml}
-<details class="ev-more"><summary>All ${claims.length} statements and ${refs.length} references</summary>
+<div class="ev-head"><span class="ev-badge">Evidence check</span>${discuss}</div>
+<p class="ev-meta">AI-generated · independently AI-reviewed · checked ${esc(checked)}</p>
+${lines ? `<ul class="ev-lines">${lines}</ul>` : ""}
+<details class="ev-more"><summary>Details: all ${claims.length} statements (${esc(summary)}) and ${refs.length} references</summary>
+${full}
+<p class="ev-refs-title">All ${claims.length} statements</p>
 <ol class="ev-claims">${rows}</ol>
 <p class="ev-refs-title">References</p>
 <ol class="ev-refs">${refHtml}</ol>
-<p class="ev-fine">Produced by separate AI research, comparison, and review steps, each checked against the retrieved sources (${ev.review.rounds} review rounds, ${ev.review.quotes_checked} quotes verified). It does not change the unit protocol above; use "Let's discuss" to raise it with the protocol leads.</p>
+<p class="ev-fine">Produced by separate AI research, comparison, and review steps, each checked against the retrieved sources (${ev.review.rounds} review rounds, ${ev.review.quotes_checked} quotes verified). It does not change the unit protocol above. "Let's discuss" adds to a count the protocol leads review.</p>
+<button type="button" class="ev-close" onclick="const d=this.closest('details');d.open=false;d.scrollIntoView({block:'nearest'})">Hide details</button>
 </details>
 </section>`;
 }

@@ -1,0 +1,252 @@
+---
+// Tools added to two pages in the browser (the pages' own text is unchanged):
+// - Dot phrases: a search box, and a Copy button on each phrase (plain text for Epic, from the knowledge file)
+// - Phone numbers: a search box; the tables shown as contact cards with tap-to-call buttons (emails become mail links)
+// - Evidence notes (any page): "Let's discuss" counts, one per device, from the site's /api/discuss
+---
+
+<script>
+  const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+  const page = location.pathname.replace(/\.html$/, "").split("/").pop();
+  const content = document.querySelector(".sl-markdown-content");
+  if (content && (page === "dotPhrases" || page === "phone-numbers")) setup(page === "dotPhrases");
+  const discussButtons = [...document.querySelectorAll<HTMLButtonElement>(".ev-discuss")];
+  if (discussButtons.length) discussCounts(discussButtons);
+
+  // ---------- "Let's discuss" on evidence notes: a count the protocol leads review (no email, nothing personal) ----------
+  // Each device counts once per section (tap again to take it back). Where the count service isn't available
+  // (e.g. a host without it), the button is hidden rather than appearing to work.
+  function discussCounts(buttons) {
+    const api = base + "api/discuss", key = (id) => "nicuDiscuss." + id;
+    const mine = (id) => { try { return localStorage.getItem(key(id)) === "1"; } catch { return false; } };
+    let counts = null;
+    const show = () => buttons.forEach((b) => {
+      const id = b.dataset.discuss;
+      b.setAttribute("aria-pressed", String(mine(id)));
+      b.querySelector(".ev-n").textContent = counts && counts[id] ? String(counts[id]) : "";
+    });
+    buttons.forEach((b) => { b.hidden = true; });
+    fetch(api + "?ids=" + encodeURIComponent(buttons.map((b) => b.dataset.discuss).join(",")), { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null)).then((c) => {
+        if (!c) return;
+        counts = c; show(); buttons.forEach((b) => { b.hidden = false; });
+      }).catch(() => {});
+    for (const b of buttons) b.addEventListener("click", () => {
+      const id = b.dataset.discuss, on = !mine(id);
+      try { on ? localStorage.setItem(key(id), "1") : localStorage.removeItem(key(id)); } catch {}
+      if (counts) counts[id] = Math.max(0, (counts[id] || 0) + (on ? 1 : -1));
+      show();
+      fetch(api, { method: "POST", cache: "no-store", headers: { "content-type": "application/json" }, body: JSON.stringify({ id, delta: on ? 1 : -1 }) })
+        .then((r) => (r.ok ? r.json() : null)).then((c) => { if (c && counts) { Object.assign(counts, c); show(); } }).catch(() => {});
+    });
+  }
+
+  function setup(isDots) {
+    // ---------- search box at the top of the page ----------
+    const bar = document.createElement("div");
+    bar.className = "page-search not-content";
+    bar.innerHTML = `<label class="ps-box"><i class="bi bi-search"></i><input type="search" autocomplete="off"
+        placeholder="${isDots ? "Search dot phrases" : "Search names, units, numbers"}"></label>
+      <p>${isDots ? "Tap Copy, then paste into Epic. Fill in every *** before signing."
+        : "Tap a number to call. Numbers like 8-258-xxxx are KP tie lines; 4-digit numbers are extensions."}</p>
+      <p class="none" hidden>No matches.</p>`;
+    content.prepend(bar);
+    const box = bar.querySelector("input");
+    box.addEventListener("input", () => filter(box.value.trim().toLowerCase(), !isDots));
+    if (isDots) addCopyButtons(); else { linkify(); contactCards(); }
+  }
+
+  // The page as blocks: each heading with the content up to the next heading.
+  function blocks() {
+    const out = [];
+    for (const el of content.children) {
+      if (el.classList.contains("page-search") || el.classList.contains("as-cards")) continue;
+      const h = el.matches("h2, h3, h4, h5") ? el : el.matches(".sl-heading-wrapper") ? el.querySelector("h2, h3, h4, h5") : null;
+      if (h) out.push({ head: el, level: +h.tagName[1], text: h.textContent.toLowerCase(), nodes: [] });
+      else if (out.length) out[out.length - 1].nodes.push(el);
+    }
+    return out;
+  }
+  // Show what matches. Phones: matching table rows and list items; dot phrases: whole phrases.
+  function filter(q, byRow) {
+    const all = blocks();
+    content.querySelectorAll("[data-hit-hidden]").forEach((el) => { el.hidden = false; el.removeAttribute("data-hit-hidden"); });
+    let any = !q;
+    if (q) {
+      const hide = (el) => { el.hidden = true; el.setAttribute("data-hit-hidden", ""); };
+      const shown = all.map((b) => {
+        if (b.text.includes(q)) return true;
+        let hit = false;
+        for (const n of b.nodes) {
+          if (n.classList.contains("contacts")) { // a card shows whole when its title matches, else only matching people
+            let kept = 0;
+            n.querySelectorAll(".contact").forEach((c) => {
+              const all = c.querySelector(".c-title").textContent.toLowerCase().includes(q);
+              let k = 0;
+              c.querySelectorAll(".c-entry").forEach((e) => { if (all || e.textContent.toLowerCase().includes(q)) k++; else hide(e); });
+              if (all || k) kept++; else hide(c);
+            });
+            if (kept) hit = true; else hide(n);
+            continue;
+          }
+          const rows = byRow ? n.querySelectorAll("tbody tr, li") : [];
+          if (rows.length) {
+            let kept = 0;
+            rows.forEach((r) => { if (r.textContent.toLowerCase().includes(q)) kept++; else hide(r); });
+            if (kept) hit = true; else hide(n);
+          } else if (n.textContent.toLowerCase().includes(q)) hit = true;
+          else if (byRow) hide(n);
+        }
+        if (!byRow && hit) return true; // a dot phrase shows whole
+        if (!byRow) b.nodes.forEach(hide);
+        return hit;
+      });
+      // a heading that matches keeps everything under it (searching a group name shows the group)
+      all.forEach((b, i) => {
+        if (b.text.includes(q)) for (let j = i + 1; j < all.length && all[j].level > b.level; j++) shown[j] = "all";
+      });
+      all.forEach((b, i) => { if (shown[i] === "all") { b.nodes.forEach((n) => { n.hidden = false; n.removeAttribute("data-hit-hidden");
+        n.querySelectorAll("[data-hit-hidden]").forEach((r) => { r.hidden = false; r.removeAttribute("data-hit-hidden"); }); }); } });
+      // a heading stays when it or anything under it matches
+      all.forEach((b, i) => {
+        let keep = shown[i];
+        for (let j = i + 1; !keep && j < all.length && all[j].level > b.level; j++) keep = shown[j];
+        if (keep) any = true; else { hide(b.head); b.nodes.forEach(hide); }
+      });
+    }
+    document.querySelector(".page-search .none").hidden = any;
+  }
+
+  // ---------- dot phrases: Copy gives the phrase as plain text, exactly as the manual shows it ----------
+  // (markdown escapes and link lines removed, line breaks kept, straight quotes as in the source phrases)
+  function copyText(md) {
+    return md.split("\n").filter((l) => !/^\s*\[Text\]\(/i.test(l) && l.trim() !== "[image]").join("\n")
+      .replace(/\\\n/g, "\n").replace(/\\$/gm, "")
+      .replace(/\[([^\]]+)\]\((?:https?:)?[^)]*\)/g, "$1")
+      .replace(/\*\*(.+?)\*\*/g, "$1")
+      .replace(/\\([*_`\\<>#|[\]~^.-])/g, "$1")
+      .replace(/[‘’]/g, "'").replace(/[“”]/g, '"')
+      .replace(/ /g, " ").replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+  }
+  async function addCopyButtons() {
+    const { loadKnowledge } = await import(/* @vite-ignore */ base + "chatbot/engine.js").catch(() => ({}));
+    if (!loadKnowledge) return; // offline before the first visit: the page still reads, just without Copy
+    const { sections } = await loadKnowledge();
+    for (const s of sections.filter((x) => x.title.startsWith("Appendix B"))) {
+      const id = decodeURIComponent((s.url.split("#")[1] || ""));
+      const h = id && document.getElementById(id);
+      const name = s.title.split(" › ").pop();
+      if (!h || !h.matches("h4, h5")) continue; // phrases, not the group headings above them
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "dot-copy";
+      btn.innerHTML = '<i class="bi bi-clipboard"></i> Copy';
+      btn.setAttribute("aria-label", `Copy ${name}`);
+      const text = copyText(s.text);
+      btn.addEventListener("click", async () => {
+        try { await navigator.clipboard.writeText(text); }
+        catch {
+          const ta = Object.assign(document.createElement("textarea"), { value: text });
+          document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+        }
+        btn.innerHTML = '<i class="bi bi-check2"></i> Copied';
+        setTimeout(() => { btn.innerHTML = '<i class="bi bi-clipboard"></i> Copy'; }, 1800);
+      });
+      (h.closest(".sl-heading-wrapper") || h).append(btn);
+    }
+  }
+
+  // ---------- phones: each table as cards. A row with a first cell starts a card (office, department, NICU);
+  // rows with a blank first cell are more people in it. Text cells (name, site) make the person's line; cells
+  // with numbers become labeled buttons, and a lone phone number is a tap-to-call button. The table stays in the
+  // page (hidden), so the page's text is unchanged.
+  // (a function declaration: the page setup above runs before later constants exist)
+  function label(h) {
+    const LABEL = [[/^ext|^extension/i, "Ext"], [/tie/i, "Tie"], [/phone|land/i, "Phone"], [/pager|cell/i, "Pager/cell"],
+      [/nursing/i, "Nursing station"], [/office|voice/i, "Office/VM"], [/case/i, "Case manager"], [/local/i, "Local"]];
+    return (LABEL.find(([re]) => re.test(h)) || [0, h.replace(/\b\w/g, (c) => c.toUpperCase())])[1];
+  }
+  function contactCards() {
+    for (const table of content.querySelectorAll(":scope > table")) {
+      const heads = [...table.querySelectorAll("thead th")].map((th) => th.textContent.trim());
+      const cards = [];
+      for (const tr of table.querySelectorAll("tbody tr")) {
+        const cells = [...tr.cells];
+        if (cells.every((td) => !td.textContent.trim())) continue;
+        const title = cells[0]?.textContent.trim();
+        if (title || !cards.length) cards.push({ title: title || "", entries: [] });
+        const who = [], nums = [];
+        cells.slice(1).forEach((td, k) => {
+          const text = td.textContent.trim();
+          if (!text) return;
+          if (/\d{3}/.test(text)) nums.push([label(heads[k + 1] || ""), td]);
+          else who.push(td);
+        });
+        if (who.length || nums.length) cards[cards.length - 1].entries.push({ who, nums });
+      }
+      const list = document.createElement("div");
+      list.className = "contacts not-content";
+      for (const c of cards) {
+        const card = document.createElement("div");
+        card.className = "contact";
+        card.innerHTML = `<p class="c-title"></p>`;
+        card.firstChild.textContent = c.title || "—";
+        for (const e of c.entries) {
+          const row = document.createElement("div");
+          row.className = "c-entry";
+          if (e.who.length) {
+            const p = document.createElement("p");
+            p.className = "c-who";
+            e.who.forEach((td, i) => { if (i) p.append(" · "); p.append(...[...td.childNodes].map((n) => n.cloneNode(true))); });
+            row.append(p);
+          }
+          if (e.nums.length) {
+            const nums = document.createElement("div");
+            nums.className = "c-nums";
+            for (const [lab, td] of e.nums) {
+              const tels = td.querySelectorAll('a[href^="tel:"]');
+              const lone = tels.length === 1 && tels[0].textContent.trim() === td.textContent.trim();
+              const chip = document.createElement(lone ? "a" : "span");
+              chip.className = "c-num" + (lone ? " call" : "");
+              if (lone) chip.href = tels[0].href;
+              chip.innerHTML = `<span class="k"></span> <span class="v"></span>${lone ? ' <i class="bi bi-telephone" aria-hidden="true"></i>' : ""}`;
+              chip.querySelector(".k").textContent = lab;
+              chip.querySelector(".v").append(...(lone ? [tels[0].textContent] : [...td.childNodes].map((n) => n.cloneNode(true))));
+              nums.append(chip);
+            }
+            row.append(nums);
+          }
+          card.append(row);
+        }
+        list.append(card);
+      }
+      table.classList.add("as-cards");
+      table.after(list);
+    }
+  }
+
+  // ---------- phones: numbers become tap-to-call links (tie lines and extensions stay text), emails become mail links ----------
+  function linkify() {
+    const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) => n.parentElement.closest("a, .page-search, script, style") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+    });
+    const re = /(\+?1[-.\s])?\(?(\d{3})\)?[-.\s](\d{3})-(\d{4})|[\w.+-]+@[\w-]+\.[\w.]+/g;
+    const nodes = [];
+    const has = new RegExp(re.source); // no /g: a global test() would carry lastIndex from node to node
+    while (walker.nextNode()) if (has.test(walker.currentNode.nodeValue)) nodes.push(walker.currentNode);
+    for (const node of nodes) {
+      const frag = document.createDocumentFragment(), text = node.nodeValue;
+      let last = 0;
+      for (const m of text.matchAll(re)) {
+        frag.append(text.slice(last, m.index));
+        const a = document.createElement("a");
+        a.textContent = m[0];
+        a.href = m[0].includes("@") ? `mailto:${m[0]}` : `tel:+1${m[2]}${m[3]}${m[4]}`;
+        frag.append(a);
+        last = m.index + m[0].length;
+      }
+      frag.append(text.slice(last));
+      node.replaceWith(frag);
+    }
+  }
+</script>

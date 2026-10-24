@@ -1,4 +1,4 @@
-// NICU Manual chat engine, shared by the page widget (chatbot/widget.html) and the app (app.html).
+// NICU Manual chat engine, shared by the chat bubble (chatbot/widget.html) and the Ask page (site/src/components/AskApp.astro).
 // Runs entirely in the browser with the user's own API key (Anthropic, OpenAI, or xAI).
 
 export const SDK_URL = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.133.0/+esm";
@@ -608,7 +608,7 @@ export function renderMessage(m, i, busy) {
   const again = m.rephrased ? `<p class="nc-note">Searched again as: <i>${esc(m.rephrased)}</i></p>` : "";
   const neo = m.neo ? `<div class="nc-neo"><div class="nc-ext-banner">Not from the KP manual — In[Neo]Sight research summaries</div>
     ${renderMd(m.neo.text)}<div class="nc-src"><b>Articles</b>${m.neo.articles.map((a) =>
-      `<a class="nc-art" href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}${a.reviewed ? ` <small>(${esc(a.reviewed.slice(0, 7))})</small>` : ""}</a>`).join("")}</div></div>` : "";
+      `<a class="nc-art" href="${esc(/^https?:\/\//i.test(a.url) ? a.url : "#")}" target="_blank" rel="noopener">${esc(a.title)}${a.reviewed ? ` <small>(${esc(a.reviewed.slice(0, 7))})</small>` : ""}</a>`).join("")}</div></div>` : "";
   const offer = m.offerExternal && !busy ? `<div class="nc-offer">
     <p>${m.neo ? "Still need more?" : "Want an answer from the AI's general knowledge?"} It will <b>not</b> come from the KP manual or In[Neo]Sight and uses more of your API credit.</p>
     <button type="button" class="nc-btn nc-ghost" data-ext="ai" data-msg="${i}">Ask AI (general knowledge)</button></div>` : "";

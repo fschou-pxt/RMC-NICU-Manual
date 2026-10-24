@@ -1,0 +1,10 @@
+# Cloudflare Pages settings for the private preview (deploy from this folder; see README.md).
+# The password (PREVIEW_PASSWORD) is a secret set in Cloudflare, not here.
+name = "nicu-manual-preview"
+pages_build_output_dir = "../site/dist"
+compatibility_date = "2026-10-01"
+
+# "Let's discuss" counts on evidence notes (functions/api/discuss.js); free-tier Workers KV
+[[kv_namespaces]]
+binding = "DISCUSS"
+id = "00ddf1ac51dd4411ab20a896db14a366"
