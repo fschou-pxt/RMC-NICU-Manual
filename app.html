@@ -392,13 +392,13 @@ input.addEventListener("keydown", (ev) => {
 });
 input.addEventListener("input", () => { input.style.height = ""; input.style.height = Math.min(140, input.scrollHeight) + "px"; });
 
-// Copy and share an answer as plain text, with where it came from; report a gap when the manual had no answer
+// Copy and share an answer as plain text, with where it came from; "Let's discuss" (raised hand) when the manual had no answer
 const GAP_EMAILS = []; // Drs. James Washington and Michael Chang: addresses to be added
 function msgActions(m, i) {
   return `<div class="msg-acts">
     <button type="button" data-act="copy-msg" data-msg="${i}"><i class="bi bi-clipboard"></i> Copy</button>
     ${navigator.share ? `<button type="button" data-act="share-msg" data-msg="${i}"><i class="bi bi-share"></i> Share</button>` : ""}
-    ${m.offerExternal && GAP_EMAILS.length ? `<button type="button" data-act="gap" data-msg="${i}"><i class="bi bi-flag"></i> Report a gap</button>` : ""}</div>`;
+    ${m.offerExternal && GAP_EMAILS.length ? `<button type="button" data-act="gap" data-msg="${i}"><i class="bi bi-person-raised-hand"></i> Let's discuss</button>` : ""}</div>`;
 }
 const questionFor = (i) => history.slice(0, i).reverse().find((m) => m.role === "user")?.text || "";
 function plainAnswer(i) {
@@ -409,9 +409,9 @@ function plainAnswer(i) {
   return t;
 }
 function reportGap(i) {
-  const body = `This question had no answer in the NICU Manual:\n\n${questionFor(i)}\n\nWhat should the manual say (optional):\n\n\n` +
+  const body = `I'd like to discuss a question the NICU Manual doesn't answer yet:\n\n${questionFor(i)}\n\nMy thoughts (optional):\n\n\n` +
     `Sent from the NICU Manual app on ${new Date().toLocaleDateString()}. Please don't include patient identifiers.`;
-  location.href = `mailto:${GAP_EMAILS.join(",")}?subject=${encodeURIComponent("NICU Manual gap: " + questionFor(i).slice(0, 80))}&body=${encodeURIComponent(body)}`;
+  location.href = `mailto:${GAP_EMAILS.join(",")}?subject=${encodeURIComponent("Let's discuss (NICU Manual): " + questionFor(i).slice(0, 80))}&body=${encodeURIComponent(body)}`;
 }
 function flash(btn, html) { const was = btn.innerHTML; btn.innerHTML = html; setTimeout(() => { btn.innerHTML = was; }, 1800); }
 
