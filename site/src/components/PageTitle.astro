@@ -1,0 +1,47 @@
+---
+// Chapter header: part and chapter number, title, and a row of jump links to the chapter's main sections.
+import chapters from "../chapters.json";
+
+const { entry, headings = [] } = Astro.locals.starlightRoute;
+const chapter = chapters.find((c) => c.slug === entry.id);
+const sections = headings.filter((h) => h.depth === 2);
+---
+
+<header class="chapter-hero">
+  {chapter?.part && <p class="eyebrow">{chapter.part}<span aria-hidden="true"> · </span>Chapter {chapter.number}</p>}
+  <h1 id="_top">{entry.data.title}</h1>
+  {
+    sections.length > 1 && (
+      <nav class="jump" aria-label="Sections in this chapter">
+        {sections.map((s) => (
+          <a href={`#${s.slug}`}>{s.text}</a>
+        ))}
+      </nav>
+    )
+  }
+</header>
+
+<script>
+  // Flowcharts: drawn in the browser from the ```mermaid source, in the site's colors
+  async function drawDiagrams() {
+    const blocks = document.querySelectorAll("pre.mermaid:not([data-processed])");
+    if (!blocks.length) return;
+    const { default: mermaid } = await import("https://cdn.jsdelivr.net/npm/mermaid@12.2.0/dist/mermaid.esm.min.mjs");
+    const dark = document.documentElement.dataset.theme === "dark";
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "loose",
+      theme: "base",
+      themeVariables: {
+        fontFamily: "Inter, system-ui, sans-serif",
+        fontSize: "14px",
+        primaryColor: dark ? "#1a2738" : "#eef4fa",
+        primaryBorderColor: dark ? "#3b5878" : "#9fbfdc",
+        primaryTextColor: dark ? "#dde5ee" : "#1d2733",
+        lineColor: dark ? "#7cc0f5" : "#0068a8",
+      },
+    });
+    await mermaid.run({ nodes: blocks });
+  }
+  drawDiagrams();
+</script>

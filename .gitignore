@@ -13,3 +13,8 @@
 **/*.quarto_ipynb
 research/
 evidence/_work/
+.wrangler/
+site/node_modules
+site/node_modules.nosync
+site/dist/
+site/.astro/

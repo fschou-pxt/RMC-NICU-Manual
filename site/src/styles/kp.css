@@ -1,0 +1,157 @@
+/* KP Riverside NICU Manual: site design on top of Starlight.
+   Starlight's color names are inverted in light mode: --sl-color-white is the strongest text, --sl-color-black the page. */
+
+:root {
+  --sl-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --sl-content-width: 47rem;
+  --sl-sidebar-width: 17.5rem;
+  --sl-line-height: 1.7;
+  --kp-navy: #003b71;
+  --kp-radius: 14px;
+
+  /* dark */
+  --sl-color-accent-low: #12324d;
+  --sl-color-accent: #7cc0f5;
+  --sl-color-accent-high: #d4eafc;
+  --sl-color-white: #f2f6fa;
+  --sl-color-gray-1: #dde5ee;
+  --sl-color-gray-2: #b9c6d4;
+  --sl-color-gray-3: #8fa1b5;
+  --sl-color-gray-4: #5d6f84;
+  --sl-color-gray-5: #2a3a4d;
+  --sl-color-gray-6: #172433;
+  --sl-color-black: #0b131d;
+  --kp-surface: #111c29;
+  --kp-surface-2: #16243a;
+  --kp-shadow: 0 1px 2px rgb(0 0 0 / 0.3);
+  --kp-img-bg: #f4f7fb;
+}
+:root[data-theme="light"] {
+  --sl-color-accent-low: #e3eef8;
+  --sl-color-accent: #0068a8;
+  --sl-color-accent-high: #003b71;
+  --sl-color-white: #101a26;
+  --sl-color-gray-1: #1d2733;
+  --sl-color-gray-2: #35465a;
+  --sl-color-gray-3: #5b6b80;
+  --sl-color-gray-4: #8a99ab;
+  --sl-color-gray-5: #d8e0ea;
+  --sl-color-gray-6: #eef2f7;
+  --sl-color-gray-7: #f6f8fb;
+  --sl-color-black: #ffffff;
+  --kp-surface: #ffffff;
+  --kp-surface-2: #f6f8fb;
+  --kp-shadow: 0 1px 2px rgb(16 32 56 / 0.05), 0 8px 24px rgb(16 32 56 / 0.06);
+  --kp-img-bg: #ffffff;
+}
+
+/* ---------- chrome: header, sidebar, right-hand contents ---------- */
+.header { backdrop-filter: saturate(1.4) blur(10px); background-color: color-mix(in srgb, var(--sl-color-black) 85%, transparent); }
+.site-title { font-weight: 750; letter-spacing: -0.02em; color: var(--sl-color-white); }
+.site-title img { height: 2rem; border-radius: 8px; }
+:root[data-theme="light"] .sidebar-pane { background-color: var(--sl-color-gray-7); }
+.sidebar-content .group-label .large { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sl-color-gray-3); font-weight: 650; }
+.sidebar-content a { border-radius: 8px; padding-block: 0.32rem; font-size: 0.92rem; }
+.sidebar-content a[aria-current="page"] { background: var(--sl-color-accent-low); color: var(--sl-color-accent-high); font-weight: 650; }
+.right-sidebar-panel h2 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sl-color-gray-3); }
+
+/* ---------- chapter header ---------- */
+.chapter-hero { padding: 0.5rem 0 1.75rem; margin-bottom: 0.5rem; border-bottom: 1px solid var(--sl-color-gray-5); }
+.chapter-hero .eyebrow { margin: 0 0 0.5rem; font-size: 0.78rem; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sl-color-accent); }
+.chapter-hero h1 { margin: 0; font-size: clamp(2.1rem, 5vw, 2.9rem); line-height: 1.08; font-weight: 800; letter-spacing: -0.035em; color: var(--sl-color-white); }
+.chapter-hero .jump { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 1.25rem; }
+/* wide screens list the sections in "On this page"; the chips are for phones and tablets */
+@media (min-width: 72rem) { .chapter-hero .jump { display: none; } .chapter-hero { padding-bottom: 0.25rem; border-bottom: 0; } }
+.content-panel + .content-panel { border-top: 0; }
+.chapter-hero .jump a { font-size: 0.82rem; font-weight: 550; text-decoration: none; color: var(--sl-color-gray-2); padding: 0.3rem 0.75rem; border-radius: 999px; border: 1px solid var(--sl-color-gray-5); background: var(--kp-surface); white-space: nowrap; }
+.chapter-hero .jump a:hover { border-color: var(--sl-color-accent); color: var(--sl-color-accent-high); }
+@media (max-width: 50rem) {
+  .chapter-hero .jump { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--sl-content-pad-x, 1rem)); padding-inline: var(--sl-content-pad-x, 1rem); }
+}
+
+/* ---------- content ---------- */
+.sl-markdown-content { font-size: 1rem; color: var(--sl-color-gray-1); }
+.sl-markdown-content :is(h2, h3, h4) { color: var(--sl-color-white); }
+.sl-markdown-content h2 { font-size: 1.65rem; font-weight: 750; letter-spacing: -0.025em; line-height: 1.2; margin-top: 3.25rem; padding-top: 2rem; border-top: 1px solid var(--sl-color-gray-5); }
+.sl-markdown-content > h2:first-child, .sl-markdown-content > .sl-heading-wrapper:first-child h2 { margin-top: 1.5rem; padding-top: 0; border-top: 0; }
+.sl-markdown-content h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.015em; margin-top: 2.25rem; color: var(--sl-color-accent-high); }
+.sl-markdown-content h4 { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sl-color-gray-3); margin-top: 1.75rem; }
+.sl-markdown-content strong { color: var(--sl-color-white); font-weight: 650; }
+.sl-markdown-content a:not(.xref) { text-underline-offset: 3px; }
+.sl-markdown-content a.xref { text-decoration: none; border-bottom: 1px dashed currentColor; font-weight: 550; }
+.sl-markdown-content hr { border: 0; height: 1px; background: var(--sl-color-gray-5); margin: 2rem 0; }
+
+/* bullet lists: small accent dots */
+.sl-markdown-content ul:not(.criteria) { padding-left: 1.25rem; }
+.sl-markdown-content ul:not(.criteria) > li::marker { color: var(--sl-color-accent); }
+
+/* numbered lists: procedure steps */
+.sl-markdown-content ol { list-style: none; counter-reset: step; padding-left: 0; }
+.sl-markdown-content ol > li { counter-increment: step; position: relative; padding-left: 2.6rem; margin-block: 0.7rem; min-height: 1.75rem; }
+.sl-markdown-content ol > li::before {
+  content: counter(step); position: absolute; left: 0; top: 0.05rem; width: 1.75rem; height: 1.75rem; border-radius: 50%;
+  display: grid; place-items: center; font-size: 0.8rem; font-weight: 700; color: #fff; background: var(--kp-navy);
+}
+:root:not([data-theme="light"]) .sl-markdown-content ol > li::before { background: #2f6ea8; }
+.sl-markdown-content ol ol > li::before { background: var(--sl-color-accent-low); color: var(--sl-color-accent-high); }
+
+/* criteria lists ("Either of the following" / "All of the following") */
+.sl-markdown-content .criteria-lead { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sl-color-gray-3); margin-bottom: 0.5rem; }
+.sl-markdown-content ul.criteria { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0; max-width: 34rem; }
+.sl-markdown-content ul.criteria > li {
+  margin: 0; padding: 0.7rem 1rem 0.7rem 2.6rem; position: relative; background: var(--kp-surface); border: 1px solid var(--sl-color-gray-5);
+  border-radius: 10px; box-shadow: var(--kp-shadow); font-weight: 550; color: var(--sl-color-white);
+}
+.sl-markdown-content ul.criteria > li::before {
+  content: ""; position: absolute; left: 1rem; top: 1.05rem; width: 0.8rem; height: 0.8rem; border-radius: 3px; border: 2px solid var(--sl-color-accent);
+}
+.sl-markdown-content ul.criteria > li + li { margin-top: 1.6rem; }
+.sl-markdown-content ul.criteria > li + li::after {
+  position: absolute; left: 1rem; top: -1.35rem; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; color: var(--sl-color-accent);
+  background: var(--sl-color-accent-low); padding: 0.1rem 0.45rem; border-radius: 999px;
+}
+.sl-markdown-content ul.criteria[data-logic="any"] > li + li::after { content: "OR"; }
+.sl-markdown-content ul.criteria[data-logic="all"] > li + li::after { content: "AND"; }
+
+/* tables */
+.sl-markdown-content table {
+  display: block; overflow-x: auto; width: max-content; max-width: 100%; border-collapse: separate; border-spacing: 0;
+  border: 1px solid var(--sl-color-gray-5); border-radius: var(--kp-radius); box-shadow: var(--kp-shadow); background: var(--kp-surface); font-size: 0.92rem;
+}
+.sl-markdown-content :is(th, td) { padding: 0.65rem 0.9rem; border: 0; border-bottom: 1px solid var(--sl-color-gray-5); vertical-align: top; text-align: left; }
+.sl-markdown-content :is(th, td) + :is(th, td) { border-left: 1px solid var(--sl-color-gray-5); }
+.sl-markdown-content thead th { background: var(--kp-surface-2); color: var(--sl-color-white); font-weight: 650; font-size: 0.85rem; }
+.sl-markdown-content tbody tr:last-child > * { border-bottom: 0; }
+.sl-markdown-content tbody tr:nth-child(even) > td { background: color-mix(in srgb, var(--kp-surface-2) 55%, transparent); }
+/* colors carried over from the original tables: shaded cells (e.g. "Not a spell") and accent titles */
+.sl-markdown-content :is(td, th).shade { background: var(--sl-color-gray-5) !important; color: var(--sl-color-gray-2); font-weight: 600; }
+.sl-markdown-content :is(td, th).accent { color: #d35f00; font-weight: 700; }
+:root:not([data-theme="light"]) .sl-markdown-content :is(td, th).accent { color: #ffa45c; }
+/* callouts in the KP palette */
+.starlight-aside--tip { --sl-color-asides-text-accent: #0b7a5a; --sl-color-asides-border: #2fa37b; background-color: #e9f7f1; }
+.starlight-aside--note { --sl-color-asides-text-accent: var(--sl-color-accent-high); --sl-color-asides-border: var(--sl-color-accent); background-color: var(--sl-color-accent-low); }
+:root:not([data-theme="light"]) .starlight-aside--tip { --sl-color-asides-text-accent: #7fe0bd; background-color: #10291f; }
+
+/* images, video, embedded players, flowcharts */
+.sl-markdown-content img { border-radius: 12px; border: 1px solid var(--sl-color-gray-5); background: var(--kp-img-bg); box-shadow: var(--kp-shadow); height: auto; }
+.sl-markdown-content :is(video, iframe) { display: block; width: 100%; max-width: 44rem; height: auto; aspect-ratio: 16 / 9; border: 0; border-radius: 12px; background: #000; box-shadow: var(--kp-shadow); }
+.sl-markdown-content .diagram { overflow-x: auto; padding: 1.25rem; border: 1px solid var(--sl-color-gray-5); border-radius: var(--kp-radius); background: var(--kp-surface); box-shadow: var(--kp-shadow); }
+.sl-markdown-content pre.mermaid { background: transparent; border: 0; margin: 0; text-align: center; font-size: 0; }
+.sl-markdown-content pre.mermaid[data-processed] { font-size: inherit; }
+
+/* downloads: links to PDFs and slides as file buttons */
+.sl-markdown-content a:is([href$=".pdf"], [href$=".pptx"], [href$=".docx"], [href$=".xlsx"]) {
+  display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.45rem 0.85rem; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 0.9rem;
+  color: var(--sl-color-accent-high); background: var(--sl-color-accent-low); border: 1px solid color-mix(in srgb, var(--sl-color-accent) 30%, transparent);
+}
+.sl-markdown-content a:is([href$=".pdf"], [href$=".pptx"], [href$=".docx"], [href$=".xlsx"])::before {
+  content: ""; width: 1rem; height: 1rem; background: currentColor;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'/%3E%3Cpolyline points='7 10 12 15 17 10'/%3E%3Cline x1='12' y1='15' x2='12' y2='3'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* quotes and callouts */
+.sl-markdown-content blockquote { border-left: 3px solid var(--sl-color-accent); background: var(--sl-color-accent-low); border-radius: 0 12px 12px 0; padding: 0.75rem 1rem; color: var(--sl-color-gray-1); font-style: normal; }
+.starlight-aside { border-radius: 12px; border-width: 0 0 0 4px; }
+
+/* page footer: previous / next */
+.pagination-links a { border-radius: var(--kp-radius); box-shadow: var(--kp-shadow); background: var(--kp-surface); }

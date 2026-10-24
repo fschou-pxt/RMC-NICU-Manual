@@ -1,0 +1,142 @@
+[
+ {
+  "slug": "index",
+  "part": null,
+  "number": 0
+ },
+ {
+  "slug": "telemedicine",
+  "part": "NICU Operations",
+  "number": 1
+ },
+ {
+  "slug": "phone-numbers",
+  "part": "NICU Operations",
+  "number": 2
+ },
+ {
+  "slug": "operations",
+  "part": "NICU Operations",
+  "number": 3
+ },
+ {
+  "slug": "publications",
+  "part": "NICU Operations",
+  "number": 4
+ },
+ {
+  "slug": "admission",
+  "part": "General Care",
+  "number": 5
+ },
+ {
+  "slug": "transfer",
+  "part": "General Care",
+  "number": 6
+ },
+ {
+  "slug": "discharge",
+  "part": "General Care",
+  "number": 7
+ },
+ {
+  "slug": "documentation",
+  "part": "General Care",
+  "number": 8
+ },
+ {
+  "slug": "death-workflows",
+  "part": "General Care",
+  "number": 9
+ },
+ {
+  "slug": "respiratory",
+  "part": "System-Based Protocols",
+  "number": 10
+ },
+ {
+  "slug": "cardiovascular",
+  "part": "System-Based Protocols",
+  "number": 11
+ },
+ {
+  "slug": "nutrition-fluid",
+  "part": "System-Based Protocols",
+  "number": 12
+ },
+ {
+  "slug": "gastrointestinal",
+  "part": "System-Based Protocols",
+  "number": 13
+ },
+ {
+  "slug": "renal-urology",
+  "part": "System-Based Protocols",
+  "number": 14
+ },
+ {
+  "slug": "infectious-disease",
+  "part": "System-Based Protocols",
+  "number": 15
+ },
+ {
+  "slug": "endocrine",
+  "part": "System-Based Protocols",
+  "number": 16
+ },
+ {
+  "slug": "neurology",
+  "part": "System-Based Protocols",
+  "number": 17
+ },
+ {
+  "slug": "hemonc",
+  "part": "System-Based Protocols",
+  "number": 18
+ },
+ {
+  "slug": "genetics-lluch",
+  "part": "System-Based Protocols",
+  "number": 19
+ },
+ {
+  "slug": "periviability",
+  "part": "Special Considersations",
+  "number": 20
+ },
+ {
+  "slug": "VLBW",
+  "part": "Special Considersations",
+  "number": 21
+ },
+ {
+  "slug": "DR",
+  "part": "Special Considersations",
+  "number": 22
+ },
+ {
+  "slug": "surgical",
+  "part": "Special Considersations",
+  "number": 23
+ },
+ {
+  "slug": "vaccine",
+  "part": "Health Maintenance",
+  "number": 24
+ },
+ {
+  "slug": "lluch-formulary",
+  "part": "Health Maintenance",
+  "number": 25
+ },
+ {
+  "slug": "dotPhrases",
+  "part": "Health Maintenance",
+  "number": 26
+ },
+ {
+  "slug": "references",
+  "part": "Health Maintenance",
+  "number": 27
+ }
+]
