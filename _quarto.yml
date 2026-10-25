@@ -72,6 +72,9 @@ format:
     theme: lumen
     css: custom.css
     include-in-header: pwa/head.html
+    include-before-body:
+      # soft launch of the new site (nicu-manual.pages.dev): a banner linking to the same page there
+      - pwa/new-site.html
     include-after-body:
       # chat assistant hidden on the live site until the January 2027 launch (pre-launch survey); it lives on the revamp branch
       - pwa/register.html
