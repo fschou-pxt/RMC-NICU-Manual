@@ -24,7 +24,6 @@ export const MODELS = [
   { id: "gpt-6.1-sol", label: "GPT-6.1 Sol", provider: "openai" },
   { id: "gpt-6-luna", label: "GPT-6 Luna (fastest, cheapest)", provider: "openai" },
   { id: "grok-4.7", label: "Grok 4.7", provider: "xai" },
-  { id: "grok-4.3", label: "Grok 4.3 (cheaper)", provider: "xai" },
 ];
 export const modelInfo = (id) => MODELS.find((m) => m.id === id) || MODELS[0];
 export const shortLabel = (m) => m.label.replace(/ \(.*\)$/, "");
