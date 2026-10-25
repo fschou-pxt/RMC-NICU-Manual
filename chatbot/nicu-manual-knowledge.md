@@ -130,7 +130,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-regiona
 ## 2 Phone Numbers › 2.3 Pediatrics Department Contact
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatrics-department-contact
 
-| DEPARTMENT | NAME | LOCAL | PAGER/CELL | NURSING STATION | OFFICE/VOICE MAIL | CASE MANAGER |
+| DEPARTMENT | NAME | SITE | PAGER/CELL | NURSING STATION | OFFICE/VOICE MAIL | CASE MANAGER |
 | --- | --- | --- | --- | --- | --- | --- |
 | ADD Sx 6 or under | child parent interaction therapy by County Children’s Services |  | 951-358-4520 |  |  |  |
 | ADD/developmental | TBD | RIV |  |  |  | for pt. 951-353-3199 |
@@ -138,12 +138,10 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Cindy Evans | OC | 888-988-2800 | 8-237-6685 |  |  |
 |  | Jay H. Lee | OC(tustin) | 888-988-2800 |  |  |  |
 | ***autism case manager | Lisa snider | OC | 888-988-2800 |  |  |  |
-|  |  |  |  |  |  |  |
 | ALLERGY/IMMUNOLOGY | Lien Lai -specialized in pediatric pt | RIV-Wildomar |  | 8-260-3323 |  |  |
 |  | Purvee Shah | RIV |  | 8-258-4453 or 4413 | 8-258-5869 |  |
 |  | Tranhoai Nguyen | RIV |  | 8-258-4453 |  |  |
 |  | Niya Wanich | LA |  |  |  |  |
-|  |  |  |  |  |  |  |
 | CARDIOLOGY | Bobby Daftari | RIV | 310-650-1963(cell) 310-626-8732(fax-ECG) | 8-258-5503 | 8-258-3353 | Nicole Hutson x5464 |
 |  | Eugene Hwang | FON | 909-876-2736 | 8-250-5451 | 8-250-7156 |  |
 |  | Ila Sangadkor | OC |  | 8-230-2720 |  |  |
@@ -155,22 +153,19 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Swilley |  | 310-609-4889 |  |  |  |
 |  | Joseph Mares | DOW |  |  |  |  |
 |  | Matthew Russell | LA | 323-333-2662 |  |  |  |
-|  |  |  |  |  |  |  |
-| CRANIOFACIAL/PLASTIC | Trevor Hoffman (craniosynostosis) | WLA | 949-233-8099 | 8-250-5993 | 8-390-2368 8-250-4055 | Pamela Hoffman, 323-857-2368 |
+| CRANIOFACIAL/PLASTIC | Trevor Hoffman (craniosynostosis) | WLA | 949-233-8009 | 8-250-5993 | 8-390-2368, 8-250-4055 | Pamela Hoffman, 323-857-2368 |
 |  | Zhao (plagiocephaly) | FON | OR PT-RIV |  |  |  |
 |  | Yohan Shin | FON |  |  |  |  |
-|  |  |  |  |  |  |  |
 | PEDS DERMATOLOGY | Arlene Tsuchiya | OC | 714-387-1687 | 8-237-7975 | 8-234-3405 |  |
 |  | Louise Gordon | OC |  | 8-236-4371 |  |  |
 |  | Valencia Sosa | LA |  |  | 8-363-4158 |  |
 |  | Linda Wong | BP | 626-728-5481 | 8-370-5001 | 8-370-5004 |  |
 |  | Pamela Nemzer | BF |  | 8-327-2640 | 8-327-2565 |  |
 |  | Susan Boiko | SD(San Marcos) | 619-682-0709 | 8-276-4244 | 8-276-4058 |  |
-| -vascular birth mark clinic | under Derm | LA | case mgr- Bernadette Maloles,RN | 323-783-8950 |  |  |
+| -vascular birth mark clinic | under Derm | LA |  | 323-783-8950 |  | case mgr- Bernadette Maloles,RN |
 |  | Yun Sun Lee (peds interest) | RIV |  |  |  |  |
-|  |  |  |  |  |  |  |
 | ENDOCRINE | Ruvdeep “HAPPY” Randhawa | RIV | 951-774-8198(pg), 951-858-8641(c) | 8-258-5503 | 8-258-5586 | Jen Cortez x5404 |
-|  | -health educator | Van Buren | Sherri Pinero or Stephanie Cullingford |  |  |  |
+|  | -health educator: Sherri Pinero or Stephanie Cullingford | Van Buren |  |  |  |  |
 |  | Alan B. Cortez | OC | 714-387-1284(pg), 714-356-6510(c) | 8-230-2725 | 8-230-2738(714-254-) |  |
 |  | Joshua May | LA | 323-341-8755 | 8-363-7120 |  |  |
 |  | Robert Itami | PC | 818-373-3086 |  |  |  |
@@ -186,19 +181,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Zohreh Shoar | FON |  |  |  |  |
 |  | Ramin Moghaddas | FON | 909-458-7412 | 8-250-2072 | 8-250-4400 |  |
 |  | Maria Lin | FON LA RIV OC |  |  |  |  |
-|  |  |  |  |  |  |  |
 | PEDS ENT | Carolyn V. Nguyen | LA | 323-783-1858 |  |  |  |
 |  | MIGUEL KRISHNAN | RIV |  |  |  |  |
 |  | Robert Barretto | OC |  |  |  |  |
-|  |  |  |  |  |  |  |
 | GENETICS | Sayed Ahmed | RIV | 951-774-7202, 248-990-3666 | 8-258-4393 | 8-258-5320 |  |
-|  | Trevor Hoffman | FON/WLA | 949-233-8099 | 8-250-5993 | 8-390-2368, 8-250-4055 |  |
+|  | Trevor Hoffman | FON/WLA | 949-233-8009 | 8-250-5993 | 8-390-2368, 8-250-4055 |  |
 |  | Diane Broome | OC | 714-387-1637 |  |  |  |
 |  | Rosetta Hassan | BP | 562-262-4183, 562-755-9620 |  |  |  |
-|  |  |  |  |  |  |  |
 | GI |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 |  | Alauna Cheng | FON | 909-209-1759 |  |  |  |
 |  | William Mow | OC | 714-387-3249(pg) | 714-279-4269 | 714-279-4896 |  |
 |  | Bruce Grill(Tue-Wed) | FON/RIV | 909-209-0828 | 8-258-5503 | 8-258-3463 | Nicole Hutson x5464 |
@@ -209,12 +199,10 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Glenn Duh | BF | 310-687-0673 | 8-327-2479 | 562-657-2789 |  |
 |  | Warren Shapiro | SD |  | 8-240-6150 |  |  |
 | -Peds nutritionist | Stefanie Cullingford | RIV |  |  |  |  |
-|  |  |  |  |  |  |  |
 | HEM/ONC | Vaghasia,Neha | FON | 909-209-1250(pg) | 8-250-6126 |  |  |
 |  | Kenji Morimoto | FON | 909-209-1508 | 8-250-6126 | 8-250-5844 |  |
 |  | Liesl Mathias | FON | 909-370-7632 | 8-250-6126, 8-220-4824 | 8-250-7069 |  |
 |  | Naveen Qureshi | OC | 562-272-5136 | 8-220-4824 |  |  |
-|  |  |  |  |  |  |  |
 | ID | Roopa Viraraghavan | OC | 714-423-0485 |  |  |  |
 |  | Zachary Taylor | LA | 323-279-0378 |  | 8-363-1530(5350) |  |
 |  | Gary Burkhart | LA | 323-341-1265 | 8-363-5350 | 8-363-7274 |  |
@@ -228,10 +216,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Mark Sawyer | SD |  | 8-240-6170 |  |  |
 |  | Kevin Quinn | FON/RIV | 909-209-1343 |  | 8-250-5837 | 909-427-5408 |
 |  | Sean Fitzwater | LA | 323-854-9213 |  |  | (ID clinic direct) |
-|  |  |  |  |  |  |  |
 | METABOLIC | Divya Vats(male) Moin Vera | LA | 323-819-2978(cell), 213-230-0256(pg) | Barbara Lyons, RN | 323-783-6970 (preferred) | Barbara Lyons,RN |
 |  |  |  |  | 323-783-6970 (tie line 363) 323-783-3708(VM) |  |  |
-|  |  |  |  |  |  |  |
 | NEPHROLOGY | Maria Domingo | FON |  | 8-250-5454 |  | check on call app under Fontana |
 |  | James Tong | FON | 909-209-1307 | 8-250-6126 | 8-250-5847 |  |
 |  | Rita Sheth (part time) | OC | 714-387-3840(pg) | 8-235-5643 | 949-262-5649 |  |
@@ -241,7 +227,6 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Robert Mak | SD |  | 8-240-6170 |  |  |
 |  | Elizabeth Ingullie | SD |  | 8-240-6170 |  |  |
 |  | Joel Hernandez |  | 323-699-6846(pg) |  |  |  |
-|  |  |  |  |  |  |  |
 | NEUROLOGY | Gamil Fteeh | RIV |  |  |  |  |
 |  | Yawen Wang | BP |  |  |  |  |
 |  | Rita Marshall | RIV/FON | 909-209-2801(pg) | 8-258-4747 | 909-782-9806 |  |
@@ -258,24 +243,20 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Shelly Bose | DOW |  | 8-327-2696 | 562-657-2696 |  |
 |  | Gamil Fteeh | FON | TH&FR IN RIV |  |  |  |
 | -neuromuscular sp | Abel Wu | LA |  |  |  |  |
-|  |  |  |  |  |  |  |
 | ** NEUROSURGERY** | Mark Calayag | FON | 909-427-7777 x2076 | 8-250-7278 | 8-250-4570 |  |
 |  |  | OC |  |  |  |  |
 |  | Darian Esfahani | LA | 323-279-1691(pg) | 323-854-9235 |  |  |
 |  | Greg Gerras | SD |  | 8-280-5511 |  |  |
 | *** spina bifida clinic | Fedor Hauptman | LA |  |  |  |  |
 |  | Christens |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | NUTRITIONIST |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | PEDS OPHTHALMOLOGY | Jonathan Duerksen | FON-Rancho Cu. |  | 909-477-3821 | 8-239-3808 |  |
 |  | Ashish Mehta | OC-Yorba Linda |  | 8-217-3663 |  |  |
 |  | Tu Lan Nhat,Nguyen | FON |  |  |  |  |
 |  | Naomi Ellenhorn | LA | 310-795-4544 | 323-783-4144 | 323-783-7707 |  |
 |  | Steven Ortiz Jennifer Bee Aye | RIV |  | 8-258-4717 | 8-258-4489 909-973-2167 |  |
-|  | Tinny Dinh | RIV | on call pg 774- 7204 | 8-258-4717 |  | RN-x5886 or x4723 |
-|  |  |  |  |  |  |  |
-| PEDS ORTHOPEDICS | Corey Fuller | FON | 8-250-7777 x | 8-250-7066 |  |  |
+|  | Tinny Dinh | RIV | on call pg 774-7204 | 8-258-4717 |  | RN-x5886 or x4723 |
+| PEDS ORTHOPEDICS | Corey Fuller | FON | 8-250-7777 | 8-250-7066 |  |  |
 |  | Brent Berger | FON |  |  |  |  |
 |  | James H. Lau | OC |  |  |  |  |
 |  | Hillard Spencer | OC |  |  |  |  |
@@ -289,27 +270,22 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 | ***sports med | James Hwang | OC |  |  |  |  |
 | ***for severe scoliosis | William Weiser | BP | ***refer to Riverside Ortho first!! |  |  |  |
 | ***sports med | Nepomuceno | Murrietta | “sports30” |  |  |  |
-|  |  |  |  |  |  |  |
 | PULMONARY | Muhammad Saeed | LA | 323-699-7812 |  | 323-783-5320 | Martha (CF clinic), 8-363-1291 |
 |  | Eugene Sohn | LA | 323-279-8836, 323-783-5350 |  |  |  |
 |  | Stephen Johnson | LA | 323-918-1874 |  | 323-783-6057 |  |
 |  | Henry Wojtczak | SD |  | 8-240-6170 |  |  |
 |  | Kyle McCallin | FON |  |  |  |  |
 | ***sleep medicine | Dennis Hwang | FON |  |  | 8-250-7260 |  |
-|  |  |  |  |  |  |  |
 | CHILD PSYCHIATRY | Catherine Stinnett | CORONA |  | 8-262-7148 |  |  |
 |  | Mehran Motamed | CORONA |  | 8-262-7148 |  |  |
 |  | Zehzaa Mikhaeli | RIV-Canyon Crest |  |  |  |  |
 |  | Bernard Nana-Diego | RIV-Canyon Crest |  | 8-257-4050 | 8-257-4021 |  |
 |  | Evita Rocha | RIV-Canyon Crest |  |  |  |  |
 | **NEUROPSYCH TEST | REFER TO OC (PSYCH) |  | Dr.Priscilla Armstrong |  |  |  |
-|  |  |  |  |  |  |  |
 | RHEUMATOLOGY | Mina Chaudhari | FON/OC/RIV- TH | 909-209-1846, 714-264-8931 | 8-250-5451 | 8-250-6245 | Jennifer Cortes x5404 |
 |  | Judith Garza | LA | 323-341-1296, 626-482-9641 | 323-783-5166 | 323-783-1997 or x5310 |  |
 |  | Anusha Ramanathan | LA/Downey | 562-272-6139(pg) |  |  |  |
 |  | Rhina Castillo | OC/FON |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | PEDS SURGERY | Stanley T. Lau | OC/DOW | 323-699-2010, 714-227-1333 |  |  |  |
 |  | Roman Sydorak | LA/FON | 323-699-7612, 323-219-6465 |  | 323-783-7507, 909-427-5172 | Fontana Surgery Clinic, 909-609-2008 |
 |  | Albert Chong | LA/FON | 323-493-6943 |  |  | 8-250-3688 (scheduler) |
@@ -317,24 +293,17 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | W. David Vazquez | SD | 619-682-8049, 858-229-4512 | 619-528-6746 | 619-528-5694 |  |
 |  | Cindy Tai | FON | 323-699-0601(pg) |  |  |  |
 | -also see pectus | Ed Yoo | LA/FON/RIV | 323-699-0523, 215-498-8240 | 2nd/4th Wed-pm |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | Maxillofacial SURGERY | David Bell | OC | 714-644-2068, 714-387-1501 |  |  |  |
 |  | Randal Schoeman | OC |  |  |  |  |
 |  | Alexander Kim | SD |  | 619-528-2597, 760-591-4276 |  |  |
 | PEDS DENTISTRY | James Richardson, DDS | Corona | 951-735-2011 |  | for kids needing general anesthesia |  |
 | ***for STAT outside referral (such as Mandible FX) | Dr. Stringer | Outside referral |  |  |  |  |
-|  |  |  |  |  |  |  |
 | CARDIOTHORACIC SURGERY | Lawrence Kong | FON | 909-872-5135 | 909-427-6060 | 909-427-5768 |  |
-|  |  |  |  |  |  |  |
 | PEDS UROLOGY | Jennifer Yiee | OC | 714-387-3774(pg), 310-254-7766(cell) |  | 8-215-7530 |  |
 |  | Huang | LA |  |  |  |  |
 |  | Monica Metzdorf | LA | 323-341-1401 |  | 323-783-5426 |  |
 |  | Ethan Franke | SD | 619-682-9480(pg) | 619-516-6362 |  |  |
-|  |  |  |  |  |  |  |
 | CHOC OPERATOR | 714-997-3000 |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | RIVERSIDE OPERATOR | 8-258-2000 |  | Direct line x3945 |  |  |  |
 | -spanish operator | 8-288-1050 |  |  |  |  |  |
 | -admitting DOD |  |  |  |  |  |  |
@@ -342,7 +311,6 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 | -ER |  |  |  |  |  |  |
 | -NICU |  |  |  |  |  |  |
 | -admitting office | 8-258-3094 |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | FONTANA OPERATOR | 909-427-5000 (8-332) |  | Direct 8-250-7373 |  |  |  |
 | -admitting Resident | 8-250-7777 x1224 |  | Attending(pg)x1223 |  |  |  |
 | -peds floor | 8-332-9450 | x7874 |  |  |  |  |
@@ -351,20 +319,16 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 | -PICU attending | 8-332-7777 x3966 |  |  |  |  |  |
 | -PICU charge nurse | 8-332-4448 |  |  |  |  |  |
 | -referral scheduler | Cindy |  | 8-332-4400 |  |  |  |
-|  |  |  |  |  |  |  |
 | ANAHEIM OPERATOR | 8-215-2000 |  |  |  |  |  |
 | -ER | 8-215-2800 |  |  |  |  |  |
 | -peds floor | 8-220-4573 |  |  |  |  |  |
 | -peds admitting MD | 714-387-1042 |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | SUNSET OPERATOR | 8-363-4011 |  | 800-954-8000?? |  |  |  |
 | -NICU | 8-363-4285, 323-783-9411 |  |  |  |  |  |
 | -PICU | 323-783-9541 |  |  |  |  |  |
 | -PICU charge nurse | 323-783-6923 x0923 |  |  |  |  |  |
 | -peds floor | 8-363-5350 |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | -DOD pager | 323-279-PEDS(7337) |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | Riverside Radiology | Annie Lee | x4179 | Hoon Kang | x5597 | Andrew Song |  |
 |  | Tran | x4613 | Heather Lei | x5534 | Richard Cho |  |
 |  | George Hsia | x4018 | Houng |  | Pouyan Golshani | x3188 |
@@ -375,10 +339,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Danh Le | x4013 | Aarti Kaushik |  |  |  |
 |  | Khanh Nguyen | x4013 | Vaishali Patel |  |  |  |
 | -ultrasound | x4448 |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | Fontana Radiology(for MRI sedation) | Valerie Velarde | 8-250-4461 |  |  |  |  |
 |  | 1. Order MRI as usual but state “With sedation in Fontana” in comment section | 2. Within 30 days of MRI date, you must do pre- procedure clearance PE. Make sure to obtain consent. Document patient “cleared for sedation” and “benefit and risk of sedation discussed and consent to anesthesia” | 3. Sedation order and inpatient H&P done by Fontana MD |  |  |  |
-|  |  |  |  |  |  |  |
 | RIVERSIDE ORTHOPEDICS |  |  | RIVERSIDE ORTHO PA |  |  |  |
 | -reception | 8-258-4645 |  | Delanka Silva |  | John Miller | Brian Redding |
 | -ortho RN | x4406, x4811, x4795 |  | Lance Farr |  | Huey Nguyen | Kimberly Adams |
@@ -386,76 +348,48 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  |  |  | Nick Carnahan |  | Lu Jallamilio |  |
 |  |  |  | Patricia Mcdougall |  | Ty Roseberry |  |
 |  |  |  | Jared Robertson |  | Pat Duke |  |
-|  |  |  |  |  |  |  |
 | OPHTHALMOLOGY RN for stat consultation | x4723 (Beena) |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | ADULT IDDM Coordinator | Marjerie Barr | x4807 |  |  |  |  |
-|  |  |  |  |  |  |  |
 | PEDS MED ADVICE | x4354, x3112 |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | AUDIOLOGY DEPT | x4741 |  | SPEECH DEPT | x4759 | PEDS OT-RIV | Rebekah Vasquez |
-|  |  |  |  |  |  |  |
 | OUTSIDE REFERRAL | 8-265-4294 |  |  |  |  |  |
-|  | password expires in 90 days. must call Physician Help Desk, 8- 338-7395 |  |  |  |  |  |
-|  |  |  |  |  |  |  |
+|  | password expires in 90 days. must call Physician Help Desk, 8-338-7395 |  |  |  |  |  |
 | INLAND REGIONAL CTR | 909-890-3370(under 3) | 909-890-4711(over 3) |  |  |  |  |
-|  |  |  |  |  |  |  |
 | KP professional recruitment | Robert Gonzalez | 626-405-5861 |  |  |  |  |
-|  |  |  |  |  |  |  |
 | PEDS master scheduler |  | 8-286-2630 |  |  |  |  |
 | PEDS schedule coord. | Joanne Alvarez | 8-258-4301 |  |  |  |  |
 | EEG scheduler | RIVERSIDE | 8-286-2635 |  |  |  |  |
 |  | FONTANA | 8-250-5430 |  |  |  |  |
-|  |  |  |  |  |  |  |
 | KITS coordinator | Cora Carnero | 8-258-4094 |  |  |  |  |
 | CCS coordinator | Erica Lee | 626-381-4347 |  |  |  |  |
-|  |  |  |  |  |  |  |
 | MEMBERSHIP service | 8-398-4400 |  | x4571 (administrator) |  |  |  |
-|  |  |  |  |  |  |  |
 | DME(Fontana) | 1-855-80-KPDME (57363) |  | M-F 8:30-6, SAT 8:30-5 |  |  |  |
-|  |  |  |  |  |  |  |
 | Dermatology Cosmetic Clinic | 562-803-1331 | self referral |  |  |  |  |
-|  |  |  |  |  |  |  |
 | CIRCUMCISION -under 30 days old | Forward note to P_5000052 (OBGRIRIV CALL CENTER POOL) and P_18827 (OBGRIRIV RN) | Gema Castellon, RN x4029 | Document in note, “cleared for circumcision” | make sure received Vit. K |  |  |
-|  |  |  |  |  |  |  |
 | teleconference for outside | 1-888-858-2133 | 8362299# |  |  |  |  |
-|  |  |  |  |  |  |  |
 | Regional Asthma Hotline | 877-4KP-ASTHMA or 877-457-2784 |  | useful # to give to patient. 24-7 oncall RN coverage |  |  |  |
-|  |  |  |  |  |  |  |
-| Pharmacy New Member Program Service(PNMP) | if 5 or more Rx from outside, call this #. They will convert Rx to our formulary for you. |  | Julie Yonemitsu, Pharm D. 951- 774-8131(pg) |  |  |  |
-|  |  |  |  |  |  |  |
+| Pharmacy New Member Program Service(PNMP) | if 5 or more Rx from outside, call this #. They will convert Rx to our formulary for you. |  | Julie Yonemitsu, Pharm D. 951-774-8131(pg) |  |  |  |
 | KP LEGAL COUNSEL | Roxana Yoonessi MD JD | 8-335-5725 | (1-626-405-) | 818-321-9242 (cell) |  |  |
 |  | Hema Anwar JD |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | TMJ PAIN | refer patient to physical medicine dept. first, not ENT. |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | Director of Bioethics | Dan Wilson | 951-204-3437 | 661-706-2523 |  |  |  |
-|  |  |  |  |  |  |  |
 | CARDIAC ECHO | do referral to cardiology (adult) |  | click ‘reason’ box to choose option for pediatric echo without sedation | choose ‘yes’ on authorization |  |  |
-|  |  |  |  |  |  |  |
 | Frenotomy | Refer to ENT (Dr. Krishnan) | or call | Malu Lungay | 8-258-5998/4737 |  |  |
-|  |  |  |  |  |  |  |
 | DENTIST with KP privilege for anesthesia | Richard Kunihara,DDS | Upland | 909-985-5117 |  |  | 360 East 7th st. suite J |
-|  |  |  |  |  |  |  |
 | -give outside referral dept # | Harvey Lee, DDS | Irvine | 949-733-3433 | Under DentiCal |  |  |
 |  | Smile Wide Dental | Costa Mesa | 949-548-5588 | Under DentiCal |  |  |
 |  | James Richardson,DDS | Corona | 951-735-2011 |  |  |  |
 |  | Hilo, DDS | thru Mobi |  | Under Medi-Cal |  |  |
 | peds nutritionist | Heidy Patterson, Stefanie Cullingford | Joyce Atkins | Sherry Pinero |  |  |  |
-|  |  |  |  |  |  |  |
 | NB screening contact | 844-343-9372 |  | Kara Brink, RN (Pasadena) | 626-564-3322 | (8-338) |  |
-|  |  |  |  |  |  |  |
 | Travel Advisory | 1-800-517-5556(for patient) |  | 8-295-6111(back line) |  |  |  |
-|  |  |  |  |  |  |  |
 | RSV Synagis protocol | Robyn Gerome |  |  |  |  |  |
 | Speech | Alejandrina Siriban Ann Bendroff |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | Jennifer Cortes | x5404 |  | Sophie Gonzalea | x5464 |  |  |
 | -Endo |  |  | -GI |  |  |  |
 | -Rheumatology |  |  | -Cardio |  |  |  |
 | -Asthma |  |  | -HRIF |  |  |  |
 | -ID |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 | Physical Therapy for positional plagiocephaly | Jody Wright |  | Loan Nugyen | send referral as young as 2mo old, | Dr. Arambulo after 6mo old |  |
 
 ## 2 Phone Numbers › 2.4 Pediatric Subspecialty Consultation › Cardiology:
@@ -494,19 +428,18 @@ Each session has a designated two-letter code. Use the following table to find t
 | 391 | Baldwin Park | TC |
 | 199 | Fontana | IE |
 | 338 | West LA | ML |
-| 201 | Wooden Hill | VA |
+| 201 | Woodland Hills | VA |
 | 392 | Riverside | IE |
 | 400 | South Bay | TC |
 | 893 | OC - Irvine | OC |
 | 1072 | Ontario | IE |
 | 1433 | MoVal | IE |
 
-## 3 Physician Operations › 3.2 Census and extra duty
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#census-and-extra-duty
+## 3 Physician Operations › 3.2 Physician staffing
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#physician-staffing
 
-- < 7 patients: no extra duty
-- 8-11 patients: 0.5W
-- ≥12 patients: 1W
+- Weekdays: a 24-hour on-call physician, plus a day-shift physician 8 AM–4 PM.
+- Weekends: the on-call physician, plus the post-call physician, who rounds.
 
 ## 3 Physician Operations › 3.3 Secure Chat
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-secure-chat
@@ -994,7 +927,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/transfer.html#insurance-plans
 | KP 1001 | Kaiser Plan Insurance from Employer DHMO - Deductible HMO - Inpatient High $ Deductible | Yes |
 | KP Health Care Reform HMO | Kaiser Plan Purchased by Individual HMO - set Copay | Yes |
 | KP Health Care Reform DHMO | KP Health Care Reform - DHMO Deductible HMO - Inpatient High $ Deductible | Yes |
-| Medical Financial Assistance | Kaiser Charity for those without any insurance. 30 days Kaiser Insurance then must enroll in an insurance after 30 days – Medi-Cal or purchased plan. Contact Case Manager for current insurance eligibility |  |
+| Medical Financial Assistance | Kaiser Charity for those without any insurance. 30 days Kaiser Insurance then must enroll in an insurance after 30 days – Medi-Cal or purchased plan. Contact Case Manager for current insurance eligibility | Contact case manager |
 | KP 1003 | Kaiser IEHP Medi-Cal | No* |
 | Inland Empire Health Plan | Medi-Cal | No* |
 
@@ -1368,7 +1301,7 @@ Any of the following:
 
 - Hypoglycemia with IV > 48 hrs ?
 - Bilirubin > 20 mg/dL
-- Intubated for > 24 hrs
+- Assisted ventilation ≥ 48 hrs (first 28 days)
 - APGAR <5 at 5 mins
 
 ## 7 Discharging an Infant › 7.10 High-Risk Infant Follow-Up › Eligibility criteria (long list)
@@ -1382,7 +1315,7 @@ For infants with birth weight > 1,500g and birth GA ≥ 32 weeks, one of the fol
 - Apgar score ≤ 3 at 5 mins or < 5 at 10 mins.
 - An unstable infant manifested by hypoxia, acidemia, hypoglycemia, and/or hypotension requiring pressor support.
 - Persistent apnea which required caffeine or other stimulant medication for the treatment of apnea at discharge.
-- Required oxygen for more than 29 days of hospital stay and had radiographic finding consistent with chronic lung disease (CLD).
+- Required oxygen for more than 28 days of hospital stay and had radiographic finding consistent with chronic lung disease (CLD).
 - Infants placed on ECMO.
 - Infants who received **iNO for > 4 hrs**, and/or treatment during hospitalization with **sildenafil** or other pulmonary vasodilatory medications for pulmonary hypertension.
 - Congenital heart disease requiring surgery or minimally invasive intervention.
@@ -1436,7 +1369,7 @@ The following steps may be followed to complete the process of discharge with ho
 
 1.  Contact Dr. Kyle McCallin (peds pulm) regarding discharge with home oxygen
 
-2.  Dr. McCallin does not like to discharge on lower than 1/8 LPM (120 mL), 100% FiO2
+2.  Dr. McCallin does not like to discharge on lower than 1/8 LPM (125 mL), 100% FiO2
 
 3.  Per Dr. McCallin: obtain baseline gas, +/- repeat CXR if most recent CXR prior was abnormal (air trapping, diaphragmatic flattening, atelectasis, etc.). Inquire if additional meds needed/ recommended (ie., pulmicort, albuterol, etc.)
 
@@ -1456,7 +1389,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#step-1-reconcil
 Go into the discharge navigator → Click on **MD med/order reconciliation** in left menu bar → Complete the medication reconciliation:
 
 1.  Discontinue what is not needed, add whatever else infant needs as outpatient
-2.  Order Poly-Vi-Sol for birth GA ≤ 37 weeks, or Poly-Vi-Sol with Iron for birth GA < 37 weeks
+2.  Order Poly-Vi-Sol for birth GA ≥ 37 weeks, or Poly-Vi-Sol with Iron for birth GA < 37 weeks
 3.  Order **discharge diet** and enter [appropriate diet](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-discharge-diet)
     - Make sure to copy/paste recipes for making 22kcal/oz or 24kcal/oz with Neosure or Enfacare 22kcal/oz to the Discharge Diet order
 4.  Order **discharge activity** and enter the back to sleep information by using the dot-phrase [.back1](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-back1)
@@ -1495,7 +1428,7 @@ Find your signed D/C summary within the Notes tab and click once:
 2.  Route to PCP: Select **+ PCP** and the patient’s PCP will populate in the **send-to** section
 3.  Route to the pediatric provider seeing baby after NICU discharge if not the PCP
 4.  Cut and paste brief synopsis in comment section
-5.  If infant’s birth GA <32 weeks or birth BW < 1,500g, D/C summary also needs to be routed to HRIF
+5.  If infant’s birth GA <32 weeks or birth BW ≤ 1,500g, D/C summary also needs to be routed to HRIF
     - Route D/C summary to **Nicole Ann Hutson** and **Pheba Joseph**
 6.  If infant is a candidate for Synagis^®^, also route D/C summary to **Robyn Gerome**
 
@@ -1716,7 +1649,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#workflow-
 | Is Baby assigned MRN? | Only transiently: MRN assignment is required to make the Delivery Summary available for documentation. Selecting Fetal Demise in Delivery Summary will inactivate the MRN | Only transiently: MRN assignment is required to make the Delivery Summary available for documentation. Selecting Fetal Demise in Delivery Summary will inactivate the MRN | Only transiently: MRN assignment is required to make the Delivery Summary available for documentation. Selecting Fetal Demise in Delivery Summary will inactivate the MRN | Yes |
 | Is KPHC chart created for baby? | No | No | No | Yes |
 | Which physician is the attending physician in the baby’s care? | OB/GYN | OB/GYN | OB/GYN | Pediatrician/neonatologist |
-| Who is in attendance at delivery to care for baby? | OB team | OB team | OB team | NICU team generally only attends if GA > 22 wk but will attend on a case-by-case basis at request of parent or a member of OB team |
+| Who is in attendance at delivery to care for baby? | OB team | OB team | OB team | NICU team generally only attends if GA ≥ 22 wk but will attend on a case-by-case basis at request of parent or a member of OB team |
 | Where should baby be cared for till death? | Mother’s room | Mother’s room | Mother’s room | Per mother’s preference (Mother’s room or NICU) |
 | Who declares death? | n/a | n/a | n/a | Pediatrician/neonatologist. Typically the RN will call the MD when baby’s heartbeat has ceased to beat. |
 
@@ -1990,7 +1923,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#general-titra
 - **CO₂ Management**: Increase Jet PIP by 1–2 cmH₂O if PaCO₂ is high; decrease if low. If PIP is maxed, consider lowering RR for air trapping.
 - **Oxygenation**: Adjust PEEP by 1–2 cmH₂O. Use sigh breaths sparingly for recruitment.
 - **Weaning**: Decrease PIP as CO₂ improves; reduce PEEP/FiO₂ as oxygenation stabilizes. Transition back to HFOV when heterogeneous lung pathology is resolved, or to CMV (invasive NAVA) when ready for extubation (to bubble CPAP or non-invasive NAVA).
-- **Monitoring**: Trend servo pressure (rises with decreased compliance/obstruction; falls with leaks/improved compliance). Check ETT position and suction as needed. Obtain ABG 15–30 min after changes.
+- **Monitoring**: Trend servo pressure (falls with decreased compliance/obstruction; rises with leaks/improved compliance). Check ETT position and suction as needed. Obtain ABG 15–30 min after changes.
 
 ## 10 Respiratory › 10.4 High-Frequency Jet Ventilator (HFJV) › Disease-Specific Strategies
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#disease-specific-strategies
@@ -2034,6 +1967,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#background
 
 ## 10 Respiratory › 10.5 Extubation Workflow for ELGAN/ELBW › Timing of successful extubation in ELGAN/ELBW from Different Studies
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#timing-of-successful-extubation-in-elganelbw-from-different-studies
+
+Values: PMA (weeks), median \[IQR\]
 
 | GA | APEX Study | Norway Study | Canada Study | Iowa City, USA | Kanagawa, Japan | Uppsala, Sweden |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -2355,7 +2290,7 @@ Modified SELDINGER TECHNIQUE (credit: [MacDonald’s Atlas of Procedures in Neon
 
 - GA:
   - <28 wks: 6Fr
-  - >28 wks: 8Fr
+  - ≥28 wks: 8Fr
 - Equipment:
   - Introducer and J shaped guidewire
   - Finder Needle 20-gauge with syringe
@@ -2557,7 +2492,7 @@ iNO, in conjunction with ventilatory support and other appropriate agents, is in
 
   - MAP > 15 cmH~2~O
 
-  *Example: MAP 15 on FiO~2~ of 1 with PaO~2~ 60 gives OI of 25*
+  *Example: MAP 15 on FiO~2~ of 100% with PaO~2~ 60 gives OI of 25*
 
 ## 11 Cardiovascular › 11.1 Persistent Pulmonary Hypertension of Newborn (PPHN) › Inhaled nitric oxide (iNO) › Contraindications
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#contraindications
@@ -2720,7 +2655,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#standard-
 | --- | --- | --- | --- | --- | --- |
 | Peripheral | 30mEq/L | 20mEq/L | 9mEq/L | 9mmol/L | 4mEq/L |
 | Central | 30mEq/L | 20mEq/L | 25mEq/L | 12.5mmol/L | 4mEq/L |
-| Goal range | 135-145mEq/L | 3-6mEq/L | 8.5-11 mg/dL | 5-8 mg/dL | 1.7-2.8mg/dL |
+| Goal serum range | 135-145mEq/L | 3-6mEq/L | 8.5-11 mg/dL | 5-8 mg/dL | 1.7-2.8mg/dL |
 
 ## 12 Nutrition, Fluid and Electrolytes › 12.3 Total Parenteral Nutrition (TPN) › Monitoring
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#monitoring
@@ -2731,7 +2666,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#monitorin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#treatment
 
 - Albuterol
-  - 0.4mg/kg/dose med nebulizer q2hrs.
+  - 0.4mg/kg/dose via nebulizer q2hrs.
   - 1 unit dose vial = 3mL = 2.5mg.
 - Calcium gluconate
 - Lasix
@@ -2914,9 +2849,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#volume
 
 Depending on the fortified milk feeding volume, three ratios can be used:
 
-- 3mL Cream per 100mL fortified milk - increase calculated calories by 2.4 kcal/oz
 - 4mL Cream per 100mL fortified milk - increase calculated calories by 3.1 kcal/oz
 - 5mL Cream per 100mL fortified milk - increase calculated calories by 3.9 kcal/oz
+- 6mL Cream per 100mL fortified milk - increase calculated calories by 4.7 kcal/oz
 
 ## 12 Nutrition, Fluid and Electrolytes › 12.12 Prolacta Cream › Usage › Possible combinations
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#possible-combinations
@@ -2944,7 +2879,7 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
 | --- | --- | --- | --- |
 | 5 | 0.2 | 0.3 | 0.3 |
 | 6 | 0.2 | 0.3 | 0.4 |
-| 7 | 0.3 | 0.3 | 0.4 |
+| 7 | 0.3 | 0.4 | 0.4 |
 | 8 | 0.3 | 0.4 | 0.5 |
 | 9 | 0.4 | 0.5 | 0.5 |
 | 10 | 0.4 | 0.5 | 0.6 |
@@ -2954,10 +2889,10 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
 | 14 | 0.6 | 0.7 | 0.8 |
 | 15 | 0.6 | 0.8 | 0.9 |
 | 16 | 0.6 | 0.8 | 1.0 |
-| 17 | 0.7 | 0.9 | 1.1 |
+| 17 | 0.7 | 0.9 | 1.0 |
 | 18 | 0.7 | 0.9 | 1.1 |
 | 19 | 0.8 | 1.0 | 1.1 |
-| 20 | 0.8 | 1.0 | 1.1 |
+| 20 | 0.8 | 1.0 | 1.2 |
 | 21 | 0.8 | 1.1 | 1.3 |
 | 22 | 0.9 | 1.1 | 1.3 |
 | 23 | 0.9 | 1.2 | 1.4 |
@@ -3037,11 +2972,6 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#therapy
 - Length of NTraining:
   - Initiate training for two weeks
   - Continue training until **PO ≥ 75% of feedings** and cueing and nippling each feed with a well-coordinated suck
-
-## 12 Nutrition, Fluid and Electrolytes › 12.14 NTrainer Use Regional Guidelines › Usage
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#usage-1
-
-- For all infants born at GA ≤ 32 weeks, start upon enteral feeds initiation, discontinue when reaching 34 weeks PMA.
 
 ## 12 Nutrition, Fluid and Electrolytes › 12.15 Breastfeeding and Bonding Education Material › Medications and medical procedures while you are Breastfeeding
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#medications-and-medical-procedures-while-you-are-breastfeeding
@@ -3161,15 +3091,15 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/renal-urology.html#prenatal-hy
 - If prenatal ultrasound measures **>7mm & <10mm in third trimester**, please obtain a postnatal US at 2-4 weeks of age as an outpatient
 
   - If first postnatal ultrasound (kidney + bladder ultrasound #1) continues to show a dilated pelvis **<10mm**, please obtain another ultrasound (#2) at 3 months of age and refer to pediatric urology after 3-month ultrasound if there is a persistent dilatation.
-  - If the postnatal ultrasound (#1 or #2) shows a dilated pelvis **>10mm** or read as **“severe hydronephrosis”**, please order a VCUG and refer patient to pediatric urology. Please cover patients with 3 days of antibiotics around the time of the procedure (pre, day of, post). VCUG availability at RMC/MVMC: see [Section 3.6.2](https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-agreement-radiology)
+  - If the postnatal ultrasound (#1 or #2) shows a dilated pelvis **≥10mm** or read as **“severe hydronephrosis”**, please order a VCUG and refer patient to pediatric urology. Please cover patients with 3 days of antibiotics around the time of the procedure (pre, day of, post). VCUG availability at RMC/MVMC: see [Section 3.6.2](https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-agreement-radiology)
   - Please arrange for the baby to be placed on antibiotics for UTI prophylaxis (cephalexin 10-20 mg/kg/day in 1-2 doses) for patients with Grade 4-5 VUR
 
-- If prenatal ultrasound measures **>10mm or “severe” hydronephrosis**, please obtain a kidney + bladder sonogram in the NICU/newborn nursery after birth.
+- If prenatal ultrasound measures **≥10mm or “severe” hydronephrosis**, please obtain a kidney + bladder sonogram in the NICU/newborn nursery after birth.
 
-  - If postnatal ultrasound confirms the measurements of **10 mm** or **“severe”**, please obtain a VCUG prior to discharge. Please cover patients with 3 days of antibiotics around the time of the procedure (pre, day of, post). VCUG availability at RMC/MVMC: see [Section 3.6.2](https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-agreement-radiology)
+  - If postnatal ultrasound confirms the measurements of **≥10mm** or **“severe”**, please obtain a VCUG prior to discharge. Please cover patients with 3 days of antibiotics around the time of the procedure (pre, day of, post). VCUG availability at RMC/MVMC: see [Section 3.6.2](https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-agreement-radiology)
   - Please arrange for the baby to be placed on antibiotics for UTI prophylaxis (cephalexin 10-20 mg/kg/day in 1-2 doses) for patients with Grade 4-5 VUR.
     - Please arrange for a repeat ultrasound at 1 month of age and refer to Pediatric Urology.
-    - If postnatal US does NOT confirm the measurements of >10mm, please have a repeat US (kidney + bladder) scheduled for 2-4 weeks as an outpatient.
+    - If postnatal US does NOT confirm the measurements of ≥10mm, please have a repeat US (kidney + bladder) scheduled for 2-4 weeks as an outpatient.
 
 - Please contact Pediatric Urology during the admission for all patients with a severe (unilateral or bilateral) hydronephrosis **(>15mm)**.
 
@@ -3286,7 +3216,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#table-
 |  | ≥35 weeks | < 29 days | 50 mg/kg q8h |
 |  |  | ≥ 29 days | 50 mg/kg q6h |
 | Cefepime | All | < 14 days | 30 mg/kg q12h |
-|  |  | 14 to 29 days | 50 mg/kg q12h |
+|  |  | 14 to 28 days | 50 mg/kg q12h |
 |  |  | ≥ 29 days | 50 mg/kg q8h |
 | Gentamicin* | <30 weeks PMA¥ | ≤ 7 days | 5 mg/kg q48h |
 |  |  | 8-28 days | 4 mg/kg q36h |
@@ -3318,7 +3248,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#table-
 | Ampicillin | All | ≤ 7 days old | 100 mg/kg q8h |
 |  |  | ≥ 8 days | 75 mg/kg q6h |
 | Cefepime | All | < 14 days | 30 mg/kg q12h |
-|  |  | ≥ 14 to 29 days | 50 mg/kg q12h |
+|  |  | ≥ 14 to 28 days | 50 mg/kg q12h |
 |  |  | ≥ 29 days | 50 mg/kg q8h |
 | Meropenem | <32 weeks | <14 days | 40 mg/kg q12h over 4 hours |
 |  |  | ≥ 14 days | 40 mg/kg q8h over 4 hours |
@@ -4343,7 +4273,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-clinical-bi
 
 ##### A2 - Infant should have:
 
-#1 & 2, or #1 & 5, from above that is: - Acute perinatal event AND - An Apgar score <5 at 10 minutes OR - Continued need for ventilation initiated at birth and continued for at least 10 minutes
+#1 & 2, or #1 & 5, from above that is: - Acute perinatal event AND - An Apgar score ≤5 at 10 minutes OR - Continued need for ventilation initiated at birth and continued for at least 10 minutes
 
 ## 17 Neurology › 17.4 Practice Guideline: Therapeutic Hypothermia › Eligibility Criteria › Criteria B: Neurologic Examination
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-ne
@@ -4377,7 +4307,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#cranial-nerves
 
 - CN II: red reflex bilaterally
 - CN III, IV, VI: pupil response to light, EOM, nystagmus
-- CN V: facial expression
+- CN V: facial sensation, rooting and suck strength
 - CN VII: facial strength
 - CN VIII: conversational hearing
 - CN IX & X: gag reflex
@@ -4529,7 +4459,7 @@ flowchart TD
   A["DAT+ and GA ≥ 32wks"] --> B["Check TCB at 6 hrs"]
   B --> C["If TCB <4, continue regular screening"]
   B --> D["If TCB 4-5, repeat TCB at 12 hrs"]
-  B --> E["If TCB ≥ 5, draw TSB. Notify MD if TSB ≥ 5"]
+  B --> E["If TCB ≥ 5, draw TSB. Notify MD if TSB > 5"]
   D --> E
 ```
 
@@ -4553,10 +4483,34 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#ivig-for-abo-incom
 - Dose: 1g/kg/dose
 - Administration instruction: 1mg/kg/min for the first 30 min; if tolerated, increase gradually to a maximum of 8mg/kg/min. Total administration time: 6 hrs.
 
+## 18 Hematology & Oncology › 18.2 Alpha-fetoprotein (AFP) Reference Range › 18.2.1 Term infants (GA ≥ 37wks) without additional risk factors for AFP elevation
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#term-infants-ga-37wks-without-additional-risk-factors-for-afp-elevation
+
+| Age (days) | AFP mean (ng/mL) | AFP 95.5% reference interval (ng/mL) |
+| --- | --- | --- |
+| 0 | 41,687 | 9,120-190,546 |
+| 1 | 36,391 | 7,943-165,959 |
+| 2 | 31,769 | 6,950-144,544 |
+| 3 | 27,733 | 6,026-125,893 |
+| 4 | 24,210 | 5,297-109,648 |
+| 5 | 21,135 | 4,624-96,605 |
+| 6 | 18,450 | 4,037-84,334 |
+| 7 | 16,107 | 3,524-73,621 |
+| 8-14 | 9,333 | 1,480-58,887 |
+| 15-21 | 3,631 | 575-22,910 |
+| 22-28 | 1,396 | 316-6,310 |
+| 29-45 | 417 | 30-5,754 |
+| 46-60 | 178 | 16-1,995 |
+| 61-90 | 80 | 6-1,045 |
+| 91-120 | 36 | 3-417 |
+| 121-150 | 20 | 2-216 |
+| 151-180 | 13 | 1.25-129 |
+| 181-720 | 8 | 0.8-87 |
+
 ## 18 Hematology & Oncology › 18.2 Alpha-fetoprotein (AFP) Reference Range › 18.2.2 Preterm infants (GA < 37wks) without additional risk factors for AFP elevation
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#preterm-infants-ga-37wks-without-additional-risk-factors-for-afp-elevation
 
-| Age (days) | AFP mean (ng/mL) | AFP 95% confidence interval (ng/mL) |
+| Age (days) | AFP mean (ng/mL) | AFP 95.5% reference interval (ng/mL) |
 | --- | --- | --- |
 | 0 | 158,125 | 31,261-799,834 |
 | 1 | 140,605 | 27,797-711,214 |
@@ -4684,7 +4638,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#references
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#procedure
 
 - Transfuse over 4 hours with 1 hour NPO before and after transfusion.\
-- 15 (10-18) ml/kg per aliquot. If needing 20ml/kg, consider splitting into 2 aliquots.
+- 10–15 mL/kg per aliquot. If needing 20ml/kg, consider splitting into 2 aliquots.
 
 ## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.7 Order Blood for Transfusion
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#sec-order-prbc
@@ -4998,8 +4952,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#congenital
 
 **Background**
 
-- Congenital heart defects are the most common congenital anomaly, affecting 1% of live births.\
-- Incidence \~ 7 per 1000 live births.
+- Congenital heart defects are the most common congenital anomaly, affecting 0.7-1% of live births.
   - CHD increased among premature infants, IDM, SGA.\
 - Genetic diagnosis is important:
   - Correlates with postsurgical outcomes.\
@@ -5173,7 +5126,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#patau-synd
 
 **Background**
 
-- Incidence \~ 1/5000 live births; The 3^rd^ most common aneuploidy.\
+- Incidence \~ 1/16,000 live births; The 3^rd^ most common aneuploidy.\
 - It is associated with advanced maternal age.\
 - Morbidity and mortality are very high.\
 - 75% caused by an extra copy of chromosome 13; \~ 20% due to Robertsonian translocation 13; 5% due to other chromosome 13 anomalies.\
@@ -5613,7 +5566,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#wolf-hirsc
 - Collect postnatal samples for chromosome microarray to identify appropriate breakpoints. FISH may miss 5% of deletions detectable on the microarray.\
 - Follow up with karyotype if microarray fails to detect translocation WHS.\
 - **Sleep study**.\
-- Evaluate for syndromic features as required: ECG; Abdominal US; BUN,cr, analysis; dilated Eye exam. Refer to appropriate specialists as needed.
+- Evaluate for syndromic features as required: ECG; abdominal US; BUN, creatinine, urinalysis; dilated eye exam. Refer to appropriate specialists as needed.
 
 **Management and Consults**
 
@@ -5723,7 +5676,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#q11.2-dele
 
 - Growth (\~40%): Poor postnatal growth of < 3^rd^ percentile.\
 - Craniofacial (>70%): Long myopathic face, small tented mouth, lateral margins of the nose are parallel; nose lacks normal modeling and may look tubular, palatal defects.\
-- Palatal defects (\~90%): Cleft palate, submucous cleft palate, bifid uvula, velopharyngeal incompetence.
+- Palatal defects (\~70-75%): Cleft palate, submucous cleft palate, bifid uvula, velopharyngeal incompetence.
   - Observe the baby while crying for an asymmetric crying face.\
 - Eyes: Periorbital fullness, hooded eyelids, strabismus, sclerocornea, tortuous retinal vessels, posterior embryotoxon.\
 - Ears: Small posteriorly rotated, minor helical anomalies.\
@@ -5731,7 +5684,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#q11.2-dele
 - Limbs: Long slender fingers, clubfeet and camptodactyly not uncommon, occasional postaxial polydactyly.\
 - Skeletal: Scoliosis, vertebral anomalies.\
 - GI: Abnormal swallowing, dysmotility, nasopharyngeal regurgitation, constipation, Hirschsprung disease, imperforate anus, malrotation, diaphragmatic hernia, tracheoesophageal fistula.\
-- Renal (30%): Agenesis, multicystic dysplastic kidneys.\
+- Renal (40%): Agenesis, multicystic dysplastic kidneys.\
 - Hearing loss: Conductive, sensorineural.
 
 **Imaging studies**
@@ -5943,7 +5896,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#dsd
     - Testosterone biosynthesis defects.\
     - Leydig cell hypoplasia.\
     - Persistent Mullerian duct syndrome.\
-    - Congenital adrenal hyperplasia accounts for most of the cases.\
+    - Rare forms of congenital adrenal hyperplasia (3β-HSD, 17α-hydroxylase deficiency, StAR).\
 3.  Gonadal differentiation and chromosomal disorders:
     - 45,X, 45,X/46,XY mosaicism.\
 4.  Syndromes associated with ambiguous genitalia.
@@ -6114,7 +6067,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#holoprosen
 - Incidence: 1 in 10,000 to 1 in 20,000 live births.\
 - The diagnosis is established with brain imaging, preferably MRI.\
 - HPE occurs as a continuum from very severe to very mild, and prognosis varies with severity.
-  - More severe: alobar HPE with a single midbrain ventricle and absence of the interhemispheric fissure and corpus callosum.\
+  - More severe: alobar HPE with a single midline forebrain ventricle (monoventricle) and absence of the interhemispheric fissure and corpus callosum.\
   - Milder: semilobar and lobar HPE.
     - In semilobar HPE, there is some division of the hemispheres posteriorly but none anteriorly.\
     - In lobar HPE, there is a lack of separation of the hemispheres ventrally, the splenium and corpus callosum are present. The middle interhemispheric variant is less common.\
@@ -6883,7 +6836,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#valproic-a
 - Congenital heart defects:
   - Aortic coarctation.\
   - Hypoplastic left heart.\
-  - AV synostosis.\
+  - Atrial septal defect.\
 - Cleft lip and/or cleft palate.\
 - Skeletal abnormalities:
   - Overlapping, long fingers (most common).\
@@ -7080,7 +7033,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#ga-32-weeks-and-bw-1
   - 1 blood culture if no central line
   - 2 blood cultures if central line is in place
 - Empiric antibiotics
-  - Ampicillin and gentamicin if no other nephrotoxic medication or no signs of AKI
+  - Ampicillin and gentamicin if no other nephrotoxic medication and no signs of AKI
   - Ampicillin and ceftazidime/cefotaxime if presence of other nephrotoxic medication or has/has had AKI
 
 ## 21 VLBW/ELGAN/ELBW Infants › 21.4 Screening › Sepsis screening and empiric antibiotic use › GA ≥ 32 weeks or BW ≥ 1,500g
@@ -7088,7 +7041,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#ga-32-weeks-or-bw-15
 
 - Blood culture: obtain 2 from different sites
 - Empiric antibiotics
-  - Ampicillin and gentamicin if no other nephrotoxic medication or no signs of AKI
+  - Ampicillin and gentamicin if no other nephrotoxic medication and no signs of AKI
   - Ampicillin and ceftazidime/cefotaxime if presence of AKI
 
 ## 21 VLBW/ELGAN/ELBW Infants › 21.4 Screening › Thyroid screening › Indication
@@ -7425,7 +7378,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/vaccine.html#hepatitis-b-vacci
 
 - At birth if infant’s birth weight ≥ 2,000g\
 - At 30 days of life if infant’s birth weight < 2,000g\
-  *The 2-kg criterion has been disregarded*
+  *Give at 30 days of life even if the infant has not reached 2 kg.*
 
 ## 24 Vaccine schedule › 24.2 2-month vaccine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/vaccine.html#month-vaccine
@@ -7531,9 +7484,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#acetamino
 - IV acetaminophen post-operative pain dosing (NICU pain management):
 
   - use up to 5 days post-operatively, and could be shorter if bowel function recovers and patient is extubated\
-  - 38-40 weeks: 10-15 mg/kg/dose q 6hrs\
-  - 32-38 weeks: 10-15 mg/kg/dose q 8hrs\
-  - < 31 weeks: 10-15 mg/kg/dose q 12hrs
+  - ≥ 38 weeks: 10-15 mg/kg/dose q 6hrs\
+  - 32-37 weeks: 10-15 mg/kg/dose q 8hrs\
+  - < 32 weeks: 10-15 mg/kg/dose q 12hrs
 
 ## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.2 acetazolamide (Diamox®)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#acetazolamide-diamox
@@ -7591,7 +7544,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#alprostad
 - Taper to 0.01-0.025 microgram/kg/min as directed by Cardiology.\
 - Order carrier fluid as needed:
   - Peripheral line needs minimum rate of 2 mL/hr.\
-  - Central line needs a minimum rate of 1 mL/hr (add heparin 1 unit/mL if running by itself).
+  - Central line needs a minimum rate of 1 mL/hr (add heparin 0.5 unit/mL if running by itself).
 
 ## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.11 amphotericin B liposome (AmBisome®)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#amphotericin-b-liposome-ambisome
@@ -8015,7 +7968,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#enoxapari
   - Round dose up or down to the nearest 0.5mg so the volume conversion is easier for the pharmacy.\
   - Order LMX-4 to be applied to the site 30-60 min prior to injections.
 - Titration:
-  - By **anti-Xa** levels (0.5-1.5 IU/mL).\
+  - By **anti-Xa** levels (0.5-1 IU/mL).\
   - Check levels 4 hrs after a dose is given.
   - Begin checking levels after the 3^rd^ day of treatment.\
 - Dosing adjustment table:
@@ -8076,7 +8029,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#esmolol
   - Loading dose: 100-500 microgram/kg IV over 1 minute, then\
   - Maintenance dose: 200 microgram/kg/min IV.
   - *Note*:
-    - May increase by 50 microgram/kg q 5-10min to a max dose of 1,000 microgram/kg/min.
+    - May increase by 50 microgram/kg/min q 5-10min to a max dose of 1,000 microgram/kg/min.
     - Consult Cardiology for dosing co-management.
 
 ## Appendix A — LLUCH NICU Formulary › A.8 F › A.8.1 famotidine (Pepcid®)
@@ -8179,7 +8132,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#gentamici
     - 24-hr trough level ≤ 1: q 24hrs.\
     - 24-hr trough level 1.1-2.3: q 36hrs.
     - 24-hr trough level 2.4-3.2: q 48hrs.\
-    - *Note*: if level > 3: check level before next dose.\
+    - *Note*: if level > 3.2: check level before next dose.\
   - For gentamicin toxicity, give ticarcillin to deactivate gentamicin.\
 - *Note*:
   - AVOID use with other ototoxic/nephrotoxic medications.\
@@ -8213,7 +8166,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#hyaluroni
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#hydralazine
 
 - Starting dose for hypertension:
-  - 0.15-0.6 mg/kg/dose IV q 4hrs (max dose 2mg/dose q 6hrs). [\[Ref\]](https://doi.org/10.1007/s00467-019-04273-z)\
+  - 0.15-0.6 mg/kg/dose IV q 4hrs (max dose 2 mg/kg/dose). [\[Ref\]](https://doi.org/10.1007/s00467-019-04273-z)\
   - 0.25-1 mg/kg/dose PO q 6-8hrs (max dose 7.5 mg/kg/day)
   - *Note*: Often given PRN for systolic blood pressure above a pre-determined threshold.
 
@@ -8312,13 +8265,13 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#iron-oral
 ## Appendix A — LLUCH NICU Formulary › A.11 I › A.11.6 iron dextran (IV)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#iron-dextran-iv
 
-- Regular dosing: 1 mg/kg/ IV while on epoetin (Epogen®) to infuse over 2 hrs. Follow iron status (Ferritin, transferrin, TIBC) q 2-3 weeks.
+- Regular dosing: 1 mg/kg/dose IV while on epoetin (Epogen®) to infuse over 2 hrs. Follow iron status (Ferritin, transferrin, TIBC) q 2-3 weeks.
 
 ## Appendix A — LLUCH NICU Formulary › A.11 I › A.11.7 IVIG
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#ivig
 
 - Regular dosing for hemolytic disease: 1 g/kg/dose IV to infuse over 4 hrs (peripheral or central).\
-- *Note*: Delay immunizations with live-virus vaccines until > 3 months after IVIG administration (i.e. Rotavirus, MMR, Varicella).
+- *Note*: Rotavirus vaccine does not need to be delayed. Delay MMR and varicella about 10 months after 1 g/kg IVIG (ACIP).
 
 ## Appendix A — LLUCH NICU Formulary › A.12 K › A.12.1 kayexalate (sodium polystyrene)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#kayexalate-sodium-polystyrene
@@ -8379,7 +8332,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#lorazepam
 ## Appendix A — LLUCH NICU Formulary › A.14 M › A.14.1 magnesium chloride
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#magnesium-chloride
 
-- Regular dosing for hypochloremia: 2-4 mEq/kg/day PO divided q 6-12hrs.
+- Regular dosing for hypomagnesemia: 2-4 mEq/kg/day PO divided q 6-12hrs.
 
 ## Appendix A — LLUCH NICU Formulary › A.14 M › A.14.2 magnesium sulfate
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#magnesium-sulfate
@@ -8422,7 +8375,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#metoclopr
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#metronidazole-flagyl
 
 - GA ≤ 34 weeks: 7.5 mg/kg/dose q 12hrs.\
-- GA 34-40 weeks: 7.5 mg/kg/dose q 8hrs.\
+- GA 35-40 weeks: 7.5 mg/kg/dose q 8hrs.\
 - GA > 40 weeks: 10 mg/kg/dose q 8hrs.
 
 ## Appendix A — LLUCH NICU Formulary › A.14 M › A.14.8 micafungin
@@ -8569,7 +8522,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#penicilli
 
 *Procaine Penicillin G IM only*
 
-- Regular dosing for Gram-positive bacterial infection: 50,000 unit/kg/day q 24hrs (max dose 1.2 million unit/kg/day).\
+- Regular dosing for Gram-positive bacterial infection: 50,000 unit/kg/dose IM q 24hrs.\
 - *Note*: Order LMX-4 to be applied to the injection site 30-60min prior to injection.
 
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.4 phenobarbital
@@ -8679,7 +8632,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sildenafi
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.2 sodium acetate
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sodium-acetate
 
-- Regular dosing for metabolic acidosis: May order 0.45% (77mEq/L) or 0.9% (154 mEq/L) \\(Na\^{+} Acetate\\) with heparin 1 unit/mL to run in arterial line as an alternative to 0.45% or 0.9% \\(NaCl\\) (normal saline) in cases of metabolic acidosis. May also write order as 77 mEq/L \\(Na\^{+} Acetate\\) in sterile water with heparin 2 unit/mL to run at 0.5 mL/hr.
+- Regular dosing for metabolic acidosis: May order 0.45% (77mEq/L) or 0.9% (154 mEq/L) \\(Na\^{+} Acetate\\) with heparin per the unit KVO protocol (0.5 unit/mL at ≥ 1 mL/hr; 1 unit/mL if < 1 mL/hr) to run in arterial line as an alternative to 0.45% or 0.9% \\(NaCl\\) (normal saline) in cases of metabolic acidosis. May also write order as 77 mEq/L \\(Na\^{+} Acetate\\) in sterile water with heparin 1 unit/mL to run at 0.5 mL/hr.
 
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.3 sodium bicarbonate 4.2%
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sodium-bicarbonate-4.2
@@ -8690,13 +8643,13 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sodium-bi
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.4 sodium chloride 14.6% IV for PO
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sodium-chloride-14.6-iv-for-po
 
-- Starting dose for hyponatremia: 2 mEq/kg/dose PO divided q 12hrs.\
+- Starting dose for hyponatremia: 2 mEq/kg/day PO divided q 12hrs.\
 - *Note*: 1 mL IV provides 2.5 mEq \\(Na\^{+}\\) and 2.5mEq \\(Cl\^{-}\\).
 
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.5 spironolactone (Aldactone)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#spironolactone-aldactone
 
-- Starting dose for hyponatremia: 1-3 mg/kg/day PO divided q 12-24hrs.
+- Starting dose for diuresis (e.g., BPD, edema): 1-3 mg/kg/day PO divided q 12-24hrs.
 
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.6 sucralfate (Carafate)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sucralfate-carafate
