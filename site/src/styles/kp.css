@@ -163,6 +163,14 @@
 .tbl-cards td:first-child { font-weight: 700; font-size: 1rem; color: var(--sl-color-white); margin-bottom: 0.35rem; }
 .tbl-cards td + td { margin-top: 0.55rem; }
 .tbl-cards td + td:empty { display: none; }
+/* cards with sub-items ("- Suck", "- Moro" under "5. Primitive Reflexes"): each <tbody> is one card */
+.sl-markdown-content .tbl-cards.card-groups { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); }
+.sl-markdown-content .tbl-cards.card-groups thead { grid-column: 1 / -1; }
+.sl-markdown-content .tbl-cards.card-groups tbody.subhead-group { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.sl-markdown-content .tbl-cards.card-groups tbody.card { display: block; padding: 0.9rem 1rem; border-radius: var(--kp-radius); border: 1px solid var(--sl-color-gray-5); background: var(--kp-surface); box-shadow: var(--kp-shadow); }
+.sl-markdown-content .tbl-cards.card-groups tbody.card tr { display: block; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+.sl-markdown-content .tbl-cards.card-groups tbody.card tr.cont { margin-top: 0.7rem; padding-top: 0.7rem; border-top: 1px solid var(--sl-color-gray-5); }
+.sl-markdown-content .tbl-cards.card-groups tbody.card tr.cont td:first-child { font-size: 0.95rem; font-weight: 650; }
 @media (max-width: 50rem) {
 
 

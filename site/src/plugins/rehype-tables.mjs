@@ -98,6 +98,22 @@ export default function rehypeTables() {
         table.children = table.children.flatMap((c) => c === tbody
           ? groups.map((g) => ({ type: "element", tagName: "tbody", properties: { className: ["grp"] }, children: g })) : [c]);
       }
+      // cards: a row whose first cell starts with "-" continues the card above ("5. Primitive Reflexes", then
+      // "- Suck", "- Moro"), so each numbered item stays in one box: one <tbody> per card
+      if (layout === "cards" && tbody && rowsOf(tbody).some((tr) => /^-\s/.test(text(cellsOf(tr)[0] || {})))) {
+        const groups = [];
+        for (const tr of rowsOf(tbody)) {
+          const cont = /^-\s/.test(text(cellsOf(tr)[0] || {}));
+          if (cont) addClass(tr, "cont");
+          if (!cont || !groups.length) groups.push([]);
+          groups[groups.length - 1].push(tr);
+        }
+        addClass(table, "card-groups");
+        table.children = table.children.flatMap((c) => c === tbody
+          ? groups.map((g) => ({ type: "element", tagName: "tbody",
+              properties: { className: [g.every((tr) => tr.properties?.className?.includes("subhead")) ? "subhead-group" : "card"] }, children: g }))
+          : [c]);
+      }
       // steps whose first cell is a short label (A, B, …) show it in the step marker
       if (layout === "steps" && rowsOf(tbody).every((tr) => text(cellsOf(tr)[0] || {}).length <= 2)) addClass(table, "steps-label");
       if (layout === "compare") {
