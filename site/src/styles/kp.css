@@ -767,4 +767,4 @@ body:has(.ask-app) .content-panel:last-child { padding-bottom: 0; }
 body.nc-has-tabbar:has(.ask-app) { padding-bottom: 0; }
 .ask-thread { position: relative; } /* message positions are measured inside the conversation box */
 /* desktop: breathing room between the Ask text box and the bottom of the window */
-@media (min-width: 50rem) { .ask-app { height: calc(100dvh - var(--ask-top, 12rem) - 3rem); } }
+@media (min-width: 50rem) { .ask-app { height: calc(100dvh - var(--ask-top, 12rem) - 2rem); } }
