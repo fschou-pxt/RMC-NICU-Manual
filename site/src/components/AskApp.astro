@@ -5,6 +5,7 @@
 
 <div class="ask-app not-content" data-ask>
   <div class="ask-bar">
+    <a class="ask-back" id="ask-back" hidden></a>
     <button class="ask-pill" type="button" data-go="settings" title="AI model and key"></button>
     <button class="ask-icon" type="button" data-act="new" title="New chat" aria-label="New chat"><i class="bi bi-pencil-square"></i></button>
     <button class="ask-icon" type="button" data-go="settings" title="Settings" aria-label="Settings"><i class="bi bi-gear"></i></button>
@@ -84,9 +85,9 @@
         (busy ? `<div class="nc-msg nc-bot nc-typing">${esc(typing)}</div>` : "");
     }
     // the newest message: its top in view (a long answer starts where it begins)
-    function toLatest() {
+    function toLatest(smooth = true) {
       const last = thread.lastElementChild?.matches(".msg-acts") ? thread.lastElementChild.previousElementSibling : thread.lastElementChild;
-      last?.scrollIntoView({ block: "start", behavior: "smooth" });
+      if (last) thread.scrollTo({ top: last.offsetTop - 8, behavior: smooth ? "smooth" : "auto" }); // the conversation box only, not the page
     }
     async function ask(question) {
       if (!question || busy) return;
@@ -239,7 +240,22 @@
     $("#ask-backdrop").addEventListener("click", closeSheet);
     addEventListener("keydown", (ev) => { if (ev.key === "Escape" && !sheet.hidden) closeSheet(); });
 
+    // came here from the chat bubble on a page: link back to it
+    const from = readJSON(S, "nicuChat.from", null);
+    if (from?.url) {
+      const back = $("#ask-back");
+      back.href = from.url;
+      back.textContent = "← Back to " + (from.title || "the page");
+      back.hidden = false;
+    }
+
+    // the chat fills the screen below its title: messages scroll inside, the text box stays at the bottom
+    const fit = () => app.style.setProperty("--ask-top", Math.max(0, app.getBoundingClientRect().top + scrollY) + "px");
+    fit();
+    addEventListener("resize", fit);
+
     if (!hasKey()) showSettings(true);
     else render();
+    requestAnimationFrame(() => toLatest(false)); // open at the newest message
   }
 </script>
