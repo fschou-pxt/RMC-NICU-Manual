@@ -30,7 +30,7 @@ for (const ch of chapters) {
   if (!p) parts.push((p = { name: ch.part, items: [] }));
   p.items.push({ slug: ch.slug, title: titleOf(ch.slug), number: ch.number });
 }
-const { editor, authors = [], donate } = Astro.props;
+const { editor, editorEmail, authors = [], donate } = Astro.props;
 ---
 
 <div class="home">
@@ -101,12 +101,13 @@ const { editor, authors = [], donate } = Astro.props;
       <slot />
       <div class="about-actions">
         <a class="btn donate" href={donate} target="_blank" rel="noopener"><Icon name="heart" />Donate</a>
-        <a class="btn" href={href("poster.html")} target="_blank" rel="noopener"><Icon name="phone" />Install poster (QR code)</a>
+        <a class="btn" href={href("poster.html")} target="_blank" rel="noopener"><i class="bi bi-qr-code" aria-hidden="true"></i>Install poster (QR code)</a>
       </div>
     </div>
     <aside class="about-people" aria-label="Editor and authors">
       <p class="role">Editor</p>
       <p class="editor">{editor}</p>
+      {editorEmail && <p class="editor-mail"><a href={`mailto:${editorEmail}`}><i class="bi bi-envelope" aria-hidden="true"></i>{editorEmail}</a></p>}
       <p class="role">Authors</p>
       <ul>{authors.map((a) => <li>{a}</li>)}</ul>
     </aside>

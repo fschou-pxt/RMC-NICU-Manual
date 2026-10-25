@@ -793,3 +793,11 @@ body:has(.ask-app) .sl-container { max-width: none; }
   .ask-bar .ask-back { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
   .ask-bar .ask-pill { margin-left: auto; max-width: 42vw; }
 }
+.about-people .editor { margin-bottom: 0.15rem !important; }
+.about-people .editor-mail { margin: 0 0 1rem !important; font-size: 0.88rem; }
+.about-people .editor-mail a { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--sl-color-accent); text-decoration: none; overflow-wrap: anywhere; }
+.about-people .editor-mail a:hover { text-decoration: underline; }
+.home .btn .bi { font-size: 1.05rem; line-height: 1; }
+/* home: less space between the header and the hero's first line */
+.home { padding-top: 0; }
+.home-hero { padding-top: 1rem; }
