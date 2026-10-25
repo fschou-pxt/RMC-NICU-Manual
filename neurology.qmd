@@ -288,7 +288,7 @@ The purpose of this document is to help reduce neonatal length of stay and treat
 
 #### Discharge
 
-* All infants receiving pharmacologic treatment for NAS will be referred to the High Risk Infant follow up program/ clinic.  
+* Pharmacologic treatment for NAS does not by itself make an infant eligible for High Risk Infant Follow-up. Refer to HRIF only if the infant meets the HRIF eligibility criteria (@sec-hrif).  
 
 <br/>
 

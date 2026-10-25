@@ -4090,7 +4090,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#parent-and-fami
 ## 17 Neurology › 17.2 Neonatal Abstinence Syndrome - Old Management › Specific procedures › Discharge
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#discharge
 
-- All infants receiving pharmacologic treatment for NAS will be referred to the High Risk Infant follow up program/ clinic.
+- Pharmacologic treatment for NAS does not by itself make an infant eligible for High Risk Infant Follow-up. Refer to HRIF only if the infant meets the HRIF eligibility criteria ([Section 7.10](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-hrif)).
 
 ## 17 Neurology › 17.2 Neonatal Abstinence Syndrome - Old Management › Pharmacologic treatment guidelines
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#pharmacologic-treatment-guidelines
