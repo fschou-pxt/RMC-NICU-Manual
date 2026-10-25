@@ -801,3 +801,10 @@ body:has(.ask-app) .sl-container { max-width: none; }
 /* home: less space between the header and the hero's first line */
 .home { padding-top: 0; }
 .home-hero { padding-top: 1rem; }
+/* feeding plan on wide screens: the form on the left, the plan on the right (the note spans both) */
+@media (min-width: 64rem) {
+  .calc-box #feed-body:not([hidden]) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 0 1rem; align-items: start; }
+  .calc-box #feed-body .fd-note { grid-column: 1 / -1; }
+  .calc-box #feed-body #fd-out { position: sticky; top: 0; }
+  .calc-box #feed-body #fd-out .fd-hint:only-child { margin-top: 0; padding: 1rem; border: 1px dashed var(--sl-color-gray-5); border-radius: var(--kp-radius); }
+}
