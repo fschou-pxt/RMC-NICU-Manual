@@ -25,8 +25,8 @@ number-depth: 2
 * Total/direct bilirubin
 * liver function tests (AST/ALT, GGT, ALP, INR, PTT)
 * TSH
-* Urine organic acid
-* Plasma amino acid
+* Urine organic acids
+* Plasma amino acids
 * Acylcarnitine profile
 * AM Cortisol
 * Alpha-1-antitrypsin
@@ -34,7 +34,7 @@ number-depth: 2
 * urine/blood CMV
 * urine reducing substance
 * immunoreactive trypsinogen
-* HSVPCR
+* HSV PCR
 * UA and urine culture
 
 #### Treatment
@@ -54,7 +54,7 @@ number-depth: 2
 
 * Flex laryngoscope showing erosion in the larynx
 * pH meter study
-* Frequent emesis resulting in poor weight gain / malnurishment
+* Frequent emesis resulting in poor weight gain / malnourishment
 
 <br/>
 
@@ -70,7 +70,7 @@ number-depth: 2
 
 <br/>
 
-### Moditified Bell's criteria
+### Modified Bell's criteria
 
 ![](Figures/NEC-Bell-Criteria.png)
 <br/>
@@ -93,7 +93,7 @@ number-depth: 2
 
 **Further Considerations**
 
-- Antibiotic dosing should be based on the patients age, weight, and gestation age.
+- Antibiotic dosing should be based on the patient's age, weight, and gestational age.
 - If clinical worsening occurs the Bell stage classification should be re-evaluated.
 - If peritonitis or purulence is noted during surgery, consider sending cultures to guide antibiotic
 management.
@@ -115,4 +115,4 @@ hours.
 
 ### Resources
 
-<a href='files/NEC NICU-Dr.Fitzwater 2023.pptx' target='_blank'>Dr. Fitzwater's Presentation Slides</a> (Right clikc to save link as...)
+<a href='files/NEC NICU-Dr.Fitzwater 2023.pptx' target='_blank'>Dr. Fitzwater's Presentation Slides</a> (Right click to save link as...)

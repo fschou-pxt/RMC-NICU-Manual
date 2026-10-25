@@ -84,7 +84,7 @@ Based on maternal substance exposure:
 
 - **Methadone or Buprenorphine:** Continue breastfeeding
 - **Pain Control Opioids (Taper Plan):** Continue breastfeeding
-- **Pain Control Opioids (No Taper Plan):** Wean off breastmilk at 1 month
+- **Pain Control Opioids (No Taper Plan):** Wean off breast milk at 1 month
 
 **Important:** Use ESC scoring only—do NOT use Finnegan scoring for NICU admission or opioid treatment decisions.
 
@@ -195,7 +195,7 @@ _*\*Start at Step 1. If Step 1 fails (unable to eat, sleep, or console ×2 asses
 **Audience:** Inpatient Maternal-Child Health clinicians (Family Centered Care, NICU, Pediatrics)  
 **Contributors:**
 - Kerri L. Covert, RN - Maternal Child Health Clinical Consultant V (Kerri.L.Covert@kp.org)
-- Sarah E. Ceja, RN - Maternal Child Health Clinical Consultant V (Sarah.E.Cejagkp.org)
+- Sarah E. Ceja, RN - Maternal Child Health Clinical Consultant V (Sarah.E.Ceja@kp.org)
 
 <br/><br/>
 {{< pagebreak >}}
@@ -215,9 +215,9 @@ The purpose of this document is to help reduce neonatal length of stay and treat
 * Infants with suspected withdrawal symptoms are to be cared for in a quiet room or area in the unit. Encourage mother and family members to provide care whenever possible. Rooming-in will be encouraged. Infants should be placed away from entrance (for security reasons) and are to remain within the secured area until discharged or cleared by physician/social services. Security sensors are recommended.  
   - All infants born to mothers with suspected or known substance use will have the first void sent for toxicology screening.  
   - If unable to send the first urine, send the earliest urine possible.  
-  - If urine screen is positive, refer to Social Services so that they can contact Department of Children’s Family Services (DCFS).  
+  - If urine screen is positive, refer to Social Services so that they can contact Department of Children and Family Services (DCFS).  
 * An approved Neonatal Abstinence Scoring Tool (Finnegan Neonatal Abstinence Scoring) is to be used on all infants with maternal history of substance use within the pregnancy, including opiates, amphetamines, cocaine, SSRI, benzodiazepines, and symptomatic infants of known or suspected maternal substance(s) use.  
-  - Treatments of withdrawal symptoms are based on infant’s total score (Scores greater than or equal 8 for three consecutive screens will be reported to physician).  
+  - Treatments of withdrawal symptoms are based on infant’s total score (Scores greater than or equal to 8 for three consecutive screens will be reported to physician).  
   - All symptoms exhibited during the entire scoring interval, not just a single point in time, should be included.  
   - Infants at risk for NAS (whose screens are positive on admission for opioids or benzodiazepines or who are symptomatic) should be observed for a minimum of **72 hours** of age before discharge home. There is no clearly defined maternal opioid intake below which a fetus is not at risk for NAS. If there is a question about need for observation in the setting of low dose maternal opioid use, a neonatology consult should be considered.  
 * The NASS (scores) is a permanent part of the medical record.  
@@ -249,7 +249,7 @@ The purpose of this document is to help reduce neonatal length of stay and treat
   - Decreasing excessive tactile stimulation.  
 * Place boundaries snugly around the infant using rolled blanket or other developmentally supportive supplies with hands available for sucking.  
 * Use containment of upper and lower extremities (gently hold infant’s hands against their chest and feet while flexing the legs) when providing care when the infant is unwrapped.  
-* A relaxed hold and rocking is recommended against a parent’s body for irritability or crying. Encourage and assist with skin to skin (Kangaroo Care).  
+* A relaxed hold and rocking is recommended against a parent’s body for irritability or crying. Encourage and assist with skin-to-skin (Kangaroo Care).  
 * Do not overdress; consider using a shirt, diaper and light blanket without other clothing.  
 * Consider tub bath to calm an irritable or stiff infant.  
 * Offer pacifier for non-nutritive sucking to an irritable or frantic infant.  
@@ -266,7 +266,7 @@ The purpose of this document is to help reduce neonatal length of stay and treat
 * Support and encourage breastfeeding and/or pumping whenever possible and not contraindicated.  
 * <span style=color:red;>Offer small, frequent feedings (every 2 hours instead of every 3-4 hours). Do not overfeed.</span>  
 * If infant takes greater than 20 minutes to bottle feed, consider gavage feeding.  
-* Collaborate with physician to initiate 22 or 24 calorie breastmilk/formula if not gaining weight.  
+* Collaborate with physician to initiate 22 or 24 calorie breast milk/formula if not gaining weight.  
 * Consider a low lactose formula if infant is having feeding intolerance.  
 
 #### Abstinence score
@@ -279,7 +279,7 @@ The purpose of this document is to help reduce neonatal length of stay and treat
 * Establish a trusting, non-judgmental relationship with mother and family.  
 * Determine who the primary caregiver will be.  
 * Determine what special fears or concerns parents have.  
-* Instruct parents/care giver on comfort and coping mechanisms which meet infant’s specific needs.  
+* Instruct parents/caregiver on comfort and coping mechanisms which meet infant’s specific needs.  
 * Discuss that infant may be less responsive to visual stimulation and that some symptoms of withdrawal may persist for 2-6 months.  
 * Promote parents and/or significant other demonstration of positive parenting behavior as related to bonding and the “taking hold” phase as described below.  
   - Hold infant while feeding.  
@@ -369,10 +369,10 @@ flowchart TD
 
 1.	Bagwell, G. (2016). NICU Currents: Continuing Education for Nurses and Dieticians. Neonatal abstinence syndrome: an escalating problem for newborns, families and nurses. 6(1), p.2.
 2.	Core Curriculum For Neonatal Intensive Care Nursing (5th ed., 2015), pp. 50-53.
-3.	D’Apolito, Karen and Finnegan, Loretta (2nd ed., 2010). Assessing Signs and Sumptoms of Neonatal Abstinence Using the Finnegan Neonatal Abstinence Scoring Scoring Tool; An Inter-Observer Reliability Program Instructional Manual.
+3.	D’Apolito, Karen and Finnegan, Loretta (2nd ed., 2010). Assessing Signs and Symptoms of Neonatal Abstinence Using the Finnegan Neonatal Abstinence Scoring Tool; An Inter-Observer Reliability Program Instructional Manual.
 4.	Gardner, Sandra L. and Merenetein, Gerald B. (8th Ed., 2016). Handbook of Neonatal Intensive Care.
-5.	Hall, E., Meinzen-Derr, J. and Wexelblatt, S. (2015). Cohort analysis of a pharmacokinetic-modeled metadone weaning optimization for Neonatal Abstinence Sydrome. Journal of Pediatrics, 167:1221 – 1225. 
-6.	Mark L. Hudak, MD and Rosemarie C. Tan, MD,, PhD (2012), Neonatal drug withdrawal, Pediatrics, 129(2).
+5.	Hall, E., Meinzen-Derr, J. and Wexelblatt, S. (2015). Cohort analysis of a pharmacokinetic-modeled methadone weaning optimization for Neonatal Abstinence Syndrome. Journal of Pediatrics, 167:1221 – 1225. 
+6.	Mark L. Hudak, MD and Rosemarie C. Tan, MD, PhD (2012), Neonatal drug withdrawal, Pediatrics, 129(2).
 7.	Southern California Kaiser Permanente Medical Group (2017) Neonatal Abstinence Syndrome White Paper.
 
 <br/><br/>
@@ -391,7 +391,7 @@ Infants greater than or equal to 35 weeks gestation diagnosed with Hypoxic-Ische
 
 This procedure will take place in the Neonatal Intensive Care Unit (NICU) with licensed physicians and nurses, who are trained and competent in this process. Decision to proceed with active therapeutic hypothermia will be at the discretion of the designated cooling center/receiving medical center.
 
-Infants will not be actively cooled. Only passive cooling will be done while the baby is waiting transport to appropriate facility.
+Infants will not be actively cooled. Only passive cooling will be done while the baby is awaiting transport to appropriate facility.
 
 ### Definitions
 - **Hypoxic Ischemic Encephalopathy (HIE):** Birth asphyxia
@@ -477,7 +477,7 @@ Transports for potential/actual therapeutic hypothermia are emergent. Inform the
     
 <br/><br/>{{< pagebreak >}}
 
-### Orderset {#sec-passive-cooling-orderset}
+### Order set {#sec-passive-cooling-orderset}
 
 Inside **ADMISSION NICU IP SCAL**
 
@@ -504,7 +504,7 @@ Neonatologist to determine whether the infant meets criteria to initiate therape
 Any of the following:
 
 - Inability to initiate therapeutic hypothermia by 6 hours of age, or per neonatologist's discretion.
-- Gestation age less than 35 weeks.
+- Gestational age less than 35 weeks.
 - Birth weight less than 1800 grams.
 - Presence of known chromosomal anomaly or severe congenital anomalies/syndromes/known metabolic disorders, as determined by the neonatologist.
 - Evidence of head trauma or skull fracture causing major intracranial hemorrhage.
@@ -513,7 +513,7 @@ Any of the following:
 
 #### All infants will be evaluated for the following: {#sec-cooling-assessment}
 1. **History of an acute perinatal event**
-   - Abruptio placenta
+   - Abruptio placentae
    - Cord prolapse
    - Severe FHR abnormality: variable or late decelerations
 
@@ -575,7 +575,7 @@ OR
 <br/><br/>
 {{< pagebreak >}}
 
-## Hypotonia Work-Up
+## Hypotonia Workup
 
 <br/>
 
@@ -682,7 +682,7 @@ Upon discovery of an infant fall:
 
 #### Neurology
 *	Neurological check on admission, every 1 hour x 6 hours, then every 3-4 hours for a minimum of 24 hours.  
-*	Head circumference measurement hourly x 12-24
+*	Head circumference measurement hourly x 12-24 hours
 *	Complete Neurological Examination Encephalopathy 
 
 
@@ -697,7 +697,7 @@ Upon discovery of an infant fall:
 *	If any alteration in vital signs or neurological exam, IV will be inserted and maintenance IV fluids will be started.
 
 
-#### Blood works
+#### Blood work
 *	On admission:  Type/Screen and CBC
 *	Repeat Hct every 12 hours x 24 hours
 *	Other labs as clinically indicated, i.e., blood gas
@@ -720,5 +720,5 @@ Upon discovery of an infant fall:
 2. The Joint Commission.  Sentinel Event Alert Issue 55:  Preventing falls and fall-related injuries in health care facilities.  September 28, 2015.
 3. Kahn DJ, Fisher PD, Hertzler DA.  Variation in management of in-hospital newborn falls:  a single-center experience.  J Neurosurg Pediatr 20: 176-182, 2017
 4. Management of a Neonatal Fall During Initial Hospitalization.  Brigham and Women’s Hospital Department of Pediatric Newborn Medicine, 2016.
-5, Driscoll CAH, Pereira N, Lichenstein.  In-hospital Neonatal Falls: An unintended consequence of efforts to improve breastfeeding. Pediatrics 143(1),e20182488, 2019.
+5. Driscoll CAH, Pereira N, Lichenstein.  In-hospital Neonatal Falls: An unintended consequence of efforts to improve breastfeeding. Pediatrics 143(1),e20182488, 2019.
 

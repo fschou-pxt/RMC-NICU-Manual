@@ -54,7 +54,7 @@ Phototherapy
 
 #### .picc  {#sec-dotPhrase-picc}
 
-Central line/dates: peripherally inserted central catheter: date placed: ***. PICC central line assessed today, is functioning well with no signs of inflammation. Plan: Will continue the use of the catheter fo rlong-term paretneral nutrition and/or blood draw.  
+Central line/dates: peripherally inserted central catheter: date placed: ***. PICC central line assessed today, is functioning well with no signs of inflammation. Plan: Will continue the use of the catheter for long-term parenteral nutrition and/or blood draw.  
 
 [Text](#sec-picc)
 
@@ -62,7 +62,7 @@ Central line/dates: peripherally inserted central catheter: date placed: ***. PI
 
 #### .bloodtransfusion {#sec-dotPhrase-blood-transfusion}
 
-Discussed with the parents in details about need for blood transfusion and blood products for the baby through out the hospital stay. Risks and benefits explained to them. They agree to their use. Also discussed with them the donor directed Blood Donation program.  Parent has been provided with a copy of the Paul Gann Blood Act 'A Patient's Guide to Blood Transfusion'.  
+Discussed with the parents in detail about need for blood transfusion and blood products for the baby throughout the hospital stay. Risks and benefits explained to them. They agree to their use. Also discussed with them the donor directed Blood Donation program.  Parent has been provided with a copy of the Paul Gann Blood Safety Act 'A Patient's Guide to Blood Transfusion'.  
   
 PHYSICIAN'S STATEMENT CONCERNING TRANSFUSION INFORMATION   
 (Paul Gann Blood Safety Act. Health and Safety Code #1645)  
@@ -77,7 +77,7 @@ The patient's parents have been informed of the potential need for, risks of (in
 
 #### .parentsts {#sec-dotphrase-skin-to-skin}
 
-When parents are visiting, please request to perform Skin to Skin by either parent for the duration of one hour in a 24hour period, followed by documentation.
+When parents are visiting, please request to perform skin-to-skin by either parent for the duration of one hour in a 24-hour period, followed by documentation.
 
 [Text](#sec-skin-to-skin)
 
@@ -144,7 +144,7 @@ If above criteria have not been met then please cancel discharge and notify MD o
 
 #### .donorbreastmilk {#sec-dotPhrase-donor-breast-milk}
 
-I have discussed the indications, risks, benefits, and alternatives of donor breast milk with the mother of the patient.  In the absence of maternal breast milk, donor milk offers many of the benefits of human milk for the infant, including:  infection-fighting factors, reduced incidence of necrotizing enterocolitis, improved digestion, ideal nutrition.  Donor milk will generally be provided until mother's milk volume becomes sufficient or when infant reaches 34 weeks gestation, at which point infant will be switched over to the appropriate standard infant formula in the absence of mother's milk.  Donor milk is the milk from several donors pooled together and then heat-treated to kill any bacteria or viruses.  Although every precaution is taken, there is a very small chance that an infectious agent may nevertheless be transmitted and the infant could become sick.  The parent consented for donor breastmilk. 
+I have discussed the indications, risks, benefits, and alternatives of donor breast milk with the mother of the patient.  In the absence of maternal breast milk, donor milk offers many of the benefits of human milk for the infant, including:  infection-fighting factors, reduced incidence of necrotizing enterocolitis, improved digestion, ideal nutrition.  Donor milk will generally be provided until mother's milk volume becomes sufficient or when infant reaches 34 weeks gestation, at which point infant will be switched over to the appropriate standard infant formula in the absence of mother's milk.  Donor milk is the milk from several donors pooled together and then heat-treated to kill any bacteria or viruses.  Although every precaution is taken, there is a very small chance that an infectious agent may nevertheless be transmitted and the infant could become sick.  The parent consented for donor breast milk. 
 
 [Text](#sec-donor-breast-milk)
 
@@ -170,17 +170,17 @@ dot-phrase for most recent TCB levels and the corresponding hour of life.
 Please do transcutaneous bilirubin QAM for next 10 days. 
 
 If tcb = or > number below, please draw stat total serum bilirubin (tsb). 
-Add serum direct bilirubin if none done yet (and notify MD if D-Bilirubin > =1.5 mg/dl).  
+Add serum direct bilirubin if none done yet (and notify MD if D-Bilirubin ≥1.5 mg/dl).  
  
-For < 28 wks CGA: TCB >=2, Notify MD if TSB >= 5 mg/dl  
-For 28 to 29 wks CGA: TCB >=3, Notify MD if TSB >= 6 mg/dl  
-For 30 to 31 wks CGA: TCB >=5, Notify MD if TSB >= 8 mg/dl  
-For 32 to 33 wks CGA: TCB >=7, Notify MD if TSB >= 10 mg/dl  
-For 34 wks CGA, TCB >=9, Notify MD if TSB >= 12 mg/dl  
+For < 28 wks CGA: TCB ≥2, Notify MD if TSB ≥ 5 mg/dl  
+For 28 to 29 wks CGA: TCB ≥3, Notify MD if TSB ≥ 6 mg/dl  
+For 30 to 31 wks CGA: TCB ≥5, Notify MD if TSB ≥ 8 mg/dl  
+For 32 to 33 wks CGA: TCB ≥7, Notify MD if TSB ≥ 10 mg/dl  
+For 34 wks CGA, TCB ≥9, Notify MD if TSB ≥ 12 mg/dl  
 
-For 35 wks and above, please use www.bilitool.org (up to 146 hrs) or www.peditools.org (for >146 hrs): if tcb in HIRZ (>75%ile of Bhutani nomogram) or tcb => 13, draw stat TSB and notify MD if TSB is HRZ or =>13 mg/dl.  
+For 35 wks and above, please use www.bilitool.org (up to 146 hrs) or www.peditools.org (for >146 hrs): if tcb in HIRZ (>75%ile of Bhutani nomogram) or tcb ≥ 13, draw stat TSB and notify MD if TSB is HRZ or ≥13 mg/dl.  
 
-If DAT-positive & 32+ wks, check TCB at 6 hours. If 4-5, recheck TCB at 12 hours. If >=5, check TSB and notify MD if TSB is >5  
+If DAT-positive & 32+ wks, check TCB at 6 hours. If 4-5, recheck TCB at 12 hours. If ≥5, check TSB and notify MD if TSB is >5  
   
 [Text](#sec-tcb)
 

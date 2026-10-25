@@ -43,9 +43,9 @@ Attendance: NICU RN, RT and MD
 * Eclampsia
 
 #### Level III: complex resuscitation  
-Attendance: 2 NICU RN, RT, and MD
+Attendance: 2 NICU RNs, RT, and MD
 
-* 2 RNs & 2RTs **required** for <25 weeks GA unless staffing shortage
+* 2 RNs & 2 RTs **required** for <25 weeks GA unless staffing shortage
 * 2 RNs & 2 RTs recommended for 25 - 27 weeks GA
 * Hydrops with projected need for tapping
 * Multiple congenital defects
@@ -77,7 +77,7 @@ Attendance: 2 NICU RN, RT, and MD
 ### Delayed Cord Clamping
 
 * All infants who emerged with active tone should receive delayed cord clamping for at least 30 sec unless:
-  - Mono/di twins with TTTS or significant fetal wegith deiscrepency
+  - Mono/di twins with TTTS or significant fetal weight discrepancy
   - Mono/mono twins
-  - Need immediate evaluation and/or resuscitation (e.g., placenal abruption)
+  - Need immediate evaluation and/or resuscitation (e.g., placental abruption)
 

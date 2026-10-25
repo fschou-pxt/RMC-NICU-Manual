@@ -4,9 +4,9 @@ number-depth: 2
 
 # VLBW/ELGAN/ELBW Infants
 
-### Rouding Sheet {#sec-small-baby-rounding-sheet}
+### Rounding Sheet {#sec-small-baby-rounding-sheet}
 
-<a href='files/RIVERSIDE NICU ELGAN ROUNDING SHEET.pdf' target='_blank'>[Download the Rouding Sheet here]</a>
+<a href='files/RIVERSIDE NICU ELGAN ROUNDING SHEET.pdf' target='_blank'>[Download the Rounding Sheet here]</a>
 
 ## Thermoregulation and Heat Loss Prevention
 
@@ -125,7 +125,7 @@ Administer 0.5 mL/kg every 12 hours until meconium is fully passed and stool tra
 Any of the following:
 
 -   BW ≤ 1,500g
--   Same-sex if chorionic status not known
+-   Monochorionic twins/multiples (same-sex if chorionic status not known)
 
 #### Timing
 
@@ -164,24 +164,25 @@ Any of the following:
 
 #### Timing
 
-| Gestational Age at Birth, wk                                                                                   | Age at Initial Examination, wk |
-|------------------------------------------------------|------------------|
-| Postmenstrual                                                                                                  | Chronologic                    |
-| 22 (a)                                                                                                         | 31                             |
-| 23 (a)                                                                                                         | 31                             |
-| 24                                                                                                             | 31                             |
-| 25                                                                                                             | 31                             |
-| 26                                                                                                             | 31                             |
-| 27                                                                                                             | 31                             |
-| 28                                                                                                             | 32                             |
-| 29                                                                                                             | 33                             |
-| 30                                                                                                             | 34                             |
-| Older gestational age, high-risk factors (b)                                                                   |                                |
-| Shown is a schedule for detecting prethreshold ROP with 99% confidence, usually before any required treatment. |                                |
+| Gestational Age at Birth, wk | Postmenstrual Age at Initial Examination, wk | Chronologic Age at Initial Examination, wk |
+|------|------|------|
+| 22 (a) | 31 | 9 |
+| 23 (a) | 31 | 8 |
+| 24 | 31 | 7 |
+| 25 | 31 | 6 |
+| 26 | 31 | 5 |
+| 27 | 31 | 4 |
+| 28 | 32 | 4 |
+| 29 | 33 | 4 |
+| 30 | 34 | 4 |
+| Older gestational age, high-risk factors (b) | — | 4 |
 
 ::: callout-note
-a.  This guideline should be considered tentative rather than evidence-based for infants with a gestational age of 22 to 23 wk because of the small number of survivors in these postmenstrual-age categories.
-b.  Consider timing based on severity of comorbidities.\
+Shown is a schedule for detecting prethreshold ROP with 99% confidence, usually before any required treatment.
+
+\(a) This guideline should be considered tentative rather than evidence-based for infants with a gestational age of 22 to 23 wk because of the small number of survivors in these postmenstrual-age categories.
+
+\(b) Consider timing based on severity of comorbidities.\
 :::
 
 #### Eye exam medications {#sec-rop-exam-meds}
@@ -202,12 +203,12 @@ Use the **PNL NICU EYE (ROP) EXAM MEDICATIONS IP SCAL** order set. Default medic
 
 - Obtain Type & Screen with confirmation ON ADMISSION
   - one specimen from cord blood
-  - one speciment from umbilical line during line placement
+  - one specimen from umbilical line during line placement
 - Obtain blood transfusion consent ON ADMISSION
 
 ### Ordering blood product
 
-1. Use the BPAM orderset
+1. Use the BPAM order set
 
 ![](Figures/ordering-blood-product-step1.png){.lightbox group="blood-product" width=720px}
 

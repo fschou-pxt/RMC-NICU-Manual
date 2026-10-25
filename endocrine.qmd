@@ -35,7 +35,7 @@ Goal: [Glucose ≥ 35 mg/dL]{style="color:red"}
 
 :::{.column-screen-right}
 
-![Hypoglycemia screening guidelines for asymptomatic at risk newborns: 0-4 hours](files/0-4.PNG)
+![Hypoglycemia screening guidelines for asymptomatic at risk newborns: 0-4 hours of life](files/0-4.PNG)
 
 :::
 
@@ -45,7 +45,7 @@ Goal: [Glucose ≥ 45 mg/dL]{style="color:red"}
 
 :::{.column-screen-right}
 
-![Hypoglycemia screening guidelines for asymptomatic at risk newborns: 0-4 hours](files/4-24.PNG)
+![Hypoglycemia screening guidelines for asymptomatic at risk newborns: 4-24 hours of life](files/4-24.PNG)
 
 :::
 
@@ -134,7 +134,7 @@ Arterial:
 <span style="color:red;">*Need consensus*</span>
 
 * Wean by 2ml/hr for AC POC Glucose >80 (or 75)
-* Wean by 1mL/hr for AC POC Clugose 70-80 (or 65-75)
+* Wean by 1mL/hr for AC POC Glucose 70-80 (or 65-75)
 * Increase by 1mL/hr for AC POC glucose 50-60 (or 45-55)
 * Increase by 2mL/hr for AC POC Glucose < 50 (or <45), and notify MD
 * Once off IV, continue to check sugars until >60 on 3 consecutive checks.
@@ -193,7 +193,7 @@ Arterial:
     <td class="tg-0lax">TSH and Free T4 as soon as symptoms are recognized    </td>
   </tr>
   <tr>
-    <td class="tg-0lax">Signs or symptom of central hypothyroidism or hypopituitarism (e.g.,   craniofacial/midline defects, certain genetic syndromes, recurrent   hypoglycemia, recalcitrant hypotension, micropenis)     </td>
+    <td class="tg-0lax">Signs or symptoms of central hypothyroidism or hypopituitarism (e.g.,   craniofacial/midline defects, certain genetic syndromes, recurrent   hypoglycemia, recalcitrant hypotension, micropenis)     </td>
     <td class="tg-0lax">TSH   and free T4 along with other pituitary tests when signs or symptoms are   recognized    </td>
   </tr>
   <tr>
@@ -265,16 +265,16 @@ Normal values are not fully established in the first 2 months of life and interp
 
 ```{mermaid}
 flowchart TD
-  A["Mom with Graves Disease (hyperthyroidism) or history of Graves disease (hyperthyroidism)"] --> B["Obtain Thyroid Receptor Ab (TR Ab) or TSI in 2<sup>nd</sup>/3<sup>rd</sup> Trimester"]
-  B --> C["Positive or unknwon TR Ab/TSI or<br>Negative TR Ab but active maternal hyperthyroidism<br><em>and/or</em><br>Treated with anti-thyroid drugs (PTU/methimazole)"]
+  A["Mom with Graves Disease (hyperthyroidism) or history of Graves disease (hyperthyroidism)"] --> B["Obtain TSH Receptor Ab (TR Ab) or TSI in 2<sup>nd</sup>/3<sup>rd</sup> Trimester"]
+  B --> C["Positive or unknown TR Ab/TSI or<br>Negative TR Ab but active maternal hyperthyroidism<br><em>and/or</em><br>Treated with anti-thyroid drugs (PTU/methimazole)"]
   B --> D["NO current anti-thyroid treatment<br><em><u>and</u></em><br>NEGATIVE TR Ab/TSI in 2<sup>nd</sup>/3<sup>rd</sup> Trimester"]
   C --> E[High risk neonate]
   D --> F[No screening needed]
-  E --> G["Obtain TR Ab/TSI in cord blood or nursery<br><em>If not done</em>: Order TR Ab/TSI, freeT4, TSH for outpatient draw in first 7 days of life"]
+  E --> G["Obtain TR Ab/TSI in cord blood or nursery<br><em>If not done</em>: Order TR Ab/TSI, free T4, TSH for outpatient draw in first 7 days of life"]
   G --> H["+ TR Ab/TSI = High risk neonate<br><em>(Observe for clinical symptoms of hyper/hypothyroidism)</em>"]
   G --> I["Negative TR Ab/TSI = Low risk neonate"]
   H --> J["Draw TSH and free T4 at 3-7 days<br><em>(if not done prior, or if symptomatic)</em>"]
-  I --> K["No further work-up necessary"]
+  I --> K["No further workup necessary"]
   J --> L["Abnormal results: send Dr. Advice to Peds Endo<br><em>(TSH < 1mIU/ml and/or free T4 > 2ng/dl is abnormal)</em>"]
   J --> M["Normal TSH, free T4 for age"]
   M --> K
@@ -297,7 +297,7 @@ Though TSI is acceptable it is preferred to screen with TR Ab (TSH receptor bind
 
 #### XY individual
 
-* Defects in gene producing transcription factors along the pathway of testicular differentiation
+* Defects in genes producing transcription factors along the pathway of testicular differentiation
 * Defects in androgen synthesis & production
 * Defect in androgen receptor response
 * Disrupted müllerian inhibition
@@ -321,7 +321,7 @@ Though TSI is acceptable it is preferred to screen with TR Ab (TSH receptor bind
 
 * micropenis:
   * Full-term: stretched penile length < 2.5cm
-  * Preterm: normal stretched penile length (cm) = -2.27 + 0.16 x GA in week
+  * Preterm: normal stretched penile length (cm) = -2.27 + 0.16 x GA in weeks
 * severe hypospadias (with or without cryptorchidism or micropenis)  
 
 *Female*  
@@ -339,10 +339,10 @@ Though TSI is acceptable it is preferred to screen with TR Ab (TSH receptor bind
 
 ***STAT ORDERS***  
 
-* Serum eletrolytes
+* Serum electrolytes
 * Serum glucose level
 * Random cortisol
-* 17-OHP: value affected by prematuirty, maternal steroid intake
+* 17-OHP: value affected by prematurity, maternal steroid intake
 * Renin
 * Karyotyping
 
@@ -396,7 +396,7 @@ Though TSI is acceptable it is preferred to screen with TR Ab (TSH receptor bind
   * consider 10mL/kg NS bolus if dehydrated
 * Glucocorticoids (hydrocortisone):
   * Start at 50mg/m^2^/day IV divided q4-6 hrs
-* Mineralocorticoirds:
+* Mineralocorticoids:
   * Start fludrocortisone at 0.1mg qDay
 * NaCl supplement:
   Start at 3-4 mEq/kg/day (4mEq/mL solution)
@@ -414,9 +414,9 @@ Though TSI is acceptable it is preferred to screen with TR Ab (TSH receptor bind
 ### For <u>unilateral</u> undescended (or non-palpable) testicle
 
 * No need to order ultrasound
-* Refere to Peds Urology for evaluation (there is a new hire at Fontana)
+* Refer to Peds Urology for evaluation (there is a new hire at Fontana)
 * May wait until 3 months of age to refer as some will descend by that time
-* If there are othe rmalformations of the external genitalia (hypospadias) with undescended testicle(s), obtain labs as below an refer to Peds Urology without waiting until 3 months.
+* If there are other malformations of the external genitalia (hypospadias) with undescended testicle(s), obtain labs as below and refer to Peds Urology without waiting until 3 months.
 
 <br/>
 
@@ -436,8 +436,8 @@ B --> D["If the exam is unclear or uncertain,
          first, per Peds Endo"]
            
 D --> E["If true bilateral undescended testes  
-         on ultrasound report, endocrine work-
-         up should be ordered next."]
+         on ultrasound report, endocrine workup
+         should be ordered next."]
          
 C --> F["If the provider is comfortable  
          in making the clinical assessment 
@@ -446,10 +446,10 @@ C --> F["If the provider is comfortable
          ordered next."]
         
 F --> G["<div align='left';>
-        1. Testosteron, pediatric
+        1. Testosterone, pediatric
         2. LH, pediatric
         3. FSH
-        4. AMH (anti-Mullerian hormone)
+        4. AMH (anti-Müllerian hormone)
         5. Karyotype
         6. 17-OH progesterone
             
@@ -462,7 +462,7 @@ F --> G["<div align='left';>
 
 E --> G
 
-D --> H["If testes are high scrotum or   
+D --> H["If testes are high in the scrotum or   
          low in the inguinal canal,  
          refer to Peds Urology for exam   
          and follow-up.  

@@ -21,11 +21,11 @@ Either of the following:
 2. With the help of laryngoscope insert the catheter 2 cm past the Vocal cords  
 3. Attach Capnometer via 3.0 ETT adapter and wait for color change, once color change confirmed proceed to remove the ETT adapter/ capnometer 
 4. Attach syringe with Surfactant and administer it over 2-3 minutes  
-5. After completion give 1 ml of air slowly than remove the catheter
+5. After completion give 1 ml of air slowly then remove the catheter
 
 <br/>
 
-<video with="600" height = "360" controls>
+<video width="600" height = "360" controls>
   <source src="Figures/LISA_video.mp4" type="video/mp4">
 </video>
 
@@ -103,7 +103,7 @@ Either of the following:
   - Presence of a pink color in the 2nd and 3rd waveforms (may fluctuate to the 1st and 4th waveforms at times).
 
 #### Re-Positioning
-<img src="Figures/nava-too-deep.png" alt="Correct Position" width="300">
+<img src="Figures/nava-too-deep.png" alt="Too deep" width="300">
 
 - **Too deep**:  
   - Pull out slightly.  
@@ -111,7 +111,7 @@ Either of the following:
   - Dampened QRS.
 
 
-<img src="Figures/nava-too-shallow.png" alt="Correct Position" width="300">
+<img src="Figures/nava-too-shallow.png" alt="Too shallow" width="300">
 
 - **Too shallow**:  
   - Insert slightly further.  
@@ -126,7 +126,7 @@ Either of the following:
 |----------------------|------------------------------------|--------------------------------------------------------------------------------------------------|
 | **NAVA Level**       | Start with a low NAVA level (1.0-2 cmH~2~O/μV) | - Titrate to neonates’ comfort and Edi peak 10-15 μV. <br> - If comfortable and Edi peaks <5 μV, decrease NAVA Level in steps of 0.5 until Edi peak values are 5-15 μV. <br> - If increased WOB and Edi peak >20 μV, increase NAVA level in 0.5 increments until comfortable and Edi peaks <15 μV. |
 | **Edi trigger**       | 0.5 μV                            | Avoid "artifact self-triggering" (lower number = more sensitive).                                |
-| **Apnea time**       | 3-5                                 | Adjust as clinically indicated (minimum rate: 2 seconds = 30 bpm; 1 second = 60 bpm).           |
+| **Apnea time**       | 3-5 sec                             | Adjust as clinically indicated (minimum rate: 2 seconds = 30 bpm; 1 second = 60 bpm).           |
 | **Ppeak**            | 35-40 cmH~2~O <br> **NOTE**: Pressure limited 5 cmH~2~O below Ppeak alarm limit (blue alarm). | Set Ppeak high enough for recruiting breaths. Increase if pressure limited alarm is constant.   |
 | **Backup**           | Activates Pressure Control mode after apnea time if patient is apneic. | Set PC level and RR to assure adequate ventilation.                                              |
 
@@ -397,7 +397,7 @@ Adjust pressure and FiO~2~ accordingly to compensate during fluid shift, allowin
 
 - Serial chest x-ray and blood gas assessment as needed.  
 - Fluid management.  
-- Low threshold to re-intubate if having significant work of breathing and/or respiratory acidosis (e.g., pCO~2~ > 75, pH < 7.1, etc.)
+- Low threshold to reintubate if having significant work of breathing and/or respiratory acidosis (e.g., pCO~2~ > 75, pH < 7.1, etc.)
 
 <br/>
 <br/>
@@ -418,12 +418,12 @@ Adjust pressure and FiO~2~ accordingly to compensate during fluid shift, allowin
 
 #### Bradycardia {#sec-bradycardia}
 
-* Does not meeting criteria for Apnea;
+* Does not meet criteria for Apnea;
 * Any drift in HR < 80bpm for &ge; 10 sec requiring intervention other than removing the bottle if during feeding.
 
 #### Desaturation {#sec-desaturation}
 
-*	Does not meeting criteria for Apnea or Bradycardia;
+*	Does not meet criteria for Apnea or Bradycardia;
 *	SpO2 < 80% for &ge; 10 sec requiring intervention other than removing the bottle if during feeding.
 
 <br/>
@@ -447,7 +447,7 @@ Adjust pressure and FiO~2~ accordingly to compensate during fluid shift, allowin
 *Do not intervene in the first 10 sec of a spell, unless:*  
 
 *	Life-threatening (e.g. aspiration, airway compromise, etc.).  
-*	Heart rate progress to < 60/min.  
+*	Heart rate progresses to < 60/min.  
 
 #### Update 2:  
 
@@ -547,7 +547,7 @@ Adjust pressure and FiO~2~ accordingly to compensate during fluid shift, allowin
 :::{.callout-tip}
 
 * This algorithm is meant for preterm infants whose baseline SpO~2~ is within normal range not requiring any respiratory support who are otherwise taking full or near-full PO and are close to NICU discharge.  
-*	This algorithm may not be applicable to term infants who respiratory control and suck-swallow-breath coordination are mature at birth. Spells in these infants are usually due to maternal influence, airway abnormalities, or ongoing pulmonary pathologies.  
+*	This algorithm may not be applicable to term infants whose respiratory control and suck-swallow-breathe coordination are mature at birth. Spells in these infants are usually due to maternal influence, airway abnormalities, or ongoing pulmonary pathologies.  
 *	This algorithm should not be applied to A/B/D events that occur in the delivery room or around time of admission.  
 *	Isolated obstructive apnea is rare. Skin-to-skin-related spells are usually obstructive in nature. Clinical ruling of those events should be at the treating neonatologist’s discretion.  
 *	**Isolated SpO~2~ in the 80-89% range on the day of hospital discharge, although not a spell by definition, is equal to a failed CCHD screening, and therefore should not be ignored if occurred within 1 day of discharge.**
@@ -610,7 +610,7 @@ Adjust pressure and FiO~2~ accordingly to compensate during fluid shift, allowin
 
 If Hepatitis B vaccine is administered during spell watch, the spell watch period will be modified to include 48 hrs of monitoring following vaccine administration.
 
-* Example: if baby is being monitored from 2/10 to 2/13 (72 hrs), and Hepatitis B vaccine if administered on 2/12, the monitoring period will be extended to 2/14.
+* Example: if baby is being monitored from 2/10 to 2/13 (72 hrs), and Hepatitis B vaccine is administered on 2/12, the monitoring period will be extended to 2/14.
 
 #### Not during spell watch
 
@@ -649,11 +649,11 @@ f --> g["Successful"]
 f --> h["Failed"]
 g --> j["Room air"]
 h --> i("Wean to HFNC 2LPM for 24-72hrs")
-i --> p["FiO2<sub>2</sub> remained at 21%"]
+i --> p["FiO<sub>2</sub> remained at 21%"]
 i --> q["FiO<sub>2</sub> increased to >21%"]
 q --> s["Wean to 21%"]
 s --> p
-p --> r["Wean flow by 0.25-0.5PM q24-48hrs"]
+p --> r["Wean flow by 0.25-0.5 LPM q24-48hrs"]
 d --> k("Wean FiO<sub>2</sub> to 21% by 33 weeks PMA")
 k --> l["Successful"]
 k --> m["Unsuccessful"]
@@ -710,7 +710,7 @@ m --> o
 
 <br/><br/>{{< pagebreak >}}
 
-## Bronchouplmonary dysplasia (BPD)
+## Bronchopulmonary dysplasia (BPD)
 
 <br/>
 
@@ -726,7 +726,7 @@ m --> o
   * Reserved for BW < 1,000g AND GA < 28 weeks requiring respiratory support after birth
   * Dose: 5,000 units 3 times per week for 12 doses (4 weeks)  
 * **Epogen**
-  * Dose: 250 units/kg/dose SQ Mon Wed Fr starting at DOL7
+  * Dose: 250 units/kg/dose SQ Mon Wed Fri starting at DOL7
 
 #### Enteral meds
 
@@ -759,7 +759,7 @@ When at 100ml/kg/day of enteral feeds:
 
 ## Pneumothorax
 
-### Needle thoractocentesis
+### Needle thoracentesis
 
 ### Chest tube placement
 
@@ -795,32 +795,32 @@ Modified SELDINGER TECHNIQUE (credit: [MacDonald's Atlas of Procedures in Neonat
 * Procedures (6 steps):
   1. Insert finder needle (introducer) on syringe 4^th^ ICS
   2. Remove the syringe while leaving the finder needle (introducer) & feed the guidewire through introducer (finder needle) to 10cm mark.
-  3. Remove the introducer and finder needle while holding the guidewire steady and insert dilator over the guidewire 1-2cm skin and subcutaneous tissue (not chest wall).
-  4. Remove the dilator and insert the chest tube catheter over the guidewire until all holes are the chest (measures at ~ 7cm).
+  3. Remove the introducer and finder needle while holding the guidewire steady and insert dilator over the guidewire 1-2cm through skin and subcutaneous tissue (not chest wall).
+  4. Remove the dilator and insert the chest tube catheter over the guidewire until all holes are in the chest (measures at ~ 7cm).
   5. Maintain stability of the catheter and remove the guidewire.
   6. Attach the catheter to the suction drainage device via luer adapter.
   
 * Details and tips:
-  * Mount the finder needle syringe with inserting the tip of the needle into the skin at the <span style="color:red;">4^th^ intercostal space = nipple</span> between the <span style="color:red;">anterior and mid-axillary line <u>above the upper border of the 5^th^ rib</u></span>.
+  * Mount the finder needle syringe by inserting the tip of the needle into the skin at the <span style="color:red;">4^th^ intercostal space = nipple</span> between the <span style="color:red;">anterior and mid-axillary line <u>above the upper border of the 5^th^ rib</u></span>.
   
   * Advance the finder needle slowly, simultaneously applying negative pressure to the syringe. The needle should be advanced perpendicular to the chest wall generally in the direction of the opposite shoulder.  
-  * Advance the needle until you feel the lack of resistance or “GIVE” and air entry is the syringe.  
+  * Advance the needle until you feel the lack of resistance or “GIVE” and air entry into the syringe.  
     <span style="color:red;">Do not evacuate more than 1-2mL of air. </span> 
     
   * While stabilizing the needle with 1 hand remove the syringe and insert guidewire through the finder needle.  
   * Advance the guidewire until the depth marking at 10cm reaches the hub of the needle
-    <span style="color:red;">Advanced the guidewire until 10cm mark that the needle hub</span>
+    <span style="color:red;">Advance the guidewire until the 10cm mark is at the needle hub</span>
   * Maintain stability of the wire, remove the finder needle.  
-  * Feed the dilator over the wire and insert in a slow twisting motion to dilate the tract. Advanced the dilator only far enough to dilate the skin tract and parietal pleura. 
+  * Feed the dilator over the wire and insert in a slow twisting motion to dilate the tract. Advance the dilator only far enough to dilate the skin tract and parietal pleura. 
     <span style="color:red;">This is normally about 1cm in preterm or 2cm in term infants.</span>
   * Maintaining stability of the wire remove the dilator.
-  * Insert the pigtail catheter over the wire and advanced it into the chest wall toward the apex of the lung (anteriorly and medially toward the 2^nd^ intercostal space and midclavicular line) until <span style="color:red;">all the side holes of the catheter are inside the chest wall.</span>
+  * Insert the pigtail catheter over the wire and advance it into the chest wall toward the apex of the lung (anteriorly and medially toward the 2^nd^ intercostal space and midclavicular line) until <span style="color:red;">all the side holes of the catheter are inside the chest wall.</span>
   * This requires uncoiling and holding the pigtail straight with 1 hand while advancing it onto the wire.
   * Maintaining stability of the catheter remove the guidewire. Catheter will spontaneously coil into a pigtail loop inside the pleural space.
-  * Attach the luer adapter at the external end of the catheter and connect it the suction apparatus tubing.  
+  * Attach the luer adapter at the external end of the catheter and connect it to the suction apparatus tubing.  
   * Secure the chest tube with semipermeable transparent dressing and surgical tape.  
-  * Suture and the catheter in place is optional but typically not necessary as there is no skin incisions closed and the skin and trach will be snug against the counter.  
-    <span style="color:red;">Warning: it is easy to inadvertently compressed catheter with suture if secured too tightly.</span>
+  * Suturing the catheter in place is optional but typically not necessary as there is no skin incision to close and the skin and tract will be snug against the catheter.  
+    <span style="color:red;">Warning: it is easy to inadvertently compress the catheter with suture if secured too tightly.</span>
 
 
 
@@ -832,7 +832,7 @@ Modified SELDINGER TECHNIQUE (credit: [MacDonald's Atlas of Procedures in Neonat
 
 Method 1:  
 
-* IV dexamethasone 0.25mg/kg/dose given ~4 hrs prior to scheduled extubastion then q8hrs for a total of 3 doses (Couser 1992).
+* IV dexamethasone 0.25mg/kg/dose given ~4 hrs prior to scheduled extubation then q8hrs for a total of 3 doses (Couser 1992).
 
 Method 2:
 

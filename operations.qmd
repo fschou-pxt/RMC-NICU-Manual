@@ -81,18 +81,18 @@ Checklist
 ### Important notes:
 
 1. P scoring is based on POTENTIAL FOR HARM. 
-2. P2 is the serious and will require corrective actions. 
+2. P2 is serious and will require corrective actions. 
 3. If you receive P2, you can appeal and ask for independent review. 
-4. Standard for care = is the COMMUNITY STANDARD, not department standard.
+4. Standard of care is the COMMUNITY STANDARD, not department standard.
 5. It’s ok to discuss the case with the physician under review to get their thought process. 
 6. Any learning experience will be shared to the Neo group without naming the physician under review. 
-7. Any request for case review can be submitted to me or directly to QM regardless of department, e.g radiology, nursing, peds etc.
+7. Any request for case review can be submitted to me or directly to QM regardless of department, e.g., radiology, nursing, peds etc.
 
 <br/>
 
 ### References
 
-[Click to Download Peer Preview Training Slides](https://shiny.nicugrowth.app/rmc-nicu-manual/www/QM_slides.pptx){target="_blank"}  
+[Click to Download Peer Review Training Slides](https://shiny.nicugrowth.app/rmc-nicu-manual/www/QM_slides.pptx){target="_blank"}  
 
 [Click to Download Level 3 Audits Pearls & Tips](https://shiny.nicugrowth.app/rmc-nicu-manual/www/QM-level-3-audits-pearls-tips.docx){target="_blank"}
 
@@ -148,7 +148,7 @@ We share responsibility for providing an outstanding care experience for our new
 * Complete the H&Ps for newborns that were delivered after 8 PM the night prior and for newborns that have been delivered by 10:00 AM.
 * Perform all circumcisions.
 * Not responsible for attending deliveries.
-* Will sign out to the neonatologist at 12 PM if there are any items pending of patients that are being discharged after 12 PM and for the other newborns in which laboratory/radiological studies are pending. The pending items will be noted in the "Write Handoff" section in Health Connect.
+* Will sign out to the neonatologist at 12 PM if there are any items pending for patients that are being discharged after 12 PM and for the other newborns in which laboratory/radiological studies are pending. The pending items will be noted in the "Write Handoff" section in Health Connect.
 * Prioritize discharges, circumcisions, then progress notes and H&Ps.
 * Work that is not completed will be signed out to the neonatologists (if this occurs, usually will be the H&Ps).
 * Pediatricians will place future outpatient orders for hip ultrasounds, renal ultrasounds, thyroid labs, etc.
@@ -162,7 +162,7 @@ We share responsibility for providing an outstanding care experience for our new
 * Complete the H&Ps for newborns that are delivered from 10:00 AM to 8 PM.
 * Will be responsible for managing any abnormal results from the hypoglycemia protocol and for serial TCBs for ABO incompatibility.
 * If nursery nurse has concerns about an infant on FCC, they are to call the neonatologist, who will determine if the NICU team/RN can first evaluate the infant.
-* Will need to follow up on serum bilirubin for patients seen in Moreno Valley Great Starts clinic when results are not back by 5 PM. Based on the result, may need to order Bili Blanket, repeat serum bilirubin, and schedule a follow-up with PCP or another pediatrician.
+* Will need to follow up on serum bilirubin for patients seen in Moreno Valley Great Starts clinic when results are not back by 5 PM. Based on the result, may need to order bili-blanket, repeat serum bilirubin, and schedule a follow-up with PCP or another pediatrician.
 * Neonatologist is expected to write the late preterm admission orders if asked by nursing for late preterm infants who are in observation in the NICU in Riverside and Moreno Valley. If not under observation, the pediatrician is expected to write the late preterm admission orders.
 * Neonatologist is expected to write a note for any infant in observation in the NICU, for infants requiring resuscitation, and for deliveries they attended in person (physical exam by neonatologist is not necessarily required on the infants that transition back to FCC).
 * If anticipatory discharge is cancelled, neonatologist is expected to cancel the discharge order and leave a note or write handoff with the reason for cancellation.
@@ -210,7 +210,7 @@ We share responsibility for providing an outstanding care experience for our new
 
 **Hyperbilirubinemia**
 
-* Agreement among the pediatricians and neonatologists for newborns with hyperbilirubinemia risk factors (such as ABO incompatibility) to initiate phototherapy 2 below phototherapy threshold based on [bilitool.org](https://bilitool.org){target="_blank"} or [peditools.org](https://peditools.org){target="_blank"}.
+* Agreement among the pediatricians and neonatologists for newborns with hyperbilirubinemia risk factors (such as ABO incompatibility) to initiate phototherapy 2 mg/dL below phototherapy threshold based on [bilitool.org](https://bilitool.org){target="_blank"} or [peditools.org](https://peditools.org){target="_blank"}.
 * In certain cases, infants who can no longer remain on FCC due to maternal discharge, but still need phototherapy, may need admission to the NICU.
 * If the infant is on full phototherapy, the pediatric group can transition to a bili-blanket and order a follow-up bilirubin 6–8 hours later.
 * If rate of rise (ROR) is > 0.2/hr, then admit to the NICU as they have failed the bili-blanket.
@@ -269,7 +269,7 @@ Under the diagnosis of *Newborn, single liveborn…*:
 
 * Please include GA, mother's blood type and GBS status, and infant's blood type if done.
 * Can also mention any other relevant information, such as history of maternal depression/anxiety, mother with pre-eclampsia, oligo, etc.
-* There is a smart phrase some physicians use to autopopulate this: `.birth` or `.birth1` (can copy from the smartphrase list of Dr. Garabedian, Dr. Song or Dr. Chen).
+* There is a SmartPhrase some physicians use to autopopulate this: `.birth` or `.birth1` (can copy from the SmartPhrase list of Dr. Garabedian, Dr. Song or Dr. Chen).
 
 **Outpatient bilirubin management**
 
@@ -278,10 +278,10 @@ Under the diagnosis of *Newborn, single liveborn…*:
 * Please order any follow-up TSB "stat".
   * Stat laboratories are Iris, Murrieta and Riverside (not Heacock).
   * Please let parent know which specific lab to go to. If they go to the Heacock lab it will not be run stat and will result after 5–9 PM.
-* Ordering the biliblanket: order is **"phototherapy, light, including supplies"**.
+* Ordering the bili-blanket: order is **"phototherapy, light, including supplies"**.
   * Apria will deliver to their house within 4 hours of order.
   * If after 5 PM, can call the ER Case Manager to let them know of the order, and they can call Apria to confirm they received the order.
-  * Can also inform parent that if they don't receive the biliblanket within 4–6 hours, to call the L&D secretary to speak with the neonatologist on call.
+  * Can also inform parent that if they don't receive the bili-blanket within 4–6 hours, to call the L&D secretary to speak with the neonatologist on call.
 * Med Advice: can call them or send them a message to book a follow-up in-person appointment or TAV.
   * Routing pool is **"P Pedririv Med Advice" (10139)**
   * Med Advice phone number: 951-353-4354

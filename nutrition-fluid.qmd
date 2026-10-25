@@ -25,7 +25,7 @@ number-depth: 2
 
 * Term: 60-80 ml/kg/day
 * Preterm ≥ GA 28 weeks: 80 ml/kg/day
-* Preterm < GA 28 weeeks: 90-100 ml/kg/day
+* Preterm < GA 28 weeks: 90-100 ml/kg/day
 
 ### Glucose infusion rate (GIR)
 
@@ -191,13 +191,13 @@ The **NICU Feeding Advancement Calculator.mht** file should only be opened using
 
 ### Nutrition intake goal
 
-* Calories: 120-130 KCal/kg/day
+* Calories: 120-130 kcal/kg/day
 * Protein: 3.0-3.5 g/kg/day [[Link](https://www.nejm.org/doi/full/10.1056/NEJMoa2204886#:~:text=This%20trial%20provided%20robust%20evidence,corrected%20age%20of%202%20years.)]
 * Fluids: 120-180 ml/kg/day
 
 <br/>
 
-### Nutrition survelleince
+### Nutrition surveillance
 
 * Obtain Na, Phos, ALP, BUN, every Monday once full enteral feeds achieved
 
@@ -217,11 +217,11 @@ Last update in 2018:
 <https://espghan.info/published-guidelines/>
 
 * Fluid and electrolytes [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31167-1/pdf){target="_blank"}]
-* Energy [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31163-4/pdf"){target="_blank"}]
+* Energy [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31163-4/pdf){target="_blank"}]
 * Carbohydrates [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31166-X/pdf){target="_blank"}]
 * Amino acids [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31164-6/pdf){target="_blank"}]
 * Lipids [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31165-8/pdf){target="_blank"}]
-* Calcium, phosphorous and magnesium [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31169-5/pdf){target="_blank"}]
+* Calcium, phosphorus and magnesium [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31169-5/pdf){target="_blank"}]
 * Iron and minerals [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31168-3/pdf){target="_blank"}]
 * Vitamins [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31170-1/pdf){target="_blank"}]
 * Venous access [[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31171-3/pdf){target="_blank"}]
@@ -301,7 +301,7 @@ Physician to consent parents verbally, and place proper documentation in the dai
 ### Protocol
 
 * Use Prolacta instead of HMF when fortifying milk for infants who meet criteria for Prolacta. 
-* Start at 26 KCal (Prolact +6 H^2^MF). 
+* Start at 26 kcal (Prolact +6 H^2^MF). 
 * Increase calories per nutritionist recommendations and at rounding neonatologist's discretion based on the infant's clinical condition.
 
 <br/>
@@ -309,7 +309,7 @@ Physician to consent parents verbally, and place proper documentation in the dai
 ### QI Project on Prolact+ H^2^MF cost
 
 * Process measure
-  * Use [Postnatal growth charts](https://nicugrowth.app) to determine fortificationp plan beyond 26KCal/oz
+  * Use [Postnatal growth charts](https://nicugrowth.app) to determine fortification plan beyond 26kcal/oz
 * Outcome measure
   * cost of Prolact+ H^2^MF product
 * Balance measure
@@ -328,7 +328,7 @@ Physician to consent parents verbally, and place proper documentation in the dai
 
 ### Eligibility criteria
 
-When using Prolacta Prolac+ H^2^MF  
+When using Prolacta Prolact+ H^2^MF  
 *Note: not to be used before breast milk fortification*
 
 <br/>
@@ -351,11 +351,11 @@ Either of the following:
 
 #### Volume
 
-Dedepding on the fortified milk feeding volume, three ratios can be used:
+Depending on the fortified milk feeding volume, three ratios can be used:
 
-* 3mL Cream per 100mL fortified milk - increase calculated calories by 2.4 KCal/oz
-* 4mL Cream per 100mL fortified milk - increase calculated calories by 3.1 KCal/oz
-* 5mL Cream per 100mL fortified milk - increase calculated calories by 3.9 KCal/oz
+* 3mL Cream per 100mL fortified milk - increase calculated calories by 2.4 kcal/oz
+* 4mL Cream per 100mL fortified milk - increase calculated calories by 3.1 kcal/oz
+* 5mL Cream per 100mL fortified milk - increase calculated calories by 3.9 kcal/oz
 
 #### Possible combinations
 
@@ -804,12 +804,12 @@ All criteria for the infant's gestational age group must be met:
 
 * For infants ≤ 30 weeks at birth:
   * Start training as early as 30 0/7 weeks PMA
-  * Medically Stable (not on continuous vasopressor medications or invasive ventilator support, if on CPAP, or HFNC Fi0~2~ ≤ 40%)
+  * Medically Stable (not on continuous vasopressor medications or invasive ventilator support, if on CPAP, or HFNC FiO~2~ ≤ 40%)
   * Tolerating enteral feed in previous 48 hours
   * Tolerating non-nutritive sucking with minimal bradycardic and desaturation events
 * For infants > 30 weeks at birth:
   * Care team’s concern for the baby’s nipple feeding skills development
-  * Medically Stable (not on invasive ventilator support, if on CPAP, or HFNC Fi0~2~ ≤ 40%)
+  * Medically Stable (not on invasive ventilator support, if on CPAP, or HFNC FiO~2~ ≤ 40%)
 
 <br/>
 
@@ -833,7 +833,7 @@ All criteria for the infant's gestational age group must be met:
   * NTrainer (Standard program):
     If PMA < 33 weeks, gavage feeding via pump for at least 20 minutes. Do not attempt to nipple feed until the next feeding.
   * Pre-Oral NTrainer (Standard program for one 3-minute cycle then progress to nipple feeding):
-    Pt recommend to transition, If PMA > 33 weeks, Readiness Score < 3 on Infant-Driven Feeding Scale (see Appendix A) and nippling ≥ 1/3 volume in the previous feeding.
+    PT recommends transition if PMA > 33 weeks, Readiness Score < 3 on Infant-Driven Feeding Scale (see Appendix A) and nippling ≥ 1/3 volume in the previous feeding.
 * Perform training: 2 times/day (try once per shift):
   * Done by OT/PT, bedside nurses, or parents
 * Length of NTraining:
@@ -891,5 +891,5 @@ Consult all moms with a known history of THC use during or prior to pregnancy, o
 
 Document the following in the Nutrition section of the daily progress note:
 
-> Mom verbally agreed to not use any THC products while breast feeding due to neurodevelopmental risks for her newborn
+> Mom verbally agreed to not use any THC products while breastfeeding due to neurodevelopmental risks for her newborn
 
