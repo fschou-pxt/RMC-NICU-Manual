@@ -102,7 +102,8 @@ def norm_tex(s):
 QUARTO = dict(
     roots=["main#quarto-document-content"],
     skip=["span.chapter-number", "span.header-section-number", "a.anchorjs-link", "div.quarto-title-meta",
-          "script", "style", "nav", "div.quarto-title-meta-heading", "span.screen-reader-only"],
+          "script", "style", "nav", "div.quarto-title-meta-heading", "span.screen-reader-only",
+          "div#nicu-new-site"],  # the soft-launch banner pointing to the new site (old manual only)
     math=["span.math"],
     xref=["a.quarto-xref"],
 )
