@@ -20,6 +20,10 @@ import path from "node:path";
 import { visit } from "unist-util-visit";
 import { toString } from "hast-util-to-string";
 
+// page → header patterns of tables whose header row is really the first data row (moved into the body, so layouts
+// that hide headers on phones still show it): the Vitamin K table starts with its >1500 g row
+const HEADER_IS_DATA = { hemonc: [/^>1500g/] };
+
 // page → [header text pattern, layout]; the pattern is matched against the header cells joined by " | "
 const LAYOUTS = {
   admission: [[/^Item \| Weight \| Image/, "gallery"]],
@@ -81,6 +85,13 @@ export default function rehypeTables() {
       }
       const layout = (LAYOUTS[page] || []).find(([re]) => re.test(sig))?.[1] || "lookup";
       addClass(table, "tbl", `tbl-${layout}`);
+      if (thead && tbody && HEADER_IS_DATA[page]?.some((re) => re.test(sig))) {
+        const row = rowsOf(thead)[0];
+        for (const c of cellsOf(row)) c.tagName = "td";
+        tbody.children.unshift(row);
+        table.children = table.children.filter((c) => c !== thead);
+        heads = [];
+      }
 
       // column labels for layouts that stack cells (CSS shows them; they are not page text)
       for (const tr of rowsOf(tbody)) if (!tr.properties?.className?.includes("subhead")) cellsOf(tr).forEach((td, i) => {
