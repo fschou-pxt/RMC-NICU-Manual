@@ -539,7 +539,7 @@
 .ask-settings .nc-set { background: var(--kp-surface); border: 1px solid var(--sl-color-gray-5); border-radius: var(--kp-radius); padding: 1.1rem 1.25rem; box-shadow: var(--kp-shadow); color: var(--sl-color-gray-1); }
 .ask-settings .nc-set label { color: var(--sl-color-white); font-size: 0.9rem; }
 .ask-settings .nc-set .nc-check { color: var(--sl-color-gray-2); }
-.ask-settings .nc-set :is(input[type=password], select) { height: 2.75rem; border-radius: 10px; border: 1px solid var(--sl-color-gray-5); background: var(--kp-surface-2); color: var(--sl-color-white); font: 0.95rem var(--sl-font); }
+.ask-settings .nc-set :is(input[type=password], select) { height: 2.75rem; border-radius: 10px; border: 1px solid var(--sl-color-gray-5); background-color: var(--kp-surface-2); color: var(--sl-color-white); font: 0.95rem var(--sl-font); }
 /* composer: stays at the bottom of the screen, above the phone tab bar */
 .ask-composer { position: sticky; bottom: calc(var(--nc-tabbar-h, 0px) + 0.75rem); margin-top: 1rem; z-index: 5; }
 .ask-composer .box { display: flex; align-items: flex-end; gap: 0.35rem; background: var(--kp-surface); border: 1px solid var(--sl-color-gray-5); border-radius: 24px;
@@ -616,7 +616,7 @@ body.calc-open { overflow: hidden; }
 .fd-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; align-items: end; }
 .fd-grid > * { min-width: 0; } .fd-grid .full { grid-column: 1 / -1; }
 .fd label { display: block; font-weight: 600; font-size: 0.85rem; margin: 0 0 0.3rem; color: var(--sl-color-white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.fd :is(input, select) { width: 100%; height: var(--ctl); padding: 0 0.7rem; border: 1px solid var(--sl-color-gray-5); border-radius: 10px; background: var(--kp-surface-2); color: var(--sl-color-white); font: 0.95rem var(--sl-font); }
+.fd :is(input, select) { width: 100%; height: var(--ctl); padding: 0 0.7rem; border: 1px solid var(--sl-color-gray-5); border-radius: 10px; background-color: var(--kp-surface-2); color: var(--sl-color-white); font: 0.95rem var(--sl-font); }
 .fd select:disabled, .fd .seg button:disabled { opacity: 0.45; cursor: default; }
 .fd .seg { display: flex; width: 100%; border: 1px solid var(--sl-color-gray-5); border-radius: 10px; overflow: hidden; }
 .fd .seg button { flex: 1; height: var(--ctl); padding: 0 0.5rem; border: 0; background: var(--kp-surface-2); color: var(--sl-color-gray-1); font: 500 0.92rem var(--sl-font); cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -819,3 +819,14 @@ body:has(.ask-app) .sl-container { max-width: none; }
 .soft-launch a { color: inherit; font-weight: 650; }
 .soft-launch [data-hide] { margin-left: auto; border: 0; background: transparent; color: inherit; font-size: 1.2rem; line-height: 1; width: 2rem; height: 2rem; border-radius: 8px; cursor: pointer; }
 .soft-launch [data-hide]:hover { background: color-mix(in srgb, currentColor 12%, transparent); }
+
+/* Dropdowns (Ask settings, feeding plan): our own chevron, inset from the edge like the text; the browser's
+   arrow sits against the border and ignores padding */
+:is(.nc-set, .fd) select:not([multiple]) {
+  appearance: none; -webkit-appearance: none; padding-left: 0.85rem; padding-right: 2.6rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' fill='none' stroke='%235b6b80' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 0.9rem center; background-size: 16px 16px;
+}
+:root[data-theme="dark"] :is(.nc-set, .fd) select:not([multiple]) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' fill='none' stroke='%23aab6c4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}

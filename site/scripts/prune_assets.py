@@ -49,5 +49,19 @@ def main():
         print(f"  over 25 MB, not published: {rel} ({size / 1e6:.0f} MB){'  <- linked from a page' if is_used else ''}")
 
 
+def poster_for_ask_setting():
+    """The install poster mentions Ask only when the build has Ask on (ASK=off removes it, see package.json)."""
+    path = os.path.join(DIST, "poster.html")
+    if not os.path.exists(path):
+        return
+    drop = "data-ask" if os.environ.get("ASK") == "off" else "data-no-ask"
+    with open(path, encoding="utf-8") as f:
+        html = f.read()
+    html = re.sub(r"^\s*<(div|span) " + drop + r">.*</\1>\n", "", html, flags=re.M)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html)
+
+
 if __name__ == "__main__":
     main()
+    poster_for_ask_setting()

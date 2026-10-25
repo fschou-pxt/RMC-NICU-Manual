@@ -10,7 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site_libs/bootstrap/bootstrap-icons.css">
 <style>
-/* A one-page letter-size poster for the unit; prints in color or grayscale */
+/* A one-page letter-size poster for the unit; prints in color or grayscale. Lines marked data-ask / data-no-ask
+   are kept or removed at build time by scripts/prune_assets.py, depending on whether Ask is on (ASK=off). */
 :root { --navy: #003b71; --blue: #0068a8; --text: #1d2733; --muted: #5b6b80; --border: #dbe3ec; --tint: #eef4fa; color-scheme: light; }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: #e9eef4; color: var(--text); font: 400 16px/1.45 "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
@@ -37,7 +38,7 @@ ol { margin: 0 0 22px; padding-left: 22px; } li { margin: 4px 0; }
 .features b { display: block; }
 footer { padding: .3in .6in .45in; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; }
 footer b { color: #b3261e; }
-@media (max-width: 760px) {
+@media screen and (max-width: 760px) { /* screen only: printing always uses the full letter-size layout */
   .page { min-height: 0; } header { padding: 28px 20px 22px; } header h1 { font-size: 32px; }
   .main { grid-template-columns: 1fr; padding: 24px 20px; } .features { margin: 0 20px; grid-template-columns: 1fr; } footer { padding: 20px; flex-direction: column; }
 }
@@ -81,22 +82,24 @@ footer b { color: #b3261e; }
     </div>
   </div>
   <div class="features">
-    <div><i class="bi bi-chat-dots"></i><span><b>Ask</b>Answers from the manual, with the source one tap away.</span></div>
+    <div data-ask><i class="bi bi-chat-dots"></i><span><b>Ask</b>Answers from the manual, with the source one tap away.</span></div>
+    <div data-no-ask><i class="bi bi-search"></i><span><b>Search</b>Protocols, doses, phone numbers and dot phrases.</span></div>
     <div><i class="bi bi-clipboard"></i><span><b>Dot phrases</b>One tap to copy into Epic.</span></div>
     <div><i class="bi bi-telephone"></i><span><b>Phones</b>Searchable, tap to call.</span></div>
     <div><i class="bi bi-cup-hot"></i><span><b>Feeding plan</b>Daily advancement to paste into Epic.</span></div>
     <div><i class="bi bi-calculator"></i><span><b>Calculators</b>GIR, fluids, ETT, phototherapy and more.</span></div>
-    <div><i class="bi bi-star"></i><span><b>Saved</b>Bookmark the sections you use most.</span></div>
+    <div><i class="bi bi-grid"></i><span><b>Quick links</b>The pages you open most come first.</span></div>
   </div>
   <footer>
-    <span>Ask needs your own AI key (set it up once in the app's settings).</span>
+    <span data-ask>Ask needs your own AI key (set it up once in the app's settings).</span>
+    <span data-no-ask>Questions or feedback: Fu-Sheng.X.Chou@kp.org</span>
     <span><b>Never enter patient identifiers.</b></span>
   </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 <script>
 // The manual's address (the live manual, or wherever this page is served from); it installs from any page
-const APP_URL = new URL("./", location.href).href.replace(/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//, "https://fschou-pxt.github.io/RMC-NICU-Manual/");
+const APP_URL = new URL("./", location.href).href.replace(/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//, "https://nicu-manual.pages.dev/");
 document.getElementById("url").textContent = APP_URL.replace(/^https:\/\//, "");
 try {
   const qr = qrcode(0, "M");
