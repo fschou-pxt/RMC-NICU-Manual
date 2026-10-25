@@ -574,7 +574,8 @@
   .ask-backdrop { display: none !important; }
   .ask-sheet { left: auto; top: var(--sl-nav-height); width: min(30rem, 38vw); max-height: none; border-radius: 0; border-left: 1px solid var(--sl-color-gray-5); box-shadow: -8px 0 30px rgb(0 0 0 / 0.08); }
   .ask-sheet .grab { display: none; }
-  body.ask-sheet-open .ask-app { margin-right: calc(min(30rem, 38vw) + 1rem); }
+  /* the chat stays centered in the space left of the source panel instead of being squeezed */
+  body.ask-sheet-open:has(.ask-app) .sl-container { padding-right: calc(min(30rem, 38vw) + 1rem); }
 }
 
 /* ---------- Calculators page ---------- */
@@ -768,3 +769,27 @@ body.nc-has-tabbar:has(.ask-app) { padding-bottom: 0; }
 .ask-thread { position: relative; } /* message positions are measured inside the conversation box */
 /* desktop: breathing room between the Ask text box and the bottom of the window */
 @media (min-width: 50rem) { .ask-app { height: calc(100dvh - var(--ask-top, 12rem) - 2rem); } }
+
+/* ---------- Ask page layout and readability ---------- */
+/* the chat column is not held to the article width: it centers in the whole content area (about 50rem wide) */
+body:has(.ask-app) .sl-container { max-width: none; }
+.ask-app { --ask-w: 50rem; max-width: var(--ask-w); width: 100%; margin-inline: auto; }
+.ask-bar { justify-content: flex-start; gap: 0.5rem 0.75rem; flex-wrap: wrap; padding: 1rem 0 0.75rem; border-bottom: 1px solid var(--sl-color-gray-5); margin-bottom: 0.75rem; }
+.ask-bar .ask-title { flex: none; font-size: 1.15rem; }
+.ask-bar .ask-back { margin-right: auto; }
+.ask-bar .ask-back[hidden] + .ask-pill { margin-left: auto; }
+/* messages: larger, roomier text; answers use the full column, questions up to 80% */
+.ask-app .nc-msg { font-size: 1.02rem; line-height: 1.6; padding: 0.85rem 1.1rem; }
+.ask-app .nc-user { max-width: 80%; }
+.ask-app .nc-bot { max-width: 100%; }
+.ask-app .nc-bot li { margin: 0.2rem 0; }
+.ask-app .nc-bot li.nc-crit { margin: 0.3rem 0 0.3rem -1.25rem; }
+.ask-app .nc-msg + .nc-msg, .ask-app .msg-acts + .nc-msg { margin-top: 1rem; }
+@media (max-width: 50rem) { .ask-app .nc-msg { font-size: 1rem; padding: 0.75rem 0.95rem; } .ask-app .nc-user { max-width: 88%; } }
+@media (max-width: 50rem) {
+  /* one row on phones: the Ask tab below already names the page */
+  .ask-bar { flex-wrap: nowrap; padding-top: 0.25rem; }
+  .ask-bar .ask-title { display: none; }
+  .ask-bar .ask-back { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .ask-bar .ask-pill { margin-left: auto; max-width: 42vw; }
+}

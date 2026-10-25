@@ -7,7 +7,7 @@ const chapter = chapters.find((c) => c.slug === entry.id);
 const sections = headings.filter((h) => h.depth === 2);
 ---
 
-{entry.data.template === "splash" ? <h1 id="_top" class="sr-only">{entry.data.title}</h1> : (
+{entry.data.template === "splash" || entry.id === "ask" ? <h1 id="_top" class="sr-only">{entry.data.title}</h1> : (
 <header class="chapter-hero">
   {chapter?.part && <p class="eyebrow">{chapter.part}<span aria-hidden="true"> · </span>{/^[A-Z]$/.test(String(chapter.number)) ? "Appendix" : "Chapter"} {chapter.number}</p>}
   <h1 id="_top" data-chapter-title={chapter ? (/^[A-Z]$/.test(String(chapter.number)) ? `Appendix ${chapter.number} — ${entry.data.title}` : `${chapter.number} ${entry.data.title}`) : entry.data.title}>{entry.data.title}</h1>
