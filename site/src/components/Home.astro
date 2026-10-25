@@ -40,7 +40,7 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: launch baseli
     <h1>NICU Manual</h1>
     <p class="lede">Unit protocols, guidelines, and dot phrases, approved by our neonatologists and NICU staff.</p>
     <button type="button" class="home-search" data-home-search>
-      <Icon name="search" /><span class="long">Search protocols, doses, phone numbers…</span><span class="short">Search the manual</span><kbd>⌘K</kbd>
+      <Icon name="search" /><span class="long">Search protocols, doses, phone numbers…</span><span class="short">Search the manual</span><kbd data-shortcut>Ctrl K</kbd>
     </button>
     {askOn && (
       <div class="home-actions">
@@ -120,6 +120,9 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: launch baseli
 <script>
   // the hero search box opens the site search, after this click is done (a click that is still
   // bubbling would land outside the new dialog and close it at once)
+  // shortcut hint: Ctrl K on Windows, ⌘K on Apple devices (the same test Starlight's search uses)
+  const shortcut = document.querySelector("[data-shortcut]");
+  if (shortcut && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) shortcut.textContent = "⌘K";
   document.querySelector("[data-home-search]")?.addEventListener("click", () => {
     setTimeout(() => document.querySelector<HTMLButtonElement>("site-search button[data-open-modal]")?.click());
   });
