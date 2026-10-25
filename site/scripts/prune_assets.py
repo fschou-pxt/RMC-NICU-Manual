@@ -36,7 +36,11 @@ def main():
                     os.remove(p)
                 else:
                     kept += 1
-    print(f"assets: kept {kept}, removed {len(removed)} unused")
+    # copies a file-sync service left behind ("respiratory 2.html"): never publish them
+    dupes = [os.path.join(d, f) for d, _, fs in os.walk(DIST) for f in fs if re.search(r" \d+(\.[\w.]+)?$", f)]
+    for p in dupes:
+        os.remove(p)
+    print(f"assets: kept {kept}, removed {len(removed)} unused" + (f", {len(dupes)} duplicate copies" if dupes else ""))
     for rel, size, is_used in too_big:
         print(f"  over 25 MB, not published: {rel} ({size / 1e6:.0f} MB){'  <- linked from a page' if is_used else ''}")
 

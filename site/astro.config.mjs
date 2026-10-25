@@ -8,6 +8,7 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import remarkManual from "./src/plugins/remark-manual.mjs";
 import remarkEvidence from "./src/plugins/remark-evidence.mjs";
+import rehypeTables from "./src/plugins/rehype-tables.mjs";
 
 const chapters = JSON.parse(fs.readFileSync("./src/chapters.json", "utf8"));
 const exists = (slug) => fs.existsSync(`./src/content/docs/${slug}.mdx`);
@@ -25,7 +26,9 @@ export default defineConfig({
   site: process.env.SITE_URL || "https://nicu-manual-preview.pages.dev",
   base: process.env.SITE_BASE || "/",
   build: { format: "file" }, // respiratory.html, as in the Quarto manual
-  markdown: { processor: unified({ remarkPlugins: [remarkManual, remarkEvidence, remarkMath], rehypePlugins: [rehypeKatex] }) },
+  // built pages go outside iCloud sync (".nosync"), which otherwise leaves "page 2.html" copies; dist links here
+  outDir: "./dist.nosync",
+  markdown: { processor: unified({ remarkPlugins: [remarkManual, remarkEvidence, remarkMath], rehypePlugins: [rehypeTables, rehypeKatex] }) },
   // node_modules is a link into node_modules.nosync (kept out of iCloud); keep library paths recognizable
   vite: { resolve: { preserveSymlinks: true } },
   integrations: [

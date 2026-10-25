@@ -16,5 +16,7 @@ evidence/_work/
 .wrangler/
 site/node_modules
 site/node_modules.nosync
+site/dist
 site/dist/
+site/dist.nosync/
 site/.astro/

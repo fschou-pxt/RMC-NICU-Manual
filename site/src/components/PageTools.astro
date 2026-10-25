@@ -1,7 +1,9 @@
 ---
-// Tools added to two pages in the browser (the pages' own text is unchanged):
+// Tools added to some pages in the browser (the pages' own text is unchanged):
 // - Dot phrases: a search box, and a Copy button on each phrase (plain text for Epic, from the knowledge file)
 // - Phone numbers: a search box; the tables shown as contact cards with tap-to-call buttons (emails become mail links)
+// - Formulary: a search box (drug names first, then the entries' text) and an A–Z index
+// - Long and comparison tables (any page): a find box; a switch to show one situation
 // - Evidence notes (any page): "Let's discuss" counts, one per device, from the site's /api/discuss
 ---
 
@@ -9,9 +11,62 @@
   const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
   const page = location.pathname.replace(/\.html$/, "").split("/").pop();
   const content = document.querySelector(".sl-markdown-content");
-  if (content && (page === "dotPhrases" || page === "phone-numbers")) setup(page === "dotPhrases");
+  const KIND = { dotPhrases: "dots", "phone-numbers": "phones", "lluch-formulary": "drugs" }[page];
+  if (content && KIND) setup(KIND);
+  document.querySelectorAll<HTMLTableElement>("table.tbl-long").forEach(findBox);
+  document.querySelectorAll<HTMLTableElement>("table.tbl-compare").forEach(situationSwitch);
   const discussButtons = [...document.querySelectorAll<HTMLButtonElement>(".ev-discuss")];
   if (discussButtons.length) discussCounts(discussButtons);
+
+  // ---------- long lookup tables: a find box for the first column (e.g. 35 → the 35 mL row) ----------
+  function findBox(table) {
+    const frame = table.closest(".tbl-frame"), key = table.querySelector("thead th")?.textContent.trim() || "value";
+    const box = document.createElement("label");
+    box.className = "tbl-find not-content";
+    box.innerHTML = `<i class="bi bi-search" aria-hidden="true"></i><input type="search" inputmode="decimal" autocomplete="off">`;
+    const input = box.querySelector("input");
+    input.placeholder = `Find ${key}`;
+    input.setAttribute("aria-label", `Find a row by ${key}`);
+    frame.before(box);
+    input.addEventListener("input", () => {
+      const q = input.value.trim().toLowerCase();
+      table.querySelectorAll("tbody tr.hit").forEach((r) => r.classList.remove("hit"));
+      if (!q) return;
+      const row = [...table.querySelectorAll("tbody tr")].find((r) => r.cells[0]?.textContent.trim().toLowerCase() === q)
+        || [...table.querySelectorAll("tbody tr")].find((r) => r.cells[0]?.textContent.trim().toLowerCase().startsWith(q));
+      if (!row) return;
+      row.classList.add("hit");
+      frame.scrollTop = row.offsetTop - (table.tHead?.offsetHeight || 0) - 8; // only the table scrolls, not the page
+    });
+  }
+
+  // ---------- comparison tables: show one situation (column), or all ----------
+  function situationSwitch(table) {
+    const names = (table.dataset.columns || "").split("|").filter(Boolean);
+    if (names.length < 2) return;
+    const bar = document.createElement("div");
+    bar.className = "tbl-switch not-content";
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "Show the situation");
+    bar.innerHTML = `<span class="lab">Show</span>` + ["All", ...names].map((n, i) =>
+      `<button type="button" data-col="${i}" aria-pressed="${i === 0}"></button>`).join("");
+    bar.querySelectorAll("button").forEach((b, i) => { b.textContent = i ? names[i - 1] : "All"; });
+    table.closest(".tbl-frame").before(bar);
+    bar.addEventListener("click", (ev) => {
+      const b = ev.target.closest("button");
+      if (!b) return;
+      const col = +b.dataset.col; // 0 = all; else the column after the item column
+      // every table on the page with the same situations follows the choice (a page has several)
+      document.querySelectorAll<HTMLTableElement>(`table.tbl-compare[data-columns="${CSS.escape(table.dataset.columns)}"]`).forEach((t) => {
+        if (col) t.setAttribute("data-one", ""); else t.removeAttribute("data-one");
+        for (const tr of t.rows) [...tr.cells].forEach((c, i) => {
+          if (i > 0 && col && i !== col) c.setAttribute("data-off", ""); else c.removeAttribute("data-off");
+        });
+      });
+      document.querySelectorAll(".tbl-switch").forEach((sw) => sw.querySelectorAll("button").forEach((x) =>
+        x.setAttribute("aria-pressed", String(+x.dataset.col === col))));
+    });
+  }
 
   // ---------- "Let's discuss" on evidence notes: a count the protocol leads review (no email, nothing personal) ----------
   // Each device counts once per section (tap again to take it back). Where the count service isn't available
@@ -41,19 +96,38 @@
     });
   }
 
-  function setup(isDots) {
+  function setup(kind) {
     // ---------- search box at the top of the page ----------
+    const TEXT = {
+      dots: ["Search dot phrases", "Tap Copy, then paste into Epic. Fill in every *** before signing."],
+      phones: ["Search names, units, numbers", "Tap a number to call. Numbers like 8-258-xxxx are KP tie lines; 4-digit numbers are extensions."],
+      drugs: ["Search drugs", "Generic or brand name. Matching names show first; with no name match, the search looks inside the entries."],
+    }[kind];
     const bar = document.createElement("div");
     bar.className = "page-search not-content";
-    bar.innerHTML = `<label class="ps-box"><i class="bi bi-search"></i><input type="search" autocomplete="off"
-        placeholder="${isDots ? "Search dot phrases" : "Search names, units, numbers"}"></label>
-      <p>${isDots ? "Tap Copy, then paste into Epic. Fill in every *** before signing."
-        : "Tap a number to call. Numbers like 8-258-xxxx are KP tie lines; 4-digit numbers are extensions."}</p>
-      <p class="none" hidden>No matches.</p>`;
-    content.prepend(bar);
+    bar.innerHTML = `<label class="ps-box"><i class="bi bi-search"></i><input type="search" autocomplete="off"></label>
+      <p></p><p class="none" hidden>No matches.</p>`;
     const box = bar.querySelector("input");
-    box.addEventListener("input", () => filter(box.value.trim().toLowerCase(), !isDots));
-    if (isDots) addCopyButtons(); else { linkify(); contactCards(); }
+    box.placeholder = TEXT[0];
+    box.setAttribute("aria-label", TEXT[0]);
+    bar.querySelector("p").textContent = TEXT[1];
+    if (kind === "drugs") { // A–Z index from the letter headings
+      const letters = [...content.querySelectorAll("h2[id^='med-']")];
+      const az = document.createElement("nav");
+      az.className = "az";
+      az.setAttribute("aria-label", "Drugs by first letter");
+      for (const h of letters) {
+        const a = document.createElement("a");
+        a.href = "#" + h.id;
+        a.textContent = h.textContent.trim();
+        az.append(a);
+      }
+      bar.append(az);
+    }
+    content.prepend(bar);
+    box.addEventListener("input", () => filter(box.value.trim().toLowerCase(), kind === "phones", kind === "drugs"));
+    if (kind === "dots") addCopyButtons();
+    if (kind === "phones") { linkify(); contactCards(); }
   }
 
   // The page as blocks: each heading with the content up to the next heading.
@@ -68,13 +142,16 @@
     return out;
   }
   // Show what matches. Phones: matching table rows and list items; dot phrases: whole phrases.
-  function filter(q, byRow) {
+  // Formulary (namesFirst): drugs whose name matches; only when none does, entries whose text matches.
+  function filter(q, byRow, namesFirst) {
     const all = blocks();
     content.querySelectorAll("[data-hit-hidden]").forEach((el) => { el.hidden = false; el.removeAttribute("data-hit-hidden"); });
     let any = !q;
     if (q) {
       const hide = (el) => { el.hidden = true; el.setAttribute("data-hit-hidden", ""); };
+      const names = namesFirst && all.some((b) => b.level === 3 && b.text.includes(q));
       const shown = all.map((b) => {
+        if (names) { const ok = b.level === 3 && b.text.includes(q); if (!ok) b.nodes.forEach(hide); return ok; }
         if (b.text.includes(q)) return true;
         let hit = false;
         for (const n of b.nodes) {
@@ -102,7 +179,7 @@
         return hit;
       });
       // a heading that matches keeps everything under it (searching a group name shows the group)
-      all.forEach((b, i) => {
+      if (!names) all.forEach((b, i) => {
         if (b.text.includes(q)) for (let j = i + 1; j < all.length && all[j].level > b.level; j++) shown[j] = "all";
       });
       all.forEach((b, i) => { if (shown[i] === "all") { b.nodes.forEach((n) => { n.hidden = false; n.removeAttribute("data-hit-hidden");
@@ -167,7 +244,7 @@
     return (LABEL.find(([re]) => re.test(h)) || [0, h.replace(/\b\w/g, (c) => c.toUpperCase())])[1];
   }
   function contactCards() {
-    for (const table of content.querySelectorAll(":scope > table")) {
+    for (const table of content.querySelectorAll("table")) {
       const heads = [...table.querySelectorAll("thead th")].map((th) => th.textContent.trim());
       const cards = [];
       for (const tr of table.querySelectorAll("tbody tr")) {
@@ -220,8 +297,9 @@
         }
         list.append(card);
       }
-      table.classList.add("as-cards");
-      table.after(list);
+      const frame = table.closest(".tbl-frame") || table;
+      frame.classList.add("as-cards");
+      frame.after(list);
     }
   }
 

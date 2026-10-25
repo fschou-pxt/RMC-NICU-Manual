@@ -4648,6 +4648,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#ivig-for-abo-incom
 ## 18 Hematology & Oncology › Alpha-fetoprotein (AFP) Reference Range › Preterm infants (GA < 37wks) without additional risk factors for AFP elevation
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#preterm-infants-ga-37wks-without-additional-risk-factors-for-afp-elevation
 
+[image]
+
+Show the values
 | Age (days) | AFP mean (ng/mL) | AFP 95% confidence interval (ng/mL) |
 | --- | --- | --- |
 | 0 | 158,125 | 31,261-799,834 |

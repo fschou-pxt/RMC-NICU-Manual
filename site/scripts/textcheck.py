@@ -109,7 +109,8 @@ QUARTO = dict(
 ASTRO = dict(
     roots=["div.sl-markdown-content", "header.chapter-hero"],
     skip=["a.sl-anchor-link", "script", "style", "nav.jump", "p.eyebrow", "span.katex-html", "span.katex-mathml",
-          "section.evidence"],  # evidence notes are new, AI-generated, and labeled as such
+          "section.evidence",  # evidence notes are new, AI-generated, and labeled as such
+          "figure.tbl-viz", "summary.tbl-sum"],  # a chart drawn from a table's own numbers, and its fold-out label
     math=["annotation"],
     xref=["a.xref"],
 )
