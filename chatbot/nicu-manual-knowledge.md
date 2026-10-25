@@ -1,6 +1,6 @@
 # KP Riverside Neonatal ICU Manual — knowledge export
 
-Source: https://fschou-pxt.github.io/RMC-NICU-Manual/ (exported October 24, 2026).
+Source: https://fschou-pxt.github.io/RMC-NICU-Manual/ (exported October 25, 2026).
 Each section starts with a '## breadcrumb' line and its 'URL:' on the live site.
 
 # KP Riverside Neonatal ICU Manual
@@ -4544,7 +4544,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#phototherapy-for-p
 | 28 0/7 - 29 6/7 | 6-8 | 12-14 |
 | 30 0/7 - 31 6/7 | 8-10 | 13-16 |
 | 32 0/7 - 33 6/7 | 10-12 | 15-18 |
-| 34 0/7 - 34 6/ | 12-14 | 17-19 |
+| 34 0/7 - 34 6/7 | 12-14 | 17-19 |
 
 ## 18 Hematology & Oncology › 18.1 Neonatal Indirect Hyperbilirubinemia › 18.1.3 IVIG for ABO incompatibility
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#ivig-for-abo-incompatibility
