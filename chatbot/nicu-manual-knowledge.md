@@ -132,7 +132,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 
 | DEPARTMENT | NAME | LOCAL | PAGER/CELL | NURSING STATION | OFFICE/VOICE MAIL | CASE MANAGER |
 | --- | --- | --- | --- | --- | --- | --- |
-| ADD Sx 6 or under | child parent interaction therapy by County Childrens Services |  | 951-358-4520 |  |  |  |
+| ADD Sx 6 or under | child parent interaction therapy by County Children’s Services |  | 951-358-4520 |  |  |  |
 | ADD/developmental | TBD | RIV |  |  |  | for pt. 951-353-3199 |
 |  | Edward Curry | RIV/FON | 951-675-9016 | 8-258-4326 | 8-258-4524 | Elvia Guerrero x3119 |
 |  | Cindy Evans | OC | 888-988-2800 | 8-237-6685 |  |  |
@@ -156,7 +156,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Joseph Mares | DOW |  |  |  |  |
 |  | Matthew Russell | LA | 323-333-2662 |  |  |  |
 |  |  |  |  |  |  |  |
-| CRANIOFACIAL/PLAS TIC | Trevor Hoffman (craniosynostosis) | WLA | 949-233-8099 | 8-250-5993 | 8-390-2368 8-250-4055 | Pamela Hoffman, 323-857-2368 |
+| CRANIOFACIAL/PLASTIC | Trevor Hoffman (craniosynostosis) | WLA | 949-233-8099 | 8-250-5993 | 8-390-2368 8-250-4055 | Pamela Hoffman, 323-857-2368 |
 |  | Zhao (plagiocephaly) | FON | OR PT-RIV |  |  |  |
 |  | Yohan Shin | FON |  |  |  |  |
 |  |  |  |  |  |  |  |
@@ -169,7 +169,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 | -vascular birth mark clinic | under Derm | LA | case mgr- Bernadette Maloles,RN | 323-783-8950 |  |  |
 |  | Yun Sun Lee (peds interest) | RIV |  |  |  |  |
 |  |  |  |  |  |  |  |
-| ENDOCRINE | Ruvdeep “HAPPY” Randhawa | RIV | 951-774-8198(pg), 951-858-8641© | 8-258-5503 | 8-258-5586 | Jen Cortez x5404 |
+| ENDOCRINE | Ruvdeep “HAPPY” Randhawa | RIV | 951-774-8198(pg), 951-858-8641(c) | 8-258-5503 | 8-258-5586 | Jen Cortez x5404 |
 |  | -health educator | Van Buren | Sherri Pinero or Stephanie Cullingford |  |  |  |
 |  | Alan B. Cortez | OC | 714-387-1284(pg), 714-356-6510(c) | 8-230-2725 | 8-230-2738(714-254-) |  |
 |  | Joshua May | LA | 323-341-8755 | 8-363-7120 |  |  |
@@ -182,7 +182,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  | Parul Patel | SD | 847-708-6298 | 858-573-5440 | 858-573-5533 |  |
 |  | Robert Clemons | SD | 619-528-5000 (operator) |  |  |  |
 |  | Jyotsna Keni |  | 909-437-9900(cell) |  |  |  |
-|  | Larry Wettereau |  | 626-245-8116(pg), 818-694-8408© |  | 8-370-6685(626-851-) |  |
+|  | Larry Wettereau |  | 626-245-8116(pg), 818-694-8408(c) |  | 8-370-6685(626-851-) |  |
 |  | Zohreh Shoar | FON |  |  |  |  |
 |  | Ramin Moghaddas | FON | 909-458-7412 | 8-250-2072 | 8-250-4400 |  |
 |  | Maria Lin | FON LA RIV OC |  |  |  |  |
@@ -400,7 +400,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  |  |  |  |  |  |  |
 | INLAND REGIONAL CTR | 909-890-3370(under 3) | 909-890-4711(over 3) |  |  |  |  |
 |  |  |  |  |  |  |  |
-| KP professional recuitment | Robert Gonzalez | 626-405-5861 |  |  |  |  |
+| KP professional recruitment | Robert Gonzalez | 626-405-5861 |  |  |  |  |
 |  |  |  |  |  |  |  |
 | PEDS master scheduler |  | 8-286-2630 |  |  |  |  |
 | PEDS schedule coord. | Joanne Alvarez | 8-258-4301 |  |  |  |  |
@@ -416,7 +416,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  |  |  |  |  |  |  |
 | Dermatology Cosmetic Clinic | 562-803-1331 | self referral |  |  |  |  |
 |  |  |  |  |  |  |  |
-| CIRCUMCISION -under 30 days old | Forward note to P_5000052 (OBGRIRIV CALL CENTER POOL) and P_18827 (OBGRIRIV RN) | Gema Castellon, RN x4029 | Document in note, “cleared for circumcision” | make sure recieved Vit. K |  |  |
+| CIRCUMCISION -under 30 days old | Forward note to P_5000052 (OBGRIRIV CALL CENTER POOL) and P_18827 (OBGRIRIV RN) | Gema Castellon, RN x4029 | Document in note, “cleared for circumcision” | make sure received Vit. K |  |  |
 |  |  |  |  |  |  |  |
 | teleconference for outside | 1-888-858-2133 | 8362299# |  |  |  |  |
 |  |  |  |  |  |  |  |
@@ -431,28 +431,28 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/phone-numbers.html#sec-pediatr
 |  |  |  |  |  |  |  |
 | Director of Bioethics | Dan Wilson | 951-204-3437 | 661-706-2523 |  |  |  |
 |  |  |  |  |  |  |  |
-| CARDIAC ECHO | do referral to cardiology (adult) |  | click ‘reason’ box to chose option for pediatric echo without sedation | chose ‘yes’ on authoriztion |  |  |
+| CARDIAC ECHO | do referral to cardiology (adult) |  | click ‘reason’ box to choose option for pediatric echo without sedation | choose ‘yes’ on authorization |  |  |
 |  |  |  |  |  |  |  |
 | Frenotomy | Refer to ENT (Dr. Krishnan) | or call | Malu Lungay | 8-258-5998/4737 |  |  |
 |  |  |  |  |  |  |  |
-| DENTIST with KP previledge for anesthesia | Richard Kunihara,DDS | Upland | 909-985-5117 |  |  | 360 East 7th st. suite J |
+| DENTIST with KP privilege for anesthesia | Richard Kunihara,DDS | Upland | 909-985-5117 |  |  | 360 East 7th st. suite J |
 |  |  |  |  |  |  |  |
 | -give outside referral dept # | Harvey Lee, DDS | Irvine | 949-733-3433 | Under DentiCal |  |  |
 |  | Smile Wide Dental | Costa Mesa | 949-548-5588 | Under DentiCal |  |  |
 |  | James Richardson,DDS | Corona | 951-735-2011 |  |  |  |
-|  | Hilo, DDS | thru Mobi |  | Under Medical |  |  |
+|  | Hilo, DDS | thru Mobi |  | Under Medi-Cal |  |  |
 | peds nutritionist | Heidy Patterson, Stefanie Cullingford | Joyce Atkins | Sherry Pinero |  |  |  |
 |  |  |  |  |  |  |  |
 | NB screening contact | 844-343-9372 |  | Kara Brink, RN (Pasadena) | 626-564-3322 | (8-338) |  |
 |  |  |  |  |  |  |  |
 | Travel Advisory | 1-800-517-5556(for patient) |  | 8-295-6111(back line) |  |  |  |
 |  |  |  |  |  |  |  |
-| RSV synergis protocol | Robyn Gerome |  |  |  |  |  |
+| RSV Synagis protocol | Robyn Gerome |  |  |  |  |  |
 | Speech | Alejandrina Siriban Ann Bendroff |  |  |  |  |  |
 |  |  |  |  |  |  |  |
 | Jennifer Cortes | x5404 |  | Sophie Gonzalea | x5464 |  |  |
 | -Endo |  |  | -GI |  |  |  |
-| -Rhumatology |  |  | -Cardio |  |  |  |
+| -Rheumatology |  |  | -Cardio |  |  |  |
 | -Asthma |  |  | -HRIF |  |  |  |
 | -ID |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
@@ -532,17 +532,17 @@ Checklist
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#important-notes
 
 1.  P scoring is based on POTENTIAL FOR HARM.
-2.  P2 is the serious and will require corrective actions.
+2.  P2 is serious and will require corrective actions.
 3.  If you receive P2, you can appeal and ask for independent review.
-4.  Standard for care = is the COMMUNITY STANDARD, not department standard.
+4.  Standard of care is the COMMUNITY STANDARD, not department standard.
 5.  It’s ok to discuss the case with the physician under review to get their thought process.
 6.  Any learning experience will be shared to the Neo group without naming the physician under review.
-7.  Any request for case review can be submitted to me or directly to QM regardless of department, e.g radiology, nursing, peds etc.
+7.  Any request for case review can be submitted to me or directly to QM regardless of department, e.g., radiology, nursing, peds etc.
 
 ## 3 Physician Operations › 3.5 Quality Management › References
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#references
 
-[Click to Download Peer Preview Training Slides](https://shiny.nicugrowth.app/rmc-nicu-manual/www/QM_slides.pptx)
+[Click to Download Peer Review Training Slides](https://shiny.nicugrowth.app/rmc-nicu-manual/www/QM_slides.pptx)
 
 [Click to Download Level 3 Audits Pearls & Tips](https://shiny.nicugrowth.app/rmc-nicu-manual/www/QM-level-3-audits-pearls-tips.docx)
 
@@ -591,7 +591,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#moreno-valley-
 - Complete the H&Ps for newborns that were delivered after 8 PM the night prior and for newborns that have been delivered by 10:00 AM.
 - Perform all circumcisions.
 - Not responsible for attending deliveries.
-- Will sign out to the neonatologist at 12 PM if there are any items pending of patients that are being discharged after 12 PM and for the other newborns in which laboratory/radiological studies are pending. The pending items will be noted in the “Write Handoff” section in Health Connect.
+- Will sign out to the neonatologist at 12 PM if there are any items pending for patients that are being discharged after 12 PM and for the other newborns in which laboratory/radiological studies are pending. The pending items will be noted in the “Write Handoff” section in Health Connect.
 - Prioritize discharges, circumcisions, then progress notes and H&Ps.
 - Work that is not completed will be signed out to the neonatologists (if this occurs, usually will be the H&Ps).
 - Pediatricians will place future outpatient orders for hip ultrasounds, renal ultrasounds, thyroid labs, etc.
@@ -605,7 +605,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#moreno-valley-
 - Complete the H&Ps for newborns that are delivered from 10:00 AM to 8 PM.
 - Will be responsible for managing any abnormal results from the hypoglycemia protocol and for serial TCBs for ABO incompatibility.
 - If nursery nurse has concerns about an infant on FCC, they are to call the neonatologist, who will determine if the NICU team/RN can first evaluate the infant.
-- Will need to follow up on serum bilirubin for patients seen in Moreno Valley Great Starts clinic when results are not back by 5 PM. Based on the result, may need to order Bili Blanket, repeat serum bilirubin, and schedule a follow-up with PCP or another pediatrician.
+- Will need to follow up on serum bilirubin for patients seen in Moreno Valley Great Starts clinic when results are not back by 5 PM. Based on the result, may need to order bili-blanket, repeat serum bilirubin, and schedule a follow-up with PCP or another pediatrician.
 - Neonatologist is expected to write the late preterm admission orders if asked by nursing for late preterm infants who are in observation in the NICU in Riverside and Moreno Valley. If not under observation, the pediatrician is expected to write the late preterm admission orders.
 - Neonatologist is expected to write a note for any infant in observation in the NICU, for infants requiring resuscitation, and for deliveries they attended in person (physical exam by neonatologist is not necessarily required on the infants that transition back to FCC).
 - If anticipatory discharge is cancelled, neonatologist is expected to cancel the discharge order and leave a note or write handoff with the reason for cancellation.
@@ -651,7 +651,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#shared-clinica
 
 **Hyperbilirubinemia**
 
-- Agreement among the pediatricians and neonatologists for newborns with hyperbilirubinemia risk factors (such as ABO incompatibility) to initiate phototherapy 2 below phototherapy threshold based on [bilitool.org](https://bilitool.org) or [peditools.org](https://peditools.org).
+- Agreement among the pediatricians and neonatologists for newborns with hyperbilirubinemia risk factors (such as ABO incompatibility) to initiate phototherapy 2 mg/dL below phototherapy threshold based on [bilitool.org](https://bilitool.org) or [peditools.org](https://peditools.org).
 - In certain cases, infants who can no longer remain on FCC due to maternal discharge, but still need phototherapy, may need admission to the NICU.
 - If the infant is on full phototherapy, the pediatric group can transition to a bili-blanket and order a follow-up bilirubin 6–8 hours later.
 - If rate of rise (ROR) is > 0.2/hr, then admit to the NICU as they have failed the bili-blanket.
@@ -710,7 +710,7 @@ Under the diagnosis of *Newborn, single liveborn…*:
 
 - Please include GA, mother’s blood type and GBS status, and infant’s blood type if done.
 - Can also mention any other relevant information, such as history of maternal depression/anxiety, mother with pre-eclampsia, oligo, etc.
-- There is a smart phrase some physicians use to autopopulate this: `.birth` or `.birth1` (can copy from the smartphrase list of Dr. Garabedian, Dr. Song or Dr. Chen).
+- There is a SmartPhrase some physicians use to autopopulate this: `.birth` or `.birth1` (can copy from the SmartPhrase list of Dr. Garabedian, Dr. Song or Dr. Chen).
 
 **Outpatient bilirubin management**
 
@@ -719,10 +719,10 @@ Under the diagnosis of *Newborn, single liveborn…*:
 - Please order any follow-up TSB “stat”.
   - Stat laboratories are Iris, Murrieta and Riverside (not Heacock).
   - Please let parent know which specific lab to go to. If they go to the Heacock lab it will not be run stat and will result after 5–9 PM.
-- Ordering the biliblanket: order is **“phototherapy, light, including supplies”**.
+- Ordering the bili-blanket: order is **“phototherapy, light, including supplies”**.
   - Apria will deliver to their house within 4 hours of order.
   - If after 5 PM, can call the ER Case Manager to let them know of the order, and they can call Apria to confirm they received the order.
-  - Can also inform parent that if they don’t receive the biliblanket within 4–6 hours, to call the L&D secretary to speak with the neonatologist on call.
+  - Can also inform parent that if they don’t receive the bili-blanket within 4–6 hours, to call the L&D secretary to speak with the neonatologist on call.
 - Med Advice: can call them or send them a message to book a follow-up in-person appointment or TAV.
   - Routing pool is **“P Pedririv Med Advice” (10139)**
   - Med Advice phone number: 951-353-4354
@@ -793,9 +793,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/publications.html
 ## 4 Research/QI activities › 4.1 QI Projects › Breast Before Bottle (2024; PI: Dr. Kasee Houston) › Summary
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/publications.html#summary
 
-**The goal is for our infant’s *first* PO feeding to be a direct breast/chestfeeding rather than a bottle feed.** Lactating parents that are interested will be able to provide the first oral feed as a direct breast/chestfeed, and the parent will have 24 hours to complete this once the infant is determined to be ready to feed by mouth (after which we will not delay oral feeding and will introduce bottles). A breast/chest before bottle card will be placed on the infant’s isolette to identify these infants, and nurses will arrange for this to be completed.
+**The goal is for our infants’ *first* PO feeding to be a direct breast/chestfeeding rather than a bottle feed.** Lactating parents that are interested will be able to provide the first oral feed as a direct breast/chestfeed, and the parent will have 24 hours to complete this once the infant is determined to be ready to feed by mouth (after which we will not delay oral feeding and will introduce bottles). A breast/chest before bottle card will be placed on the infant’s isolette to identify these infants, and nurses will arrange for this to be completed.
 
-Babies that are < 33weeks, on >2LHFNC or that have other contraindications to breastmilk will not be included. .
+Babies that are < 33weeks, on >2LHFNC or that have other contraindications to breast milk will not be included.
 
 After the breast/chestfeed, supplementation PG or PO will be determined based on the quality and time of the chestfeed, ranging from no supplementation to full volume supplementation (see chart on flyer). You may use your discretion to adjust feeds as needed.
 
@@ -833,7 +833,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/publications.html#year-2023
 
 **Chou FS**, Leigh RM, Rao SS, Narang A, Yeh HW. Oxygenation index in the first three weeks of life is a predictor of bronchopulmonary dysplasia grade in very preterm infants. BMC Pediatr \[Internet\]. 2023 Jan 13 \[cited 2023 Jan 13\];23(1):18. Available from: <http://dx.doi.org/10.1186/s12887-023-03835-3>
 
-## 4 Research/QI activities › 4.3 Year 2022
+## 4 Research/QI activities › 4.2 Publications › Year 2022
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/publications.html#year-2022
 
 Leigh RM, Pham A, Rao SS, Vora FM, Hou G, Kent C, Rodriguez A, Narang A, Tan JBC, **Chou FS**. Machine learning for prediction of bronchopulmonary dysplasia-free survival among very preterm infants. BMC Pediatr \[Internet\]. 2022 Sep 13 \[cited 2022 Sep 13\];22(1):542. Available from: <http://dx.doi.org/10.1186/s12887-022-03602-w>
@@ -928,7 +928,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#picc-placement
 ## 5 NICU Admission › 5.2 Central line placement › Closed NS flush system
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#sec-central-line-ns-flush
 
-Close NS flush system is to be ordered when a central line is in place:
+Closed NS flush system is to be ordered when a central line is in place:
 
 To order, type “**closed**” in the order search box to search for the order:
 
@@ -954,7 +954,7 @@ Any time an infant is moved from the ED to the NICU, you must place an ‘**Admi
 ## 5 NICU Admission › 5.3 Re-Admission After FCC Discharge › Re-admission for hyperbilirubinemia
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#re-admission-for-hyperbilirubinemia
 
-May ask the NICU staff to bring bili-blank and formula to the clinic/ED to begin therapy while waiting for screening test results
+May ask the NICU staff to bring bili-blanket and formula to the clinic/ED to begin therapy while waiting for screening test results
 
 ## 5 NICU Admission › 5.4 Care of the Safely Surrendered Infant
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/admission.html#sec-safe-surrender
@@ -963,8 +963,8 @@ The provider will consider the following guidelines (if not already completed) w
 
 1.  Obtain newborn screen. Complete paperwork with the name and demographic information of the CPS worker. On the Comments section of the paperwork, indicate Safe Surrender. If the screen has already been completed, the Genetics Division needs to be notified to change the contact person’s name to the CPS worker.
 2.  Obtain urine drug screen – initiate neonatal abstinence scoring as indicated.
-3.  Obtain total bilirubin at least once, and repeat if infants is jaundiced.
-4.  Obtain additional labs as indicated: ABO/Rh, direct Coombs test, random glucose blood culture, CBC/D, HBsAg, RPR, HIV rapid test.
+3.  Obtain total bilirubin at least once, and repeat if infant is jaundiced.
+4.  Obtain additional labs as indicated: ABO/Rh, direct Coombs test, random glucose, blood culture, CBC/D, HBsAg, RPR, HIV rapid test.
 5.  Medications:
     a.  Phytonadione 1mg IM if the administration status is unknown.
     b.  Erythromycin 0.5% ophthalmic ointment, 1cm to both eyes if the administration status is unknown.
@@ -980,7 +980,7 @@ When the Safely Surrendered Infant is discharged, discharge the infant into the 
 1.  After Visit Summary (AVS).
 2.  Include on the AVS instructions that a copy of the Safely Surrendered Infant’s medical record may be obtained through Medical Records.
 3.  Copy of the completed Medical History Questionnaire, if available.
-4.  Photocopy of the Safely Surrender Bracelet.
+4.  Photocopy of the Safe Surrender Bracelet.
 
 # 6 Transfer an Infant Out
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/transfer.html
@@ -988,14 +988,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/transfer.html
 ## 6 Transfer an Infant Out › 6.1 CCS Information for Transferring › Insurance Plans
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/transfer.html#insurance-plans
 
-| Insurance | Definition | Candidate for Non CCS Facility? |
+| Insurance | Definition | Candidate for Non-CCS Facility? |
 | --- | --- | --- |
 | KP 1000 | Kaiser Plan Insurance from Employer HMO - set copay | Yes |
 | KP 1001 | Kaiser Plan Insurance from Employer DHMO - Deductible HMO - Inpatient High $ Deductible | Yes |
 | KP Health Care Reform HMO | Kaiser Plan Purchased by Individual HMO - set Copay | Yes |
 | KP Health Care Reform DHMO | KP Health Care Reform - DHMO Deductible HMO - Inpatient High $ Deductible | Yes |
 | Medical Financial Assistance | Kaiser Charity for those without any insurance. 30 days Kaiser Insurance then must enroll in an insurance after 30 days – Medi-Cal or purchased plan. Contact Case Manager for current insurance eligibility |  |
-| KP 1003 | Kaiser Inland Empire Health Plan Inland Med-Cal Medi-Cal | No* |
+| KP 1003 | Kaiser IEHP Medi-Cal | No* |
 | Inland Empire Health Plan | Medi-Cal | No* |
 
 \*Note: Unless they do NOT meet CCS criteria below.
@@ -1009,7 +1009,7 @@ Neonates who do not have an identified CCS-eligible condition but require one or
 - Supplemental oxygen concentration by hood of ≥40%
 - UAC or Peripheral Art Line
 - UVC, Central Venous Catheter, PICC
-- Peripheral Line for pharmacological support of the cardiovascular support
+- Peripheral Line for pharmacological support of the cardiovascular system
 - TPN – Central or Peripheral
 - Chest Tube
 
@@ -1077,7 +1077,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#considerations-
 
     - Adjustments will be finalized 24 hours prior to discharge to ensure sufficient time to test the discharge regimen in the NICU for tolerance.
 
-## 7 Discharging an Infant › 7.2 Discharge Diet › Weight-based diet for discharge › 22KCal for BW 1,800g - 2,500g
+## 7 Discharging an Infant › 7.2 Discharge Diet › Weight-based diet for discharge › 22kcal for BW 1,800g - 2,500g
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#kcal-for-bw-1800g---2500g
 
 ##### *Parents may consider one of the following feeding options:*
@@ -1091,12 +1091,12 @@ Provide 4 breast milk feeds fortified with Human Milk Fortifier (HMF) to 22kcal/
 
 ##### *Option 2*: Mix of Formula and Breast Milk Feeding:
 
-Give 3 feeds of Neosure 22Kcal daily. The remaining feeds can be either direct nursing, expressed breast milk, or additional Neosure/Enfacare, depending on the mother’s milk supply.
+Give 3 feeds of Neosure 22kcal daily. The remaining feeds can be either direct nursing, expressed breast milk, or additional Neosure/Enfacare, depending on the mother’s milk supply.
 
 - 2 cases of Neosure formula will be provided at discharge, which may last for 1-2 months, based on the volume used.
 - Neosure can be purchased over the counter if needed, at the discretion of the primary care provider.
 
-## 7 Discharging an Infant › 7.2 Discharge Diet › Weight-based diet for discharge › 24KCal for BW < 1,800g
+## 7 Discharging an Infant › 7.2 Discharge Diet › Weight-based diet for discharge › 24kcal for BW < 1,800g
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#kcal-for-bw-1800g
 
 ##### *Parents may choose one of the following feeding options*:
@@ -1110,31 +1110,31 @@ Provide **4-6** breast milk feeds fortified with Human Milk Fortifier (HMF) to 2
 
 ##### *Option 2*: Mix of Formula and Breast Milk Feeding:
 
-Give 3 feeds of SSC30 daily. The remaining feeds can be either direct nursing, expressed breast milk, or Neosure/Enfacare depending on the mother’ milk supply (caloric density range 23.7- 25kcal).
+Give 3 feeds of SSC30 daily. The remaining feeds can be either direct nursing, expressed breast milk, or Neosure/Enfacare depending on the mother’s milk supply (caloric density range 23.7- 25kcal).
 
 - 4 cases of SSC30 and 1 case of Neosure22 will be provided at discharge. These supplies may last for 2-3 months. Parents can purchase additional Neosure/Enfacare at retail store while the baby is receiving SSC30.
 
 ## 7 Discharging an Infant › 7.2 Discharge Diet › Instruction for PCP
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#instruction-for-pcp
 
-If an infant continues to require 24Kcal after depleting SSC30 or HMF (at the discretion of the PCP), fortify with Neosure or Enfacare powder to maintain 24Kcal. If 24Kcal is no longer necessary, begin weaning to 22Kcal for 1-2 months, then reduce to 20Kcal once the baby’s actual weight reaches 3500 gm or at the 25^th^ percentile for weight, length, and head circumference.
+If an infant continues to require 24kcal after depleting SSC30 or HMF (at the discretion of the PCP), fortify with Neosure or Enfacare powder to maintain 24kcal. If 24kcal is no longer necessary, begin weaning to 22kcal for 1-2 months, then reduce to 20kcal once the baby’s actual weight reaches 3500 gm or at the 25^th^ percentile for weight, length, and head circumference.
 
 The recipes will be structured as below:
 
-**22Kcal feeds using Neosure or Enfacare powder:**
+**22kcal feeds using Neosure or Enfacare powder:**
 
-- Add 1 teaspoon unpacked, level of Neosure or Enfacare powder to 5 oz of breastmilk to make 22KCal.\
-- Add 1 unpacked, level scoops of Neosure or Enfacre powder to 2 oz of water to make 22Kcal.
+- Add 1 teaspoon unpacked, level of Neosure or Enfacare powder to 5 oz of breast milk to make 22kcal.\
+- Add 1 unpacked, level scoop of Neosure or Enfacare powder to 2 oz of water to make 22kcal.
 
-**24Kcal feeds using Neosure or Enfacare powder:**
+**24kcal feeds using Neosure or Enfacare powder:**
 
-- Add 2 teaspoons unpacked, level of Neosure or Enfacare powder to 5 oz of breastmilk to make 24Kcal.\
-- Add 5 unpacked, level scoops of Neosure or Enfacre powder to 9 oz of water to make 24Kcal.\
-- Add 1/2 teaspoon of Neosure or Enfacare powder to 3 oz of ready-to-feed Neosure/Enfacare to make 24Kcal.
+- Add 2 teaspoons unpacked, level of Neosure or Enfacare powder to 5 oz of breast milk to make 24kcal.\
+- Add 5 unpacked, level scoop of Neosure or Enfacare powder to 9 oz of water to make 24kcal.\
+- Add 1/2 teaspoon of Neosure or Enfacare powder to 3 oz of ready-to-feed Neosure/Enfacare to make 24kcal.
 
 Note
 
-Enfamil Enfacare formula 22KCal is comparable to Neosure 22KCal formula. It would be helpful to include Enfamil Enfacare as an option for parents. in the event, parents cannot procure Neosure supply at retail stores, they can obtain Enfamil Enfacare as a solution.
+Enfamil Enfacare formula 22kcal is comparable to Neosure 22kcal formula. It would be helpful to include Enfamil Enfacare as an option for parents. In the event that parents cannot procure Neosure supply at retail stores, they can obtain Enfamil Enfacare as a solution.
 
 ## 7 Discharging an Infant › 7.2 Discharge Diet › Term infants
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#term-infants
@@ -1202,40 +1202,40 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#post-circumcisi
 - Teaching will be provided by RN prior to discharge
 - Monitor for 2 hrs before discharge
 
-## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevemab (Beyfortus®) information › ACIP and AAP recommendations for nirsevimab
+## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevimab (Beyfortus®) information › ACIP and AAP recommendations for nirsevimab
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#acip-and-aap-recommendations-for-nirsevimab
 
 [Click to read the announcement on AAP RedBook website](https://publications.aap.org/redbook/resources/25379/ACIP-and-AAP-Recommendations-for-Nirsevimab)
 
-## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevemab (Beyfortus®) information › Clinical guide
+## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevimab (Beyfortus®) information › Clinical guide
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#clinical-guide
 
 [Click to download PDF](https://shiny.nicugrowth.app/rmc-nicu-manual/www/nirsevemab/Nirsevemab-Visual-Guide_Final.pdf)
 
-## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevemab (Beyfortus®) information › AAP Frequently Asked Questions
+## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevimab (Beyfortus®) information › AAP Frequently Asked Questions
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-nirsevimab-aapfaq
 
 [Click to open](https://www.aap.org/en/patient-care/respiratory-syncytial-virus-rsv-prevention/nirsevimab-frequently-asked-questions/)
 
-## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevemab (Beyfortus®) information › Counseling highlight
+## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevimab (Beyfortus®) information › Counseling highlight
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#counseling-highlight
 
 - We have had a monoclonal antibody to protect from RSV for more than 20 years, but it was expensive and only approved for high risk infants.
 - The new drug will be more widely available, but it is in short supply and high demand.
 - It is an injection that protects from an infection, it is NOT technically a vaccine, because it does not provoke a response from the immune system:
   - Down side: the protection is not durable
-  - Up side: side effects are very few - no fevers have been reported from nirsevimab, not have any severe reactions been seen
+  - Up side: side effects are very few - no fevers have been reported from nirsevimab, nor have any severe reactions been seen
 - If parents don’t take advantage of the opportunity to get nirsevimab in the hospital, it is very likely that we will NOT have it available later on in clinic.\
 - It is NOT a human blood product like IVIG. It is produced in Chinese Hamster ovary cells. This should be acceptable to Jehovah’s Witnesses.
 
-## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevemab (Beyfortus®) information › Consenting & administration
+## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevimab (Beyfortus®) information › Consenting & administration
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#consenting-administration
 
 NICU
 
 - Parental informed consent required.
 - In general, administer within 24 h of discharge.
-- If given on the day of NICU discharge, monitor for 2 hrs prior to disharge.
+- If given on the day of NICU discharge, monitor for 2 hrs prior to discharge.
 
 FCC
 
@@ -1243,7 +1243,7 @@ FCC
 - Verbal consent is required from parents/guardians (similar to vitamin K or Hep B vaccine).
 - Administer on the day of FCC discharge. No observation required after administration.
 
-## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevemab (Beyfortus®) information › Information sheets
+## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › nirsevimab (Beyfortus®) information › Information sheets
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#information-sheets
 
 [Immunization Information Statement from CDC](https://shiny.nicugrowth.app/rmc-nicu-manual/www/nirsevemab/Immunization-Information-Statement.pdf)\
@@ -1282,10 +1282,10 @@ Summary of Guidance (direct copy/paste from the above source)
 
 - Palivizumab prophylaxis is not recommended for prevention of health care-associated RSV disease.
 
-## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › Administraion
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#administraion
+## 7 Discharging an Infant › 7.6 RSV Prevention after Discharge › Administration
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#administration
 
-When an infant who met criteria is expected to be dicharged from the NICU within the next **72 hrs**.
+When an infant who met criteria is expected to be discharged from the NICU within the next **72 hrs**.
 
 ## 7 Discharging an Infant › 7.7 Carseat for Infants < 4lbs › Screenshot from Evenflo FAQ page
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#screenshot-from-evenflo-faq-page
@@ -1334,14 +1334,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#positioning
 Additional positioning guidance from NICU PT (added to the patient instructions in addition to `.humerusfx`):
 
 - OK to position baby on back and opposite sides
-- Avoid side lying over fracture arm
+- Avoid side lying over fractured arm
 - Opposite arm: allow functional movement — do not overstretch
 - Position arm GENTLY across body
 
 ## 7 Discharging an Infant › 7.9 Inland Regional Center Early Start Program › Eligibility criteria for children ages 0-36 months: › Developmental delay
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#developmental-delay
 
-A significant delay is a 33% delay in one or more developmental areas. the developmental areas are: cognitive, communication, physical/motor, social/emotional and adaptive skills.
+A significant delay is a 33% delay in one or more developmental areas. The developmental areas are: cognitive, communication, physical/motor, social/emotional and adaptive skills.
 
 ## 7 Discharging an Infant › 7.9 Inland Regional Center Early Start Program › Eligibility criteria for children ages 0-36 months: › Established risk
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#established-risk
@@ -1376,17 +1376,17 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#eligibility-cri
 
 All infants with birth weight ≤ 1,500g or birth GA < 32 weeks meet criteria.
 
-For infnats with birth weight > 1,500g and birth GA ≥ 32 weeks, one of the following criteria is required:
+For infants with birth weight > 1,500g and birth GA ≥ 32 weeks, one of the following criteria is required:
 
 - pH < 7.0 on an umbilical blood sample or a blood gas obtained within 1 hr of life.
 - Apgar score ≤ 3 at 5 mins or < 5 at 10 mins.
 - An unstable infant manifested by hypoxia, acidemia, hypoglycemia, and/or hypotension requiring pressor support.
 - Persistent apnea which required caffeine or other stimulant medication for the treatment of apnea at discharge.
-- Required oxygen for more than 29 days of hospital stay and had radiographic finding consistent with chrnonic lung disease (CLD).
+- Required oxygen for more than 29 days of hospital stay and had radiographic finding consistent with chronic lung disease (CLD).
 - Infants placed on ECMO.
 - Infants who received **iNO for > 4 hrs**, and/or treatment during hospitalization with **sildenafil** or other pulmonary vasodilatory medications for pulmonary hypertension.
 - Congenital heart disease requiring surgery or minimally invasive intervention.
-- History of observed clinical or electroencephalographic (EEF) seizure activity or receiving antiepileptic medication(s) at time of discharge.
+- History of observed clinical or electroencephalographic (EEG) seizure activity or receiving antiepileptic medication(s) at time of discharge.
 - Evidence of intracranial pathology, including but not limited to, intracranial hemorrhage (grade II or worse), white matter injury including periventricular leukomalacia (PVL), cerebral thrombosis, cerebral infarction or stroke, congenital structural central nervous system (CNS) abnormality or other CNS problems associated with adverse neurologic outcome.
 - Clinical history and/or physical exam findings consistent with neonatal encephalopathy.
 - Other documented problems that could result in neurologic abnormality, such as: history of CNS infection, documented sepsis, bilirubin at excessive levels concerning for brain injury as determined by NICU medical staff (total pre-phototherapy bilirubin level >25mg/dL), history of cardiovascular instability as determined by NICU medical staff due to: sepsis, congenital heart disease, PDA, NEC, other documented conditions.
@@ -1438,7 +1438,7 @@ The following steps may be followed to complete the process of discharge with ho
 
 2.  Dr. McCallin does not like to discharge on lower than 1/8 LPM (120 mL), 100% FiO2
 
-3.  Per Dr. McCallin: obtain baseline gas, +/- repeat CXR if most recent CXR prior was abnormal (air trapping, diphragmatic flattening, atelectasis, etc.). Inquire if additional meds needed/ recommended (ie., pulmicort, albuterol, etc.)
+3.  Per Dr. McCallin: obtain baseline gas, +/- repeat CXR if most recent CXR prior was abnormal (air trapping, diaphragmatic flattening, atelectasis, etc.). Inquire if additional meds needed/ recommended (ie., pulmicort, albuterol, etc.)
 
 4.  Contact NICU case manager (CM) to arrange DME order and delivery to patient’s home. CM at Moreno Valley can call the CM at Fontana for the details if s/he needs assistance.
 
@@ -1453,10 +1453,10 @@ The following steps may be followed to complete the process of discharge with ho
 ## 7 Discharging an Infant › 7.14 Discharge Workflow on Health Connect › Step 1: Reconcile Medications
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#step-1-reconcile-medications
 
-Go into the discharge navigator → Click on **MD med/order reconciliation** in left menu bar → Complete the medical reconciliation:
+Go into the discharge navigator → Click on **MD med/order reconciliation** in left menu bar → Complete the medication reconciliation:
 
 1.  Discontinue what is not needed, add whatever else infant needs as outpatient
-2.  Order Poly-Vi-Sol for birth GA ≤ 37 weeks, or Poly-Vi-Sol with Iron for birh GA < 37 weeks
+2.  Order Poly-Vi-Sol for birth GA ≤ 37 weeks, or Poly-Vi-Sol with Iron for birth GA < 37 weeks
 3.  Order **discharge diet** and enter [appropriate diet](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-discharge-diet)
     - Make sure to copy/paste recipes for making 22kcal/oz or 24kcal/oz with Neosure or Enfacare 22kcal/oz to the Discharge Diet order
 4.  Order **discharge activity** and enter the back to sleep information by using the dot-phrase [.back1](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-back1)
@@ -1483,7 +1483,7 @@ Content:
 - **Update new and thorough physical exam**. Be sure to do eye exam and hip exam
 - **Treatment/ care given**: CPAP, NIMV, antibiotics, etc (may use the dot-phrase [.treatment](https://fschou-pxt.github.io/RMC-NICU-Manual/@sect-dotPhrase-synopsis))
 - **Brief Synopsis**: free text brief hospital course (may use the dot-phrase [.synopsis](https://fschou-pxt.github.io/RMC-NICU-Manual/@sec-dotPhrase-synopsis))
-- **Discharge activity, diet and medications**: should all auto-populated if you completed these in Step 1 above
+- **Discharge activity, diet and medications**: should all auto-populate if you completed these in Step 1 above
 - Sign D/C summary
 
 ## 7 Discharging an Infant › 7.14 Discharge Workflow on Health Connect › Step 4: Route D/C Summary
@@ -1491,7 +1491,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#step-4-route-dc
 
 Find your signed D/C summary within the Notes tab and click once:
 
-1.  Find the **Route** icon to the right, on top of your D/C summary (in the same menu where **Addendum**, **Copy**, are found
+1.  Find the **Route** icon to the right, on top of your D/C summary (in the same menu where **Addendum**, **Copy**, are found)
 2.  Route to PCP: Select **+ PCP** and the patient’s PCP will populate in the **send-to** section
 3.  Route to the pediatric provider seeing baby after NICU discharge if not the PCP
 4.  Cut and paste brief synopsis in comment section
@@ -1534,7 +1534,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html
 ## 8 Documentation › 8.1 Consent › Blood transfusion
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-blood-transfusion
 
-Prior to blood transfusion, a discussion between the neonatalogist and the parents must occur, followed by parental consenting. the discussion should be documented in the neonatologist’s admission H&P or daily progress note.
+Prior to blood transfusion, a discussion between the neonatologist and the parents must occur, followed by parental consenting. The discussion should be documented in the neonatologist’s admission H&P or daily progress note.
 
 [dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-blood-transfusion)
 
@@ -1557,7 +1557,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-picc
 
 When a PICC is in place and is working properly, document the following in the daily progress note:
 
-> Central line/dates: peripherally inserted central catheter: date placed: MM/DD/YYYY. **PICC central line assessed today, is functioning well with no signs of inflammation. Plan: Will continue the use of the catheter fo rlong-term paretneral nutrition and/or blood draw.**
+> Central line/dates: peripherally inserted central catheter: date placed: MM/DD/YYYY. **PICC central line assessed today, is functioning well with no signs of inflammation. Plan: Will continue the use of the catheter for long-term parenteral nutrition and/or blood draw.**
 
 [dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-picc)
 
@@ -1566,7 +1566,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-skin-to
 
 Parents are expected to do at least 1 hr of kangaroo care (skin-to-skin, STS) with the infant each day of their visit.
 
-A [nursing communication order](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-skin-to-skin) should be placed on admission to encourage skin-to-skin, One an order is placed, it should be documented in the progress note as follows:
+A [nursing communication order](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-skin-to-skin) should be placed on admission to encourage skin-to-skin. Once an order is placed, it should be documented in the progress note as follows:
 
 > **Skin-to-skin order placed**.
 
@@ -1580,7 +1580,7 @@ Examples:
 - Status post enteral and parenteral nutrition\
 - Status post respiratory support for hyperMg and TTN
 - CARDIORESPIRATORY EVENTS requiring Caffeine
-- Status post antimicrobial therapy for rule out sepsis (blood c/s negative to date )
+- Status post antimicrobial therapy for rule out sepsis (blood culture negative to date)
 - CRANIAL ULTRASOUND negative\
 - Status post phototherapy for non-hemolytic jaundice
 
@@ -1598,7 +1598,7 @@ Example:
 > - History of antimicrobial therapy with negative Blood c/s at FKP\
 > - History of respiratory support for TTN at FKP
 >
-> Post discharge follow up needs: nutrition using discharge diet of SSC 30 KCal/oz x 2 feedings/day, remainder mother’s bmilk 20 KCal/oz or Neosure 22KCal/oz, follow up with HIGH RISK INFANT F/U CLINIC/ INLAND REGIONAL, Dynamic hip US 6 wk - 4 months old, follow up Anemia.
+> Post discharge follow up needs: nutrition using discharge diet of SSC 30 kcal/oz x 2 feedings/day, remainder mother’s breast milk 20 kcal/oz or Neosure 22kcal/oz, follow up with HIGH RISK INFANT F/U CLINIC/ INLAND REGIONAL, Dynamic hip US 6 wk - 4 months old, follow up Anemia.
 
 ## 8 Documentation › 8.4 Deferred Cord Clamping
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#deferred-cord-clamping
@@ -1631,7 +1631,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-oral-ca
 ## 8 Documentation › 8.6 Family and Medical Leave Act (FMLA) Document Preparation
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-fmla
 
-- Step 1: Click on arrow near the wrench for the drop down menu and locate “Activity Rx4”
+- Step 1: Click on arrow near the wrench for the drop-down menu and locate “Activity Rx4”
 
 - Step 2: Once on this page, select the “caregiver” button on the left
 
@@ -1639,7 +1639,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-fmla
 
 - Step 4: Select “Go to Preview, Print, & Sign.” Print if the parent is requesting a copy. Otherwise, ok to just e-sign.
 
-- Step 5: This process is then documented in the patient’s chart, where social work, case managent, etc. can locate the document ad lib:
+- Step 5: This process is then documented in the patient’s chart, where social work, case management, etc. can locate the document ad lib:
 
 # 9 Fetal and Neonatal Death Workflows and Documentation
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html
@@ -1650,14 +1650,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#the-issue
 1.  Each year there are a few dozen babies delivered at < 23 wk GA where the baby has died before delivery or dies shortly after birth.
 2.  These are emotionally charged moments for families and we may upset them unintentionally through some of our practices. There are some “best practices” to share that help avoid those upsets.
 3.  There is confusion around the many regulatory specifics for these babies. We wanted to provide some decision support for finding one’s way through those specifics.
-4.  There are differences in expectation around the division of work and workflow between pediatricians and obstetricians and between nurses and physicians. We can clarify some of the general guidelines while recognizing the need to individualize roles in specific situations in the spirit collegiality and empathy to the family and team members.
+4.  There are differences in expectation around the division of work and workflow between pediatricians and obstetricians and between nurses and physicians. We can clarify some of the general guidelines while recognizing the need to individualize roles in specific situations in the spirit of collegiality and empathy to the family and team members.
 
 ## 9 Fetal and Neonatal Death Workflows and Documentation › 9.1 Executive summary › Key things we hope to change / improve in our practices:
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#key-things-we-hope-to-change-improve-in-our-practices
 
-1.  Babies with signs of life are live born, regardless of gestational age
+1.  Babies with signs of life are liveborn, regardless of gestational age
 2.  “Uterogestational” age = gestational age in the usual sense (based on best obstetrical estimate EDC)
-3.  Live born babies of any GA are pediatric patients though the expected bedside involvement of the pediatrician is very limited through well- established local OB/Neonatal workflows
+3.  Liveborn babies of any GA are pediatric patients though the expected bedside involvement of the pediatrician is very limited through well-established local OB/Neonatal workflows
     a.  Paperwork responsibilities: H&P, orders, discharge note, declaring death, death certificate
     b.  The NICU team usually will attend the delivery only if GA ≥ 22 wk
     c.  The obstetrician will manage the parents’ questions and concerns around the baby but the pediatrician will be available for specific concerns if requested by the obstetrician or parent
@@ -1667,7 +1667,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#key-thing
 ## 9 Fetal and Neonatal Death Workflows and Documentation › 9.1 Executive summary › Navigation of this document:
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#navigation-of-this-document
 
-The document is divided into 4 sections:
+The document is divided into 5 sections:
 
 1.  [Algorithm for classifying & Documenting deliveries in California](https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#sec-death-workflows-sec1)
 2.  [“The fine print” on classifying deliveries in California (Live birth & fetal death definitions – State code)](https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#sec-death-workflows-sec2)
@@ -1695,8 +1695,8 @@ flowchart TD
   C --> J["Did the mother intend this<br>delivery to be classified as a<br>TAB/EAB?"]
   J --> K["No"]
   K --> L["GA at delivery? <em>(GA is the 'usual'<br>obstetrical estimate)</em>"]
-  L --> M["<span style='color:red;'>Fetal demise GA < 20weeks</span>"]
-  L --> N["<span style='color:red;'>Fetal demise GA ≥ 20weeks</span>"]
+  L --> M["<span style='color:red;'>Fetal demise GA < 20 weeks</span>"]
+  L --> N["<span style='color:red;'>Fetal demise GA ≥ 20 weeks</span>"]
   J --> O["Yes"]
   O --> P["<span style='color:red;'>TAB</span>"]
 ```
@@ -1716,7 +1716,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#workflow-
 | Is Baby assigned MRN? | Only transiently: MRN assignment is required to make the Delivery Summary available for documentation. Selecting Fetal Demise in Delivery Summary will inactivate the MRN | Only transiently: MRN assignment is required to make the Delivery Summary available for documentation. Selecting Fetal Demise in Delivery Summary will inactivate the MRN | Only transiently: MRN assignment is required to make the Delivery Summary available for documentation. Selecting Fetal Demise in Delivery Summary will inactivate the MRN | Yes |
 | Is KPHC chart created for baby? | No | No | No | Yes |
 | Which physician is the attending physician in the baby’s care? | OB/GYN | OB/GYN | OB/GYN | Pediatrician/neonatologist |
-| Who is attendance at delivery to care for baby? | OB team | OB team | OB team | NICU team generally only attends if GA > 22 wk but will attend on a case by cases basis at request of parent or a member of OB team |
+| Who is in attendance at delivery to care for baby? | OB team | OB team | OB team | NICU team generally only attends if GA > 22 wk but will attend on a case-by-case basis at request of parent or a member of OB team |
 | Where should baby be cared for till death? | Mother’s room | Mother’s room | Mother’s room | Per mother’s preference (Mother’s room or NICU) |
 | Who declares death? | n/a | n/a | n/a | Pediatrician/neonatologist. Typically the RN will call the MD when baby’s heartbeat has ceased to beat. |
 
@@ -1726,7 +1726,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#documenta
 | Activity or Documentation Required | TAB | Fetal Demise GA < 20 wk | Fetal Demise GA ≥ 20 wk | Live birth who dies (i.e. Neonatal Death) |
 | --- | --- | --- | --- | --- |
 | Is baby admission and discharge note needed for baby? | No | No | No | Yes (admit and discharge note may be combined) |
-| Are admission/discharge orders required for baby | No | No | No | Yes |
+| Are admission/discharge orders required for baby? | No | No | No | Yes |
 | If pathological exam desired, what type of exam for baby’s remains? | Surgical path order | Surgical path order | Autopsy | Autopsy |
 | If pathological exam desired, is autopsy form needed? | No | No | Yes | Yes |
 
@@ -1748,7 +1748,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#documenta
 | Is birth certificate required? | No | No | No | Yes |
 | Is “Regular” “Certificate of Death” required? | No | No | No | Yes |
 | Is “Fetal certificate of death” required? | No | No | Yes | No |
-| If parents want to send remains to a mortuary, what paperwork is needed? | “Release to mortuary- coroner” form | “Release to mortuary- coroner” form | Release to mortuary- coroner” form | Release to mortuary-coroner” form |
+| If parents want to send remains to a mortuary, what paperwork is needed? | “Release to mortuary-coroner” form | “Release to mortuary-coroner” form | “Release to mortuary-coroner” form | “Release to mortuary-coroner” form |
 | If parents want to have remains handled by hospital, what paperwork is needed? | “retain and dispose” form | “retain and dispose” form | Special county release form | Special county release form |
 
 ## 9 Fetal and Neonatal Death Workflows and Documentation › 9.1 Executive summary › Section 4: Illustrative Scenarios
@@ -1758,8 +1758,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#sec-death
 | --- | --- |
 | There was a crash C-section for bradycardia. The baby did not have a HR or movement at birth and did not respond to resuscitation. Is the baby a fetal death or live birth who failed resuscitation? | Fetal death |
 | The pediatricians at our center haven’t been involved in periviable live births below a certain gestational age. How many babies might we be called to see if we now became involved? | The burden for neonatal physicians is very small and there will be little change in practice. Between 2010 and 2018 only about 35 babies were born annually in the whole Region. In 2018 all of the babies born alive at 22 wk GA were seen by pediatricians. The large majority of the 15 babies born alive at 20≤GA<22 wk were seen by pediatricians. Of the 11 babies born alive at GA < 20 wk no pediatricians were involved. |
-| We haven’t consistently called the pediatrician low GA live births. If pediatricians are now called, will that inadvertently encourage resuscitations for babies that would otherwise be allowed to pass quietly? | The issue of whether or not to resuscitate a baby should be driven by careful discussions between the physicians and parents and not by the presence or absence of a neonatal team at delivery The choice of whether a neonatal team should attend a delivery should be part of those careful discussions A neonatal team’s presence at a delivery does not mandate resuscitation. The presence of the team, if called, is meant to ensure the most appropriate care is provided to the baby and assure the parents and non-neonatal staff that the appropriate level of support is being provided As with any delivery the pediatrician should respond to a request to come to the delivery room if requested by a member of the OB team as a matter of professional duty, whether or not a resuscitation will be performed |
-| The baby made some arching truncal movements but there was no heart rate or signs of responsiveness. Is the baby a live born? | Yes. It is problematic in a number of ways to treat a baby some might consider alive as already dead. Any sign of life is treated by California state as evidence the baby is liveborn. It’s better to error on the side of calling a baby a live born when there is difference of opinion. |
+| We haven’t consistently called the pediatrician for low GA live births. If pediatricians are now called, will that inadvertently encourage resuscitations for babies that would otherwise be allowed to pass quietly? | The issue of whether or not to resuscitate a baby should be driven by careful discussions between the physicians and parents and not by the presence or absence of a neonatal team at delivery The choice of whether a neonatal team should attend a delivery should be part of those careful discussions A neonatal team’s presence at a delivery does not mandate resuscitation. The presence of the team, if called, is meant to ensure the most appropriate care is provided to the baby and assure the parents and non-neonatal staff that the appropriate level of support is being provided As with any delivery the pediatrician should respond to a request to come to the delivery room if requested by a member of the OB team as a matter of professional duty, whether or not a resuscitation will be performed |
+| The baby made some arching truncal movements but there was no heart rate or signs of responsiveness. Is the baby a liveborn? | Yes. It is problematic in a number of ways to treat a baby some might consider alive as already dead. Any sign of life is treated by California state as evidence the baby is liveborn. It’s better to err on the side of calling a baby a liveborn when there is difference of opinion. |
 | Does GA or BW change management of a baby with a heartbeat at birth? | No. There is no minimum GA or BW below which a baby with signs of life at birth is not treated as a live birth |
 | Does GA or BW change management of TAB? | No. There is no maximum GA or BW for TAB |
 | Does presence of FHR before delivery change above management? | No. It is the baby’s status at delivery that determines management |
@@ -1767,7 +1767,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/death-workflows.html#sec-death
 | Is an 18 wk delivery with a HR for a few seconds classified as a miscarriage or a live birth? | Live birth. There is no minimum GA or BW below which a baby with signs of life at birth is not treated as a live birth. |
 | What about a 10 wk delivery that barely looks like a baby but has a visible heartbeat? | Live birth unless the remains are not “recognizable anatomical parts” 7054.4. |
 | I don’t think it’s humane to ask a family to fill out a birth certificate for an 18 wk death just because there was a visible heartbeat. What can I do? | The problem is that it is not technically legal to categorize the death after birth as a fetal demise. Convincing the family or nurses that a tiny baby with signs of life is not really alive is fraught for many reasons. So you need to devote your efforts to make this moment humane within the context of the law under these sad circumstances. The parents are not required to give the baby a first name |
-| Spontaneous abortion, inevitable abortion, intrauterine fetal demise, stillbirth, miscarriage, fetal death and fetal demise, induced abortion: how do I decide which terms should be used? | “Fetal demise” is the only term used in “Stork”. “TAB” and “abortion”are the only terms used in the OB history. The other terms do not have strong consensus on definitions and can cause confusion |
+| Spontaneous abortion, inevitable abortion, intrauterine fetal demise, stillbirth, miscarriage, fetal death and fetal demise, induced abortion: how do I decide which terms should be used? | “Fetal demise” is the only term used in “Stork”. “TAB” and “abortion” are the only terms used in the OB history. The other terms do not have strong consensus on definitions and can cause confusion |
 | A mother presents with a spontaneous abortion in the ED or office: do I need to fill out a KPHC “delivery summary”? | No. The delivery summary is intended to be an inpatient document |
 
 ## 9 Fetal and Neonatal Death Workflows and Documentation › 9.1 Executive summary › Section 5: Approval Groups & Committees
@@ -1800,7 +1800,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#procedure
 2.  With the help of laryngoscope insert the catheter 2 cm past the Vocal cords\
 3.  Attach Capnometer via 3.0 ETT adapter and wait for color change, once color change confirmed proceed to remove the ETT adapter/ capnometer
 4.  Attach syringe with Surfactant and administer it over 2-3 minutes\
-5.  After completion give 1 ml of air slowly than remove the catheter
+5.  After completion give 1 ml of air slowly then remove the catheter
 
 ## 10 Respiratory › 10.2 Respiratory Support Guide › Bubble CPAP (bCPAP) › Resources
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#resources
@@ -1866,7 +1866,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#initial-nava-
 | --- | --- | --- |
 | NAVA Level | Start with a low NAVA level (1.0-2 cmH2O/μV) | - Titrate to neonates’ comfort and Edi peak 10-15 μV. - If comfortable and Edi peaks <5 μV, decrease NAVA Level in steps of 0.5 until Edi peak values are 5-15 μV. - If increased WOB and Edi peak >20 μV, increase NAVA level in 0.5 increments until comfortable and Edi peaks <15 μV. |
 | Edi trigger | 0.5 μV | Avoid “artifact self-triggering” (lower number = more sensitive). |
-| Apnea time | 3-5 | Adjust as clinically indicated (minimum rate: 2 seconds = 30 bpm; 1 second = 60 bpm). |
+| Apnea time | 3-5 sec | Adjust as clinically indicated (minimum rate: 2 seconds = 30 bpm; 1 second = 60 bpm). |
 | Ppeak | 35-40 cmH2O NOTE: Pressure limited 5 cmH2O below Ppeak alarm limit (blue alarm). | Set Ppeak high enough for recruiting breaths. Increase if pressure limited alarm is constant. |
 | Backup | Activates Pressure Control mode after apnea time if patient is apneic. | Set PC level and RR to assure adequate ventilation. |
 
@@ -2125,7 +2125,7 @@ Adjust pressure and FiO~2~ accordingly to compensate during fluid shift, allowin
 
 - Serial chest x-ray and blood gas assessment as needed.\
 - Fluid management.\
-- Low threshold to re-intubate if having significant work of breathing and/or respiratory acidosis (e.g., pCO~2~ > 75, pH < 7.1, etc.)
+- Low threshold to reintubate if having significant work of breathing and/or respiratory acidosis (e.g., pCO~2~ > 75, pH < 7.1, etc.)
 
 ## 10 Respiratory › 10.6 Cardiopulmonary Events - Spells › Regional Definition › Apnea
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#sec-apnea
@@ -2136,13 +2136,13 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#sec-apnea
 ## 10 Respiratory › 10.6 Cardiopulmonary Events - Spells › Regional Definition › Bradycardia
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#sec-bradycardia
 
-- Does not meeting criteria for Apnea;
+- Does not meet criteria for Apnea;
 - Any drift in HR < 80bpm for ≥ 10 sec requiring intervention other than removing the bottle if during feeding.
 
 ## 10 Respiratory › 10.6 Cardiopulmonary Events - Spells › Regional Definition › Desaturation
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#sec-desaturation
 
-- Does not meeting criteria for Apnea or Bradycardia;
+- Does not meet criteria for Apnea or Bradycardia;
 - SpO2 < 80% for ≥ 10 sec requiring intervention other than removing the bottle if during feeding.
 
 ## 10 Respiratory › 10.6 Cardiopulmonary Events - Spells › Types of B/D spells › Feeding-related spells (feeding spells)
@@ -2161,7 +2161,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#update-1
 *Do not intervene in the first 10 sec of a spell, unless:*
 
 - Life-threatening (e.g. aspiration, airway compromise, etc.).\
-- Heart rate progress to < 60/min.
+- Heart rate progresses to < 60/min.
 
 ## 10 Respiratory › 10.6 Cardiopulmonary Events - Spells › Bedside Practice Update › Update 2:
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#update-2
@@ -2188,7 +2188,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#sec-protocol-
 Tip
 
 - This algorithm is meant for preterm infants whose baseline SpO~2~ is within normal range not requiring any respiratory support who are otherwise taking full or near-full PO and are close to NICU discharge.\
-- This algorithm may not be applicable to term infants who respiratory control and suck-swallow-breath coordination are mature at birth. Spells in these infants are usually due to maternal influence, airway abnormalities, or ongoing pulmonary pathologies.\
+- This algorithm may not be applicable to term infants whose respiratory control and suck-swallow-breathe coordination are mature at birth. Spells in these infants are usually due to maternal influence, airway abnormalities, or ongoing pulmonary pathologies.\
 - This algorithm should not be applied to A/B/D events that occur in the delivery room or around time of admission.\
 - Isolated obstructive apnea is rare. Skin-to-skin-related spells are usually obstructive in nature. Clinical ruling of those events should be at the treating neonatologist’s discretion.\
 - **Isolated SpO~2~ in the 80-89% range on the day of hospital discharge, although not a spell by definition, is equal to a failed CCHD screening, and therefore should not be ignored if occurred within 1 day of discharge.**
@@ -2211,7 +2211,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#during-spell-
 
 If Hepatitis B vaccine is administered during spell watch, the spell watch period will be modified to include 48 hrs of monitoring following vaccine administration.
 
-- Example: if baby is being monitored from 2/10 to 2/13 (72 hrs), and Hepatitis B vaccine if administered on 2/12, the monitoring period will be extended to 2/14.
+- Example: if baby is being monitored from 2/10 to 2/13 (72 hrs), and Hepatitis B vaccine is administered on 2/12, the monitoring period will be extended to 2/14.
 
 ## 10 Respiratory › 10.6 Cardiopulmonary Events - Spells › Spell watch after Hepatitis B vaccine administration › Not during spell watch
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#not-during-spell-watch
@@ -2245,11 +2245,11 @@ f --> g["Successful"]
 f --> h["Failed"]
 g --> j["Room air"]
 h --> i("Wean to HFNC 2LPM for 24-72hrs")
-i --> p["FiO2<sub>2</sub> remained at 21%"]
+i --> p["FiO<sub>2</sub> remained at 21%"]
 i --> q["FiO<sub>2</sub> increased to >21%"]
 q --> s["Wean to 21%"]
 s --> p
-p --> r["Wean flow by 0.25-0.5PM q24-48hrs"]
+p --> r["Wean flow by 0.25-0.5 LPM q24-48hrs"]
 d --> k("Wean FiO<sub>2</sub> to 21% by 33 weeks PMA")
 k --> l["Successful"]
 k --> m["Unsuccessful"]
@@ -2297,21 +2297,21 @@ i --> o["<strong>Continue to wean<br/>respiratory support</strong>"]
 m --> o
 ```
 
-## 10 Respiratory › 10.9 Bronchouplmonary dysplasia (BPD) › No-BPD prevention bundle (BPD Bundle) › General criteria
+## 10 Respiratory › 10.9 Bronchopulmonary dysplasia (BPD) › No-BPD prevention bundle (BPD Bundle) › General criteria
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#general-criteria
 
 - GA < 32 weeks OR BW < 1,500g
 
-## 10 Respiratory › 10.9 Bronchouplmonary dysplasia (BPD) › No-BPD prevention bundle (BPD Bundle) › Injection meds
+## 10 Respiratory › 10.9 Bronchopulmonary dysplasia (BPD) › No-BPD prevention bundle (BPD Bundle) › Injection meds
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#injection-meds
 
 - **Vitamin A**
   - Reserved for BW < 1,000g AND GA < 28 weeks requiring respiratory support after birth
   - Dose: 5,000 units 3 times per week for 12 doses (4 weeks)\
 - **Epogen**
-  - Dose: 250 units/kg/dose SQ Mon Wed Fr starting at DOL7
+  - Dose: 250 units/kg/dose SQ Mon Wed Fri starting at DOL7
 
-## 10 Respiratory › 10.9 Bronchouplmonary dysplasia (BPD) › No-BPD prevention bundle (BPD Bundle) › Enteral meds
+## 10 Respiratory › 10.9 Bronchopulmonary dysplasia (BPD) › No-BPD prevention bundle (BPD Bundle) › Enteral meds
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#enteral-meds
 
 When at 100ml/kg/day of enteral feeds:
@@ -2319,12 +2319,12 @@ When at 100ml/kg/day of enteral feeds:
 - **Ferrous sulfate** 3 mg/kg/dose PO twice daily
 - **Vitamin E** 25 units oral twice daily
 
-## 10 Respiratory › 10.9 Bronchouplmonary dysplasia (BPD) › No-BPD prevention bundle (BPD Bundle) › Duration
+## 10 Respiratory › 10.9 Bronchopulmonary dysplasia (BPD) › No-BPD prevention bundle (BPD Bundle) › Duration
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#duration
 
 - Discontinue Epogen, Ferrous sulfate, and Vitamin E when infants reach 36 weeks PMA
 
-## 10 Respiratory › 10.9 Bronchouplmonary dysplasia (BPD) › DART protocol
+## 10 Respiratory › 10.9 Bronchopulmonary dysplasia (BPD) › DART protocol
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#dart-protocol
 
 10-day tapering course of dexamethasone sodium phosphate
@@ -2364,47 +2364,47 @@ Modified SELDINGER TECHNIQUE (credit: [MacDonald’s Atlas of Procedures in Neon
 - Procedures (6 steps):
   1.  Insert finder needle (introducer) on syringe 4^th^ ICS
   2.  Remove the syringe while leaving the finder needle (introducer) & feed the guidewire through introducer (finder needle) to 10cm mark.
-  3.  Remove the introducer and finder needle while holding the guidewire steady and insert dilator over the guidewire 1-2cm skin and subcutaneous tissue (not chest wall).
-  4.  Remove the dilator and insert the chest tube catheter over the guidewire until all holes are the chest (measures at \~ 7cm).
+  3.  Remove the introducer and finder needle while holding the guidewire steady and insert dilator over the guidewire 1-2cm through skin and subcutaneous tissue (not chest wall).
+  4.  Remove the dilator and insert the chest tube catheter over the guidewire until all holes are in the chest (measures at \~ 7cm).
   5.  Maintain stability of the catheter and remove the guidewire.
   6.  Attach the catheter to the suction drainage device via luer adapter.
 - Details and tips:
-  - Mount the finder needle syringe with inserting the tip of the needle into the skin at the 4^th^ intercostal space = nipple between the anterior and mid-axillary line *above the upper border of the 5^th^ rib*.
+  - Mount the finder needle syringe by inserting the tip of the needle into the skin at the 4^th^ intercostal space = nipple between the anterior and mid-axillary line *above the upper border of the 5^th^ rib*.
 
   - Advance the finder needle slowly, simultaneously applying negative pressure to the syringe. The needle should be advanced perpendicular to the chest wall generally in the direction of the opposite shoulder.\
 
-  - Advance the needle until you feel the lack of resistance or “GIVE” and air entry is the syringe.\
+  - Advance the needle until you feel the lack of resistance or “GIVE” and air entry into the syringe.\
     Do not evacuate more than 1-2mL of air.
 
   - While stabilizing the needle with 1 hand remove the syringe and insert guidewire through the finder needle.\
 
-  - Advance the guidewire until the depth marking at 10cm reaches the hub of the needle Advanced the guidewire until 10cm mark that the needle hub
+  - Advance the guidewire until the depth marking at 10cm reaches the hub of the needle Advance the guidewire until the 10cm mark is at the needle hub
 
   - Maintain stability of the wire, remove the finder needle.\
 
-  - Feed the dilator over the wire and insert in a slow twisting motion to dilate the tract. Advanced the dilator only far enough to dilate the skin tract and parietal pleura. This is normally about 1cm in preterm or 2cm in term infants.
+  - Feed the dilator over the wire and insert in a slow twisting motion to dilate the tract. Advance the dilator only far enough to dilate the skin tract and parietal pleura. This is normally about 1cm in preterm or 2cm in term infants.
 
   - Maintaining stability of the wire remove the dilator.
 
-  - Insert the pigtail catheter over the wire and advanced it into the chest wall toward the apex of the lung (anteriorly and medially toward the 2^nd^ intercostal space and midclavicular line) until all the side holes of the catheter are inside the chest wall.
+  - Insert the pigtail catheter over the wire and advance it into the chest wall toward the apex of the lung (anteriorly and medially toward the 2^nd^ intercostal space and midclavicular line) until all the side holes of the catheter are inside the chest wall.
 
   - This requires uncoiling and holding the pigtail straight with 1 hand while advancing it onto the wire.
 
   - Maintaining stability of the catheter remove the guidewire. Catheter will spontaneously coil into a pigtail loop inside the pleural space.
 
-  - Attach the luer adapter at the external end of the catheter and connect it the suction apparatus tubing.\
+  - Attach the luer adapter at the external end of the catheter and connect it to the suction apparatus tubing.\
 
   - Secure the chest tube with semipermeable transparent dressing and surgical tape.\
 
-  - Suture and the catheter in place is optional but typically not necessary as there is no skin incisions closed and the skin and trach will be snug against the counter.\
-    Warning: it is easy to inadvertently compressed catheter with suture if secured too tightly.
+  - Suturing the catheter in place is optional but typically not necessary as there is no skin incision to close and the skin and tract will be snug against the catheter.\
+    Warning: it is easy to inadvertently compress the catheter with suture if secured too tightly.
 
 ## 10 Respiratory › 10.11 Airway Edema › Treatment
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#treatment
 
 Method 1:
 
-- IV dexamethasone 0.25mg/kg/dose given \~4 hrs prior to scheduled extubastion then q8hrs for a total of 3 doses (Couser 1992).
+- IV dexamethasone 0.25mg/kg/dose given \~4 hrs prior to scheduled extubation then q8hrs for a total of 3 doses (Couser 1992).
 
 Method 2:
 
@@ -2429,7 +2429,7 @@ Severity:
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#diagnosis-modality
 
 - Clinical suspicion: high oxygen needs, labile \\(SpO\_{2}\\) (huge swing)
-- Pre- and post-ductal \\(SpO\_{2}\\) differential > 10mmHg
+- Pre- and post-ductal \\(SpO\_{2}\\) differential > 10%
 - Echocardiography STAT
 
 ## 11 Cardiovascular › 11.1 Persistent Pulmonary Hypertension of Newborn (PPHN) › Oxygen therapy (intentional use of increased FiO~2~)
@@ -2437,9 +2437,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#oxygen-the
 
 - Oxygen is the first-line therapy for PPHN.
 
-- If an infant has the following documented in the ECHO report, it is reasonable to keep FiO~2~ at 0.4-0.6 (or higher if needed) with a post-ductal SpO~2~ goal of ³ 92-95% for 24-48 hrs until a repeat ECHO for reassessment is performed:
+- If an infant has the following documented in the ECHO report, it is reasonable to keep FiO~2~ at 0.4-0.6 (or higher if needed) with a post-ductal SpO~2~ goal of ≥ 92-95% for 24-48 hrs until a repeat ECHO for reassessment is performed:
 
-  - Estimated right ventricular (RV) pressure > 2/3 of systemic mean blood pressure (SBPmean) taken at the time of the ECHO study, (and/or)
+  - Estimated right ventricular (RV) pressure > 2/3 of systemic mean blood pressure (SBP^mean^) taken at the time of the ECHO study, (and/or)
   - Bidirectional PDA shunt.
 
   *Note: PDA in an infant ≥ 35 weeks’ GA with severe PPHN may serve as a pop-off valve and therefore should not be managed the same way as a PDA in a very preterm infant with significant respiratory support requirement.*
@@ -2464,7 +2464,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#hemodynami
   - Initial ECHO is also used to rule out congenital heart disease, shunting, and left ventricular (LV) function (see contraindications).
 - Infants with ECHO-confirmed PPHN should have serial ECHOs every 24-72 hours until complete resolution of PPHN.
 - Correct pH to > 7.30. Maintaining pH as close to physiological range as possible is crucial for achieving hemodynamic stability. Forced alkalosis does not lead to further improvement.
-- SBP may need to be much higher than the infants’ GA to achieve hemodynamic stability.
+- SBP may need to be much higher than the infant’s GA to achieve hemodynamic stability.
 - Hemodynamic instability may be due to two categories of causes:
   - Hypotension/hypoperfusion
   - Cardiac dysfunction
@@ -2526,7 +2526,7 @@ Goal score: mostly -1 and occasionally 0 (too deep if -2)
 | Behavior State | No arousal to any stimuli No spontaneous movement | Arouses minimally to stimuli Little spontaneous movement | Appropriate for gestational age | Restless, squirming Awakens frequently | Arching, kicking Constantly awake, or Arouses minimally / no movement (not sedated) |
 | Facial Expression | Mouth is lax No expression | Minimal expression with stimuli | Relaxed Appropriate | Any pain expression intermittent | Any pain expression continual |
 | Extremities Tone | No grasp reflex Flaccid tone | Weak grasp reflex ↓ muscle tone | Relaxed hands and feet Normal tone | Intermittent clenched toes, fists or finger splay Body is not tense | Continual clenched toes, fists, or finger splay. Body is tense |
-| Vital Signs (HR, RR BP, SpO2) | No variability with stimuli Hypoventilation or apnea | < 10% variability from baseline with stimuli | Within baseline or normal for gestational age | ­10-20% from baseline SpO2 76-86% with stimulation - quick ↑ | ­↑ >20% from baseline SpO2 ≤ 75% with stimulation - slow T Out of sync with vent |
+| Vital Signs (HR, RR, BP, SpO2) | No variability with stimuli Hypoventilation or apnea | < 10% variability from baseline with stimuli | Within baseline or normal for gestational age | ↑ 10-20% from baseline SpO2 76-86% with stimulation - quick ↑ | ↑ >20% from baseline SpO2 ≤ 75% with stimulation - slow ↑ Out of sync with vent |
 
 ## 11 Cardiovascular › 11.1 Persistent Pulmonary Hypertension of Newborn (PPHN) › Inhaled nitric oxide (iNO) › Indications
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#indications
@@ -2547,9 +2547,9 @@ iNO, in conjunction with ventilatory support and other appropriate agents, is in
 
 - One of the following values:
 
-  - Alveolar-arterial difference of oxygen (AaDO~2~) > 599 torr by two arterial blood gas (ABG) 30 minutes apart.
+  - Alveolar-arterial difference of oxygen (AaDO~2~) > 599 torr by two arterial blood gases (ABG) 30 minutes apart.
   - FiO~2~ > 0.8 for > 1 hr while receiving invasive mechanical ventilation.
-  - Oxygen index (OI) > 25 may be used to guide iNO initiation, but its cut-off value should not be used as the only information for decision-making.
+  - Oxygenation index (OI) > 25 may be used to guide iNO initiation, but its cut-off value should not be used as the only information for decision-making.
 
   \\(\\LARGE{OI\\ =\\ \\frac{MAP\\times{FiO\_{2}(\\%)}}{PaO\_{2}}}\\)
 
@@ -2557,7 +2557,7 @@ iNO, in conjunction with ventilatory support and other appropriate agents, is in
 
   - MAP > 15 cmH~2~O
 
-  *Example: MAP 15 on FiO~2~ of 1 with PaO~2~ 60 gives OI of 25)*
+  *Example: MAP 15 on FiO~2~ of 1 with PaO~2~ 60 gives OI of 25*
 
 ## 11 Cardiovascular › 11.1 Persistent Pulmonary Hypertension of Newborn (PPHN) › Inhaled nitric oxide (iNO) › Contraindications
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#contraindications
@@ -2574,7 +2574,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#initiation
 
 - Start iNO at 20 ppm. iNO can be used in conjunction with various invasive modes of mechanical ventilation.
 - A response should be seen within one hour of starting iNO and is defined as tolerating FiO~2~ to < 0.8 with SpO~2~ ≥ 95% with a pre- and post-ductal SpO~2~ difference < 5.
-  - A response may also be noted via the following: an increase in the SpO~2~ by > 5%, pre- and post-ductal saturations becoming approximating one another, or increasing PaO~2~.
+  - A response may also be noted via the following: an increase in the SpO~2~ by > 5%, pre- and post-ductal saturations approximating one another, or increasing PaO~2~.
 - If there is a failure to respond to iNO therapy, therapy should be discontinued within 1 hr of initiating to avoid developing dependence.
 - Continue iNO at 20 ppm until FiO~2~ is at 0.4-0.6 (see weaning iNO below).
 - Samples for methemoglobin (MET-Hgb) will be recorded 4 hours after initiation of treatment. Repeat MET-Hgb with each arterial blood gas:
@@ -2662,7 +2662,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#initial-t
 
 - Term: 60-80 ml/kg/day
 - Preterm ≥ GA 28 weeks: 80 ml/kg/day
-- Preterm < GA 28 weeeks: 90-100 ml/kg/day
+- Preterm < GA 28 weeks: 90-100 ml/kg/day
 
 ## 12 Nutrition, Fluid and Electrolytes › 12.2 Fluid Management › Glucose infusion rate (GIR)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#glucose-infusion-rate-gir
@@ -2796,12 +2796,12 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#growth-go
 ## 12 Nutrition, Fluid and Electrolytes › 12.7 Postnatal Enteral Nutrition and Growth › Nutrition intake goal
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#nutrition-intake-goal
 
-- Calories: 120-130 KCal/kg/day
+- Calories: 120-130 kcal/kg/day
 - Protein: 3.0-3.5 g/kg/day \[[Link](https://www.nejm.org/doi/full/10.1056/NEJMoa2204886#:~:text=This%20trial%20provided%20robust%20evidence,corrected%20age%20of%202%20years.)\]
 - Fluids: 120-180 ml/kg/day
 
-## 12 Nutrition, Fluid and Electrolytes › 12.7 Postnatal Enteral Nutrition and Growth › Nutrition survelleince
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#nutrition-survelleince
+## 12 Nutrition, Fluid and Electrolytes › 12.7 Postnatal Enteral Nutrition and Growth › Nutrition surveillance
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#nutrition-surveillance
 
 - Obtain Na, Phos, ALP, BUN, every Monday once full enteral feeds achieved
 
@@ -2817,11 +2817,11 @@ Last update in 2018:\
 <https://espghan.info/published-guidelines/>
 
 - Fluid and electrolytes \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31167-1/pdf)\]
-- Energy \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31163-4/pdf%22)\]
+- Energy \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31163-4/pdf)\]
 - Carbohydrates \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31166-X/pdf)\]
 - Amino acids \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31164-6/pdf)\]
 - Lipids \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31165-8/pdf)\]
-- Calcium, phosphorous and magnesium \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31169-5/pdf)\]
+- Calcium, phosphorus and magnesium \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31169-5/pdf)\]
 - Iron and minerals \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31168-3/pdf)\]
 - Vitamins \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31170-1/pdf)\]
 - Venous access \[[Link](https://www.clinicalnutritionjournal.com/article/S0261-5614(18)31171-3/pdf)\]
@@ -2874,14 +2874,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#eligibili
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#protocol
 
 - Use Prolacta instead of HMF when fortifying milk for infants who meet criteria for Prolacta.
-- Start at 26 KCal (Prolact +6 H^2^MF).
+- Start at 26 kcal (Prolact +6 H^2^MF).
 - Increase calories per nutritionist recommendations and at rounding neonatologist’s discretion based on the infant’s clinical condition.
 
 ## 12 Nutrition, Fluid and Electrolytes › 12.11 Prolacta Prolact+ H^2^MF Products › QI Project on Prolact+ H^2^MF cost
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#qi-project-on-prolact-h2mf-cost
 
 - Process measure
-  - Use [Postnatal growth charts](https://nicugrowth.app) to determine fortificationp plan beyond 26KCal/oz
+  - Use [Postnatal growth charts](https://nicugrowth.app) to determine fortification plan beyond 26kcal/oz
 - Outcome measure
   - cost of Prolact+ H^2^MF product
 - Balance measure
@@ -2892,7 +2892,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#qi-projec
 ## 12 Nutrition, Fluid and Electrolytes › 12.12 Prolacta Cream › Eligibility criteria
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#eligibility-criteria-2
 
-When using Prolacta Prolac+ H^2^MF\
+When using Prolacta Prolact+ H^2^MF\
 *Note: not to be used before breast milk fortification*
 
 ## 12 Nutrition, Fluid and Electrolytes › 12.12 Prolacta Cream › Indication
@@ -2912,11 +2912,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#route
 ## 12 Nutrition, Fluid and Electrolytes › 12.12 Prolacta Cream › Usage › Volume
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#volume
 
-Dedepding on the fortified milk feeding volume, three ratios can be used:
+Depending on the fortified milk feeding volume, three ratios can be used:
 
-- 3mL Cream per 100mL fortified milk - increase calculated calories by 2.4 KCal/oz
-- 4mL Cream per 100mL fortified milk - increase calculated calories by 3.1 KCal/oz
-- 5mL Cream per 100mL fortified milk - increase calculated calories by 3.9 KCal/oz
+- 3mL Cream per 100mL fortified milk - increase calculated calories by 2.4 kcal/oz
+- 4mL Cream per 100mL fortified milk - increase calculated calories by 3.1 kcal/oz
+- 5mL Cream per 100mL fortified milk - increase calculated calories by 3.9 kcal/oz
 
 ## 12 Nutrition, Fluid and Electrolytes › 12.12 Prolacta Cream › Usage › Possible combinations
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#possible-combinations
@@ -3006,12 +3006,12 @@ All criteria for the infant’s gestational age group must be met:
 
 - For infants ≤ 30 weeks at birth:
   - Start training as early as 30 0/7 weeks PMA
-  - Medically Stable (not on continuous vasopressor medications or invasive ventilator support, if on CPAP, or HFNC Fi0~2~ ≤ 40%)
+  - Medically Stable (not on continuous vasopressor medications or invasive ventilator support, if on CPAP, or HFNC FiO~2~ ≤ 40%)
   - Tolerating enteral feed in previous 48 hours
   - Tolerating non-nutritive sucking with minimal bradycardic and desaturation events
 - For infants > 30 weeks at birth:
   - Care team’s concern for the baby’s nipple feeding skills development
-  - Medically Stable (not on invasive ventilator support, if on CPAP, or HFNC Fi0~2~ ≤ 40%)
+  - Medically Stable (not on invasive ventilator support, if on CPAP, or HFNC FiO~2~ ≤ 40%)
 
 ## 12 Nutrition, Fluid and Electrolytes › 12.14 NTrainer Use Regional Guidelines › Assessment
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#assessment
@@ -3031,7 +3031,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#therapy
 - Choose NTrainer length of therapy based on OT evaluation:
 - Standard therapy mode will be used for all therapy sessions
   - NTrainer (Standard program): If PMA < 33 weeks, gavage feeding via pump for at least 20 minutes. Do not attempt to nipple feed until the next feeding.
-  - Pre-Oral NTrainer (Standard program for one 3-minute cycle then progress to nipple feeding): Pt recommend to transition, If PMA > 33 weeks, Readiness Score < 3 on Infant-Driven Feeding Scale (see Appendix A) and nippling ≥ 1/3 volume in the previous feeding.
+  - Pre-Oral NTrainer (Standard program for one 3-minute cycle then progress to nipple feeding): PT recommends transition if PMA > 33 weeks, Readiness Score < 3 on Infant-Driven Feeding Scale (see Appendix A) and nippling ≥ 1/3 volume in the previous feeding.
 - Perform training: 2 times/day (try once per shift):
   - Done by OT/PT, bedside nurses, or parents
 - Length of NTraining:
@@ -3075,7 +3075,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#documenta
 
 Document the following in the Nutrition section of the daily progress note:
 
-> Mom verbally agreed to not use any THC products while breast feeding due to neurodevelopmental risks for her newborn
+> Mom verbally agreed to not use any THC products while breastfeeding due to neurodevelopmental risks for her newborn
 
 # 13 Gastroenterology
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html
@@ -3093,8 +3093,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#labs
 - Total/direct bilirubin
 - liver function tests (AST/ALT, GGT, ALP, INR, PTT)
 - TSH
-- Urine organic acid
-- Plasma amino acid
+- Urine organic acids
+- Plasma amino acids
 - Acylcarnitine profile
 - AM Cortisol
 - Alpha-1-antitrypsin
@@ -3102,7 +3102,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#labs
 - urine/blood CMV
 - urine reducing substance
 - immunoreactive trypsinogen
-- HSVPCR
+- HSV PCR
 - UA and urine culture
 
 ## 13 Gastroenterology › 13.1 Cholestasis › Workup › Treatment
@@ -3116,7 +3116,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#diagnosi
 
 - Flex laryngoscope showing erosion in the larynx
 - pH meter study
-- Frequent emesis resulting in poor weight gain / malnurishment
+- Frequent emesis resulting in poor weight gain / malnourishment
 
 ## 13 Gastroenterology › 13.2 Gastro-Esophageal Reflux Disease (GERD) › Treatment
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#treatment-1
@@ -3137,7 +3137,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#antibiot
 
 **Further Considerations**
 
-- Antibiotic dosing should be based on the patients age, weight, and gestation age.
+- Antibiotic dosing should be based on the patient’s age, weight, and gestational age.
 - If clinical worsening occurs the Bell stage classification should be re-evaluated.
 - If peritonitis or purulence is noted during surgery, consider sending cultures to guide antibiotic management.
 - Antibiotics should be modified based on blood culture or sterile site culture results.
@@ -3150,7 +3150,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#antibiot
 ## 13 Gastroenterology › 13.3 Necrotizing Enterocolitis (NEC) › Resources
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/gastrointestinal.html#resources
 
-[Dr. Fitzwater’s Presentation Slides](https://fschou-pxt.github.io/RMC-NICU-Manual/files/NEC%20NICU-Dr.Fitzwater%202023.pptx) (Right clikc to save link as…)
+[Dr. Fitzwater’s Presentation Slides](https://fschou-pxt.github.io/RMC-NICU-Manual/files/NEC%20NICU-Dr.Fitzwater%202023.pptx) (Right click to save link as…)
 
 # 14 Nephrology & Urology
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/renal-urology.html
@@ -3182,9 +3182,9 @@ flowchart TD
   B --> D["Postnatal ultrasound at 2-4 weeks of age"]
   C --> E["Obtain postnatal ultrasound in NICU/Nursery"]
   D --> F["If <10mm, repeat at 3 months of age"]
-  D --> G["If ≥10mm or <q>severe</q> hydronephrosis <br> Order VCUG and refer to pediatric urology <br>Antibotics before/during/after VCUG (3 days)"]
+  D --> G["If ≥10mm or <q>severe</q> hydronephrosis <br> Order VCUG and refer to pediatric urology <br>Antibiotics before/during/after VCUG (3 days)"]
   E --> G
-  G --> H["Continue antibiotics prophylaxis for Grade 4/5 VUR <br> Consult Pediatric urology if PUV"]
+  G --> H["Continue antibiotic prophylaxis for Grade 4/5 VUR <br> Consult Pediatric urology if PUV"]
   G --> I["Repeat ultrasound at 1 month of age <br> Refer to pediatric urology"]
   H --> I
   E --> J["If <10mm, repeat at 2-4 weeks of age as outpatient"]
@@ -3212,7 +3212,7 @@ VERY common prenatal diagnosis and no clear guidelines to manage. Most babies wi
 ## 14 Nephrology & Urology › 14.3 Before you refer to PEDIATRIC UROLOGY – read this! E-Mail › Undescended Testes
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/renal-urology.html#undescended-testes
 
-No ultrasound is needed! If there is concern for UDT please send a referral. We will operate on these starting at 6 MONTHS of age at LAMC. If they are not down at 6 months they will not drop later. It can be difficult to distinguish between a retractile testis and an undescended testis. I use warm soapy water on my hands when I examine the boy. If I can easily feel the testes in the scrotum, or if I see them down before I touch him, then they are likely OK. (They will usually pull up and down if you touch the thigh or if he cries) Retractile testes should be able to be brought into the scrotum and should stay there (if the child is quiet) until you touch him, then they will usually pull up. Parents can check him sitting cross legged in warm water. That relaxes the cremasteric muscle and both testes should be down. Another option is to check him when he is sleeping. He needs to be a sound sleeper and they need warm hands. If they can feel both testicles down, he probably does not need surgery. When in doubt, they need a FACE TO FACE visit for us to examine him.
+No ultrasound is needed! If there is concern for UDT please send a referral. We will operate on these starting at 6 MONTHS of age at LAMC. If they are not down at 6 months they will not drop later. It can be difficult to distinguish between a retractile testis and an undescended testis. I use warm soapy water on my hands when I examine the boy. If I can easily feel the testes in the scrotum, or if I see them down before I touch him, then they are likely OK. (They will usually pull up and down if you touch the thigh or if he cries) Retractile testes should be able to be brought into the scrotum and should stay there (if the child is quiet) until you touch him, then they will usually pull up. Parents can check him sitting cross-legged in warm water. That relaxes the cremasteric muscle and both testes should be down. Another option is to check him when he is sleeping. He needs to be a sound sleeper and they need warm hands. If they can feel both testicles down, he probably does not need surgery. When in doubt, they need a FACE TO FACE visit for us to examine him.
 
 ## 14 Nephrology & Urology › 14.3 Before you refer to PEDIATRIC UROLOGY – read this! E-Mail › Hydroceles
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/renal-urology.html#hydroceles
@@ -3224,7 +3224,7 @@ Communicating hydroceles are common and should resolve by age 2. If fluctuating 
 ## 14 Nephrology & Urology › 14.3 Before you refer to PEDIATRIC UROLOGY – read this! E-Mail › Phimosis
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/renal-urology.html#phimosis
 
-The foreskin is a normal anatomic structure if cared for properly. It should never be forcibly retracted, but it does require just a little gentle stretching to clean. When the boy is toilet trained he should be taught to hold it when voiding and gently pull back on the foreskin to stretch it a bit. (Like touching your toes, it will gradually stretch). If the foreskin is causing UTIs, balanitis, difficulty voiding: You can try topical Betamethasone Diproprionate 0.05% - THEY NEED TO STRETCH DOWN AND RUB A DROP OF CREAM IN FOR 60 SECONDS 2 TIMES A DAY (RUB IT IN WHILE THE FORESKIN IS ON STRETCH). If no improvement after 4 weeks send referral for possible circumcision. If severe problems with voiding or infections, just send referral.
+The foreskin is a normal anatomic structure if cared for properly. It should never be forcibly retracted, but it does require just a little gentle stretching to clean. When the boy is toilet trained he should be taught to hold it when voiding and gently pull back on the foreskin to stretch it a bit. (Like touching your toes, it will gradually stretch). If the foreskin is causing UTIs, balanitis, difficulty voiding: You can try topical Betamethasone Dipropionate 0.05% - THEY NEED TO STRETCH DOWN AND RUB A DROP OF CREAM IN FOR 60 SECONDS 2 TIMES A DAY (RUB IT IN WHILE THE FORESKIN IS ON STRETCH). If no improvement after 4 weeks send referral for possible circumcision. If severe problems with voiding or infections, just send referral.
 
 # 15 Infectious Disease
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html
@@ -3232,7 +3232,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html
 ## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#sec-antibiotics-sepsis
 
-**Region Guidelines, Kaiser Permanente Southern California**\
+**Regional Guidelines, Kaiser Permanente Southern California**\
 **Pediatric Infectious Diseases**
 
 **Updated 12/2025 by Sean Fitzwater**\
@@ -3242,7 +3242,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#sec-an
 ## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU › Background
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#background
 
-Starting antibiotics for suspected bacterial sepsis is common in patients in the Neonatal Intensive Care Unit. Symptoms of bacterial sepsis are quite variable in NICU patients, ranging from poor improvement and isolated abnormal labs to fulminant shock. When antibiotics are started, the choice of antibiotics often varies between providers and among centers. Ultimately, most sepsis work ups are negative. When infections do occur, the bacteria that are likely to cause infections vary based on age, and not all bacteria are equally pathogenic. Furthermore, culture contamination is common, and the decision to treat likely contamination is based primarily on which antibiotic was initially started.
+Starting antibiotics for suspected bacterial sepsis is common in patients in the Neonatal Intensive Care Unit. Symptoms of bacterial sepsis are quite variable in NICU patients, ranging from poor improvement and isolated abnormal labs to fulminant shock. When antibiotics are started, the choice of antibiotics often varies between providers and among centers. Ultimately, most sepsis workups are negative. When infections do occur, the bacteria that are likely to cause infections vary based on age, and not all bacteria are equally pathogenic. Furthermore, culture contamination is common, and the decision to treat likely contamination is based primarily on which antibiotic was initially started.
 
 To address these concerns, these guidelines were developed to help prioritize antibiotic choice based on the patient’s age, illness severity, and overall suspicion of an active infection with the ultimate goal to ensure that critically ill infants are covered broadly, while limiting antibiotic exposure in lower risk infants to preserve antibiotics for the future and decreasing the number of contaminants that are treated needlessly.
 
@@ -3253,7 +3253,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#furthe
 
 2.  These guidelines are available on the Kaiser Permanente Pediatric Care SharePoint [https://sp-cloud.kp.org/sites/KaiserPermanentePediatricCare](https://sp-cloud.kp.org/sites/KaiserPermanentePediatricCare).
 
-3.  Cefepime and vancomycin provide broad coverage for gram-negative and gram-positive infection in NICU infants. Very few bacteria are not covered by this combination. Of note: HSV infections and Candida should be considered for severe infections, and, if suspected, started on treatment while the work is under way. Dosing medications for meningitis should be considered in severely ill patients unless meningitis has been ruled out.
+3.  Cefepime and vancomycin provide broad coverage for gram-negative and gram-positive infection in NICU infants. Very few bacteria are not covered by this combination. Of note: HSV infections and Candida should be considered for severe infections, and, if suspected, started on treatment while the workup is under way. Dosing medications for meningitis should be considered in severely ill patients unless meningitis has been ruled out.
 
 4.  Cefepime provides broader coverage of gram-negative rods when compared to gentamicin, as well as providing coverage for MSSA, and resistant Streptococci. Ampicillin provides coverage for Listeria, Enterococci, and most Streptococci.
 
@@ -3261,22 +3261,22 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#furthe
 
 6.  Gram-negative rods, Streptococci, and Enterococci make up most infections in NICU infants 7 days and younger.
 
-7.  Based data from >22,000 blood culture sent for KP SoCal NICU patients, >93% of likely pathogens will grow from blood cultures by 36 hours, and the likelihood of a positive culture resulting after 36 hours is 0.12%.\
+7.  Based on data from >22,000 blood cultures sent for KP SoCal NICU patients, >93% of likely pathogens will grow from blood cultures by 36 hours, and the likelihood of a positive culture resulting after 36 hours is 0.12%.\
     Treating a patient for culture negative sepsis with 5 days of antibiotic may be reasonable in select patients where infection is highly suspected, but appropriately drawn cultures were negative.
 
 8.  CSF testing should be considered for all severely ill infants, those with gram-negative bacteremia, group B strep bacteremia, candidemia, or with concern for HSV. Coagulase negative Staphylococci typically do not cause CNS infection except if there is hardware in the CNS or through direct inoculation via CNS injury. Atypical organisms may require specific treatment and diagnostics. These include Candida and other fungal infections and HSV.
 
 9.  There is no benefit in using broader spectrum antibiotics once a pathogen is isolated, and in some cases broader spectrum antibiotics may lead to worse outcomes. Typically, the narrowest spectrum beta lactam is the preferred treatment.
 
-10. The addition to vancomycin is sufficient coverage for most gram-positive infections, as nearly all Streptococci and coagulase negative Staphylococcus are vancomycin sensitive. Vancomycin can be substituted in place of ampicillin while final sensitivities and speciation are pending for these organisms. For instance changing a combination of ampicillin and cefepime to vancomycin plus cefepime is typically sufficient. For Listeria and Enterococci infections ampicillin should be continued.\
+10. The addition of vancomycin is sufficient coverage for most gram-positive infections, as nearly all Streptococci and coagulase negative Staphylococcus are vancomycin sensitive. Vancomycin can be substituted in place of ampicillin while final sensitivities and speciation are pending for these organisms. For instance changing a combination of ampicillin and cefepime to vancomycin plus cefepime is typically sufficient. For Listeria and Enterococci infections ampicillin should be continued.\
     *S. aureus* is difficult to treat and often leads to severe and complicated infections, so antibiotics should be optimized quickly after diagnosis. Cefepime and oxacillin have excellent activity against MSSA and are appropriate while final cultures are pending. Vancomycin has activity against *S. aureus*, but less so than oxacillin or cefepime for susceptible isolates. MRSA infections are rare in the NICU outside of outbreak settings. In non-improving patients with *S. aureus* infections vancomycin should be added in addition to oxacillin or cefepime until MRSA has been ruled out.
 
 11. This would typically involve broadening from gentamicin to cefepime. In severely ill children who are clinically worsening, broadening from cefepime to meropenem would be a consideration in discussion with Pediatric Infectious Diseases. Meropenem escalation is not needed in patients with GNR infections who are stable or improving. The gram-negative coverage of antibiotics in the NICU is as follows: gentamicin 84%, cefepime 96%, meropenem 99%.
 
-12. Neonates are at high risk of contaminated blood cultures given the difficulty obtaining blood samples. Contaminants typically include skin or gut flora, such as coagulase negative Staphylococcus species (*S. epidermidis*, *S. capitis*, *S. haemolyticus*, *S. hominis*, *S. warneri*.), low pathogenicity streptococci species, Aerococcus, Coryneforms, Micrococcus, etc. Contamination is likely if repeated blood cultures are negative while not on an antibiotic that covers the organisms, or poly microbial culture results.
+12. Neonates are at high risk of contaminated blood cultures given the difficulty obtaining blood samples. Contaminants typically include skin or gut flora, such as coagulase negative Staphylococcus species (*S. epidermidis*, *S. capitis*, *S. haemolyticus*, *S. hominis*, *S. warneri*), low pathogenicity streptococci species, Aerococcus, Coryneforms, Micrococcus, etc. Contamination is likely if repeated blood cultures are negative while not on an antibiotic that covers the organisms, or polymicrobial culture results.
 
-## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU › Table 1: Dosing of Empiric Intravenous Antibiotic Dosing for Suspected Bacteremia
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#table-1-dosing-of-empiric-intravenous-antibiotic-dosing-for-suspected-bacteremia
+## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU › Table 1: Dosing of Empiric Intravenous Antibiotics for Suspected Bacteremia
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#table-1-dosing-of-empiric-intravenous-antibiotics-for-suspected-bacteremia
 
 | Antibiotic | Gestational age | Postnatal age | Dose |
 | --- | --- | --- | --- |
@@ -3310,8 +3310,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#table-
 
 ¥PMA – Postmenstrual age (gestational age plus postnatal age)
 
-## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU › Table 2: Dosing of Empiric Intravenous Antibiotic Dosing for Suspected Meningitis
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#table-2-dosing-of-empiric-intravenous-antibiotic-dosing-for-suspected-meningitis
+## 15 Infectious Disease › 15.1 Antibiotic Management of Suspected Sepsis in the NICU › Table 2: Dosing of Empiric Intravenous Antibiotics for Suspected Meningitis
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#table-2-dosing-of-empiric-intravenous-antibiotics-for-suspected-meningitis
 
 | Antibiotic | Gestational age | Postnatal age | Dose |
 | --- | --- | --- | --- |
@@ -3362,14 +3362,14 @@ flowchart TD
   H --> K["Routine care"]
   I --> L["Monitor up to 4 hours"]
   L --> M["Consider routine care"]
-  L --> N["No imporvement or worsening"]
+  L --> N["No improvement or worsening"]
   J --> O["Blood Cx<br/>Empiric Amp/Gent"]
   N --> O["Blood Cx<br/>Empiric Amp/Gent"]
   
 style B text-align:left
 ```
 
-## 15 Infectious Disease › 15.2 Early-Onset Sepsis (Old) › Empiric anbiotics (non-meningitic dosing) › Ampicillin
+## 15 Infectious Disease › 15.2 Early-Onset Sepsis (Old) › Empiric antibiotics (non-meningitic dosing) › Ampicillin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#ampicillin
 
 - GA > 34 weeks
@@ -3377,7 +3377,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#ampici
 - GA ≤ 34 weeks
   - 50mg/kg/dose q12hrs
 
-## 15 Infectious Disease › 15.2 Early-Onset Sepsis (Old) › Empiric anbiotics (non-meningitic dosing) › Gentamicin
+## 15 Infectious Disease › 15.2 Early-Onset Sepsis (Old) › Empiric antibiotics (non-meningitic dosing) › Gentamicin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#gentamicin
 
 - GA < 30 weeks
@@ -3434,10 +3434,10 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#cpqcc-
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#screening-for-vertical-transmission
 
 - Hepatitis C RNA at 2-6 months of age
-- Anti-Hepatistic C Antibody at 18 months of age
+- Anti-Hepatitis C Antibody at 18 months of age
 
-## 15 Infectious Disease › 15.6 Hepatitis C Virus › Brastfeeding
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#brastfeeding
+## 15 Infectious Disease › 15.6 Hepatitis C Virus › Breastfeeding
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#breastfeeding
 
 - Encouraged provided mother’s nipples do not bleed or become cracked.
 
@@ -3454,9 +3454,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#neonat
 - Hold all injections until infant is bathed
 
 ## 15 Infectious Disease › 15.7 Policy for neonate with HIV-infected mother › Breastfeeding
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#breastfeeding
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#breastfeeding-1
 
-- All pregnant persons with HIV will be refer to Pediatric Infectious Disease for counseling about breast/chestfeeding option, ideally prior to the third trimester.\
+- All pregnant persons with HIV will be referred to Pediatric Infectious Disease for counseling about breast/chestfeeding option, ideally prior to the third trimester.\
 - While avoidance of breastfeeding is the only infant feeding option with 0% risk of HIV transmission, the AAP acknowledges that people with HIV may express a desire to breastfeed, and pediatricians should be prepared to offer a family-centered, nonjudgmental, harm reduction approach to support people with HIV *on ART* with *sustained viral suppression below 50 copies per mL* who desire to breastfeed.
 
 ## 15 Infectious Disease › 15.7 Policy for neonate with HIV-infected mother › Breastfeeding › References
@@ -3469,7 +3469,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#refere
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/infectious-disease.html#neonate-hiv-screening-and-prophylaxis
 
 - Order set: 3532 INFANT of HIV INFECTED MOTHER PEDS IP SCAL
-- Send off HIV PCR from babies blood, start on retrovir to administer by 6-8hrs of life.
+- Send off HIV PCR from baby’s blood, start on retrovir to administer by 6-8hrs of life.
 - Depending on mother’s viral load, if uncontrolled, will add nevirapine and lamivudine (details available in the order set)
 
 # 16 Endocrinology
@@ -3586,7 +3586,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#sec-sliding-sca
 *Need consensus*
 
 - Wean by 2ml/hr for AC POC Glucose >80 (or 75)
-- Wean by 1mL/hr for AC POC Clugose 70-80 (or 65-75)
+- Wean by 1mL/hr for AC POC Glucose 70-80 (or 65-75)
 - Increase by 1mL/hr for AC POC glucose 50-60 (or 45-55)
 - Increase by 2mL/hr for AC POC Glucose < 50 (or <45), and notify MD
 - Once off IV, continue to check sugars until >60 on 3 consecutive checks.
@@ -3602,7 +3602,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#indications-and
 | Down syndrome | TSH at 2 weeks |
 | Mother with history of or active hyperthyroidism/Graves disease | See: Managing Neonatal Graves Disease flowchart |
 | Signs or symptoms of hypothyroidism (e.g., unexplained lethargy, bradycardia, jaundice, or constipation; abnormal neck imaging) | TSH and Free T4 as soon as symptoms are recognized |
-| Signs or symptom of central hypothyroidism or hypopituitarism (e.g., craniofacial/midline defects, certain genetic syndromes, recurrent hypoglycemia, recalcitrant hypotension, micropenis) | TSH and free T4 along with other pituitary tests when signs or symptoms are recognized |
+| Signs or symptoms of central hypothyroidism or hypopituitarism (e.g., craniofacial/midline defects, certain genetic syndromes, recurrent hypoglycemia, recalcitrant hypotension, micropenis) | TSH and free T4 along with other pituitary tests when signs or symptoms are recognized |
 | Mother with hypothyroidism or Hashimoto thyroiditis and no history of Graves disease | Routine newborn screen only  |
 
 Important
@@ -3649,16 +3649,16 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#screening-guide
 
 ``` {.mermaid .mermaid-js}
 flowchart TD
-  A["Mom with Graves Disease (hyperthyroidism) or history of Graves disease (hyperthyroidism)"] --> B["Obtain Thyroid Receptor Ab (TR Ab) or TSI in 2<sup>nd</sup>/3<sup>rd</sup> Trimester"]
-  B --> C["Positive or unknwon TR Ab/TSI or<br>Negative TR Ab but active maternal hyperthyroidism<br><em>and/or</em><br>Treated with anti-thyroid drugs (PTU/methimazole)"]
+  A["Mom with Graves Disease (hyperthyroidism) or history of Graves disease (hyperthyroidism)"] --> B["Obtain TSH Receptor Ab (TR Ab) or TSI in 2<sup>nd</sup>/3<sup>rd</sup> Trimester"]
+  B --> C["Positive or unknown TR Ab/TSI or<br>Negative TR Ab but active maternal hyperthyroidism<br><em>and/or</em><br>Treated with anti-thyroid drugs (PTU/methimazole)"]
   B --> D["NO current anti-thyroid treatment<br><em><u>and</u></em><br>NEGATIVE TR Ab/TSI in 2<sup>nd</sup>/3<sup>rd</sup> Trimester"]
   C --> E[High risk neonate]
   D --> F[No screening needed]
-  E --> G["Obtain TR Ab/TSI in cord blood or nursery<br><em>If not done</em>: Order TR Ab/TSI, freeT4, TSH for outpatient draw in first 7 days of life"]
+  E --> G["Obtain TR Ab/TSI in cord blood or nursery<br><em>If not done</em>: Order TR Ab/TSI, free T4, TSH for outpatient draw in first 7 days of life"]
   G --> H["+ TR Ab/TSI = High risk neonate<br><em>(Observe for clinical symptoms of hyper/hypothyroidism)</em>"]
   G --> I["Negative TR Ab/TSI = Low risk neonate"]
   H --> J["Draw TSH and free T4 at 3-7 days<br><em>(if not done prior, or if symptomatic)</em>"]
-  I --> K["No further work-up necessary"]
+  I --> K["No further workup necessary"]
   J --> L["Abnormal results: send Dr. Advice to Peds Endo<br><em>(TSH < 1mIU/ml and/or free T4 > 2ng/dl is abnormal)</em>"]
   J --> M["Normal TSH, free T4 for age"]
   M --> K
@@ -3671,7 +3671,7 @@ Though TSI is acceptable it is preferred to screen with TR Ab (TSH receptor bind
 ## 16 Endocrinology › 16.4 Ambiguous Genitalia › Differential diagnosis › XY individual
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#xy-individual
 
-- Defects in gene producing transcription factors along the pathway of testicular differentiation
+- Defects in genes producing transcription factors along the pathway of testicular differentiation
 - Defects in androgen synthesis & production
 - Defect in androgen receptor response
 - Disrupted müllerian inhibition
@@ -3691,7 +3691,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#subtle-presenta
 
 - micropenis:
   - Full-term: stretched penile length < 2.5cm
-  - Preterm: normal stretched penile length (cm) = -2.27 + 0.16 x GA in week
+  - Preterm: normal stretched penile length (cm) = -2.27 + 0.16 x GA in weeks
 - severe hypospadias (with or without cryptorchidism or micropenis)
 
 *Female*
@@ -3705,10 +3705,10 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#first-days-of-l
 
 ***STAT ORDERS***
 
-- Serum eletrolytes
+- Serum electrolytes
 - Serum glucose level
 - Random cortisol
-- 17-OHP: value affected by prematuirty, maternal steroid intake
+- 17-OHP: value affected by prematurity, maternal steroid intake
 - Renin
 - Karyotyping
 
@@ -3761,7 +3761,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#congenital-adre
   - consider 10mL/kg NS bolus if dehydrated
 - Glucocorticoids (hydrocortisone):
   - Start at 50mg/m^2^/day IV divided q4-6 hrs
-- Mineralocorticoirds:
+- Mineralocorticoids:
   - Start fludrocortisone at 0.1mg qDay
 - NaCl supplement: Start at 3-4 mEq/kg/day (4mEq/mL solution)
 
@@ -3769,9 +3769,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#congenital-adre
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#for-unilateral-undescended-or-non-palpable-testicle
 
 - No need to order ultrasound
-- Refere to Peds Urology for evaluation (there is a new hire at Fontana)
+- Refer to Peds Urology for evaluation (there is a new hire at Fontana)
 - May wait until 3 months of age to refer as some will descend by that time
-- If there are othe rmalformations of the external genitalia (hypospadias) with undescended testicle(s), obtain labs as below an refer to Peds Urology without waiting until 3 months.
+- If there are other malformations of the external genitalia (hypospadias) with undescended testicle(s), obtain labs as below and refer to Peds Urology without waiting until 3 months.
 
 ## 16 Endocrinology › 16.5 Undescended Testicle › For bilateral undescended (or non-palpable) testicle
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/endocrine.html#for-bilateral-undescended-or-non-palpable-testicle
@@ -3787,8 +3787,8 @@ B --> D["If the exam is unclear or uncertain,
          first, per Peds Endo"]
            
 D --> E["If true bilateral undescended testes  
-         on ultrasound report, endocrine work-
-         up should be ordered next."]
+         on ultrasound report, endocrine workup
+         should be ordered next."]
          
 C --> F["If the provider is comfortable  
          in making the clinical assessment 
@@ -3797,10 +3797,10 @@ C --> F["If the provider is comfortable
          ordered next."]
         
 F --> G["<div align='left';>
-        1. Testosteron, pediatric
+        1. Testosterone, pediatric
         2. LH, pediatric
         3. FSH
-        4. AMH (anti-Mullerian hormone)
+        4. AMH (anti-Müllerian hormone)
         5. Karyotype
         6. 17-OH progesterone
             
@@ -3813,7 +3813,7 @@ F --> G["<div align='left';>
 
 E --> G
 
-D --> H["If testes are high scrotum or   
+D --> H["If testes are high in the scrotum or   
          low in the inguinal canal,  
          refer to Peds Urology for exam   
          and follow-up.  
@@ -3901,7 +3901,7 @@ Based on maternal substance exposure:
 
 - **Methadone or Buprenorphine:** Continue breastfeeding
 - **Pain Control Opioids (Taper Plan):** Continue breastfeeding
-- **Pain Control Opioids (No Taper Plan):** Wean off breastmilk at 1 month
+- **Pain Control Opioids (No Taper Plan):** Wean off breast milk at 1 month
 
 **Important:** Use ESC scoring only—do NOT use Finnegan scoring for NICU admission or opioid treatment decisions.
 
@@ -4002,7 +4002,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#about-this-reso
 **Adapted From:** Eat Sleep Console (ESC) Inpatient Protocol for NAS - NCAL Regional Guidance\
 **Modified By:** SCAL Eat, Sleep, Console Regional Workgroup\
 **Audience:** Inpatient Maternal-Child Health clinicians (Family Centered Care, NICU, Pediatrics)\
-**Contributors:** - Kerri L. Covert, RN - Maternal Child Health Clinical Consultant V (Kerri.L.Covert@kp.org) - Sarah E. Ceja, RN - Maternal Child Health Clinical Consultant V (Sarah.E.Cejagkp.org)
+**Contributors:** - Kerri L. Covert, RN - Maternal Child Health Clinical Consultant V (Kerri.L.Covert@kp.org) - Sarah E. Ceja, RN - Maternal Child Health Clinical Consultant V (Sarah.E.Ceja@kp.org)
 
 ## 17 Neurology › 17.2 Neonatal Abstinence Syndrome - Old Management › Purpose
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#purpose
@@ -4015,9 +4015,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#general-care
 - Infants with suspected withdrawal symptoms are to be cared for in a quiet room or area in the unit. Encourage mother and family members to provide care whenever possible. Rooming-in will be encouraged. Infants should be placed away from entrance (for security reasons) and are to remain within the secured area until discharged or cleared by physician/social services. Security sensors are recommended.
   - All infants born to mothers with suspected or known substance use will have the first void sent for toxicology screening.\
   - If unable to send the first urine, send the earliest urine possible.\
-  - If urine screen is positive, refer to Social Services so that they can contact Department of Children’s Family Services (DCFS).\
+  - If urine screen is positive, refer to Social Services so that they can contact Department of Children and Family Services (DCFS).\
 - An approved Neonatal Abstinence Scoring Tool (Finnegan Neonatal Abstinence Scoring) is to be used on all infants with maternal history of substance use within the pregnancy, including opiates, amphetamines, cocaine, SSRI, benzodiazepines, and symptomatic infants of known or suspected maternal substance(s) use.
-  - Treatments of withdrawal symptoms are based on infant’s total score (Scores greater than or equal 8 for three consecutive screens will be reported to physician).\
+  - Treatments of withdrawal symptoms are based on infant’s total score (Scores greater than or equal to 8 for three consecutive screens will be reported to physician).\
   - All symptoms exhibited during the entire scoring interval, not just a single point in time, should be included.\
   - Infants at risk for NAS (whose screens are positive on admission for opioids or benzodiazepines or who are symptomatic) should be observed for a minimum of **72 hours** of age before discharge home. There is no clearly defined maternal opioid intake below which a fetus is not at risk for NAS. If there is a question about need for observation in the setting of low dose maternal opioid use, a neonatology consult should be considered.\
 - The NASS (scores) is a permanent part of the medical record.\
@@ -4048,7 +4048,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sensory
   - Decreasing excessive tactile stimulation.\
 - Place boundaries snugly around the infant using rolled blanket or other developmentally supportive supplies with hands available for sucking.\
 - Use containment of upper and lower extremities (gently hold infant’s hands against their chest and feet while flexing the legs) when providing care when the infant is unwrapped.\
-- A relaxed hold and rocking is recommended against a parent’s body for irritability or crying. Encourage and assist with skin to skin (Kangaroo Care).\
+- A relaxed hold and rocking is recommended against a parent’s body for irritability or crying. Encourage and assist with skin-to-skin (Kangaroo Care).\
 - Do not overdress; consider using a shirt, diaper and light blanket without other clothing.\
 - Consider tub bath to calm an irritable or stiff infant.\
 - Offer pacifier for non-nutritive sucking to an irritable or frantic infant.
@@ -4065,7 +4065,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#nutrition
 - Support and encourage breastfeeding and/or pumping whenever possible and not contraindicated.\
 - Offer small, frequent feedings (every 2 hours instead of every 3-4 hours). Do not overfeed.\
 - If infant takes greater than 20 minutes to bottle feed, consider gavage feeding.\
-- Collaborate with physician to initiate 22 or 24 calorie breastmilk/formula if not gaining weight.\
+- Collaborate with physician to initiate 22 or 24 calorie breast milk/formula if not gaining weight.\
 - Consider a low lactose formula if infant is having feeding intolerance.
 
 ## 17 Neurology › 17.2 Neonatal Abstinence Syndrome - Old Management › Specific procedures › Abstinence score
@@ -4080,7 +4080,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#parent-and-fami
 - Establish a trusting, non-judgmental relationship with mother and family.\
 - Determine who the primary caregiver will be.\
 - Determine what special fears or concerns parents have.\
-- Instruct parents/care giver on comfort and coping mechanisms which meet infant’s specific needs.\
+- Instruct parents/caregiver on comfort and coping mechanisms which meet infant’s specific needs.\
 - Discuss that infant may be less responsive to visual stimulation and that some symptoms of withdrawal may persist for 2-6 months.\
 - Promote parents and/or significant other demonstration of positive parenting behavior as related to bonding and the “taking hold” phase as described below.
   - Hold infant while feeding.\
@@ -4166,10 +4166,10 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#reference
 
 1.  Bagwell, G. (2016). NICU Currents: Continuing Education for Nurses and Dieticians. Neonatal abstinence syndrome: an escalating problem for newborns, families and nurses. 6(1), p.2.
 2.  Core Curriculum For Neonatal Intensive Care Nursing (5th ed., 2015), pp. 50-53.
-3.  D’Apolito, Karen and Finnegan, Loretta (2nd ed., 2010). Assessing Signs and Sumptoms of Neonatal Abstinence Using the Finnegan Neonatal Abstinence Scoring Scoring Tool; An Inter-Observer Reliability Program Instructional Manual.
+3.  D’Apolito, Karen and Finnegan, Loretta (2nd ed., 2010). Assessing Signs and Symptoms of Neonatal Abstinence Using the Finnegan Neonatal Abstinence Scoring Tool; An Inter-Observer Reliability Program Instructional Manual.
 4.  Gardner, Sandra L. and Merenetein, Gerald B. (8th Ed., 2016). Handbook of Neonatal Intensive Care.
-5.  Hall, E., Meinzen-Derr, J. and Wexelblatt, S. (2015). Cohort analysis of a pharmacokinetic-modeled metadone weaning optimization for Neonatal Abstinence Sydrome. Journal of Pediatrics, 167:1221 – 1225.
-6.  Mark L. Hudak, MD and Rosemarie C. Tan, MD,, PhD (2012), Neonatal drug withdrawal, Pediatrics, 129(2).
+5.  Hall, E., Meinzen-Derr, J. and Wexelblatt, S. (2015). Cohort analysis of a pharmacokinetic-modeled methadone weaning optimization for Neonatal Abstinence Syndrome. Journal of Pediatrics, 167:1221 – 1225.
+6.  Mark L. Hudak, MD and Rosemarie C. Tan, MD, PhD (2012), Neonatal drug withdrawal, Pediatrics, 129(2).
 7.  Southern California Kaiser Permanente Medical Group (2017) Neonatal Abstinence Syndrome White Paper.
 
 ## 17 Neurology › 17.3 Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE)
@@ -4189,7 +4189,7 @@ Infants greater than or equal to 35 weeks gestation diagnosed with Hypoxic-Ische
 
 This procedure will take place in the Neonatal Intensive Care Unit (NICU) with licensed physicians and nurses, who are trained and competent in this process. Decision to proceed with active therapeutic hypothermia will be at the discretion of the designated cooling center/receiving medical center.
 
-Infants will not be actively cooled. Only passive cooling will be done while the baby is waiting transport to appropriate facility.
+Infants will not be actively cooled. Only passive cooling will be done while the baby is awaiting transport to appropriate facility.
 
 ## 17 Neurology › 17.3 Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Definitions
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#definitions
@@ -4277,7 +4277,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-cooling-lab
 
 [Click here to download the pre-cooling labs reference guide](https://fschou-pxt.github.io/RMC-NICU-Manual/files/pre-cooling-lab-ref.pdf)
 
-## 17 Neurology › 17.3 Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Orderset
+## 17 Neurology › 17.3 Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Order set
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-passive-cooling-orderset
 
 Inside **ADMISSION NICU IP SCAL**
@@ -4307,7 +4307,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#exclusion-crite
 Any of the following:
 
 - Inability to initiate therapeutic hypothermia by 6 hours of age, or per neonatologist’s discretion.
-- Gestation age less than 35 weeks.
+- Gestational age less than 35 weeks.
 - Birth weight less than 1800 grams.
 - Presence of known chromosomal anomaly or severe congenital anomalies/syndromes/known metabolic disorders, as determined by the neonatologist.
 - Evidence of head trauma or skull fracture causing major intracranial hemorrhage.
@@ -4318,7 +4318,7 @@ Any of the following:
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-cooling-assessment
 
 1.  **History of an acute perinatal event**
-    - Abruptio placenta
+    - Abruptio placentae
     - Cord prolapse
     - Severe FHR abnormality: variable or late decelerations
 2.  **Apgar score**
@@ -4372,7 +4372,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#references
 1.  California Perinatal Quality Care Collaborative. (2015). *Early Screening and Identification of Candidates for Neonatal Therapeutic Hypothermia Toolkit*.
 2.  Department of Health Care Services, State of California-Health and Human Services Agency. (2016, November 17). *Numbered Letter: 06-1116: Program Requirements for Providing Neonatal Therapeutic Hypothermia*.
 
-## 17 Neurology › 17.5 Hypotonia Work-Up › Physical exam › Cranial Nerves:
+## 17 Neurology › 17.5 Hypotonia Workup › Physical exam › Cranial Nerves:
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#cranial-nerves
 
 - CN II: red reflex bilaterally
@@ -4384,19 +4384,19 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#cranial-nerves
 - CN XI
 - CN XII: tongue movement
 
-## 17 Neurology › 17.5 Hypotonia Work-Up › Physical exam › Muscle strength:
+## 17 Neurology › 17.5 Hypotonia Workup › Physical exam › Muscle strength:
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#muscle-strength
 
 - Upper Extremities
 - Lower Extremities
 
-## 17 Neurology › 17.5 Hypotonia Work-Up › Physical exam › Muscle Tone
+## 17 Neurology › 17.5 Hypotonia Workup › Physical exam › Muscle Tone
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#muscle-tone
 
 - Central
 - Appendicular - Upper extremities, lower Extremities
 
-## 17 Neurology › 17.5 Hypotonia Work-Up › Physical exam › Primitive Reflexes
+## 17 Neurology › 17.5 Hypotonia Workup › Physical exam › Primitive Reflexes
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#primitive-reflexes
 
 - Moro
@@ -4404,13 +4404,13 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#primitive-refle
 - Sucking
 - Grasping
 
-## 17 Neurology › 17.5 Hypotonia Work-Up › Physical exam › Back
+## 17 Neurology › 17.5 Hypotonia Workup › Physical exam › Back
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#back
 
 - Spine alignment
 - Sacral dimple
 
-## 17 Neurology › 17.5 Hypotonia Work-Up › Blood tests
+## 17 Neurology › 17.5 Hypotonia Workup › Blood tests
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#blood-tests
 
 - Serum amino acids
@@ -4425,7 +4425,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#blood-tests
 - Congenital myopathy panel
 - Microarray (Constitutional Genetics )
 
-## 17 Neurology › 17.5 Hypotonia Work-Up › Imaging
+## 17 Neurology › 17.5 Hypotonia Workup › Imaging
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#imaging
 
 - Head ultrasound
@@ -4461,7 +4461,7 @@ Upon discovery of an infant fall:
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#neurology
 
 - Neurological check on admission, every 1 hour x 6 hours, then every 3-4 hours for a minimum of 24 hours.\
-- Head circumference measurement hourly x 12-24
+- Head circumference measurement hourly x 12-24 hours
 - Complete Neurological Examination Encephalopathy
 
 ## 17 Neurology › 17.6 Management of Infant Fall › Clinical assessment and management › Imaging
@@ -4477,8 +4477,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#nutritioniv-flu
 - PO feedings if normal neurological examination and vital signs.
 - If any alteration in vital signs or neurological exam, IV will be inserted and maintenance IV fluids will be started.
 
-## 17 Neurology › 17.6 Management of Infant Fall › Clinical assessment and management › Blood works
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#blood-works
+## 17 Neurology › 17.6 Management of Infant Fall › Clinical assessment and management › Blood work
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#blood-work
 
 - On admission: Type/Screen and CBC
 - Repeat Hct every 12 hours x 24 hours
@@ -4497,7 +4497,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#references-1
 1.  The Joint Commission. Quick Safety Issue 40: Preventing newborn falls and drops. March 2018
 2.  The Joint Commission. Sentinel Event Alert Issue 55: Preventing falls and fall-related injuries in health care facilities. September 28, 2015.
 3.  Kahn DJ, Fisher PD, Hertzler DA. Variation in management of in-hospital newborn falls: a single-center experience. J Neurosurg Pediatr 20: 176-182, 2017
-4.  Management of a Neonatal Fall During Initial Hospitalization. Brigham and Women’s Hospital Department of Pediatric Newborn Medicine, 2016. 5, Driscoll CAH, Pereira N, Lichenstein. In-hospital Neonatal Falls: An unintended consequence of efforts to improve breastfeeding. Pediatrics 143(1),e20182488, 2019.
+4.  Management of a Neonatal Fall During Initial Hospitalization. Brigham and Women’s Hospital Department of Pediatric Newborn Medicine, 2016.
+5.  Driscoll CAH, Pereira N, Lichenstein. In-hospital Neonatal Falls: An unintended consequence of efforts to improve breastfeeding. Pediatrics 143(1),e20182488, 2019.
 
 # 18 Hematology & Oncology
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html
@@ -4518,7 +4519,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#threshold-for-foll
 | 30-31 weeks CGA | ≥5 mg/dl | ≥8 mg/dl |
 | 32-33 weeks CGA | ≥7 mg/dl | ≥10 mg/dl |
 | 34 weeks CGA | ≥9 mg/dl | ≥12 mg/dl |
-| For ≥35 weeks CGA, use www.bilitool.org (up to 146 hrs) or www.peditool.org (for > 146 hrs): If TCB in high-intermediate risk zone (>75%ile of Bhutani nomogram) or TCB ≥13, draw stat TSB and notify MD if TSB is high-risk zone or ≥13 mg/dl |
+| For ≥35 weeks CGA, use www.bilitool.org (up to 146 hrs) or www.peditools.org (for > 146 hrs): If TCB in high-intermediate risk zone (>75%ile of Bhutani nomogram) or TCB ≥13, draw stat TSB and notify MD if TSB is in the high-risk zone or ≥13 mg/dl |
 
 ## 18 Hematology & Oncology › 18.1 Neonatal Indirect Hyperbilirubinemia › 18.1.1 Transcutaneous bilirubin (TCB) › Additional TCB screening for DAT+
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#additional-tcb-screening-for-dat
@@ -4630,12 +4631,12 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#iron-therapy
 - Begin once the infant tolerates **100 mL/kg/day** of enteral feeds.
 - **Dose**: 3 mg/kg/day divided twice daily.
 
-## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blooc Cell (pRBC) Transfusion
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#packed-red-blooc-cell-prbc-transfusion
+## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blood Cell (pRBC) Transfusion
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#packed-red-blood-cell-prbc-transfusion
 
 **For non-urgent transfusions**: The outgoing and incoming neonatologists should discuss and agree on the necessity prior to proceeding.
 
-## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blooc Cell (pRBC) Transfusion › 1. Determine if Infant is Acutely Ill
+## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blood Cell (pRBC) Transfusion › 1. Determine if Infant is Acutely Ill
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#determine-if-infant-is-acutely-ill
 
 | Category | Not Acutely Ill | Acutely Ill |
@@ -4644,7 +4645,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#determine-if-infan
 | Metabolic | No acute severe metabolic acidosis | Acute severe metabolic acidosis (pH < 7.2, BE < -6, or HCO₃ < 12) |
 | Clinical Status | Not on NEC watch Not undergoing sepsis evaluation No upcoming surgery No recent major bleeding Asymptomatic | On NEC watch Being evaluated for sepsis Upcoming surgery Major bleeding (e.g., Grade 3 IVH, pulmonary hemorrhage) within 3 days Symptomatic |
 
-## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blooc Cell (pRBC) Transfusion › 2. Transfusion Thresholds
+## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blood Cell (pRBC) Transfusion › 2. Transfusion Thresholds
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#transfusion-thresholds
 
 | Time Period | Hemoglobin (g/dL) – Not Acutely Ill | Hemoglobin (g/dL) – Acutely Ill | Hematocrit (%) – Not Acutely Ill | Hematocrit (%) – Acutely Ill |
@@ -4653,18 +4654,18 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#transfusion-thresh
 | DOL 8–14 | 8.5 | 10 | 25 | 30 |
 | DOL ≥ 15 | 7 | 9 | 21 | 27 |
 
-## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blooc Cell (pRBC) Transfusion › 3. Transfusion Volume
+## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blood Cell (pRBC) Transfusion › 3. Transfusion Volume
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#transfusion-volume
 
 - **Standard**: 10–15 mL/kg over 4 hours.
 - If 20 mL/kg is required: Consider splitting into two 10 mL/kg aliquots, each over 4 hours (total 8 hours).
 
-## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blooc Cell (pRBC) Transfusion › 4. NPO Practice
+## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blood Cell (pRBC) Transfusion › 4. NPO Practice
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#npo-practice
 
 - Keep NPO for **1 hour before and 1 hour after** transfusion.
 
-## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blooc Cell (pRBC) Transfusion › 5. Transfusion Routes
+## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.3 Packed Red Blood Cell (pRBC) Transfusion › 5. Transfusion Routes
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#transfusion-routes
 
 - UVC
@@ -4688,9 +4689,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#procedure
 ## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.7 Order Blood for Transfusion
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#sec-order-prbc
 
-- The **BPAM BLOOD TRANSFUSION (ML) LESS THAN 20-30 KG BODY WEIGHT** Order Set should be used when ordering any blood product and will automatically prompt you to enter all the information needed, so you should not have to write a separate “transfuse” order.
+- The **BPAM BLOOD TRANSFUSION (ML) LESS THAN 20-30 KG BODY WEIGHT** order set should be used when ordering any blood product and will automatically prompt you to enter all the information needed, so you should not have to write a separate “transfuse” order.
 
-- In the case of emergency blood, we are still able to obtain uncross matched O- PRBCs from blood bank WITHOUT an order, within 20 minutes.
+- In the case of emergency blood, we are still able to obtain uncrossmatched O- PRBCs from blood bank WITHOUT an order, within 20 minutes.
 - Please remember to document “Yes” under the Informed Consent Obtained section (unless it is an emergency transfusion and/or there was a reason that informed consent was not obtained). This is the section that the nurses reference to ensure that this has been done prior to beginning the transfusion and they document acknowledgement of that as well in their Flowsheet.
 
 Click [Here](https://fschou-pxt.github.io/RMC-NICU-Manual/files/90867%20BPAM.MDWorkflow.JA.2.22.21.pdf) to view and download the workflow PDF.\
@@ -4702,7 +4703,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#sec-emergency-bloo
 TWO FORMS TO FILL OUT:
 
 1.  Emergency Blood Release/Waiver Form ([Download here](https://fschou-pxt.github.io/RMC-NICU-Manual/files/Emergency%20Blood%20Release%20Waiver%20Form.pdf))\
-2.  Blodo Order/Release During Hemorrhage Protocol Form ([Download here](https://fschou-pxt.github.io/RMC-NICU-Manual/files/Blood%20Order%20Release%20HP%20v9.pdf))
+2.  Blood Order/Release During Hemorrhage Protocol Form ([Download here](https://fschou-pxt.github.io/RMC-NICU-Manual/files/Blood%20Order%20Release%20HP%20v9.pdf))
 
 ## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.8 Emergency Blood Release › Emergency Blood Release/Waiver Form
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#emergency-blood-releasewaiver-form
@@ -4712,17 +4713,17 @@ This needs a patient sticker and is walked down to blood bank by a member of the
 ## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.8 Emergency Blood Release › Blood Order/Release Hemorrhage Protocol Form
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#blood-orderrelease-hemorrhage-protocol-form
 
-This is more of a prompt that the nurse will need to follow when calling blood blank. It gives them all the information they need to initiate preparing blood/blood products.
+This is more of a prompt that the nurse will need to follow when calling blood bank. It gives them all the information they need to initiate preparing blood/blood products.
 
 ## 18 Hematology & Oncology › 18.3 Anemia of Prematurity Management for ELGAN/ELBW › 18.3.8 Emergency Blood Release › Procedures
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#procedures
 
-- Physician decide baby needs blood/blood products, calculates the amount and tells the nurse.
+- Physician decides baby needs blood/blood products, calculates the amount and tells the nurse.
 - Nurse collects/fills out Blood Order/Release Hemorrhage Protocol Form. Follow process instructions. (Once blood bank is notified prbc should be at bedside w/n 30 minutes, plt and FFP w/n 40 minutes).
-- Nurse obtains Emergency Blood Release/Waiver, places patient sticker on form and **walks it down** to blood blank.
+- Nurse obtains Emergency Blood Release/Waiver, places patient sticker on form and **walks it down** to blood bank.
 - Physician to place orders/fill out appropriate forms after patient stable enough to do so.
 
-## 18 Hematology & Oncology › 18.4 Hypercoagulability Work-Up › 18.4.1 Blood tests
+## 18 Hematology & Oncology › 18.4 Hypercoagulability Workup › 18.4.1 Blood tests
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#blood-tests
 
 - Protein C/S
@@ -4736,7 +4737,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#blood-tests
 ## 18 Hematology & Oncology › 18.5 Vitamin K Administration at Birth › 18.5.1 AAP policy statement summary
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#aap-policy-statement-summary
 
-[Click to open the policy statment](https://doi.org/10.1542/peds.2021-056036)
+[Click to open the policy statement](https://doi.org/10.1542/peds.2021-056036)
 
 **Summary and Recommendations**
 
@@ -4807,7 +4808,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#evaluating
   - Contact Genetics with any abnormal results.\
   - Leftover DNA is usually available for further/future testing for several months, so if in doubt as to what else to order, draw an extra tube and send two tubes for microarray.\
   - Order Chromosome analysis (not microarray) when a particular trisomy (T13, T18, T21) is suspected.\
-  - Order FISH when a rapid diagnosis is needed. *Note*: specify the probe needed for aneuploidy (13, 18, 21, X, Y), 22q, etc..\
+  - Order FISH when a rapid diagnosis is needed. *Note*: specify the probe needed for aneuploidy (13, 18, 21, X, Y), 22q, etc.\
 - Obtain a Family history by personally interviewing the family:
   - Ask about consanguinity, infertility, miscarriages, affected relatives.
     - *Do not copy and paste from the mother’s OB note*!\
@@ -4833,7 +4834,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#evaluating
 - Request inpatient Genetics consult when the following 3 criteria are met:
   - Criteria 1:
     - There are two or more anomalies, *or*\
-    - There is one anomaly and a postivie family history, *or*\
+    - There is one anomaly and a positive family history, *or*\
     - There is an unexpected pathogenic microarray or newborn screening result.\
   - Criteria 2:
     - Basic work-up listed above is complete, *or*
@@ -4872,7 +4873,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#abdominal-
 - Omphalocele Incidence of 3 per 5,000:
   - Male:female: 1.5:1.\
 
-  - > 70% associated with congenital anomalies such as bowel atresia, imperforated anus.
+  - > 70% associated with congenital anomalies such as bowel atresia, imperforate anus.
 
   - Look for a syndromic etiology in infants with omphalocele:
     - Maternal diabetes mellitus.\
@@ -4904,7 +4905,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#abdominal-
 - Head US.\
 - Other GI or GU imaging as requested by surgery.
 
-**Physical Rxamination**
+**Physical Examination**
 
 - Examine for dysmorphic features: macroglossia, ear creases, and/or posterior indentations (BWS).\
 - Describe the abdominal wall defect, including the location of the defect, size of the defect, contents of sac if present, umbilical cord size, vessels.\
@@ -4955,7 +4956,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#arthrogryp
 
 **Physical Examination**
 
-- Examine for cleft palate, jaw, including when intubated o Alert, tone, reflexes, fasciculations.\
+- Examine for cleft palate, jaw, including when intubated.
+- Alert, tone, reflexes, fasciculations.\
 - Position and number of contractures.
   - Policeman’s tip position of arms: extended elbow, internally rotated at the shoulder, and flexed at the wrist is typical of amyoplasia, a clinical diagnosis that responds well to physical therapy.\
 - Document presence/absence of flexural creases.
@@ -4969,20 +4971,20 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#arthrogryp
 
 - Seek anomalies in other organ systems, especially brain and spinal cord.
   - Order **MRI of the brain and spinal cord**.\
-- Skeletal survey if concerns for keletal dysplasia, chondrodysplasia.
+- Skeletal survey if concerns for skeletal dysplasia, chondrodysplasia.
 
 **Orders**
 
 - TORCH titers and PCR and other congenital infections.\
 - CK.\
 - SNP chromosomal microarray.\
-- Prioritize PT, OT Avoid immobilizing joints.
+- Prioritize PT, OT. Avoid immobilizing joints.
 
 **Genetics Consult**
 
 - Request inpatient Genetics consult when:
   - Severe involvement of several joints, positive family history, the microarray is abnormal, anomalies in other organ systems are present.\
-- Refer an outpatient Genetics appointment when:
+- Refer for an outpatient Genetics appointment when:
   - Mild presentation.\
   - Family history is negative, and the microarray is pending.
 
@@ -5063,7 +5065,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#congenital
 
 - Consider the type of cardiac lesion, extracardiac anomalies, and family history in determining the best testing strategy. See Table below:
 
-Source: Geddes GC, et al.. *Curr Opin Pediatr*. 2018 Dec;30(6):707-713. [\[Link\]](10.1097/MOP.0000000000000682)
+Source: Geddes GC, et al. *Curr Opin Pediatr*. 2018 Dec;30(6):707-713. [\[Link\]](10.1097/MOP.0000000000000682)
 
 - SNP chromosomal microarray is the first-line genetic test for all patients with complex or syndromic CHD, including patients with HLHS and heterotaxy.\
 - Conventional chromosome analysis is the first-line genetic test for all patients suspected of aneuploidy, with reflex testing for microarray if normal.
@@ -5071,7 +5073,7 @@ Source: Geddes GC, et al.. *Curr Opin Pediatr*. 2018 Dec;30(6):707-713. [\[Link\
   - *Note*: In the absence of Trisomy 13, 18, 21, and Monosomy X, the yield for conventional chromosome analysis in CHD is low: 1.6%.\
 - Consider single gene analysis when the pattern of anomalies suggests a particular monogenic disorder. Examples:
   - Order gene analysis for TSC1 and TSC2 for Tuberous sclerosis when there is a congenital intracardiac rhabdomyoma.\
-  - Order gene analysis for DHCR7 for Smith Lemli Opitz syndrome when anomalies suggest Smith Lemli Opitz syndrome and 7-dehydrocholesterol is elevated.\
+  - Order gene analysis for DHCR7 for Smith-Lemli-Opitz syndrome when anomalies suggest Smith-Lemli-Opitz syndrome and 7-dehydrocholesterol is elevated.\
   - Order gene analysis for TAZ for Barth syndrome in a male with neutropenia and an X-linked pattern of familial cardiomyopathy.\
 - Consider a Cardiogenetic gene panel for heterotaxy and when a syndromic form of CHD is not suspected or when CHD is familial.\
 - Consider Genomic testing (whole exome or whole genome) when microarray results are normal or nondiagnostic, and a pattern of multiple anomalies suggests an uncharacterized syndrome.\
@@ -5098,7 +5100,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#choanal-at
 
 **Background**
 
-- Narrowing or blockage of the rear of nasal passage, usually bony, sometimes membranous o Associated anomalies are seen in about 50%.\
+- Narrowing or blockage of the rear of nasal passage, usually bony, sometimes membranous.
+- Associated anomalies are seen in about 50%.\
 - The prognosis depends on the underlying anomalies/syndrome.
 
 **Family History**
@@ -5133,7 +5136,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#clubfoot
 
 **Pregnancy History**
 
-- Document first pregnancy, early amniocentesis or chorionic villous sampling, bicornuate uterus, poor or restricted fetal movement, breech delivery, oligohydramnios, twin or multiple gestations, maternal diabetes, maternal obesity, tobacco or other teratogen exposure.
+- Document first pregnancy, early amniocentesis or chorionic villus sampling, bicornuate uterus, poor or restricted fetal movement, breech delivery, oligohydramnios, twin or multiple gestations, maternal diabetes, maternal obesity, tobacco or other teratogen exposure.
 
 **Physical Examination**
 
@@ -5173,7 +5176,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#patau-synd
 - Incidence \~ 1/5000 live births; The 3^rd^ most common aneuploidy.\
 - It is associated with advanced maternal age.\
 - Morbidity and mortality are very high.\
-- 75% caused by an extra copy of chromosome 13 causes; \~ 20% due to Robertsonian translocation 13; 5% due to other chromosome 13 anomalies.\
+- 75% caused by an extra copy of chromosome 13; \~ 20% due to Robertsonian translocation 13; 5% due to other chromosome 13 anomalies.\
 - Very poor prognosis (median survival time is 7-10 days): \* > 50% fetal *in utero* demise.\
   \* 25% of live borns die in the first few days.\
   \* \~ 10% survive one year.
@@ -5193,8 +5196,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#patau-synd
 - Check for nuchal translucency ultrasound abnormalities.\
 - Cell-free fetal DNA (cff-DNA) sensitivity is 96 % for Trisomy 13, and a false positive rate of < 0.06%:
   - Less accurate and lower PPV than Trisomy 21 and Trisomy 18.\
-- Evaluate for associated anomalies for Trisomy 18 on detailed ultrasound.\
-- Obtain a copy of results confirming diagnostic on prenatal diagnostic testing: Amniocentesis or CVS is the **gold standard**.
+- Evaluate for associated anomalies for Trisomy 13 on detailed ultrasound.\
+- Obtain a copy of results confirming the diagnosis on prenatal diagnostic testing: Amniocentesis or CVS is the **gold standard**.
 
 **Imaging Studies**
 
@@ -5235,7 +5238,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#patau-synd
 - Evaluate all major organs to identify a range of anomalies.\
 - Communication with family as soon as the diagnosis is known is essential. Communicate to family clearly and in patient-friendly language about the prognosis, diagnosis, and services to be involved. Establish rapport and offer support and offer bereavement and palliative care services.
 - Prenatal diagnosis is helpful for a multidisciplinary team approach and family counseling about prognosis. Present a balanced approach of options, including the family’s wishes.\
-- There are no specific treatment for Trisomy 13. Each patient should be evaluated individually, and a multidisciplinary team set up based on findings.\
+- There are no specific treatments for Trisomy 13. Each patient should be evaluated individually, and a multidisciplinary team set up based on findings.\
 - Genetics consultations can help guide management when the family decision is to pursue treatment and/or mosaic cases.
 
 **References**
@@ -5268,7 +5271,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#edwards-sy
 - Check for nuchal translucency ultrasound abnormalities.\
 - Cell-free fetal DNA (cff-DNA) sensitivity is 97 % for Trisomy 18 and a false positive rate of < 0.041%.\
 - Evaluate for associated anomalies for Trisomy 18 on detailed ultrasound.\
-- Obtain a copy of results confirming diagnostic on prenatal diagnostic testing: Amniocentesis or CVS.
+- Obtain a copy of results confirming the diagnosis on prenatal diagnostic testing: Amniocentesis or CVS.
 
 **Imaging Studies**
 
@@ -5331,7 +5334,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#down-syndr
 **Pregnancy History**
 
 - Document maternal and paternal ages.\
-- Document results of maternal screening tests: maternal serum state screening, nuchal translucency measurement, non-invasive prenatal screeing (NIPS), or prenatal diagnostic testing such as a chorionic villus sampling (CVS) or amniocentesis and obtain a copy of those test results.
+- Document results of maternal screening tests: maternal serum state screening, nuchal translucency measurement, non-invasive prenatal screening (NIPS), or prenatal diagnostic testing such as a chorionic villus sampling (CVS) or amniocentesis and obtain a copy of those test results.
 
 **Imaging Studies**
 
@@ -5341,7 +5344,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#down-syndr
   - Cardiac defects (40-50%), particularly AVSD.\
   - Duodenal atresia or “double bubble”.\
   - Hydrops is a common cause of late fetal demise.\
-- Echocardiogram on every chid with DS prior to discharge, whether they have a murmur or not.
+- Echocardiogram on every child with DS prior to discharge, whether they have a murmur or not.
 
 **Physical Examination**
 
@@ -5349,7 +5352,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#down-syndr
 - Face: round, upslanting palpebral fissures, epicanthal folds, flat midface, small ears (<3^rd^ percentile) with an overfolded superior aspect of the helices, open mouth, downturned corners of the mouth, protruding tongue, **theatrical grimace**.\
 - Eye: strabismus, lacrimal duct obstruction, congenital cataract (5%).\
 - Hands: 5^th^ finger clinodactyly, single flexion crease (do not use the term simian crease), and short middle phalanx, broad hand with transverse palmar crease.\
-- Feet: sandal gap, deep plantar crease o GI anomalies: Duodenal atresia (3%), Hirschsprung disease, imperforate anus.\
+- Feet: sandal gap, deep plantar crease.
+- GI anomalies: Duodenal atresia (3%), Hirschsprung disease, imperforate anus.\
 - Neuro: hypotonia.
 
 **Orders**
@@ -5404,7 +5408,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#turner
 
 **Physical Examination**
 
-- Short stature, nuchal webbing, cupped ears, low posterior hairline, coarctation of the aorta or other LVOTO defect such as HLHS, shield-shaped chest, increased carrying angle at the elbows, short fourth metacarpals, pedal edema o Most girls with Turner syndrome are NOT diagnosed at birth.\
+- Short stature, nuchal webbing, cupped ears, low posterior hairline, coarctation of the aorta or other LVOTO defect such as HLHS, shield-shaped chest, increased carrying angle at the elbows, short fourth metacarpals, pedal edema.
+- Most girls with Turner syndrome are NOT diagnosed at birth.\
 - DO NOT discount the diagnosis of Turner syndrome just because there is no pedal edema or nuchal webbing.
 
 **Imaging Studies**
@@ -5415,7 +5420,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#turner
 **Orders**
 
 - Consider Turner syndrome in all females with LVOTO defects or other suggestive anomalies.
-  - *Note*: Females with Turner syndrome can manifest X-linked recessive disorders such as hemophilia, Duchene muscular dystrophy.\
+  - *Note*: Females with Turner syndrome can manifest X-linked recessive disorders such as hemophilia, Duchenne muscular dystrophy.\
 - Chromosome analysis is the preferred test.
   - Add FISH for X and Y chromosomes when the cytogenetic result is pure 45,X to rule out a Y-bearing cell line, which increases the risk for gonadoblastoma unless gonads are removed.\
   - The microarray can detect deletions but may miss mosaicism or balanced translocations.\
@@ -5455,7 +5460,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#klinefelte
 
 - Non-invasive prenatal testing or screening (NIPS) identifies otherwise asymptomatic infants with sex chromosome aneuploidy, including KS.
   - NIPS was initially offered to women for advanced maternal age (AMA) and is now commonly offered to all pregnant women.\
-- A positive NIPS test should be confirmed with chromosome analysis, either prenatally, with invasive testing by amniocentesis or chorionic villous sampling, or postnatally, with a blood sample.
+- A positive NIPS test should be confirmed with chromosome analysis, either prenatally, with invasive testing by amniocentesis or chorionic villus sampling, or postnatally, with a blood sample.
 
 **Physical Examination**
 
@@ -5575,7 +5580,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#wolf-hirsc
 
 - Obtain detailed family history, including birth defects, seizure, intellectual disability, multiple miscarriages, stillborns, or other family members with a diagnosis of WHS.\
 - 45% of WHS is caused by unbalanced translocation when one parent carries a balanced translocation. Recurrence risk is high for balanced translocation carriers.\
-- A molecular diagnosis with a **microarray** of affected relatives and parents important for accurate recurrence risks.\
+- A molecular diagnosis with a **microarray** of affected relatives and parents is important for accurate recurrence risks.\
 - 55% of WHS are *de novo* mutations or other rare chromosomal 4 defects.
 
 **Prenatal History**
@@ -5597,7 +5602,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#wolf-hirsc
 - GU malformations and skeletal structural defects.\
 - Late-onset: > 90% have seizures, 65% have severe intellectual disability, delayed developmental delays, poor expressive language.
 
-**Imaging Studied**
+**Imaging Studies**
 
 - Obtain a copy of prenatal imaging studies, including anatomy scan and fetal echocardiogram, if available.\
 - Obtain a Fetal MRI if available. \~80% have structural brain anomalies.\
@@ -5605,7 +5610,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#wolf-hirsc
 
 **Orders**
 
-- Collect postnatal samples for chromosome microarray to identity appropriate breakpoints. FISH may miss 5% of deletions detectable on the microarray.\
+- Collect postnatal samples for chromosome microarray to identify appropriate breakpoints. FISH may miss 5% of deletions detectable on the microarray.\
 - Follow up with karyotype if microarray fails to detect translocation WHS.\
 - **Sleep study**.\
 - Evaluate for syndromic features as required: ECG; Abdominal US; BUN,cr, analysis; dilated Eye exam. Refer to appropriate specialists as needed.
@@ -5629,7 +5634,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#cri-du-cha
 
 **Background**
 
-- Deletion of distal chromosome 5p ranging 560 Kilobase > 40 megabase in size.\
+- Deletion of distal chromosome 5p ranging from 560 kilobases to > 40 megabases in size.\
 - Incidence 1 in 15,000 to 50,000 live borns.\
 - Female predominance with female:male ratio of 2:1.\
 - Facial dysmorphology and intellectual disabilities associated with genes involved in 5p15.2.\
@@ -5663,7 +5668,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#cri-du-cha
   - Cardiac anomalies \~30%.\
   - Renal anomalies \~18%.\
   - CNS anomalies \~30%.\
-- Late diagnosis is associated with with Low IQ, developmental delays, neurodevelopmental delays.
+- Late diagnosis is associated with Low IQ, developmental delays, neurodevelopmental delays.
 
 **Imaging Studies**
 
@@ -5725,9 +5730,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#q11.2-dele
 - Cardiac anomalies (>75%): Most conotruncal, septal defects, Tetralogy of Fallot (20%), interrupted aortic arch type B, right aortic arch, truncus arteriosus, vascular rings (5%).\
 - Limbs: Long slender fingers, clubfeet and camptodactyly not uncommon, occasional postaxial polydactyly.\
 - Skeletal: Scoliosis, vertebral anomalies.\
-- GI: Abnormal swallowing, dysmotility, nasopharyngeal regurgitation, constipation, Hirschprung disease, imperforate anus, malrotation, diaphragmatic hernia, tracheoesophageal fistula.\
-  o Renal (30%): Agenesis, multicystic dysplastic kidneys.\
-  o Hearing loss: Conductive, sensorineural.
+- GI: Abnormal swallowing, dysmotility, nasopharyngeal regurgitation, constipation, Hirschsprung disease, imperforate anus, malrotation, diaphragmatic hernia, tracheoesophageal fistula.\
+- Renal (30%): Agenesis, multicystic dysplastic kidneys.\
+- Hearing loss: Conductive, sensorineural.
 
 **Imaging studies**
 
@@ -5751,7 +5756,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#q11.2-dele
   - Avoid live vaccines until T cell numbers have normalized. Consider an Immunology referral.\
   - Use **irradiated blood products** at the surgery until immune competency can be ascertained.\
 - Anticipate feeding problems, especially postoperatively.
-  - Offer occulational therapy and speech therapy.\
+  - Offer occupational therapy and speech therapy.\
   - At discharge, refer to the infant development program, utilize growth charts specific to 22q11.2 deletion syndrome.\
 - Refer to support groups: [International 22q11.2 Foundation](https://www.22q.org/), [22q and You Center at the Children’s Hospital of Philadelphia](https://www.chop.edu/centers-programs/22q-and-you-center).
 
@@ -5820,7 +5825,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#cf
 
 **Background**
 
-- It is important to dx CF early to optimize the outcome o CA newborn screening program for CF.
+- It is important to dx CF early to optimize the outcome.
+- CA newborn screening program for CF.
   - Step 1: Immunoreactive Trypsinogen (IRT) on a blood spot.\
   - Step 2: Those in the **top 2.2%** of IRT have blood spots tested for the \~70 most prevalent CFTR mutations in CA (in 2020).\
   - Step 3: When only one common CFTR pathogenic variant is found, then one blood spot sent for CFTR gene sequencing.\
@@ -5944,12 +5950,12 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#dsd
 
 **Family History**
 
-- Ask about consanguinity, infertility, miscarriages, infertility, infant or childhood deaths, other affected individuals (ask other males with hypospadias), excess females (androgen insensitivity).\
+- Ask about consanguinity, infertility, miscarriages, infant or childhood deaths, other affected individuals (ask other males with hypospadias), excess females (androgen insensitivity).\
 - Examine parents: hirsutism or virilization in the mother may indicate an adrenal producing tumor (arrhenoblastoma) or mild congenital adrenal hyperplasia in her.
 
 **Pregnancy History**
 
-- Ask about maternal drug ingestion, especially. in the first trimester (virilization in agonadal female).\
+- Ask about maternal drug ingestion, especially in the first trimester (virilization in agonadal female).\
 - Note prenatal diagnosis testing, antenatal treatment for congenital adrenal hyperplasia with dexamethasone.
 
 **Imaging**
@@ -5960,7 +5966,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#dsd
 
 - Describe external genitalia: micropenis (stretched penile length<2.5cm in a term newborn), location of the urethral meatus, hypospadias, rugae, pigment, fusion or masses in labioscrotal folds, cryptorchidism, introitus, size and shape of clitoris, inguinal hernia, cloacal exstrophy.
   - Rule of thumb: a palpable gonad is a testis.\
-- Note other organ system involvement: small size with bent long bones (Campomelic dysplasia), features of Turner syndrome (45,X/46, XY. mosaicism), aniridia, Wilms tumor (WAGR), hyperpigmentation and possible penile enlargement (in males), salt-wasting, hypertension (congenital adrenal hyperplasia, 21 hydroxylase deficiency), 2-3 syndactyly of toes, cleft palate, small thumbs (Smith-Lemli-Opitz syndrome).
+- Note other organ system involvement: small size with bent long bones (Campomelic dysplasia), features of Turner syndrome (45,X/46,XY mosaicism), aniridia, Wilms tumor (WAGR), hyperpigmentation and possible penile enlargement (in males), salt-wasting, hypertension (congenital adrenal hyperplasia, 21-hydroxylase deficiency), 2-3 syndactyly of toes, cleft palate, small thumbs (Smith-Lemli-Opitz syndrome).
 
 **Orders**
 
@@ -6008,7 +6014,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#facial-pal
   - Poland sequence: unilateral absent pectoralis major muscle and ipsilateral small hand.\
   - CHARGE syndrome: coloboma, heart disease, choanal atresia, growth retardation, genital anomalies, and ear anomalies.
     - **Micropenis** with **facial palsy** is CHARGE syndrome until proven otherwise.\
-  - Oculo-auriculo-vertebral spectrum including hemifacial microsomia/Goldenhar disease: affects 1^st^ and 2^nd^ brachial arches resulting in unilateral or bilateral ear, eye, and vertebral anomalies, sometimes with cerebral, renal, or ocular anomalies.\
+  - Oculo-auriculo-vertebral spectrum including hemifacial microsomia/Goldenhar disease: affects 1^st^ and 2^nd^ branchial arches resulting in unilateral or bilateral ear, eye, and vertebral anomalies, sometimes with cerebral, renal, or ocular anomalies.\
   - 22q11 deletion syndrome: heart defects (75%), palatal abnormalities (70-75%), immune deficiency (75%), hypocalcemia (50%), significant feeding problems (30%),renal anomalies (40%).
 
 **Imaging**
@@ -6035,13 +6041,13 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#fetal-alco
 
 **Background**
 
-- Fetal Alcohol Spectrum Disorder (FASD) is a non-diagnostic term that encompasses all manifestation of prenatal alcohol exposure, includes:
+- Fetal Alcohol Spectrum Disorder (FASD) is a non-diagnostic term that encompasses all manifestations of prenatal alcohol exposure, includes:
   - Fetal alcohol syndrome (FAS).\
   - Partial FAS.\
   - Alcohol-related neurodevelopmental disorder.\
   - Alcohol-related birth defects.\
   - Prenatal alcohol exposure (PAE).\
-- Incidence FASD is almost 1% in the US: 9/1,000 live births.
+- Incidence of FASD is almost 1% in the US: 9/1,000 live births.
   - FAS 0.5-2/1,000 in the US.
 
 **Family History**
@@ -6112,8 +6118,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#holoprosen
   - Milder: semilobar and lobar HPE.
     - In semilobar HPE, there is some division of the hemispheres posteriorly but none anteriorly.\
     - In lobar HPE, there is a lack of separation of the hemispheres ventrally, the splenium and corpus callosum are present. The middle interhemispheric variant is less common.\
-  - Microforms: hypotelorism, anosmia, solitary median maxillary central incisor (SMMCI), choanal atresia, lack of upper midline frenulum, anosmia.\
-- Heterogenous etiology:
+  - Microforms: hypotelorism, anosmia, solitary median maxillary central incisor (SMMCI), choanal atresia, lack of upper midline frenulum.\
+- Heterogeneous etiology:
   - Chromosome abnormalities (in about 40%).\
   - Teratogens: including poorly controlled maternal diabetes.\
   - Monogenic multiple malformation syndromes (in \~ 25%): e.g., Smith-Lemli-Opitz syndrome, Pallister-Hall syndrome, Meckel syndrome.\
@@ -6151,7 +6157,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#holoprosen
 
 **Laboratory Studies**
 
-- Chromosome analysis when Trisomy (esperially Trisomy 13 or Trisomy 18) is suspected.\
+- Chromosome analysis when Trisomy (especially Trisomy 13 or Trisomy 18) is suspected.\
 - Chromosome microarray analysis for all others.
   - If normal, order a gene panel test for holoprosencephaly (check with lab send-out for current contracted labs).\
 - **Electrolytes and urine specific gravity/osmolality**.
@@ -6174,7 +6180,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#hydrocepha
 
 - It is defined as congenital or early infantile pathological accumulation of CSF within the ventricles and subarachnoid spaces of the brain that causes intracranial hypertension leading to accelerated head growth.
   - It is generally obstructive, progressive, and usually requires surgical intervention.\
-- The incidence is 3 in 1,000 live births; male predominate, with male:female ratio of 2.4:1.\
+- The incidence is 3 in 1,000 live births; male predominance, with male:female ratio of 2.4:1.\
 - Approximately 55% of all hydrocephalus is congenital.\
 - Among cases without a clear etiology, approximately 1/3 are non-syndromic, and 2/3 are syndromic.\
 - To be distinguished from hydranencephaly:
@@ -6218,14 +6224,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#hydrocepha
     - Isolated ventriculomegaly: 9.5%.\
     - Ventriculomegaly with other congenital anomalies: 37.9%.\
     - Severe ventriculomegaly (> 15mm): 66%.\
-    - Chromosome deletions include 1p36, 2q37, 6p, 6q, trisomy 9, diploid/triploid mosaicism, triplody.\
+    - Chromosome deletions include 1p36, 2q37, 6p, 6q, trisomy 9, diploid/triploid mosaicism, triploidy.\
   - Chromosome breakage studies \[with diepoxybutane (DEB)\] when there are VATER-like anomalies with hydrocephaly.\
   - Consider *L1CAM* gene testing for aqueductal stenosis in a male with adducted thumbs and a positive family history of hydrocephaly in the maternal lineage.
 
 **Consults**
 
 - Ophthalmology for suspected congenital infection to document retinal changes or hemorrhage and to rule out cataracts or other helpful ocular findings.\
-- Nuerosurgery for surgical management.
+- Neurosurgery for surgical management.
 
 **Genetics Consult**
 
@@ -6242,7 +6248,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#macrocepha
 
 **Background**
 
-- Macrocephaly is defined as an head circumference > 2 SD above the mean, adjusted for sex and gestational age. Relative macrocephaly is a normal head circumference for sex and gestational age that is disproportionately greater than expected for the baby’s weight and length.
+- Macrocephaly is defined as a head circumference > 2 SD above the mean, adjusted for sex and gestational age. Relative macrocephaly is a normal head circumference for sex and gestational age that is disproportionately greater than expected for the baby’s weight and length.
 
 **Family History**
 
@@ -6261,11 +6267,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#macrocepha
 
 **Physical Examination**
 
-- Document Z-score (SD above or below the mean) for head circumerence and other growth parameters based on sex and gestational age.\
+- Document Z-score (SD above or below the mean) for head circumference and other growth parameters based on sex and gestational age.\
 - Examine for additional features:
   - Small size at birth: Russell-Silver syndrome.\
   - Short stature due to skeletal dysplasia: Achondroplasia.\
-  - Macrosomia: Sotos syndrome, Cerebral Gigantism, Simpson-Golabi ysndrome, Weaver syndrome.\
+  - Macrosomia: Sotos syndrome, Cerebral Gigantism, Simpson-Golabi syndrome, Weaver syndrome.\
   - Hemangiomas or vascular/capillary malformations: Megalencephaly-capillary malformation syndrome (MCAP), Bannayan-Riley-Ruvalcaba syndrome.\
   - Café-au-lait spots: Neurofibromatosis.\
   - Polydactyly: Gorlin syndrome.\
@@ -6356,10 +6362,10 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#microcepha
 **Genetics Consult**
 
 - Request inpatient Genetics consult when at least one of the following is present:
-  - HC is ≤ -3 SD below the mean other anomalies are present (SGA, dysmorphic, CNS anomalies), or microarray is abnormal.\
+  - HC is ≤ -3 SD below the mean, other anomalies are present (SGA, dysmorphic, CNS anomalies), or microarray is abnormal.\
   - There is a history of teratogenic exposure, maternal infection, or disease, or consanguinity.\
 - Refer for outpatient Genetics clinic appointment at two months of age when:
-  - Microcephaly is mild (head circumeference is between -2 SD and -3 SD below the mean),\
+  - Microcephaly is mild (head circumference is between -2 SD and -3 SD below the mean),\
   - Family history is negative for consanguinity or other similarly affected individuals,\
   - The infant is not dysmorphic and has no functional impairment, AND\
   - Neuro exam is normal.\
@@ -6389,7 +6395,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#microtia
 - Examine for the following features:
   - Microcephaly: Mandibulofacial dysostosis with microcephaly.\
   - Facial palsy, choanal stenosis/atresia, colobomas: CHARGE syndrome.\
-  - Macrostomia, facial asymmetry, micrognathia, epibulbar dermoid (pay attention to conjunctival surfaces in inner and outer canthi: Goldenhar syndrome.\
+  - Macrostomia, facial asymmetry, micrognathia, epibulbar dermoid (pay attention to conjunctival surfaces in inner and outer canthi): Goldenhar syndrome.\
   - Downslanting palpebral fissures, notched lower lids, depressed zygomatic arches: Treacher-Collins syndrome.\
 - Document external ear anomalies:
   - Atresia of external auditory meatus.\
@@ -6438,7 +6444,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#clefts
 - Cleft lip with or without cleft palate is more common in **males** than in females, with male-to-female ratio of 2:1.
   - Bilateral cleft lip with or without cleft palate in a *female* infant is more likely to be syndromic.\
   - Unilateral (especially left-sided) cleft lip with or without cleft palate in a male is least likely to be syndromic.\
-  - Midline cleft lip with or without cleft palate is the rarest for in either sex.\
+  - Midline cleft lip with or without cleft palate is the rarest form in either sex.\
 - Cleft palate alone is more common in **females**, with a female-to-male ratio of 2:1.
   - **22q11 deletion syndrome** (see [Microdeletion Syndrome](https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#microdeletion)) and **Stickler syndrome** are the most frequently associated syndromes.\
   - Cleft palate in *male* is more likely to be syndromic.
@@ -6478,7 +6484,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#clefts
 
 - Echocardiogram.\
 - Abdominal ultrasound:
-  - If renal anomalies identified, suspect 22q11 deletion syndrome..\
+  - If renal anomalies identified, suspect 22q11 deletion syndrome.\
 - Head ultrasound.
 
 **Orders**
@@ -6544,7 +6550,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#ntd
 - Evaluate for neurogenic bladder and bowel.\
 - Refer to the multidisciplinary Spina Bifida Center.\
 - Recommend maternal folic acid supplementation (4 mg/day) in future pregnancies, starting a few months prior to conception into the first trimester.\
-  \[Consider adding initial NICU managment, including positioning, covering of the lesion, fluid, etc.\]
+  \[Consider adding initial NICU management, including positioning, covering of the lesion, fluid, etc.\]
 
 ## 19 Genetic Disorders (LLUCH NICU Manual) › 19.22 Osteogenesis Imperfecta
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#oi
@@ -6599,8 +6605,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#oi
 - Osteogenesis Imperfecta gene panel.
 - Hearing screen *early* (do not wait till discharge).
   - Hearing loss is common (due to ankylosis of ossicles & osteosclerosis).\
-- For OI. type II, request Palliative Care consult.\
-- For OI. types I, III, and IV, refer to PT and orthopedic surgery.
+- For OI type II, request Palliative Care consult.\
+- For OI types I, III, and IV, refer to PT and orthopedic surgery.
   - Bisphosphonate therapy has been used with success in OI Type III.\
 - At discharge, provide parents with *a letter for ED physicians explaining the diagnosis of OI, and increased risk of fractures*. \[Consider adding a letter template here\]
 
@@ -6623,7 +6629,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#macrosomia
 **Background**
 
 - Large size for gestational age is defined as a birth weight > 90^th^ percentile.
-  - 1% of newborns has a BW > 4,500 grams.\
+  - 1% of newborns have a BW > 4,500 grams.\
   - Note that an LGA preterm baby may be misidentified as AGA and term when dates have been “corrected” during pregnancy.
 
 **Family History**
@@ -6635,24 +6641,24 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#macrosomia
 **Pregnancy History**
 
 - Document the absence or presence of the following:
-  - *In vitro* fertilization: Beckwith-Weidemann syndrome.\
-  - Long umbilical cord: Beckwith-Weidemann syndrome.\
+  - *In vitro* fertilization: Beckwith-Wiedemann syndrome.\
+  - Long umbilical cord: Beckwith-Wiedemann syndrome.\
   - Maternal diabetes. Check HbA1~c~.\
   - Post dates.\
   - Excess maternal weight gain in pregnancy.\
-  - Polyhydramnios, long umbilical cord: Beckwith-Weidemann syndrome.\
+  - Polyhydramnios, long umbilical cord: Beckwith-Wiedemann syndrome.\
 - Request placental pathology.
-  - Mesenchymal dysplasia: helpful sign in mild or preterm Beckwith-Weidemann syndrome.
+  - Mesenchymal dysplasia: helpful sign in mild or preterm Beckwith-Wiedemann syndrome.
 
 **Physical Examination**
 
 - Examine for the following features:
-  - Macroglossia, posterior ear pits/indentations, hypoglycemia, umbilical hernia, hemihyperplasia: Beckwith-Weidemann syndrome.\
+  - Macroglossia, posterior ear pits/indentations, hypoglycemia, umbilical hernia, hemihyperplasia: Beckwith-Wiedemann syndrome.\
   - Macrocephaly, tall forehead, hypotonia: Sotos syndrome.\
   - Ear anomaly, cardiac anomaly: Infant of diabetic mother.\
   - Vascular malformations.\
   - Segmental overgrowth of a limb: Klippel-Trenaunay-Weber syndrome.\
-  - Diaphragmatic hernia: Palliser-Killian syndrome, Simpson-Golabi syndrome.\
+  - Diaphragmatic hernia: Pallister-Killian syndrome, Simpson-Golabi syndrome.\
   - Marked enlargement of kidneys: Perlman syndrome.\
   - Bulky fatty mass, hemangiomas: CLOVES syndrome.\
   - Megalencephaly, CNS anomalies, cutaneous vascular malformations, digital anomalies: Megalencephaly-capillary malformation syndrome (MCAP).\
@@ -6661,7 +6667,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#macrosomia
 **Imaging Studies**
 
 - Obtain an abdominal US in all infants with overgrowth.
-  - When macroglossia, hemihypertrophy, or nephromegaly is present, follow renal US for Wilm’s tumor q 3mo until Beckwith-Weidemann syndrome has been ruled out.\
+  - When macroglossia, hemihypertrophy, or nephromegaly is present, follow renal US for Wilms tumor q 3mo until Beckwith-Wiedemann syndrome has been ruled out.\
 - Evaluate for other anomalies: echocardiogram, brain imaging.
 
 **Orders**
@@ -6676,7 +6682,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#macrosomia
 
 - Request inpatient Genetics consult when:
   - Other anomalies are present, a syndrome is suspected, or microarray is abnormal.\
-  - The abdominal US reveals organomegaly or Wilm’s tumor.\
+  - The abdominal US reveals organomegaly or Wilms tumor.\
   - Debulking surgery is being considered.\
 - Refer for outpatient Genetics clinic appointment when:
   - Mild features.\
@@ -6687,7 +6693,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#skeletal-d
 
 **Background**
 
-- There are more than 450 heritable disorders of bone that causes disproportionate short stature and generalized abnormalities of cartilage and bone; not all have been characterized.\
+- There are more than 450 heritable disorders of bone that cause disproportionate short stature and generalized abnormalities of cartilage and bone; not all have been characterized.\
 - A skeletal dysplasia does NOT generally cause proportionate short stature.
   - Consider SHOX deletion.\
 - The first concern in the immediate newborn period is *viability*, and the main issue is *respiratory insufficiency* due to small chest size and pulmonary hypoplasia or restriction.\
@@ -6807,10 +6813,10 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#sga-iugr
   - Microcephaly and beaked nose: Seckel syndrome.\
   - Macroglossia and neonatal hyperglycemia: Transient neonatal DM.\
   - Microtia: Meier-Gorlin syndrome.\
-  - Triangular face, fifth finger clinodactyly, limb asymmetry: Russel-Silver syndrome.\
+  - Triangular face, fifth finger clinodactyly, limb asymmetry: Russell-Silver syndrome.\
   - Disproportionate short stature: Skeletal dysplasias, Three M syndrome.\
   - Hypospadias: severe early IUGR, IMAGe syndrome.\
-  - Cleft palate, polydactyly, 2-3 syndactyly of toes: Smith-Lemli Opitz syndrome.\
+  - Cleft palate, polydactyly, 2-3 syndactyly of toes: Smith-Lemli-Opitz syndrome.\
   - 3-4 syndactyly of fingers: Triploidy.
 
 **Orders**
@@ -6819,7 +6825,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#sga-iugr
   - When microarray is abnormal, test parents as recommended in the report.\
   - When microarray reveals homozygosity, consider autosomal recessive trait:
     - Gene panel.\
-    - Trio whole-exomesequencing.\
+    - Trio whole-exome sequencing.\
   - When microarray is normal, consider:
     - methylation testing for uniparental disomy (chr 6, 7, 11, 14, 16).\
     - 7-dehydrocholesterol (for suspected Smith-Lemli-Opitz syndrome).\
@@ -6944,12 +6950,12 @@ DO NOT OFFER or recommend resuscitation. Please refer to the [NICHD Extremely Pr
 ## 20 Periviability › 20.2 Antenatal Consult › GA22w0d-22w6d
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/periviability.html#ga22w0d-22w6d
 
-Counsel parents regarding NICHD statistics AND KPSD NICU/region statistics. In general **discourage against resuscitation/intervention**, but after counseling with NICU, if parents opt for it, then perinatology team will administer steroids and discuss other interventions such as tocolysis, mag for neuroprotection, fetal monitoring and c/s (also classical) if clinically indicated and write plan in chart for OB MD providers. perinatology team will offer everything if patients elect for resuscitation.
+Counsel parents regarding NICHD statistics AND KPSD NICU/region statistics. In general **discourage resuscitation/intervention**, but after counseling with NICU, if parents opt for it, then perinatology team will administer steroids and discuss other interventions such as tocolysis, mag for neuroprotection, fetal monitoring and c/s (also classical) if clinically indicated and write plan in chart for OB MD providers. Perinatology team will offer everything if patients elect for resuscitation.
 
 ## 20 Periviability › 20.2 Antenatal Consult › GA23w0d-23w6d
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/periviability.html#ga23w0d-23w6d
 
-Counsel parents regarding NICHD statistics AND KPSD NICU/region statistics. After counseling with NICU, if parents opt for it, then perinatology team will administer steroids and discuss other interventions such as tocolysis, mag for neuroprotection, fetal monitoring and c/s (also classical) if indicated and write plan in chart for OB MD providers. perinatology team will offer everything if patients elect for resuscitation. Parents may elect to NOT intervene/resuscitate until 24 weeks.
+Counsel parents regarding NICHD statistics AND KPSD NICU/region statistics. After counseling with NICU, if parents opt for it, then perinatology team will administer steroids and discuss other interventions such as tocolysis, mag for neuroprotection, fetal monitoring and c/s (also classical) if indicated and write plan in chart for OB MD providers. Perinatology team will offer everything if patients elect for resuscitation. Parents may elect to NOT intervene/resuscitate until 24 weeks.
 
 ## 20 Periviability › 20.2 Antenatal Consult › ≥GA24w0d
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/periviability.html#ga24w0d
@@ -6996,10 +7002,10 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/periviability.html#weeks-ga
 # 21 VLBW/ELGAN/ELBW Infants
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html
 
-## 21 VLBW/ELGAN/ELBW Infants › Rouding Sheet
+## 21 VLBW/ELGAN/ELBW Infants › Rounding Sheet
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#sec-small-baby-rounding-sheet
 
-[\[Download the Rouding Sheet here\]](files/RIVERSIDE%20NICU%20ELGAN%20ROUNDING%20SHEET.pdf)
+[\[Download the Rounding Sheet here\]](files/RIVERSIDE%20NICU%20ELGAN%20ROUNDING%20SHEET.pdf)
 
 ## 21 VLBW/ELGAN/ELBW Infants › 21.1 Thermoregulation and Heat Loss Prevention › Labor & Delivery / OR
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#labor-delivery-or
@@ -7091,7 +7097,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#indication
 Any of the following:
 
 - BW ≤ 1,500g
-- Same-sex if chorionic status not known
+- Monochorionic twins/multiples (same-sex if chorionic status not known)
 
 ## 21 VLBW/ELGAN/ELBW Infants › 21.4 Screening › Thyroid screening › Timing
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#timing
@@ -7134,25 +7140,26 @@ Any of the following:
 ## 21 VLBW/ELGAN/ELBW Infants › 21.4 Screening › Retinopathy of prematurity › Timing
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#timing-2
 
-| Gestational Age at Birth, wk | Age at Initial Examination, wk |
-| --- | --- |
-| Postmenstrual | Chronologic |
-| 22 (a) | 31 |
-| 23 (a) | 31 |
-| 24 | 31 |
-| 25 | 31 |
-| 26 | 31 |
-| 27 | 31 |
-| 28 | 32 |
-| 29 | 33 |
-| 30 | 34 |
-| Older gestational age, high-risk factors (b) |  |
-| Shown is a schedule for detecting prethreshold ROP with 99% confidence, usually before any required treatment. |  |
+| Gestational Age at Birth, wk | Postmenstrual Age at Initial Examination, wk | Chronologic Age at Initial Examination, wk |
+| --- | --- | --- |
+| 22 (a) | 31 | 9 |
+| 23 (a) | 31 | 8 |
+| 24 | 31 | 7 |
+| 25 | 31 | 6 |
+| 26 | 31 | 5 |
+| 27 | 31 | 4 |
+| 28 | 32 | 4 |
+| 29 | 33 | 4 |
+| 30 | 34 | 4 |
+| Older gestational age, high-risk factors (b) | — | 4 |
 
 Note
 
-a.  This guideline should be considered tentative rather than evidence-based for infants with a gestational age of 22 to 23 wk because of the small number of survivors in these postmenstrual-age categories.
-b.  Consider timing based on severity of comorbidities.\
+Shown is a schedule for detecting prethreshold ROP with 99% confidence, usually before any required treatment.
+
+\(a\) This guideline should be considered tentative rather than evidence-based for infants with a gestational age of 22 to 23 wk because of the small number of survivors in these postmenstrual-age categories.
+
+\(b\) Consider timing based on severity of comorbidities.\
 
 ## 21 VLBW/ELGAN/ELBW Infants › 21.4 Screening › Retinopathy of prematurity › Eye exam medications
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#sec-rop-exam-meds
@@ -7170,13 +7177,13 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#for-all-elgan-and-el
 
 - Obtain Type & Screen with confirmation ON ADMISSION
   - one specimen from cord blood
-  - one speciment from umbilical line during line placement
+  - one specimen from umbilical line during line placement
 - Obtain blood transfusion consent ON ADMISSION
 
 ## 21 VLBW/ELGAN/ELBW Infants › 21.5 Blood transfusion › Ordering blood product
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#ordering-blood-product
 
-1.  Use the BPAM orderset
+1.  Use the BPAM order set
 
 [](https://fschou-pxt.github.io/RMC-NICU-Manual/Figures/ordering-blood-product-step1.png)
 
@@ -7242,9 +7249,9 @@ Attendance: NICU RN, RT and MD
 ## 22 Delivery Room Management › 22.1 Delivery Room Attendance › Level III: complex resuscitation
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/DR.html#level-iii-complex-resuscitation
 
-Attendance: 2 NICU RN, RT, and MD
+Attendance: 2 NICU RNs, RT, and MD
 
-- 2 RNs & 2RTs **required** for <25 weeks GA unless staffing shortage
+- 2 RNs & 2 RTs **required** for <25 weeks GA unless staffing shortage
 - 2 RNs & 2 RTs recommended for 25 - 27 weeks GA
 - Hydrops with projected need for tapping
 - Multiple congenital defects
@@ -7269,9 +7276,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/DR.html#labor-delivery-or
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/DR.html#delayed-cord-clamping
 
 - All infants who emerged with active tone should receive delayed cord clamping for at least 30 sec unless:
-  - Mono/di twins with TTTS or significant fetal wegith deiscrepency
+  - Mono/di twins with TTTS or significant fetal weight discrepancy
   - Mono/mono twins
-  - Need immediate evaluation and/or resuscitation (e.g., placenal abruption)
+  - Need immediate evaluation and/or resuscitation (e.g., placental abruption)
 
 # 23 Surgical/Derm/Ophtho Considerations
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/surgical.html
@@ -7282,7 +7289,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/surgical.html#sec-cleft
 **Follow-up arrangement**
 
 - Consult genetics for workup.
-- Consult craniofacal team at West LA for feeding and follow-up instructions
+- Consult craniofacial team at West LA for feeding and follow-up instructions
   - Dr. Trevor Hoffman\
     +1-949-233-8009 (team contact)\
     +1-323-857-2368 (clinic)
@@ -7291,19 +7298,19 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/surgical.html#sec-cleft
 
 - make an inpatient Occupational Therapy referral for all cleft babies for a cleft feeding assessment.
 - Newborns with isolated cleft lip can breastfeed, but we still recommend occupational therapy and lactation involvement.\
-- Newborns with cleft palate need extensive feeding support, including cleft-specific bottle systems. This is provided prenatally and all Kaiser NICU’s have inhouse supplies.
+- Newborns with cleft palate need extensive feeding support, including cleft-specific bottle systems. This is provided prenatally and all Kaiser NICUs have in-house supplies.
 - Cleft infants may need extra inpatient days to establish metabolically effective feeding.
   - Babies feeding less than 30 ml each feed after 3 days are at risk for poor weight gain.
-- Consider using fortified breast milk or 22-Kcal concentrated formula if cleft baby not adequately gaining weight after several days of occupational therapy-lead feeding.
+- Consider using fortified breast milk or 22-kcal concentrated formula if cleft baby not adequately gaining weight after several days of occupational therapy-led feeding.
   - This is usually continued until cleft surgical repair.
 - Please make sure you have consulted with an experienced OT, communicate with Dr. Guillen, Craniofacial Speech Coordinator, or place an outpatient referral/Dr. Advice to the craniofacial team prior to placing a G-Tube.
 - Close coordination with the baby’s primary pediatrician and frequent weight checks are vital as the babies are discharged home. Please consider getting them directly involved as discharge approaches.
-- Cleft babies with underlying cardiac genetic conditions or prematurity are at higher risk for poor weigh gain and warrant close follow up.
-- Please include several Haiku photos of the baby’s cleft- the frontal view, lateral view and worms eye view from below are extremely helpful to determine if oral orthosis/orthodontic care or taping is indicated.\
+- Cleft babies with underlying cardiac genetic conditions or prematurity are at higher risk for poor weight gain and warrant close follow up.
+- Please include several Haiku photos of the baby’s cleft- the frontal view, lateral view and worm’s-eye view from below are extremely helpful to determine if oral orthosis/orthodontic care or taping is indicated.\
 - Please call or place a tapestry referral for all cleft babies to the Regional Cleft & Craniofacial Team before discharge. Note this requires an outpatient order only encounter to West LA Plastic Surgery subcategory craniofacial. This will allow us to see the referral even while baby is in hospital and set up a telephone visit with the family.
 - Cleft babies may have more feeding and weight gain concerns around 4-6 months of age as the jaw and oral structure changes. If you are starting to see an emerging concern, please contact the team for assistance.
 
-The SoCal Regional Cleft & Craniofacial Team exists exclusively to support you and our cleft babies/families. Please feel free to contact Bernardo Duran, RN, Craniofacial Nurse Case Manager. Phone number: (323) 857- 2368.
+The SoCal Regional Cleft & Craniofacial Team exists exclusively to support you and our cleft babies/families. Please feel free to contact Bernardo Duran, RN, Craniofacial Nurse Case Manager. Phone number: (323) 857-2368.
 
 Dr. Adriana M. Guillen, DBH: Regional Speech Coordinator Craniofacial Team\
 Dr. Stacey Francis, MD: Regional Craniofacial Surgical Director\
@@ -7319,11 +7326,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/surgical.html#kpsc-presentatio
 ## 23 Surgical/Derm/Ophtho Considerations › 23.1 Surgery › Pierre Robin Sequence and Mandibular Distraction › Ordering CT scan for surgical planning
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/surgical.html#sec-ct-jaw
 
-##### Order name: CT head and facial bonrs, non-contrast
+##### Order name: CT head and facial bones, non-contrast
 
 **Paste the following comments in the Comments box**
 
-CT scan head and facial bones, non contrast, vertex to menton, thin 1 mm slices, using Stryker protocol. Need measurements mandibular rami. Stryker protocol as follows:
+CT scan head and facial bones, non-contrast, vertex to menton, thin 1 mm slices, using Stryker protocol. Need measurements of mandibular rami. Stryker protocol as follows:
 
 STRYKER PROTOCOL FOR CF RECONSTRUCTION
 
@@ -7334,12 +7341,12 @@ Please follow Stryker protocol below:
 
 Patient positioning:
 
-- Head Alignment: Remain straight in neutral position. No oblique angle of locator/survery lines.\
+- Head Alignment: Remain straight in neutral position. No oblique angle of locator/survey lines.\
 - Gantry Tilt: 0 degree tilt.
 
 Scan length/Field of View:
 
-- Scan length: For cranial defects, encompass the entrie skull, including at least 2 slices superior to skull\
+- Scan length: For cranial defects, encompass the entire skull, including at least 2 slices superior to skull\
 - FOV: Select FOV to include all surrounding anatomy
 
 Scanning process:
@@ -7418,7 +7425,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/vaccine.html#hepatitis-b-vacci
 
 - At birth if infant’s birth weight ≥ 2,000g\
 - At 30 days of life if infant’s birth weight < 2,000g\
-  *The 2-kg criteria has been disregarded*
+  *The 2-kg criterion has been disregarded*
 
 ## 24 Vaccine schedule › 24.2 2-month vaccine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/vaccine.html#month-vaccine
@@ -7427,8 +7434,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/vaccine.html#month-vaccine
 - PCV
 - HiB
 
-## 24 Vaccine schedule › 24.3 RSV prophylaxis with nirsevemab
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/vaccine.html#rsv-prophylaxis-with-nirsevemab
+## 24 Vaccine schedule › 24.3 RSV prophylaxis with nirsevimab
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/vaccine.html#rsv-prophylaxis-with-nirsevimab
 
 - Refer to [Section 7.6.1](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-nirsevemab)
 
@@ -7654,14 +7661,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#ampicilli
     - > 7 days: 75 mg/kg/dose q 12hrs IV.\
   - GA > 34 weeks:
     - ≤ 7 days: 50 mg/kg/dose q 8hrs IV.\
-    - > 7 days: 50 mg/kg/day q 8hrs IV.
+    - > 7 days: 50 mg/kg/dose q 8hrs IV.
 - Regular dosing for GBS meningitis *[2019 AAP Clinical Report](https://doi.org/10.1542/peds.2019-1881)*:
   - GA ≤ 34 weeks:
     - ≤ 7 days: 100 mg/kg/dose q 8hrs IV.\
     - > 7 days: 75 mg/kg/dose q 6hrs IV.\
   - GA > 34 weeks:
     - ≤ 7 days: 100 mg/kg/dose q 8hrs IV.\
-    - > 7 days: 75 mg/kg/day q 6hrs IV.
+    - > 7 days: 75 mg/kg/dose q 6hrs IV.
 - Prophylaxis for urinary tract abnormality
   - 30-50 mg/kg/dose PO q 24hrs (or use amoxicillin)
 - *Note*: Remember, even 200 mg/kg/day is a “meningitic dose”, so avoid the use of the term “septic dose”.
@@ -7676,61 +7683,62 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#ampicilli
   - Severe infection: 200-400 mg/kg/day IV divided q 12hrs.\
   - *Note*: change interval to q 8hrs after 1 week of life; q6hrs after 1 month of life.\
 - Dosing based on ampicillin component:
-  - *X* mg amipicillin equivalent dose = *1.5X* mg ampicillin/sulbactam dose.
+  - *X* mg ampicillin equivalent dose = *1.5X* mg ampicillin/sulbactam dose.
 
-\### AquADEKs® (multivitamins with water-soluble ADEK & minerals)
+## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.19 AquADEKs® (multivitamins with water-soluble ADEK & minerals)
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#aquadeks-multivitamins-with-water-soluble-adek-minerals
 
 - Regular dosing for cholestasis:
   - < 4.5 kg: 0.5 mL PO q 12hrs.\
   - ≥ 4.5 kg: 1 mL PO q 12hrs.
 
-## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.19 Aqua-E® (water-soluble vitamin E)
+## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.20 Aqua-E® (water-soluble vitamin E)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#aqua-e-water-soluble-vitamin-e
 
 - Regular dosing for cholestasis:
-  - > 3 kg only: 1 mL PO divided 12 hrs
+  - > 3 kg only: 1 mL PO divided q 12 hrs
 
-## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.20 arginine chloride
+## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.21 arginine chloride
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#arginine-chloride
 
 - Starting dose for metabolic alkalosis: 1 mL/kg/dose PO q 3-6hrs.
   - May dose according to Cl needs.
   - 1 mL provides 100 mg arginine + 0.475 mEq \\(Cl\^{-}\\) & \\(H\^{+}\\).
 
-## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.21 aspirin
+## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.22 aspirin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#aspirin
 
 - Regular dosing for thrombophilia: 5 mg/kg/dose PO q 24hrs.\
 - Regular dosing for anticoagulation: 5-10 mg/kg/dose PO q 24hrs.
 
-## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.22 antithrombin III (AT-3)
+## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.23 antithrombin III (AT-3)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#antithrombin-iii-at-3
 
 - used for ECMO patients or patients on enoxaparin (Lovenox®) therapy.
 
-## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.23 atropine
+## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.24 atropine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#atropine
 
 - Regular dosing: 0.01-0.03 mg/kg/dose SC/IM/IV/ETT.
   - May repeat q 2-4hrs.
 
-## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.24 azithromycin
+## Appendix A — LLUCH NICU Formulary › A.3 A › A.3.25 azithromycin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#azithromycin
 
 - Regular dosing for ureaplasma or pertussis: 10 mg/kg/day IV q 24hrs for 5-10 days.\
-- \[Add dosing for chlamydia/gonorhea infections\]
+- \[Add dosing for chlamydia/gonorrhea infections\]
 
 ## Appendix A — LLUCH NICU Formulary › A.4 B › A.4.1 bevacizumab (Avastin®) intravitreal injection
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#bevacizumab-avastin-intravitreal-injection
 
-- Regularing dosing: 0.625 mg/dose for each eye.\
+- Regular dosing: 0.625 mg/dose for each eye.\
 - *Note*: pharmacy to dispense 0.5 mL per Ophthalmology request.
 
 ## Appendix A — LLUCH NICU Formulary › A.4 B › A.4.2 bicitra (Na citrate)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#bicitra-na-citrate
 
 - Regular dosing: 1 mEq/kg/dose PO q 6hrs.\
-- *Note*: 1 mL provides 1 mEq \\(Na\^{+}\\), 1 mEq \\(HCO\_{3}\^{-}\\) equivalent).
+- *Note*: 1 mL provides 1 mEq \\(Na\^{+}\\), 1 mEq \\(HCO\_{3}\^{-}\\) equivalent.
 
 ## Appendix A — LLUCH NICU Formulary › A.4 B › A.4.3 bosentan (suspension)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#bosentan-suspension
@@ -7791,7 +7799,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#carbamaze
 ## Appendix A — LLUCH NICU Formulary › A.5 C › A.5.8 carnitine (L carnitine)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#carnitine-l-carnitine
 
-- Regular dosing for PO: 150-200 mg/k/day PO divided q 4-6hrs.\
+- Regular dosing for PO: 150-200 mg/kg/day PO divided q 4-6hrs.\
 - Regular dosing for IV: 50 mg/kg/day IV divided q 4-6hrs or 24-hr infusion.
 
 ## Appendix A — LLUCH NICU Formulary › A.5 C › A.5.9 cefazolin (Ancef®)
@@ -7890,7 +7898,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#chlorothi
 ## Appendix A — LLUCH NICU Formulary › A.5 C › A.5.19 cholestyramine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#cholestyramine
 
-- Regularing dosing for diarrhea: 2 g PO q 3-6hrs with feeds (max dose 4 g PO q 6hrs with feeds).
+- Regular dosing for diarrhea: 2 g PO q 3-6hrs with feeds (max dose 4 g PO q 6hrs with feeds).
 
 ## Appendix A — LLUCH NICU Formulary › A.5 C › A.5.20 cod liver oil
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#cod-liver-oil
@@ -7986,11 +7994,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#dopamine
 - Regular dosing: 2.5-15 microgram/kg/min (max dose 20 microgram/kg/min).\
 - *NOTE*: NOT to be administered via UAC or arterial line.
 
-## Appendix A — LLUCH NICU Formulary › A.7 E › A.7.1 enealapril (Vasotec®)
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#enealapril-vasotec
+## Appendix A — LLUCH NICU Formulary › A.7 E › A.7.1 enalapril (Vasotec®)
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#enalapril-vasotec
 
 - Regular dosing for hypertension: 5-10 microgram/kg/dose IV q 8-24hrs over 5 min.
-- Regular dosing for congestive heart failure: 0.1 mg/kg/day PO divded q 12-24hrs (max dose 0.43 mg/kg/day).
+- Regular dosing for congestive heart failure: 0.1 mg/kg/day PO divided q 12-24hrs (max dose 0.43 mg/kg/day).
   - Consult Cardiology for dosing co-management.
   - *Note*: ACE inhibitor can increase \\(K\^{+}\\) and/or cause acidosis.
 
@@ -8004,8 +8012,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#enoxapari
   - < 8 weeks of age: 1.5 mg/kg/dose SQ q 12hrs.
   - ≥ 8 weeks of age: 1 mg/kg/dose SQ q 12hrs.
 - Tips:
-  - Round dose up or down to th enearest 0.5mg so the volume conversion is easier for the pharmacy.\
-  - Order LMX-4 to be appplied to the site 30-60 min prior to injections.
+  - Round dose up or down to the nearest 0.5mg so the volume conversion is easier for the pharmacy.\
+  - Order LMX-4 to be applied to the site 30-60 min prior to injections.
 - Titration:
   - By **anti-Xa** levels (0.5-1.5 IU/mL).\
   - Check levels 4 hrs after a dose is given.
@@ -8026,7 +8034,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#enoxapari
 ## Appendix A — LLUCH NICU Formulary › A.7 E › A.7.3 epinephrine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#epinephrine
 
-*Use Standard Concentration Infusions for drips IV drip*
+*Use Standard Concentration Infusions for drips*
 
 - Regular dosing for resuscitation:
   - 0.1-0.3 mL/kg (0.1 mg/mL) IV.\
@@ -8120,7 +8128,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#fluconazo
 ## Appendix A — LLUCH NICU Formulary › A.8 F › A.8.5 flumazenil
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#flumazenil
 
-- Starting dose for benzodiazepine antagonist: 0.01 mg/kg/ose IV over 15 sec (max dose 0.2mg).
+- Starting dose for benzodiazepine antagonist: 0.01 mg/kg/dose IV over 15 sec (max dose 0.2mg).
 - may repeat q 60sec up to a cumulative dose of 0.05 mg/kg or 1mg, whichever is lower.
 
 ## Appendix A — LLUCH NICU Formulary › A.8 F › A.8.6 fosphenytoin
@@ -8138,7 +8146,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#furosemid
   - PO: 1-4 mg/kg/day PO divided q 12-24hrs.\
   - IV: 1-2 mg/kg/dose IV q 12hrs (≥ 29 weeks GA) or q 24hrs (< 29 weeks GA).\
   - IV drip: Loading with 0.1mg/kg/dose IV followed by 0.1 mg/kg/hr (max dose 0.4 mg/kg/hr).
-- *Note*: Interaction between furosemide and ACE inhibitor may increase \\(K\^{+}\\) and/or acidosis. Remember that furosemide is also a PAGE agonist.
+- *Note*: Interaction between furosemide and ACE inhibitor may increase \\(K\^{+}\\) and/or acidosis. Remember that furosemide is also a PGE agonist.
 
 ## Appendix A — LLUCH NICU Formulary › A.9 G › A.9.1 ganciclovir
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#ganciclovir
@@ -8158,23 +8166,23 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#gentamici
     - ≥ 29 days: 5 mg/kg/dose q 24hrs.\
   - GA 30–34 weeks:
     - ≤ 14 days: 5 mg/kg/dose q 36hrs.\
-    - ≥ 15 day: 5 mg/kg/dose q 24hrs.\
+    - ≥ 15 days: 5 mg/kg/dose q 24hrs.\
   - GA ≥ 35 weeks:
     - ≤ 7 days: 4 mg/kg/dose q 24hrs.\
     - ≥ 8 days: 5 mg/kg/dose q 24hrs.\
-- Regular dosing duirng therapeutic hyperthermia: 5 mg/kg/dose q 36hrs.\
+- Regular dosing during therapeutic hypothermia: 5 mg/kg/dose q 36hrs.\
 - Monitor levels:
   - Peak: 5-10 microgram/mL is acceptable.\
   - Trough:
     - After the second dose *for most infants* being treated > 48 hrs.
-    - After 24 hrs for infants with severe infections, asphyxia, PDA, or renal failure. If a 24-hr trough is done, choose the next doing interval as follows:
+    - After 24 hrs for infants with severe infections, asphyxia, PDA, or renal failure. If a 24-hr trough is done, choose the next dosing interval as follows:
     - 24-hr trough level ≤ 1: q 24hrs.\
     - 24-hr trough level 1.1-2.3: q 36hrs.
     - 24-hr trough level 2.4-3.2: q 48hrs.\
     - *Note*: if level > 3: check level before next dose.\
   - For gentamicin toxicity, give ticarcillin to deactivate gentamicin.\
 - *Note*:
-  - AVOID use with other ototoixic/nephrotoxic medications.\
+  - AVOID use with other ototoxic/nephrotoxic medications.\
   - DO NOT order levels if uncertain about continuing beyond 48hrs unless a 24-hr trough level is deemed clinically necessary.\
   - Dosing for inhalational use is available [here](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#med-ih).
 
@@ -8245,8 +8253,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#hydroxyzi
 - ≥ 44 weeks GA: 50 mg/day PO divided q 6hrs (NOT per kg).\
 - *Note*: Use injectable form for PO dosing.
 
-## Appendix A — LLUCH NICU Formulary › A.11 I › A.11.1 iLEX (petroleum polyermized)
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#ilex-petroleum-polyermized
+## Appendix A — LLUCH NICU Formulary › A.11 I › A.11.1 iLEX (petroleum polymerized)
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#ilex-petroleum-polymerized
 
 - Apply a thick layer topically to skin breakdown in the diaper area or around the stoma site. May leave in place ≥ 24 hrs.\
 - Order to remove with mineral oil ONLY.
@@ -8260,7 +8268,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#imipenem
   - < 1.2 kg: 20mg/kg/dose IV q 18-24hrs.\
   - 1.2-1.5 kg: 20 mg/kg/dose IV q 12hrs.\
   - > 1.5 kg: 25 mg/kg/dose IV q 12hrs (≤ 1 week of life), or 25 mg/kg/dose IV q 8hrs (> 1 week of life). \[Need to verify\]\
-- Regular doing for maningitis: 25 mg/kg/ dose IV q 6hrs.
+- Regular dosing for meningitis: 25 mg/kg/ dose IV q 6hrs.
 
 ## Appendix A — LLUCH NICU Formulary › A.11 I › A.11.3 indomethacin (Indocin)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#indomethacin-indocin
@@ -8270,7 +8278,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#indometha
 - Dosing for IVH prophylaxis: 0.2 mg/kg/dose for 1 dose administered within 6 hrs of age.
   - ONLY for infants born < 27 weeks GA.
   - Check with the attending physician before ordering.\
-- Dosing for [PDA closure](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#pda): 0.2 mg/kg/dose q 12hs for 4 doses, may repeat for 2 more doses within 24 hrs of last dose.
+- Dosing for [PDA closure](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#pda): 0.2 mg/kg/dose q 12hrs for 4 doses, may repeat for 2 more doses within 24 hrs of last dose.
   - Echocardiogram or CCHD screening prior to PDA closure is required to rule out ductal-dependent CHD or pulmonary hypertension, as in both cases, indomethacin would be contraindicated.\
   - Refer to [Patent Ductus Arteriosus](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#pda) for details and protocol.
 
@@ -8287,16 +8295,16 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#insulin
     - 0.5 grams glucose: 5 mL D10W or 2 mL D25W.\
   - IV drip: 0.1 unit/kg in 1 g/kg/hr glucose.
     - 1 gram glucose: 10 mL D10W or 4 mL D25W.\
-- *Note*: Discontinue when \\(K\^{+}\\) > 7 mEq/L.
+- *Note*: Discontinue when \\(K\^{+}\\) < 7 mEq/L.
 
 ## Appendix A — LLUCH NICU Formulary › A.11 I › A.11.5 iron (oral)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#iron-oral
 
 - Regular dosing for infants born ≥ 37 weeks GA: 1 mg/kg/day.\
 - Regular dosing for infants born < 37 weeks GA: 2-4 mg/kg/day.\
-- Dosing while on epoetin (Epogen^%reg;^): 6 mg/kg/day.\
+- Dosing while on epoetin (Epogen^®^): 6 mg/kg/day.\
 - *Note*:
-  - Infants on iron-fortified formula are receiving around 2 mg/kg/day formula.\
+  - Infants on iron-fortified formula are receiving around 2 mg/kg/day from formula.\
   - Hold iron supplementation for 1 week after a PRBC transfusion.\
   - Fer-In-Sol®: 15mg/mL elemental iron.\
   - Poly-Vi-Sol®: 10mg/mL elemental iron.
@@ -8309,8 +8317,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#iron-dext
 ## Appendix A — LLUCH NICU Formulary › A.11 I › A.11.7 IVIG
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#ivig
 
-- Regular dosing for hemolytic disease: 1 g/kg/dose IV to infuse over 4 hrs (periphearl or central).\
-- *Note*: Delay immunizations with life-virus vaccines until > 3 months after IVIG administration (i.e. Rotavirus, MMR, Varicella).
+- Regular dosing for hemolytic disease: 1 g/kg/dose IV to infuse over 4 hrs (peripheral or central).\
+- *Note*: Delay immunizations with live-virus vaccines until > 3 months after IVIG administration (i.e. Rotavirus, MMR, Varicella).
 
 ## Appendix A — LLUCH NICU Formulary › A.12 K › A.12.1 kayexalate (sodium polystyrene)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#kayexalate-sodium-polystyrene
@@ -8319,7 +8327,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#kayexalat
   - Minimum retention of 30 minutes.\
   - Should lower K+ levels by 1 mEq/L.\
   - *Note*: DO NOT use it on patients with NEC or bowel obstruction.\
-  - *Note*: Use with caution in VLBW infants (prone to bowel hypomobility).
+  - *Note*: Use with caution in VLBW infants (prone to bowel hypomotility).
 
 ## Appendix A — LLUCH NICU Formulary › A.12 K › A.12.2 ketamine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#ketamine
@@ -8377,7 +8385,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#magnesium
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#magnesium-sulfate
 
 - Regular dosing for hypomagnesemia: 0.2-0.4 mEq/kg/dose IV q 4-6hrs for 3-4 doses.
-- Infants during the rewarming phase of therapeutic hypothermia is at risk for hypomagensemia.\
+- Infants during the rewarming phase of therapeutic hypothermia are at risk for hypomagnesemia.\
 - Need to monitor \\(Mg\^{2+}\\), \\(Ca\^{2+}\\), and \\(iCa\\) levels closely.
 
 ## Appendix A — LLUCH NICU Formulary › A.14 M › A.14.3 meperidine (Demerol®)
@@ -8427,15 +8435,16 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#micafungi
 ## Appendix A — LLUCH NICU Formulary › A.14 M › A.14.9 midazolam (Versed)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#midazolam-versed
 
-*Use Standard Concentrations Infusions for drips*
+*Use Standard Concentration Infusions for drips*
 
-- Regular dosing for sedation (scheduled/PRN dosing): 0.1-0.2 mg/kg/dose IV q2-4hrs PRN agitation. \* Regular dosing for sedation (continuous infusion): 30-60 microgram/kg/hr IV infusion.\
-- *Note*: Use very cautiously in ELBW infants, as midazolam may cause seizure and may have long-term negative neurodevelopment impact.
+- Regular dosing for sedation (scheduled/PRN dosing): 0.1-0.2 mg/kg/dose IV q2-4hrs PRN agitation.\
+- Regular dosing for sedation (continuous infusion): 30-60 microgram/kg/hr IV infusion.\
+- *Note*: Use very cautiously in ELBW infants, as midazolam may cause seizure and may have long-term negative neurodevelopmental impact.
 
 ## Appendix A — LLUCH NICU Formulary › A.14 M › A.14.10 milrinone
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#milrinone
 
-*Use Standard Concentrations Infusions for drips*
+*Use Standard Concentration Infusions for drips*
 
 - Regular dosing: 0.375-0.75 microgram/kg/min.
 
@@ -8443,19 +8452,19 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#milrinone
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#miralax
 
 - Regular dosing for constipation: start with 0.5 g/kg/day. May increase to 1 g/kg/day.\
-- *Note*: Make sure to provide sufficiency fluid.\
+- *Note*: Make sure to provide sufficient fluid.\
 - In case of constipation, consider trialing pear or prune juice first: 0.5-1 mL PO q 6-12hrs.
 
 ## Appendix A — LLUCH NICU Formulary › A.14 M › A.14.12 morphine sulfate
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#morphine-sulfate
 
-*Use Standard Concentrations Infusions for drips*
+*Use Standard Concentration Infusions for drips*
 
 - Regular dosing for analgesia/sedation (scheduled/PRN dosing): 0.05-0.1 mg/kg/dose IV/SQ q 4-6hrs PRN pain.\
 - Regular dosing for analgesia/sedation (continuous infusion): 5-40 microgram/kg/hr.
 
-## Appendix A — LLUCH NICU Formulary › A.14 M › A.14.13 morphine 2mg/mL (oral)
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#morphine-2mgml-oral
+## Appendix A — LLUCH NICU Formulary › A.14 M › A.14.13 morphine 0.4mg/mL (oral)
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#morphine-0.4mgml-oral
 
 - Regular dosing for analgesia: 0.2-0.6 mg/kg/dose PO q 4-6hrs PRN pain.\
 - For Neonatal Abstinence Syndrome:
@@ -8489,14 +8498,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#naloxone-
 ## Appendix A — LLUCH NICU Formulary › A.15 N › A.15.3 nitroprusside (Nipride)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#nitroprusside-nipride
 
-*Use Standard Concentration Infusions for drips IV Drip*
+*Use Standard Concentration Infusions for drips*
 
 - Regular dosing for hypertension: 0.3-6 microgram/kg/min IV infusion.
 
 ## Appendix A — LLUCH NICU Formulary › A.15 N › A.15.4 norepinephrine
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#norepinephrine
 
-*Use Standard Concentration Infusions for drips IV Drip*
+*Use Standard Concentration Infusions for drips*
 
 - Starting dose for hypotension: 0.05-0.1 microgram/kg/min, titrate as needed to maintain Bp at goal range.
 - *Note*: DO NOT give via UAC or other arterial line.
@@ -8504,7 +8513,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#norepinep
 ## Appendix A — LLUCH NICU Formulary › A.15 N › A.15.5 nystatin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#nystatin
 
-- Regular dosing for oral candidiasis: 100,000-400,000 units divided equally for each side of mounth q 6hrs. Give after feeds.\
+- Regular dosing for oral candidiasis: 100,000-400,000 units divided equally for each side of mouth q 6hrs. Give after feeds.\
 - Regular dosing for skin candidiasis: Topical ointment or cream to the affected area q 6hrs.\
 - *Note*: continue oral or topical application for 3 days after resolution of fungal infection.
 
@@ -8512,7 +8521,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#nystatin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#octreotide
 
 - Regular dosing for chylothorax: 1-7 microgram/kg/hr IV drip or in TPN.\
-- Regular dosing for hyperinsulinemia (scheduled dosing): 10 microgram/kg/day IV/SQ divided q 6hrs. Administer 1 hr after meals. May icnrease the dose up to 40 microgram/kg/day.\
+- Regular dosing for hyperinsulinemia (scheduled dosing): 10 microgram/kg/day IV/SQ divided q 6hrs. Administer 1 hr after meals. May increase the dose up to 40 microgram/kg/day.\
 - Regular dosing for hyperinsulinemia (continuous infusion): 1 microgram/kg/hr (may include in TPN).
 
 ## Appendix A — LLUCH NICU Formulary › A.16 O › A.16.2 omegaven
@@ -8522,7 +8531,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#omegaven
 - *Note*:
   - In infants with short bowel syndrome, may start omegaven if serum direct bilirubin level is > 2 mg/dL.
   - Administer to infants who are anticipated to require TPN for more than 2 weeks.\
-  - Consider discontnuation if serum direct blirubin is < 2 mg/dL and the infant is not at risk for recurrence anymore (off TPN and tolerating feeds).
+  - Consider discontinuation if serum direct bilirubin is < 2 mg/dL and the infant is not at risk for recurrence anymore (off TPN and tolerating feeds).
 
 ## Appendix A — LLUCH NICU Formulary › A.16 O › A.16.3 oseltamivir (Tamiflu®)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#oseltamivir-tamiflu
@@ -8542,12 +8551,12 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#palivizum
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.2 pantoprazole
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#pantoprazole
 
-- Regular dosing for acide suppression: 1-1.2 mg/kg/day IV q 24hrs.
+- Regular dosing for acid suppression: 1-1.2 mg/kg/day IV q 24hrs.
 
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.3 penicillin G
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#penicillin-g
 
-*Crystalline Pencillin G IV/IM*
+*Crystalline Penicillin G IV/IM*
 
 - Regular dosing for Gram(+) bacterial infection: 100,000-150,000 unit/kg/day IV/IM divided q 8-12hrs.\
 - Regular dosing for GBS bacteremia (same for all GA) *[2019 AAP Clinical Report](https://doi.org/10.1542/peds.2019-1881)*:
@@ -8560,29 +8569,29 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#penicilli
 
 *Procaine Penicillin G IM only*
 
-- Regular dosing for Gram-positive baterial infection: 50,000 unit/kg/day q 24hrs (max dose 1.2 million unit/kg/day).\
+- Regular dosing for Gram-positive bacterial infection: 50,000 unit/kg/day q 24hrs (max dose 1.2 million unit/kg/day).\
 - *Note*: Order LMX-4 to be applied to the injection site 30-60min prior to injection.
 
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.4 phenobarbital
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#phenobarbital
 
-- Starting dose for seizure: loading dose 10-20 mg/kg/ IV slow push, followed by maintenance dose 3-8 mg/kg/day IV/PO divided q 12hrs.\
-- Regular dosing for HIDA scan: 5 mg;kg;day for 5 days. NO loading dose.\
-- Regalar dosing for drug withdrawal: Refer to [Neonatal Drug Withdrawal](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#drug-withdrawal).
+- Starting dose for seizure: loading dose 10-20 mg/kg IV slow push, followed by maintenance dose 3-8 mg/kg/day IV/PO divided q 12hrs.\
+- Regular dosing for HIDA scan: 5 mg/kg/day for 5 days. NO loading dose.\
+- Regular dosing for drug withdrawal: Refer to [Neonatal Drug Withdrawal](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#drug-withdrawal).
 
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.5 phenylephrine (Neo-Synephrine 0.25%)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#phenylephrine-neo-synephrine-0.25
 
-- Regular dosing for nasal congestion: One drop each naris q 3hrs for tiral treatment only (no longer than q 48-72hrs).
+- Regular dosing for nasal congestion: One drop each naris q 3hrs for trial treatment only (no longer than 48-72 hrs).
 
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.6 phosphate
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#phosphate
 
 *Use Standard Concentration Infusions for drips*
 
-- Regular dosing for hypophosphotemia (continuous infusion): Provides 10 mg/kg/ phosphorus and 0.43 mEq/kg \\(Na\^{+}\\) over a 5-hr infusion.\
-- Regular dosing for hypophosphotemia (oral): PhosNaK 25-40 mg/kg/day divdided q 6-8hrs.
-  - *Note*: 25 mg PhosNaK provides 0.71 mEq \\(K\^{+}\\) and 0.71 meQ \\(Na\^{+}\\).\
+- Regular dosing for hypophosphatemia (continuous infusion): Provides 10 mg/kg phosphorus and 0.43 mEq/kg \\(Na\^{+}\\) over a 5-hr infusion.\
+- Regular dosing for hypophosphatemia (oral): PhosNaK 25-40 mg/kg/day divided q 6-8hrs.
+  - *Note*: 25 mg PhosNaK provides 0.71 mEq \\(K\^{+}\\) and 0.71 mEq \\(Na\^{+}\\).\
   - Consult dietitian for co-management.
 
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.7 phytonadione (vitamin K)
@@ -8622,7 +8631,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#poly-vi-s
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.12 potassium acetate
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#potassium-acetate
 
-- Regularing dosing for oral replacement: 1-3 mEq/kg/day PO divided q 12hrs.
+- Regular dosing for oral replacement: 1-3 mEq/kg/day PO divided q 12hrs.
   - 1 mL provides 2 mEq \\(K\^{+}\\), 2 mEq acetate.
 
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.13 potassium chloride
@@ -8640,14 +8649,14 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#potassium
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#prednisone
 
 - Regular dosing for airway reactivity: 0.5 mg/kg/dose PO q 6hrs (max dose 3 mg/kg/day).\
-- Regularing dosing for intractable hypoglycemia: 2-5 mg/kg/day PO divided q 6hrs.
+- Regular dosing for intractable hypoglycemia: 2-5 mg/kg/day PO divided q 6hrs.
 
 ## Appendix A — LLUCH NICU Formulary › A.17 P › A.17.15 propranolol
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#propranolol
 
 - Starting dose for cardiac indications (IV): 0.01 mg/kg/dose IV q 6-8hrs PRN based on cardiac parameters. Increase slowly to a max dose of 0.15 mg/kg/dose IV.\
 - Starting dose for cardiac indications (PO): 0.75-1 mg/kg/day PO divided q6-8hrs (max dose 5 mg/kg/day).\
-- Regular dosing for hemangioma: 0.5-1 mg/kg/day divdided q 8hrs, advance slowly over 3-5 days by 0.5 mg/kg/day to a target of 1-3 mg/kg/day. Adminiser with feeds.
+- Regular dosing for hemangioma: 0.5-1 mg/kg/day divided q 8hrs, advance slowly over 3-5 days by 0.5 mg/kg/day to a target of 1-3 mg/kg/day. Administer with feeds.
 
 ## Appendix A — LLUCH NICU Formulary › A.18 R › A.18.1 remodulin IV
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#remodulin-iv
@@ -8657,8 +8666,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#remodulin
 ## Appendix A — LLUCH NICU Formulary › A.18 R › A.18.2 rifampin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#rifampin
 
-- Regular dosing for synergy: 5-20 mg/kg/day IV divdied q 12hrs.
-- *Note*: use with vancomycin or aminoglycsides for persistet *staphylococcus* infection.
+- Regular dosing for synergy: 5-20 mg/kg/day IV divided q 12hrs.
+- *Note*: use with vancomycin or aminoglycosides for persistent *staphylococcus* infection.
 
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.1 sildenafil (Revatio®)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sildenafil-revatio
@@ -8676,13 +8685,13 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sodium-ac
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sodium-bicarbonate-4.2
 
 - Regular dosing for metabolic acidosis: 1-2 mEq/kg IV run over 10-60 min (or slower).\
-- *Note*: Premixed 4.2% solution provides 1 mEq of \\(NaHCO\^{-}\_{3}\\) in 2 mL. Check with the attending physician or a senior clinician before ordering.
+- *Note*: Premixed 4.2% solution provides 1 mEq of \\(NaHCO\_{3}\\) in 2 mL. Check with the attending physician or a senior clinician before ordering.
 
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.4 sodium chloride 14.6% IV for PO
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sodium-chloride-14.6-iv-for-po
 
 - Starting dose for hyponatremia: 2 mEq/kg/dose PO divided q 12hrs.\
-- *Note*: 1 mL IV pvoides 2.5 mEq \\(Na\^{+}\\) and 2.5mEq \\(Cl\^{-}\\).
+- *Note*: 1 mL IV provides 2.5 mEq \\(Na\^{+}\\) and 2.5mEq \\(Cl\^{-}\\).
 
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.5 spironolactone (Aldactone)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#spironolactone-aldactone
@@ -8694,8 +8703,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sucralfat
 
 - Regular dosing for GI bleeding: 40-80 mg/kg/day PO divided q 6hrs. May also be used for topical applications.
 
-## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.7 sulfamethoxazol-trimethoprim (Bactrim)
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sulfamethoxazol-trimethoprim-bactrim
+## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.7 sulfamethoxazole-trimethoprim (Bactrim)
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sulfamethoxazole-trimethoprim-bactrim
 
 - Regular dosing for infection: 6-10 mg/kg/day IV/PO divided q 12hrs for mild-to-moderate infection; or 15-20 mg/kg/day IV divided q 6-8hrs for severe infections.\
 - *Note*: Avoid administering to infants < 30 days of life, as it may worsen hyperbilirubinemia.
@@ -8703,11 +8712,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sulfameth
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.8 sucrose 24% (Sweet-Ease)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#sucrose-24-sweet-ease
 
-- Regular dosing for analgesia: 0.2 mL/dose PO. Administer 2 doses before a painful proceudre, repeat based on weight:
+- Regular dosing for analgesia: 0.2 mL/dose PO. Administer 2 doses before a painful procedure, repeat based on weight:
   - < 1.5 kg: may repeat up to 3 doses.\
   - 1.5-2.5 kg: may repeat up to 5 doses.\
   - > 2.5 kg: may repeat up to 10 doses.\
-- *Note*: should administer 2-3 in prior to a painful procedure. Obligatory for circumcision.
+- *Note*: should administer 2-3 min prior to a painful procedure. Obligatory for circumcision.
 
 ## Appendix A — LLUCH NICU Formulary › A.19 S › A.19.9 simethicone (Mylicon)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#simethicone-mylicon
@@ -8872,7 +8881,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#amikacin-
 
 - Peak: 20-30 microgram/mL.
   - Timing: 1/2 h after the end of infusion of the 2^nd^ dose for infants being treated more than 24 hrs.
-- Trough: 5-10 microgram/mL.
+- Trough: < 5 microgram/mL.
   - Timing: Just before next dose after peak level (usually prior to the 3^rd^ dose).
   - *NOTE*: Obtain a 24-hr trough level for infants with severe infections, asphyxia, PDA, or renal failure. See dosing guidelines for gentamicin.
 
@@ -8886,7 +8895,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#caffeine
 ## Appendix A — LLUCH NICU Formulary › A.25 Therapeutic Drug Levels › A.25.3 cyclosporine (CSA)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#cyclosporine-csa
 
-- 300-400 microgram/mL.
+- 300-400 nanogram/mL.
 
 ## Appendix A — LLUCH NICU Formulary › A.25 Therapeutic Drug Levels › A.25.4 divalproex (Depakote®)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#divalproex-depakote
@@ -8902,7 +8911,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#digoxin-1
 ## Appendix A — LLUCH NICU Formulary › A.25 Therapeutic Drug Levels › A.25.6 phenytoin (Dilantin®)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#phenytoin-dilantin
 
-- 5-29 microgram/mL.\
+- 10-20 microgram/mL.\
 - Obtain trough level 48hrs post IV loading dose.
 
 ## Appendix A — LLUCH NICU Formulary › A.25 Therapeutic Drug Levels › A.25.7 gentamicin
@@ -8921,8 +8930,8 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#phenobarb
 - 20-30 microgram/mL.\
 - Draw on the 4^th^ day of therapy, random sample is fine.
 
-## Appendix A — LLUCH NICU Formulary › A.25 Therapeutic Drug Levels › A.25.9 carbamazepine (Tegretol^reg;^)
-URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#carbamazepine-tegretolreg
+## Appendix A — LLUCH NICU Formulary › A.25 Therapeutic Drug Levels › A.25.9 carbamazepine (Tegretol^®^)
+URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#carbamazepine-tegretol-1
 
 - 4-12 mg/L
 
@@ -8930,7 +8939,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#carbamaze
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#theophylline-1
 
 - For apnea of prematurity: 6-12 microgram/mL.
-- For bronchodilation: 10-18 microgram/mL (trough prior to the 5^th^ dose).
+- For bronchodilation: 10-20 microgram/mL (trough prior to the 5^th^ dose).
 
 ## Appendix A — LLUCH NICU Formulary › A.25 Therapeutic Drug Levels › A.25.11 tobramycin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#tobramycin-1
@@ -8979,14 +8988,14 @@ Phototherapy
 ## Appendix B — Dot Phrases › B.2 General Care › General Documentation › .picc
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-picc
 
-Central line/dates: peripherally inserted central catheter: date placed: \*\*\*. PICC central line assessed today, is functioning well with no signs of inflammation. Plan: Will continue the use of the catheter fo rlong-term paretneral nutrition and/or blood draw.
+Central line/dates: peripherally inserted central catheter: date placed: \*\*\*. PICC central line assessed today, is functioning well with no signs of inflammation. Plan: Will continue the use of the catheter for long-term parenteral nutrition and/or blood draw.
 
 [Text](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-picc)
 
 ## Appendix B — Dot Phrases › B.2 General Care › General Documentation › .bloodtransfusion
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-blood-transfusion
 
-Discussed with the parents in details about need for blood transfusion and blood products for the baby through out the hospital stay. Risks and benefits explained to them. They agree to their use. Also discussed with them the donor directed Blood Donation program. Parent has been provided with a copy of the Paul Gann Blood Act ‘A Patient’s Guide to Blood Transfusion’.
+Discussed with the parents in detail about need for blood transfusion and blood products for the baby throughout the hospital stay. Risks and benefits explained to them. They agree to their use. Also discussed with them the donor directed Blood Donation program. Parent has been provided with a copy of the Paul Gann Blood Safety Act ‘A Patient’s Guide to Blood Transfusion’.
 
 PHYSICIAN’S STATEMENT CONCERNING TRANSFUSION INFORMATION\
 (Paul Gann Blood Safety Act. Health and Safety Code #1645)
@@ -9000,7 +9009,7 @@ The patient’s parents have been informed of the potential need for, risks of (
 ## Appendix B — Dot Phrases › B.2 General Care › General Documentation › .parentsts
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-skin-to-skin
 
-When parents are visiting, please request to perform Skin to Skin by either parent for the duration of one hour in a 24hour period, followed by documentation.
+When parents are visiting, please request to perform skin-to-skin by either parent for the duration of one hour in a 24-hour period, followed by documentation.
 
 [Text](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-skin-to-skin)
 
@@ -9049,7 +9058,7 @@ If above criteria have not been met then please cancel discharge and notify MD o
 ## Appendix B — Dot Phrases › B.3 System-Based Protocols and Guidelines › .donorbreastmilk
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-donor-breast-milk
 
-I have discussed the indications, risks, benefits, and alternatives of donor breast milk with the mother of the patient.  In the absence of maternal breast milk, donor milk offers many of the benefits of human milk for the infant, including:  infection-fighting factors, reduced incidence of necrotizing enterocolitis, improved digestion, ideal nutrition.  Donor milk will generally be provided until mother’s milk volume becomes sufficient or when infant reaches 34 weeks gestation, at which point infant will be switched over to the appropriate standard infant formula in the absence of mother’s milk.  Donor milk is the milk from several donors pooled together and then heat-treated to kill any bacteria or viruses.  Although every precaution is taken, there is a very small chance that an infectious agent may nevertheless be transmitted and the infant could become sick.  The parent consented for donor breastmilk.
+I have discussed the indications, risks, benefits, and alternatives of donor breast milk with the mother of the patient.  In the absence of maternal breast milk, donor milk offers many of the benefits of human milk for the infant, including:  infection-fighting factors, reduced incidence of necrotizing enterocolitis, improved digestion, ideal nutrition.  Donor milk will generally be provided until mother’s milk volume becomes sufficient or when infant reaches 34 weeks gestation, at which point infant will be switched over to the appropriate standard infant formula in the absence of mother’s milk.  Donor milk is the milk from several donors pooled together and then heat-treated to kill any bacteria or viruses.  Although every precaution is taken, there is a very small chance that an infectious agent may nevertheless be transmitted and the infant could become sick.  The parent consented for donor breast milk.
 
 [Text](https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#sec-donor-breast-milk)
 
@@ -9071,17 +9080,17 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-
 
 Please do transcutaneous bilirubin QAM for next 10 days.
 
-If tcb = or > number below, please draw stat total serum bilirubin (tsb). Add serum direct bilirubin if none done yet (and notify MD if D-Bilirubin > =1.5 mg/dl).
+If tcb = or > number below, please draw stat total serum bilirubin (tsb). Add serum direct bilirubin if none done yet (and notify MD if D-Bilirubin ≥1.5 mg/dl).
 
-For < 28 wks CGA: TCB >=2, Notify MD if TSB >= 5 mg/dl\
-For 28 to 29 wks CGA: TCB >=3, Notify MD if TSB >= 6 mg/dl\
-For 30 to 31 wks CGA: TCB >=5, Notify MD if TSB >= 8 mg/dl\
-For 32 to 33 wks CGA: TCB >=7, Notify MD if TSB >= 10 mg/dl\
-For 34 wks CGA, TCB >=9, Notify MD if TSB >= 12 mg/dl
+For < 28 wks CGA: TCB ≥2, Notify MD if TSB ≥ 5 mg/dl\
+For 28 to 29 wks CGA: TCB ≥3, Notify MD if TSB ≥ 6 mg/dl\
+For 30 to 31 wks CGA: TCB ≥5, Notify MD if TSB ≥ 8 mg/dl\
+For 32 to 33 wks CGA: TCB ≥7, Notify MD if TSB ≥ 10 mg/dl\
+For 34 wks CGA, TCB ≥9, Notify MD if TSB ≥ 12 mg/dl
 
-For 35 wks and above, please use www.bilitool.org (up to 146 hrs) or www.peditools.org (for >146 hrs): if tcb in HIRZ (>75%ile of Bhutani nomogram) or tcb => 13, draw stat TSB and notify MD if TSB is HRZ or =>13 mg/dl.
+For 35 wks and above, please use www.bilitool.org (up to 146 hrs) or www.peditools.org (for >146 hrs): if tcb in HIRZ (>75%ile of Bhutani nomogram) or tcb ≥ 13, draw stat TSB and notify MD if TSB is HRZ or ≥13 mg/dl.
 
-If DAT-positive & 32+ wks, check TCB at 6 hours. If 4-5, recheck TCB at 12 hours. If >=5, check TSB and notify MD if TSB is >5
+If DAT-positive & 32+ wks, check TCB at 6 hours. If 4-5, recheck TCB at 12 hours. If ≥5, check TSB and notify MD if TSB is >5
 
 [Text](https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#sec-tcb)
 

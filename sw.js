@@ -2,7 +2,7 @@
 // Pages are network-first so a connected device always shows the live manual; the cached copy
 // is used only when offline. Chapters, styles and chat data are stored at install; images and
 // downloads are stored the first time they are opened.
-const VERSION = "20261025082826";
+const VERSION = "20261025104239";
 const BUILT = "October 25, 2026";
 const PRECACHE = [
  "./",
