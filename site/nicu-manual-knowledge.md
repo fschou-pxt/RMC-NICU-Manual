@@ -517,7 +517,7 @@ Checklist
 - Revise the problem list
 - Orders
 - E&M coding
-- [Progress note](https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-daily-progress-note)
+- [Progress note](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-daily-progress-note)
 - Call parents to provide update, or update at bedside
 
 ## 3 Physician Operations › Quality Management › P-score process map
@@ -797,7 +797,7 @@ After the breast/chestfeed, supplementation PG or PO will be determined based on
 ## 4 Research/QI activities › QI Projects › Breast Before Bottle (2024; PI: Dr. Kasee Houston) › Resources
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/publications.html#resources
 
-[dot-phrase](https://fschou-pxt.github.io/RMC-NICU-Manual/publications.html#sec-dotphrase-bbb) for feeding orders that should be placed in the feeding orders or in a RN communication order if character limit is exceeded.
+[dot-phrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-bbb) for feeding orders that should be placed in the feeding orders or in a RN communication order if character limit is exceeded.
 
 [PowerPoint Presentation (Right click to Save Link As…)](https://fschou-pxt.github.io/RMC-NICU-Manual/files/BB4B.pptx)\
 [Breast/Chest Before Bottle flyer](https://fschou-pxt.github.io/RMC-NICU-Manual/files/BreastChest%20Before%20Bottle.pdf)\
@@ -1192,7 +1192,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#timing
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#consultation-and-consenting
 
 - Neo consults family on circumcision
-- Document Circumcision Consultation in Problem List. Use [.circconsent](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-dotphrase-circconsent) to populate the consultation content.
+- Document Circumcision Consultation in Problem List. Use [.circconsent](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-circconsent) to populate the consultation content.
 - Family watches a video online regarding circumcision
 - Family signs consent
 
@@ -1475,7 +1475,7 @@ Go into the discharge navigator → Click on **MD med/order reconciliation** in 
 2.  Order Poly-Vi-Sol for birth GA ≤ 37 weeks, or Poly-Vi-Sol with Iron for birh GA < 37 weeks
 3.  Order **discharge diet** and enter [appropriate diet](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-discharge-diet)
     - Make sure to copy/paste recipes for making 22kcal/oz or 24kcal/oz with Neosure or Enfacare 22kcal/oz to the Discharge Diet order
-4.  Order **discharge activity** and enter the back to sleep information by using the dot-phrase [.back1](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-dotphrase-back1)
+4.  Order **discharge activity** and enter the back to sleep information by using the dot-phrase [.back1](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-back1)
 5.  Any other outpatient referrals
 
 ## 7 Discharging an Infant › Discharge Workflow on Health Connect › Step 2: Reconcile Problem list
@@ -1497,8 +1497,8 @@ Content:
 - **Pertinent past hx**: usually just “newborn” is sufficient
 - **Pertinent points in ROS**: from most recent progress note, copy and paste the assessment/plan section of all organ systems up to “social” (exclude the social history)
 - **Update new and thorough physical exam**. Be sure to do eye exam and hip exam
-- **Treatment/ care given**: CPAP, NIMV, antibiotics, etc (may use the dot-phrase [.treatment](https://fschou-pxt.github.io/RMC-NICU-Manual/@sect-dotPhrase-synopsis))
-- **Brief Synopsis**: free text brief hospital course (may use the dot-phrase [.synopsis](https://fschou-pxt.github.io/RMC-NICU-Manual/@sec-dotPhrase-synopsis))
+- **Treatment/ care given**: CPAP, NIMV, antibiotics, etc (may use the dot-phrase [.treatment](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-treatment))
+- **Brief Synopsis**: free text brief hospital course (may use the dot-phrase [.synopsis](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-synopsis))
 - **Discharge activity, diet and medications**: should all auto-populated if you completed these in Step 1 above
 - Sign D/C summary
 
@@ -1552,21 +1552,21 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-blood-t
 
 Prior to blood transfusion, a discussion between the neonatalogist and the parents must occur, followed by parental consenting. the discussion should be documented in the neonatologist’s admission H&P or daily progress note.
 
-[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-dotPhrase-blood-transfusion)
+[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-blood-transfusion)
 
 ## 8 Documentation › Consent › Donor breast milk
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#donor-breast-milk
 
 Refer to [Donor Breast Milk](https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#sec-donor-breast-milk) for details.
 
-[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-dotPhrase-donor-breast-milk)
+[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-donor-breast-milk)
 
 ## 8 Documentation › Consent › Circumcision
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#circumcision
 
 Refer to [Circumcision](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-circumcision) for details.
 
-[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-dotphrase-circconsent)
+[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-circconsent)
 
 ## 8 Documentation › Daily Progress Note Component Reminder › PICC
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-picc
@@ -1575,18 +1575,18 @@ When a PICC is in place and is working properly, document the following in the d
 
 > Central line/dates: peripherally inserted central catheter: date placed: MM/DD/YYYY. **PICC central line assessed today, is functioning well with no signs of inflammation. Plan: Will continue the use of the catheter fo rlong-term paretneral nutrition and/or blood draw.**
 
-[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-dotPhrase-picc)
+[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-picc)
 
 ## 8 Documentation › Daily Progress Note Component Reminder › Skin-to-skin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-skin-to-skin
 
 Parents are expected to do at least 1 hr of kangaroo care (skin-to-skin, STS) with the infant each day of their visit.
 
-A [nursing communication order](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-dotphrase-skin-to-skin) should be placed on admission to encourage skin-to-skin, One an order is placed, it should be documented in the progress note as follows:
+A [nursing communication order](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-skin-to-skin) should be placed on admission to encourage skin-to-skin, One an order is placed, it should be documented in the progress note as follows:
 
 > **Skin-to-skin order placed**.
 
-[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-dotphrase-skin-to-skin)
+[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-skin-to-skin)
 
 ## 8 Documentation › Discharge Summary Component Reminder › TREATMENT/CARE GIVEN/COURSE OF HOSPITAL STAY
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#treatmentcare-givencourse-of-hospital-stay
@@ -2908,7 +2908,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#consent
 
 Physician to consent parents verbally, and place proper documentation in the daily progress note.
 
-[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#sec-dotPhrase-donor-breast-milk)
+[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-donor-breast-milk)
 
 ## 12 Nutrition, Fluid and Electrolytes › Prolacta Prolact+ H^2^MF Products › Eligibility criteria
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#eligibility-criteria-1
@@ -2980,7 +2980,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#possible-
 ## 12 Nutrition, Fluid and Electrolytes › Prolacta Cream › Feeding order
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#sec-feeding-order
 
-Use the [.NICUCREAM](https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#sec-dotPhrase-nicucream) dot-phrase in the comment field to indicate administration route and volume:
+Use the [.NICUCREAM](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-nicucream) dot-phrase in the comment field to indicate administration route and volume:
 
 *Example:*\
 Please give \*\*\*mL of Prolacta Cream followed by \*\*\*mL of EBM/DBM with Prolacta +6.\
@@ -4176,7 +4176,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#parent-and-fami
 ## 17 Neurology › Neonatal Abstinence Syndrome - Old Management › Specific procedures › Discharge
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#discharge
 
-- All infants receiving pharmacologic treatment for NAS will be referred to the High Risk Infant follow up program/ clinic.
+- Pharmacologic treatment for NAS does not by itself make an infant eligible for High Risk Infant Follow-up. Refer to HRIF only if the infant meets the HRIF eligibility criteria ([High-Risk Infant Follow-Up](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-hrif)).
 
 ## 17 Neurology › Neonatal Abstinence Syndrome - Old Management › Pharmacologic treatment guidelines
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#pharmacologic-treatment-guidelines
@@ -4625,7 +4625,7 @@ flowchart TD
   D --> E
 ```
 
-[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#sec-dotphrase-tcbiliprotocol)
+[dotPhrase](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-tcbiliprotocol)
 
 ## 18 Hematology & Oncology › Neonatal Indirect Hyperbilirubinemia › Phototherapy for preterm infants
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#phototherapy-for-preterm-infants
@@ -4799,7 +4799,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#sec-order-prbc
 - Please remember to document “Yes” under the Informed Consent Obtained section (unless it is an emergency transfusion and/or there was a reason that informed consent was not obtained). This is the section that the nurses reference to ensure that this has been done prior to beginning the transfusion and they document acknowledgement of that as well in their Flowsheet.
 
 Click [Here](https://fschou-pxt.github.io/RMC-NICU-Manual/files/90867%20BPAM.MDWorkflow.JA.2.22.21.pdf) to view and download the workflow PDF.\
-Click [Here](https://fschou-pxt.github.io/RMC-NICU-Manual/BPAM_Provider%20Practice%20Alert-%20Patient%20Education%20Requirements.pdf) to view and download the Provider Practice Alert PDF.
+Click [Here](https://fschou-pxt.github.io/RMC-NICU-Manual/files/BPAM_Provider%20Practice%20Alert-%20Patient%20Education%20Requirements.pdf) to view and download the Provider Practice Alert PDF.
 
 ## 18 Hematology & Oncology › Anemia of Prematurity Management for ELGAN/ELBW › Emergency Blood Release
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#sec-emergency-blood-release
@@ -4965,9 +4965,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#abdominal-
 **Background**
 
 - Abdominal wall defects are generally of three types:
-  - **Omphalocele** (Figure \@ref(fig:abd-wall-defect) Panel A), a central defect in which abdominal contents remain in the cord.
-  - **Gastroschisis** (Figure \@ref(fig:abd-wall-defect) Panel B) an open defect to the right of the umbilicus through which bowel protrudes.
-  - **Exstrophy of cloaca/bladder** (Figure \@ref(fig:abd-wall-defect) Panel C), in which there is a failure of septation of the early GU and GI tracts, and the urethra and bladder open onto the perineum.
+  - **Omphalocele** (Figure [Types of Abdominal Wall Defect](https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#fig-abd-wall-defect) Panel A), a central defect in which abdominal contents remain in the cord.
+  - **Gastroschisis** (Figure [Types of Abdominal Wall Defect](https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#fig-abd-wall-defect) Panel B) an open defect to the right of the umbilicus through which bowel protrudes.
+  - **Exstrophy of cloaca/bladder** (Figure [Types of Abdominal Wall Defect](https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#fig-abd-wall-defect) Panel C), in which there is a failure of septation of the early GU and GI tracts, and the urethra and bladder open onto the perineum.
 
 [image]
 
@@ -5016,11 +5016,11 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#abdominal-
 
 - Examine for dysmorphic features: macroglossia, ear creases, and/or posterior indentations (BWS).
 - Describe the abdominal wall defect, including the location of the defect, size of the defect, contents of sac if present, umbilical cord size, vessels.
-- When a massive abdominal wall defect (Figure \@ref(fig:massive-defect)) is associated with encephalocele, or amniotic bands, limb anomalies, and severe scoliosis, consider Limb-Body Wall defect, a lethal and sporadic disorder.
+- When a massive abdominal wall defect (Figure [Massive Abdominal Wall Defect](https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#fig-massive-defect)) is associated with encephalocele, or amniotic bands, limb anomalies, and severe scoliosis, consider Limb-Body Wall defect, a lethal and sporadic disorder.
 
 [image]
 
-- When there is disruption of bladder, genital and anal anatomy, consider Exstrophy-Epispadias Complex (EEC) or Bladder-Exstrophy-Epispadias Complex (BEEC) or Omphalocele-Exstrophy-Imperforate Anus and Spine anomalies (OEIS) (Figure \@ref(fig:ECC-OEIS)).
+- When there is disruption of bladder, genital and anal anatomy, consider Exstrophy-Epispadias Complex (EEC) or Bladder-Exstrophy-Epispadias Complex (BEEC) or Omphalocele-Exstrophy-Imperforate Anus and Spine anomalies (OEIS) (Figure [Omphalocele with Disruption of Genitourinary Anatomy](https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#fig-ecc-oeis)).
 
 [image]
 
@@ -5177,7 +5177,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/genetics-lluch.html#congenital
 
 [image]
 
-Source: Geddes GC, et al.. *Curr Opin Pediatr*. 2018 Dec;30(6):707-713. [\[Link\]](10.1097/MOP.0000000000000682)
+Source: Geddes GC, et al.. *Curr Opin Pediatr*. 2018 Dec;30(6):707-713. [\[Link\]](https://doi.org/10.1097/MOP.0000000000000682)
 
 - SNP chromosomal microarray is the first-line genetic test for all patients with complex or syndromic CHD, including patients with HLHS and heterotaxy.
 - Conventional chromosome analysis is the first-line genetic test for all patients suspected of aneuploidy, with reflex testing for microarray if normal.
@@ -7170,17 +7170,17 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#nicu
 ## 21 VLBW/ELGAN/ELBW Infants › ELGAN/ELBW Respiratory Protocol
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#elganelbw-respiratory-protocol
 
-Refer to [ELGAN/ELBW Respiratory Support Protocol for the First 72 Hrs](https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#sec-elgan-elbw-resp-protocol) page
+Refer to [ELGAN/ELBW Respiratory Support Protocol for the First 72 Hrs](https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#sec-elgan-elbw-resp-protocol) page
 
 ## 21 VLBW/ELGAN/ELBW Infants › ELGAN/ELBW Respiratory Protocol › BPD bundle
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#bpd-bundle
 
-Refer to [No-BPD Prevention Bundle](https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#sec-bpd-bundle) page
+Refer to [No-BPD Prevention Bundle](https://fschou-pxt.github.io/RMC-NICU-Manual/respiratory.html#sec-bpd-bundle) page
 
 ## 21 VLBW/ELGAN/ELBW Infants › ELGAN/ELBW Gut Health Protocol › Probiotics (Evivo) use
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#probiotics-evivo-use
 
-Refer to [Probiotics (Evivo)](https://fschou-pxt.github.io/RMC-NICU-Manual/VLBW.html#sec-probiotics) page
+Refer to [Probiotics (Evivo)](https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#sec-probiotics) page
 
 [image]Important
 
@@ -8408,9 +8408,9 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#indometha
 - Dosing for IVH prophylaxis: 0.2 mg/kg/dose for 1 dose administered within 6 hrs of age.
   - ONLY for infants born < 27 weeks GA.
   - Check with the attending physician before ordering.
-- Dosing for [PDA closure](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#pda): 0.2 mg/kg/dose q 12hs for 4 doses, may repeat for 2 more doses within 24 hrs of last dose.
+- Dosing for [PDA closure](https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#patent-ductus-arteriosus): 0.2 mg/kg/dose q 12hs for 4 doses, may repeat for 2 more doses within 24 hrs of last dose.
   - Echocardiogram or CCHD screening prior to PDA closure is required to rule out ductal-dependent CHD or pulmonary hypertension, as in both cases, indomethacin would be contraindicated.
-  - Refer to [Patent Ductus Arteriosus](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#pda) for details and protocol.
+  - Refer to [Patent Ductus Arteriosus](https://fschou-pxt.github.io/RMC-NICU-Manual/cardiovascular.html#patent-ductus-arteriosus) for details and protocol.
 
 ## Appendix A — LLUCH NICU Formulary › I › insulin
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#insulin
@@ -8422,7 +8422,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#insulin
   - With this preparation, a rate of 0.4 mL/h delivers 0.02 unit/kg/hr of insulin.
   - Prime all tubing with insulin for at least 30 min before delivering.
 
-- Refer to [Hyperglycemia](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#hyperglycemia) for details.
+- Refer to Hyperglycemia for details.
 
 - Regular dosing for hyperkalemia:
 
@@ -8711,7 +8711,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#phenobarb
 
 - Starting dose for seizure: loading dose 10-20 mg/kg/ IV slow push, followed by maintenance dose 3-8 mg/kg/day IV/PO divided q 12hrs.
 - Regular dosing for HIDA scan: 5 mg;kg;day for 5 days. NO loading dose.
-- Regalar dosing for drug withdrawal: Refer to [Neonatal Drug Withdrawal](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#drug-withdrawal).
+- Regalar dosing for drug withdrawal: Refer to [Neonatal Drug Withdrawal](https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-nas-esc).
 
 ## Appendix A — LLUCH NICU Formulary › P › phenylephrine (Neo-Synephrine 0.25%)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#phenylephrine-neo-synephrine-025
@@ -9090,7 +9090,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#vancomyci
 - Peak: 20-40 microgram/mL.
   - Peak levels not usually required. Check with ID specialists.
 - Trough: 5-10 microgram/mL.
-  - Timing: See Table \@ref(tab:vanc-young) & Table \@ref(tab:vanc-old).
+  - Timing: See Table [Vancomycin Dosing for ≤ GA 28 weeks](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#tab-vanc-young) & Table [Vancomycin Dosing for infants > GA 28 weeks](https://fschou-pxt.github.io/RMC-NICU-Manual/lluch-formulary.html#tab-vanc-old).
 
 # Appendix B — Dot Phrases
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html
@@ -9127,7 +9127,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-
 
 Central line/dates: peripherally inserted central catheter: date placed: \*\*\*. PICC central line assessed today, is functioning well with no signs of inflammation. Plan: Will continue the use of the catheter fo rlong-term paretneral nutrition and/or blood draw.
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-picc)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-picc)
 
 ## Appendix B — Dot Phrases › General Care › General Documentation › .bloodtransfusion
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-blood-transfusion
@@ -9141,21 +9141,21 @@ I have informed the patient’s parents by means of a standardized written summa
 
 The patient’s parents have been informed of the potential need for, risks of (including but not limited to: blood reaction, infection and possible death), benefits of and alternatives to blood transfusion. They have given their informed consent.
 
-[text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-blood-transfusion)
+[text](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-blood-transfusion)
 
 ## Appendix B — Dot Phrases › General Care › General Documentation › .parentsts
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-skin-to-skin
 
 When parents are visiting, please request to perform Skin to Skin by either parent for the duration of one hour in a 24hour period, followed by documentation.
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-skin-to-skin)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/documentation.html#sec-skin-to-skin)
 
 ## Appendix B — Dot Phrases › General Care › General Documentation › .back1
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-back1
 
 American Academy of Pediatrics recommends: Back to sleep for every infant — To reduce the risk of Sudden Infant Death Syndrome (SIDS), infants should be placed for sleep in a supine position (wholly on the back) for every sleep by every caregiver until 1 year of life. Side sleeping is not safe and is not advised.
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-discharge-navigator)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-discharge-navigator)
 
 ## Appendix B — Dot Phrases › General Care › General Documentation › .circconsent
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-circconsent
@@ -9165,7 +9165,7 @@ Additionally, circumcised males have fewer problems with balanitis or phimosis.\
 The risks of newborn circumcision were discussed in detail and included those of any surgical procedure, and include, but are not limited to, infection, bleeding, scarring, injury to penis/urethra, poor cosmetic outcome and the need for future surgical revisions. Although these are rare events, these complications can be significant.\
 The parents were given ample period of time to ask questions and their questions were addressed and a written informed consent was obtained. Orders placed, circumcision to be performed by Pediatrics or OB on duty.
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-circumcision)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-circumcision)
 
 ## Appendix B — Dot Phrases › General Care › General Documentation › .humerusfx
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-humerusfx
@@ -9174,7 +9174,7 @@ Shared dot phrase (Dr. Kasee Houston) containing the NICU PT handout for handlin
 
 [image] [image]
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-humerus-fracture)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/discharge.html#sec-humerus-fracture)
 
 ## Appendix B — Dot Phrases › General Care › General Documentation › Conditional discharge note (FCC)
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-fcc-conditional-discharge
@@ -9192,14 +9192,14 @@ I. Infant has had a recent repeat weight, with ≤ 6% weight loss from birth wei
 J. Follow-up appointment(s) scheduled per unit policy: 1) in Great Starts in 2 days, 2) at 3 weeks with PCP, and 3) at 2 months with PCP.\
 If above criteria have not been met then please cancel discharge and notify MD on call.
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-agreement-fcc)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/operations.html#sec-agreement-fcc)
 
 ## Appendix B — Dot Phrases › System-Based Protocols and Guidelines › .donorbreastmilk
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-donor-breast-milk
 
 I have discussed the indications, risks, benefits, and alternatives of donor breast milk with the mother of the patient.  In the absence of maternal breast milk, donor milk offers many of the benefits of human milk for the infant, including:  infection-fighting factors, reduced incidence of necrotizing enterocolitis, improved digestion, ideal nutrition.  Donor milk will generally be provided until mother’s milk volume becomes sufficient or when infant reaches 34 weeks gestation, at which point infant will be switched over to the appropriate standard infant formula in the absence of mother’s milk.  Donor milk is the milk from several donors pooled together and then heat-treated to kill any bacteria or viruses.  Although every precaution is taken, there is a very small chance that an infectious agent may nevertheless be transmitted and the infant could become sick.  The parent consented for donor breastmilk.
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-donor-breast-milk)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#sec-donor-breast-milk)
 
 ## Appendix B — Dot Phrases › System-Based Protocols and Guidelines › .NICUCREAM
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-nicucream
@@ -9207,7 +9207,7 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotPhrase-
 Please give \*\*\*mL of Prolacta Cream followed by \*\*\*mL of EBM/DBM with Prolacta +6.\
 Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-nicucream)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/nutrition-fluid.html#sec-nicucream)
 
 ## Appendix B — Dot Phrases › System-Based Protocols and Guidelines › .tcb2
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-tcb2
@@ -9231,7 +9231,7 @@ For 35 wks and above, please use [www.bilitool.org](http://www.bilitool.org) (up
 
 If DAT-positive & 32+ wks, check TCB at 6 hours. If 4-5, recheck TCB at 12 hours. If >=5, check TSB and notify MD if TSB is >5
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-tcb)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/hemonc.html#sec-tcb)
 
 ## Appendix B — Dot Phrases › Quality Improvement › Breast before bottle (2024; PI: Dr. Kasee Houston) › .BB4B
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-dotphrase-bb4b
@@ -9260,7 +9260,7 @@ If QS 1-3 for 11-15 minutes supplement 1/3 volume\
 If QS 1-3 for >15 minutes no supplement\
 QS=quality of nippling scale
 
-[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/dotPhrases.html#sec-bb4b)
+[Text](https://fschou-pxt.github.io/RMC-NICU-Manual/publications.html#sec-bb4b)
 
 # Appendix C — References
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/references.html

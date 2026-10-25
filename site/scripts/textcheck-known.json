@@ -5,6 +5,11 @@
       "quarto": "[Finnegan Score [(#nas)|Dose of Oral Morphine |Relative",
       "site": "Finnegan Score Dose of Oral Morphine Relative Dose",
       "reason": "Display fix: the CSV header cell is a Markdown link, [Finnegan Score](#nas); Quarto's table printed the raw symbols, the new site shows the link. No wording changed."
+    },
+    {
+      "quarto": "@ref(tab:vanc-young) @ref(tab:vanc-old).",
+      "site": "Vancomycin Dosing for ≤ GA 28 weeks Vancomycin Dosing for infants > GA 28 weeks.",
+      "reason": "Broken cross-reference repaired (2026-10-24): the old manual printed the raw bookdown code; the new site links to the table by its title."
     }
   ],
   "dotPhrases": [
@@ -12,6 +17,30 @@
       "quarto": "NICU Operations",
       "site": "",
       "reason": "Empty heading removed at the editor's request (2026-10-24): the Dot Phrases appendix had a \"NICU Operations\" heading with no phrases under it."
+    }
+  ],
+  "genetics-lluch": [
+    {
+      "quarto": "@ref(fig:abd-wall-defect)",
+      "site": "Types of Abdominal Wall Defect",
+      "reason": "Broken cross-reference repaired (2026-10-24): the old manual printed the raw bookdown code; the new site links to the figure by its title."
+    },
+    {
+      "quarto": "@ref(fig:massive-defect))",
+      "site": "Massive Abdominal Wall Defect)",
+      "reason": "Broken cross-reference repaired (2026-10-24): the old manual printed the raw bookdown code; the new site links to the figure by its title."
+    },
+    {
+      "quarto": "@ref(fig:ECC-OEIS)).",
+      "site": "Omphalocele with Disruption of Genitourinary Anatomy).",
+      "reason": "Broken cross-reference repaired (2026-10-24): the old manual printed the raw bookdown code; the new site links to the figure by its title."
+    }
+  ],
+  "neurology": [
+    {
+      "quarto": "All infants receiving pharmacologic treatment for NAS will be referred to the High Risk Infant follow up program/ clinic.",
+      "site": "Pharmacologic treatment for NAS does not by itself make an infant eligible for High Risk Infant Follow-up. Refer to HRIF only if the infant meets the HRIF eligibility criteria ( ⟨xref⟩ ).",
+      "reason": "Clinical correction by the editor (2026-10-24): pharmacologic treatment for NAS does not automatically make an infant HRIF-eligible."
     }
   ]
 }

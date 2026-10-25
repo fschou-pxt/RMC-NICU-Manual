@@ -1,6 +1,7 @@
 // Manual-specific Markdown handling for the Astro site:
 // - `## Title {/*#sec-id*/}` gives the heading that id (the ids the Quarto manual used, so old links still work)
 // - `@sec-id` in text becomes a link to that section, labeled with its heading
+// - a link to `#sec-id` that lives in another chapter points to that chapter (Quarto resolved these itself)
 // - "Either of the following:" / "All of the following:" lists are marked as criteria (any / all)
 // - ```mermaid blocks are left for the browser to draw
 import fs from "node:fs";
@@ -34,8 +35,15 @@ const LOGIC = [
 ];
 
 export default function remarkManual() {
-  return (tree) => {
+  return (tree, file) => {
     const map = sectionMap();
+    const page = path.basename(file.path || "", ".mdx");
+
+    visit(tree, "link", (node) => {
+      const id = node.url.startsWith("#") && node.url.slice(1);
+      const hit = id && map.get(id);
+      if (hit && hit.page !== page) node.url = hit.isChapter ? hit.page : `${hit.page}#${id}`;
+    });
 
     visit(tree, "heading", (node) => {
       const i = node.children.findIndex((c) => c.type === "mdxTextExpression" && ID_COMMENT.test(c.value.trim()));

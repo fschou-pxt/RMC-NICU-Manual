@@ -21,7 +21,8 @@ def main():
             if f.endswith((".html", ".js", ".css", ".md", ".json", ".webmanifest")):
                 text.append(open(os.path.join(dirpath, f), encoding="utf-8", errors="ignore").read())
     text = "\n".join(text)
-    used = lambda name: name in text or urllib.parse.quote(name) in text
+    # a file name may appear as written, URL-encoded, or with only its spaces encoded ("a%20(b).pdf")
+    used = lambda name: any(v in text for v in (name, urllib.parse.quote(name), urllib.parse.quote(name, safe="()"), name.replace(" ", "%20")))
     removed, too_big, kept = [], [], 0
     for top in ("Figures", "files"):
         for dirpath, _, files in os.walk(os.path.join(DIST, top)):
@@ -37,7 +38,9 @@ def main():
                 else:
                     kept += 1
     # copies a file-sync service left behind ("respiratory 2.html"): never publish them
-    dupes = [os.path.join(d, f) for d, _, fs in os.walk(DIST) for f in fs if re.search(r" \d+(\.[\w.]+)?$", f)]
+    # (a copy only when the same name without the number sits beside it: "NEC 2023.pptx" alone is a real file)
+    copy_of = lambda d, f: (m := re.match(r"^(.*) \d+(\.[\w.]+)?$", f)) and os.path.exists(os.path.join(d, m.group(1) + (m.group(2) or "")))
+    dupes = [os.path.join(d, f) for d, _, fs in os.walk(DIST) for f in fs if copy_of(d, f)]
     for p in dupes:
         os.remove(p)
     print(f"assets: kept {kept}, removed {len(removed)} unused" + (f", {len(dupes)} duplicate copies" if dupes else ""))
