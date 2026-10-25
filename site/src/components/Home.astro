@@ -149,6 +149,16 @@ const { editor, editorEmail, authors = [], donate } = Astro.props;
       addEventListener("resize", fit);
     }
   } catch {}
+  // Quick links: most-opened on this device first (visits counted in PageTools); ties keep the standard order
+  try {
+    const visits = JSON.parse(localStorage.getItem("nicuQuick.visits") || "{}");
+    const grid = document.querySelector(".quick-grid");
+    if (grid && Object.keys(visits).length) {
+      const keyOf = (a: HTMLAnchorElement) => decodeURIComponent(a.getAttribute("href")!.slice(base.length)).replace(/\.html(?=#|$)/, "");
+      const cards = [...grid.querySelectorAll<HTMLAnchorElement>(".quick-card")].map((a, i) => ({ a, i, n: visits[keyOf(a)] || 0 }));
+      cards.sort((x, y) => y.n - x.n || x.i - y.i).forEach(({ a }) => grid.append(a));
+    }
+  } catch {}
   // What's new colors go by month: newest month red, next yellow, next blue (older ones are not shown)
   const tones = ["red", "yellow", "blue"];
   const months = [];

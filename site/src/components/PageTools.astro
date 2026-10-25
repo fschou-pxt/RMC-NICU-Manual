@@ -4,6 +4,7 @@
 // - Phone numbers: a search box; the tables shown as contact cards with tap-to-call buttons (emails become mail links)
 // - Formulary: a search box (drug names first, then the entries' text) and an A–Z index
 // - Long and comparison tables (any page): a find box; a switch to show one situation
+// - Every page: counts visits on this device, so the home page can put the most-used Quick links first
 // - Evidence notes (any page): "Let's discuss" counts, one per device, from the site's /api/discuss
 ---
 
@@ -11,6 +12,14 @@
   const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
   const page = location.pathname.replace(/\.html$/, "").split("/").pop();
   const content = document.querySelector(".sl-markdown-content");
+  // visits on this device: "respiratory" (the page) and "neurology#sec-th-protocol" (arrived at a section)
+  try {
+    if (page && page !== "index") {
+      const visits = JSON.parse(localStorage.getItem("nicuQuick.visits") || "{}");
+      for (const key of [page, location.hash && page + decodeURIComponent(location.hash)].filter(Boolean)) visits[key] = (visits[key] || 0) + 1;
+      localStorage.setItem("nicuQuick.visits", JSON.stringify(visits));
+    }
+  } catch {}
   const KIND = { dotPhrases: "dots", "phone-numbers": "phones", "lluch-formulary": "drugs" }[page];
   if (content && KIND) setup(KIND);
   document.querySelectorAll<HTMLTableElement>("table.tbl-long").forEach(findBox);
