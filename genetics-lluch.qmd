@@ -271,8 +271,7 @@ anomalies (cleft palate) and sex of affected relatives.
 <br></br>
 **Background**  
 
-* Congenital heart defects are the most common congenital anomaly, affecting 1% of live births.  
-* Incidence ~ 7 per 1000 live births.  
+* Congenital heart defects are the most common congenital anomaly, affecting 0.7-1% of live births.  
     * CHD increased among premature infants, IDM, SGA.  
 * Genetic diagnosis is important:  
     * Correlates with postsurgical outcomes.  
@@ -479,7 +478,7 @@ Source: Geddes GC, et al. *Curr Opin Pediatr*. 2018 Dec;30(6):707-713. [[Link]](
 
 **Background**  
 
-* Incidence ~ 1/5000 live births; The 3^rd^ most common aneuploidy.  
+* Incidence ~ 1/16,000 live births; The 3^rd^ most common aneuploidy.  
 * It is associated with advanced maternal age.  
 * Morbidity and mortality are very high.  
 * 75% caused by an extra copy of chromosome 13; ~ 20% due to Robertsonian translocation 13; 5% due to other chromosome 13 anomalies.    
@@ -981,7 +980,7 @@ Document the physical features of the infant:
 * Collect postnatal samples for chromosome microarray to identify appropriate breakpoints. FISH may miss 5% of deletions detectable on the microarray.  
 * Follow up with karyotype if microarray fails to detect translocation WHS.  
 * **Sleep study**.  
-* Evaluate for syndromic features as required: ECG; Abdominal US; BUN,cr, analysis; dilated Eye exam. Refer to appropriate specialists as needed.  
+* Evaluate for syndromic features as required: ECG; abdominal US; BUN, creatinine, urinalysis; dilated eye exam. Refer to appropriate specialists as needed.  
 
 <br></br>
 **Management and Consults**  
@@ -1105,7 +1104,7 @@ Document the physical features of the infant:
 
 * Growth (~40%): Poor postnatal growth of < 3^rd^ percentile.  
 * Craniofacial (>70%): Long myopathic face, small tented mouth, lateral margins of the nose are parallel; nose lacks normal modeling and may look tubular, palatal defects.  
-* Palatal defects (~90%): Cleft palate, submucous cleft palate, bifid uvula, velopharyngeal incompetence.  
+* Palatal defects (~70-75%): Cleft palate, submucous cleft palate, bifid uvula, velopharyngeal incompetence.  
     * Observe the baby while crying for an asymmetric crying face.  
 * Eyes: Periorbital fullness, hooded eyelids, strabismus, sclerocornea, tortuous retinal vessels, posterior embryotoxon.  
 * Ears: Small posteriorly rotated, minor helical anomalies.  
@@ -1113,7 +1112,7 @@ Document the physical features of the infant:
 * Limbs: Long slender fingers, clubfeet and camptodactyly not uncommon, occasional postaxial polydactyly.  
 * Skeletal: Scoliosis, vertebral anomalies.  
 * GI: Abnormal swallowing, dysmotility, nasopharyngeal regurgitation, constipation, Hirschsprung disease, imperforate anus, malrotation, diaphragmatic hernia, tracheoesophageal fistula.  
-* Renal (30%): Agenesis, multicystic dysplastic kidneys.  
+* Renal (40%): Agenesis, multicystic dysplastic kidneys.  
 * Hearing loss: Conductive, sensorineural.  
 
 <br></br>
@@ -1361,7 +1360,7 @@ Document the physical features of the infant:
     * Testosterone biosynthesis defects.  
     * Leydig cell hypoplasia.  
     * Persistent Mullerian duct syndrome.  
-    * Congenital adrenal hyperplasia accounts for most of the cases.  
+    * Rare forms of congenital adrenal hyperplasia (3β-HSD, 17α-hydroxylase deficiency, StAR).  
 3. Gonadal differentiation and chromosomal disorders:  
     * 45,X, 45,X/46,XY mosaicism.  
 4. Syndromes associated with ambiguous genitalia.  
@@ -1563,7 +1562,7 @@ Document the physical features of the infant:
 * Incidence: 1 in 10,000 to 1 in 20,000 live births.  
 * The diagnosis is established with brain imaging, preferably MRI.  
 * HPE occurs as a continuum from very severe to very mild, and prognosis varies with severity.  
-    * More severe: alobar HPE with a single midbrain ventricle and absence of the interhemispheric fissure and corpus callosum.  
+    * More severe: alobar HPE with a single midline forebrain ventricle (monoventricle) and absence of the interhemispheric fissure and corpus callosum.  
     * Milder: semilobar and lobar HPE. 
         * In semilobar HPE, there is some division of the hemispheres posteriorly but none anteriorly.  
         * In lobar HPE, there is a lack of separation of the hemispheres ventrally, the splenium and corpus callosum are present. The middle interhemispheric variant is less common.  
@@ -2474,7 +2473,7 @@ knitr::include_graphics("https://i0.wp.com/radiologykey.com/wp-content/uploads/2
 * Congenital heart defects:  
     * Aortic coarctation.  
     * Hypoplastic left heart.  
-    * AV synostosis.  
+    * Atrial septal defect.  
 * Cleft lip and/or cleft palate.  
 * Skeletal abnormalities:  
     * Overlapping, long fingers (most common).  

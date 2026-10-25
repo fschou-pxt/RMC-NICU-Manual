@@ -90,7 +90,7 @@ ELBW: extremely low birth weight (< 1,000 g); ELGAN: extremely low gestational a
 |--------------------------|--------------|----------|--------------|------------|--------------|
 | **Peripheral**           | 30mEq/L      | 20mEq/L  | 9mEq/L       | 9mmol/L    | 4mEq/L       |
 | **Central**              | 30mEq/L      | 20mEq/L  | 25mEq/L      | 12.5mmol/L | 4mEq/L       |
-| **Goal range**           | 135-145mEq/L | 3-6mEq/L | 8.5-11 mg/dL | 5-8 mg/dL  | 1.7-2.8mg/dL |
+| **Goal serum range**           | 135-145mEq/L | 3-6mEq/L | 8.5-11 mg/dL | 5-8 mg/dL  | 1.7-2.8mg/dL |
 
 ### Monitoring
 
@@ -107,7 +107,7 @@ ELBW: extremely low birth weight (< 1,000 g); ELGAN: extremely low gestational a
 ### Treatment
 
 * Albuterol
-  - 0.4mg/kg/dose med nebulizer q2hrs.
+  - 0.4mg/kg/dose via nebulizer q2hrs.
   - 1 unit dose vial = 3mL = 2.5mg.
 * Calcium gluconate
 * Lasix
@@ -353,9 +353,9 @@ Either of the following:
 
 Depending on the fortified milk feeding volume, three ratios can be used:
 
-* 3mL Cream per 100mL fortified milk - increase calculated calories by 2.4 kcal/oz
 * 4mL Cream per 100mL fortified milk - increase calculated calories by 3.1 kcal/oz
 * 5mL Cream per 100mL fortified milk - increase calculated calories by 3.9 kcal/oz
+* 6mL Cream per 100mL fortified milk - increase calculated calories by 4.7 kcal/oz
 
 #### Possible combinations
 
@@ -453,7 +453,7 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
   <tr>
     <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">7</span></td>
     <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.3</span></td>
-    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.3</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.4</span></td>
     <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.4</span></td>
   </tr>
   <tr>
@@ -514,7 +514,7 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
     <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">17</span></td>
     <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.7</span></td>
     <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">0.9</span></td>
-    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.1</span></td>
+    <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">1.0</span></td>
   </tr>
   <tr>
     <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">18</span></td>
@@ -532,7 +532,7 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
     <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">20</span></td>
     <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">0.8</span></td>
     <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.0</span></td>
-    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.1</span></td>
+    <td class="tg-8d8j"><span style="font-weight:400;text-decoration:none;color:black">1.2</span></td>
   </tr>
   <tr>
     <td class="tg-4vkt"><span style="font-weight:400;text-decoration:none;color:black;background-color:#D9E1F2">21</span></td>
@@ -781,7 +781,7 @@ Please add \*\*\*mL of Prolacta Cream to 100mL of fortified milk.
 <br/>
 {{< pagebreak >}}
 
-## Probiotics (Evivo) {#sec-probiotics}
+## Probiotics: not in use (FDA advisory) {#sec-probiotics}
 
 
 <br/>
@@ -841,10 +841,6 @@ All criteria for the infant's gestational age group must be met:
   * Continue training until **PO ≥ 75% of feedings** and cueing and nippling each feed with a well-coordinated suck
 
 <br/>
-
-### Usage
-
-* For all infants born at GA ≤ 32 weeks, start upon enteral feeds initiation, discontinue when reaching 34 weeks PMA.
 
 <br/>
 <br/>

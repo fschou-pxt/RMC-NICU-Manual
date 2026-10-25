@@ -163,7 +163,7 @@ iNO, in conjunction with ventilatory support and other appropriate agents, is in
 
   - MAP \> 15 cmH~2~O
 
-  _Example: MAP 15 on FiO~2~ of 1 with PaO~2~ 60 gives OI of 25_
+  _Example: MAP 15 on FiO~2~ of 100% with PaO~2~ 60 gives OI of 25_
 
 #### Contraindications
 

@@ -22,7 +22,7 @@ Each session has a designated two-letter code. Use the following table to find t
 | 391         | Baldwin Park      | TC           |
 | 199         | Fontana           | IE           |
 | 338         | West LA           | ML           |
-| 201         | Wooden Hill       | VA           |
+| 201         | Woodland Hills      | VA           |
 | 392         | Riverside         | IE           |
 | 400         | South Bay         | TC           |
 | 893         | OC - Irvine       | OC           |
@@ -33,11 +33,10 @@ Each session has a designated two-letter code. Use the following table to find t
 <br/><br/>
 {{< pagebreak >}}
 
-## Census and extra duty
+## Physician staffing
 
-* < 7 patients: no extra duty
-* 8-11 patients: 0.5W
-* &ge;12 patients: 1W
+* Weekdays: a 24-hour on-call physician, plus a day-shift physician 8 AM–4 PM.
+* Weekends: the on-call physician, plus the post-call physician, who rounds.
 
 <br/><br/>
 {{< pagebreak >}}

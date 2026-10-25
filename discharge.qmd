@@ -431,7 +431,7 @@ Any of the following:
 
 * Hypoglycemia with IV > 48 hrs [?]{style="color:red"}
 * Bilirubin > 20 mg/dL
-* Intubated for > 24 hrs
+* Assisted ventilation ≥ 48 hrs (first 28 days)
 * APGAR <5 at 5 mins
 
 <br/> <br/>
@@ -452,7 +452,7 @@ For infants with birth weight \> 1,500g and birth GA ≥ 32 weeks, one of the fo
 -   Apgar score ≤ 3 at 5 mins or \< 5 at 10 mins.
 -   An unstable infant manifested by hypoxia, acidemia, hypoglycemia, and/or hypotension requiring pressor support.
 -   Persistent apnea which required caffeine or other stimulant medication for the treatment of apnea at discharge.
--   Required oxygen for more than 29 days of hospital stay and had radiographic finding consistent with chronic lung disease (CLD).
+-   Required oxygen for more than 28 days of hospital stay and had radiographic finding consistent with chronic lung disease (CLD).
 -   Infants placed on ECMO.
 -   Infants who received **iNO for \> 4 hrs**, and/or treatment during hospitalization with **sildenafil** or other pulmonary vasodilatory medications for pulmonary hypertension.
 -   Congenital heart disease requiring surgery or minimally invasive intervention.
@@ -519,7 +519,7 @@ The following steps may be followed to complete the process of discharge with ho
 
 1. Contact Dr. Kyle McCallin (peds pulm) regarding discharge with home oxygen
 
-2. Dr. McCallin does not like to discharge on lower than 1/8 LPM (120 mL), 100% FiO2
+2. Dr. McCallin does not like to discharge on lower than 1/8 LPM (125 mL), 100% FiO2
 
 3. Per Dr. McCallin: obtain baseline gas, +/- repeat CXR if most recent CXR prior was abnormal (air trapping, diaphragmatic flattening, atelectasis, etc.). Inquire if additional meds needed/ recommended (ie., pulmicort, albuterol, etc.)
 
@@ -548,7 +548,7 @@ The following steps may be followed to complete the process of discharge with ho
 Go into the discharge navigator &rarr; Click on **MD med/order reconciliation** in left menu bar &rarr; Complete the medication reconciliation:  
 
 1. Discontinue what is not needed, add whatever else infant needs as outpatient
-2. Order Poly-Vi-Sol for birth GA &le; 37 weeks, or Poly-Vi-Sol with Iron for birth GA < 37 weeks
+2. Order Poly-Vi-Sol for birth GA &ge; 37 weeks, or Poly-Vi-Sol with Iron for birth GA < 37 weeks
 3. Order **discharge diet** and enter [appropriate diet](#sec-discharge-diet)
    * <span style='color:red;'>Make sure to copy/paste recipes for making 22kcal/oz or 24kcal/oz with Neosure or Enfacare 22kcal/oz to the Discharge Diet order</span>
 4. Order **discharge activity** and enter the back to sleep information by using the dot-phrase [.back1](#sec-dotphrase-back1)
@@ -590,7 +590,7 @@ Find your signed D/C summary within the Notes tab and click once:
 2. Route to PCP: Select **+ PCP** and the patient's PCP will populate in the **send-to** section
 3. Route to the pediatric provider seeing baby after NICU discharge if not the PCP
 4. Cut and paste brief synopsis in comment section
-5. If infant's birth GA <32 weeks or birth BW < 1,500g, D/C summary also needs to be routed to HRIF
+5. If infant's birth GA <32 weeks or birth BW ≤ 1,500g, D/C summary also needs to be routed to HRIF
     * Route D/C summary to **Nicole Ann Hutson** and **Pheba Joseph**
 6. If infant is a candidate for Synagis^&reg;^, also route D/C summary to **Robyn Gerome**
 

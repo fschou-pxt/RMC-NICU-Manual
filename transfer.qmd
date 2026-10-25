@@ -14,7 +14,7 @@ number-depth: 2
 | KP 1001                           | Kaiser Plan Insurance from Employer DHMO - Deductible HMO - Inpatient High $ Deductible | Yes                             |
 | KP Health Care Reform HMO         | Kaiser Plan Purchased by Individual HMO - set Copay                       | Yes                             |
 | KP Health Care Reform DHMO        | KP Health Care Reform - DHMO Deductible HMO - Inpatient High $ Deductible | Yes                             |
-| Medical Financial Assistance      | Kaiser Charity for those without any insurance. 30 days Kaiser Insurance then must enroll in an insurance after 30 days – Medi-Cal or purchased plan. Contact Case Manager for current insurance eligibility |                                 |
+| Medical Financial Assistance      | Kaiser Charity for those without any insurance. 30 days Kaiser Insurance then must enroll in an insurance after 30 days – Medi-Cal or purchased plan. Contact Case Manager for current insurance eligibility | Contact case manager             |
 | KP 1003                           | Kaiser IEHP Medi-Cal                  | No*                             |
 | Inland Empire Health Plan         | Medi-Cal                                                                  | No*                             |
 

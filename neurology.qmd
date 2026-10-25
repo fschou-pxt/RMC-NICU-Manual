@@ -544,7 +544,7 @@ Any of the following:
 #1 & 2, or #1 & 5, from above that is:
 - Acute perinatal event
 AND
-- An Apgar score <5 at 10 minutes OR
+- An Apgar score ≤5 at 10 minutes OR
 - Continued need for ventilation initiated at birth and continued for at least 10 minutes
 
 #### Criteria B: Neurologic Examination {#sec-ne}
@@ -585,7 +585,7 @@ OR
 
 * CN II: red reflex bilaterally 
 * CN III, IV, VI: pupil response to light, EOM, nystagmus 
-* CN V: facial expression
+* CN V: facial sensation, rooting and suck strength
 * CN VII: facial strength 
 * CN VIII: conversational hearing 
 * CN IX & X: gag reflex 

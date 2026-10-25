@@ -70,7 +70,7 @@ To address these concerns, these guidelines were developed to help prioritize an
 |                | ≥35 weeks            | < 29 days         | 50 mg/kg q8h                 |
 |                |                      | ≥ 29 days         | 50 mg/kg q6h     |
 | **Cefepime**   | All                  | < 14 days         | 30 mg/kg q12h                |
-|                |                      | 14 to 29 days     | 50 mg/kg q12h                |
+|                |                      | 14 to 28 days     | 50 mg/kg q12h                |
 |                |                      | ≥ 29 days         | 50 mg/kg q8h                 |
 | **Gentamicin***| <30 weeks PMA<sup>¥</sup>       | ≤ 7 days          | 5 mg/kg q48h                 |
 |                |                      | 8-28 days         | 4 mg/kg q36h                 |
@@ -101,7 +101,7 @@ To address these concerns, these guidelines were developed to help prioritize an
 | **Ampicillin** | All            | ≤ 7 days old     | 100 mg/kg q8h                    |
 |                |                | ≥ 8 days         | 75 mg/kg q6h                     |
 | **Cefepime**   | All            | < 14 days        | 30 mg/kg q12h                    |
-|                |                | ≥ 14 to 29 days  | 50 mg/kg q12h                    |
+|                |                | ≥ 14 to 28 days  | 50 mg/kg q12h                    |
 |                |                | ≥ 29 days        | 50 mg/kg q8h                     |
 | **Meropenem**  | <32 weeks      | <14 days         | 40 mg/kg q12h over 4 hours       |
 |                |                | ≥ 14 days        | 40 mg/kg q8h over 4 hours        |
