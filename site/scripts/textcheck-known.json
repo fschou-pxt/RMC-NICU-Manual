@@ -47,5 +47,12 @@
       "site": "Passive Cooling for Hypoxic Ischemic Encephalopathy",
       "reason": "Heading shortened at the editor's request (2026-10-24): \"(HIE)\" removed."
     }
+  ],
+  "hemonc": [
+    {
+      "quarto": "34 0/7 - 34 6/ 12-14",
+      "site": "34 0/7 - 34 6/7 12-14",
+      "reason": "Typo fixed (2026-10-25, editor): the last row of 'Phototherapy for preterm infants' was missing the 7 in 34 6/7."
+    }
   ]
 }
