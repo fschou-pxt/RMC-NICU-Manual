@@ -24,6 +24,22 @@ const sections = headings.filter((h) => h.depth === 2);
 )}
 
 <script>
+  // Arriving at a section (#id): if something above it still changes size in the first seconds
+  // (a diagram being drawn, an image), keep the section at the top, until the reader scrolls on their own.
+  let keepAnchor = () => {};
+  if (location.hash) {
+    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target) {
+      let mine = true;
+      const stop = () => { mine = false; };
+      ["wheel", "touchstart", "keydown", "mousedown"].forEach((e) => addEventListener(e, stop, { once: true, passive: true }));
+      keepAnchor = () => { if (mine) target.scrollIntoView({ block: "start" }); };
+      const watch = new ResizeObserver(() => keepAnchor());
+      watch.observe(document.querySelector(".sl-markdown-content") || document.body);
+      setTimeout(() => { watch.disconnect(); mine = false; }, 5000);
+    }
+  }
+
   // Flowcharts: drawn in the browser from the ```mermaid source, in the site's colors
   async function drawDiagrams() {
     const blocks = document.querySelectorAll("pre.mermaid:not([data-processed])");
@@ -42,8 +58,11 @@ const sections = headings.filter((h) => h.depth === 2);
         primaryTextColor: dark ? "#dde5ee" : "#1d2733",
         lineColor: dark ? "#7cc0f5" : "#0068a8",
       },
+      // wider boxes: labels wrap at 400px instead of Mermaid's 200px (long dose steps were 4–5 lines each)
+      flowchart: { wrappingWidth: 400, nodeSpacing: 36, rankSpacing: 36, padding: 10, useMaxWidth: true },
     });
     await mermaid.run({ nodes: blocks });
+    keepAnchor(); // the diagrams just changed the page's height
   }
   drawDiagrams();
 

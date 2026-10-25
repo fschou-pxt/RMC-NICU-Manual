@@ -41,6 +41,11 @@
       "quarto": "All infants receiving pharmacologic treatment for NAS will be referred to the High Risk Infant follow up program/ clinic.",
       "site": "Pharmacologic treatment for NAS does not by itself make an infant eligible for High Risk Infant Follow-up. Refer to HRIF only if the infant meets the HRIF eligibility criteria ( ⟨xref⟩ ).",
       "reason": "Clinical correction by the editor (2026-10-24): pharmacologic treatment for NAS does not automatically make an infant HRIF-eligible."
+    },
+    {
+      "quarto": "Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE)",
+      "site": "Passive Cooling for Hypoxic Ischemic Encephalopathy",
+      "reason": "Heading shortened at the editor's request (2026-10-24): \"(HIE)\" removed."
     }
   ]
 }

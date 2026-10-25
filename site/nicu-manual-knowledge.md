@@ -4258,17 +4258,17 @@ URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#reference
 6.  Mark L. Hudak, MD and Rosemarie C. Tan, MD,, PhD (2012), Neonatal drug withdrawal, Pediatrics, 129(2).
 7.  Southern California Kaiser Permanente Medical Group (2017) Neonatal Abstinence Syndrome White Paper.
 
-## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE)
+## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-passive-cooling
 
 [Click to Download Policy](https://fschou-pxt.github.io/RMC-NICU-Manual/files/HIE-2025.pdf)
 
-## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Purpose
+## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy › Purpose
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#purpose-1
 
 To standardize the care of infants who meet criteria for therapeutic hypothermia. This policy addresses passive cooling measures by outlining the process for initiating and monitoring passive therapeutic hypothermia for the treatment of hypoxic-ischemic encephalopathy (HIE) of the newborn.
 
-## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Scope/Coverage
+## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy › Scope/Coverage
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#scopecoverage
 
 Infants greater than or equal to 35 weeks gestation diagnosed with Hypoxic-Ischemic Encephalopathy (HIE) are treated with whole-body cooling to a core temperature of 33.5 degrees Celsius, as a neuroprotective therapy. Initiation of active cooling should occur ideally before 6 hours of age, at a designated cooling center. The cool body temperature is maintained for 72 hours and then the infant is re-warmed over a 6-hour period (re-warming period may be extended due to instability).
@@ -4277,13 +4277,13 @@ This procedure will take place in the Neonatal Intensive Care Unit (NICU) with l
 
 Infants will not be actively cooled. Only passive cooling will be done while the baby is waiting transport to appropriate facility.
 
-## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Definitions
+## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy › Definitions
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#definitions
 
 - **Hypoxic Ischemic Encephalopathy (HIE):** Birth asphyxia
 - **Neonatal Encephalopathy (NE):** A “clinically defined syndrome of disturbed neurologic function in the earliest days of life in the full-term infant, manifested by difficulty with initiating and maintaining respiration, depression of tone and reflexes, subnormal level of consciousness and often seizures”.
 
-## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Policy Statement › A. Eligibility
+## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy › Policy Statement › A. Eligibility
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#a-eligibility
 
 *See [Practice Guideline: Therapeutic Hypothermia](https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-th-protocol) Hypothermia Protocol and information outlined below*
@@ -4306,7 +4306,7 @@ Neonatologist to determine whether the infant meets criteria to initiate therape
     6.  Intractable coagulopathy with active bleeding.
     7.  Parent refusal.
 
-## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Policy Statement › Calling for Transport
+## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy › Policy Statement › Calling for Transport
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#calling-for-transport
 
 Transports for potential/actual therapeutic hypothermia are emergent. Inform the transport team whether the neonatologists have decided to begin passive cooling or whether the baby is being transported only for consultation purposes.
@@ -4358,12 +4358,12 @@ Transports for potential/actual therapeutic hypothermia are emergent. Inform the
     1.  Identify on the hypothermia flow sheet, the time when passive cooling is implemented.
     2.  Identify in the vital sign flow sheet the exact time that the baby reaches 33.5°C, if applicable.
 
-## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Policy Statement › Pre-cooling lab reference guide
+## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy › Policy Statement › Pre-cooling lab reference guide
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-cooling-lab-ref
 
 [Click here to download the pre-cooling labs reference guide](https://fschou-pxt.github.io/RMC-NICU-Manual/files/pre-cooling-lab-ref.pdf)
 
-## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy (HIE) › Orderset
+## 17 Neurology › Passive Cooling for Hypoxic Ischemic Encephalopathy › Orderset
 URL: https://fschou-pxt.github.io/RMC-NICU-Manual/neurology.html#sec-passive-cooling-orderset
 
 Inside **ADMISSION NICU IP SCAL**

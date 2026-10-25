@@ -9,6 +9,7 @@ import rehypeKatex from "rehype-katex";
 import remarkManual from "./src/plugins/remark-manual.mjs";
 import remarkEvidence from "./src/plugins/remark-evidence.mjs";
 import rehypeTables from "./src/plugins/rehype-tables.mjs";
+import rehypeImageSize from "./src/plugins/rehype-image-size.mjs";
 
 const chapters = JSON.parse(fs.readFileSync("./src/chapters.json", "utf8"));
 const exists = (slug) => fs.existsSync(`./src/content/docs/${slug}.mdx`);
@@ -28,7 +29,7 @@ export default defineConfig({
   build: { format: "file" }, // respiratory.html, as in the Quarto manual
   // built pages go outside iCloud sync (".nosync"), which otherwise leaves "page 2.html" copies; dist links here
   outDir: "./dist.nosync",
-  markdown: { processor: unified({ remarkPlugins: [remarkManual, remarkEvidence, remarkMath], rehypePlugins: [rehypeTables, rehypeKatex] }) },
+  markdown: { processor: unified({ remarkPlugins: [remarkManual, remarkEvidence, remarkMath], rehypePlugins: [rehypeTables, rehypeImageSize, rehypeKatex] }) },
   // node_modules is a link into node_modules.nosync (kept out of iCloud); keep library paths recognizable
   vite: { resolve: { preserveSymlinks: true } },
   integrations: [
