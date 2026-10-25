@@ -808,3 +808,4 @@ body:has(.ask-app) .sl-container { max-width: none; }
   .calc-box #feed-body #fd-out { position: sticky; top: 0; }
   .calc-box #feed-body #fd-out .fd-hint:only-child { margin-top: 0; padding: 1rem; border: 1px dashed var(--sl-color-gray-5); border-radius: var(--kp-radius); }
 }
+.home-recent a[hidden] { display: none; }

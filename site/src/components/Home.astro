@@ -126,7 +126,7 @@ const { editor, editorEmail, authors = [], donate } = Astro.props;
   const recentNav = document.querySelector<HTMLElement>(".home-recent");
   try {
     const recent = (JSON.parse(localStorage.getItem("nicuChat.recent") || "[]") as { title: string; url: string }[])
-      .filter((r) => r.url?.startsWith(LIVE)).slice(0, 6);
+      .filter((r) => r.url?.startsWith(LIVE)).slice(0, 12);
     if (recentNav && recent.length) {
       const chips = recentNav.querySelector(".chips")!;
       for (const r of recent) {
@@ -138,6 +138,15 @@ const { editor, editorEmail, authors = [], donate } = Astro.props;
         chips.append(a);
       }
       recentNav.hidden = false;
+      // one line only: show the most recent chips that fit, hide the rest (rechecked when the width changes)
+      const fit = () => {
+        const all = [...chips.children] as HTMLElement[];
+        all.forEach((c) => { c.hidden = false; });
+        const top = all[0]?.offsetTop;
+        all.forEach((c) => { if (c.offsetTop > top) c.hidden = true; });
+      };
+      fit();
+      addEventListener("resize", fit);
     }
   } catch {}
   // What's new colors go by month: newest month red, next yellow, next blue (older ones are not shown)
