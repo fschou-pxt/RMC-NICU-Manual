@@ -19,4 +19,5 @@ site/node_modules.nosync
 site/dist
 site/dist/
 site/dist.nosync/
+site/dist-public.nosync/
 site/.astro/

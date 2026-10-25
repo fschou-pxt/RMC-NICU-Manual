@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build && python3 scripts/prune_assets.py && python3 -E scripts/build_knowledge.py",
     "preview": "astro preview",
-    "check": "python3 scripts/textcheck.py"
+    "check": "python3 scripts/textcheck.py",
+    "build:public": "ASK=off SOFT_LAUNCH=1 SITE_URL=https://nicu-manual.pages.dev SITE_DIST=dist-public.nosync sh -c 'astro build --outDir ./dist-public.nosync && python3 scripts/prune_assets.py && python3 -E scripts/build_knowledge.py'"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "7.3.4",

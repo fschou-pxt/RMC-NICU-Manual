@@ -23,7 +23,7 @@ from datetime import date, datetime
 
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(SITE)
-DIST = os.path.join(SITE, "dist")
+DIST = os.path.join(SITE, os.environ.get("SITE_DIST", "dist"))  # the public build uses its own folder
 sys.path.insert(0, os.path.join(ROOT, "chatbot"))
 import build_knowledge as quarto  # noqa: E402  shared helpers (tables, sections, links)
 

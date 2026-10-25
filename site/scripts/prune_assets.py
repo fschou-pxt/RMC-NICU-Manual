@@ -10,7 +10,8 @@ import os
 import re
 import urllib.parse
 
-DIST = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dist")
+# SITE_DIST picks the build folder (the public build uses its own, see package.json "build:public")
+DIST = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), os.environ.get("SITE_DIST", "dist"))
 LIMIT = 25 * 1024 * 1024
 
 

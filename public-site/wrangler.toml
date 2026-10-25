@@ -1,0 +1,16 @@
+# Cloudflare Pages settings for the PUBLIC site, https://nicu-manual.pages.dev (deploy from this folder; see README.md).
+# Built with Ask off (`npm run build:public` in site/). No password. Its own count stores, separate from the preview's.
+name = "nicu-manual"
+pages_build_output_dir = "../site/dist-public.nosync"
+compatibility_date = "2026-10-01"
+
+# "Let's discuss" counts on evidence notes (functions/api/discuss.js)
+[[kv_namespaces]]
+binding = "DISCUSS"
+id = "ee1a797b8493497eb716de22048343c8"
+
+# Anonymous section-view counts (functions/api/views.js; schema in ../preview/stats/schema.sql)
+[[d1_databases]]
+binding = "STATS"
+database_name = "nicu-manual-public-stats"
+database_id = "c62849cb-ca13-4a31-abf4-5dd681a9b895"

@@ -5,7 +5,20 @@ import chapters from "../chapters.json";
 const { entry, headings = [] } = Astro.locals.starlightRoute;
 const chapter = chapters.find((c) => c.slug === entry.id);
 const sections = headings.filter((h) => h.depth === 2);
+// soft launch (SOFT_LAUNCH=1 at build time): a notice that this is the new version, with feedback and the old page
+const softLaunch = process.env.SOFT_LAUNCH === "1";
+const oldPage = "https://fschou-pxt.github.io/RMC-NICU-Manual/" + (entry.id === "index" ? "" : `${entry.id}.html`);
 ---
+
+{softLaunch && (
+  <div class="soft-launch not-content" data-soft-launch>
+    <span><b>New version of the NICU Manual.</b> Same content, new design. </span>
+    <a href="mailto:Fu-Sheng.X.Chou@kp.org?subject=New%20NICU%20Manual%20feedback">Tell us what you think</a>
+    <span aria-hidden="true">·</span>
+    <a href={oldPage} data-old>Open this page in the old version</a>
+    <button type="button" aria-label="Hide this notice" data-hide>×</button>
+  </div>
+)}
 
 {entry.data.template === "splash" || entry.id === "ask" ? <h1 id="_top" class="sr-only">{entry.data.title}</h1> : (
 <header class="chapter-hero">
@@ -24,6 +37,18 @@ const sections = headings.filter((h) => h.depth === 2);
 )}
 
 <script>
+  // soft-launch notice: hidden for the rest of the visit once closed; the old-version link keeps the section
+  const notice = document.querySelector("[data-soft-launch]");
+  if (notice) {
+    try { if (sessionStorage.getItem("nicuSoftLaunch") === "hidden") notice.remove(); } catch {}
+    notice.querySelector("[data-hide]")?.addEventListener("click", () => {
+      notice.remove();
+      try { sessionStorage.setItem("nicuSoftLaunch", "hidden"); } catch {}
+    });
+    const old = notice.querySelector<HTMLAnchorElement>("[data-old]");
+    if (old) old.addEventListener("click", () => { old.href = old.href.split("#")[0] + location.hash; });
+  }
+
   // Arriving at a section (#id): if something above it still changes size in the first seconds
   // (a diagram being drawn, an image), keep the section at the top, until the reader scrolls on their own.
   let keepAnchor = () => {};
