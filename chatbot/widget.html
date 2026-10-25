@@ -130,6 +130,7 @@ function highlightOnPage(quote, hash) {
   return false;
 }
 function jumpTo(src) {
+  try { S.setItem("nicuNav.src", JSON.stringify({ src: "ask", t: Date.now() })); } catch {} // section-view counts: came from Ask
   const target = new URL(localize(src.url), location.href);
   if (window.innerWidth < 600) setOpen(false); // the panel covers the page on phones
   else if (ui.max) { maxPaused = true; applyUi(); } // shrink so the highlighted text is visible
@@ -271,12 +272,14 @@ form.addEventListener("submit", async (ev) => {
 // The tab bar to the site's main pages (shown on phones; the bubble covers Ask on wider screens).
 // Only on the Astro site (Starlight's search element is there); the Quarto book has no Ask or Calculators pages.
 const here = (location.pathname.split("/").pop() || "").replace(/\.html$/, "");
+const askOn = window.NICU_ASK !== false; // the site build can switch Ask off (launch baseline)
+if (!askOn) root.hidden = true;
 const bar = document.querySelector("site-search") && document.createElement("nav");
 if (bar) {
 document.body.classList.add("nc-has-tabbar");
 bar.className = "nc-tabbar";
 bar.setAttribute("aria-label", "Main sections");
-bar.innerHTML = [["ask", "chat-dots", "Ask"], ["", "book", "Manual"], ["dotPhrases", "clipboard", "Dot phrases"],
+bar.innerHTML = [...(askOn ? [["ask", "chat-dots", "Ask"]] : []), ["", "book", "Manual"], ["dotPhrases", "clipboard", "Dot phrases"],
   ["phone-numbers", "telephone", "Phones"], ["calculators", "calculator", "Calculators"]]
   .map(([path, icon, label]) => {
     const on = path ? here === path : !["ask", "dotPhrases", "phone-numbers", "calculators"].includes(here);

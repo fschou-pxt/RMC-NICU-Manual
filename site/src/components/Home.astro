@@ -31,6 +31,7 @@ for (const ch of chapters) {
   p.items.push({ slug: ch.slug, title: titleOf(ch.slug), number: ch.number });
 }
 const { editor, editorEmail, authors = [], donate } = Astro.props;
+const askOn = process.env.ASK !== "off"; // ASK=off at build time: launch baseline without Ask
 ---
 
 <div class="home">
@@ -41,9 +42,11 @@ const { editor, editorEmail, authors = [], donate } = Astro.props;
     <button type="button" class="home-search" data-home-search>
       <Icon name="search" /><span class="long">Search protocols, doses, phone numbers…</span><span class="short">Search the manual</span><kbd>⌘K</kbd>
     </button>
-    <div class="home-actions">
-      <a class="btn primary" href={href("ask")}><Icon name="chat" /><span>Ask<span class="wide"> the manual</span></span></a>
-    </div>
+    {askOn && (
+      <div class="home-actions">
+        <a class="btn primary" href={href("ask")}><Icon name="chat" /><span>Ask<span class="wide"> the manual</span></span></a>
+      </div>
+    )}
     <nav class="home-recent" aria-label="Recently viewed" hidden>
       <span class="lab">Recent</span>
       <div class="chips"></div>

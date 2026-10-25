@@ -809,3 +809,6 @@ body:has(.ask-app) .sl-container { max-width: none; }
   .calc-box #feed-body #fd-out .fd-hint:only-child { margin-top: 0; padding: 1rem; border: 1px dashed var(--sl-color-gray-5); border-radius: var(--kp-radius); }
 }
 .home-recent a[hidden] { display: none; }
+.ask-soon { max-width: 40rem; margin: 2rem auto; padding: 1.25rem 1.5rem; border: 1px solid var(--sl-color-gray-5); border-radius: var(--kp-radius); background: var(--kp-surface); }
+.ask-soon p { margin: 0.4rem 0 0 !important; color: var(--sl-color-gray-2); }
+.ask-soon .ask-title { margin: 0 !important; color: var(--sl-color-white); }

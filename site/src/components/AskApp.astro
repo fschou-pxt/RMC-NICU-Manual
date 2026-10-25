@@ -1,8 +1,16 @@
 ---
+const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announced but not yet available
 // Ask page: the chat, full page, in the site's design. Same engine as the chat bubble (chatbot/engine.js):
 // answers come from the manual, each with its sources; a source opens in a side panel (bottom sheet on phones).
 ---
 
+{!askOn && (
+  <div class="ask-soon not-content">
+    <p class="ask-title">Ask the manual</p>
+    <p>Coming soon: ask a question and get an answer from the manual, with the source one tap away. Until then, use Search (top of the page) or the Quick links on the home page.</p>
+  </div>
+)}
+{askOn && (<>
 <div class="ask-app not-content" data-ask>
   <div class="ask-bar">
     <p class="ask-title">Ask the manual</p>
@@ -37,14 +45,17 @@
     <button class="ask-btn" type="button" data-act="open-manual"><i class="bi bi-book"></i> Open in manual</button>
   </footer>
 </aside>
+</>)}
 
 <script>
   const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
   const composerEl = document.querySelector("#ask-composer");
+  if (composerEl) {
   composerEl.addEventListener("submit", (ev) => ev.preventDefault()); // until the engine is ready
   import(/* @vite-ignore */ base + "chatbot/engine.js").then(start).catch(() => {
     document.querySelector("#ask-thread").innerHTML = '<p class="ask-fail">Ask could not load. It needs an internet connection the first time; check your connection and reload.</p>';
   });
+  }
 
   function start(E) {
     const { K, S, L, store, readJSON, localize, settings, hasKey, currentModel, shortLabel, loadHistory, saveHistory,
@@ -199,11 +210,17 @@
       body.innerHTML = sec ? renderMd(sec.text) : '<p class="nc-note">This section could not be loaded. Use "Open in manual".</p>';
       body.scrollTop = 0;
       if (src.title) addRecent(src);
+      // section-view counts: read in Ask's panel (page and the section's anchor)
+      try {
+        const u = new URL(localize(src.url));
+        (window as any).NICUStats?.send(u.pathname.split("/").pop().replace(/\.html$/, ""), decodeURIComponent(u.hash.slice(1)) || "_top", "ask-panel");
+      } catch {}
       const marks = highlightIn(body, src.quote);
       if (marks.length) marks[0].scrollIntoView({ block: "center" });
     }
     const openSource = (msgIndex, srcIndex) => openSheet(history[msgIndex].sources, srcIndex);
     function openInManual(src) {
+      try { sessionStorage.setItem("nicuNav.src", JSON.stringify({ src: "ask", t: Date.now() })); } catch {}
       store.set(S, K.pending, JSON.stringify({ quote: src.quote || "", hash: new URL(localize(src.url)).hash }));
       location.href = localize(src.url);
     }

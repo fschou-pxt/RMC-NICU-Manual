@@ -12,9 +12,11 @@ import PageTools from "./PageTools.astro";
 const read = (p) => fs.readFileSync(path.resolve(process.cwd(), "..", p), "utf8");
 const widget = read("chatbot/widget.html");
 const register = read("pwa/register.html");
+const askOn = process.env.ASK !== "off"; // ASK=off at build time hides Ask everywhere (launch baseline)
 ---
 
 <Default {...Astro.props}><slot /></Default>
+<Fragment set:html={`<script>window.NICU_ASK = ${askOn};</script>`} />
 <PageTools />
 <Fragment set:html={widget} />
 <Fragment set:html={register} />

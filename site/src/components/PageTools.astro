@@ -5,6 +5,8 @@
 // - Formulary: a search box (drug names first, then the entries' text) and an A–Z index
 // - Long and comparison tables (any page): a find box; a switch to show one situation
 // - Every page: counts visits on this device, so the home page can put the most-used Quick links first
+// - Chapter pages: anonymous section-view counts for the site (/api/views): a section counts once per visit
+//   after 5 seconds on screen, with how the reader got there; no person, device or question is recorded
 // - Evidence notes (any page): "Let's discuss" counts, one per device, from the site's /api/discuss
 ---
 
@@ -26,6 +28,57 @@
   document.querySelectorAll<HTMLTableElement>("table.tbl-compare").forEach(situationSwitch);
   const discussButtons = [...document.querySelectorAll<HTMLButtonElement>(".ev-discuss")];
   if (discussButtons.length) discussCounts(discussButtons);
+
+  // ---------- anonymous section views ----------
+  // How the reader got there: a click on a link is remembered for a few seconds (sessionStorage) and applies
+  // to the next section they view; Ask sets "ask" itself before opening a source.
+  function sendView(pg, section, source) {
+    try {
+      fetch(base + "api/views", { method: "POST", keepalive: true, headers: { "content-type": "text/plain" },
+        body: JSON.stringify({ page: pg, section, source, ask: (window as any).NICU_ASK !== false }) }).catch(() => {});
+    } catch {}
+  }
+  (window as any).NICUStats = { send: sendView };
+  const NAV = "nicuNav.src";
+  const navFrom = (a) =>
+    a.closest(".home") ? "home" :
+    a.closest(".nc-tabbar, nav.sidebar, .sidebar-content, starlight-menu-button") ? "sidebar" :
+    a.closest(".right-sidebar, starlight-toc, mobile-starlight-toc, nav.jump") ? "toc" :
+    a.closest("site-search, .pagefind-ui") ? "search" :
+    a.closest(".sl-markdown-content") ? "link" : "";
+  document.addEventListener("click", (ev) => {
+    const a = ev.target.closest?.("a[href]");
+    const src = a && navFrom(a);
+    if (src) try { sessionStorage.setItem(NAV, JSON.stringify({ src, t: Date.now() })); } catch {}
+  }, true);
+  const takeNav = () => {
+    try {
+      const v = JSON.parse(sessionStorage.getItem(NAV) || "null");
+      sessionStorage.removeItem(NAV);
+      return v && Date.now() - v.t < 15000 ? v.src : null;
+    } catch { return null; }
+  };
+  function sectionViews() {
+    if (!content || !document.querySelector("h1[data-chapter-title]")) return; // chapter pages only
+    const heads = [...content.querySelectorAll("h2[id]")];
+    let pending = takeNav() || (document.referrer.startsWith(location.origin) ? "link" : "direct");
+    addEventListener("hashchange", () => { pending = takeNav() || pending; });
+    const seen = new Set();
+    let cur = null, since = 0;
+    setInterval(() => {
+      if (document.hidden) { cur = null; return; }
+      const line = innerHeight * 0.3; // the section whose heading is above the top third is the one being read
+      let id = "_top";
+      for (const h of heads) { if (h.getBoundingClientRect().top <= line) id = h.id; else break; }
+      if (id !== cur) { cur = id; since = Date.now(); return; }
+      if (Date.now() - since >= 5000 && !seen.has(id)) {
+        seen.add(id);
+        sendView(page, id, pending || "browse");
+        pending = null;
+      }
+    }, 1000);
+  }
+  sectionViews(); // after the helpers above exist (the bundler keeps them in order)
 
   // ---------- long lookup tables: a find box for the first column (e.g. 35 → the 35 mL row) ----------
   function findBox(table) {

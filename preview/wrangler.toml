@@ -8,3 +8,9 @@ compatibility_date = "2026-10-01"
 [[kv_namespaces]]
 binding = "DISCUSS"
 id = "00ddf1ac51dd4411ab20a896db14a366"
+
+# Anonymous section-view counts (functions/api/views.js; schema in stats/schema.sql); free-tier D1
+[[d1_databases]]
+binding = "STATS"
+database_name = "nicu-manual-stats"
+database_id = "52e44715-0df4-4b7c-8804-c9ba22d830ec"
