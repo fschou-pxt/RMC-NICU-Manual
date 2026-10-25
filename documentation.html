@@ -388,6 +388,39 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+<!-- Soft launch: a banner on every page of this (old) manual pointing to the same page on the new site. -->
+<div id="nicu-new-site" hidden="">
+  <span><b>Try the new NICU Manual</b> — same content, new design.</span>
+  <a id="nicu-new-site-link" href="https://nicu-manual.pages.dev/">Open this page in the new version →</a>
+  <button type="button" aria-label="Hide this message" id="nicu-new-site-hide">×</button>
+</div>
+<style>
+#nicu-new-site { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 14px; padding: 8px 44px 8px 14px;
+  margin: 0 0 18px; border-radius: 8px; background: #003b71; color: #fff; font-size: 14px; line-height: 1.4; position: relative; z-index: 1040; }
+#nicu-new-site[hidden] { display: none; }
+#nicu-new-site a { color: #fff; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+#nicu-new-site button { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); border: 0; background: transparent; color: #fff;
+  font-size: 20px; line-height: 1; width: 30px; height: 30px; border-radius: 6px; cursor: pointer; }
+#nicu-new-site button:hover { background: rgba(255, 255, 255, .15); }
+@media print { #nicu-new-site { display: none !important; } }
+</style>
+<script>
+(function () {
+  var bar = document.getElementById("nicu-new-site");
+  try { if (sessionStorage.getItem("nicuNewSiteHidden") === "1") return; } catch (e) {}
+  // same page on the new site: respiratory.html#sec-x -> https://nicu-manual.pages.dev/respiratory#sec-x
+  var page = (location.pathname.split("/").pop() || "").replace(/\.html$/, "");
+  var link = document.getElementById("nicu-new-site-link");
+  function update() { link.href = "https://nicu-manual.pages.dev/" + (page === "index" ? "" : page) + location.hash; }
+  update();
+  window.addEventListener("hashchange", update);
+  document.getElementById("nicu-new-site-hide").addEventListener("click", function () {
+    bar.hidden = true;
+    try { sessionStorage.setItem("nicuNewSiteHidden", "1"); } catch (e) {}
+  });
+  bar.hidden = false;
+})();
+</script>
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./admission.html">General Care</a></li><li class="breadcrumb-item"><a href="./documentation.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Documentation</span></a></li></ol></nav>
 <div class="quarto-title">
