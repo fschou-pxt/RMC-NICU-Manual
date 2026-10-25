@@ -1,5 +1,7 @@
 ---
 // Chapter header: part and chapter number, title, and a row of jump links to the chapter's main sections.
+import fs from "node:fs";
+import path from "node:path";
 import chapters from "../chapters.json";
 
 const { entry, headings = [] } = Astro.locals.starlightRoute;
@@ -7,7 +9,9 @@ const chapter = chapters.find((c) => c.slug === entry.id);
 const sections = headings.filter((h) => h.depth === 2);
 // soft launch (SOFT_LAUNCH=1 at build time): a notice that this is the new version, with feedback and the old page
 const softLaunch = process.env.SOFT_LAUNCH === "1";
-const oldPage = "https://fschou-pxt.github.io/RMC-NICU-Manual/" + (entry.id === "index" ? "" : `${entry.id}.html`);
+// the same page in the old manual when it has one (a .qmd of that name in the project folder), else its home page
+const hasOld = !!entry.id && entry.id !== "index" && fs.existsSync(path.resolve("..", `${entry.id}.qmd`));
+const oldPage = "https://fschou-pxt.github.io/RMC-NICU-Manual/" + (hasOld ? `${entry.id}.html` : "");
 ---
 
 {softLaunch && (
@@ -15,7 +19,7 @@ const oldPage = "https://fschou-pxt.github.io/RMC-NICU-Manual/" + (entry.id === 
     <span><b>New version of the NICU Manual.</b> Same content, new design. </span>
     <a href="mailto:Fu-Sheng.X.Chou@kp.org?subject=New%20NICU%20Manual%20feedback">Tell us what you think</a>
     <span aria-hidden="true">·</span>
-    <a href={oldPage} data-old>Open this page in the old version</a>
+    <a href={oldPage} data-old={hasOld ? "page" : "home"}>{hasOld ? "Open this page in the old version" : "Open the old version"}</a>
     <button type="button" aria-label="Hide this notice" data-hide>×</button>
   </div>
 )}
@@ -46,7 +50,7 @@ const oldPage = "https://fschou-pxt.github.io/RMC-NICU-Manual/" + (entry.id === 
       try { sessionStorage.setItem("nicuSoftLaunch", "hidden"); } catch {}
     });
     const old = notice.querySelector<HTMLAnchorElement>("[data-old]");
-    if (old) old.addEventListener("click", () => { old.href = old.href.split("#")[0] + location.hash; });
+    if (old?.dataset.old === "page") old.addEventListener("click", () => { old.href = old.href.split("#")[0] + location.hash; });
   }
 
   // Arriving at a section (#id): if something above it still changes size in the first seconds
