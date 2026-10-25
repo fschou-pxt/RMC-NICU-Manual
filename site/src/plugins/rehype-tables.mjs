@@ -14,6 +14,8 @@
 //   gallery  items with photos
 //   scale    a scored scale (columns from one end of the scale to the other)
 //   chart    a reference series, drawn as a chart above the table (values folded below)
+//   bycol    criteria grouped by column (e.g. "Not acutely ill" / "Acutely ill"): one box per column listing each
+//            row's items, drawn above the table (table folded below, so the word check still reads it)
 import path from "node:path";
 import { visit } from "unist-util-visit";
 import { toString } from "hast-util-to-string";
@@ -24,7 +26,7 @@ const LAYOUTS = {
   cardiovascular: [[/^Assessment Criteria \| Sedation/, "scale"]],
   "death-workflows": [[/^Activity or Documentation Required/, "compare"], [/^Scenario \/ Question \| Answer/, "qa"]],
   endocrine: [[/^Indication \| Screening needed/, "pairs"]],
-  hemonc: [[/^Age \(days\) \| AFP mean/, "chart"], [/^Category \| Not Acutely Ill \| Acutely Ill/, "cards"], [/^>1500g/, "pairs"]],
+  hemonc: [[/^Age \(days\) \| AFP mean/, "chart"], [/^Category \| Not Acutely Ill \| Acutely Ill/, "bycol"], [/^>1500g/, "pairs"]],
   "infectious-disease": [[/^Antibiotic \| Gestational age/, "grouped"]],
   "lluch-formulary": [[/^DO NOT USE \| USE THESE/, "swap"]],
   neurology: [[/^Step \| Dose \(mg\/kg\)/, "steps"], [/^Table 1\. Neurological Examination/, "cards"]],
@@ -143,9 +145,39 @@ export default function rehypeTables() {
             { type: "element", tagName: "summary", properties: { className: ["tbl-sum"] }, children: [{ type: "text", value: "Show the values" }] }, table] },
         ];
       }
+      if (layout === "bycol") {
+        frame.children = [
+          byColumn(heads, rowsOf(tbody).filter((tr) => !tr.properties?.className?.includes("subhead"))),
+          { type: "element", tagName: "details", properties: { className: ["tbl-values"] }, children: [
+            { type: "element", tagName: "summary", properties: { className: ["tbl-sum"] }, children: [{ type: "text", value: "Show as a table" }] }, table] },
+        ];
+      }
       parent.children[index] = frame;
     });
   };
+}
+
+// One box per column (after the first): for each row, its first cell as a label and that column's cell as a list
+// (lines split at <br>). A copy of the table's own cells, so the words are the manual's.
+function byColumn(heads, rows) {
+  const el = (tagName, className, children) => ({ type: "element", tagName, properties: className ? { className: [className] } : {}, children });
+  const lines = (td) => {
+    const out = [[]];
+    for (const c of td.children || []) {
+      if ((c.type === "element" && c.tagName === "br") || (/^mdxJsx/.test(c.type) && c.name === "br")) out.push([]);
+      else out[out.length - 1].push(structuredClone(c));
+    }
+    return out.filter((l) => l.some((c) => toString(c).trim()));
+  };
+  return el("figure", "tbl-viz", [el("div", "bycol", heads.slice(1).map((head, i) => el("section", i ? "bycol-card alt" : "bycol-card", [
+    el("div", "bycol-title", [{ type: "text", value: head }]),
+    ...rows.flatMap((tr) => {
+      const cells = cellsOf(tr);
+      const items = cells[i + 1] ? lines(cells[i + 1]) : [];
+      return items.length ? [el("div", "bycol-label", structuredClone(cells[0].children || [])),
+        el("ul", null, items.map((l) => el("li", null, l)))] : [];
+    }),
+  ])))]);
 }
 
 // AFP reference (preterm): mean and 95% interval by age, both axes on log scales (the first week falls fastest).

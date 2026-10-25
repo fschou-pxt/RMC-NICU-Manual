@@ -53,6 +53,32 @@
       "quarto": "34 0/7 - 34 6/ 12-14",
       "site": "34 0/7 - 34 6/7 12-14",
       "reason": "Typo fixed (2026-10-25, editor): the last row of 'Phototherapy for preterm infants' was missing the 7 in 34 6/7."
+    },
+    {
+      "quarto": "Waiver Form (Download here) 2. Blodo Order/Release During Hemorrhage Protocol Form (Download here)",
+      "site": "Waiver Form Download here 2. Blodo Order/Release During Hemorrhage Protocol Form Download here",
+      "reason": "Display fix (2026-10-25, editor): download links are shown as buttons, so the brackets around them were removed. No wording changed."
+    }
+  ],
+  "VLBW": [
+    {
+      "quarto": "[Download the Rouding Sheet here]",
+      "site": "Download the Rouding Sheet here",
+      "reason": "Display fix (2026-10-25, editor): download links are shown as buttons, so the brackets around them were removed. No wording changed."
+    }
+  ],
+  "endocrine": [
+    {
+      "quarto": "[Download]",
+      "site": "Download",
+      "reason": "Display fix (2026-10-25, editor): download links are shown as buttons, so the brackets around them were removed. No wording changed."
+    }
+  ],
+  "nutrition-fluid": [
+    {
+      "quarto": "Position paper [Download]",
+      "site": "Position paper Download",
+      "reason": "Display fix (2026-10-25, editor): download links are shown as buttons, so the brackets around them were removed. No wording changed."
     }
   ]
 }

@@ -294,6 +294,16 @@
 .tbl-viz .mean { fill: none; stroke: var(--sl-color-accent); stroke-width: 2.5; }
 .tbl-viz figcaption { font-size: 0.82rem; color: var(--sl-color-gray-3); margin-top: 0.25rem; }
 .tbl-values { margin: 0.5rem 0 0.5rem; }
+/* bycol: one box per column (e.g. Not acutely ill / Acutely ill), each row's criteria listed under its label */
+.sl-markdown-content .tbl-frame.tbl-frame-bycol { width: 100%; border: 0; box-shadow: none; background: transparent; overflow: visible; }
+.sl-markdown-content .bycol { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); margin: 0; }
+.sl-markdown-content .bycol-card { margin: 0; padding: 0.9rem 1.1rem 1rem; border-radius: var(--kp-radius); border: 1px solid var(--sl-color-gray-5); border-top: 4px solid var(--sl-color-accent); background: var(--kp-surface); box-shadow: var(--kp-shadow); }
+.sl-markdown-content .bycol-card.alt { border-top-color: #b3261e; }
+.sl-markdown-content .bycol-title { margin: 0 0 0.2rem; font-weight: 750; font-size: 1.1rem; color: var(--sl-color-white); }
+.sl-markdown-content .bycol-label { margin: 0.8rem 0 0; font-size: 0.75rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--sl-color-gray-3); }
+.sl-markdown-content .bycol-label strong { font-weight: 700; }
+.sl-markdown-content .bycol-card ul { margin: 0.25rem 0 0; padding-left: 1.1rem; }
+.sl-markdown-content .bycol-card li { margin: 0.15rem 0 0; }
 .tbl-values summary { cursor: pointer; font-weight: 650; font-size: 0.88rem; color: var(--sl-color-accent-high); padding: 0.4rem 0; }
 .tbl-values table { margin-top: 0.5rem !important; }
 /* colors carried over from the original tables: shaded cells (e.g. "Not a spell") and accent titles */
