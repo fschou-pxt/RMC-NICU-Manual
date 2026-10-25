@@ -32,10 +32,19 @@
   // ---------- anonymous section views ----------
   // How the reader got there: a click on a link is remembered for a few seconds (sessionStorage) and applies
   // to the next section they view; Ask sets "ask" itself before opening a source.
+  // kind of device from screen size and touch: a phone has a short side under 600 px; a touch screen
+  // up to 1100 px is a tablet (iPad); everything else is a computer
+  function deviceType() {
+    try {
+      const short = Math.min(screen.width, screen.height);
+      const touch = matchMedia("(pointer: coarse)").matches;
+      return short < 600 ? "phone" : touch && short < 1100 ? "tablet" : "computer";
+    } catch { return "unknown"; }
+  }
   function sendView(pg, section, source) {
     try {
       fetch(base + "api/views", { method: "POST", keepalive: true, headers: { "content-type": "text/plain" },
-        body: JSON.stringify({ page: pg, section, source, ask: (window as any).NICU_ASK !== false }) }).catch(() => {});
+        body: JSON.stringify({ page: pg, section, source, ask: (window as any).NICU_ASK !== false, device: deviceType() }) }).catch(() => {});
     } catch {}
   }
   (window as any).NICUStats = { send: sendView };
