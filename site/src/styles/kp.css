@@ -75,6 +75,9 @@
 .sl-markdown-content h2 { font-size: 1.65rem; font-weight: 750; letter-spacing: -0.025em; line-height: 1.2; }
 .sl-markdown-content .sl-heading-wrapper.level-h2 { margin-top: 3.25rem; padding-top: 2rem; border-top: 1px solid var(--sl-color-gray-5); }
 .sl-markdown-content > .sl-heading-wrapper.level-h2:first-child { margin-top: 1.5rem; padding-top: 0; border-top: 0; }
+/* Heading link icon: Starlight sizes its space in em, but our headings are smaller than their wrapper, so the
+   icon was pulled back onto the last letters. In rem, the reserved space and the pull-back always match. */
+.sl-markdown-content .sl-heading-wrapper { --sl-anchor-icon-size: 1rem; --sl-anchor-icon-gap: 0.45rem; }
 .sl-markdown-content h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.015em; margin-top: 2.25rem; color: var(--sl-color-accent-high); }
 .sl-markdown-content h4 { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sl-color-gray-3); margin-top: 1.75rem; }
 .sl-markdown-content strong { color: var(--sl-color-white); font-weight: 650; }
