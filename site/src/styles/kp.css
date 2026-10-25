@@ -851,3 +851,50 @@ body:has(.ask-app) .sl-container { max-width: none; }
 :root[data-theme="dark"] :is(.nc-set, .fd) select:not([multiple]) {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' fill='none' stroke='%23aab6c4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
+/* derived views (VIEWS in rehype-tables): the rows regrouped in boxes (insurance by answer, hospitals by session
+   code, labs by tube, thresholds by acuity); the key column's header over the boxes; the table folds below */
+.sl-markdown-content .tbl-frame.tbl-frame-view { width: 100%; min-width: 0; border: 0; box-shadow: none; background: transparent; overflow: visible; }
+.sl-markdown-content .tbl-frame-view .tbl-values { overflow-x: auto; }
+.sl-markdown-content .bykey-q { margin: 0 0 0.5rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sl-color-gray-3); }
+.sl-markdown-content .bycol.bykey { grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); }
+.sl-markdown-content .bykey .bycol-title { font-size: 1rem; }
+.sl-markdown-content .bykey-sub { color: var(--sl-color-gray-3); }
+/* merged cells: a row whose first cell is covered from above, or a cell across the whole row, is not a key cell */
+.sl-markdown-content .tbl tbody tr.span-cont > td:first-child { font-weight: inherit; color: inherit; position: static; box-shadow: none; }
+.sl-markdown-content .tbl tbody td.full-row { font-weight: 400; position: static; box-shadow: none; }
+/* cards whose N/A cells are left out (extubation timing: most studies report only some ages) */
+.tbl-cards.hide-na td.v-na { display: none; }
+@media (max-width: 50rem) {
+  /* pairs on phones: the column name above the second cell, as in cards */
+  .tbl-pairs td + td[data-label]::before { content: attr(data-label); display: block; margin-bottom: 0.1rem; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sl-color-gray-3); }
+  /* grouped with sub-groups (antibiotics): the gestational age heads its postnatal-age rows */
+  .tbl-grouped.sub-groups tr.sub-start:not(:first-child) { margin-top: 0.3rem; padding-top: 0.6rem; border-top: 2px solid var(--sl-color-gray-5); }
+  .tbl-grouped.sub-groups tr:not(.sub-start, :first-child) { border-top-style: dashed; }
+  .tbl-grouped.sub-groups tr:not(.note-row) > td:nth-child(2) { flex-basis: 100%; font-weight: 700; font-size: 0.85rem; color: var(--sl-color-accent-high); }
+  .tbl-grouped.sub-groups tr:not(.note-row) > td:nth-child(2)::before { content: none; }
+  /* scale (N-PASS) on phones: one card per criterion, each description after its score chip */
+  .sl-markdown-content .tbl-frame-scale { width: 100%; min-width: 0; border: 0; box-shadow: none; background: transparent; overflow: visible; }
+  .tbl-scale thead, .tbl-scale tr.score-row { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .tbl-scale, .tbl-scale tbody { display: block; }
+  .tbl-scale tbody { display: grid; gap: 0.75rem; }
+  .tbl-scale tbody tr:not(.score-row) { display: block; padding: 0.9rem 1rem; border-radius: var(--kp-radius); border: 1px solid var(--sl-color-gray-5); background: var(--kp-surface); box-shadow: var(--kp-shadow); }
+  .sl-markdown-content .tbl-scale :is(th, td) { display: block; padding: 0; border: 0; background: none !important; position: static !important; box-shadow: none !important; }
+  .sl-markdown-content .tbl-scale tbody td:first-child { font-size: 1rem; font-weight: 700; margin-bottom: 0.2rem; }
+  .sl-markdown-content .tbl-scale td[data-score] { position: relative !important; margin-top: 0.5rem; padding-left: 2.9rem; min-height: 1.4rem; }
+  .tbl-scale td[data-score]::before { content: attr(data-score); position: absolute; left: 0; top: 0.05rem; width: 2.3rem; text-align: center; font-size: 0.8rem; font-weight: 800; border-radius: 999px; padding: 0.05rem 0; }
+  .tbl-scale td:nth-child(2)[data-score]::before { background: #cfe3f5; color: #003b71; }
+  .tbl-scale td:nth-child(3)[data-score]::before { background: #e6f0f9; color: #003b71; }
+  .tbl-scale td:nth-child(4)[data-score]::before { background: #eef1f4; color: #35465a; }
+  .tbl-scale td:nth-child(5)[data-score]::before { background: #fbe8d6; color: #8a3d00; }
+  .tbl-scale td:nth-child(6)[data-score]::before { background: #f7d2b0; color: #8a3d00; }
+}
+/* comparison tables that share one switch (death workflows, Section 3): the switch stays in view over them */
+.cmp-scope > .tbl-switch.sticky { position: sticky; top: calc(var(--sl-nav-height) + var(--sl-mobile-toc-height, 0rem)); z-index: 3; margin: 1rem 0 0; padding: 0.55rem 0; background: var(--sl-color-bg); border-bottom: 1px solid var(--sl-color-gray-5); }
+/* formulary vancomycin: one switch for the two GA tables */
+.vanc-switch { margin: 0.75rem 0 0.25rem; scroll-margin-top: calc(var(--sl-nav-height) + var(--sl-mobile-toc-height, 0rem) + 5.5rem); }
+.vanc-hide { display: none !important; }
+@media (max-width: 50rem) { .sl-markdown-content .tbl.merged :is(th, td) { padding: 0.5rem 0.5rem; } }
+@media (max-width: 50rem) {
+  .cmp-scope > .tbl-switch.sticky { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .cmp-scope > .tbl-switch.sticky > * { flex: none; }
+}

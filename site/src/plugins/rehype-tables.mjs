@@ -16,6 +16,8 @@
 //   chart    a reference series, drawn as a chart above the table (values folded below)
 //   bycol    criteria grouped by column (e.g. "Not acutely ill" / "Acutely ill"): one box per column listing each
 //            row's items, drawn above the table (table folded below, so the word check still reads it)
+// Some tables also get a derived view above them (VIEWS): their rows regrouped by what the reader decides or orders
+// (insurance by the answer, hospitals by session code, labs by tube). The table keeps its layout, folded below.
 import path from "node:path";
 import { visit } from "unist-util-visit";
 import { toString } from "hast-util-to-string";
@@ -23,6 +25,20 @@ import { toString } from "hast-util-to-string";
 // page → header patterns of tables whose header row is really the first data row (moved into the body, so layouts
 // that hide headers on phones still show it): the Vitamin K table starts with its >1500 g row
 const HEADER_IS_DATA = { hemonc: [/^>1500g/] };
+
+// page → [header pattern, view]: a copy of the rows regrouped in boxes above the table (the table folds below)
+//   key: one box per distinct text in this column (norm: text → group); items: the columns listed per row
+//   ask: show the key column's header over the boxes (the boxes are its answers)
+//   split: columns whose header ends in " – <group>" form one box per group; each row's first cell labels its values
+const VIEWS = {
+  endocrine: [[/^Indication \| Screening needed/, { key: 1, items: [0], norm: (t) => t.replace(/ of age$/, "") }],
+    [/^#ID \| Code \| Description \| Tube/, { key: 3, items: [2, 4] }]],
+  hemonc: [[/^Time Period \| Hemoglobin/, { split: " – " }]],
+  operations: [[/^Hospital ID \| Hospital Location \| Session Code/, { key: 2, items: [1, 0], ask: true }]],
+  transfer: [[/^Insurance \| Definition/, { key: 2, items: [0], ask: true }]],
+};
+// page → header patterns of card tables whose "N/A" cells are left out (most cells are N/A)
+const HIDE_NA = { respiratory: [/^GA \| APEX Study/] };
 
 // page → [header text pattern, layout]; the pattern is matched against the header cells joined by " | "
 const LAYOUTS = {
@@ -37,7 +53,7 @@ const LAYOUTS = {
   "nutrition-fluid": [[/^Regimen \| Details/, "pairs"], [/^Fortified milk \(mL\)/, "long"]],
   operations: [[/^Step \| Action/, "steps"], [/^Study \| Agreement/, "pairs"]],
   respiratory: [[/^Parameters \| NAVA/, "cards"], [/^Parameter \| Investigate the Reason/, "grouped"],
-    [/^Issue \| Possible Causes \| Actions/, "cards"], [/^Intervention \| Monitoring period/, "pairs"]],
+    [/^Issue \| Possible Causes \| Actions/, "cards"], [/^Intervention \| Monitoring period/, "pairs"], [/^GA \| APEX Study/, "cards"]],
   transfer: [[/^Insurance \| Definition/, "cards"]],
 };
 
@@ -84,7 +100,12 @@ export default function rehypeTables() {
         if (heads.slice(1).every((h) => !h)) { heads = cellsOf(first).map(text); addClass(table, "title-head"); }
       }
       const layout = (LAYOUTS[page] || []).find(([re]) => re.test(sig))?.[1] || "lookup";
+      const view = (VIEWS[page] || []).find(([re]) => re.test(sig))?.[1];
       addClass(table, "tbl", `tbl-${layout}`);
+      if (HIDE_NA[page]?.some((re) => re.test(sig))) addClass(table, "hide-na");
+      markSpans(tbody);
+      // a grid with merged cells (sleep spells) is kept compact so it fits a phone without scrolling sideways
+      if ([thead, tbody].some((sec) => rowsOf(sec).some((tr) => cellsOf(tr).some((c) => +c.properties?.rowSpan > 1)))) addClass(table, "merged");
       if (thead && tbody && HEADER_IS_DATA[page]?.some((re) => re.test(sig))) {
         const row = rowsOf(thead)[0];
         for (const c of cellsOf(row)) c.tagName = "td";
@@ -105,9 +126,18 @@ export default function rehypeTables() {
       if (layout === "grouped" && tbody) {
         const groups = [];
         for (const tr of rowsOf(tbody)) {
-          if (text(cellsOf(tr)[0] || {}) || !groups.length) groups.push([]);
+          const cells = cellsOf(tr);
+          if (text(cells[0] || {}) || !groups.length) groups.push([]);
           groups[groups.length - 1].push(tr);
+          // a row with text only in its first two cells ("Vancomycin | Dosing … per pharmacy") is a note, not a column value
+          if (cells.length > 2 && text(cells[1]) && cells.slice(2).every((td) => !text(td))) {
+            delete cells[1].properties.dataLabel;
+            addClass(tr, "note-row");
+          }
+          // the second column sub-groups the block (antibiotics: a gestational age, then its postnatal-age rows)
+          else if (text(cells[1] || {})) addClass(tr, "sub-start");
         }
+        if (page === "infectious-disease") addClass(table, "sub-groups");
         table.children = table.children.flatMap((c) => c === tbody
           ? groups.map((g) => ({ type: "element", tagName: "tbody", properties: { className: ["grp"] }, children: g })) : [c]);
       }
@@ -129,6 +159,13 @@ export default function rehypeTables() {
       }
       // steps whose first cell is a short label (A, B, …) show it in the step marker
       if (layout === "steps" && rowsOf(tbody).every((tr) => text(cellsOf(tr)[0] || {}).length <= 2)) addClass(table, "steps-label");
+      // scale: the first body row holds the scores (-2 … +2); each cell carries its score, shown as a chip on phones
+      if (layout === "scale" && tbody) {
+        const [scoreRow, ...rest] = rowsOf(tbody);
+        const scores = cellsOf(scoreRow || { children: [] }).map(text);
+        addClass(scoreRow, "score-row");
+        for (const tr of rest) cellsOf(tr).forEach((td, i) => { if (i && scores[i]) td.properties.dataScore = scores[i]; });
+      }
       if (layout === "compare") {
         table.properties.dataColumns = heads.slice(1).join("|");
         // the same answer in neighboring situations is shown once, labeled with all of them ("All" view)
@@ -156,6 +193,14 @@ export default function rehypeTables() {
             { type: "element", tagName: "summary", properties: { className: ["tbl-sum"] }, children: [{ type: "text", value: "Show the values" }] }, table] },
         ];
       }
+      if (view) {
+        frame.children = [
+          view.split ? bySplit(heads, rowsOf(tbody), view.split) : byKey(heads, rowsOf(tbody), view),
+          { type: "element", tagName: "details", properties: { className: ["tbl-values"] }, children: [
+            { type: "element", tagName: "summary", properties: { className: ["tbl-sum"] }, children: [{ type: "text", value: "Show as a table" }] }, table] },
+        ];
+        frame.properties.className.push("tbl-frame-view");
+      }
       if (layout === "bycol") {
         frame.children = [
           byColumn(heads, rowsOf(tbody).filter((tr) => !tr.properties?.className?.includes("subhead"))),
@@ -166,6 +211,72 @@ export default function rehypeTables() {
       parent.children[index] = frame;
     });
   };
+}
+
+// Rows whose first cell is not in the first column (a cell above spans down into it) and cells spanning the whole
+// row: the key-column styling (bold, kept in view) is for real first-column cells only
+function markSpans(tbody) {
+  const rows = rowsOf(tbody);
+  const width = Math.max(0, ...rows.map((tr) => cellsOf(tr).reduce((n, c) => n + (+c.properties?.colSpan || 1), 0)));
+  const down = []; // per column: rows still covered by a rowspan from above
+  for (const tr of rows) {
+    if ((down[0] || 0) > 0) addClass(tr, "span-cont");
+    let col = 0;
+    for (const c of cellsOf(tr)) {
+      while ((down[col] || 0) > 0) col++;
+      const cs = +c.properties?.colSpan || 1, rs = +c.properties?.rowSpan || 1;
+      if (cs > 1 && cs >= width) addClass(c, "full-row");
+      for (let k = 0; k < cs; k++) down[col + k] = rs;
+      col += cs;
+    }
+    for (let k = 0; k < down.length; k++) if (down[k] > 0) down[k]--;
+  }
+}
+
+const el = (tagName, className, children) => ({ type: "element", tagName, properties: className ? { className: [className] } : {}, children });
+const copy = (td) => structuredClone(td?.children || []);
+
+// Boxes by the text of one column: each box lists its rows (the item columns, the first one in full, the others after
+// a dot). Copies of the table's own cells, so the words are the manual's.
+function byKey(heads, rows, { key, items, norm = (t) => t, ask }) {
+  const groups = new Map();
+  for (const tr of rows) {
+    if (tr.properties?.className?.includes("subhead")) continue;
+    const cells = cellsOf(tr), k = norm(text(cells[key] || {}));
+    if (!groups.has(k)) groups.set(k, { title: cells[key], rows: [] });
+    groups.get(k).rows.push(cells);
+  }
+  return el("figure", "tbl-viz", [
+    ...(ask ? [el("p", "bykey-q", [{ type: "text", value: heads[key] }])] : []),
+    el("div", "bycol bykey", [...groups.values()].map((g) => el("section", "bycol-card", [
+      el("div", "bycol-title", copy(g.title)),
+      el("ul", null, g.rows.map((cells) => el("li", null, [
+        ...copy(cells[items[0]]),
+        ...items.slice(1).filter((i) => text(cells[i] || {})).map((i) => el("span", "bykey-sub", [{ type: "text", value: " · " }, ...copy(cells[i])])),
+      ]))),
+    ]))),
+  ]);
+}
+
+// Boxes by the group named at the end of the column headers ("Hemoglobin (g/dL) – Acutely Ill"): for each row, its
+// first cell, then that group's values labeled by the rest of their header ("Hemoglobin (g/dL): 10").
+function bySplit(heads, rows, sep) {
+  const groups = new Map();
+  heads.forEach((h, i) => {
+    const at = h.lastIndexOf(sep);
+    if (!i || at < 0) return;
+    const name = h.slice(at + sep.length);
+    if (!groups.has(name)) groups.set(name, []);
+    groups.get(name).push([i, h.slice(0, at)]);
+  });
+  return el("figure", "tbl-viz", [el("div", "bycol", [...groups].map(([name, cols], g) => el("section", g ? "bycol-card alt" : "bycol-card", [
+    el("div", "bycol-title", [{ type: "text", value: name }]),
+    ...rows.flatMap((tr) => {
+      const cells = cellsOf(tr);
+      return [el("div", "bycol-label", copy(cells[0])),
+        el("ul", null, cols.map(([i, measure]) => el("li", null, [{ type: "text", value: measure + ": " }, ...copy(cells[i])])))];
+    }),
+  ])))]);
 }
 
 // One box per column (after the first): for each row, its first cell as a label and that column's cell as a list
@@ -191,7 +302,7 @@ function byColumn(heads, rows) {
   ])))]);
 }
 
-// AFP reference (preterm): mean and 95% interval by age, both axes on log scales (the first week falls fastest).
+// AFP reference (term and preterm): mean and 95.5% interval by age, both axes on log scales (the first week falls fastest).
 // Drawn from the table's own numbers; an age range (8-14) is plotted at its midpoint, a lower limit of 0 at the floor.
 function afpChart(rows) {
   const num = (s) => Number(String(s).replace(/,/g, ""));
@@ -229,6 +340,6 @@ function afpChart(rows) {
       ...pts.map((p) => el("circle", { cx: x(p.d), cy: y(p.m), r: 2.5, className: ["pt"] })),
       el("text", { x: (L + W - R) / 2, y: H - 6, textAnchor: "middle", className: ["ax"] }, [txt("Age (log scale; ranges at their midpoint)")]),
     ]),
-    el("figcaption", {}, [txt("AFP (ng/mL, log scale): mean line, shaded 95% interval. The exact values are in the table below.")]),
+    el("figcaption", {}, [txt("AFP (ng/mL, log scale): mean line, shaded 95.5% interval. The exact values are in the table below.")]),
   ]);
 }

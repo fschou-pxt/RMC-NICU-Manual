@@ -25,7 +25,14 @@
   const KIND = { dotPhrases: "dots", "phone-numbers": "phones", "lluch-formulary": "drugs" }[page];
   if (content && KIND) setup(KIND);
   document.querySelectorAll<HTMLTableElement>("table.tbl-long").forEach(findBox);
-  document.querySelectorAll<HTMLTableElement>("table.tbl-compare").forEach(situationSwitch);
+  // comparison tables with the same situations share one switch (a page has several)
+  const compareSets = new Map<string, HTMLTableElement[]>();
+  document.querySelectorAll<HTMLTableElement>("table.tbl-compare").forEach((t) => {
+    const k = t.dataset.columns || "";
+    compareSets.set(k, [...(compareSets.get(k) || []), t]);
+  });
+  compareSets.forEach((tables) => situationSwitch(tables));
+  if (page === "lluch-formulary") vancomycinSwitch();
   const discussButtons = [...document.querySelectorAll<HTMLButtonElement>(".ev-discuss")];
   if (discussButtons.length) discussCounts(discussButtons);
 
@@ -112,7 +119,10 @@
   }
 
   // ---------- comparison tables: show one situation (column), or all ----------
-  function situationSwitch(table) {
+  // One switch for all the tables with the same situations: above the first one, and when there are several in a
+  // row (death workflows, Section 3), kept in view while reading through them.
+  function situationSwitch(tables) {
+    const table = tables[0];
     const names = (table.dataset.columns || "").split("|").filter(Boolean);
     if (names.length < 2) return;
     const bar = document.createElement("div");
@@ -122,7 +132,16 @@
     bar.innerHTML = `<span class="lab">Show</span>` + ["All", ...names].map((n, i) =>
       `<button type="button" data-col="${i}" aria-pressed="${i === 0}"></button>`).join("");
     bar.querySelectorAll("button").forEach((b, i) => { b.textContent = i ? names[i - 1] : "All"; });
-    table.closest(".tbl-frame").before(bar);
+    const first = table.closest(".tbl-frame"), last = tables[tables.length - 1].closest(".tbl-frame");
+    first.before(bar);
+    if (tables.length > 1 && first.parentElement === last.parentElement) {
+      const scope = document.createElement("div");
+      scope.className = "cmp-scope";
+      bar.before(scope);
+      let n = bar;
+      while (n) { const next = n.nextElementSibling; scope.append(n); if (n === last) break; n = next; }
+      bar.classList.add("sticky");
+    }
     bar.addEventListener("click", (ev) => {
       const b = ev.target.closest("button");
       if (!b) return;
@@ -134,9 +153,39 @@
           if (i > 0 && col && i !== col) c.setAttribute("data-off", ""); else c.removeAttribute("data-off");
         });
       });
-      document.querySelectorAll(".tbl-switch").forEach((sw) => sw.querySelectorAll("button").forEach((x) =>
-        x.setAttribute("aria-pressed", String(+x.dataset.col === col))));
+      bar.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(+x.dataset.col === col)));
     });
+  }
+
+  // ---------- formulary vancomycin: one switch for the two dosing tables (≤ GA 28 weeks, > GA 28 weeks) ----------
+  // The > 28 weeks table (its title and table) moves up next to the first one; a link to it selects it.
+  function vancomycinSwitch() {
+    const young = document.getElementById("tab-vanc-young")?.closest(".tbl-frame");
+    const mark = document.getElementById("tab-vanc-old");
+    const title = mark?.nextElementSibling, old = title?.nextElementSibling;
+    if (!young || !title || !old?.classList.contains("tbl-frame")) return;
+    young.after(mark, title, old);
+    const parts = [[young], [mark, title, old]];
+    const bar = document.createElement("div");
+    bar.className = "tbl-switch vanc-switch not-content";
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "Gestational age");
+    bar.innerHTML = `<span class="lab">GA</span><button type="button" aria-pressed="true">≤ 28 weeks</button><button type="button" aria-pressed="false">&gt; 28 weeks</button>`;
+    const buttons = [...bar.querySelectorAll("button")];
+    const show = (k) => {
+      parts.forEach((els, i) => els.forEach((e) => e.classList.toggle("vanc-hide", i !== k)));
+      buttons.forEach((b, i) => b.setAttribute("aria-pressed", String(i === k)));
+    };
+    buttons.forEach((b, i) => b.addEventListener("click", () => show(i)));
+    young.before(bar);
+    const fromHash = () => {
+      const k = { "#tab-vanc-young": 0, "#tab-vanc-old": 1 }[location.hash];
+      if (k === undefined) return;
+      show(k);
+      bar.scrollIntoView({ block: "start" });
+    };
+    show(0); fromHash();
+    addEventListener("hashchange", fromHash);
   }
 
   // ---------- "Let's discuss" on evidence notes: a count the protocol leads review (no email, nothing personal) ----------
@@ -311,7 +360,7 @@
   // (a function declaration: the page setup above runs before later constants exist)
   function label(h) {
     const LABEL = [[/^ext|^extension/i, "Ext"], [/tie/i, "Tie"], [/phone|land/i, "Phone"], [/pager|cell/i, "Pager/cell"],
-      [/nursing/i, "Nursing station"], [/office|voice/i, "Office/VM"], [/case/i, "Case manager"], [/local/i, "Local"]];
+      [/nursing/i, "Nursing station"], [/office|voice/i, "Office/VM"], [/case/i, "Case manager"], [/local/i, "Local"], [/^site$/i, "Site"]];
     return (LABEL.find(([re]) => re.test(h)) || [0, h.replace(/\b\w/g, (c) => c.toUpperCase())])[1];
   }
   function contactCards() {
