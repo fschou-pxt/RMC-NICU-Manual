@@ -848,6 +848,8 @@ body:has(.ask-app) .sl-container { max-width: none; }
 }
 :root[data-theme="dark"] :is(.nc-set, .fd) select:not([multiple]) {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' fill='none' stroke='%23aab6c4' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  /* the chat widget's dark `background:` shorthand would reset these */
+  background-repeat: no-repeat; background-position: right 0.9rem center; background-size: 16px 16px;
 }
 /* derived views (VIEWS in rehype-tables): the rows regrouped in boxes (insurance by answer, hospitals by session
    code, labs by tube, thresholds by acuity); the key column's header over the boxes; the table folds below */
@@ -946,3 +948,10 @@ body:has(.ask-app) .sl-container { max-width: none; }
 .evx .evx-row::before, .evx .evx-top li::before { display: none; content: none; }
 .evx .evx-top { padding-left: 0 !important; }
 .sl-markdown-content .evx .evx-list, .evx .evx-list { padding-left: 0 !important; margin-left: 0; }
+
+/* Ask's logo in the Ask page header: the navy bubble tile, "Ask" over "the NICU Manual" */
+.ask-logo { display: flex; align-items: center; gap: 0.6rem; }
+.ask-logo img { width: 2.5rem; height: 2.5rem; flex: none; border-radius: 0.5rem; }
+.ask-logo span { display: flex; flex-direction: column; line-height: 1.05; }
+.ask-logo small { font-size: 0.8rem; font-weight: 500; letter-spacing: 0; color: var(--sl-color-accent); margin-top: 0.1rem; }
+:root[data-theme="dark"] .ask-logo img, :root[data-theme="dark"] .ask-hello img { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18); }

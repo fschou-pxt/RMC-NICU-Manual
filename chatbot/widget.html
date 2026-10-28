@@ -9,6 +9,7 @@
   border-radius: 50%; border: 0; background: var(--nc-blue); color: #fff; cursor: pointer;
   box-shadow: 0 4px 14px rgba(0,0,0,.25); display: flex; align-items: center; justify-content: center; }
 .nc-launch:hover { background: var(--nc-blue-dark); }
+.nc-launch svg { margin-top: 3px; } /* the Ask bubble: its tail hangs low, so centre the bubble's body */
 .nc-panel { position: fixed; right: 20px; bottom: 88px; z-index: 1050; width: var(--nc-w, 420px); max-width: calc(100vw - 32px);
   height: 600px; max-height: calc(100vh - 110px); background: var(--nc-bg); color: var(--nc-text);
   border: 1px solid var(--nc-border); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.2);
@@ -95,6 +96,7 @@ mark.nicu-hl { background: #ffe066; color: inherit; padding: 0 1px; border-radiu
 .nc-tabbar a { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 7px 0 8px;
   font-size: 11px; color: #6b7280; text-decoration: none; }
 .nc-tabbar a i { font-size: 20px; line-height: 1; }
+.nc-tabbar a .nc-askmark { width: 26px; height: 23px; margin-top: -2px; margin-bottom: 1px; }
 .nc-tabbar a.on { color: #003b71; font-weight: 600; }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-tabbar { background: #121c29; border-top-color: #263445; }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-tabbar a { color: #9fb0c3; }
@@ -149,7 +151,7 @@ const root = document.getElementById("nicu-chat-root");
 document.body.append(root); // a direct child of <body>: page layouts with their own layers can't cover the bubble
 root.innerHTML = `
   <button class="nc-launch" type="button" aria-label="Ask the NICU Manual" title="Ask the NICU Manual">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <svg width="36" height="32" viewBox="0 0 440 391" aria-hidden="true"><rect width="440" height="308" rx="74" fill="#fff"/><path d="M97 307h115L75 391z" fill="#fff"/><text x="220" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="191" fill="#003b71">Ask</text></svg>
   </button>
   <section class="nc-panel" role="dialog" aria-label="Ask the NICU Manual" hidden>
     <div class="nc-head">
@@ -279,11 +281,13 @@ if (bar) {
 document.body.classList.add("nc-has-tabbar");
 bar.className = "nc-tabbar";
 bar.setAttribute("aria-label", "Main sections");
-bar.innerHTML = [...(askOn ? [["ask", "chat-dots", "Ask"]] : []), ["", "book", "Manual"], ["dotPhrases", "clipboard", "Dot phrases"],
+// Ask's logo, the speech bubble with "Ask" cut out, in the tab's own colour
+const ASK_MARK = `<svg class="nc-askmark" viewBox="0 0 440 391" aria-hidden="true"><mask id="nc-askcut"><rect width="440" height="391" fill="#fff"/><text x="220" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="191" fill="#000">Ask</text></mask><g mask="url(#nc-askcut)" fill="currentColor"><rect width="440" height="308" rx="74"/><path d="M97 307h115L75 391z"/></g></svg>`;
+bar.innerHTML = [...(askOn ? [["ask", "ask", "Ask"]] : []), ["", "book", "Manual"], ["dotPhrases", "clipboard", "Dot phrases"],
   ["phone-numbers", "telephone", "Phones"], ["calculators", "calculator", "Calculators"]]
   .map(([path, icon, label]) => {
     const on = path ? here === path : !["ask", "dotPhrases", "phone-numbers", "calculators"].includes(here);
-    return `<a href="${ROOT + path}"${on ? ' class="on" aria-current="page"' : ""}><i class="bi bi-${icon}"></i><span>${label}</span></a>`;
+    return `<a href="${ROOT + path}"${on ? ' class="on" aria-current="page"' : ""}>${icon === "ask" ? ASK_MARK : `<i class="bi bi-${icon}"></i>`}<span>${label}</span></a>`;
   }).join("");
 document.body.appendChild(bar);
 }

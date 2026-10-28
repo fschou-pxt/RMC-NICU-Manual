@@ -13,7 +13,7 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
 {askOn && (<>
 <div class="ask-app not-content" data-ask>
   <div class="ask-bar">
-    <p class="ask-title">Ask the manual</p>
+    <p class="ask-title ask-logo"><img src={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}pwa/ask/ask-mark.svg`} alt="" width="40" height="40"><span>Ask<small>the NICU Manual</small></span></p>
     <a class="ask-back" id="ask-back" hidden></a>
     <button class="ask-pill" type="button" data-go="settings" title="AI model and key"></button>
     <button class="ask-icon" type="button" data-act="new" title="New chat" aria-label="New chat"><i class="bi bi-pencil-square"></i></button>
@@ -85,7 +85,7 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
     function render() {
       $(".ask-pill").textContent = shortLabel(currentModel());
       if (!history.length && !busy) {
-        thread.innerHTML = `<div class="ask-hello"><img src="${base}pwa/icon-192.png" alt="">
+        thread.innerHTML = `<div class="ask-hello"><img src="${base}pwa/ask/ask-icon-192.png" alt="">
           <p class="h">Ask the NICU Manual</p>
           <p class="sub">Answers come from KP Riverside's NICU manual, with the source one tap away.</p>
           <div class="phi">${phiNoticeHTML()}</div>
