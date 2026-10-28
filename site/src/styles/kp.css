@@ -683,7 +683,6 @@ body.calc-open { overflow: hidden; }
 body.calc-open #nicu-chat-root { display: none; }
 .sl-markdown-content [data-hit-hidden] { display: none !important; }
 .sl-markdown-content .evidence .ev-lines { padding-left: 0; }
-.evidence .ev-head .ev-discuss { margin-left: auto; }
 /* home: the hero has the search box, so the header's is hidden there (the hero box opens the same search; ⌘K still works) */
 :root:has(.home) .header site-search > button[data-open-modal] { display: none; }
 .ask-composer .mic[hidden], .evidence .ev-discuss[hidden] { display: none; }
@@ -713,7 +712,6 @@ body.calc-open #nicu-chat-root { display: none; }
 /* evidence: links in brand color; one row for badge + Let's discuss; reference you jumped to is highlighted */
 .evidence a { color: var(--sl-color-accent); }
 .evidence .ev-refs a:hover, .evidence .ev-cite a:hover { text-decoration: underline; }
-.evidence .ev-head .ev-discuss { margin-left: auto; }
 .evidence .ev-meta { margin-top: 0.25rem; }
 .evidence .ev-discuss[aria-pressed="true"] { background: var(--kp-navy); border-color: var(--kp-navy); color: #fff; }
 .evidence .ev-refs > li:target { background: var(--sl-color-accent-low); border-radius: 6px; }
@@ -898,3 +896,53 @@ body:has(.ask-app) .sl-container { max-width: none; }
   .cmp-scope > .tbl-switch.sticky { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
   .cmp-scope > .tbl-switch.sticky > * { flex: none; }
 }
+
+/* Evidence checks page: one row per checked section, verdict chips, Let's discuss count on the right */
+.evx .evx-intro { color: var(--sl-color-gray-2); }
+.evx .evx-progress { margin-top: 0.6rem; font-size: 0.85rem; color: var(--sl-color-gray-3); }
+.evx .evx-list { list-style: none; padding: 0; margin: 1rem 0 0; }
+.evx .evx-row { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.75rem 0.9rem; margin: 0 0 0.6rem; border: 1px solid #ecd9a8; border-radius: 12px; background: #fffbf2; }
+:root:not([data-theme="light"]) .evx .evx-row { border-color: #4a3f22; background: #1f1c14; }
+.evx .evx-main { flex: 1; min-width: 0; }
+.evx .evx-title { font-weight: 700; color: var(--kp-navy); text-decoration: none; }
+:root:not([data-theme="light"]) .evx .evx-title { color: var(--sl-color-accent-high); }
+.evx .evx-title:hover { text-decoration: underline; }
+.evx .evx-meta { margin: 0.15rem 0 0; font-size: 0.8rem; color: var(--sl-color-gray-3); }
+.evx .evx-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.4rem 0 0; }
+.evx .ev-chip { display: inline-block; font-size: 0.68rem; font-weight: 750; padding: 0.05rem 0.45rem; border-radius: 999px; background: var(--sl-color-gray-6); color: var(--sl-color-gray-2); white-space: nowrap; }
+.evx .ev-chip.ev-partly { background: #fdebc4; color: #7a4b00; } .evx .ev-chip.ev-differs { background: #fbd9d6; color: #8a1c12; } .evx .ev-chip.ev-ok { background: #d8f0e4; color: #0b5e3d; }
+.evx .ev-chip.ev-related { background: var(--sl-color-accent-low); color: var(--sl-color-accent-high); }
+.evx .evx-count { flex: none; padding: 0.1rem 0.6rem; border-radius: 999px; border: 1px solid var(--kp-navy); background: var(--kp-navy); color: #fff; font-size: 0.85rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.evx .evx-count.zero { background: transparent; border-color: var(--sl-color-gray-5); color: var(--sl-color-gray-3); }
+.evx .evx-count[hidden], .evx .evx-sorted[hidden] { display: none; }
+
+/* Ask tutorial: the evidence-box mock on the Let's discuss slide */
+.ask-tour .tour-ev { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; padding: 0.6rem 0.75rem; border: 1px solid #ecd9a8; border-radius: 10px; background: #fffbf2; }
+:root:not([data-theme="light"]) .ask-tour .tour-ev { border-color: #4a3f22; background: #1f1c14; }
+.ask-tour .tour-ev-badge { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #7a4b00; background: #fdebc4; padding: 0.12rem 0.45rem; border-radius: 999px; }
+.ask-tour .tour-ev-total { margin-left: auto; font-size: 0.72rem; font-weight: 700; color: var(--kp-navy); }
+:root:not([data-theme="light"]) .ask-tour .tour-ev-total { color: var(--sl-color-accent-high); }
+.ask-tour .tour-ev .tour-chip { padding: 0.05rem 0.45rem; font-size: 0.72rem; }
+.ask-tour .tour-ev-chip.partly { background: #fdebc4; color: #7a4b00; }
+.ask-tour .tour-ev .tour-chip.on { background: var(--kp-navy); border-color: var(--kp-navy); color: #fff; }
+.ask-tour .tour-ev p { flex-basis: 100%; display: flex; align-items: center; gap: 0.4rem; margin: 0; }
+.ask-tour .tour-ev-chip { font-size: 0.62rem; font-weight: 750; padding: 0.05rem 0.4rem; border-radius: 999px; background: #fbd9d6; color: #8a1c12; white-space: nowrap; }
+.ask-tour .tour-ev .tour-line { flex: 1; }
+
+/* Let's discuss per item: a small ✋ at the end of each line; the header shows the section's total */
+.evidence .ev-line .ev-discuss { margin-left: 0.4rem; padding: 0 0.45rem; font-size: 0.72rem; line-height: 1.5; vertical-align: 1px; gap: 0.15rem; }
+.evidence .ev-line .ev-n:not(:empty) { margin-left: 0.1rem; padding-left: 0.3rem; }
+.evidence .ev-total { margin-left: auto; font-size: 0.75rem; color: var(--sl-color-gray-3); }
+.evidence .ev-total.on { font-weight: 700; color: var(--kp-navy); }
+:root:not([data-theme="light"]) .evidence .ev-total.on { color: var(--sl-color-accent-high); }
+.evidence .ev-total[hidden] { display: none; }
+.evidence .ev-line:target { background: var(--sl-color-accent-low); border-radius: 6px; }
+.evx .evx-top { list-style: none; padding: 0; margin: 0.5rem 0 0; font-size: 0.82rem; }
+.evx .evx-top li { margin: 0.25rem 0 0; padding: 0; } .evx .evx-top li::before { display: none; }
+.evx .evx-top a { color: var(--sl-color-gray-2); text-decoration: none; } .evx .evx-top a:hover { text-decoration: underline; }
+.evx .evx-k { font-weight: 700; color: var(--kp-navy); font-variant-numeric: tabular-nums; }
+:root:not([data-theme="light"]) .evx .evx-k { color: var(--sl-color-accent-high); }
+.evx .evx-top[hidden] { display: none; }
+.evx .evx-row::before, .evx .evx-top li::before { display: none; content: none; }
+.evx .evx-top { padding-left: 0 !important; }
+.sl-markdown-content .evx .evx-list, .evx .evx-list { padding-left: 0 !important; margin-left: 0; }

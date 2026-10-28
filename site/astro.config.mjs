@@ -17,7 +17,7 @@ const exists = (slug) => fs.existsSync(`./src/content/docs/${slug}.mdx`);
 // Sidebar: the tools, then the book's parts in book order (only chapters already converted)
 // ASK=off (environment variable at build time): the launch baseline without Ask; turn it on later by rebuilding
 const ASK = process.env.ASK !== "off";
-const sidebar = [{ label: "Tools", items: ASK ? ["ask", "calculators"] : ["calculators"] }];
+const sidebar = [{ label: "Tools", items: ASK ? ["ask", "calculators", "evidence-checks"] : ["calculators", "evidence-checks"] }];
 for (const ch of chapters) {
   if (ch.slug === "index" || !exists(ch.slug)) continue;
   let group = sidebar.find((g) => g.label === ch.part);

@@ -1,7 +1,7 @@
 // Evidence notes: approved evidence checks (evidence/<chapter>/<section>.json, from the three-agent
 // pipeline in evidence/PIPELINE.md) shown at the end of the section they cover. Labeled as AI-generated;
 // the manual's own text is never changed. On the page: one line per note (verdict, the manual's statement,
-// citations, and a "Let's discuss" count); the reviewed notes, all statements and references sit under Details.
+// citations, and a ✋ Let's discuss count on each); the reviewed notes, all statements and references sit under Details.
 import fs from "node:fs";
 import path from "node:path";
 import { visit } from "unist-util-visit";
@@ -9,7 +9,7 @@ import { toString } from "mdast-util-to-string";
 import GithubSlugger from "github-slugger";
 
 const EVIDENCE = path.resolve("..", "evidence");
-const VERDICT = {
+export const VERDICT = {
   concordant: ["Supported", "ok"],
   partly_concordant: ["Partly supported", "partly"],
   discordant: ["Evidence differs", "differs"],
@@ -19,11 +19,13 @@ const VERDICT = {
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 // the manual's text as stored by the pipeline (Quarto markup) -> readable plain text
-const manualText = (s) => s.replace(/&ge;/g, "≥").replace(/&le;/g, "≤").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+export const manualText = (s) => s.replace(/&ge;/g, "≥").replace(/&le;/g, "≤").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
   .replace(/\s*\*\s+/g, " · ").replace(/^ · /, "").replace(/:\s*·\s*/g, ": ").replace(/(\w)~([^~\s]+)~/g, "$1$2").replace(/\s+/g, " ").trim();
 const manualHtml = (s) => esc(manualText(s)).replace(/FiO2/g, "FiO<sub>2</sub>").replace(/SpO2/g, "SpO<sub>2</sub>");
 
-function load(page) {
+// every approved note, with its id ("<chapter>-<slug>", the Let's discuss key), page and heading id;
+// also read by the Evidence checks page
+export function loadAll() {
   const out = [];
   if (!fs.existsSync(EVIDENCE)) return out;
   for (const dir of fs.readdirSync(EVIDENCE, { withFileTypes: true })) {
@@ -31,11 +33,12 @@ function load(page) {
     for (const f of fs.readdirSync(path.join(EVIDENCE, dir.name)).filter((x) => x.endsWith(".json"))) {
       const ev = JSON.parse(fs.readFileSync(path.join(EVIDENCE, dir.name, f), "utf8"));
       const [file, hash] = ev.anchor.split("#");
-      if (file.replace(/\.html$/, "") === page && ev.review?.verdict === "APPROVED") out.push({ ...ev, id: `${dir.name}-${f.replace(/\.json$/, "")}`, hash });
+      if (ev.review?.verdict === "APPROVED") out.push({ ...ev, id: `${dir.name}-${f.replace(/\.json$/, "")}`, page: file.replace(/\.html$/, ""), hash });
     }
   }
   return out;
 }
+const load = (page) => loadAll().filter((ev) => ev.page === page);
 
 function render(ev) {
   const refs = ev.references, order = [];
@@ -60,9 +63,10 @@ function render(ev) {
     ...claims.filter((c) => c.note).map((c) => ({ id: c.id, label: VERDICT[c.verdict][0], tone: VERDICT[c.verdict][1], line: manualHtml(c.manual_text), note: c.note })),
     ...omissions.map((o) => ({ id: o.id, label: "Related point", tone: "related", line: esc(o.topic || ""), note: o.note })),
   ];
-  // one "Let's discuss" per box: a count for the whole section
-  const discuss = `<button type="button" class="ev-discuss" data-discuss="${esc(ev.id)}" aria-pressed="false" title="Let the protocol leads know this section is worth discussing"><span aria-hidden="true">✋</span> Let's discuss<span class="ev-n"></span></button>`;
-  const lines = notes.map((n) => `<li class="ev-line ev-${n.tone}"><span class="ev-chip ev-${n.tone}">${esc(n.label)}</span> <span class="ev-what">${n.line}</span>${citeAll(n.note)}</li>`).join("\n");
+  // "Let's discuss": a ✋ on each item, counted per item; the header shows the section's total (read-only)
+  const discuss = (n) => `<button type="button" class="ev-discuss" data-discuss="${esc(ev.id)}" data-item="${esc(n.id)}" aria-pressed="false" title="Let's discuss this item" aria-label="Let's discuss: ${esc(n.label)}" hidden><span aria-hidden="true">✋</span><span class="ev-n"></span></button>`;
+  const total = `<span class="ev-total" data-total="${esc(ev.id)}" hidden></span>`;
+  const lines = notes.map((n) => `<li class="ev-line ev-${n.tone}" id="ev-${esc(ev.id)}-${esc(n.id)}"><span class="ev-chip ev-${n.tone}">${esc(n.label)}</span> <span class="ev-what">${n.line}</span>${citeAll(n.note)}${discuss(n)}</li>`).join("\n");
   // Details: the reviewed notes in full, every statement, and the references
   const full = notes.map((n) => `<div class="ev-note ev-${n.tone}"><p class="ev-label">${esc(n.label)}: <span>${n.line}</span></p><p>${cite(n.note)}</p></div>`).join("\n");
   const rows = claims.map((c) => `<li><p class="ev-manual">${manualHtml(c.manual_text)} <span class="ev-chip ev-${VERDICT[c.verdict][1]}">${VERDICT[c.verdict][0]}</span></p><p>${cite(c.summary)}</p></li>`).join("\n");
@@ -75,8 +79,8 @@ function render(ev) {
     return `<li id="ev-${ev.id}-r${i + 1}">${esc(who)}${where ? ". " + esc(where) : ""}.${doi}</li>`;
   }).join("\n");
   return `<section class="evidence not-content" aria-label="Evidence check">
-<div class="ev-head"><span class="ev-badge">Evidence check</span>${discuss}</div>
-<p class="ev-meta">AI-generated · independently AI-reviewed · checked ${esc(checked)}</p>
+<div class="ev-head"><span class="ev-badge">Evidence check</span>${total}</div>
+<p class="ev-meta">AI-generated · independently AI-reviewed · checked ${esc(checked)} · <a href="evidence-checks.html">All evidence checks</a></p>
 ${lines ? `<ul class="ev-lines">${lines}</ul>` : ""}
 <details class="ev-more"><summary>Details: all ${claims.length} statements (${esc(summary)}) and ${refs.length} references</summary>
 ${full}
@@ -84,7 +88,7 @@ ${full}
 <ol class="ev-claims">${rows}</ol>
 <p class="ev-refs-title">References</p>
 <ol class="ev-refs">${refHtml}</ol>
-<p class="ev-fine">Produced by separate AI research, comparison, and review steps, each checked against the retrieved sources (${ev.review.rounds} review rounds, ${ev.review.quotes_checked} quotes verified). It does not change the unit protocol above. "Let's discuss" adds to a count the protocol leads review.</p>
+<p class="ev-fine">Produced by separate AI research, comparison, and review steps, each checked against the retrieved sources (${ev.review.rounds} review rounds, ${ev.review.quotes_checked} quotes verified). It does not change the unit protocol above. Each ✋ (Let's discuss) adds to a count for that item, which the protocol leads review on the <a href="evidence-checks.html">Evidence checks</a> page.</p>
 <button type="button" class="ev-close" onclick="const d=this.closest('details');d.open=false;d.scrollIntoView({block:'nearest'})">Hide details</button>
 </details>
 </section>`;

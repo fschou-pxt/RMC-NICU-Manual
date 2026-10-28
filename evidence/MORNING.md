@@ -38,3 +38,7 @@ Project root: `/Users/fschou/Documents/Claude/Projects/RMC-NICU-Handbook` (git b
    Then confirm `https://nicu-manual.pages.dev/<page>/` returns 200 and contains the new evidence box.
 8. **Report**: the sections published (chapter › section, verdict counts), anything left out and why, and the queue's
    progress (approved / no_clinical / needs_review / error / pending).
+
+**Every report, including the ones that stop early** ("still running", "nothing new", a failed step), ends with the
+Let's discuss counts: run `python3 evidence/discuss_counts.py` and paste its table as printed. It reads both sites'
+count stores (read-only) and shows the change since the last earlier day it ran.

@@ -1,0 +1,95 @@
+---
+// Evidence checks: every section with an approved evidence note (evidence/<chapter>/*.json, built in), its verdicts,
+// and its "Let's discuss" counts from this site's /api/discuss: the section's total and its most-tapped items.
+// Counts only: people tap ✋ in the section's own evidence box, after reading it. Most-discussed first, then
+// sections where the evidence differs most.
+import fs from "node:fs";
+import path from "node:path";
+import chapters from "../chapters.json";
+import { loadAll, VERDICT, manualText } from "../plugins/remark-evidence.mjs";
+
+const docs = import.meta.glob("../content/docs/*.mdx", { eager: true });
+const titleOf = (slug) => docs[`../content/docs/${slug}.mdx`]?.frontmatter?.title ?? slug;
+const bookOrder = (page) => { const i = chapters.findIndex((c) => c.slug === page); return i < 0 ? 999 : i; };
+const ORDER = ["discordant", "partly_concordant", "practice_varies", "insufficient", "concordant"];
+
+const notes = loadAll().map((ev) => {
+  const n = {};
+  for (const c of ev.claims || []) n[c.verdict] = (n[c.verdict] || 0) + 1;
+  const chips = ORDER.filter((v) => n[v]).map((v) => ({ label: VERDICT[v][0], tone: VERDICT[v][1], n: n[v] }));
+  if (ev.omissions?.length) chips.push({ label: "Related point", tone: "related", n: ev.omissions.length });
+  // the items a reader can tap (as in the box): claims with a note, then related points
+  const cut = (t) => (t.length > 110 ? t.slice(0, 108).replace(/\s+\S*$/, "") + "…" : t);
+  const items = [
+    ...(ev.claims || []).filter((c) => c.note).map((c) => [c.id, VERDICT[c.verdict][0], VERDICT[c.verdict][1], cut(manualText(c.manual_text))]),
+    ...(ev.omissions || []).map((o) => [o.id, "Related point", "related", cut(o.topic || "")]),
+  ];
+  return { ...ev, items, chapter: titleOf(ev.page), statements: (ev.claims || []).length, differs: n.discordant || 0, chips, order: bookOrder(ev.page) };
+}).sort((a, b) => b.differs - a.differs || a.order - b.order || a.section.localeCompare(b.section));
+
+// progress of the first round (evidence/queue.json): sections still waiting
+let waiting = 0;
+try {
+  const q = JSON.parse(fs.readFileSync(path.resolve("..", "evidence", "queue.json"), "utf8"));
+  waiting = q.items.filter((i) => i.status === "pending" || i.status === "running").length;
+} catch {}
+// split sections are stored as "Section › First part … Last part": show the section's own name
+const shortTitle = (s) => s.split(" › ")[0];
+---
+
+<div class="evx not-content">
+  <p class="evx-intro">
+    Each evidence check compares one section of the manual with current published evidence. It is AI-generated,
+    independently AI-reviewed, and does not change the unit protocol.{" "}
+    <b><span aria-hidden="true">✋</span> Let's discuss</b> counts readers who tapped ✋ on an item in the section's evidence box
+    to tell the protocol leads it is worth discussing. To add yours, open the section and read its evidence check first.
+  </p>
+  <p class="evx-progress">
+    {notes.length} {notes.length === 1 ? "section has" : "sections have"} an evidence check{waiting > 0 && <>; {waiting} more are queued, about 4 a night</>}.{" "}
+    <span class="evx-sorted" hidden>Most-discussed first.</span>
+  </p>
+  <ul class="evx-list">
+    {notes.map((ev, i) => (
+      <li class="evx-row" data-id={ev.id} data-rank={i} data-page={ev.page} data-items={JSON.stringify(ev.items)}>
+        <div class="evx-main">
+          <a class="evx-title" href={`${ev.page}.html#${ev.hash}`}>{shortTitle(ev.section)}</a>
+          <p class="evx-meta">{ev.chapter} · checked {ev.checked} · {ev.statements} statements</p>
+          <p class="evx-chips">{ev.chips.map((c) => <span class={`ev-chip ev-${c.tone}`}>{c.label} {c.n}</span>)}</p>
+          <ul class="evx-top" hidden></ul>
+        </div>
+        <span class="evx-count" hidden title="Let's discuss taps"><span aria-hidden="true">✋</span> <b>0</b><span class="sr-only"> Let's discuss</span></span>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<script>
+  // counts from this site's own store; without it (503 or offline) the list stays in its built order with no counts
+  const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+  const list = document.querySelector<HTMLUListElement>(".evx-list");
+  const rows = [...document.querySelectorAll<HTMLLIElement>(".evx-row")];
+  if (list && rows.length) {
+    const ids = rows.map((r) => r.dataset.id);
+    fetch(base + "api/discuss?ids=" + encodeURIComponent(ids.join(",")), { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null)).then((c) => {
+        if (!c) return;
+        const per = (r) => c[r.dataset.id] || {};
+        const n = (r) => Object.values(per(r)).reduce((a: number, x) => a + (Number(x) || 0), 0);
+        const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        for (const r of rows) {
+          const box = r.querySelector<HTMLElement>(".evx-count");
+          box.querySelector("b").textContent = String(n(r));
+          box.classList.toggle("zero", !n(r));
+          box.hidden = false;
+          // the section's most-tapped items (up to 3), each linking to its line in the evidence box
+          const top = (JSON.parse(r.dataset.items || "[]") as string[][]).map(([item, label, tone, text]) => ({ item, label, tone, text, k: Number(per(r)[item]) || 0 }))
+            .filter((x) => x.k).sort((a, b) => b.k - a.k).slice(0, 3);
+          const ul = r.querySelector<HTMLElement>(".evx-top");
+          ul.innerHTML = top.map((x) => `<li><a href="${r.dataset.page}.html#ev-${r.dataset.id}-${x.item}"><span class="evx-k">✋ ${x.k}</span> <span class="ev-chip ev-${x.tone}">${esc(x.label)}</span> ${esc(x.text)}</a></li>`).join("");
+          ul.hidden = !top.length;
+        }
+        rows.sort((a, b) => n(b) - n(a) || Number(a.dataset.rank) - Number(b.dataset.rank)).forEach((r) => list.append(r));
+        document.querySelector<HTMLElement>(".evx-sorted").hidden = false;
+      }).catch(() => {});
+  }
+</script>

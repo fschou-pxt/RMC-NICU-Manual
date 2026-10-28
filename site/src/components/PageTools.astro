@@ -7,7 +7,7 @@
 // - Every page: counts visits on this device, so the home page can put the most-used Quick links first
 // - Chapter pages: anonymous section-view counts for the site (/api/views): a section counts once per visit
 //   after 5 seconds on screen, with how the reader got there; no person, device or question is recorded
-// - Evidence notes (any page): "Let's discuss" counts, one per device, from the site's /api/discuss
+// - Evidence notes (any page): "Let's discuss" counts per item, one per device, from the site's /api/discuss
 ---
 
 <script>
@@ -188,31 +188,39 @@
     addEventListener("hashchange", fromHash);
   }
 
-  // ---------- "Let's discuss" on evidence notes: a count the protocol leads review (no email, nothing personal) ----------
-  // Each device counts once per section (tap again to take it back). Where the count service isn't available
-  // (e.g. a host without it), the button is hidden rather than appearing to work.
+  // ---------- "Let's discuss" on evidence notes: a count per item the protocol leads review (no email, nothing personal) ----------
+  // Each device counts once per item (tap again to take it back); the box header shows the section's total.
+  // Where the count service isn't available (e.g. a host without it), the buttons stay hidden rather than appearing to work.
   function discussCounts(buttons) {
-    const api = base + "api/discuss", key = (id) => "nicuDiscuss." + id;
-    const mine = (id) => { try { return localStorage.getItem(key(id)) === "1"; } catch { return false; } };
+    const api = base + "api/discuss", key = (id, item) => `nicuDiscuss.${id}.${item}`;
+    const mine = (id, item) => { try { return localStorage.getItem(key(id, item)) === "1"; } catch { return false; } };
+    const ids = [...new Set(buttons.map((b) => b.dataset.discuss))];
     let counts = null;
-    const show = () => buttons.forEach((b) => {
-      const id = b.dataset.discuss;
-      b.setAttribute("aria-pressed", String(mine(id)));
-      b.querySelector(".ev-n").textContent = counts && counts[id] ? String(counts[id]) : "";
-    });
-    buttons.forEach((b) => { b.hidden = true; });
-    fetch(api + "?ids=" + encodeURIComponent(buttons.map((b) => b.dataset.discuss).join(",")), { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : null)).then((c) => {
-        if (!c) return;
-        counts = c; show(); buttons.forEach((b) => { b.hidden = false; });
-      }).catch(() => {});
+    const show = () => {
+      for (const b of buttons) {
+        const { discuss: id, item } = b.dataset, n = counts[id]?.[item] || 0;
+        b.setAttribute("aria-pressed", String(mine(id, item)));
+        b.querySelector(".ev-n").textContent = n ? String(n) : "";
+        b.hidden = false;
+      }
+      document.querySelectorAll<HTMLElement>("[data-total]").forEach((t) => {
+        const sum = Object.values(counts[t.dataset.total] || {}).reduce((a: number, n) => a + (Number(n) || 0), 0);
+        t.textContent = sum ? `✋ ${sum} to discuss` : "Tap ✋ on an item worth discussing";
+        t.classList.toggle("on", sum > 0);
+        t.hidden = false;
+      });
+    };
+    fetch(api + "?ids=" + encodeURIComponent(ids.join(",")), { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null)).then((c) => { if (c) { counts = c; show(); } }).catch(() => {});
     for (const b of buttons) b.addEventListener("click", () => {
-      const id = b.dataset.discuss, on = !mine(id);
-      try { on ? localStorage.setItem(key(id), "1") : localStorage.removeItem(key(id)); } catch {}
-      if (counts) counts[id] = Math.max(0, (counts[id] || 0) + (on ? 1 : -1));
+      if (!counts) return;
+      const { discuss: id, item } = b.dataset, on = !mine(id, item);
+      try { on ? localStorage.setItem(key(id, item), "1") : localStorage.removeItem(key(id, item)); } catch {}
+      const c = (counts[id] ||= {});
+      c[item] = Math.max(0, (c[item] || 0) + (on ? 1 : -1));
       show();
-      fetch(api, { method: "POST", cache: "no-store", headers: { "content-type": "application/json" }, body: JSON.stringify({ id, delta: on ? 1 : -1 }) })
-        .then((r) => (r.ok ? r.json() : null)).then((c) => { if (c && counts) { Object.assign(counts, c); show(); } }).catch(() => {});
+      fetch(api, { method: "POST", cache: "no-store", headers: { "content-type": "application/json" }, body: JSON.stringify({ id, item, delta: on ? 1 : -1 }) })
+        .then((r) => (r.ok ? r.json() : null)).then((r) => { if (r) { Object.assign(counts, r); show(); } }).catch(() => {});
     });
   }
 

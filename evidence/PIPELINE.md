@@ -97,8 +97,10 @@ Notes describe evidence; they never instruct ("consider", not "do") and never re
 
 - Under the section: "Evidence check (AI-generated, independently AI-reviewed, checked <Mon YYYY>)":
   counts by verdict and a list of references for concordant claims.
-- For each `partly_concordant` / `discordant` claim: an amber box with the note, its citations, and a
-  **Let's discuss** button (raised hand), a count per section that the protocol leads review (no email).
+- For each `partly_concordant` / `discordant` claim and each related point: a line with the note, its citations,
+  and a ✋ **Let's discuss** button, a count per item (the box header shows the section's total; no email). The
+  protocol leads review the counts on the site's Evidence checks page and in the MacBook's morning report
+  (`evidence/discuss_counts.py`).
 
 ## Schedule
 
