@@ -98,10 +98,13 @@ Notes describe evidence; they never instruct ("consider", not "do") and never re
 - Under the section: "Evidence check (AI-generated, independently AI-reviewed, checked <Mon YYYY>)":
   counts by verdict and a list of references for concordant claims.
 - For each `partly_concordant` / `discordant` claim: an amber box with the note, its citations, and a
-  **Let's discuss** button (raised hand) that emails the protocol leads with the manual text, the note,
-  and the references.
+  **Let's discuss** button (raised hand), a count per section that the protocol leads review (no email).
 
 ## Schedule
 
-Each chapter is re-checked monthly (or when the manual section changes). A re-check reruns all three
-agents; changes in verdicts are dated in the JSON.
+The manual's text is in `site/src/content/docs/<chapter>.mdx` (the .qmd files are no longer edited).
+
+- First round: `evidence/queue.json` lists every section to check, in priority order; the Mac Mini runs
+  `evidence/NIGHTLY.md` each night, 4 sections a night. The MacBook commits and publishes approved results.
+- After that: a section is re-checked when its text changes, and every section at least every 6 months.
+  A re-check reruns all three agents; changes in verdicts are dated in the JSON.

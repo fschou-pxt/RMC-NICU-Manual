@@ -1,0 +1,1416 @@
+{
+  "chapter": "infectious-disease",
+  "section": "Antibiotic Management of Suspected Sepsis in the NICU › Background, Flowchart: Antibiotic Management in NICU Suspected Bacterial Sepsis, Flowchart: Interpretation of Primary Blood Culture Results, Flowchart: Interpretation of Follow-up Blood Culture Results, Further Considerations",
+  "anchor": "infectious-disease.html#further-considerations",
+  "source": {
+    "file": "site/src/content/docs/infectious-disease.mdx",
+    "lines": "15-60",
+    "manual_commit": "398c583"
+  },
+  "checked": "2026-10-28",
+  "generated_with": "Researcher, Comparer, Reviewer: claude-opus-5-5",
+  "triage": {
+    "clinical": 26,
+    "operational": 1,
+    "definition": 0,
+    "context": 6
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "manual_text": "Assessment for a urinary tract infection is indicated in most patients beyond the newborn period, as a high proportion of severe bacterial infections are caused by urinary tract infections.",
+      "verdict": "partly_concordant",
+      "summary": "In very preterm and VLBW NICU infants evaluated beyond the first 3 to 7 days, UTI was found in 7% of infants in a US multicentre cohort and in 11.3% of infants with urine analysis in a single-centre cohort, and both groups of authors favour urine testing in late-onset sepsis evaluations [Kilpatrick2024; Mohseny2018].",
+      "note": "Current evidence suggests urine culture as part of late-onset sepsis evaluations in VLBW infants still hospitalized on day 7, with UTI in 7% of 86,492 infants and a concordant positive blood culture in 8% of those with UTI [Kilpatrick2024]. A single-centre cohort of infants <32 weeks with central lines found UTI in 11.3% of those with urine analysis, about half due to Candida albicans, and recommended routine urine analysis for signs of infection beyond 72 h after birth [Mohseny2018]. These cohorts enrolled very preterm infants evaluated from 72 h or still hospitalized on day 7, rather than infants beyond the newborn period in general [Kilpatrick2024; Mohseny2018].",
+      "evidence": [
+        {
+          "ref": "Kilpatrick2024",
+          "quote": "Of 86,492 included infants, 5,988 (7%) had a UTI. The most common pathogen was Enterococcus spp. (20%), followed by Escherichia coli (19%) and Klebsiella spp. (18%).",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Kilpatrick2024",
+          "quote": "Concordant-positive blood culture was present in 8% of infants with UTI diagnoses.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Kilpatrick2024",
+          "quote": "Neonatal clinicians should consider obtaining urine culture in the setting of late-onset sepsis evaluations in VLBW infants.",
+          "location": "Abstract, Conclusion"
+        },
+        {
+          "ref": "Kilpatrick2024",
+          "quote": "Infants with birth weight ≤1500g, gestational age ≤32 weeks, and still hospitalized on postnatal day 7 were included.",
+          "location": "Methods"
+        },
+        {
+          "ref": "Mohseny2018",
+          "quote": "In half of this group, urine analysis was performed identifying UTI in 11.3% (24/212). In 13 of these infants (54%) with a UTI, infection was due to Candida albicans.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Mohseny2018",
+          "quote": "Based on these findings, we conclude that in premature infants with central lines, urine analysis should be performed routinely when signs of infection occur beyond 72 h after birth.",
+          "location": "Abstract, Conclusion"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "manual_text": "If a urinary tract infection is suspected obtain catheterized urinalysis with urine culture; bagged urines are not acceptable.",
+      "verdict": "concordant",
+      "summary": "Bag-collected urine has high contamination rates in neonates, and the AAP UTI guideline bases diagnosis on an appropriately collected specimen [Mohseny2018; AAPUTI2011].",
+      "evidence": [
+        {
+          "ref": "Mohseny2018",
+          "quote": "Furthermore, presumed complications of sterile catheterization or suprapubic aspiration hamper urine collection and alternative collection methods such as bag collection have high rates of contamination [11].",
+          "location": "Introduction"
+        },
+        {
+          "ref": "AAPUTI2011",
+          "quote": "Diagnosis is made on the basis of the presence of both pyuria and at least 50,000 colonies per mL of a single uropathogenic organism in an appropriately collected specimen of urine.",
+          "location": "Abstract, Results"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "manual_text": "If intubated or with a tracheostomy, consider a respiratory culture with gram-stain.",
+      "verdict": "insufficient",
+      "summary": "In a single-centre level IV NICU cohort, positive tracheal aspirate cultures in intubated infants were not associated with clinical, laboratory or radiographic markers of infection but were associated with prolonged antibiotic exposure [Langston2020].",
+      "note": null,
+      "evidence": [
+        {
+          "ref": "Langston2020",
+          "quote": "Positive tracheal aspirates were not significantly associated with clinical, laboratory, or radiographic markers used in clinical practice to screen for infection. Despite the lack of positive clinical associations, a positive tracheal aspirate culture was associated with increased risk of prolonged antibiotic exposure.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Langston2020",
+          "quote": "These findings suggest that positive tracheal aspirates do not always represent clinical infection and may result in unnecessary antibiotic exposure.",
+          "location": "Abstract, Conclusion"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "manual_text": "If wounds are present and appear infected, consider cultures of the wound and drainage of any abscess.",
+      "verdict": "partly_concordant",
+      "summary": "The IDSA skin and soft tissue infection guideline, which is not neonate-specific, recommends Gram stain and culture of pus from abscesses and incision and drainage of abscesses, and in infants ≤90 days with mastitis seen in emergency departments, site cultures grew a pathogen in 77% and drainage may be needed for frank abscesses [Stevens2014; Kaplan2021; Kaplan2024].",
+      "evidence": [
+        {
+          "ref": "Stevens2014",
+          "quote": "Gram stain and culture of pus from carbuncles and abscesses are recommended",
+          "location": "WebFetch; Recommendations for Purulent SSTIs, Recommendation 1 (fragment)"
+        },
+        {
+          "ref": "Stevens2014",
+          "quote": "Incision and drainage is the recommended treatment for inflamed epidermoid cysts, carbuncles, abscesses, and large furuncles",
+          "location": "WebFetch; Recommendations for Purulent SSTIs, Recommendation 3 (fragment)"
+        },
+        {
+          "ref": "Stevens2014",
+          "quote": "Doses listed are not appropriate for neonates.",
+          "location": "WebFetch; Table 2 footnote"
+        },
+        {
+          "ref": "Kaplan2021",
+          "quote": "Within the Pediatric Emergency Medicine Collaborative Research Committee, 28 sites reviewed records of infants aged ≤90 days with mastitis who were seen in the emergency department between January 1, 2008, and December 31, 2017.",
+          "location": "Abstract, Methods"
+        },
+        {
+          "ref": "Kaplan2021",
+          "quote": "Cultures from the site of infection were obtained in 335 (51%) infants, with 77% (95% CI 72-81) growing a pathogen, most commonly methicillin-resistant Staphylococcus aureus (54%), followed by methicillin-susceptible S aureus (29%), and unspecified S aureus (8%).",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Kaplan2024",
+          "quote": "Surgical intervention, such as incision and drainage or intraoperative debridement, may be needed for frank abscesses.",
+          "location": "Abstract"
+        }
+      ],
+      "note": "Current evidence suggests Gram stain and culture of pus from abscesses, and incision and drainage as the recommended treatment for abscesses, in the IDSA skin and soft tissue infection guideline, whose dosing table states that its doses are not appropriate for neonates [Stevens2014]. In infants ≤90 days with mastitis seen in the emergency departments of 28 sites, cultures from the site of infection were obtained in 51% and grew a pathogen in 77%, most commonly MRSA (54%), and incision and drainage or debridement may be needed for frank abscesses [Kaplan2021; Kaplan2024]. These sources concern skin infections in general and infants with mastitis seen in emergency departments rather than infected wounds in NICU inpatients [Stevens2014; Kaplan2021; Kaplan2024]."
+    },
+    {
+      "id": "c5",
+      "manual_text": "For severely ill infants, meningitis should be considered, and CSF studies obtained as appropriate.",
+      "verdict": "concordant",
+      "summary": "In a multicentre cohort of NICU infants ≥34 weeks, 38% of infants with meningitis had a negative blood culture, and no single CSF value reliably excluded meningitis, so CSF culture was critical to the diagnosis [Garges2006].",
+      "evidence": [
+        {
+          "ref": "Garges2006",
+          "quote": "Of the 95 patients with meningitis, 92 had a documented blood culture. Only 57 (62%) of 92 patients had a concomitant-positive blood culture; 35 (38%) of 92 had a negative blood culture.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Garges2006",
+          "quote": "Neonatal meningitis frequently occurs in the absence of bacteremia and in the presence of normal CSF parameters. No single CSF value can reliably exclude the presence of meningitis in neonates. The CSF culture is critical to establishing the diagnosis of neonatal meningitis.",
+          "location": "Abstract, Conclusions"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "manual_text": "For infants &lt;&nbsp;30 days old herpes simplex virus (HSV) should be considered in severely ill infants. If HSV is suspected obtain HSV surface, blood, and CSF PCRs with ALT.",
+      "verdict": "partly_concordant",
+      "summary": "The AAP algorithm for HSV-exposed newborns uses skin and mucosal specimens, blood HSV PCR, CSF HSV PCR and serum ALT, and PCR with acyclovir has improved outcomes, but no retrieved source sets an age limit for considering HSV in severely ill infants [Kimberlin2013; Pinninti2018].",
+      "note": "Current evidence suggests evaluating for HSV with skin and mucosal specimens (conjunctivae, mouth, nasopharynx, rectum), blood HSV PCR, lumbar puncture with CSF HSV PCR and serum ALT, as set out in the AAP algorithm for asymptomatic newborns born to women with active genital lesions [Kimberlin2013]. That algorithm addresses asymptomatic newborns born to women with active genital lesions rather than severely ill NICU infants, and the AAP febrile-infant guideline abstract groups its recommendations by age (8 to 21, 22 to 28 and 29 to 60 days) without mentioning HSV [Kimberlin2013; Pantell2021].",
+      "evidence": [
+        {
+          "ref": "Kimberlin2013",
+          "quote": "At approximately 24 hours after delivery, neonatal skin and mucosal specimens",
+          "location": "WebFetch; Management of Asymptomatic Neonates ... Women With Lesions at Delivery and No History of Genital HSV Preceding Pregnancy"
+        },
+        {
+          "ref": "Kimberlin2013",
+          "quote": "(conjunctivae, mouth, nasopharynx, and rectum, and scalp electrode site, if present) should be obtained for culture",
+          "location": "WebFetch; same section"
+        },
+        {
+          "ref": "Kimberlin2013",
+          "quote": "(and PCR assay, if desired), and blood should be sent for HSV DNA PCR assay to evaluate for HSV infection.",
+          "location": "WebFetch; same section"
+        },
+        {
+          "ref": "Kimberlin2013",
+          "quote": "lumbar puncture with CSF sent for indices and HSV DNA PCR assay",
+          "location": "WebFetch; same section"
+        },
+        {
+          "ref": "Kimberlin2013",
+          "quote": "in addition to serum alanine transaminase",
+          "location": "WebFetch; same section"
+        },
+        {
+          "ref": "Pinninti2018",
+          "quote": "The use of PCR for identification of infected infants and acyclovir for treatment has significantly improved the prognosis for affected infants.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Pantell2021",
+          "quote": "Three algorithms summarize the recommendations for infants 8 to 21 days of age, 22 to 28 days of age, and 29 to 60 days of age.",
+          "location": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "manual_text": "Cefepime and vancomycin provide broad coverage for gram-negative and gram-positive infection in NICU infants. Very few bacteria are not covered by this combination.",
+      "verdict": "partly_concordant",
+      "summary": "Among US early-onset sepsis isolates, 5% or less of gram-negative isolates were non-susceptible to 3rd or 4th generation cephalosporins and all S. aureus isolates tested were vancomycin susceptible, although no single added agent covered every isolate [Flannery2022s].",
+      "note": "Current evidence suggests that, among US early-onset sepsis isolates from 2015 to 2017, 5% or less of gram-negative isolates were non-susceptible to 3rd or 4th generation cephalosporins, 6.5% of E. coli isolates were non-susceptible to cefepime, and all S. aureus isolates tested were vancomycin susceptible [Flannery2022s]. In that cohort only vancomycin, a carbapenem and an antifungal added to ampicillin and gentamicin covered all 239 isolates [Flannery2022s]. These data come from early-onset isolates, with cefepime results reported in the text only for E. coli [Flannery2022s].",
+      "evidence": [
+        {
+          "ref": "Flannery2022s",
+          "quote": "Five percent or less of tested gram-negative isolates were non-susceptible to each of 3rd or 4th generation cephalosporins, piperacillin-tazobactam and carbapenems.",
+          "location": "Abstract/Results summary"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "Among cephalosporins, 11/51 (21.6%), 3/56 (5.4%) and 3/46 (6.5%) E. coli isolates were non-susceptible to cefazolin, ceftriaxone or cefepime, respectively.",
+          "location": "Results"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "S. aureus isolates tested were susceptible to vancomycin and variably susceptible to penicillin and gentamicin.",
+          "location": "Results"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "The addition of a carbapenem agent such as meropenem would provide coverage for all E. coli and methicillin-sensitive S. aureus isolates, but only the addition of vancomycin, a carbapenem, and an antifungal agent together with ampicillin and gentamicin would provide adequate empiric antibiotic coverage for all 239 isolates.",
+          "location": "Results"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "manual_text": "Of note: HSV infections and Candida should be considered for severe infections, and, if suspected, started on treatment while the workup is under way.",
+      "verdict": "partly_concordant",
+      "summary": "The AAP algorithm for HSV-exposed newborns starts intravenous acyclovir pending evaluation in defined exposure groups [Kimberlin2013]; no retrieved neonatal guideline text addresses empiric antifungal therapy for suspected candidiasis.",
+      "note": "Current evidence suggests starting intravenous acyclovir pending the results of evaluation in newborns born to women with genital lesions at delivery and no prior history of genital HSV, while acyclovir need not be started in asymptomatic infants of women with a prior history [Kimberlin2013]. The neonatal recommendations of the IDSA candidiasis guideline that were read address lumbar puncture and retinal examination in neonates with Candida-positive cultures and fluconazole prophylaxis, rather than empiric treatment of suspected candidiasis [Pappas2016].",
+      "evidence": [
+        {
+          "ref": "Kimberlin2013",
+          "quote": "intravenous acyclovir should be initiated pending the results of the evaluation",
+          "location": "WebFetch; women with lesions at delivery and no history of genital HSV preceding pregnancy"
+        },
+        {
+          "ref": "Kimberlin2013",
+          "quote": "Acyclovir need not be started as long as the infant remains asymptomatic",
+          "location": "WebFetch; women with lesions at delivery and history of genital HSV preceding pregnancy"
+        },
+        {
+          "ref": "Pappas2016",
+          "quote": "A lumbar puncture and a dilated retinal examination are recommended in neonates",
+          "location": "WebFetch; Section VII, Recommendation 41"
+        },
+        {
+          "ref": "Pappas2016",
+          "quote": "with cultures positive for Candida species from blood and/or urine",
+          "location": "WebFetch; Section VII, Recommendation 41"
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "manual_text": "Dosing medications for meningitis should be considered in severely ill patients unless meningitis has been ruled out.",
+      "verdict": "insufficient",
+      "summary": "Neonatal meningitis frequently occurs without bacteremia, lumbar punctures in infants are often deferred until blood culture results are known, and the IDSA bacterial meningitis guideline (all ages) starts empirical therapy when lumbar puncture is delayed, but these sources do not address meningitic versus standard drug doses [Garges2006; OHearn2024; Tunkel2004].",
+      "evidence": [
+        {
+          "ref": "Garges2006",
+          "quote": "Neonatal meningitis frequently occurs in the absence of bacteremia and in the presence of normal CSF parameters.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "OHearn2024",
+          "quote": "Lumbar punctures are often deferred until the results of blood cultures are known and sometimes not considered, making this population susceptible to a missed diagnosis.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "OHearn2024",
+          "quote": "Meningitis was diagnosed in the absence of a positive blood culture in 36% of episodes, underscoring the importance of developing guidance for lumbar punctures in infants evaluated for sepsis.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Tunkel2004",
+          "quote": "Empirical antimicrobial therapy is initiated either when the lumbar puncture is delayed",
+          "location": "WebFetch; section \"What Specific Antimicrobial Agents Should Be Used in Patients with Suspected or Proven Bacterial Meningitis?\" (fragment)"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "manual_text": "Cefepime provides broader coverage of gram-negative rods when compared to gentamicin, as well as providing coverage for MSSA, and resistant Streptococci. Ampicillin provides coverage for Listeria, Enterococci, and most Streptococci.",
+      "verdict": "partly_concordant",
+      "summary": "Among US early-onset isolates, E. coli was non-susceptible to gentamicin in 10% and to cefepime in 6.5%, and all GBS, group A streptococci and enterococci tested were susceptible to ampicillin and/or penicillin, while oxacillin, nafcillin or cefazolin rather than cefepime are the preferred MSSA treatments [Flannery2022s; Fielding2025].",
+      "note": "Current evidence suggests that among US early-onset sepsis isolates, 10% of E. coli were non-susceptible to gentamicin and 6.5% to cefepime, and Klebsiella and other gram-negative isolates were susceptible to both apart from one Morganella isolate intermediate to carbapenems, and all GBS, group A streptococci and enterococci tested, but only 3 of 6 viridans streptococci, were susceptible to ampicillin and/or penicillin [Flannery2022s]. For MSSA bacteremia, antistaphylococcal penicillins or cefazolin are the preferred treatments and antipseudomonal beta-lactams such as cefepime lack supporting data [Fielding2025].",
+      "evidence": [
+        {
+          "ref": "Flannery2022s",
+          "quote": "The majority of E. coli isolates tested (63/81, 77.8%) were non-susceptible to ampicillin, 10% (8/80) were non-susceptible to gentamicin and 7/79 (8.9%) were non-susceptible to both antibiotics.",
+          "location": "Results"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "Among cephalosporins, 11/51 (21.6%), 3/56 (5.4%) and 3/46 (6.5%) E. coli isolates were non-susceptible to cefazolin, ceftriaxone or cefepime, respectively.",
+          "location": "Results"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "Klebsiella spp. as well as the remaining gram-negative isolates were susceptible to gentamicin, cephalosporins, piperacillin-tazobactam and carbapenems, with the exception of one Morganella morganii isolate that was intermediate to carbapenems.",
+          "location": "Results"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "All GBS, Group A Streptococcus, Enterococci spp. and 3/6 viridans Streptococci isolates tested were susceptible to ampicillin and/or penicillin (Table 1).",
+          "location": "Results"
+        },
+        {
+          "ref": "Fielding2025",
+          "quote": "The preferred treatment options for methicillin-susceptible S. aureus (MSSA) bacteremia are antistaphylococcal penicillins (e.g., oxacillin or nafcillin) or cefazolin. In clinical practice, antipseudomonal beta-lactams (such as cefepime, piperacillin-tazobactam, or meropenem) may be utilized for treatment of MSSA bacteremia despite a lack of supporting data.",
+          "location": "Introduction"
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "manual_text": "MSSA, gram-negative rods, and Streptococci make up the majority of concerning infections in NICU infants older than 7 days.",
+      "verdict": "partly_concordant",
+      "summary": "In US very preterm infants with late-onset sepsis (>3 days), coagulase-negative staphylococci (29.3%) and S. aureus (23.0%) were the most common pathogens, gram-negative bacteria accounted for 32.0%, and GBS and enterococci for 4.7% and 5.3% [Flannery2022].",
+      "note": "Current evidence suggests that in late-onset sepsis among US very preterm infants, coagulase-negative staphylococci (29.3%) and S. aureus (23.0%) were the most common pathogens, gram-negative bacteria made up 32.0%, GBS 4.7%, enterococci 5.3% and fungi 5.1%, with MSSA and MRSA not distinguished [Flannery2022]. In a cohort including 15 Kaiser Permanente Northern California centres, gram-positive organisms made up 58.1% of late-onset pathogens (CoNS 28.8%), gram-negative organisms 33.3% and fungi 6.1% [Mukhopadhyay2022]. In 348 US NICUs from 1997 to 2012, 72% of invasive S. aureus infections were MSSA [Ericson2015a], and the late-onset cohorts above define late onset as after 72 h rather than after 7 days [Flannery2022; Mukhopadhyay2022].",
+      "evidence": [
+        {
+          "ref": "Flannery2022",
+          "quote": "The most common pathogens were coagulase negative staphylococci (29.3%) and Staphylococcus aureus (23.0%), but 34 different pathogens were identified.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Flannery2022",
+          "quote": "Gram-negative bacteria | 3876 (32.0)",
+          "location": "WebFetch, Table 3"
+        },
+        {
+          "ref": "Flannery2022",
+          "quote": "GBS | 569 (4.7)",
+          "location": "WebFetch, Table 3"
+        },
+        {
+          "ref": "Flannery2022",
+          "quote": "Enterococcus spp. | 642 (5.3)",
+          "location": "WebFetch, Table 3"
+        },
+        {
+          "ref": "Flannery2022",
+          "quote": "Fungi | 620 (5.1)",
+          "location": "WebFetch, Table 3"
+        },
+        {
+          "ref": "Flannery2022",
+          "quote": "data collection did not distinguish between methicillin- sensitive",
+          "location": "WebFetch, Methods"
+        },
+        {
+          "ref": "Mukhopadhyay2022",
+          "quote": "Of the 496 episodes of late-onset bacteremia or fungemia, Gram-positive organisms accounted for 58.1% of all pathogens isolated. CoNS was the predominant organism, representing 28.8% of all pathogens. Gram-negative organisms were second most common (33.3%), followed by fungi (6.1%) and polymicrobial infections (2.6%) (Table 1).",
+          "location": "Results"
+        },
+        {
+          "ref": "Ericson2015a",
+          "quote": "Infections were caused more commonly by MSSA (2868/3978, 72%) than MRSA (1110/3978, 28%).",
+          "location": "Results"
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "manual_text": "Risk of Staphylococcal infection is independent of if a central line is present.",
+      "verdict": "insufficient",
+      "summary": "Retrieved sources state only indirectly that S. aureus infections may be less amenable to central-line care improvements and that central lines are a common source of bloodstream infection in preterm infants; no NICU study compared staphylococcal infection risk with and without a central line [Flannery2022; Mohseny2018].",
+      "evidence": [
+        {
+          "ref": "Flannery2022",
+          "quote": "may be less amenable to practice improvements focused on optimal central-line care.",
+          "location": "WebFetch, Discussion"
+        },
+        {
+          "ref": "Mohseny2018",
+          "quote": "The use of central arterial or venous lines in these infants, providing a direct source of bacteremia, is such a risk factor and often the cause of blood stream infections [10].",
+          "location": "Introduction"
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "manual_text": "6.  Gram-negative rods, Streptococci, and Enterococci make up most infections in NICU infants 7 days and younger.",
+      "verdict": "partly_concordant",
+      "summary": "In US early-onset sepsis (≤72 h), E. coli and GBS were the most frequent pathogens, gram-negative organisms made up 45.5% and enterococci 5.5%, and about one-third of very preterm isolates were neither GBS nor E. coli [Stoll2020; Flannery2021].",
+      "note": "Current evidence suggests that in early-onset sepsis E. coli (36.6%) and GBS (30.2%) were the most frequent pathogens, with gram-negative organisms 45.5%, enterococci 5.5%, other streptococci a few percent each, and S. aureus and Listeria 0.9% each [Stoll2020]. In very preterm infants E. coli (46.5%) and GBS (18.8%) predominated and about one-third of isolates were neither [Flannery2021]. These data cover the first 72 h after birth and do not report days 4 to 7 separately [Stoll2020; Flannery2021].",
+      "evidence": [
+        {
+          "ref": "Stoll2020",
+          "quote": "The most frequent pathogens were Escherichia coli (86 [36.6%]) and group B streptococcus (GBS; 71 [30.2%]).",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Stoll2020",
+          "quote": "Gram-negative | 107 (45.5)",
+          "location": "WebFetch, Table 1"
+        },
+        {
+          "ref": "Stoll2020",
+          "quote": "Enterococcus species | 13 (5.5)",
+          "location": "WebFetch, Table 1"
+        },
+        {
+          "ref": "Stoll2020",
+          "quote": "Group A streptococcus | 9 (3.8)",
+          "location": "WebFetch, Table 1"
+        },
+        {
+          "ref": "Stoll2020",
+          "quote": "Viridans streptococci | 7 (3.0)",
+          "location": "WebFetch, Table 1"
+        },
+        {
+          "ref": "Stoll2020",
+          "quote": "Listeria monocytogenes | 2 (0.9)",
+          "location": "WebFetch, Table 1"
+        },
+        {
+          "ref": "Stoll2020",
+          "quote": "Staphylococcus aureus | 2 (0.9)",
+          "location": "WebFetch, Table 1"
+        },
+        {
+          "ref": "Flannery2021",
+          "quote": "Escherichia coli (538 of 1158; 46.5%) and group B Streptococcus (218 of 1158; 18.8%) were the most common pathogens.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Flannery2021",
+          "quote": "approximately one-third of isolates were neither group B Streptococcus nor E coli.",
+          "location": "Abstract, Conclusions"
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "manual_text": "Based on data from &gt;22,000 blood cultures sent for KP SoCal NICU patients, &gt;93% of likely pathogens will grow from blood cultures by 36 hours, and the likelihood of a positive culture resulting after 36 hours is 0.12%.",
+      "verdict": "partly_concordant",
+      "summary": "The KP Southern California figures are unpublished; published cohorts, including Kaiser Permanente Northern California NICUs, found 94% of early-onset and 93.5% of late-onset non-CoNS pathogenic cultures positive by 36 h [Kuzniewicz2020; Mukhopadhyay2022].",
+      "note": "Current evidence suggests that pathogens are isolated by 36 h in 94% of early-onset blood cultures and that 93.5% of late-onset non-CoNS bacterial cultures, 85.0% of all late-onset bacterial cultures and 91.2% in a level IV NICU were positive by 36 h [Kuzniewicz2020; Mukhopadhyay2022; Nishihara2024]. In the late-onset cohort, the estimated probability that a blood culture would grow a bacterial pathogen after 36 h was 1.8%, and a non-CoNS pathogen 0.5%, calculated from the proportion of positive cultures growing within 36 h and the overall culture positivity rate [Mukhopadhyay2022]. Pretreated cultures were less often positive by 36 h (64.7% vs 86.8%), and the authors suggest 48 h when there is pretreatment or therapy is directed at CoNS [Mukhopadhyay2022].",
+      "evidence": [
+        {
+          "ref": "Kuzniewicz2020",
+          "quote": "Blood cultures were identified as positive by 24 hours after they were obtained in 68% of cases; by 36 hours in 94% of cases; and by 48 hours in 97% of cases.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Mukhopadhyay2022",
+          "quote": "Restricting to bacterial pathogens and the first positive culture, the median TTP (25th–75th percentile) for 428 cultures was 23.5 hours (18.4–29.9); 364 (85.0%) resulted in 36 hours. Excluding coagulase-negative staphylococci (CoNS), 275/294 (93.5%) cultures were flagged positive by 36 hours.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Mukhopadhyay2022",
+          "quote": "The probability of detecting a bacterial pathogen after 36 hours was 1.8% (95% CI 1.4–2.2) and the probability of detecting a non-CoNS pathogen after 36 hours was 0.5% (95% CI 0.3–0.7).",
+          "location": "Results"
+        },
+        {
+          "ref": "Mukhopadhyay2022",
+          "quote": "pretreated cultures were less likely to be positive by 36 hours compared to non-pretreated cultures (64.7% vs. 86.8%; P=0.001).",
+          "location": "Results"
+        },
+        {
+          "ref": "Mukhopadhyay2022",
+          "quote": "Empiric antibiotic administration in late-onset infection evaluations (not targeting CoNS) can be stopped at 36 hours. Longer durations (48 hours) should be considered when there is pretreatment or antibiotic therapy is directed at CoNS.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "Nishihara2024",
+          "quote": "Median TTP [IQR] was 21.1 [14.3, 25.2] hours, with 91.2% positive at 36 h, and 96.1% positive at 48 h.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Mukhopadhyay2022",
+          "quote": "where TTPe is the proportion of positive blood cultures growing ≤36 hours after birth, and X is the rate of positivity for blood cultures obtained >72 hours after birth.",
+          "location": "Methods"
+        }
+      ]
+    },
+    {
+      "id": "c15",
+      "manual_text": "Treating a patient for culture negative sepsis with 5 days of antibiotic may be reasonable in select patients where infection is highly suspected, but appropriately drawn cultures were negative.",
+      "verdict": "insufficient",
+      "summary": "In ELBW infants with sterile initial cultures, empirical antibiotic courses of 5 days or longer were associated with higher odds of necrotizing enterocolitis or death, and no retrieved trial or guideline sets a duration for culture-negative sepsis [Cotten2009; Puopolo2018b].",
+      "note": null,
+      "evidence": [
+        {
+          "ref": "Cotten2009",
+          "quote": "The median therapy duration was 5 days (range: 1-36 days); 2147 infants (53%) received prolonged empirical therapy (center range: 27%-85%).",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Cotten2009",
+          "quote": "In multivariate analyses adjusted for these factors and center, prolonged therapy was associated with increased odds of necrotizing enterocolitis or death and of death. Each empirical treatment day was associated with increased odds of death, necrotizing enterocolitis, and the composite measure of necrotizing enterocolitis or death.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Cotten2009",
+          "quote": "Prolonged initial empirical antibiotic therapy may be associated with increased risk of necrotizing enterocolitis or death and should be used with caution.",
+          "location": "Abstract, Conclusion"
+        },
+        {
+          "ref": "Puopolo2018b",
+          "quote": "Retrospective studies have revealed that antibiotic exposures after birth are associated with multiple subsequent poor outcomes among preterm infants, making the risk/benefit balance of these antibiotic treatments uncertain.",
+          "location": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "c16",
+      "manual_text": "CSF testing should be considered for all severely ill infants, those with gram-negative bacteremia, group B strep bacteremia, candidemia, or with concern for HSV.",
+      "verdict": "partly_concordant",
+      "summary": "IDSA recommends lumbar puncture in neonates with Candida-positive blood or urine cultures, the AAP HSV algorithm includes CSF HSV PCR, and 38% of neonatal meningitis occurs with a negative blood culture; the AAP early-onset sepsis LP indications for bacteremia were not retrievable [Pappas2016; Kimberlin2013; Garges2006].",
+      "evidence": [
+        {
+          "ref": "Pappas2016",
+          "quote": "A lumbar puncture and a dilated retinal examination are recommended in neonates",
+          "location": "WebFetch; Section VII, Recommendation 41"
+        },
+        {
+          "ref": "Pappas2016",
+          "quote": "with cultures positive for Candida species from blood and/or urine",
+          "location": "WebFetch; Section VII, Recommendation 41"
+        },
+        {
+          "ref": "Pappas2016",
+          "quote": "CNS disease in the neonate typically manifests as meningoencephalitis and should be assumed to be present in the neonate who has candidemia",
+          "location": "WebFetch; Section VII evidence summary"
+        },
+        {
+          "ref": "Kimberlin2013",
+          "quote": "lumbar puncture with CSF sent for indices and HSV DNA PCR assay",
+          "location": "WebFetch; HSV-exposed neonate section"
+        },
+        {
+          "ref": "Garges2006",
+          "quote": "Only 57 (62%) of 92 patients had a concomitant-positive blood culture; 35 (38%) of 92 had a negative blood culture.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Pappas2016",
+          "quote": "strong recommendation; low-quality evidence",
+          "location": "WebFetch; Section VII, Recommendation 41 (grading)"
+        }
+      ],
+      "note": "Current evidence suggests lumbar puncture in neonates with cultures positive for Candida from blood and/or urine (strong recommendation, low-quality evidence) [Pappas2016], CSF HSV PCR as part of HSV evaluation in exposed newborns [Kimberlin2013], and CSF culture because 38% of neonates with culture-proven meningitis had a negative blood culture [Garges2006]. These sources address candidemia, HSV and meningitis in general rather than lumbar puncture indications in gram-negative or GBS bacteremia specifically [Pappas2016; Kimberlin2013; Garges2006]."
+    },
+    {
+      "id": "c17",
+      "manual_text": "Coagulase negative Staphylococci typically do not cause CNS infection except if there is hardware in the CNS or through direct inoculation via CNS injury.",
+      "verdict": "insufficient",
+      "summary": "CoNS were the most common pathogen in a pediatric CSF shunt infection series and were treated as probable contaminants in CSF in a large neonatal meningitis study, but no retrieved study measured CoNS meningitis in neonates without CNS hardware [McAlpine2022; Garges2006].",
+      "evidence": [
+        {
+          "ref": "McAlpine2022",
+          "quote": "Common pathogens were coagulase-negative staphylococci (N = 42; 28%), methicillin-susceptible Staphylococcus aureus (N = 24; 16%), methicillin-resistant S. aureus (N = 9; 5.9%), Pseudomonas aeruginosa (N = 9; 5.9%) and other Gram-negative bacilli (N = 14; 9.0%).",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Garges2006",
+          "quote": "CSF cultures positive for coagulase-negative staphylococci and other probable contaminants, as well as fungal and viral pathogens, were excluded from analyses.",
+          "location": "Abstract, Methods"
+        }
+      ]
+    },
+    {
+      "id": "c18",
+      "manual_text": "9.  There is no benefit in using broader spectrum antibiotics once a pathogen is isolated, and in some cases broader spectrum antibiotics may lead to worse outcomes. Typically, the narrowest spectrum beta lactam is the preferred treatment.",
+      "verdict": "partly_concordant",
+      "summary": "For MSSA bacteremia, mainly in adults, cefazolin or antistaphylococcal penicillins are preferred for definitive therapy and most comparisons found higher mortality with antipseudomonal beta-lactams, and in neonates a broader empiric regimen was associated with higher mortality, but the neonatal evidence concerns empiric rather than pathogen-directed therapy [McDanel2015; Fielding2025; Clark2006].",
+      "evidence": [
+        {
+          "ref": "Clark2006",
+          "quote": "Logistic modeling showed that neonates treated with ampicillin/cefotaxime were more likely to die (adjusted odds ratio: 1.5; 95% confidence interval: 1.4-1.7) and were less likely to be discharged to home or foster care than were neonates treated with ampicillin/gentamicin.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "Widespread use of antibiotics may increase the risk of later resistant infections, necrotizing enterocolitis, and death, and may have negative long-term impacts on the development of the neonatal microbiome.6–9",
+          "location": "Introduction"
+        },
+        {
+          "ref": "McDanel2015",
+          "quote": "The hazard of mortality decreased further for patients who received cefazolin or antistaphylococcal penicillins compared with vancomycin",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Fielding2025",
+          "quote": "Studies comparing cefazolin and antistaphylococcal penicillins to antipseudomonal beta-lactams for treatment of MSSA bacteremia are limited, and most have found increased mortality with the use of antipseudomonal beta-lactams.2–4",
+          "location": "Introduction"
+        },
+        {
+          "ref": "Fielding2025",
+          "quote": "No differences in mortality or bacteremia recurrence were identified among patients with MSSA bacteremia treated with APBLs compared to SOC. Larger studies should be performed to confirm these findings.",
+          "location": "Abstract, Conclusion"
+        },
+        {
+          "ref": "McDanel2015",
+          "quote": "For patients with MSSA bloodstream infections, beta-lactams are superior to vancomycin for definitive therapy but not for empiric treatment. Patients should receive beta-lactams for definitive therapy, specifically antistaphylococcal penicillins or cefazolin.",
+          "location": "Abstract, Conclusions"
+        }
+      ],
+      "note": "Current evidence suggests that for MSSA bloodstream infection, mainly in adults, definitive therapy with cefazolin or antistaphylococcal penicillins is preferred over vancomycin [McDanel2015], and most comparative studies found higher mortality with antipseudomonal beta-lactams, although a 100-patient adult and pediatric cohort found no difference [Fielding2025]. In neonates, empiric ampicillin with cefotaxime in the first 3 days was associated with higher mortality than ampicillin with gentamicin, a finding about empiric rather than pathogen-directed therapy [Clark2006], and widespread antibiotic use may increase later resistant infections, NEC and death [Flannery2022s]."
+    },
+    {
+      "id": "c19",
+      "manual_text": "The addition of vancomycin is sufficient coverage for most gram-positive infections, as nearly all Streptococci and coagulase negative Staphylococcus are vancomycin sensitive. Vancomycin can be substituted in place of ampicillin while final sensitivities and speciation are pending for these organisms. For instance changing a combination of ampicillin and cefepime to vancomycin plus cefepime is typically sufficient. For Listeria and Enterococci infections ampicillin should be continued.",
+      "verdict": "insufficient",
+      "summary": "Vancomycin is the most reliable treatment for CoNS bloodstream infection, US early-onset GBS isolates were vancomycin susceptible, and ampicillin or amoxicillin is the first-choice treatment for listeriosis, which is naturally resistant to cephalosporins, but these sources do not address replacing ampicillin with vancomycin pending speciation [Ericson2015b; Flannery2022s; Koopmans2023].",
+      "evidence": [
+        {
+          "ref": "Ericson2015b",
+          "quote": "CoNS BSI is most reliably treated with vancomycin; however, concerns about side effects and promoting resistance often delay empirical vancomycin therapy until culture results become available.",
+          "location": "Abstract, Background"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "Reassuringly, GBS isolates tested were susceptible to ampicillin, penicillin, vancomycin, and cephalosporins.",
+          "location": "Discussion"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "All GBS, Group A Streptococcus, Enterococci spp. and 3/6 viridans Streptococci isolates tested were susceptible to ampicillin and/or penicillin (Table 1).",
+          "location": "Results"
+        },
+        {
+          "ref": "Koopmans2023",
+          "quote": "The β-lactam antibiotics penicillin and aminopenicillins ampicillin or amoxicillin are the first-choice treatment.",
+          "location": "WebFetch; Treatment, Antimicrobial Therapy (listeriosis)"
+        },
+        {
+          "ref": "Koopmans2023",
+          "quote": "has a natural resistance to antibiotics that poorly bind PBP-3 such as cephalosporins.",
+          "location": "WebFetch; Treatment, Antimicrobial Therapy (fragment; subject L. monocytogenes)"
+        }
+      ]
+    },
+    {
+      "id": "c20",
+      "manual_text": "*S. aureus* is difficult to treat and often leads to severe and complicated infections, so antibiotics should be optimized quickly after diagnosis. Cefepime and oxacillin have excellent activity against MSSA and are appropriate while final cultures are pending. Vancomycin has activity against *S. aureus*, but less so than oxacillin or cefepime for susceptible isolates.",
+      "verdict": "partly_concordant",
+      "summary": "In adults, definitive beta-lactam therapy for MSSA bacteremia was associated with lower mortality than vancomycin, with antistaphylococcal penicillins or cefazolin preferred over antipseudomonal beta-lactams such as cefepime, while in infants with MSSA bacteremia adequate empirical therapy showed no clear mortality effect [McDanel2015; Fielding2025; Thaden2015].",
+      "note": "Current evidence suggests that for MSSA bloodstream infection beta-lactams are superior to vancomycin for definitive but not for empiric therapy, with antistaphylococcal penicillins or cefazolin as the preferred agents, based on adult data [McDanel2015]. Antipseudomonal beta-lactams such as cefepime lack supporting data for MSSA bacteremia and most comparative studies found higher mortality with them, although a small mixed adult and pediatric cohort found no difference [Fielding2025]. In infants with MSSA bloodstream infection, no clear effect of early adequate empirical therapy on mortality was seen regardless of drug class [Thaden2015].",
+      "evidence": [
+        {
+          "ref": "McDanel2015",
+          "quote": "Patients who received empiric therapy with a beta-lactam had similar mortality compared with those who received vancomycin (HR, 1.03; 95% CI, .89-1.20) after adjusting for other factors. However, patients who received definitive therapy with a beta-lactam had 35% lower mortality compared with patients who received vancomycin (HR, 0.65; 95% CI, .52-.80) after controlling for other factors.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "McDanel2015",
+          "quote": "For patients with MSSA bloodstream infections, beta-lactams are superior to vancomycin for definitive therapy but not for empiric treatment. Patients should receive beta-lactams for definitive therapy, specifically antistaphylococcal penicillins or cefazolin.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "Fielding2025",
+          "quote": "The preferred treatment options for methicillin-susceptible S. aureus (MSSA) bacteremia are antistaphylococcal penicillins (e.g., oxacillin or nafcillin) or cefazolin. In clinical practice, antipseudomonal beta-lactams (such as cefepime, piperacillin-tazobactam, or meropenem) may be utilized for treatment of MSSA bacteremia despite a lack of supporting data.",
+          "location": "Introduction"
+        },
+        {
+          "ref": "Fielding2025",
+          "quote": "Studies comparing cefazolin and antistaphylococcal penicillins to antipseudomonal beta-lactams for treatment of MSSA bacteremia are limited, and most have found increased mortality with the use of antipseudomonal beta-lactams.2–4",
+          "location": "Introduction"
+        },
+        {
+          "ref": "Fielding2025",
+          "quote": "No differences in mortality or bacteremia recurrence were identified among patients with MSSA bacteremia treated with APBLs compared to SOC. Larger studies should be performed to confirm these findings.",
+          "location": "Abstract, Conclusion"
+        },
+        {
+          "ref": "Thaden2015",
+          "quote": "In infants with MSSA BSI, no clear effect of early adequate empirical antibiotic therapy on mortality was observed, regardless of the therapeutic drug class. This stands in contrast to adults, for whom multiple studies have demonstrated the superiority of beta-lactam therapy when treating MSSA BSI.31-36",
+          "location": "Discussion"
+        },
+        {
+          "ref": "Ericson2015a",
+          "quote": "Infections due to S. aureus are associated with increased mortality2, morbidity,3 and length of hospital stay.4",
+          "location": "Introduction"
+        }
+      ]
+    },
+    {
+      "id": "c21",
+      "manual_text": "MRSA infections are rare in the NICU outside of outbreak settings.",
+      "verdict": "partly_concordant",
+      "summary": "In US NICUs from 1997 to 2012, MRSA caused 25% to 28% of S. aureus bloodstream and invasive infections with wide variation between sites, MRSA bacteremia or meningitis affected 1% of VLBW infants in a 2006 to 2008 multicentre cohort, and only one MRSA case occurred among US early-onset sepsis isolates from 2015 to 2017 [Ericson2015a; Thaden2015; Shane2012; Flannery2022s].",
+      "note": "Current evidence suggests that MRSA caused 28% of invasive S. aureus infections in 348 US NICUs from 1997 to 2012 and 25% of S. aureus bloodstream infections in a similar cohort, with the MRSA proportion ranging from 0 to 86.7% (median 26.3%) among the 100 sites with at least 10 episodes [Ericson2015a; Thaden2015]. These national data from 1997 to 2012 did not report outbreak-associated infections separately [Ericson2015a; Thaden2015]. Among VLBW infants born 2006 to 2008 at NICHD Neonatal Research Network centres, 1% of all infants had MRSA bacteremia or meningitis, with 9 of 20 centres reporting no cases, and among US early-onset sepsis cases from 2015 to 2017 only one MRSA case was identified [Shane2012; Flannery2022s].",
+      "evidence": [
+        {
+          "ref": "Ericson2015a",
+          "quote": "Infections were caused more commonly by MSSA (2868/3978, 72%) than MRSA (1110/3978, 28%).",
+          "location": "Results"
+        },
+        {
+          "ref": "Ericson2015a",
+          "quote": "For the 100 sites with ≥10 episodes of invasive S. aureus infection, the proportion of invasive S. aureus infections caused by MRSA varied widely by site (median 26.3% [16.7, 36.8]). The proportion of invasive infections caused by MRSA ranged from 0 at 5 sites to 86.7% at 1 site.",
+          "location": "Results"
+        },
+        {
+          "ref": "Thaden2015",
+          "quote": "Of the 3339 infants with S. aureus BSI, 2492 (75%) had methicillin-susceptible S. aureus (MSSA) BSI and 847 (25%) had methicillin-resistant S. aureus (MRSA) BSI.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "Among other priority organisms, only one case of MRSA and no cases of EOS caused by VRE, CRE or gentamicin/carbapenem-resistant Pseudomonas spp. were identified.",
+          "location": "Results"
+        },
+        {
+          "ref": "Shane2012",
+          "quote": "Of 8444 infants who survived >3 days, 316 (3.7%) had SA B/M. Eighty-eight had MRSA (1% of all infants, 28% of infants with SA); 228 had MSSA (2.7% of all infants, 72% of infants with SA).",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Shane2012",
+          "quote": "The percent of infants with MRSA varied by center (P < .001) with 9 of 20 centers reporting no cases.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Shane2012",
+          "quote": "Neonatal data for VLBW infants (birth weight 401-1500 g) born January 1, 2006, to December 31, 2008, who received care at centers of the Eunice Kennedy Shriver National Institute of Child Health and Human Development Neonatal Research Network were collected prospectively.",
+          "location": "Abstract, Methods"
+        }
+      ]
+    },
+    {
+      "id": "c22",
+      "manual_text": "In non-improving patients with *S. aureus* infections vancomycin should be added in addition to oxacillin or cefepime until MRSA has been ruled out.",
+      "verdict": "partly_concordant",
+      "summary": "In infants with MRSA bloodstream infection, lack of an anti-staphylococcal antibiotic active against the isolate on the day of the first positive culture was associated with higher 30-day mortality [Thaden2015].",
+      "note": "Current evidence suggests that in infants with MRSA bloodstream infection, inadequate empirical therapy (no active anti-staphylococcal antibiotic on the day the first positive culture was obtained) was associated with increased 30-day mortality (odds ratio 2.03) [Thaden2015]. This finding concerns empirical coverage from the day of culture in all infants with MRSA bloodstream infection, not only those who are not improving, and the study did not compare adding vancomycin to a beta-lactam with either agent alone [Thaden2015].",
+      "evidence": [
+        {
+          "ref": "Thaden2015",
+          "quote": "Inadequate empirical antibiotic therapy was associated with increased 30-day mortality (odds ratio: 2.03; 95% confidence interval: 1.08-3.82) among infants with MRSA BSI.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Thaden2015",
+          "quote": "Early adequate empirical antibiotic therapy was defined as exposure to ≥1 antibiotic with anti-staphylococcal activity on the day the first positive blood culture was obtained. All other cases were defined as inadequate empirical antibiotic therapy.",
+          "location": "Methods"
+        },
+        {
+          "ref": "Thaden2015",
+          "quote": "After controlling for confounders, inadequate empirical antibiotic therapy was associated with a modestly increased mortality at 30 days for infants with MRSA BSI.",
+          "location": "Abstract, Conclusions"
+        }
+      ]
+    },
+    {
+      "id": "c23",
+      "manual_text": "This would typically involve broadening from gentamicin to cefepime. In severely ill children who are clinically worsening, broadening from cefepime to meropenem would be a consideration in discussion with Pediatric Infectious Diseases. Meropenem escalation is not needed in patients with GNR infections who are stable or improving.",
+      "verdict": "insufficient",
+      "summary": "All US early-onset E. coli isolates were susceptible to carbapenems and ESBL production was uncommon, but no retrieved study or guideline addresses clinical criteria for escalating from gentamicin to cefepime or from cefepime to meropenem in NICU gram-negative infection [Flannery2022s].",
+      "evidence": [
+        {
+          "ref": "Flannery2022s",
+          "quote": "The only antibiotic class to which all E. coli isolates were susceptible was carbapenems.",
+          "location": "Results"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "Only 3/77 isolates (all E. coli, no Klebsiella spp.) were found to be ESBL-producing.",
+          "location": "Results"
+        }
+      ]
+    },
+    {
+      "id": "c24",
+      "manual_text": "The gram-negative coverage of antibiotics in the NICU is as follows: gentamicin 84%, cefepime 96%, meropenem 99%.",
+      "verdict": "insufficient",
+      "summary": "The local KP Southern California antibiogram is unpublished; among US early-onset sepsis isolates, 8.5% of gram-negative isolates were non-susceptible to gentamicin and 5% or less to 3rd or 4th generation cephalosporins and carbapenems, and gentamicin non-susceptibility increased between study years [Flannery2022s].",
+      "evidence": [
+        {
+          "ref": "Flannery2022s",
+          "quote": "Among gram-negative isolates with ampicillin and/or gentamicin susceptibility data, 72/94 (76.6%) isolates were non-susceptible to ampicillin, 8/94 (8.5%) were non-susceptible to gentamicin, and 7/96 (7.3%) isolates were non-susceptible to both. Five percent or less of tested gram-negative isolates were non-susceptible to each of 3rd or 4th generation cephalosporins, piperacillin-tazobactam and carbapenems.",
+          "location": "Abstract/Results summary"
+        },
+        {
+          "ref": "Flannery2022s",
+          "quote": "Both the proportion of isolates non-susceptible to gentamicin, and the proportion non-susceptible to both ampicillin and gentamicin increased significantly between study year 1 and year 2 (Table 2).",
+          "location": "Results"
+        }
+      ]
+    },
+    {
+      "id": "c25",
+      "manual_text": "Neonates are at high risk of contaminated blood cultures given the difficulty obtaining blood samples. Contaminants typically include skin or gut flora, such as coagulase negative Staphylococcus species (*S. epidermidis*, *S. capitis*, *S. haemolyticus*, *S. hominis*, *S. warneri*), low pathogenicity streptococci species, Aerococcus, Coryneforms, Micrococcus, etc.",
+      "verdict": "partly_concordant",
+      "summary": "Multicentre NICU studies classify commensals such as diphtheroids and Micrococcus as contaminants and count CoNS as a pathogen only when treated as such, while CoNS remains the most common cause of treated bloodstream infection in hospitalized infants [Mukhopadhyay2022; Ericson2015b].",
+      "evidence": [
+        {
+          "ref": "Mukhopadhyay2022",
+          "quote": "Known commensal organisms such as diphtheroids, Micrococcus species, etc. were classified as contaminants. Coagulase-negative staphylococci (CoNS) were classified as pathogens when managed accordingly by the clinical team with ≥5 days of antibiotics.",
+          "location": "Methods"
+        },
+        {
+          "ref": "Mukhopadhyay2022",
+          "quote": "After excluding cultures that were repeat positive due to persistent bacteremia/fungemia (n=441, 40.8%) and contaminants (n=145, 13.4%), there were 496 unique episodes of late-onset bacteremia or fungemia in 447 infants.",
+          "location": "Results"
+        },
+        {
+          "ref": "Ericson2015b",
+          "quote": "Coagulase-negative Staphylococcus (CoNS) is the most common cause of bloodstream infections (BSI) in hospitalized infants.",
+          "location": "Abstract, Background"
+        }
+      ],
+      "note": "Current evidence suggests that multicentre NICU studies classify known commensals such as diphtheroids and Micrococcus as contaminants and count coagulase-negative staphylococci as pathogens when the clinical team treats them for ≥5 days, with contaminants making up 145 (13.4%) of positive late-onset cultures in one cohort [Mukhopadhyay2022]. Coagulase-negative staphylococci are also the most common cause of bloodstream infection in hospitalized infants [Ericson2015b]."
+    },
+    {
+      "id": "c26",
+      "manual_text": "Contamination is likely if repeated blood cultures are negative while not on an antibiotic that covers the organisms, or polymicrobial culture results.",
+      "verdict": "insufficient",
+      "summary": "No retrieved neonatal source tests repeat-culture or polymicrobial criteria for contamination, and in one multicentre cohort polymicrobial episodes made up 2.6% of true late-onset infections [Mukhopadhyay2022].",
+      "evidence": [
+        {
+          "ref": "Mukhopadhyay2022",
+          "quote": "Gram-negative organisms were second most common (33.3%), followed by fungi (6.1%) and polymicrobial infections (2.6%) (Table 1).",
+          "location": "Results"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "key": "Puopolo2018b",
+      "role": "source",
+      "authors": "Puopolo KM, Benitz WE, Zaoutis TE",
+      "title": "Management of Neonates Born at ≤34 6/7 Weeks' Gestation With Suspected or Proven Early-Onset Bacterial Sepsis",
+      "journal": "Pediatrics",
+      "year": "2018",
+      "volume": "142",
+      "issue": "6",
+      "pages": "e20182896",
+      "doi": "10.1542/peds.2018-2896",
+      "pmid": "30455344",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/30455344/",
+        "https://api.crossref.org/works/10.1542/peds.2018-2896"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Pantell2021",
+      "role": "source",
+      "authors": "Pantell RH, Roberts KB, Adams WG, et al.",
+      "title": "Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old",
+      "journal": "Pediatrics",
+      "year": "2021",
+      "volume": "148",
+      "issue": "2",
+      "pages": "e2021052228",
+      "doi": "10.1542/peds.2021-052228",
+      "pmid": "34281996",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/34281996/",
+        "https://api.crossref.org/works/10.1542/peds.2021-052228"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "AAPUTI2011",
+      "role": "source",
+      "authors": "Roberts KB",
+      "title": "Urinary tract infection: clinical practice guideline for the diagnosis and management of the initial UTI in febrile infants and children 2 to 24 months",
+      "journal": "Pediatrics",
+      "year": "2011",
+      "volume": "128",
+      "issue": "3",
+      "pages": "595-610",
+      "doi": "10.1542/peds.2011-1330",
+      "pmid": "21873693",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/21873693/",
+        "https://api.crossref.org/works/10.1542/peds.2011-1330"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Pappas2016",
+      "role": "source",
+      "authors": "Pappas PG, Kauffman CA, Andes DR, et al.",
+      "title": "Clinical Practice Guideline for the Management of Candidiasis: 2016 Update by the Infectious Diseases Society of America",
+      "journal": "Clin Infect Dis",
+      "year": "2016",
+      "volume": "62",
+      "issue": "4",
+      "pages": "e1-50",
+      "doi": "10.1093/cid/civ933",
+      "pmid": "26679628",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/26679628/",
+        "https://api.crossref.org/works/10.1093/cid/civ933"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Kimberlin2013",
+      "role": "source",
+      "authors": "Kimberlin DW, Baley J",
+      "title": "Guidance on management of asymptomatic neonates born to women with active genital herpes lesions",
+      "journal": "Pediatrics",
+      "year": "2013",
+      "volume": "131",
+      "issue": "2",
+      "pages": "e635-646",
+      "doi": "10.1542/peds.2012-3216",
+      "pmid": "23359576",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/23359576/",
+        "https://api.crossref.org/works/10.1542/peds.2012-3216"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Stoll2020",
+      "role": "source",
+      "authors": "Stoll BJ, Puopolo KM, Hansen NI, et al.",
+      "title": "Early-Onset Neonatal Sepsis 2015 to 2017, the Rise of Escherichia coli, and the Need for Novel Prevention Strategies",
+      "journal": "JAMA Pediatr",
+      "year": "2020",
+      "volume": "174",
+      "issue": "7",
+      "pages": "e200593",
+      "doi": "10.1001/jamapediatrics.2020.0593",
+      "pmid": "32364598",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/32364598/",
+        "https://api.crossref.org/works/10.1001/jamapediatrics.2020.0593"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Flannery2021",
+      "role": "source",
+      "authors": "Flannery DD, Edwards EM, Puopolo KM, Horbar JD",
+      "title": "Early-Onset Sepsis Among Very Preterm Infants",
+      "journal": "Pediatrics",
+      "year": "2021",
+      "volume": "148",
+      "issue": "4",
+      "pages": "e2021052456",
+      "doi": "10.1542/peds.2021-052456",
+      "pmid": "34493539",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/34493539/",
+        "https://api.crossref.org/works/10.1542/peds.2021-052456"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Flannery2022",
+      "role": "source",
+      "authors": "Flannery DD, Edwards EM, Coggins SA, Horbar JD, Puopolo KM",
+      "title": "Late-Onset Sepsis Among Very Preterm Infants",
+      "journal": "Pediatrics",
+      "year": "2022",
+      "volume": "150",
+      "issue": "6",
+      "pages": "e2022058813",
+      "doi": "10.1542/peds.2022-058813",
+      "pmid": "36366916",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/36366916/",
+        "https://api.crossref.org/works/10.1542/peds.2022-058813"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Flannery2022s",
+      "role": "source",
+      "authors": "Flannery DD, Puopolo KM, Hansen NI, Gerber JS, Sánchez PJ, Stoll BJ",
+      "title": "Antimicrobial Susceptibility Profiles Among Neonatal Early-onset Sepsis Pathogens",
+      "journal": "Pediatr Infect Dis J",
+      "year": "2022",
+      "volume": "41",
+      "issue": "3",
+      "pages": "263-271",
+      "doi": "10.1097/INF.0000000000003380",
+      "pmid": "34862339",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/34862339/",
+        "https://api.crossref.org/works/10.1097/INF.0000000000003380"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Ericson2015a",
+      "role": "source",
+      "authors": "Ericson JE, Popoola VO, Smith PB, et al.",
+      "title": "Burden of Invasive Staphylococcus aureus Infections in Hospitalized Infants",
+      "journal": "JAMA Pediatr",
+      "year": "2015",
+      "volume": "169",
+      "issue": "12",
+      "pages": "1105-1111",
+      "doi": "10.1001/jamapediatrics.2015.2380",
+      "pmid": "26502073",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/26502073/",
+        "https://api.crossref.org/works/10.1001/jamapediatrics.2015.2380"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Thaden2015",
+      "role": "source",
+      "authors": "Thaden JT, Ericson JE, Cross H, et al.",
+      "title": "Survival Benefit of Empirical Therapy for Staphylococcus aureus Bloodstream Infections in Infants",
+      "journal": "Pediatr Infect Dis J",
+      "year": "2015",
+      "volume": "34",
+      "issue": "11",
+      "pages": "1175-1179",
+      "doi": "10.1097/INF.0000000000000850",
+      "pmid": "26222060",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/26222060/",
+        "https://api.crossref.org/works/10.1097/INF.0000000000000850"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Ericson2015b",
+      "role": "source",
+      "authors": "Ericson JE, Thaden J, Cross HR, et al.",
+      "title": "No survival benefit with empirical vancomycin therapy for coagulase-negative staphylococcal bloodstream infections in infants",
+      "journal": "Pediatr Infect Dis J",
+      "year": "2015",
+      "volume": "34",
+      "issue": "4",
+      "pages": "371-375",
+      "doi": "10.1097/INF.0000000000000573",
+      "pmid": "25760564",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/25760564/",
+        "https://api.crossref.org/works/10.1097/INF.0000000000000573"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "McDanel2015",
+      "role": "source",
+      "authors": "McDanel JS, Perencevich EN, Diekema DJ, et al.",
+      "title": "Comparative effectiveness of beta-lactams versus vancomycin for treatment of methicillin-susceptible Staphylococcus aureus bloodstream infections among 122 hospitals",
+      "journal": "Clin Infect Dis",
+      "year": "2015",
+      "volume": "61",
+      "issue": "3",
+      "pages": "361-367",
+      "doi": "10.1093/cid/civ308",
+      "pmid": "25900170",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/25900170/",
+        "https://api.crossref.org/works/10.1093/cid/civ308"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Clark2006",
+      "role": "source",
+      "authors": "Clark RH, Bloom BT, Spitzer AR, Gerstmann DR",
+      "title": "Empiric use of ampicillin and cefotaxime, compared with ampicillin and gentamicin, for neonates at risk for sepsis is associated with an increased risk of neonatal death",
+      "journal": "Pediatrics",
+      "year": "2006",
+      "volume": "117",
+      "issue": "1",
+      "pages": "67-74",
+      "doi": "10.1542/peds.2005-0179",
+      "pmid": "16396862",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/16396862/",
+        "https://api.crossref.org/works/10.1542/peds.2005-0179"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Kilpatrick2024",
+      "role": "source",
+      "authors": "Kilpatrick R, Boutzoukas AE, Chan E, et al.",
+      "title": "Urinary Tract Infection Epidemiology in NICUs in the United States",
+      "journal": "Am J Perinatol",
+      "year": "2024",
+      "volume": "41",
+      "issue": "S 01",
+      "pages": "e2202-e2208",
+      "doi": "10.1055/s-0043-1771015",
+      "pmid": "37429320",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/37429320/",
+        "https://api.crossref.org/works/10.1055/s-0043-1771015"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Mohseny2018",
+      "role": "source",
+      "authors": "Mohseny AB, van Velze V, Steggerda SJ, Smits-Wintjens VEHJ, Bekker V, Lopriore E",
+      "title": "Late-onset sepsis due to urinary tract infection in very preterm neonates is not uncommon",
+      "journal": "Eur J Pediatr",
+      "year": "2018",
+      "volume": "177",
+      "issue": "1",
+      "pages": "33-38",
+      "doi": "10.1007/s00431-017-3030-9",
+      "pmid": "29063210",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/29063210/",
+        "https://api.crossref.org/works/10.1007/s00431-017-3030-9"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Kuzniewicz2020",
+      "role": "source",
+      "authors": "Kuzniewicz MW, Mukhopadhyay S, Li S, Walsh EM, Puopolo KM",
+      "title": "Time to Positivity of Neonatal Blood Cultures for Early-onset Sepsis",
+      "journal": "Pediatr Infect Dis J",
+      "year": "2020",
+      "volume": "39",
+      "issue": "7",
+      "pages": "634-640",
+      "doi": "10.1097/INF.0000000000002632",
+      "pmid": "32379197",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/32379197/",
+        "https://api.crossref.org/works/10.1097/INF.0000000000002632"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Mukhopadhyay2022",
+      "role": "source",
+      "authors": "Mukhopadhyay S, Briker SM, Flannery DD, et al.",
+      "title": "Time to positivity of blood cultures in neonatal late-onset bacteraemia",
+      "journal": "Arch Dis Child Fetal Neonatal Ed",
+      "year": "2022",
+      "volume": "107",
+      "issue": "6",
+      "pages": "583-588",
+      "doi": "10.1136/archdischild-2021-323416",
+      "pmid": "35273079",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/35273079/",
+        "https://api.crossref.org/works/10.1136/archdischild-2021-323416"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Nishihara2024",
+      "role": "source",
+      "authors": "Nishihara Y, MacBrayne CE, Prinzi A, et al.",
+      "title": "Time to positivity of blood cultures in a level IV NICU varies based on organism category and population subgroups: is a 36-hour rule out safe?",
+      "journal": "J Perinatol",
+      "year": "2024",
+      "volume": "44",
+      "issue": "12",
+      "pages": "1807-1815",
+      "doi": "10.1038/s41372-024-02031-0",
+      "pmid": "38902516",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/38902516/",
+        "https://api.crossref.org/works/10.1038/s41372-024-02031-0"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Garges2006",
+      "role": "source",
+      "authors": "Garges HP, Moody MA, Cotten CM, et al.",
+      "title": "Neonatal meningitis: what is the correlation among cerebrospinal fluid cultures, blood cultures, and cerebrospinal fluid parameters?",
+      "journal": "Pediatrics",
+      "year": "2006",
+      "volume": "117",
+      "issue": "4",
+      "pages": "1094-1100",
+      "doi": "10.1542/peds.2005-1132",
+      "pmid": "16585303",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/16585303/",
+        "https://api.crossref.org/works/10.1542/peds.2005-1132"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Langston2020",
+      "role": "source",
+      "authors": "Langston SJ, Pithia N, Sim MS, Garg M, de St Maurice A, Chu A",
+      "title": "Lack of utility of tracheal aspirates in the management of suspected pneumonia in intubated neonates",
+      "journal": "Infect Control Hosp Epidemiol",
+      "year": "2020",
+      "volume": "41",
+      "issue": "6",
+      "pages": "660-665",
+      "doi": "10.1017/ice.2020.57",
+      "pmid": "32209148",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/32209148/",
+        "https://api.crossref.org/works/10.1017/ice.2020.57"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Pinninti2018",
+      "role": "source",
+      "authors": "Pinninti SG, Kimberlin DW",
+      "title": "Neonatal herpes simplex virus infections",
+      "journal": "Semin Perinatol",
+      "year": "2018",
+      "volume": "42",
+      "issue": "3",
+      "pages": "168-175",
+      "doi": "10.1053/j.semperi.2018.02.004",
+      "pmid": "29544668",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/29544668/",
+        "https://api.crossref.org/works/10.1053/j.semperi.2018.02.004"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Cotten2009",
+      "role": "source",
+      "authors": "Cotten CM, Taylor S, Stoll B, et al.",
+      "title": "Prolonged duration of initial empirical antibiotic treatment is associated with increased rates of necrotizing enterocolitis and death for extremely low birth weight infants",
+      "journal": "Pediatrics",
+      "year": "2009",
+      "volume": "123",
+      "issue": "1",
+      "pages": "58-66",
+      "doi": "10.1542/peds.2007-3423",
+      "pmid": "19117861",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/19117861/",
+        "https://api.crossref.org/works/10.1542/peds.2007-3423"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "McAlpine2022",
+      "role": "source",
+      "authors": "McAlpine A, Robinson JL, Barton M, et al.",
+      "title": "Cerebrospinal Fluid Shunt Infections: A Multicenter Pediatric Study",
+      "journal": "Pediatr Infect Dis J",
+      "year": "2022",
+      "volume": "41",
+      "issue": "6",
+      "pages": "449-454",
+      "doi": "10.1097/INF.0000000000003513",
+      "pmid": "35389956",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/35389956/",
+        "https://api.crossref.org/works/10.1097/INF.0000000000003513"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Fielding2025",
+      "role": "source",
+      "authors": "Fielding M, DeSear K, Kariyawasam V, et al.",
+      "title": "Evaluation of outcomes associated with antipseudomonal beta-lactams for treatment of methicillin-susceptible Staphylococcus aureus bacteremia: a retrospective cohort analysis",
+      "journal": "Ther Adv Infect Dis",
+      "year": "2025",
+      "volume": "12",
+      "issue": "",
+      "pages": "20499361251395527",
+      "doi": "10.1177/20499361251395527",
+      "pmid": "41393333",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/41393333/",
+        "https://api.crossref.org/works/10.1177/20499361251395527"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Stevens2014",
+      "role": "source",
+      "authors": "Stevens DL, Bisno AL, Chambers HF, et al.",
+      "title": "Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the Infectious Diseases Society of America",
+      "journal": "Clin Infect Dis",
+      "year": "2014",
+      "volume": "59",
+      "issue": "2",
+      "pages": "e10-52",
+      "doi": "10.1093/cid/ciu444",
+      "pmid": "24973422",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/24973422/",
+        "https://api.crossref.org/works/10.1093/cid/ciu444"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Kaplan2021",
+      "role": "source",
+      "authors": "Kaplan RL, Cruz AT, Michelson KA, et al.",
+      "title": "Neonatal Mastitis and Concurrent Serious Bacterial Infection",
+      "journal": "Pediatrics",
+      "year": "2021",
+      "volume": "148",
+      "issue": "1",
+      "pages": "e2021051322",
+      "doi": "10.1542/peds.2021-051322",
+      "pmid": "34187909",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/34187909/",
+        "https://api.crossref.org/works/10.1542/peds.2021-051322"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Kaplan2024",
+      "role": "source",
+      "authors": "Kaplan RL",
+      "title": "Neonatal Mastitis: Clinical Presentation and Approach to Evaluation and Management",
+      "journal": "Pediatr Emerg Care",
+      "year": "2024",
+      "volume": "40",
+      "issue": "12",
+      "pages": "920-921",
+      "doi": "10.1097/PEC.0000000000003281",
+      "pmid": "39591397",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/39591397/",
+        "https://api.crossref.org/works/10.1097/PEC.0000000000003281"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "OHearn2024",
+      "role": "source",
+      "authors": "O'Hearn O, Srinivasan L, Devine M, Harris MC",
+      "title": "Bacterial meningitis in a quaternary NICU: A multiyear retrospective study",
+      "journal": "Medicine (Baltimore)",
+      "year": "2024",
+      "volume": "103",
+      "issue": "51",
+      "pages": "e40978",
+      "doi": "10.1097/MD.0000000000040978",
+      "pmid": "39705482",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/39705482/",
+        "https://api.crossref.org/works/10.1097/MD.0000000000040978"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Tunkel2004",
+      "role": "source",
+      "authors": "Tunkel AR, Hartman BJ, Kaplan SL, et al.",
+      "title": "Practice guidelines for the management of bacterial meningitis",
+      "journal": "Clin Infect Dis",
+      "year": "2004",
+      "volume": "39",
+      "issue": "9",
+      "pages": "1267-1284",
+      "doi": "10.1086/425368",
+      "pmid": "15494903",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/15494903/",
+        "https://api.crossref.org/works/10.1086/425368"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Shane2012",
+      "role": "source",
+      "authors": "Shane AL, Hansen NI, Stoll BJ, et al.",
+      "title": "Methicillin-resistant and susceptible Staphylococcus aureus bacteremia and meningitis in preterm infants",
+      "journal": "Pediatrics",
+      "year": "2012",
+      "volume": "129",
+      "issue": "4",
+      "pages": "e914-922",
+      "doi": "10.1542/peds.2011-0966",
+      "pmid": "22412036",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/22412036/",
+        "https://api.crossref.org/works/10.1542/peds.2011-0966"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Koopmans2023",
+      "role": "source",
+      "authors": "Koopmans MM, Brouwer MC, Vázquez-Boland JA, van de Beek D",
+      "title": "Human Listeriosis",
+      "journal": "Clin Microbiol Rev",
+      "year": "2023",
+      "volume": "36",
+      "issue": "1",
+      "pages": "e0006019",
+      "doi": "10.1128/cmr.00060-19",
+      "pmid": "36475874",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/36475874/",
+        "https://api.crossref.org/works/10.1128/cmr.00060-19"
+      ],
+      "verified_date": "2026-10-28"
+    }
+  ],
+  "review": {
+    "verdict": "APPROVED",
+    "rounds": 2,
+    "date": "2026-10-28",
+    "quotes_checked": 258,
+    "references_verified": 32,
+    "known_limitations": [
+      "Claims in items 7 and 11 rest on unpublished KP SoCal data; comparable published cohorts are cited",
+      "Pappas2016, Kimberlin2013, Stoll2020, Flannery2022, Stevens2014, Tunkel2004 and Koopmans2023 were read as WebFetch extractions of the PMC/publisher page; quotes were re-confirmed by the Reviewer",
+      "AAP guidance (Puopolo2018b, Pantell2021, AAPUTI2011) available as abstract only",
+      "Stark2026 (DOI does not resolve) and four other retrieved entries were not cited and are not published"
+    ]
+  }
+}

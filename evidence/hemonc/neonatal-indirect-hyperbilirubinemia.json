@@ -1,0 +1,594 @@
+{
+  "chapter": "hemonc",
+  "section": "Neonatal Indirect Hyperbilirubinemia",
+  "anchor": "hemonc.html#neonatal-indirect-hyperbilirubinemia",
+  "source": {
+    "file": "site/src/content/docs/hemonc.mdx",
+    "lines": "6-85",
+    "manual_commit": "398c583"
+  },
+  "checked": "2026-10-28",
+  "generated_with": "Researcher, Comparer, Reviewer: claude-opus-5-5",
+  "triage": {
+    "clinical": 8,
+    "operational": 1,
+    "definition": 0,
+    "context": 0
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "manual_text": "Timing: - qAM first 10 days of life - Clinically indicated",
+      "verdict": "insufficient",
+      "summary": "The retrieved evidence gives no TcB schedule for preterm infants: the NICHD ELBW trial measured bilirubin at least once daily for the first 7 days and then conditionally in the second week, a 2026 preterm graphing paper extends decision support to at least 14 days, and NICE recommends serum rather than transcutaneous measurement below 35 weeks [Morris2008; Stavis2026; NICE2023].",
+      "evidence": [
+        {
+          "ref": "Morris2008",
+          "quote": "Bilirubin was measured at least once daily for the first 7 days after birth for all infants. During the second week after birth, bilirubin was measured on any day on which phototherapy was administered or when phototherapy had been stopped in the previous 24 hours or the last bilirubin measurement exceeded 5 mg per deciliter for infants with a birth weight of 501 to 750 g or 7 mg per deciliter for infants with a birth weight 751 to 1000 g.",
+          "location": "Methods, treatment protocol"
+        },
+        {
+          "ref": "Stavis2026",
+          "quote": "Chronologic age-based guidelines based on gestational age (GA) at birth were derived from the consensus-based recommendations and modified with integration of the AAP hyperbilirubinemia guidelines and extension of decision support for a minimum of 14 days.",
+          "location": "Abstract, Methods"
+        },
+        {
+          "ref": "NICE2023",
+          "quote": "Use serum bilirubin measurement for babies: in the first 24 hours of life or who have a gestational age of less than 35 weeks. [2016]",
+          "location": "Recommendation 1.2.15"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "manual_text": "Threshold for follow-up blood test: Gestational Age / TCB threshold: < 28 weeks CGA ≥2 mg/dl; 28-29 weeks CGA ≥3 mg/dl; 30-31 weeks CGA ≥5 mg/dl; 32-33 weeks CGA ≥7 mg/dl; 34 weeks CGA ≥9 mg/dl",
+      "verdict": "practice_varies",
+      "summary": "Systematic reviews and a California multicentre study of infants <30 weeks support TcB as a screening test in preterm infants, with serum confirmation of positive results and more careful use below 33 weeks as TcB approaches treatment thresholds, whereas NICE recommends serum measurement below 35 weeks, and the only retrieved TcB-to-serum rule (TSB when TcB exceeds or is within 3 mg/dL of the phototherapy threshold, or is ≥15 mg/dL) comes from the AAP guideline for infants ≥35 weeks [Nagar2013; Okwundu2023; Sankar2023; Jegathesan2021; NICE2023; Kemper2022].",
+      "evidence": [
+        {
+          "ref": "Nagar2013",
+          "quote": "Pooled estimates in infants <32 weeks' gestation were similar to the overall preterm population (r = 0.89 [95% confidence interval: 0.82-0.93]).",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Nagar2013",
+          "quote": "The TcB devices reliably estimated bilirubin levels in preterm infants and could be used in clinical practice to reduce blood sampling.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "Okwundu2023",
+          "quote": "The high sensitivity of TcB to detect hyperbilirubinaemia suggests that TcB devices are reliable screening tests for ruling out hyperbilirubinaemia in newborn infants. Positive test results would require confirmation through serum bilirubin measurement.",
+          "location": "Abstract, Authors' conclusions"
+        },
+        {
+          "ref": "Sankar2023",
+          "quote": "Our study supports the use of TcB as a screening tool for monitoring jaundice in extremely preterm infants.",
+          "location": "Abstract, Conclusion"
+        },
+        {
+          "ref": "Jegathesan2021",
+          "quote": "Among preterm infants, TcB may offer a noninvasive, immediate approach to screening for hyperbilirubinemia with more careful use in preterm infants born at <33 weeks' gestation, as TcB approaches treatment thresholds.",
+          "location": "Abstract, Conclusion"
+        },
+        {
+          "ref": "NICE2023",
+          "quote": "Use serum bilirubin measurement for babies: in the first 24 hours of life or who have a gestational age of less than 35 weeks. [2016]",
+          "location": "Recommendation 1.2.15"
+        },
+        {
+          "ref": "Kemper2022",
+          "quote": "KAS 6: TSB should be measured if the TcB exceeds or is within 3 mg/dL of the phototherapy treatment threshold or if the TcB is ≥15 mg/dL. (Aggregate Evidence Quality Grade C, Recommendation)",
+          "location": "KAS 6, p. 6"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "manual_text": "Notify MD if: < 28 weeks CGA ≥5 mg/dl; 28-29 weeks CGA ≥6 mg/dl; 30-31 weeks CGA ≥8 mg/dl; 32-33 weeks CGA ≥10 mg/dl; 34 weeks CGA ≥12 mg/dl",
+      "verdict": "concordant",
+      "summary": "These values equal the lower (higher-risk) phototherapy TSB thresholds for each corrected-gestational-age band in the 2012 AAP-requested consensus for infants <35 weeks, as reproduced in a 2026 implementation paper [Stavis2026; Maisels2012].",
+      "evidence": [
+        {
+          "ref": "Stavis2026",
+          "quote": "1 <28 6 5 14 11 27 0/7 | 2 28 0/7 – 29 6/7 8 6 14 12 29 0/7 | 3 30 0/7 – 31 6/7 10 8 16 13 31 0/7 | 4 32 0/7 – 33 6/7 12 10 18 15 33 0/7 | 5 34 0/7 – 34 6/7 14 12 19 17 35 0/7",
+          "location": "Table 1 (MWBS suggested/recommended guidelines based on corrected gestational age); columns: CGA category, CGA (wks), phototherapy low-risk TSB, phototherapy high-risk TSB, exchange low-risk TSB, exchange high-risk TSB (mg/dL), CGA for graphing; rows separated by | (en dash lost in the preprint text layer)"
+        },
+        {
+          "ref": "Stavis2026",
+          "quote": "The low-risk/high-risk categorization reflects the range of values provided by MWBS for infants at lower or higher risk for bilirubin-associated neurotoxicity. Examples of higher risk include lower GA, serum albumin levels <2.5 g/dL, rapidly rising TSB levels suggesting hemolytic disease, and clinical instability [1].",
+          "location": "Table 1 legend"
+        },
+        {
+          "ref": "Maisels2012",
+          "quote": "The recommended treatment levels are based on operational thresholds for bilirubin levels and represent those levels beyond which it is assumed that treatment will likely do more good than harm.",
+          "location": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "manual_text": "For ≥35 weeks CGA, use www.bilitool.org (up to 146 hrs) or www.peditools.org (for > 146 hrs): If TCB in high-intermediate risk zone (>75%ile of Bhutani nomogram) or TCB ≥13, draw stat TSB and notify MD if TSB is in the high-risk zone or ≥13 mg/dl",
+      "verdict": "discordant",
+      "summary": "The 2022 AAP guideline, which replaces the 2004 guideline, no longer uses the Bhutani risk-zone nomogram and instead measures TSB when TcB exceeds or is within 3 mg/dL of the gestational-age- and risk-factor-specific phototherapy threshold or is ≥15 mg/dL [Kemper2022].",
+      "note": "Current evidence suggests that for infants ≥35 weeks the decision to measure TSB rests on the distance between the TcB and the phototherapy threshold for the infant's gestational age and neurotoxicity risk factors (TcB exceeding or within 3 mg/dL of it) or a TcB ≥15 mg/dL [Kemper2022]. The 2022 AAP guideline describes the earlier risk nomogram, based on the 1999 Bhutani study, as not accounting for gestational age or neurotoxicity risk factors and as derived from a population that excluded DAT-positive infants, and the nomogram study defined its high-risk zone by TSB percentiles in healthy, mostly term newborns [Kemper2022; Bhutani1999].",
+      "evidence": [
+        {
+          "ref": "Kemper2022",
+          "quote": "This article updates and replaces the 2004 American Academy of Pediatrics (AAP) clinical practice guideline for the management and prevention of hyperbilirubinemia in the newborn infant ≥35 weeks' gestation.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Kemper2022",
+          "quote": "KAS 6: TSB should be measured if the TcB exceeds or is within 3 mg/dL of the phototherapy treatment threshold or if the TcB is ≥15 mg/dL. (Aggregate Evidence Quality Grade C, Recommendation)",
+          "location": "KAS 6, p. 6"
+        },
+        {
+          "ref": "Kemper2022",
+          "quote": "Those follow-up recommendations used a previous risk nomogram (Fig 2 in the 2004 guideline, based on the 1999 study of Bhutani et al) that did not take gestational age and hyperbilirubinemia neurotoxicity risk factors into account and was created from a study population that excluded DAT positive infants.",
+          "location": "IV.A Timing of Follow-Up After Discharge, p. 14 (reference number omitted)"
+        },
+        {
+          "ref": "Kemper2022",
+          "quote": "The current guideline recommends using the difference between the bilirubin concentration and the phototherapy threshold at the time of measurement to determine the interval between discharge and follow-up and the need for additional TSB or TcB measurements (Fig 7). This approach incorporates both gestational age and other hyperbilirubinemia neurotoxicity risk factors into the decision-making process.",
+          "location": "IV.A Timing of Follow-Up After Discharge, p. 14"
+        },
+        {
+          "ref": "Bhutani1999",
+          "quote": "A percentile-based bilirubin nomogram for the first week was constructed from hour-specific predischarge and postdischarge TSB values of newborns (n = 2840; median BW = 3230 g and median gestational age = 39 weeks) who met classification criteria for healthy newborns (excluding those with a positive direct Coombs test or those requiring phototherapy before age 60 hours)",
+          "location": "Abstract, Methods"
+        },
+        {
+          "ref": "Bhutani1999",
+          "quote": "Predischarge, 6.1% of the study population (172/2840) had TSB values in the high-risk zone (>/=95th percentile) at 18 to 72 hours",
+          "location": "Abstract, Results"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "manual_text": "Additional TCB screening for DAT+: DAT+ and GA ≥ 32wks --> Check TCB at 6 hrs; If TCB <4, continue regular screening; If TCB 4-5, repeat TCB at 12 hrs; If TCB ≥ 5, draw TSB. Notify MD if TSB > 5 (repeat TCB at 12 hrs --> If TCB ≥ 5, draw TSB)",
+      "verdict": "partly_concordant",
+      "summary": "In ABO-incompatible DAT-positive newborns ≥35 weeks, a sixth-hour TcB was highly predictive of phototherapy within 24 hours, with a low-risk cut-off of <3.0 mg/dL and a high-risk cut-off of ≥5.3 mg/dL, and the AAP guideline lists isoimmune hemolytic disease as a neurotoxicity risk factor, while NICE recommends serum measurement in the first 24 hours and below 35 weeks [Papacostas2022; Kemper2022; NICE2023].",
+      "note": "Current evidence suggests a sixth-hour TcB is highly predictive of the need for phototherapy within 24 hours in ABO-incompatible DAT-positive newborns, in a retrospective study limited to infants ≥35 weeks that reported a low-risk cut-off of <3.0 mg/dL (negative predictive value 98%) and a high-risk cut-off of ≥5.3 mg/dL (positive predictive value 85%) [Papacostas2022]. The AAP guideline treats isoimmune hemolytic disease (positive DAT) as a hyperbilirubinemia neurotoxicity risk factor and covers infants ≥35 weeks, while NICE recommends serum rather than transcutaneous measurement in the first 24 hours of life and below 35 weeks [Kemper2022; NICE2023].",
+      "evidence": [
+        {
+          "ref": "Papacostas2022",
+          "quote": "Of 10 942 consecutive newborns ≥35 weeks estimated gestational age, 829 were ABO incompatible and DAT positive.",
+          "location": "Abstract, Methods"
+        },
+        {
+          "ref": "Papacostas2022",
+          "quote": "Low (<3.0 mg/dL) and high (≥5.3 mg/dL) risk TcB cutoffs demonstrated a negative predictive value of 98% and positive predictive value of 85%, respectively.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Papacostas2022",
+          "quote": "Among high-risk ABO incompatible DAT positive newborns, the sixth-hour TcB is highly predictive of the need for phototherapy ≤24 hours.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "Kemper2022",
+          "quote": "Isoimmune hemolytic disease (ie, positive direct antiglobulin test), G6PD deficiency, or other hemolytic conditions",
+          "location": "Table 2, Hyperbilirubinemia Neurotoxicity Risk Factors"
+        },
+        {
+          "ref": "Kemper2022",
+          "quote": "This article updates and replaces the 2004 American Academy of Pediatrics (AAP) clinical practice guideline for the management and prevention of hyperbilirubinemia in the newborn infant ≥35 weeks' gestation.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "NICE2023",
+          "quote": "Use serum bilirubin measurement for babies: in the first 24 hours of life or who have a gestational age of less than 35 weeks. [2016]",
+          "location": "Recommendation 1.2.15"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "manual_text": "Phototherapy for preterm infants: Gestational age (week) / Phototherapy TSB (mg/dl) / Exchange transfusion TSB (mg/dl): < 28 0/7: 5-6 / 11-14; 28 0/7 - 29 6/7: 6-8 / 12-14; 30 0/7 - 31 6/7: 8-10 / 13-16; 32 0/7 - 33 6/7: 10-12 / 15-18; 34 0/7 - 34 6/7: 12-14 / 17-19",
+      "verdict": "concordant",
+      "summary": "The phototherapy and exchange-transfusion TSB ranges match the 2012 AAP-requested consensus thresholds for infants <35 weeks by corrected gestational age, in which the lower value applies to infants at higher risk of neurotoxicity, as reproduced in a 2026 implementation paper; the recommendations are consensus-based because evidence is limited [Stavis2026; Maisels2012].",
+      "evidence": [
+        {
+          "ref": "Stavis2026",
+          "quote": "1 <28 6 5 14 11 27 0/7 | 2 28 0/7 – 29 6/7 8 6 14 12 29 0/7 | 3 30 0/7 – 31 6/7 10 8 16 13 31 0/7 | 4 32 0/7 – 33 6/7 12 10 18 15 33 0/7 | 5 34 0/7 – 34 6/7 14 12 19 17 35 0/7",
+          "location": "Table 1 (MWBS suggested/recommended guidelines based on corrected gestational age); columns: CGA category, CGA (wks), phototherapy low-risk TSB, phototherapy high-risk TSB, exchange low-risk TSB, exchange high-risk TSB (mg/dL), CGA for graphing; rows separated by | (en dash lost in the preprint text layer)"
+        },
+        {
+          "ref": "Stavis2026",
+          "quote": "The low-risk/high-risk categorization reflects the range of values provided by MWBS for infants at lower or higher risk for bilirubin-associated neurotoxicity. Examples of higher risk include lower GA, serum albumin levels <2.5 g/dL, rapidly rising TSB levels suggesting hemolytic disease, and clinical instability [1].",
+          "location": "Table 1 legend"
+        },
+        {
+          "ref": "Maisels2012",
+          "quote": "We provide an approach to the use of phototherapy and exchange transfusion in the management of hyperbilirubinemia in preterm infants of <35 weeks of gestation. Because there are limited data for evidence-based recommendations, these recommendations are, of necessity, consensus-based.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Stavis2026",
+          "quote": "At the request of the AAP, consensus-based recommendations for managing hyperbilirubinemia in infants < 35 weeks' postmenstrual age (PMA) were published in 2012.",
+          "location": "Abstract, Background"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "manual_text": "IVIG for ABO incompatibility: Dose: 1g/kg/dose",
+      "verdict": "practice_varies",
+      "summary": "The AAP guideline gives IVIG 0.5 to 1 g/kg over 2 hours, repeatable in 12 hours, for isoimmune hemolytic disease at the escalation-of-care threshold, NICE gives 500 mg/kg over 4 hours for rhesus or ABO haemolytic disease, and benefit is uncertain in alloimmune (Rh or ABO) disease in a Cochrane review and specifically in ABO disease in a 2026 meta-analysis [Kemper2022; NICE2023; Zwiers2018; Roberts2026].",
+      "evidence": [
+        {
+          "ref": "Kemper2022",
+          "quote": "KAS 21: Intravenous immune globulin (IVIG; 0.5 to 1 g/kg) over 2 hours may be provided to infants with isoimmune hemolytic disease (ie, positive DAT) whose TSB reaches or exceeds escalation of care threshold. The dose can be repeated in 12 hours. (Aggregate Evidence Quality Grade C, Option)",
+          "location": "KAS 21, p. 13"
+        },
+        {
+          "ref": "NICE2023",
+          "quote": "Use intravenous immunoglobulin (IVIG) (500 mg/kg over 4 hours) as an adjunct to continuous intensified phototherapy in cases of rhesus haemolytic disease or ABO haemolytic disease when the serum bilirubin continues to rise by more than 8.5 micromol/litre per hour. [2010]",
+          "location": "Recommendation 1.8.1"
+        },
+        {
+          "ref": "Zwiers2018",
+          "quote": "Based on these results, we have insufficient confidence in the effect estimate for benefit of IVIg to make even a weak recommendation for the use of IVIg for the treatment of alloimmune HDN.",
+          "location": "Abstract, Authors' conclusions"
+        },
+        {
+          "ref": "Roberts2026",
+          "quote": "Subgroup analysis suggested that the reduction in ET was more consistent in Rh-mediated HDN (OR = 0.2; CI: 0.1-0.8; I2 = 81%) than in ABO-mediated HDN (OR = 0.76; CI: 0.1-4.1; I2 = 89%).",
+          "location": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "manual_text": "Administration instruction: 1mg/kg/min for the first 30 min; if tolerated, increase gradually to a maximum of 8mg/kg/min. Total administration time: 6 hrs.",
+      "verdict": "partly_concordant",
+      "summary": "US labels for two 10% IVIG products give an initial rate of 1 mg/kg/min for the first 30 minutes (Gamunex-C, primary immunodeficiency and ITP) or 0.5 mg/kg/min (Privigen), with gradual increase to a maximum of 8 mg/kg/min, while neonatal guidelines give the hemolytic-disease dose over 2 hours (AAP) or 500 mg/kg over 4 hours (NICE) [GamunexC2026; Privigen2026; Kemper2022; NICE2023].",
+      "note": "Current evidence suggests labeled IVIG infusion rates are product-specific, with an initial rate of 1 mg/kg/min for the first 30 minutes for Gamunex-C in primary immunodeficiency and ITP and 0.5 mg/kg/min for Privigen, each increased gradually to a maximum of 8 mg/kg/min, and neither label lists neonatal hemolytic disease among its indications (primary immunodeficiency, ITP and CIDP; Gamunex-C for primary immunodeficiency from 2 years of age, and Privigen not studied in children with primary immunodeficiency under 3 years) [GamunexC2026; Privigen2026]. Guidelines for neonatal hemolytic disease give the dose over 2 hours (AAP, 0.5 to 1 g/kg) or 500 mg/kg over 4 hours (NICE) [Kemper2022; NICE2023].",
+      "evidence": [
+        {
+          "ref": "GamunexC2026",
+          "quote": "The recommended initial infusion rate is 1 mg/kg/min (0.01 mL/kg/min). If the infusion is well-tolerated, the rate may be gradually increased to a maximum of 8 mg/kg/min (0.08 mL/kg/min).",
+          "location": "2.1 Recommended Dosage, PI and ITP"
+        },
+        {
+          "ref": "GamunexC2026",
+          "quote": "Following initial infusion (see table below), the infusion rate may be gradually increased to a maximum of 0.08 mL/kg per minute (8 mg/kg per minute) as tolerated.",
+          "location": "2.3 Administration, Rate of Administration"
+        },
+        {
+          "ref": "GamunexC2026",
+          "quote": "Initial Infusion Rate (first 30 minutes) | Maximum Infusion Rate (if tolerated) | PI | 1 mg/kg/min | 8 mg/kg/min | ITP | 1 mg/kg/min | 8 mg/kg/min",
+          "location": "2.3 Administration, Rate of Administration table (columns: Indication, Initial Infusion Rate, Maximum Infusion Rate; cells separated by |)"
+        },
+        {
+          "ref": "GamunexC2026",
+          "quote": "Primary Humoral Immunodeficiency (PI) in patients 2 years of age and older (1.1) | Idiopathic Thrombocytopenic Purpura (ITP) in adults and children (1.2) | Chronic Inflammatory Demyelinating Polyneuropathy (CIDP) in adults (1.3)",
+          "location": "Highlights, Indications and Usage (list items separated by |)"
+        },
+        {
+          "ref": "GamunexC2026",
+          "quote": "The safety and effectiveness of GAMUNEX-C have been established in pediatric patients 2 years of age and older for primary humoral immunodeficiency.",
+          "location": "8.4 Pediatric Use"
+        },
+        {
+          "ref": "Privigen2026",
+          "quote": "Primary humoral immunodeficiency (PI) (1.1) | Chronic immune thrombocytopenic purpura (ITP) in patients aged 15 years and older (1.2) | Chronic inflammatory demyelinating polyneuropathy (CIDP) in adults (1.3)",
+          "location": "Highlights, Indications and Usage (list items separated by |)"
+        },
+        {
+          "ref": "Privigen2026",
+          "quote": "The recommended initial infusion rate is 0.5 mg/kg/min (0.005 mL/kg/min). If the infusion is well tolerated, the rate may be gradually increased to a maximum of 8 mg/kg/min (0.08 mL/kg/min).",
+          "location": "2.5 Administration"
+        },
+        {
+          "ref": "Privigen2026",
+          "quote": "The safety and effectiveness of PRIVIGEN have not been studied in clinical trials in pediatric patients with PI who are under the age of 3.",
+          "location": "8.4 Pediatric Use"
+        },
+        {
+          "ref": "Kemper2022",
+          "quote": "KAS 21: Intravenous immune globulin (IVIG; 0.5 to 1 g/kg) over 2 hours may be provided to infants with isoimmune hemolytic disease (ie, positive DAT) whose TSB reaches or exceeds escalation of care threshold. The dose can be repeated in 12 hours. (Aggregate Evidence Quality Grade C, Option)",
+          "location": "KAS 21, p. 13"
+        },
+        {
+          "ref": "NICE2023",
+          "quote": "Use intravenous immunoglobulin (IVIG) (500 mg/kg over 4 hours) as an adjunct to continuous intensified phototherapy",
+          "location": "Recommendation 1.8.1"
+        }
+      ]
+    }
+  ],
+  "omissions": [
+    {
+      "id": "o1",
+      "related_claim": "c7",
+      "topic": "Indication threshold attached to the IVIG dose",
+      "note": "Current evidence suggests guidelines attach the IVIG dose to a bilirubin criterion: the AAP guideline to infants with isoimmune hemolytic disease (positive DAT) whose TSB reaches or exceeds the escalation-of-care threshold, defined as 2 mg/dL below the exchange transfusion threshold, and NICE to rhesus or ABO haemolytic disease when serum bilirubin continues to rise by more than 8.5 micromol/litre per hour despite continuous intensified phototherapy [Kemper2022; NICE2023]. The AAP evidence table discourages routine prophylactic IVIG in DAT-positive neonates [Kemper2022].",
+      "evidence": [
+        {
+          "ref": "Kemper2022",
+          "quote": "KAS 21: Intravenous immune globulin (IVIG; 0.5 to 1 g/kg) over 2 hours may be provided to infants with isoimmune hemolytic disease (ie, positive DAT) whose TSB reaches or exceeds escalation of care threshold. The dose can be repeated in 12 hours. (Aggregate Evidence Quality Grade C, Option)",
+          "location": "KAS 21, p. 13"
+        },
+        {
+          "ref": "Kemper2022",
+          "quote": "The escalation-of-care threshold is 2 mg/dL below the exchange transfusion threshold.",
+          "location": "Figure 4 caption, p. 12"
+        },
+        {
+          "ref": "NICE2023",
+          "quote": "Use intravenous immunoglobulin (IVIG) (500 mg/kg over 4 hours) as an adjunct to continuous intensified phototherapy in cases of rhesus haemolytic disease or ABO haemolytic disease when the serum bilirubin continues to rise by more than 8.5 micromol/litre per hour. [2010]",
+          "location": "Recommendation 1.8.1"
+        },
+        {
+          "ref": "Kemper2022",
+          "quote": "Recent investigations using routine single early dose prophylactic IVIG do not demonstrate benefit in reducing the need for exchange transfusion and the routine use of prophylactic IVIG in DAT+ neonates should be discouraged.",
+          "location": "KAS 21 evidence table, Risk, harm, and cost, p. 31 (\"DAT+\" extracted as \"DAT1\")"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "key": "Kemper2022",
+      "role": "source",
+      "authors": "Kemper AR, Newman TB, Slaughter JL, et al.",
+      "title": "Clinical Practice Guideline Revision: Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation",
+      "journal": "Pediatrics",
+      "year": "2022",
+      "volume": "150",
+      "issue": "3",
+      "pages": "e2022058859",
+      "doi": "10.1542/peds.2022-058859",
+      "pmid": "35927462",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/35927462/",
+        "https://api.crossref.org/works/10.1542/peds.2022-058859"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Maisels2012",
+      "role": "source",
+      "authors": "Maisels MJ, Watchko JF, Bhutani VK, Stevenson DK",
+      "title": "An approach to the management of hyperbilirubinemia in the preterm infant less than 35 weeks of gestation",
+      "journal": "J Perinatol",
+      "year": "2012",
+      "volume": "32",
+      "issue": "9",
+      "pages": "660-664",
+      "doi": "10.1038/jp.2012.71",
+      "pmid": "22678141",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/22678141/",
+        "https://api.crossref.org/works/10.1038/jp.2012.71"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Morris2008",
+      "role": "source",
+      "authors": "Morris BH, Oh W, Tyson JE, et al.",
+      "title": "Aggressive vs. conservative phototherapy for infants with extremely low birth weight",
+      "journal": "N Engl J Med",
+      "year": "2008",
+      "volume": "359",
+      "issue": "18",
+      "pages": "1885-1896",
+      "doi": "10.1056/NEJMoa0803024",
+      "pmid": "18971491",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/18971491/",
+        "https://api.crossref.org/works/10.1056/NEJMoa0803024"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Stavis2026",
+      "role": "source",
+      "authors": "Stavis RL, Guida JD",
+      "title": "Hyperbilirubinemia in premature infants <35 weeks' gestation: A chronologic age format for graphing consensus-based recommendations",
+      "journal": "J Perinatol",
+      "year": "2026",
+      "volume": "46",
+      "issue": "9",
+      "pages": "1740-1746",
+      "doi": "10.1038/s41372-026-02855-y",
+      "pmid": "42642492",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/42642492/",
+        "https://api.crossref.org/works/10.1038/s41372-026-02855-y"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Bhutani1999",
+      "role": "source",
+      "authors": "Bhutani VK, Johnson L, Sivieri EM",
+      "title": "Predictive ability of a predischarge hour-specific serum bilirubin for subsequent significant hyperbilirubinemia in healthy term and near-term newborns",
+      "journal": "Pediatrics",
+      "year": "1999",
+      "volume": "103",
+      "issue": "1",
+      "pages": "6-14",
+      "doi": "10.1542/peds.103.1.6",
+      "pmid": "9917432",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/9917432/",
+        "https://api.crossref.org/works/10.1542/peds.103.1.6"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Okwundu2023",
+      "role": "source",
+      "authors": "Okwundu CI, Olowoyeye A, Uthman OA, et al.",
+      "title": "Transcutaneous bilirubinometry versus total serum bilirubin measurement for newborns",
+      "journal": "Cochrane Database Syst Rev",
+      "year": "2023",
+      "volume": "5",
+      "issue": "5",
+      "pages": "CD012660",
+      "doi": "10.1002/14651858.CD012660.pub2",
+      "pmid": "37158489",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/37158489/",
+        "https://api.crossref.org/works/10.1002/14651858.CD012660.pub2"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Nagar2013",
+      "role": "source",
+      "authors": "Nagar G, Vandermeer B, Campbell S, Kumar M",
+      "title": "Reliability of transcutaneous bilirubin devices in preterm infants: a systematic review",
+      "journal": "Pediatrics",
+      "year": "2013",
+      "volume": "132",
+      "issue": "5",
+      "pages": "871-881",
+      "doi": "10.1542/peds.2013-1713",
+      "pmid": "24127472",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/24127472/",
+        "https://api.crossref.org/works/10.1542/peds.2013-1713"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Jegathesan2021",
+      "role": "source",
+      "authors": "Jegathesan T, Campbell DM, Ray JG, et al.",
+      "title": "Transcutaneous versus Total Serum Bilirubin Measurements in Preterm Infants",
+      "journal": "Neonatology",
+      "year": "2021",
+      "volume": "118",
+      "issue": "4",
+      "pages": "443-453",
+      "doi": "10.1159/000516648",
+      "pmid": "34139689",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/34139689/",
+        "https://api.crossref.org/works/10.1159/000516648"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Sankar2023",
+      "role": "source",
+      "authors": "Sankar MN, Ramanathan R, Joe P, et al.",
+      "title": "Transcutaneous bilirubin levels in extremely preterm infants less than 30 weeks gestation",
+      "journal": "J Perinatol",
+      "year": "2023",
+      "volume": "43",
+      "issue": "2",
+      "pages": "220-225",
+      "doi": "10.1038/s41372-022-01477-4",
+      "pmid": "35931798",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/35931798/",
+        "https://api.crossref.org/works/10.1038/s41372-022-01477-4"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Papacostas2022",
+      "role": "source",
+      "authors": "Papacostas MF, Robertson DM, McLean MD, Wolfe KD, Liu H, Shope TR",
+      "title": "Sixth-Hour Trancutaneous Bilirubin and Need for Phototherapy in DAT Positive Newborns",
+      "journal": "Pediatrics",
+      "year": "2022",
+      "volume": "149",
+      "issue": "3",
+      "pages": "e2021054071",
+      "doi": "10.1542/peds.2021-054071",
+      "pmid": "35229125",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/35229125/",
+        "https://api.crossref.org/works/10.1542/peds.2021-054071"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Zwiers2018",
+      "role": "source",
+      "authors": "Zwiers C, Scheffer-Rath ME, Lopriore E, de Haas M, Liley HG",
+      "title": "Immunoglobulin for alloimmune hemolytic disease in neonates",
+      "journal": "Cochrane Database Syst Rev",
+      "year": "2018",
+      "volume": "3",
+      "issue": "3",
+      "pages": "CD003313",
+      "doi": "10.1002/14651858.CD003313.pub2",
+      "pmid": "29551014",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/29551014/",
+        "https://api.crossref.org/works/10.1002/14651858.CD003313.pub2"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Roberts2026",
+      "role": "source",
+      "authors": "Roberts M, Burns JWF, Sato A, et al.",
+      "title": "Intravenous immunoglobulin as an adjunct to phototherapy in neonatal haemolytic disease: A systematic review and meta-analysis",
+      "journal": "Transfus Med",
+      "year": "2026",
+      "volume": "",
+      "issue": "",
+      "pages": "tme.70123",
+      "doi": "10.1111/tme.70123",
+      "pmid": "42853074",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/42853074/",
+        "https://api.crossref.org/works/10.1111/tme.70123"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "NICE2023",
+      "role": "context",
+      "citation": "National Institute for Health and Care Excellence. Jaundice in newborn babies under 28 days. Clinical guideline CG98. Published 19 May 2010; last updated 31 October 2023.",
+      "url": "https://www.nice.org.uk/guidance/cg98/chapter/Recommendations",
+      "doi": null,
+      "verified_against": [
+        "https://www.nice.org.uk/guidance/cg98/chapter/Recommendations"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "GamunexC2026",
+      "role": "context",
+      "citation": "Grifols. GAMUNEX-C FlexBag (immune globulin injection [human], 10%, caprylate/chromatography purified) prescribing information. DailyMed SPL set ID 4fe97dac-d952-40f5-9c6a-67cda048ad8f, effective 28 September 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4fe97dac-d952-40f5-9c6a-67cda048ad8f",
+      "doi": null,
+      "verified_against": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4fe97dac-d952-40f5-9c6a-67cda048ad8f"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Privigen2026",
+      "role": "context",
+      "citation": "CSL Behring. PRIVIGEN (immune globulin intravenous [human], 10% liquid) prescribing information. DailyMed SPL set ID 7e5649da-75be-4a42-8eeb-4aeba562c401, effective 4 May 2026.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e5649da-75be-4a42-8eeb-4aeba562c401",
+      "doi": null,
+      "verified_against": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e5649da-75be-4a42-8eeb-4aeba562c401"
+      ],
+      "verified_date": "2026-10-28"
+    }
+  ],
+  "review": {
+    "verdict": "APPROVED",
+    "rounds": 2,
+    "date": "2026-10-28",
+    "quotes_checked": 165,
+    "references_verified": 15,
+    "known_limitations": [
+      "NICE2023, GamunexC2026 and Privigen2026 are manual (non-DOI) entries confirmed by hand by the Reviewer",
+      "Stavis2026 Table 1 is quoted from the Research Square preprint; Maisels2012 and the AAP 2022 figure arrows were available only as abstract / extracted text"
+    ]
+  }
+}

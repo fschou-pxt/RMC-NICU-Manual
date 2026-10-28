@@ -1,0 +1,1069 @@
+{
+  "chapter": "neurology",
+  "section": "Passive Cooling for Hypoxic Ischemic Encephalopathy",
+  "anchor": "neurology.html#sec-passive-cooling",
+  "source": {
+    "file": "site/src/content/docs/neurology.mdx",
+    "lines": "362-469",
+    "manual_commit": "398c583"
+  },
+  "checked": "2026-10-28",
+  "generated_with": "Researcher, Comparer, Reviewer: claude-opus-5-5",
+  "triage": {
+    "clinical": 23,
+    "operational": 10,
+    "definition": 2,
+    "context": 4
+  },
+  "claims": [
+    {
+      "id": "c1",
+      "manual_text": "Infants greater than or equal to 35 weeks gestation diagnosed with Hypoxic-Ischemic Encephalopathy (HIE) are treated with whole-body cooling to a core temperature of 33.5 degrees Celsius, as a neuroprotective therapy.",
+      "verdict": "partly_concordant",
+      "summary": "The 2026 AAP clinical report describes therapeutic hypothermia to 33.5 to 34.5 °C for neonates with moderate-to-severe HIE born at ≥36 0/7 weeks, the main whole-body cooling trials targeted 33.5 °C (one, ICE, enrolling from 35 weeks), and an NICHD trial in infants 33 to 35 weeks found no reduction in death or disability [Zanelli2026; Shankaran2005; Azzopardi2009; Jacobs2011; Faix2025].",
+      "note": "Current evidence suggests the 2026 AAP clinical report applies therapeutic hypothermia to neonates with moderate-to-severe HIE born at ≥36 0/7 weeks, with a target of 33.5 to 34.5 °C [Zanelli2026]. AAP's summary of that report states that for infants born at 35 weeks studies have not shown conclusive benefit or harm and that clinicians in select cases may decide with families to use it [HealthyChildren2026]. An NICHD trial in infants 33 to 35 weeks found no reduction in death or disability with hypothermia, with a 74% Bayesian probability of increased death or disability [Faix2025].",
+      "evidence": [
+        {
+          "ref": "Zanelli2026",
+          "quote": "Therapeutic hypothermia to a temperature of 33.5 to 34.5 °C initiated within 6 hours of birth and continued for 72 hours reduces the risk of death or moderate-to-severe neurodevelopmental impairments in neonates with moderate-to-severe hypoxic-ischemic encephalopathy (HIE) born at ≥36 0/7 weeks of gestation.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "HealthyChildren2026",
+          "quote": "This treatment has not shown benefit for infants with mild hypoxic-ischemic encephalopathy and is also not recommended for preterm infants born less than 36 weeks' gestation. For those born at 35 weeks, studies have not demonstrated conclusive benefit or harm from this therapy, and clinicians in select cases may decide with families to use therapeutic hypothermia.",
+          "location": "\"What the latest research shows\" (AAP lay summary of the 2026 clinical report)"
+        },
+        {
+          "ref": "Shankaran2005",
+          "quote": "whole-body cooling to an esophageal temperature of 33.5 degrees C for 72 hours",
+          "location": "Abstract, Methods"
+        },
+        {
+          "ref": "Azzopardi2009",
+          "quote": "cooling of the body to 33.5 degrees C for 72 hours",
+          "location": "Abstract, Methods"
+        },
+        {
+          "ref": "Jacobs2011",
+          "quote": "Newborns of 35 weeks' gestation or more",
+          "location": "Abstract, Participants"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "Among infants 33 to 35 weeks' gestation with hypoxic-ischemic encephalopathy, hypothermia at less than 6 hours' age did not reduce death or disability at 18 to 22 months' corrected age.",
+          "location": "Abstract, Conclusions and Relevance"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "Bayesian analysis with neutral prior indicated 74% probability of increased death or disability and 87% probability of increased death with hypothermia.",
+          "location": "Abstract, Results"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "manual_text": "Initiation of active cooling should occur ideally before 6 hours of age, at a designated cooling center.",
+      "verdict": "concordant",
+      "summary": "The 2026 AAP clinical report describes hypothermia initiated within 6 hours of birth and calls for prompt initiation or transfer of infants with possible HIE to a center providing therapeutic hypothermia, and all trials in the Cochrane review started cooling by 6 hours [Zanelli2026; Jacobs2013].",
+      "evidence": [
+        {
+          "ref": "Zanelli2026",
+          "quote": "Therapeutic hypothermia to a temperature of 33.5 to 34.5 °C initiated within 6 hours of birth and continued for 72 hours reduces the risk of death or moderate-to-severe neurodevelopmental impairments in neonates with moderate-to-severe hypoxic-ischemic encephalopathy (HIE) born at ≥36 0/7 weeks of gestation.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Zanelli2026",
+          "quote": "Any center or practitioner involved in newborn deliveries should have action plans for prompt recognition and initiation of therapeutic hypothermia or transfer of infants with possible HIE to a center providing therapeutic hypothermia.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Zanelli2026",
+          "quote": "This specialized therapy requires neuromonitoring, neuroimaging, and plans for follow-up of neurodevelopmental outcomes.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Jacobs2013",
+          "quote": "Infants in all studies were randomised with initiation of the intervention by six hours of age",
+          "location": "Results, Included studies"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "manual_text": "The cool body temperature is maintained for 72 hours and then the infant is re-warmed over a 6-hour period (re-warming period may be extended due to instability).",
+      "verdict": "concordant",
+      "summary": "Cooling for 72 hours is the AAP 2026 duration and longer cooling (120 hours) did not reduce NICU death, while trials rewarmed at about 0.5 °C per hour and the HEAL protocol specified a 6–12-hour rewarming period [Zanelli2026; Shankaran2014; Faix2025; Wu2024].",
+      "evidence": [
+        {
+          "ref": "Zanelli2026",
+          "quote": "Therapeutic hypothermia to a temperature of 33.5 to 34.5 °C initiated within 6 hours of birth and continued for 72 hours reduces the risk of death or moderate-to-severe neurodevelopmental impairments in neonates with moderate-to-severe hypoxic-ischemic encephalopathy (HIE) born at ≥36 0/7 weeks of gestation.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Shankaran2014",
+          "quote": "Among neonates who were full-term with moderate or severe hypoxic ischemic encephalopathy, longer cooling, deeper cooling, or both compared with hypothermia at 33.5°C for 72 hours did not reduce NICU death.",
+          "location": "Abstract, Conclusions and Relevance"
+        },
+        {
+          "ref": "Shankaran2014",
+          "quote": "After completing either 72 or 120 hours of hypothermia, the set point of the automatic control of the cooling system was increased by 0.5°C per hour until the esophageal temperature reached 36.5°C to 37.0°C for 4 hours.",
+          "location": "Methods, Treatment"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "Rewarming proceeded at 0.5 °C per hour.",
+          "location": "Methods, Materials and Measures"
+        },
+        {
+          "ref": "Wu2024",
+          "quote": "The study protocol for whole body TH includes initiation within 6 hours of age and maintaining core temperature at 33.5°C (range of 33–34 °C) for 72 hours, followed by a 6–12-hour rewarming period.",
+          "location": "Methods"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "manual_text": "Infants will not be actively cooled. Only passive cooling will be done while the baby is awaiting transport to appropriate facility.",
+      "verdict": "practice_varies",
+      "summary": "Passive cooling at the referring hospital is feasible and started therapy 4.6 h earlier in a London cohort, the ICE trial cooled at birth hospitals with the warmer off plus gel packs, and active cooling without core monitoring led to overcooling, but only 39% of passively cooled versus 100% of actively cooled infants arrived within target in another cohort and a low-certainty systematic review found servo-controlled active cooling more likely to keep infants within 33°C-34°C on arrival at the neonatal intensive care unit [Kendall2010; Jacobs2011; Chaudhary2013; Sibrecht2023].",
+      "evidence": [
+        {
+          "ref": "Kendall2010",
+          "quote": "Passive cooling is a simple and effective technique if portable cooling equipment is unavailable. Rectal temperature monitoring is essential; active cooling methods without core temperature monitoring may lead to overcooling.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "Kendall2010",
+          "quote": "In two of these infants, active cooling was performed, rectal temperature was not recorded and their temperature was lower than 32°C.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Kendall2010",
+          "quote": "Initiation of passive cooling before and during transfer resulted in the therapy starting 4.6 (1.8) h earlier than if initiated on arrival at the cooling centre.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Jacobs2011",
+          "quote": "Infants who received hypothermia were treated at ambient environmental temperature by turning off the radiant warmer and then applying refrigerated gel packs to maintain rectal temperature at 33°C to 34°C.",
+          "location": "Abstract, Intervention"
+        },
+        {
+          "ref": "Jacobs2011",
+          "quote": "Whole-body hypothermia is effective and appears to be safe when commenced within 6 hours of birth at the hospital of birth in term and near-term newborns with hypoxic-ischemic encephalopathy.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "Chaudhary2013",
+          "quote": "Only 39% of infants passively cooled were within the target temperature range at arrival to the regional unit compared with 100% actively cooled.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Sibrecht2023",
+          "quote": "Compared with the other cooling methods, servo-controlled active cooling was more likely to maintain body temperature within the target range of 33°C-34°C on arrival at a neonatal intensive care unit",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Sibrecht2023",
+          "quote": "The certainty of evidence was low.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Sibrecht2023",
+          "quote": "Servo-controlled active cooling may be the preferred method during transport of newborn infants with HIE.",
+          "location": "Abstract, Conclusion"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "manual_text": "If therapeutic hypothermia is being utilized outside of the set criteria, the risks and benefits will be discussed with the family prior to using this treatment modality.",
+      "verdict": "concordant",
+      "summary": "AAP's summary of its 2026 clinical report states that clinicians in select cases may decide with families to use therapeutic hypothermia for infants born at 35 weeks, and that treatment started after 6 hours but within 24 hours still has a small benefit [HealthyChildren2026].",
+      "evidence": [
+        {
+          "ref": "HealthyChildren2026",
+          "quote": "This treatment has not shown benefit for infants with mild hypoxic-ischemic encephalopathy and is also not recommended for preterm infants born less than 36 weeks' gestation. For those born at 35 weeks, studies have not demonstrated conclusive benefit or harm from this therapy, and clinicians in select cases may decide with families to use therapeutic hypothermia.",
+          "location": "\"What the latest research shows\" (AAP lay summary of the 2026 clinical report)"
+        },
+        {
+          "ref": "HealthyChildren2026",
+          "quote": "In infants where therapeutic hypothermia has not been able to be started within 6 hours after birth, treatment still has a small benefit when initiated after the 6-hour mark, as long as it starts within the first 24 hours.",
+          "location": "\"How does hypothermia treatment for HIE work?\""
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "manual_text": "Infants will be evaluated for therapeutic hypothermia therapy based on inclusion criteria of: Gestational age greater than or equal to 35 weeks; [Exclusion Criteria for initiating therapeutic hypothermia includes:] Gestational age less than 35 weeks.",
+      "verdict": "partly_concordant",
+      "summary": "The 2026 AAP clinical report applies therapeutic hypothermia to neonates born at ≥36 0/7 weeks, with case-by-case use at 35 weeks in AAP's summary, the NICHD and TOBY trials enrolled infants of at least 36 weeks while ICE enrolled from 35 weeks, and an NICHD trial in infants 33 to 35 weeks found no benefit [Zanelli2026; HealthyChildren2026; Shankaran2005; Azzopardi2009; Jacobs2011; Faix2025].",
+      "note": "Current evidence suggests the 2026 AAP clinical report sets the threshold at ≥36 0/7 weeks [Zanelli2026], and AAP's summary states that hypothermia is not recommended below 36 weeks while clinicians in select cases may decide with families to use it at 35 weeks [HealthyChildren2026]. The NICHD and TOBY trials enrolled infants of at least 36 weeks, and the ICE trial enrolled infants of 35 weeks or more [Shankaran2005; Azzopardi2009; Jacobs2011]. In an NICHD trial of infants 33 to 35 weeks, hypothermia did not reduce death or disability, and death occurred in 20% of hypothermic versus 12% of normothermic infants [Faix2025].",
+      "evidence": [
+        {
+          "ref": "Zanelli2026",
+          "quote": "Therapeutic hypothermia to a temperature of 33.5 to 34.5 °C initiated within 6 hours of birth and continued for 72 hours reduces the risk of death or moderate-to-severe neurodevelopmental impairments in neonates with moderate-to-severe hypoxic-ischemic encephalopathy (HIE) born at ≥36 0/7 weeks of gestation.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "HealthyChildren2026",
+          "quote": "This treatment has not shown benefit for infants with mild hypoxic-ischemic encephalopathy and is also not recommended for preterm infants born less than 36 weeks' gestation. For those born at 35 weeks, studies have not demonstrated conclusive benefit or harm from this therapy, and clinicians in select cases may decide with families to use therapeutic hypothermia.",
+          "location": "\"What the latest research shows\" (AAP lay summary of the 2026 clinical report)"
+        },
+        {
+          "ref": "Shankaran2005",
+          "quote": "a gestational age of at least 36 weeks",
+          "location": "Abstract, Methods"
+        },
+        {
+          "ref": "Azzopardi2009",
+          "quote": "a gestational age of at least 36 weeks",
+          "location": "Abstract, Methods"
+        },
+        {
+          "ref": "Jacobs2011",
+          "quote": "Newborns of 35 weeks' gestation or more",
+          "location": "Abstract, Participants"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "Among infants 33 to 35 weeks' gestation with hypoxic-ischemic encephalopathy, hypothermia at less than 6 hours' age did not reduce death or disability at 18 to 22 months' corrected age.",
+          "location": "Abstract, Conclusions and Relevance"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "death occurred in 18 of 88 infants (20%) with hypothermia and 9 of 78 infants (12%) with normothermia",
+          "location": "Abstract, Results"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "manual_text": "Infants will be evaluated for therapeutic hypothermia therapy based on inclusion criteria of: Birth weight equal to or greater than 1800 grams; [Exclusion Criteria for initiating therapeutic hypothermia includes:] Birth weight less than 1,800 grams.",
+      "verdict": "concordant",
+      "summary": "Birth weight below 1800 g was an exclusion criterion in the NICHD, CoolCap, neo.nEURO and HEAL studies, although the AAP 2026 abstract does not address birth weight [Shankaran2014; Laptook2017; Jacobs2013; Wu2024; Zanelli2026].",
+      "evidence": [
+        {
+          "ref": "Shankaran2014",
+          "quote": "Exclusion criteria were an inability to randomize within 6 hours of birth, a major congenital abnormality, severe growth restriction (birth weight <1800 g)",
+          "location": "Methods, Participants"
+        },
+        {
+          "ref": "Laptook2017",
+          "quote": "Exclusion criteria included a core temperature of less than 34°C for more than 1 hour, known anomaly, chromosomal aberration, birth weight less than 1800 g, in extremis condition, and parental or attending physician refusal.",
+          "location": "Methods"
+        },
+        {
+          "ref": "Jacobs2013",
+          "quote": "had severe growth restriction (< 1800 g birthweight)",
+          "location": "Characteristics of included studies, CoolCap, Participants"
+        },
+        {
+          "ref": "Jacobs2013",
+          "quote": "weight < 1800 g",
+          "location": "Characteristics of included studies, neo.nEURO Study 2010, Participants"
+        },
+        {
+          "ref": "Zanelli2026",
+          "quote": "Therapeutic hypothermia to a temperature of 33.5 to 34.5 °C initiated within 6 hours of birth and continued for 72 hours reduces the risk of death or moderate-to-severe neurodevelopmental impairments in neonates with moderate-to-severe hypoxic-ischemic encephalopathy (HIE) born at ≥36 0/7 weeks of gestation.",
+          "location": "Abstract (no birth-weight criterion stated)"
+        },
+        {
+          "ref": "Wu2024",
+          "quote": "Exclusion criteria were birth weight <1800 grams, head circumference <30 centimeters, genetic or congenital anomalies, or moribund condition with imminent mortality.",
+          "location": "Methods"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "manual_text": "Infants will be evaluated for therapeutic hypothermia therapy based on inclusion criteria of: Equal to or less than six hours of age - infants older than six hours of age based on the neonatologist’s discretion; [Exclusion Criteria for initiating therapeutic hypothermia includes:] Inability to initiate therapeutic hypothermia by 6 hours of age, or per neonatologist’s discretion.",
+      "verdict": "partly_concordant",
+      "summary": "The AAP 2026 report describes initiation within 6 hours of birth, and later initiation has a small benefit up to 24 hours in AAP's summary and uncertain benefit in the NICHD 6-to-24-hour trial, which cooled for 96 hours [Zanelli2026; HealthyChildren2026; Laptook2017].",
+      "note": "Current evidence suggests the 2026 AAP clinical report describes initiation within 6 hours of birth [Zanelli2026], and AAP's summary states that treatment started after 6 hours still has a small benefit as long as it starts within the first 24 hours [HealthyChildren2026]. The NICHD trial of hypothermia started at 6 to 24 hours found a 76% probability of any reduction in death or disability with uncertain effectiveness, and it cooled infants for 96 hours [Laptook2017].",
+      "evidence": [
+        {
+          "ref": "Zanelli2026",
+          "quote": "Therapeutic hypothermia to a temperature of 33.5 to 34.5 °C initiated within 6 hours of birth and continued for 72 hours reduces the risk of death or moderate-to-severe neurodevelopmental impairments in neonates with moderate-to-severe hypoxic-ischemic encephalopathy (HIE) born at ≥36 0/7 weeks of gestation.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "HealthyChildren2026",
+          "quote": "In infants where therapeutic hypothermia has not been able to be started within 6 hours after birth, treatment still has a small benefit when initiated after the 6-hour mark, as long as it starts within the first 24 hours.",
+          "location": "\"How does hypothermia treatment for HIE work?\""
+        },
+        {
+          "ref": "Laptook2017",
+          "quote": "Among term infants with hypoxic-ischemic encephalopathy, hypothermia initiated at 6 to 24 hours after birth compared with noncooling resulted in a 76% probability of any reduction in death or disability, and a 64% probability of at least 2% less death or disability at 18 to 22 months. Hypothermia initiated at 6 to 24 hours after birth may have benefit but there is uncertainty in its effectiveness.",
+          "location": "Abstract, Conclusions and Relevance"
+        },
+        {
+          "ref": "Laptook2017",
+          "quote": "Eighty-three hypothermic infants were maintained at 33.5°C (acceptable range, 33°C–34°C) for 96 hours and then rewarmed.",
+          "location": "Abstract, Interventions"
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "manual_text": "Infants will be evaluated for therapeutic hypothermia therapy based on inclusion criteria of: Absence of an obvious and apparent disorder incompatible with survival",
+      "verdict": "concordant",
+      "summary": "Cooling trials excluded moribund or in extremis infants, including infants considered too critically unwell to benefit from intensive care [Shankaran2014; Laptook2017; Jacobs2013].",
+      "evidence": [
+        {
+          "ref": "Shankaran2014",
+          "quote": "moribund neonates for whom no further treatment was planned also were excluded.",
+          "location": "Methods, Participants"
+        },
+        {
+          "ref": "Laptook2017",
+          "quote": "in extremis condition",
+          "location": "Methods, exclusion criteria"
+        },
+        {
+          "ref": "Jacobs2013",
+          "quote": "were considered too critically unwell to benefit from intensive care",
+          "location": "Characteristics of included studies, CoolCap, Participants"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "manual_text": "Exclusion Criteria for initiating therapeutic hypothermia includes: Presence of known chromosomal anomalies or severe congenital anomalies/syndromes/known metabolic disorders, as determined by the neonatologist.",
+      "verdict": "concordant",
+      "summary": "Cooling trials excluded infants with chromosomal or major congenital abnormalities, and the NICHD 33-35-week trial also excluded encephalopathy unlikely due to hypoxia-ischemia, although metabolic disorders are not named explicitly in the retrieved texts [Jacobs2013; Laptook2017; Wu2024; Faix2025].",
+      "evidence": [
+        {
+          "ref": "Jacobs2013",
+          "quote": "Excluded infants that were unable to be enrolled by 6 hours of age, had chromosomal or major congenital abnormalities, had growth restriction (birthweight ≤ 1800 g) or had consent refused by parent or neonatologist or who were moribund",
+          "location": "Characteristics of included studies, NICHD 2005, Participants"
+        },
+        {
+          "ref": "Laptook2017",
+          "quote": "known anomaly, chromosomal aberration",
+          "location": "Methods, exclusion criteria"
+        },
+        {
+          "ref": "Wu2024",
+          "quote": "genetic or congenital anomalies",
+          "location": "Methods, exclusion criteria"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "(3) encephalopathy unlikely due to HI, (4) major anomaly",
+          "location": "Methods, exclusion criteria"
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "manual_text": "Exclusion Criteria for initiating therapeutic hypothermia includes: Evidence of head trauma or skull fracture causing major intracranial hemorrhage.",
+      "verdict": "concordant",
+      "summary": "The CoolCap trial excluded infants with head trauma and neo.nEURO excluded gross haemorrhage, and a preterm head-cooling pilot study listed in the Cochrane review excluded head trauma or skull fracture causing major intracranial haemorrhage [Jacobs2013].",
+      "evidence": [
+        {
+          "ref": "Jacobs2013",
+          "quote": "or had head trauma",
+          "location": "Characteristics of included studies, CoolCap, Participants"
+        },
+        {
+          "ref": "Jacobs2013",
+          "quote": "presence of gross haemorrhage",
+          "location": "Characteristics of included studies, neo.nEURO, Participants"
+        },
+        {
+          "ref": "Jacobs2013",
+          "quote": "evidence of head trauma or skull fracture causing major intracranial haemorrhage",
+          "location": "Characteristics of ongoing studies, Walsh: Preterm Infants (non-randomised pilot), Participants"
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "manual_text": "Exclusion Criteria for initiating therapeutic hypothermia includes: Intractable coagulopathy with active bleeding.",
+      "verdict": "insufficient",
+      "summary": "Hypothermia increases thrombocytopenia and one trial excluded gross haemorrhage, but no retrieved trial or guideline names intractable coagulopathy with active bleeding as an exclusion criterion [Jacobs2013].",
+      "evidence": [
+        {
+          "ref": "Jacobs2013",
+          "quote": "Some adverse effects of hypothermia included an increase sinus bradycardia and a significant increase in thrombocytopenia.",
+          "location": "Abstract, Main results"
+        },
+        {
+          "ref": "Jacobs2013",
+          "quote": "presence of gross haemorrhage",
+          "location": "Characteristics of included studies, neo.nEURO, Participants"
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "manual_text": "Document core (rectal/esophageal) temperature every 15 minutes. The temperature goal is 33.5°C–34.0°C. Continuous rectal/esophageal monitoring can be performed with a soft probe inserted into the patient and attached to the monitor.",
+      "verdict": "concordant",
+      "summary": "Core (rectal) temperature monitoring is described as essential during passive cooling, trials recorded core temperature every 15 minutes during the first 4 hours, and the 33.5°C–34.0°C goal lies within both the AAP 2026 range of 33.5 to 34.5 °C and the trials' acceptable range of 33 to 34 °C [Kendall2010; Shankaran2014; Faix2025; Zanelli2026].",
+      "evidence": [
+        {
+          "ref": "Kendall2010",
+          "quote": "Rectal temperature monitoring is essential; active cooling methods without core temperature monitoring may lead to overcooling.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "Shankaran2014",
+          "quote": "Esophageal and skin temperatures were monitored continuously and recorded every 15 minutes for the first 4 hours, every hour for the next 8 hours, and every 4 hours during the remaining period of cooling.",
+          "location": "Methods, Treatment"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "Infants with hypothermia were maintained at 33.5 °C (acceptable 33-34 °C) for 72 hours and then rewarmed.",
+          "location": "Abstract, Interventions"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "Tes in this group was recorded every 15 minutes for the first 4 hours, every hour for the next 8 hours, and every 2 hours for the remaining intervention period.",
+          "location": "Methods, Materials and Measures"
+        },
+        {
+          "ref": "Zanelli2026",
+          "quote": "Therapeutic hypothermia to a temperature of 33.5 to 34.5 °C initiated within 6 hours of birth and continued for 72 hours reduces the risk of death or moderate-to-severe neurodevelopmental impairments in neonates with moderate-to-severe hypoxic-ischemic encephalopathy (HIE) born at ≥36 0/7 weeks of gestation.",
+          "location": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "manual_text": "Core probe placement: Esophageal probe: Measure from nares, to earlobe, to xiphoid process; then subtract 3 cm; Insert to desired depth; Confirm esophageal probe placement via X-ray (Mark probe at nares once placement is confirmed via X-ray; Probe should terminate in the distal third of esophagus)",
+      "verdict": "partly_concordant",
+      "summary": "Esophageal probes are placed in the distal esophagus (the distal third in one report), often with radiographic confirmation, but the retrieved trial and cohort reports give no insertion-depth formula [Wu2024; Faix2025].",
+      "note": "Current evidence suggests the esophageal probe is placed in the distal esophagus (the distal third in one report), often with radiographic confirmation [Wu2024; Faix2025]. The trial and cohort reports that describe esophageal placement do not give a method for estimating insertion depth [Wu2024; Faix2025].",
+      "evidence": [
+        {
+          "ref": "Wu2024",
+          "quote": "Esophageal temperature measurement is performed by insertion of a temperature probe into the distal third of the esophagus, often necessitating radiographic confirmation.",
+          "location": "Discussion"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "After randomization, all infants underwent placement of a temperature monitoring probe in the distal esophagus.",
+          "location": "Methods, Materials and Measures"
+        }
+      ]
+    },
+    {
+      "id": "c15",
+      "manual_text": "Core probe placement: Rectal probe: Insert lubricated 5 cm into the rectum; Tape to infant’s upper inner thigh to secure",
+      "verdict": "partly_concordant",
+      "summary": "A therapeutic hypothermia cohort report describes rectal probe insertion of 3 to 4 cm, while a device review cites older data that rectal readings stabilize only at 5 cm, and neither addresses securing the probe [Wu2024; Lei2021].",
+      "note": "Current evidence suggests rectal temperature probes during therapeutic hypothermia are inserted 3 to 4 cm [Wu2024]. A review of neonatal temperature devices cites older thermometry data that rectal readings reach a constant temperature only at a depth of 5 cm [Lei2021].",
+      "evidence": [
+        {
+          "ref": "Wu2024",
+          "quote": "The temperature probe is inserted 3 to 4cm through the anus without need for radiographic confirmation.",
+          "location": "Discussion"
+        },
+        {
+          "ref": "Lei2021",
+          "quote": "Rectal temperatures vary depending on how deep into the rectum the probe is inserted and only reach a constant temperature at a depth of 5 cm (33).",
+          "location": "Mercury-in-glass thermometers section"
+        }
+      ]
+    },
+    {
+      "id": "c16",
+      "manual_text": "Monitor core probe (esophageal or rectal) placement Q1 hour",
+      "verdict": "insufficient",
+      "summary": "The retrieved trial reports describe continuous core temperature monitoring but give no interval for checking probe position [Shankaran2014; Faix2025].",
+      "evidence": [
+        {
+          "ref": "Shankaran2014",
+          "quote": "Esophageal and skin temperatures were monitored continuously and recorded every 15 minutes for the first 4 hours, every hour for the next 8 hours, and every 4 hours during the remaining period of cooling.",
+          "location": "Methods, Treatment"
+        },
+        {
+          "ref": "Faix2025",
+          "quote": "Tes in this group was recorded every 15 minutes for the first 4 hours, every hour for the next 8 hours, and every 2 hours for the remaining intervention period.",
+          "location": "Methods, Materials and Measures"
+        }
+      ]
+    },
+    {
+      "id": "c17",
+      "manual_text": "For passive cooling measures: once resuscitation measures are complete, the heat source should be adjusted to achieve the core temperature goal of 33.5°C–34.0°C. Ensure continuous temperature monitoring is in place via rectal/esophageal core probe and document every 15 minutes. Active warming devices (radiant heater or incubator) can be turned off to maintain temperature between 33.5°C–34.0°C.",
+      "verdict": "concordant",
+      "summary": "Trial protocols for infants born outside cooling centers turned off the radiant warmer and adjusted heat to keep rectal temperature at 33 to 34°C, and in a passive cooling cohort 89% of infants cooled with passive cooling alone while core monitoring was described as essential [Jacobs2011; Azzopardi2008; Kendall2010].",
+      "evidence": [
+        {
+          "ref": "Jacobs2011",
+          "quote": "Infants who received hypothermia were treated at ambient environmental temperature by turning off the radiant warmer and then applying refrigerated gel packs to maintain rectal temperature at 33°C to 34°C.",
+          "location": "Abstract, Intervention"
+        },
+        {
+          "ref": "Azzopardi2008",
+          "quote": "Infants born outside Treatment Centres who are allocated to intensive care with cooling will be nursed prior to transfer with the overhead radiant warmer turned off. During transport the infant will be nursed in a transport incubator. The incubator heater will be turned on and adjusted if necessary to maintain the rectal temperature between 33 and 34°C.",
+          "location": "Methods, intervention group"
+        },
+        {
+          "ref": "Kendall2010",
+          "quote": "Of the remaining 37 babies, 33 (89%) demonstrated a reduction in core temperature with passive cooling alone.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Kendall2010",
+          "quote": "On arrival at the cooling centre, four babies had cooled to lower than 33°C by passive cooling alone (32.7°C, 32.6°C, 32.2°C and 32.1°C).",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Kendall2010",
+          "quote": "Rectal temperature monitoring is essential; active cooling methods without core temperature monitoring may lead to overcooling.",
+          "location": "Abstract, Conclusions"
+        }
+      ]
+    },
+    {
+      "id": "c18",
+      "manual_text": "If the patient temperature is <33.0°C, add a blanket or increase set temperature by 0.5°C at a time. If the patient temperature is >34°C and is not falling, remove any blankets and ensure heat source is off.",
+      "verdict": "insufficient",
+      "summary": "Overcooling below 33°C is a recognized complication of passive cooling and the TOBY protocol adjusted incubator heat to keep 33 to 34°C, but no retrieved source specifies set-point steps or blanket use [Kendall2010; Azzopardi2008].",
+      "evidence": [
+        {
+          "ref": "Kendall2010",
+          "quote": "Cooling below target temperature (33°C-34°C) occurred in five babies before the arrival of the transfer team.",
+          "location": "Abstract, Results"
+        },
+        {
+          "ref": "Azzopardi2008",
+          "quote": "The incubator heater will be turned on and adjusted if necessary to maintain the rectal temperature between 33 and 34°C.",
+          "location": "Methods, intervention group"
+        }
+      ]
+    },
+    {
+      "id": "c19",
+      "manual_text": "Do not let patients shiver. Counter-warm extremities as needed by wrapping the extremities with a cloth blanket. Consider the use of morphine for individual babies who continue to shiver or who are uncomfortable/agitated.",
+      "verdict": "partly_concordant",
+      "summary": "An expert review states that neonates rarely shiver and describes morphine as standard of care for comfort during hypothermia, but a Cochrane review found no eligible trials, a cohort study advised cautious empiric opioid use, and no retrieved source addresses counter-warming the extremities [McPherson2021; Backe2022; Natarajan2022].",
+      "note": "Current evidence suggests human neonates rarely shiver during induced hypothermia because they rely mainly on brown fat thermogenesis, while sedation is described as helping prevent stress and shivering at cooling temperatures [McPherson2021]. Morphine is described as current standard of care in an expert review, but a Cochrane review found no trials to support or refute pharmacological pain and sedation management during hypothermia, and a cohort study suggested cautious empiric opioid use because of associated adverse short-term outcomes [McPherson2021; Backe2022; Natarajan2022].",
+      "evidence": [
+        {
+          "ref": "McPherson2021",
+          "quote": "Human neonates rely primarily on brown fat thermogenesis to generate body heat during induced hypothermia, and rarely shiver.",
+          "location": "Pathophysiology of stress during therapeutic hypothermia"
+        },
+        {
+          "ref": "McPherson2021",
+          "quote": "The appropriate use of sedation is important in order to provide compassionate care and to prevent stress and shivering that occurs at the temperatures required for effective neuroprotection.",
+          "location": "Introduction"
+        },
+        {
+          "ref": "McPherson2021",
+          "quote": "Morphine represents current standard of care with a history of utilization and extensive pharmacokinetic data to guide safe and effective dosing.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Backe2022",
+          "quote": "We found no studies that met our inclusion criteria and hence there is no evidence to recommend or refute the use of pharmacological interventions for pain and sedation management in newborn infants undergoing therapeutic hypothermia.",
+          "location": "Abstract, Authors' conclusions"
+        },
+        {
+          "ref": "Natarajan2022",
+          "quote": "Opioid exposure during TH was not associated with abnormal MRI; its association with adverse short-term outcomes suggests need for cautious empiric use.",
+          "location": "Abstract, Conclusion"
+        }
+      ]
+    },
+    {
+      "id": "c20",
+      "manual_text": "Obtain IV access. UAC/UVC or PAL access preferred.",
+      "verdict": "insufficient",
+      "summary": "Arterial lines (umbilical or peripheral) were used for blood sampling in a hypothermia cohort, but no retrieved guideline or trial addresses the preferred vascular access [Afzal2019].",
+      "evidence": [
+        {
+          "ref": "Afzal2019",
+          "quote": "Fifty-eight neonates who were intubated and had an indwelling arterial line (umbilical or peripheral) for blood draws were included in this study.",
+          "location": "Methods"
+        }
+      ]
+    },
+    {
+      "id": "c21",
+      "manual_text": "Laboratory / blood work: ABG (corrected for temperature), CBC with Diff, Electrolytes, Calcium, Magnesium, Glucose, Blood culture, ALT, AST, BUN, Creatinine, APTT, INR, PT, Lactic Acid, Ammonia, Troponin, and Fibrinogen.",
+      "verdict": "partly_concordant",
+      "summary": "Correcting blood gases to core temperature during hypothermia is supported by an expert review, trial methods and cohort data, and thrombocytopenia is a recognized adverse effect, but no retrieved source lists a recommended pre-cooling laboratory panel [ElDib2021; Shankaran2014; Afzal2019; Jacobs2013].",
+      "note": "Current evidence suggests blood gas values be corrected to core temperature during therapeutic hypothermia, as uncorrected arterial blood gases may underestimate hypoxemia [ElDib2021; Afzal2019]. Hypothermia is associated with a significant increase in thrombocytopenia [Jacobs2013]. The retrieved guideline abstract, trials and reviews do not list a recommended laboratory panel [Zanelli2026; Shankaran2014; ElDib2021].",
+      "evidence": [
+        {
+          "ref": "ElDib2021",
+          "quote": "Blood gas values should be corrected to the core temperature during TH and the use of alkaline buffers is discouraged.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Shankaran2014",
+          "quote": "Blood gas determinations were corrected for body temperature.",
+          "location": "Methods, Treatment"
+        },
+        {
+          "ref": "Afzal2019",
+          "quote": "Monitoring oxygenation with arterial blood gas uncorrected for body temperature and pulse oximetry may underestimate hypoxemia in hypoxic-ischemic encephalopathy infants during whole-body hypothermia, while end-tidal CO2 reliably correlates with temperature-corrected PaCO2.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "Jacobs2013",
+          "quote": "Some adverse effects of hypothermia included an increase sinus bradycardia and a significant increase in thrombocytopenia.",
+          "location": "Abstract, Main results"
+        },
+        {
+          "ref": "Zanelli2026",
+          "quote": "Therapeutic hypothermia to a temperature of 33.5 to 34.5 °C initiated within 6 hours of birth and continued for 72 hours reduces the risk of death or moderate-to-severe neurodevelopmental impairments in neonates with moderate-to-severe hypoxic-ischemic encephalopathy (HIE) born at ≥36 0/7 weeks of gestation.",
+          "location": "Abstract (no laboratory panel stated)"
+        }
+      ]
+    },
+    {
+      "id": "c22",
+      "manual_text": "Respiratory support: Many babies on morphine drip or receiving morphine boluses need some form of respiratory support. This can be obtained through nasal continuous positive airway pressure (with or without a rate) or through invasive mechanical ventilation. Maintain humidity & temperature of respiratory circuit as standard.",
+      "verdict": "concordant",
+      "summary": "An expert review recommends heating inspiratory gas to 37 °C with humidification during hypothermia and aiming to minimize hypocapnia and hyperoxia, and opioids are associated with hypoventilation and longer ventilation [ElDib2021; McPherson2021; Natarajan2022].",
+      "evidence": [
+        {
+          "ref": "ElDib2021",
+          "quote": "Respiratory management of infants treated with TH should aim for minimizing exposure to hypocapnia or hyperoxia. Inspiratory gas should be heated to 37 °C and humidified to prevent airway and alveolar injury.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "McPherson2021",
+          "quote": "These data highlight the common side effects of opioids including hypoventilation, hypotension, urinary retention, and decreased intestinal motility.",
+          "location": "Opioids section"
+        },
+        {
+          "ref": "Natarajan2022",
+          "quote": "HOG had increased likelihood of prolonged hospital stay and ventilation.",
+          "location": "Abstract, Results"
+        }
+      ]
+    },
+    {
+      "id": "c23",
+      "manual_text": "Medical management as needed: Including normal saline bolus, vasopressors, acidosis management, blood products, ventilator management, antibiotics, seizure control (1st choice agent is Phenobarbital).",
+      "verdict": "concordant",
+      "summary": "The ILAE guideline recommends phenobarbital as the first-line antiseizure medication in neonates, phenobarbital was more effective than levetiracetam in a randomized trial, and an expert review discourages alkaline buffers during hypothermia [Pressler2023; Sharpe2020; ElDib2021].",
+      "evidence": [
+        {
+          "ref": "Pressler2023",
+          "quote": "First, phenobarbital should be the first-line ASM (evidence-based recommendation) regardless of etiology (expert agreement), unless channelopathy is likely the cause for seizures (e.g., due to family history), in which case phenytoin or carbamazepine should be used.",
+          "location": "Abstract"
+        },
+        {
+          "ref": "Sharpe2020",
+          "quote": "In this phase IIb study, phenobarbital was more effective than levetiracetam for the treatment of neonatal seizures. Higher rates of adverse effects were seen with phenobarbital treatment.",
+          "location": "Abstract, Conclusions"
+        },
+        {
+          "ref": "ElDib2021",
+          "quote": "Blood gas values should be corrected to the core temperature during TH and the use of alkaline buffers is discouraged.",
+          "location": "Abstract"
+        }
+      ]
+    }
+  ],
+  "omissions": [],
+  "references": [
+    {
+      "key": "Zanelli2026",
+      "role": "source",
+      "authors": "Zanelli SA, Wusthoff CJ, Lucke AM, Kaufman DA",
+      "title": "Therapeutic Hypothermia for Neonatal Hypoxic-Ischemic Encephalopathy: Clinical Report",
+      "journal": "Pediatrics",
+      "year": "2026",
+      "volume": "157",
+      "issue": "2",
+      "pages": "e2025073627",
+      "doi": "10.1542/peds.2025-073627",
+      "pmid": "41581784",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/41581784/",
+        "https://api.crossref.org/works/10.1542/peds.2025-073627"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Jacobs2013",
+      "role": "source",
+      "authors": "Jacobs SE, Berg M, Hunt R, Tarnow-Mordi WO, Inder TE, Davis PG",
+      "title": "Cooling for newborns with hypoxic ischaemic encephalopathy",
+      "journal": "Cochrane Database Syst Rev",
+      "year": "2013",
+      "volume": "2013",
+      "issue": "1",
+      "pages": "CD003311",
+      "doi": "10.1002/14651858.CD003311.pub3",
+      "pmid": "23440789",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/23440789/",
+        "https://api.crossref.org/works/10.1002/14651858.CD003311.pub3"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Shankaran2005",
+      "role": "source",
+      "authors": "Shankaran S, Laptook AR, Ehrenkranz RA, et al.",
+      "title": "Whole-body hypothermia for neonates with hypoxic-ischemic encephalopathy",
+      "journal": "N Engl J Med",
+      "year": "2005",
+      "volume": "353",
+      "issue": "15",
+      "pages": "1574-1584",
+      "doi": "10.1056/NEJMcps050929",
+      "pmid": "16221780",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/16221780/",
+        "https://api.crossref.org/works/10.1056/NEJMcps050929"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Azzopardi2009",
+      "role": "source",
+      "authors": "Azzopardi DV, Strohm B, Edwards AD, et al.",
+      "title": "Moderate hypothermia to treat perinatal asphyxial encephalopathy",
+      "journal": "N Engl J Med",
+      "year": "2009",
+      "volume": "361",
+      "issue": "14",
+      "pages": "1349-1358",
+      "doi": "10.1056/NEJMoa0900854",
+      "pmid": "19797281",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/19797281/",
+        "https://api.crossref.org/works/10.1056/NEJMoa0900854"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Jacobs2011",
+      "role": "source",
+      "authors": "Jacobs SE, Morley CJ, Inder TE, et al.",
+      "title": "Whole-body hypothermia for term and near-term newborns with hypoxic-ischemic encephalopathy: a randomized controlled trial",
+      "journal": "Arch Pediatr Adolesc Med",
+      "year": "2011",
+      "volume": "165",
+      "issue": "8",
+      "pages": "692-700",
+      "doi": "10.1001/archpediatrics.2011.43",
+      "pmid": "21464374",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/21464374/",
+        "https://api.crossref.org/works/10.1001/archpediatrics.2011.43"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Shankaran2014",
+      "role": "source",
+      "authors": "Shankaran S, Laptook AR, Pappas A, et al.",
+      "title": "Effect of depth and duration of cooling on deaths in the NICU among neonates with hypoxic ischemic encephalopathy: a randomized clinical trial",
+      "journal": "JAMA",
+      "year": "2014",
+      "volume": "312",
+      "issue": "24",
+      "pages": "2629-2639",
+      "doi": "10.1001/jama.2014.16058",
+      "pmid": "25536254",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/25536254/",
+        "https://api.crossref.org/works/10.1001/jama.2014.16058"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Laptook2017",
+      "role": "source",
+      "authors": "Laptook AR, Shankaran S, Tyson JE, et al.",
+      "title": "Effect of Therapeutic Hypothermia Initiated After 6 Hours of Age on Death or Disability Among Newborns With Hypoxic-Ischemic Encephalopathy: A Randomized Clinical Trial",
+      "journal": "JAMA",
+      "year": "2017",
+      "volume": "318",
+      "issue": "16",
+      "pages": "1550-1560",
+      "doi": "10.1001/jama.2017.14972",
+      "pmid": "29067428",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/29067428/",
+        "https://api.crossref.org/works/10.1001/jama.2017.14972"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Faix2025",
+      "role": "source",
+      "authors": "Faix RG, Laptook AR, Shankaran S, et al.",
+      "title": "Whole-Body Hypothermia for Neonatal Encephalopathy in Preterm Infants 33 to 35 Weeks' Gestation: A Randomized Clinical Trial",
+      "journal": "JAMA Pediatr",
+      "year": "2025",
+      "volume": "179",
+      "issue": "4",
+      "pages": "396-406",
+      "doi": "10.1001/jamapediatrics.2024.6613",
+      "pmid": "39992674",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/39992674/",
+        "https://api.crossref.org/works/10.1001/jamapediatrics.2024.6613"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Sibrecht2023",
+      "role": "source",
+      "authors": "Sibrecht G, Borys F, Campone C, Bellini C, Davis P, Bruschettini M",
+      "title": "Cooling strategies during neonatal transport for hypoxic-ischaemic encephalopathy",
+      "journal": "Acta Paediatr",
+      "year": "2023",
+      "volume": "112",
+      "issue": "4",
+      "pages": "587-602",
+      "doi": "10.1111/apa.16632",
+      "pmid": "36527301",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/36527301/",
+        "https://api.crossref.org/works/10.1111/apa.16632"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Kendall2010",
+      "role": "source",
+      "authors": "Kendall GS, Kapetanakis A, Ratnavel N, Azzopardi D, Robertson NJ",
+      "title": "Passive cooling for initiation of therapeutic hypothermia in neonatal encephalopathy",
+      "journal": "Arch Dis Child Fetal Neonatal Ed",
+      "year": "2010",
+      "volume": "95",
+      "issue": "6",
+      "pages": "F408-412",
+      "doi": "10.1136/adc.2010.187211",
+      "pmid": "20870910",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/20870910/",
+        "https://api.crossref.org/works/10.1136/adc.2010.187211"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Chaudhary2013",
+      "role": "source",
+      "authors": "Chaudhary R, Farrer K, Broster S, McRitchie L, Austin T",
+      "title": "Active versus passive cooling during neonatal transport",
+      "journal": "Pediatrics",
+      "year": "2013",
+      "volume": "132",
+      "issue": "5",
+      "pages": "841-846",
+      "doi": "10.1542/peds.2013-1686",
+      "pmid": "24144712",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/24144712/",
+        "https://api.crossref.org/works/10.1542/peds.2013-1686"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Backe2022",
+      "role": "source",
+      "authors": "Bäcke P, Bruschettini M, Sibrecht G, Thernström Blomqvist Y, Olsson E",
+      "title": "Pharmacological interventions for pain and sedation management in newborn infants undergoing therapeutic hypothermia",
+      "journal": "Cochrane Database Syst Rev",
+      "year": "2022",
+      "volume": "11",
+      "issue": "11",
+      "pages": "CD015023",
+      "doi": "10.1002/14651858.CD015023.pub2",
+      "pmid": "36354070",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/36354070/",
+        "https://api.crossref.org/works/10.1002/14651858.CD015023.pub2"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Pressler2023",
+      "role": "source",
+      "authors": "Pressler RM, Abend NS, Auvin S, et al.",
+      "title": "Treatment of seizures in the neonate: Guidelines and consensus-based recommendations-Special report from the ILAE Task Force on Neonatal Seizures",
+      "journal": "Epilepsia",
+      "year": "2023",
+      "volume": "64",
+      "issue": "10",
+      "pages": "2550-2570",
+      "doi": "10.1111/epi.17745",
+      "pmid": "37655702",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/37655702/",
+        "https://api.crossref.org/works/10.1111/epi.17745"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Sharpe2020",
+      "role": "source",
+      "authors": "Sharpe C, Reiner GE, Davis SL, et al.",
+      "title": "Levetiracetam Versus Phenobarbital for Neonatal Seizures: A Randomized Controlled Trial",
+      "journal": "Pediatrics",
+      "year": "2020",
+      "volume": "145",
+      "issue": "6",
+      "pages": "e20193182",
+      "doi": "10.1542/peds.2019-3182",
+      "pmid": "32385134",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/32385134/",
+        "https://api.crossref.org/works/10.1542/peds.2019-3182"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Afzal2019",
+      "role": "source",
+      "authors": "Afzal B, Chandrasekharan P, Tancredi DJ, Russell J, Steinhorn RH, Lakshminrusimha S",
+      "title": "Monitoring Gas Exchange During Hypothermia for Hypoxic-Ischemic Encephalopathy",
+      "journal": "Pediatr Crit Care Med",
+      "year": "2019",
+      "volume": "20",
+      "issue": "2",
+      "pages": "166-171",
+      "doi": "10.1097/PCC.0000000000001799",
+      "pmid": "30720647",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/30720647/",
+        "https://api.crossref.org/works/10.1097/PCC.0000000000001799"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Azzopardi2008",
+      "role": "source",
+      "authors": "Azzopardi D, Brocklehurst P, Edwards D, et al.",
+      "title": "The TOBY Study. Whole body hypothermia for the treatment of perinatal asphyxial encephalopathy: a randomised controlled trial",
+      "journal": "BMC Pediatr",
+      "year": "2008",
+      "volume": "8",
+      "issue": "",
+      "pages": "17",
+      "doi": "10.1186/1471-2431-8-17",
+      "pmid": "18447921",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/18447921/",
+        "https://api.crossref.org/works/10.1186/1471-2431-8-17"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Wu2024",
+      "role": "source",
+      "authors": "Wu TW, Schmicker R, Wood TR, et al.",
+      "title": "Esophageal Versus Rectal Temperature Monitoring During Whole-Body Therapeutic Hypothermia for Hypoxic-Ischemic Encephalopathy: Association with Short- and Long-Term Outcomes",
+      "journal": "J Pediatr",
+      "year": "2024",
+      "volume": "268",
+      "issue": "",
+      "pages": "113933",
+      "doi": "10.1016/j.jpeds.2024.113933",
+      "pmid": "38309524",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/38309524/",
+        "https://api.crossref.org/works/10.1016/j.jpeds.2024.113933"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Lei2021",
+      "role": "source",
+      "authors": "Lei D, Tan K, Malhotra A",
+      "title": "Temperature Monitoring Devices in Neonates",
+      "journal": "Front Pediatr",
+      "year": "2021",
+      "volume": "9",
+      "issue": "",
+      "pages": "732810",
+      "doi": "10.3389/fped.2021.732810",
+      "pmid": "34504819",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/34504819/",
+        "https://api.crossref.org/works/10.3389/fped.2021.732810"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "ElDib2021",
+      "role": "source",
+      "authors": "El-Dib M, Szakmar E, Chakkarapani E, Aly H",
+      "title": "Challenges in respiratory management during therapeutic hypothermia for neonatal encephalopathy",
+      "journal": "Semin Fetal Neonatal Med",
+      "year": "2021",
+      "volume": "26",
+      "issue": "4",
+      "pages": "101263",
+      "doi": "10.1016/j.siny.2021.101263",
+      "pmid": "34244080",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/34244080/",
+        "https://api.crossref.org/works/10.1016/j.siny.2021.101263"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "McPherson2021",
+      "role": "source",
+      "authors": "McPherson C, Frymoyer A, Ortinau CM, Miller SP, Groenendaal F",
+      "title": "Management of comfort and sedation in neonates with neonatal encephalopathy treated with therapeutic hypothermia",
+      "journal": "Semin Fetal Neonatal Med",
+      "year": "2021",
+      "volume": "26",
+      "issue": "4",
+      "pages": "101264",
+      "doi": "10.1016/j.siny.2021.101264",
+      "pmid": "34215538",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/34215538/",
+        "https://api.crossref.org/works/10.1016/j.siny.2021.101264"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "Natarajan2022",
+      "role": "source",
+      "authors": "Natarajan G, Hamrick SE, Zaniletti I, et al.",
+      "title": "Opioid exposure during therapeutic hypothermia and short-term outcomes in neonatal encephalopathy",
+      "journal": "J Perinatol",
+      "year": "2022",
+      "volume": "42",
+      "issue": "8",
+      "pages": "1017-1025",
+      "doi": "10.1038/s41372-022-01400-x",
+      "pmid": "35474129",
+      "verified_against": [
+        "https://pubmed.ncbi.nlm.nih.gov/35474129/",
+        "https://api.crossref.org/works/10.1038/s41372-022-01400-x"
+      ],
+      "verified_date": "2026-10-28"
+    },
+    {
+      "key": "HealthyChildren2026",
+      "role": "context",
+      "citation": "American Academy of Pediatrics. AAP Guidance on Therapeutic Hypothermia Treatment for HIE Updated. HealthyChildren.org news, January 26, 2026 (summary of the AAP clinical report, Pediatrics, February 2026).",
+      "url": "https://www.healthychildren.org/English/news/Pages/AAP-guidance-on-therapeutic-hypothermia-treatments-updated.aspx",
+      "doi": null,
+      "verified_against": [
+        "https://www.healthychildren.org/English/news/Pages/AAP-guidance-on-therapeutic-hypothermia-treatments-updated.aspx"
+      ],
+      "verified_date": "2026-10-28"
+    }
+  ],
+  "review": {
+    "verdict": "APPROVED",
+    "rounds": 2,
+    "date": "2026-10-28",
+    "quotes_checked": 223,
+    "references_verified": 22,
+    "known_limitations": [
+      "HealthyChildren2026 is a manual (non-DOI) entry, the AAP lay summary of the 2026 clinical report, confirmed by hand by the Reviewer; the 2026 AAP report itself (Zanelli2026) was available as abstract only",
+      "COFN2014 (superseded) was retrieved but not cited; its refs.py author mismatch (collective author) does not affect the published references"
+    ]
+  }
+}
