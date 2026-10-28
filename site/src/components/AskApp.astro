@@ -14,7 +14,6 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
 <div class="ask-app not-content" data-ask>
   <div class="ask-bar">
     <p class="ask-title ask-logo"><img src={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}pwa/ask/ask-mark.svg`} alt="" width="40" height="40"><span>Ask<small>the NICU Manual</small></span></p>
-    <a class="ask-back" id="ask-back" hidden></a>
     <button class="ask-pill" type="button" data-go="settings" title="AI model and key"></button>
     <button class="ask-icon" type="button" data-act="new" title="New chat" aria-label="New chat"><i class="bi bi-pencil-square"></i></button>
     <button class="ask-icon" type="button" data-go="settings" title="Settings" aria-label="Settings"><i class="bi bi-gear"></i></button>
@@ -257,15 +256,6 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
     });
     $("#ask-backdrop").addEventListener("click", closeSheet);
     addEventListener("keydown", (ev) => { if (ev.key === "Escape" && !sheet.hidden) closeSheet(); });
-
-    // came here from the chat bubble on a page: link back to it
-    const from = readJSON(S, "nicuChat.from", null);
-    if (from?.url) {
-      const back = $("#ask-back");
-      back.href = from.url;
-      back.textContent = "← Back to " + (from.title || "the page");
-      back.hidden = false;
-    }
 
     // the chat fills the screen below its title: messages scroll inside, the text box stays at the bottom
     const fit = () => app.style.setProperty("--ask-top", Math.max(0, app.getBoundingClientRect().top + scrollY) + "px");

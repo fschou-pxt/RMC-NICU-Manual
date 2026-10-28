@@ -777,9 +777,6 @@ body.calc-open #nicu-chat-root { display: none; }
 .ask-thread, .ask-settings { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-right: 0.25rem; }
 .ask-composer { position: static; margin-top: 0.75rem; flex: none; }
 .ask-bar { flex: none; }
-.ask-back { margin-right: auto; font-size: 0.88rem; font-weight: 600; color: var(--sl-color-accent); text-decoration: none; }
-.ask-back:hover { text-decoration: underline; }
-.ask-back[hidden] { display: none; }
 /* nothing below the chat on the Ask page, so the page itself doesn't scroll and the text box stays put */
 body:has(.ask-app) footer.sl-flex { display: none; }
 body:has(.ask-app) main { padding-bottom: 0; }
@@ -795,8 +792,7 @@ body:has(.ask-app) .sl-container { max-width: none; }
 .ask-app { --ask-w: 50rem; max-width: var(--ask-w); width: 100%; margin-inline: auto; }
 .ask-bar { justify-content: flex-start; gap: 0.5rem 0.75rem; flex-wrap: wrap; padding: 1rem 0 0.75rem; border-bottom: 1px solid var(--sl-color-gray-5); margin-bottom: 0.75rem; }
 .ask-bar .ask-title { flex: none; font-size: 1.15rem; }
-.ask-bar .ask-back { margin-right: auto; }
-.ask-bar .ask-back[hidden] + .ask-pill { margin-left: auto; }
+.ask-bar .ask-pill { margin-left: auto; }
 /* messages: larger, roomier text; answers use the full column, questions up to 80% */
 .ask-app .nc-msg { font-size: 1.02rem; line-height: 1.6; padding: 0.85rem 1.1rem; }
 .ask-app .nc-user { max-width: 80%; }
@@ -809,7 +805,6 @@ body:has(.ask-app) .sl-container { max-width: none; }
   /* one row on phones: the Ask tab below already names the page */
   .ask-bar { flex-wrap: nowrap; padding-top: 0.25rem; }
   .ask-bar .ask-title { display: none; }
-  .ask-bar .ask-back { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
   .ask-bar .ask-pill { margin-left: auto; max-width: 42vw; }
 }
 .about-people .editor { margin-bottom: 0.15rem !important; }
