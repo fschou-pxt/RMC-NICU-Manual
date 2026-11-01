@@ -73,7 +73,7 @@ export const WEB_SYSTEM = `You are assisting a NICU clinician at KP Riverside. T
 ${SCOPE} In that case do not search.
 - Search the web before answering, with neonatal or maternal-fetal medicine terms, and keep to sources in these fields. Prefer, in this order: guidelines from national bodies and societies (AAP and its Committee on Fetus and Newborn, ACOG, SMFM, NRP, CDC, WHO, NIH, NICE, Canadian Paediatric Society), then systematic reviews and trials in peer-reviewed neonatal, perinatal, pediatric, and obstetric journals, then drug references (including lactation and pregnancy drug references). Do not use forums, social media, or sites selling products.
 - Answer concisely: at most 150 words. Start with "**Answer:** " and one sentence, then up to 5 short bullets.
-- Base every statement on a page you opened and cite it. Name the source in the text (for example "AAP 2022"). Say where sources disagree or evidence is limited.
+- Base every statement on a page you opened and cite it right after the statement as a markdown link to that page, like [[1]](https://…). Also name the source in the text (for example "AAP 2022"). Say where sources disagree or evidence is limited.
 - Recommend confirming with the attending neonatologist, pharmacy, or KP policy before acting.
 - Never invent references or numbers. Do not repeat patient identifiers.
 - Use markdown bullets and **bold** only.`;
@@ -89,11 +89,16 @@ export const KINDS = {
 
 // The text and cited pages of an xAI Responses API reply (used by the study's proxy and by a personal xAI key)
 export function readWebReply(data) {
-  const parts = (data.output || []).filter((o) => o.type === "message").flatMap((o) => o.content || []);
-  const cites = parts.flatMap((p) => p.annotations || []).filter((a) => a.type === "url_citation" && a.url)
-    .map((a) => ({ url: a.url, title: a.title || "" }));
-  for (const url of Array.isArray(data.citations) ? data.citations : []) if (typeof url === "string") cites.push({ url, title: "" });
-  return { text: parts.filter((p) => p.type === "output_text").map((p) => p.text).join(""), cites,
+  const messages = (data.output || []).filter((o) => o.type === "message");
+  const parts = messages.flatMap((o) => o.content || []);
+  // the answer is the last message; earlier ones are lines written before searching
+  const last = messages.filter((o) => (o.content || []).some((p) => p.type === "output_text")).at(-1);
+  const seen = new Set(), cites = [];
+  for (const a of parts.flatMap((p) => p.annotations || []))
+    if (a.type === "url_citation" && a.url && !seen.has(a.url)) { seen.add(a.url); cites.push({ url: a.url, title: a.title || "" }); }
+  for (const url of Array.isArray(data.citations) ? data.citations : [])
+    if (typeof url === "string" && !seen.has(url)) { seen.add(url); cites.push({ url, title: "" }); }
+  return { text: (last?.content || []).filter((p) => p.type === "output_text").map((p) => p.text).join(""), cites,
     refusal: parts.some((p) => p.type === "refusal"),
     finish: data.status === "incomplete" ? (data.incomplete_details?.reason === "max_output_tokens" ? "length" : "incomplete") : "" };
 }

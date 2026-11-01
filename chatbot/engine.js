@@ -412,12 +412,16 @@ async function askWeb(provider, key, model, messages) {
 }
 // Inline links ("[[1]](url)") become plain numbers ("[1]") that match the source list, numbered by first mention;
 // without inline links, the cited pages are listed unnumbered.
+const realTitle = (t) => t && !/^(\d+|https?:\/\/\S*)$/.test(t) ? t : ""; // Grok's titles are often just a number or the URL
 function numberWebSources({ text, cites }) {
-  const nums = new Map(), sources = [], title = new Map((cites || []).filter((c) => c.title && !/^\d+$/.test(c.title)).map((c) => [c.url, c.title]));
+  const nums = new Map(), sources = [], title = new Map((cites || []).filter((c) => realTitle(c.title)).map((c) => [c.url, c.title]));
   const add = (url) => { if (!nums.has(url)) { nums.set(url, sources.length + 1); sources.push({ url, title: title.get(url) || "", n: sources.length + 1 }); } return nums.get(url); };
   text = (text || "").replace(/\s*\[\[?([^\]]*)\]?\]\((https?:\/\/[^\s)]+)\)/g, (all, label, url) => /^(\d+|c)$/.test(label) ? ` [${add(url)}]` : all)
-    .replace(/(\[\d+\])(\s*\1)+/g, "$1");
-  if (!sources.length) for (const c of cites || []) if (!nums.has(c.url) && sources.length < 8) { nums.set(c.url, 0); sources.push({ url: c.url, title: c.title && !/^\d+$/.test(c.title) ? c.title : "" }); }
+    .replace(/(\[\d+\])(\s*\1)+/g, "$1")
+    .replace(/\s*\[web:\d+\]/g, ""); // Grok's search-result numbers: no link to tell which page, so dropped (the text names its sources)
+  const start = text.indexOf("**Answer:**");
+  if (start > 0) text = text.slice(start); // a line written before searching ("I'll look up …")
+  if (!sources.length) for (const c of cites || []) if (!nums.has(c.url) && sources.length < 8) { nums.set(c.url, 0); sources.push({ url: c.url, title: realTitle(c.title) }); }
   return { text, sources };
 }
 async function httpError(provider, r) {
