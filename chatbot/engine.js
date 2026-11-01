@@ -1,10 +1,11 @@
 // NICU Manual chat engine, shared by the chat bubble (chatbot/widget.html) and the Ask page (site/src/components/AskApp.astro).
-// Runs entirely in the browser with the user's own API key (Anthropic, OpenAI, or xAI).
+// Runs in the browser with the user's own API key (Anthropic, OpenAI, or xAI), or, where the site has the study's
+// server function (/api/ask), with the study's Grok key; the AI instructions are in prompts.js.
+
+import { SYSTEM, SCHEMA, REPHRASE_SYSTEM, REPHRASE_SCHEMA, NEO_SYSTEM, EXTERNAL_SYSTEM, WEB_SYSTEM, OUT_OF_SCOPE, readWebReply } from "./prompts.js";
 
 export const SDK_URL = "https://cdn.jsdelivr.net/npm/@anthropic-ai/sdk@0.133.0/+esm";
 export const LIVE_BASE = "https://fschou-pxt.github.io/RMC-NICU-Manual/";
-// In[Neo]Sight article search: answers questions the manual doesn't cover (this site is allowed to call it)
-const NEO_API = "https://inneosight.org/api/manual-source";
 export const ROOT = new URL("../", import.meta.url).href; // site root (this file lives in chatbot/)
 
 // one list of every provider/model offered (model IDs checked October 2026)
@@ -40,6 +41,31 @@ export const store = {
 export const S = window.sessionStorage, L = window.localStorage;
 export const readJSON = (area, k, d) => { try { return JSON.parse(store.get(area, k)) ?? d; } catch { return d; } };
 
+// ---------- the study: where the site has /api/ask (preview/functions/api/ask.js), everyone uses the study's Grok key ----------
+// Checked once per visit; with Ask switched off for the site build (window.NICU_ASK === false) it isn't checked at all.
+async function detectStudy() {
+  if (window.NICU_ASK === false) return null;
+  const cached = readJSON(S, "nicuChat.study", null);
+  if (cached) return cached.study ? cached : null;
+  let info;
+  const ctrl = new AbortController(), timer = setTimeout(() => ctrl.abort(), 4000);
+  try {
+    const r = await fetch(ROOT + "api/ask", { cache: "no-store", signal: ctrl.signal });
+    const v = r.ok && (r.headers.get("content-type") || "").includes("json") ? await r.json() : null;
+    info = v?.study ? { study: true, model: v.model } : { study: false };
+  } catch { return null; } // offline or slow: personal keys this time, checked again next visit
+  finally { clearTimeout(timer); }
+  store.set(S, "nicuChat.study", JSON.stringify(info));
+  return info.study ? info : null;
+}
+export const STUDY = await detectStudy();
+const STUDY_MODEL = STUDY && { ...(MODELS.find((m) => m.id === STUDY.model) || { label: STUDY.model }), id: STUDY.model, provider: "study" };
+export const STUDY_NOTICE = "Questions and answers are saved without your name, for a quality review of Ask. Patient details are removed automatically, but never type them.";
+// The disclaimer: under Ask's text box (a link) and in Settings
+export const disclaimerHTML = () => `<p class="nc-note">Using <b>${esc(shortLabel(currentModel()))}</b>. Answers may be wrong; check the linked source. ` +
+  `Not medical advice: Ask supports, but does not replace, clinical judgment. When in doubt, ask the attending neonatologist.</p>` +
+  (STUDY ? `<p class="nc-note">${esc(STUDY_NOTICE)}</p>` : "");
+
 // one saved key per provider: nicuChat.key.anthropic, nicuChat.key.openai, nicuChat.key.xai
 const keyName = (provider) => K.key + "." + provider;
 export function getKey(provider) { return store.get(S, keyName(provider)) || store.get(L, keyName(provider)) || ""; }
@@ -53,8 +79,8 @@ export function settings() {
   st.model = modelInfo(st.model).id;
   return st;
 }
-export const currentModel = () => modelInfo(settings().model);
-export const hasKey = () => !!getKey(currentModel().provider);
+export const currentModel = () => STUDY_MODEL || modelInfo(settings().model);
+export const hasKey = () => !!STUDY || !!getKey(currentModel().provider);
 // keys saved by the first version of the widget (single slot) move to their provider's slot
 for (const area of [S, L]) {
   const old = store.get(area, K.key);
@@ -72,10 +98,17 @@ export const localize = (url) => url.startsWith(LIVE_BASE) ? ROOT + url.slice(LI
 
 // ---------- knowledge + retrieval ----------
 let knowledgePromise = null;
+let manualVersion = ""; // fingerprint of the manual text searched (first 12 hex of its SHA-256), kept with each study record
 export function loadKnowledge() {
   knowledgePromise ??= fetch(ROOT + "chatbot/nicu-manual-knowledge.md")
     .then((r) => { if (!r.ok) throw new Error("Could not load the manual text (" + r.status + ")."); return r.text(); })
-    .then((md) => ({ sections: parseSections(md), chapters: parseChapters(md) }))
+    .then(async (md) => {
+      try {
+        const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(md));
+        manualVersion = [...new Uint8Array(d)].slice(0, 6).map((b) => b.toString(16).padStart(2, "0")).join("");
+      } catch {}
+      return { sections: parseSections(md), chapters: parseChapters(md) };
+    })
     .catch((e) => { knowledgePromise = null; throw e; });
   return knowledgePromise;
 }
@@ -189,51 +222,6 @@ export const squash = (t) => [...t.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
   .replace(/^\s*([-*•]|\d+[.)])\s+/gm, "")].map(squashChar).join(""); // list markers aren't page text
 
 // ---------- the model call ----------
-const SYSTEM = `You answer questions for clinicians in the KP Riverside NICU using only excerpts from the KP Riverside Neonatal ICU Manual. Each excerpt has a numeric id, a breadcrumb title, and its text.
-
-- Base every answer only on the excerpts. Do not add facts, doses, thresholds, or recommendations from general medical knowledge.
-- Answer every part of the question (for example both "whether" and "how"), using the procedure or steps sections when the manual has them.
-- Read criteria lists literally. Only treat bulleted criteria as all required when the manual says "all", "and", or "both"; when it says "either", "any", or "or", one criterion is enough; when it doesn't say, state that the manual lists these criteria without saying whether all are needed, rather than assuming.
-- Format every answer the same way, as short markdown lines (no paragraphs longer than two sentences):
-  1. First line: "**Answer:** " followed by the direct answer in one sentence: "Yes", "No", or "Depends on …".
-  2. Then up to 6 bullets with the supporting details. For eligibility, indication, or criteria questions, give one bullet per criterion and start it with ✓ (met by the details given), ✗ (not met), or ? (not stated in the question), followed by the criterion in plain words and the patient's value.
-  3. Make the answer line follow the manual's any/all logic. For "either/any of" criteria: Yes if any criterion is met; Depends on the unknown ones if none is met but some are unknown; No only if every criterion is clearly not met. For "all of" criteria: No if any criterion is not met; Depends on the unknown ones if the rest are met; Yes only if all are met.
-  4. If the manual gives an action or procedure, add "**Next step:** " with it (numbered steps for a procedure).
-  5. If information the user didn't give would change the answer, end with "**To confirm:** " and ask the user about it directly, one short question per missing item (e.g. "Does the baby have increased work of breathing?"), so they can reply and get a final answer. When they reply, use the earlier question and your earlier answer to finish it.
-- Give a well-rounded answer from the surrounding sections, not just the one matching line: for a treatment question, include the indication criteria, how to do it (procedure or order set), and any exclusions or cautions the manual lists.
-- Use only labels that appear in the excerpts (such as a guideline's own "Criteria A"); never invent labels or numbering. When the manual uses a short label, spell out what it means rather than using it bare.
-- Copy numbers, doses, rates, order names and codes, phone numbers, and times exactly as written, with units.
-- If the excerpts do not answer the question, set not_in_manual to true, say "The manual does not address this," and suggest checking with the attending neonatologist or pharmacy. Do not fill the gap yourself.
-- If excerpts conflict, or the answer depends on site (RMC vs. MVMC), gestational age, or weight, give each version.
-- Say so when the manual marks something as pending, TBD, an open item, or temporarily suspended.
-- For a dose, rate, or treatment decision, end with one line reminding that the manual does not replace clinical judgment.
-- If the question contains patient names, MRNs, dates of birth, or other identifiers, do not repeat them and remind the user not to enter patient information.
-- Keep it brief and clinical. Use markdown bullets and **bold** only. Do not include URLs or excerpt ids in the answer; source links are added automatically.
-
-sources: list each excerpt you used, most important first, with its id and a quote copied character-for-character from that excerpt's text (one short sentence, phrase, or table row of at most 200 characters) that best supports the answer. Use an empty list when nothing applies.`;
-
-const SCHEMA = {
-  type: "object",
-  properties: {
-    answer: { type: "string" },
-    not_in_manual: { type: "boolean" },
-    sources: { type: "array", items: { type: "object",
-      properties: { id: { type: "integer" }, quote: { type: "string" } },
-      required: ["id", "quote"], additionalProperties: false } },
-  },
-  required: ["answer", "not_in_manual", "sources"],
-  additionalProperties: false,
-};
-
-// Second try when the manual "doesn't address" a question: rewrite it in formal terms, search again
-const REPHRASE_SYSTEM = `You help search a neonatal ICU manual. Rewrite the clinician's question as a clear, formal neonatal-perinatal medicine question, translating unit slang, shorthand, and abbreviations into standard clinical terms (for example, "cool" means therapeutic hypothermia for hypoxic-ischemic encephalopathy; "bili" means bilirubin). Then list 5-12 formal search terms, synonyms, and standard abbreviations that a hospital guideline on this topic would use. Do not answer the question. Leave out any patient identifiers.`;
-const REPHRASE_SCHEMA = {
-  type: "object",
-  properties: { question: { type: "string" }, terms: { type: "array", items: { type: "string" } } },
-  required: ["question", "terms"],
-  additionalProperties: false,
-};
-
 function buildMessages(history, question, excerpts, interpreted = "") {
   const msgs = [];
   for (const m of history.slice(-6)) {
@@ -279,7 +267,7 @@ const CHAT_URLS = { openai: "https://api.openai.com/v1/chat/completions", xai: "
 async function askChatCompletions(provider, key, model, { system, schema, messages }) {
   const body = { model, messages: [{ role: "system", content: system }, ...messages],
     response_format: { type: "json_schema", json_schema: { name: "manual_response", schema, strict: true } } };
-  if (provider === "openai") body.reasoning_effort = "low";
+  body.reasoning_effort = "low"; // OpenAI and xAI: full reasoning made Grok 4.7 answers ~4x slower, no better (2026-10-29 test)
   const send = () => fetch(CHAT_URLS[provider], {
     method: "POST",
     headers: { "Content-Type": "application/json", Authorization: "Bearer " + key },
@@ -302,43 +290,79 @@ async function askChatCompletions(provider, key, model, { system, schema, messag
   if (choice?.finish_reason === "length") throw new Error("The answer was cut off. Try a narrower question.");
   return JSON.parse(choice?.message?.content || "{}");
 }
-// ---------- In[Neo]Sight articles: searched automatically when the manual has no answer ----------
-const NEO_SYSTEM = `You are assisting a NICU clinician at KP Riverside. The unit's NICU manual does not cover this question, so you are given excerpts from In[Neo]Sight articles (summaries of recent neonatal research, not KP policy).
-- Answer only from the article excerpts. At most 150 words: start with "**Answer:** " and one sentence, then up to 5 short bullets.
-- Describe what the evidence shows (study design, population, main result) rather than giving orders, say where evidence is limited or practice varies, and recommend confirming with the attending neonatologist before changing care.
-- Copy numbers, doses, and units exactly as written. Never invent results, references, or numbers. Do not repeat patient identifiers.
-- If the excerpts do not address the question, set not_in_manual to true and say "The In[Neo]Sight articles found do not address this."
-- Use markdown bullets and **bold** only. Do not include URLs or article ids in the answer; links are added automatically.
+// The study's key: the server function adds the instructions for this kind of request (chatbot/prompts.js)
+let lastModel = ""; // model version the provider reported for the latest answer
+let lastCitations = []; // pages the study's web search cited for the latest answer
+async function askStudy(kind, messages) {
+  const r = await fetch(ROOT + "api/ask", { method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ kind, messages }) });
+  const data = await r.json().catch(() => ({}));
+  if (!r.ok) {
+    const err = new Error(`Ask error ${r.status}${data.detail ? ": " + data.detail.slice(0, 200) : ""}`);
+    err.status = r.status; err.study = data.error;
+    throw err;
+  }
+  if (data.refusal) throw new Error("The model declined to answer this question.");
+  if (data.finish === "length") throw new Error("The answer was cut off. Try a narrower question.");
+  lastModel = data.model || "";
+  lastCitations = Array.isArray(data.citations) ? data.citations : [];
+  return data.content || "";
+}
+// ---------- In[Neo]Sight articles: searched automatically when the manual has no answer, or when the user asks ----------
 
-sources: list each article you used, most important first, with its id and a quote copied character-for-character from its text (at most 200 characters). Use an empty list when nothing applies.`;
-
+// through the site's /api/neo (preview/functions/api/neo.js), which holds In[Neo]Sight's key and allows 5 searches a minute
+// per browser, counted by a random ID kept in this browser for that purpose only
+let neoId; // kept in memory too, for browsers that block storage
+function browserId() {
+  neoId ??= store.get(L, "nicuChat.neoId");
+  if (!neoId) {
+    neoId = [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, "0")).join("");
+    store.set(L, "nicuChat.neoId", neoId);
+  }
+  return neoId;
+}
+export const NEO_LIMIT = "In[Neo]Sight allows 5 searches a minute. Wait a minute and try again.";
 async function searchNeo(terms) {
   const ctrl = new AbortController(), timer = setTimeout(() => ctrl.abort(), 20000);
+  let r;
   try {
-    const r = await fetch(NEO_API + "?q=" + encodeURIComponent(terms.join(" ")), { signal: ctrl.signal });
-    return r.ok ? (await r.json()).articles || [] : [];
+    r = await fetch(ROOT + "api/neo", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ q: terms.join(" ").slice(0, 500), browser: browserId() }), signal: ctrl.signal });
   } catch { return []; } // offline or blocked: the other options still show
   finally { clearTimeout(timer); }
+  if (r.status === 429) throw Object.assign(new Error(NEO_LIMIT), { neoLimit: true });
+  return r.ok ? (await r.json()).articles || [] : [];
 }
 async function answerFromNeo(ask, question, terms) {
   const articles = await searchNeo(terms);
   if (!articles.length) return null;
   const ctx = articles.map((a, i) => `<article id="${i + 1}" title="${a.title.replace(/"/g, "'")}" reviewed="${a.reviewed}">\n${a.text}\n</article>`).join("\n\n");
-  const out = await ask({ system: NEO_SYSTEM, schema: SCHEMA, maxTokens: 4000,
+  const out = await ask({ kind: "neo", system: NEO_SYSTEM, schema: SCHEMA, maxTokens: 4000,
     messages: [{ role: "user", content: `<inneosight_articles>\n${ctx}\n</inneosight_articles>\n\nQuestion: ${question}` }] });
   if (!out || out.not_in_manual) return null;
   const used = [...new Set((out.sources || []).map((s) => s.id))].map((id) => articles[id - 1]).filter(Boolean);
   return { text: out.answer, articles: (used.length ? used : articles).map((a) => ({ title: a.title, url: a.url, reviewed: a.reviewed })) };
 }
+// The user asked for In[Neo]Sight on an answer the manual gave (history[msgIndex]). Returns {neo} (null when no article
+// fits) or {error}.
+export async function checkNeo(history, msgIndex) {
+  const started = Date.now();
+  const model = currentModel(), provider = model.provider, key = getKey(provider);
+  const before = history.slice(0, msgIndex).filter((m) => m.role === "user"), user = before.at(-1) || {};
+  const prior = before.at(-2)?.text || "";
+  let neo = null, error = "";
+  try { neo = await answerFromNeo(asker(provider, key, model.id), user.text || "", [...new Set(tokenize((user.text || "") + " " + prior))]); }
+  catch (e) { error = e?.neoLimit ? e.message : friendlyError(e, provider); }
+  if (STUDY) record({ conversation: conversationId(false), turn: Math.max(1, before.length), kind: "inneosight", question: user.text || "",
+    phi_removed: (user.removed || []).join(", "), seconds: (Date.now() - started) / 1000,
+    ...recordOf(error ? { error: true, text: error } : { text: neo ? neo.text : "No In[Neo]Sight article covers this question.", neo }) });
+  return error ? { error } : { neo };
+}
 
 // ---------- answers from outside the manual (only when the user asks for them) ----------
-const EXTERNAL_SYSTEM = `You are assisting a NICU clinician at KP Riverside. The unit's NICU manual does not cover this question, so the clinician asked for an answer from outside the manual.
-- Answer concisely: at most 120 words. Start with "**Answer:** " and one sentence, then up to 4 short bullets.
-- Say where evidence is limited or practice varies, and recommend confirming with the attending neonatologist, pharmacy, or KP policy before acting.
-- Answer from general neonatal-perinatal knowledge. Never invent references, guideline names, or numbers. Do not repeat patient identifiers.
-- Use markdown bullets and **bold** only; no URLs.`;
 
 async function askExternal(provider, key, model, messages) {
+  if (provider === "study") return askStudy("external", messages);
   if (provider === "anthropic") {
     sdk ??= await import(SDK_URL);
     const client = new sdk.default({ apiKey: key, dangerouslyAllowBrowser: true });
@@ -349,9 +373,52 @@ async function askExternal(provider, key, model, messages) {
   }
   const r = await fetch(CHAT_URLS[provider], { method: "POST",
     headers: { "Content-Type": "application/json", Authorization: "Bearer " + key },
-    body: JSON.stringify({ model, messages: [{ role: "system", content: EXTERNAL_SYSTEM }, ...messages] }) });
+    body: JSON.stringify({ model, messages: [{ role: "system", content: EXTERNAL_SYSTEM }, ...messages], reasoning_effort: "low" }) });
   if (!r.ok) throw await httpError(provider, r);
   return (await r.json()).choices?.[0]?.message?.content || "";
+}
+// Web search: the study's Grok and a personal xAI key (Responses API), or a personal Claude key (its web search tool);
+// other keys answer from general knowledge instead. Returns {text, cites: [{url, title}]}.
+const canSearchWeb = (provider) => provider === "study" || provider === "xai" || provider === "anthropic";
+async function askWeb(provider, key, model, messages) {
+  if (provider === "study") { const text = await askStudy("web", messages); return { text, cites: lastCitations }; }
+  if (provider === "anthropic") {
+    sdk ??= await import(SDK_URL);
+    const client = new sdk.default({ apiKey: key, dangerouslyAllowBrowser: true });
+    // the dynamic-filtering version needs Opus or Sonnet; other models take the basic one
+    const tool = /^claude-(opus|sonnet)-/.test(model) ? "web_search_20260209" : "web_search_20250305";
+    const resp = await client.messages.create({ model, max_tokens: 8000, system: WEB_SYSTEM, messages,
+      tools: [{ type: tool, name: "web_search", max_uses: 3 }], output_config: { effort: "low" } });
+    if (resp.stop_reason === "refusal") throw new Error("The model declined to answer this question.");
+    // Claude cites per passage: put a link after each cited passage so the numbering below matches
+    let text = "";
+    for (const b of resp.content) if (b.type === "text") {
+      const urls = [...new Set((b.citations || []).filter((c) => c.url).map((c) => c.url))];
+      text += b.text + urls.map((u) => ` [[c]](${u})`).join("");
+    }
+    const cites = resp.content.flatMap((b) => b.type === "text" ? (b.citations || []) : []).filter((c) => c.url)
+      .map((c) => ({ url: c.url, title: c.title || "" }));
+    return { text, cites };
+  }
+  const r = await fetch("https://api.x.ai/v1/responses", { method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: "Bearer " + key },
+    body: JSON.stringify({ model, input: [{ role: "system", content: WEB_SYSTEM }, ...messages], tools: [{ type: "web_search" }],
+      reasoning: { effort: "low" } }) });
+  if (!r.ok) throw await httpError(provider, r);
+  const web = readWebReply(await r.json());
+  if (web.refusal) throw new Error("The model declined to answer this question.");
+  if (web.finish === "length") throw new Error("The answer was cut off. Try a narrower question.");
+  return web;
+}
+// Inline links ("[[1]](url)") become plain numbers ("[1]") that match the source list, numbered by first mention;
+// without inline links, the cited pages are listed unnumbered.
+function numberWebSources({ text, cites }) {
+  const nums = new Map(), sources = [], title = new Map((cites || []).filter((c) => c.title && !/^\d+$/.test(c.title)).map((c) => [c.url, c.title]));
+  const add = (url) => { if (!nums.has(url)) { nums.set(url, sources.length + 1); sources.push({ url, title: title.get(url) || "", n: sources.length + 1 }); } return nums.get(url); };
+  text = (text || "").replace(/\s*\[\[?([^\]]*)\]?\]\((https?:\/\/[^\s)]+)\)/g, (all, label, url) => /^(\d+|c)$/.test(label) ? ` [${add(url)}]` : all)
+    .replace(/(\[\d+\])(\s*\1)+/g, "$1");
+  if (!sources.length) for (const c of cites || []) if (!nums.has(c.url) && sources.length < 8) { nums.set(c.url, 0); sources.push({ url: c.url, title: c.title && !/^\d+$/.test(c.title) ? c.title : "" }); }
+  return { text, sources };
 }
 async function httpError(provider, r) {
   const detail = await r.text();
@@ -362,6 +429,13 @@ async function httpError(provider, r) {
 }
 export function friendlyError(e, provider) {
   const code = e?.status;
+  if (provider === "study") {
+    if (e?.study === "cap") return "Ask is resting until tomorrow (the study's daily limit was reached). Use Search at the top of the page in the meantime.";
+    if (code === 429) return "The AI service is busy. Try again in a minute.";
+    if (code >= 500) return "The AI service is busy or unavailable. Try again shortly.";
+    if (e instanceof TypeError) return "Couldn't reach Ask. Check your connection.";
+    return e?.message || String(e);
+  }
   if (code === 401 || (code === 400 && /api key/i.test(e.message))) return "Your API key was rejected. Check it in settings (⚙).";
   // OpenAI omits CORS headers on error replies, so a bad key surfaces as a network failure
   if (provider === "openai" && e instanceof TypeError)
@@ -382,25 +456,40 @@ export function friendlyError(e, provider) {
   return e?.message || String(e);
 }
 
-// Answer a question from the manual. `past` is the conversation before this question.
-// Returns the assistant message to append (never throws).
-export async function answerQuestion(question, past, onStatus = () => {}) {
-  const st = settings(), provider = modelInfo(st.model).provider, key = getKey(provider);
+// Answer a question from the manual. `past` is the conversation before this question; `removed` lists the patient
+// details replaced in it (prepareQuestion). Returns the assistant message to append (never throws).
+// In the study, each answer is also recorded for the answer review.
+export async function answerQuestion(question, past, onStatus = () => {}, { removed = [] } = {}) {
+  const started = Date.now();
+  const turn = past.filter((m) => m.role === "user").length + 1;
+  const conversation = STUDY && conversationId(turn === 1);
+  const reply = await answerFromManual(question, past, onStatus);
+  if (STUDY) record({ conversation, turn, kind: "manual", question, phi_removed: removed.join(", "),
+    seconds: (Date.now() - started) / 1000, ...recordOf(reply) });
+  return reply;
+}
+// one structured request (system, schema, messages) to the chosen model; returns the parsed reply
+function asker(provider, key, modelId) {
+  return (req) => provider === "study" ? askStudy(req.kind, req.messages).then((c) => JSON.parse(c || "{}"))
+    : provider === "anthropic" ? askClaude(key, modelId, req)
+    : askChatCompletions(provider, key, modelId, req);
+}
+async function answerFromManual(question, past, onStatus) {
+  const st = settings(), model = currentModel(), provider = model.provider, key = getKey(provider);
   status = onStatus;
   const prior = past.filter((m) => m.role === "user").slice(-1).map((m) => m.text).join(" ");
   try {
     const sections = await loadSections();
-    const ask = (req) => provider === "anthropic" ? askClaude(key, st.model, req)
-      : askChatCompletions(provider, key, st.model, req);
+    const ask = asker(provider, key, model.id);
     const answer = (excerpts, interpreted) =>
-      ask({ system: SYSTEM, schema: SCHEMA, messages: buildMessages(past, question, excerpts, interpreted) });
+      ask({ kind: "answer", system: SYSTEM, schema: SCHEMA, messages: buildMessages(past, question, excerpts, interpreted) });
     let excerpts = retrieve(sections, expandQuery(question + " " + prior));
     let out = excerpts.length ? await answer(excerpts) : null;
     let rephrased = "", terms = [];
     if (!out || out.not_in_manual) {
       // second try: have the model restate the question in formal terms, then search again
       onStatus("Rephrasing and searching again…");
-      const rq = await ask({ system: REPHRASE_SYSTEM, schema: REPHRASE_SCHEMA, maxTokens: 2000,
+      const rq = await ask({ kind: "rephrase", system: REPHRASE_SYSTEM, schema: REPHRASE_SCHEMA, maxTokens: 2000,
         messages: [{ role: "user", content: (prior ? `Earlier question: ${prior}\n` : "") + `Question: ${question}` }] });
       terms = rq.terms || [];
       const again = retrieve(sections, expandQuery([rq.question, ...terms, question].join(" ")));
@@ -412,11 +501,12 @@ export async function answerQuestion(question, past, onStatus = () => {}) {
     }
     out ??= { answer: "The manual does not address this. Check with the attending neonatologist or pharmacy.",
       not_in_manual: true, sources: [] };
-    let neo = null;
+    let neo = null, neoNote = "";
     if (out.not_in_manual) {
       onStatus("Checking In[Neo]Sight articles…");
-      const words = [...new Set(tokenize(terms.join(" ") + " " + question))];
-      neo = await answerFromNeo(ask, question, words).catch(() => null);
+      // the question's own words first: In[Neo]Sight uses only the first 12 (a trial name typed by the user must survive)
+      const words = [...new Set(tokenize(question + " " + terms.join(" ")))];
+      neo = await answerFromNeo(ask, question, words).catch((e) => { if (e?.neoLimit) neoNote = e.message; return null; });
     }
     const byId = new Map(excerpts.map((s) => [s.id, s]));
     const seen = new Set();
@@ -425,7 +515,7 @@ export async function answerQuestion(question, past, onStatus = () => {}) {
       const ok = s.quote && squash(sec.text).includes(squash(s.quote));
       return { title: sec.title, url: sec.url, quote: ok ? s.quote : "" };
     });
-    return { role: "assistant", text: out.answer || "(no answer)", rephrased, neo,
+    return { role: "assistant", text: out.answer || "(no answer)", rephrased, neo, ...(neoNote ? { neoNote } : {}),
       sources: out.not_in_manual ? sources.slice(0, 1) : sources, offerExternal: !!out.not_in_manual };
   } catch (e) {
     return { role: "assistant", error: true, text: friendlyError(e, provider) };
@@ -433,7 +523,18 @@ export async function answerQuestion(question, past, onStatus = () => {}) {
 }
 // The user chose to go outside the manual for the question answered at history[msgIndex].
 export async function answerOutside(history, msgIndex) {
-  const st = settings(), provider = modelInfo(st.model).provider, key = getKey(provider);
+  const started = Date.now();
+  const reply = await answerOutsideManual(history, msgIndex);
+  if (STUDY) {
+    const before = history.slice(0, msgIndex).filter((m) => m.role === "user"), user = before.at(-1) || {};
+    record({ conversation: conversationId(false), turn: Math.max(1, before.length), kind: reply.external === "ai" ? "general_ai" : "web",
+      question: user.text || "", phi_removed: (user.removed || []).join(", "), seconds: (Date.now() - started) / 1000,
+      ...recordOf({ ...reply, sources: (reply.webSources || []).map((w) => ({ title: w.title, url: w.url })) }) });
+  }
+  return reply;
+}
+async function answerOutsideManual(history, msgIndex) {
+  const model = currentModel(), provider = model.provider, key = getKey(provider);
   const q = history.slice(0, msgIndex).reverse().find((m) => m.role === "user")?.text || "";
   try {
     const messages = [];
@@ -443,11 +544,46 @@ export async function answerOutside(history, msgIndex) {
     }
     while (messages.length && messages[0].role !== "user") messages.shift();
     messages.push({ role: "user", content: q });
-    const text = await askExternal(provider, key, st.model, messages);
-    return { role: "assistant", external: "ai", text: text || "(no answer)" };
+    const ai = shortLabel(model);
+    if (canSearchWeb(provider)) {
+      const { text, sources } = numberWebSources(await askWeb(provider, key, model.id, messages));
+      return { role: "assistant", external: "web", text: text || "(no answer)", webSources: sources, ai,
+        ...(sources.length || outOfScope(text) ? {} : { noWeb: "uncited" }) };
+    }
+    const text = await askExternal(provider, key, model.id, messages);
+    return { role: "assistant", external: "ai", text: text || "(no answer)", ai, ...(outOfScope(text) ? {} : { noWeb: "off" }) };
   } catch (e) {
     return { role: "assistant", error: true, text: friendlyError(e, provider) };
   }
+}
+
+// the model's reply to a question outside neonatal-perinatal and maternal-fetal medicine (prompts.js)
+const outOfScope = (text) => (text || "").includes(OUT_OF_SCOPE.slice(0, 60));
+// The warning on an answer from outside the manual that no web page backs: web search is off for this AI, or it cited none
+export function noWebWarning(m) {
+  if (m.noWeb === "off") return `Web search is off for ${m.ai || "this AI"}: this answer comes only from what the model learned in training. It may be out of date and has no sources to check.`;
+  if (m.noWeb === "uncited") return `${m.ai || "The AI"} cited no web pages, so this answer may come from its training rather than a web search. It may be out of date and has no sources to check.`;
+  return "";
+}
+
+// ---------- study record of each answer (the site's /api/ask-log), for the answer review ----------
+// A random conversation ID, new for each chat (first question), kept for the visit; no person or device ID.
+function conversationId(fresh) {
+  let id = fresh ? "" : store.get(S, "nicuChat.conv");
+  if (!id) {
+    id = [...crypto.getRandomValues(new Uint8Array(8))].map((b) => b.toString(16).padStart(2, "0")).join("");
+    store.set(S, "nicuChat.conv", id);
+  }
+  return id;
+}
+const recordOf = (m) => ({ model: lastModel || STUDY.model, manual_version: manualVersion, ...(m.error ? { error: m.text } : {
+  answer: m.text, rephrased: m.rephrased || "", not_in_manual: !!m.offerExternal, sources: m.sources || [], inneosight: m.neo || null }) });
+function record(rec) {
+  // keepalive: still sent if the person opens a source in the manual right away
+  try {
+    fetch(ROOT + "api/ask-log", { method: "POST", keepalive: true, headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(rec) }).catch(() => {});
+  } catch {}
 }
 
 // ---------- patient information (PHI): never sent to the AI services ----------
@@ -489,6 +625,29 @@ const PHI_CHECKS = [
   ["a name", /\b[Bb]aby ([Bb]oy|[Gg]irl) [A-Z][a-z]+|\b(Mr|Mrs|Ms|Miss)\.? [A-Z][a-z]+/],
 ];
 export const phiFlags = (text) => [...new Set(PHI_CHECKS.filter(([, re]) => re.test(text)).map(([label]) => label))];
+// In the study, what was found is replaced by a tag before the question goes anywhere (email and phone first,
+// so their digits aren't taken for a record number)
+const PHI_TAGS = [["an email address", "[email]"], ["a phone number", "[phone]"], ["a date", "[date]"],
+  ["a record or ID number", "[ID]"], ["a name", "[name]"]];
+const STRIP_ID = /\b\d{7,}\b/; // the number itself; words like "MRN" or "DOB" stay
+export function phiStrip(text) {
+  const removed = [];
+  for (const [label, tag] of PHI_TAGS) {
+    const res = label === "a record or ID number" ? [STRIP_ID] : PHI_CHECKS.filter(([l]) => l === label).map(([, re]) => re);
+    for (const re of res) {
+      if (!re.test(text)) continue;
+      text = text.replace(new RegExp(re.source, re.flags + "g"), tag);
+      if (!removed.includes(label)) removed.push(label);
+    }
+  }
+  return { text, removed };
+}
+// The question to send, or null if the person cancels: in the study, patient details are replaced automatically;
+// with a personal key, the person is warned and decides.
+export function prepareQuestion(text) {
+  if (STUDY) return phiStrip(text);
+  return phiConfirm(text) ? { text, removed: [] } : null;
+}
 export function phiConfirm(text) {
   const flags = phiFlags(text);
   return !flags.length || confirm(`This question may contain patient information (${flags.join(", ")}).\n\nRemove it before asking. Send anyway?`);
@@ -598,25 +757,60 @@ export function renderSources(sources, msgIndex) {
   const body = [...groups].map(([head, chips]) => `<div class="nc-sg"><span>${esc(head)}</span>${chips.join("")}</div>`).join("");
   return `<div class="nc-src"><b>Sources</b>${body}</div>`;
 }
+const siteOf = (url) => { try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return url; } };
 // One chat message as HTML (classes styled by the widget and the app).
 export function renderMessage(m, i, busy) {
-  if (m.role === "user") return `<div class="nc-msg nc-user">${esc(m.text)}</div>`;
+  if (m.role === "user") return `<div class="nc-msg nc-user">${esc(m.text)}</div>` +
+    (m.removed?.length ? `<p class="nc-note nc-removed">Removed before sending: ${esc(m.removed.join(", "))}</p>` : "");
   if (m.error) return `<div class="nc-msg nc-bot nc-err">${esc(m.text)}</div>`;
-  if (m.external) return `<div class="nc-msg nc-bot nc-ext"><div class="nc-ext-banner">⚠ Not from the KP manual — general AI knowledge</div>
-    ${renderMd(m.text)}</div>`;
+  if (m.external) return `<div class="nc-msg nc-bot nc-ext"><div class="nc-ext-banner">⚠ Not from the KP manual — ${m.external === "web"
+    ? "AI summary of web sources" : "general AI knowledge"}</div>${noWebWarning(m) ? `<p class="nc-noweb">⚠ ${esc(noWebWarning(m))}</p>` : ""}${renderMd(m.text)}${m.webSources?.length ? `<div class="nc-src"><b>Web sources</b>${
+    m.webSources.map((w) => `<a class="nc-art" href="${esc(/^https?:\/\//i.test(w.url) ? w.url : "#")}" target="_blank" rel="noopener">${
+      w.n ? `[${w.n}] ` : ""}${esc(w.title || siteOf(w.url))}${w.title ? ` <small>(${esc(siteOf(w.url))})</small>` : ""}</a>`).join("")}</div>` : ""}</div>`;
   const again = m.rephrased ? `<p class="nc-note">Searched again as: <i>${esc(m.rephrased)}</i></p>` : "";
-  const neo = m.neo ? `<div class="nc-neo"><div class="nc-ext-banner">Not from the KP manual — In[Neo]Sight research summaries</div>
-    ${renderMd(m.neo.text)}<div class="nc-src"><b>Articles</b>${m.neo.articles.map((a) =>
-      `<a class="nc-art" href="${esc(/^https?:\/\//i.test(a.url) ? a.url : "#")}" target="_blank" rel="noopener">${esc(a.title)}${a.reviewed ? ` <small>(${esc(a.reviewed.slice(0, 7))})</small>` : ""}</a>`).join("")}</div></div>` : "";
-  const offer = m.offerExternal && !busy ? `<div class="nc-offer">
-    <p>${m.neo ? "Still need more?" : "Want an answer from the AI's general knowledge?"} It will <b>not</b> come from the KP manual or In[Neo]Sight and uses more of your API credit.</p>
-    <button type="button" class="nc-btn nc-ghost" data-ext="ai" data-msg="${i}">Ask AI (general knowledge)</button></div>` : "";
+  // In[Neo]Sight box: the research summary, or (the manual answered) the button, its progress, or why nothing came back
+  const neoBody = m.neo ? `${renderMd(m.neo.text)}<div class="nc-src"><b>Articles</b>${m.neo.articles.map((a) =>
+      `<a class="nc-art" href="${esc(/^https?:\/\//i.test(a.url) ? a.url : "#")}" target="_blank" rel="noopener">${esc(a.title)}${a.reviewed ? ` <small>(${esc(a.reviewed.slice(0, 7))})</small>` : ""}</a>`).join("")}</div>`
+    : m.neoBusy ? `<p class="nc-neo-wait">Checking In[Neo]Sight articles…</p>`
+    : m.neoNote ? `<p class="nc-neo-note">${esc(m.neoNote)}</p>`
+    : m.offerExternal || m.externalAsked || busy ? "" // the manual had no answer: In[Neo]Sight was already searched
+    : `<p>See what recent neonatal research says about this question (takes 10-25 seconds).</p>
+      <button type="button" class="nc-btn nc-neo-btn" data-neo="1" data-msg="${i}">Check In[Neo]Sight research</button>`;
+  const neo = neoBody ? `<div class="nc-neo" data-of="${i}"><div class="nc-ext-banner">Not from the KP manual — In[Neo]Sight research summaries</div>
+    ${neoBody}</div>` : "";
+  const web = canSearchWeb(currentModel().provider);
+  const offer = m.offerExternal && !busy ? `<div class="nc-offer">${web
+    ? `<p>${m.neo ? "Still need more?" : "Want to see what the web says?"} The AI searches the web and summarizes what it finds (neonatal-perinatal and maternal-fetal medicine questions only; takes up to a minute). It will <b>not</b> come from the KP manual or In[Neo]Sight: check the linked sources before acting.</p>
+    <button type="button" class="nc-btn nc-ghost" data-ext="web" data-msg="${i}">Search the web (AI summary)</button>`
+    : `<p>${m.neo ? "Still need more?" : "Want an answer from the AI's general knowledge?"} Neonatal-perinatal and maternal-fetal medicine questions only. It will <b>not</b> come from the KP manual or In[Neo]Sight and uses more of your API credit.</p>
+    <p class="nc-noweb">⚠ Web search is off for ${esc(shortLabel(currentModel()))}: the answer comes only from what the model learned in training, may be out of date, and has no sources. To search the web, switch to a Grok or Claude model in Settings.</p>
+    <button type="button" class="nc-btn nc-ghost" data-ext="ai" data-msg="${i}">Ask AI (general knowledge)</button>`}</div>` : "";
   return `<div class="nc-msg nc-bot">${again}${renderMd(m.text)}${renderSources(m.sources || [], i)}${neo}${offer}</div>`;
 }
 
 // ---------- settings form (model + key), rendered into any container ----------
 export function renderSettings(container, { onSaved, onBack, extraHTML = "" }) {
   const st = settings(), current = modelInfo(st.model);
+  if (STUDY) { // no model or key to choose: the study's Grok key
+    container.innerHTML = `<div class="nc-set">
+      <p class="nc-note">Ask uses <b>${esc(STUDY_MODEL.label)}</b> (xAI) through the study's account, so no API key is needed.</p>
+      <label class="nc-check"><input id="nc-jump" type="checkbox"${st.autoJump ? " checked" : ""}> Open and highlight the source automatically</label>
+      ${extraHTML}
+      <div class="nc-disc"><b>Disclaimer</b>${disclaimerHTML()}</div>
+      <div class="nc-row">
+        <button type="button" class="nc-btn" data-set="save">Save</button>
+        <button type="button" class="nc-btn nc-ghost" data-set="back">Back</button>
+      </div></div>`;
+    container.querySelector(".nc-set").addEventListener("click", (ev) => {
+      const act = ev.target.closest("button")?.dataset.set;
+      if (act === "back") onBack();
+      else if (act === "save") {
+        store.set(L, K.settings, JSON.stringify({ ...readJSON(L, K.settings, {}), autoJump: container.querySelector("#nc-jump").checked }));
+        onSaved();
+      }
+    });
+    return;
+  }
   const opts = Object.entries(PROVIDERS).map(([pid, p]) =>
     `<optgroup label="${p.name}">` + MODELS.filter((m) => m.provider === pid).map((m) =>
       `<option value="${m.id}"${m.id === current.id ? " selected" : ""}>${esc(m.label)}</option>`).join("") + "</optgroup>").join("");
@@ -629,6 +823,7 @@ export function renderSettings(container, { onSaved, onBack, extraHTML = "" }) {
     <label class="nc-check"><input id="nc-remember" type="checkbox"${keyRemembered() ? " checked" : ""}> Remember on this device (don't check on shared NICU computers)</label>
     <label class="nc-check"><input id="nc-jump" type="checkbox"${st.autoJump ? " checked" : ""}> Open and highlight the source automatically</label>
     ${extraHTML}
+    <div class="nc-disc"><b>Disclaimer</b>${disclaimerHTML()}</div>
     <div class="nc-row">
       <button type="button" class="nc-btn" data-set="save">Save</button>
       <button type="button" class="nc-btn nc-ghost" data-set="forget">Forget key</button>

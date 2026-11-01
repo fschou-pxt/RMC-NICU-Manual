@@ -41,16 +41,22 @@
 .nc-sg { margin-top: 5px; }
 .nc-sg > span { display: block; color: var(--nc-text); font-weight: 600; margin-bottom: 3px; }
 .nc-chip { display: inline-block; margin: 0 5px 5px 0; padding: 2px 9px; border: 1px solid var(--nc-blue);
-  border-radius: 999px; background: #fff; color: var(--nc-blue-dark); cursor: pointer; font-size: inherit; line-height: 1.5; }
+  border-radius: 12px; background: #fff; color: var(--nc-blue-dark); cursor: pointer; font-size: inherit; line-height: 1.5; text-align: left; }
 .nc-chip:hover { background: var(--nc-blue); color: #fff; }
 .nc-note { font-size: .85em; color: var(--nc-muted); margin: 0 0 10px; }
+.nc-removed { text-align: right; margin-top: -4px; } /* the study: patient details removed from a question */
 .nc-err { background: #fdecea; border: 1px solid #f5c2bd; color: #8a1c12; }
+.nc-neo p { margin: 0 0 6px; }
+.nc-neo-wait { color: #7a4b00; font-style: italic; }
+.nc-btn.nc-neo-btn { background: #fdf0d2; border-color: #f0c36d; color: #7a4b00; font-size: .9em; font-weight: 600; }
+.nc-btn.nc-neo-btn:hover { background: #f0c36d; }
 .nc-offer { margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--nc-border); }
 .nc-offer p { font-size: .85em; color: var(--nc-muted); margin: 0 0 6px; }
 .nc-offer .nc-btn { margin: 0 6px 6px 0; font-size: .9em; }
 .nc-ext { border: 1px solid #f0c36d; background: #fffaf0; }
 .nc-ext-banner { margin: -8px -11px 8px; padding: 5px 11px; background: #fdf0d2; color: #7a4b00;
   font-weight: 600; font-size: .85em; border-radius: 10px 10px 0 0; }
+.nc-noweb { margin: 0 0 8px; padding: 5px 8px; border-left: 3px solid #c77700; background: #fdf0d2; color: #7a4b00; font-size: .88em; }
 .nc-neo { margin-top: 8px; border: 1px solid #f0c36d; background: #fffaf0; border-radius: 10px; padding: 8px 11px; }
 .nc-neo .nc-src { border-top-color: #f0c36d; }
 .nc-art { display: block; margin: 5px 0 0; font-weight: 500; line-height: 1.35; }
@@ -71,6 +77,8 @@
 .nc-set input[type=password], .nc-set input[type=text], .nc-set select { width: 100%; height: 2.4em; padding: 0 8px;
   border: 1px solid var(--nc-border); border-radius: 6px; font: inherit; }
 .nc-set .nc-check { font-weight: 400; display: flex; gap: 6px; align-items: flex-start; }
+.nc-set .nc-disc { margin-top: 12px; padding-top: 8px; border-top: 1px solid var(--nc-border); }
+.nc-set .nc-disc > b { display: block; margin-bottom: 4px; font-size: .8em; color: var(--nc-muted); }
 .nc-set .nc-row { display: flex; gap: 8px; margin-top: 14px; }
 .nc-btn { border: 1px solid var(--nc-blue); background: var(--nc-blue); color: #fff; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
 .nc-btn.nc-ghost { background: #fff; color: var(--nc-blue-dark); }
@@ -88,7 +96,11 @@ mark.nicu-hl { background: #ffe066; color: inherit; padding: 0 1px; border-radiu
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-foot textarea, :is(body.quarto-dark, html[data-theme="dark"] body) .nc-set input, :is(body.quarto-dark, html[data-theme="dark"] body) .nc-set select { background: #0f1722; color: var(--nc-text); }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-ext { background: #2a2416; border-color: #6b5420; }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-ext-banner { background: #3a3018; color: #f3d48a; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-noweb { background: #3a3018; color: #f3d48a; border-left-color: #f0c36d; }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-neo { background: #2a2416; border-color: #6b5420; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-neo-wait { color: #f3d48a; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-btn.nc-neo-btn { background: #3a3018; border-color: #6b5420; color: #f3d48a; }
+:is(body.quarto-dark, html[data-theme="dark"] body) .nc-btn.nc-neo-btn:hover { background: #6b5420; }
 :is(body.quarto-dark, html[data-theme="dark"] body) .nc-err { background: #3a1d1d; border-color: #6b2c2c; color: #f5b5b0; }
 /* phones (and the installed app on a phone): a bottom tab bar to the site's main pages instead of the chat bubble */
 .nc-tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1040; display: none; background: #fff;
@@ -115,8 +127,9 @@ body:has(.ask-app) #nicu-chat-root { display: none; }
 // Page widget: the chat bubble on every manual page. The engine (search, prompts, model calls,
 // rendering) is shared with the app in chatbot/engine.js.
 import { K, S, L, LIVE_BASE, ROOT, store, readJSON, localize, settings, hasKey, loadHistory, saveHistory,
-  answerQuestion, answerOutside, renderMessage, renderSettings, highlightIn, clearHighlights,
-  loadSections, retrieve, expandQuery, squash, esc, currentModel, shortLabel, phiNoticeHTML, phiConfirm } from "./chatbot/engine.js";
+  answerQuestion, answerOutside, checkNeo, renderMessage, renderSettings, highlightIn, clearHighlights,
+  loadSections, retrieve, expandQuery, squash, esc, currentModel, shortLabel, phiNoticeHTML, prepareQuestion,
+  STUDY, STUDY_NOTICE } from "./chatbot/engine.js";
 
 // ---------- highlighting on the page ----------
 function highlightOnPage(quote, hash) {
@@ -211,9 +224,11 @@ function render() {
     return renderSettings(body, { onSaved: () => { view = "chat"; render(); input.focus(); }, onBack: () => { view = "chat"; render(); } });
   }
   form.hidden = false;
-  const notice = `<p class="nc-note">Using <b>${esc(shortLabel(currentModel()))}</b> (change in <i class="bi bi-gear" aria-label="settings"></i>). Answers come from this manual unless marked otherwise, and may be wrong; verify with the linked source.</p>${phiNoticeHTML()}`;
+  const notice = (STUDY ? `<p class="nc-note">Using <b>${esc(shortLabel(currentModel()))}</b> through the study's account. ${esc(STUDY_NOTICE)}` :
+    `<p class="nc-note">Using <b>${esc(shortLabel(currentModel()))}</b> (change in <i class="bi bi-gear" aria-label="settings"></i>).`) +
+    ` Answers come from this manual unless marked otherwise, and may be wrong; verify with the linked source.</p>${phiNoticeHTML()}`;
   body.innerHTML = notice + history.map((m, i) => renderMessage(m, i, busy)).join("") +
-    (busy ? `<div class="nc-msg nc-bot nc-typing">${esc(typingText)}</div>` : "");
+    (busy && typingText ? `<div class="nc-msg nc-bot nc-typing">${esc(typingText)}</div>` : "");
   body.scrollTop = body.scrollHeight;
   sendBtn.disabled = busy;
 }
@@ -235,11 +250,20 @@ root.addEventListener("click", async (ev) => {
   }
   else if (act === "new") { history = []; saveHistory(history); clearHighlights(); view = "chat"; render(); }
   else if (act === "settings") { view = view === "settings" ? "chat" : "settings"; render(); }
-  else if (t.dataset.ext) {
+  else if (t.dataset.neo) {
     if (busy) return;
     const i = +t.dataset.msg;
-    history[i].offerExternal = false;
-    busy = true; typingText = "Asking the AI…"; saveHistory(history); render();
+    busy = true; typingText = ""; history[i].neoBusy = true; render(); // progress shows in the answer's box
+    const { neo, error } = await checkNeo(history, i);
+    busy = false; delete history[i].neoBusy;
+    if (neo) history[i].neo = neo;
+    else history[i].neoNote = error ? "Couldn't check In[Neo]Sight: " + error : "No In[Neo]Sight article covers this question.";
+    saveHistory(history); render();
+  } else if (t.dataset.ext) {
+    if (busy) return;
+    const i = +t.dataset.msg;
+    history[i].offerExternal = false; history[i].externalAsked = true;
+    busy = true; typingText = t.dataset.ext === "web" ? "Searching the web…" : "Asking the AI…"; saveHistory(history); render();
     const reply = await answerOutside(history, i);
     busy = false; history.push(reply); saveHistory(history); render();
   } else if (t.dataset.msg !== undefined) {
@@ -255,14 +279,14 @@ document.addEventListener("keydown", (ev) => {
 });
 form.addEventListener("submit", async (ev) => {
   ev.preventDefault();
-  const question = input.value.trim();
-  if (!question || busy) return;
+  if (!input.value.trim() || busy) return;
   if (!hasKey()) { view = "settings"; return render(); }
-  if (!phiConfirm(question)) return;
-  const past = history.slice();
-  history.push({ role: "user", text: question });
+  const prep = prepareQuestion(input.value.trim()); // in the study, patient details are replaced; otherwise the person confirms
+  if (!prep) return;
+  const question = prep.text, removed = prep.removed, past = history.slice();
+  history.push({ role: "user", text: question, ...(removed.length ? { removed } : {}) });
   input.value = ""; busy = true; typingText = "Looking it up…"; saveHistory(history); render();
-  const reply = await answerQuestion(question, past, setTyping);
+  const reply = await answerQuestion(question, past, setTyping, { removed });
   busy = false;
   history.push(reply); saveHistory(history); render();
   if (!reply.error && reply.sources?.length && settings().autoJump) jumpTo(reply.sources[0]);

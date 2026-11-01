@@ -17,7 +17,17 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
     <button class="ask-pill" type="button" data-go="settings" title="AI model and key"></button>
     <button class="ask-icon" type="button" data-act="new" title="New chat" aria-label="New chat"><i class="bi bi-pencil-square"></i></button>
     <button class="ask-icon" type="button" data-go="settings" title="Settings" aria-label="Settings"><i class="bi bi-gear"></i></button>
+    <button class="ask-icon" type="button" data-act="tour" title="How to use Ask" aria-label="How to use Ask"><i class="bi bi-question-circle"></i></button>
   </div>
+  <dialog class="ask-tour" id="ask-tour" aria-labelledby="tour-title">
+    <button class="ask-icon tour-x" type="button" data-tour="close" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    <div class="tour-slide" id="tour-slide" aria-live="polite"></div>
+    <footer>
+      <button class="tour-back" type="button" data-tour="back">Back</button>
+      <span class="tour-dots" id="tour-dots"></span>
+      <button class="ask-btn" type="button" data-tour="next">Next</button>
+    </footer>
+  </dialog>
   <div class="ask-thread" id="ask-thread"></div>
   <div class="ask-settings" id="ask-settings" hidden></div>
   <form class="ask-composer" id="ask-composer">
@@ -47,7 +57,8 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
 </>)}
 
 <script>
-  const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+  import EXAMPLES from "./ask-examples.js";
+  const base =import.meta.env.BASE_URL.replace(/\/?$/, "/");
   const composerEl = document.querySelector("#ask-composer");
   if (composerEl) {
   composerEl.addEventListener("submit", (ev) => ev.preventDefault()); // until the engine is ready
@@ -58,19 +69,15 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
 
   function start(E) {
     const { K, S, L, store, readJSON, localize, settings, hasKey, currentModel, shortLabel, loadHistory, saveHistory,
-      loadKnowledge, answerQuestion, answerOutside, renderMessage, renderSettings, renderMd, highlightIn, esc, phiNoticeHTML, phiConfirm } = E;
+      loadKnowledge, answerQuestion, answerOutside, noWebWarning, checkNeo, renderMessage, renderSettings, renderMd, highlightIn, esc, phiNoticeHTML, prepareQuestion,
+      STUDY, STUDY_NOTICE, disclaimerHTML } = E;
     const $ = (s) => document.querySelector(s);
     const app = $("[data-ask]"), thread = $("#ask-thread"), input = $("#ask-input"), composer = $("#ask-composer");
     let history = loadHistory(), busy = false, typing = "Looking it up…", chatId = 0; // chatId: a reply for a cleared chat is dropped
 
     // ---------- chat ----------
-    const SUGGESTIONS = [
-      ["snow", "Baby with cord pH 6.9 and hypotonia. Should I cool?"],
-      ["lungs", "32 weeker on 28% FiO2 with increased work of breathing. Surfactant?"],
-      ["droplet-half", "Minimum KVO rate for a UVC in an ELBW baby?"],
-      ["eye", "How do I order ROP exam drops?"],
-      ["people", "Who covers the FCC overnight at RMC?"],
-    ];
+    // three examples, picked at random once per page load
+    const SUGGESTIONS = EXAMPLES.map((s) => [Math.random(), s]).sort((a, b) => a[0] - b[0]).slice(0, 3).map(([, s]) => s);
     function showSettings(on) {
       $(".ask-pill").textContent = shortLabel(currentModel());
       $("#ask-settings").hidden = !on;
@@ -79,34 +86,35 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
         onSaved: () => { showSettings(false); render(); input.focus(); },
         onBack: () => { showSettings(false); render(); },
       });
-      $("#ask-settings").insertAdjacentHTML("beforeend", `<p class="ask-nokey">No API key? <a href="${base}">Search the manual instead</a>, or use the Dot phrases and Phones tabs.</p>`); }
+      if (!STUDY) $("#ask-settings").insertAdjacentHTML("beforeend", `<p class="ask-nokey">No API key? <a href="${base}">Search the manual instead</a>, or use the Dot phrases and Phones tabs.</p>`); }
     }
     function render() {
       $(".ask-pill").textContent = shortLabel(currentModel());
+      const disc = $(".ask-disc-body"); if (disc) disc.innerHTML = disclaimerHTML(); // the model can change in Settings
       if (!history.length && !busy) {
         thread.innerHTML = `<div class="ask-hello"><img src="${base}pwa/ask/ask-icon-192.png" alt="">
           <p class="h">Ask the NICU Manual</p>
           <p class="sub">Answers come from KP Riverside's NICU manual, with the source one tap away.</p>
           <div class="phi">${phiNoticeHTML()}</div>
-          <div class="ask-suggest">${SUGGESTIONS.map(([i, q]) => `<button type="button" data-ask="${esc(q)}"><i class="bi bi-${i}"></i>${esc(q)}</button>`).join("")}</div>
-          <p class="nc-note">Using <b>${esc(shortLabel(currentModel()))}</b>. Answers may be wrong; check the linked source.</p></div>`;
+          <div class="ask-suggest">${SUGGESTIONS.map(([i, q]) => `<button type="button" data-ask="${esc(q)}"><i class="bi bi-${i}"></i>${esc(q)}</button>`).join("")}</div></div>`;
         return;
       }
       thread.innerHTML = history.map((m, i) => renderMessage(m, i, busy) + (m.role === "assistant" && !m.error && !busy ? msgActions(m, i) : "")).join("") +
-        (busy ? `<div class="nc-msg nc-bot nc-typing">${esc(typing)}</div>` : "");
+        (busy && typing ? `<div class="nc-msg nc-bot nc-typing">${esc(typing)}</div>` : "");
     }
     // the newest message: its top in view (a long answer starts where it begins)
     function toLatest(smooth = true) {
       const last = thread.lastElementChild?.matches(".msg-acts") ? thread.lastElementChild.previousElementSibling : thread.lastElementChild;
       if (last) thread.scrollTo({ top: last.offsetTop - 8, behavior: smooth ? "smooth" : "auto" }); // the conversation box only, not the page
     }
-    async function ask(question) {
+    // `removed`: patient details replaced in the question (study), shown under it
+    async function ask(question, removed = []) {
       if (!question || busy) return;
       if (!hasKey()) return showSettings(true);
       const past = history.slice(), id = chatId;
-      history.push({ role: "user", text: question });
+      history.push({ role: "user", text: question, ...(removed.length ? { removed } : {}) });
       busy = true; typing = "Looking it up…"; saveHistory(history); render(); toLatest();
-      const reply = await answerQuestion(question, past, (t) => { if (id === chatId) { typing = t; render(); } });
+      const reply = await answerQuestion(question, past, (t) => { if (id === chatId) { typing = t; render(); } }, { removed });
       if (id !== chatId) return; // the chat was cleared while this was being answered
       busy = false; history.push(reply); saveHistory(history); render(); toLatest();
       // on wide screens the top source opens beside the answer
@@ -114,10 +122,10 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
     }
     composer.addEventListener("submit", (ev) => {
       ev.preventDefault();
-      const q = input.value.trim();
-      if (!q || !phiConfirm(q)) return;
+      const q = input.value.trim(), prep = q && prepareQuestion(q);
+      if (!prep) return;
       input.value = ""; input.style.height = "";
-      ask(q);
+      ask(prep.text, prep.removed);
     });
     input.addEventListener("keydown", (ev) => {
       if (ev.key === "Enter" && !ev.shiftKey) { ev.preventDefault(); composer.requestSubmit(); }
@@ -125,18 +133,20 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
     input.addEventListener("input", () => { input.style.height = ""; input.style.height = Math.min(140, input.scrollHeight) + "px"; });
 
     // Copy and share an answer as plain text, with where it came from; "Let's discuss" (raised hand) when the manual had no answer
-    const GAP_EMAILS = ["James.A.Washington@kp.org", "Michael.S.Chang@kp.org"]; // protocol leads
+    const GAP_EMAILS = ["pxttechstudio@gmail.com"];
     function msgActions(m, i) {
       return `<div class="msg-acts">
         <button type="button" data-act="copy-msg" data-msg="${i}"><i class="bi bi-clipboard"></i> Copy</button>
         ${navigator.share ? `<button type="button" data-act="share-msg" data-msg="${i}"><i class="bi bi-share"></i> Share</button>` : ""}
-        ${m.offerExternal ? `<button type="button" data-act="gap" data-msg="${i}"><i class="bi bi-person-raised-hand"></i> Let's discuss</button>` : ""}</div>`;
+        ${m.offerExternal || m.externalAsked ? `<button type="button" data-act="gap" data-msg="${i}"><i class="bi bi-person-raised-hand"></i> Let's discuss</button>` : ""}</div>`;
     }
     const questionFor = (i) => history.slice(0, i).reverse().find((m) => m.role === "user")?.text || "";
     function plainAnswer(i) {
       const m = history[i], strip = (t) => t.replace(/\*\*(.+?)\*\*/g, "$1");
-      let t = `Q: ${questionFor(i)}\n\n` + (m.external ? "[Not from the KP manual: general AI knowledge]\n" : "") + strip(m.text);
+      let t = `Q: ${questionFor(i)}\n\n` + (m.external === "web" ? "[Not from the KP manual: AI summary of web sources]\n" : m.external ? "[Not from the KP manual: general AI knowledge]\n" : "") +
+        (noWebWarning(m) ? `[Warning: ${noWebWarning(m)}]\n` : "") + strip(m.text);
       if (m.sources?.length) t += "\n\nSource (KP NICU Manual): " + [...new Set(m.sources.map((s) => s.title.split(" › ").slice(1, 3).join(" › ") || s.title))].join("; ");
+      if (m.webSources?.length) t += "\n\nWeb sources:\n" + m.webSources.map((w) => (w.n ? `[${w.n}] ` : "") + w.url).join("\n");
       if (m.neo) t += "\n\nFrom In[Neo]Sight (not the KP manual):\n" + strip(m.neo.text) + "\n" + m.neo.articles.map((a) => `${a.title}: ${a.url}`).join("\n");
       return t;
     }
@@ -239,14 +249,30 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
       }
       if (act === "open-manual") return openInManual(sheetCtx.list[sheetCtx.index]);
       if (act === "mic") return toggleMic();
+      if (act === "tour") return openTour();
       if (act === "copy-msg") { await writeClipboard(plainAnswer(+t.dataset.msg)); return flash(t, '<i class="bi bi-check2"></i> Copied'); }
       if (act === "share-msg") { try { await navigator.share({ title: "NICU Manual", text: plainAnswer(+t.dataset.msg) }); } catch {} return; }
       if (act === "gap") return reportGap(+t.dataset.msg);
+      if (t.dataset.neo) {
+        if (busy) return;
+        const i = +t.dataset.msg, id = chatId;
+        // progress shows in the answer's In[Neo]Sight box (not saved), not at the end of the chat
+        busy = true; typing = ""; history[i].neoBusy = true; render();
+        const { neo, error } = await checkNeo(history, i);
+        if (id !== chatId) return;
+        busy = false; delete history[i].neoBusy;
+        if (neo) history[i].neo = neo;
+        else history[i].neoNote = error ? "Couldn't check In[Neo]Sight: " + error : "No In[Neo]Sight article covers this question.";
+        saveHistory(history); render();
+        const el = thread.querySelector(`.nc-neo[data-of="${i}"]`); // the box, which may be under an earlier answer
+        if (el) thread.scrollTo({ top: el.getBoundingClientRect().top - thread.getBoundingClientRect().top + thread.scrollTop - 8, behavior: "smooth" });
+        return;
+      }
       if (t.dataset.ext) {
         if (busy) return;
         const i = +t.dataset.msg, id = chatId;
-        history[i].offerExternal = false;
-        busy = true; typing = "Asking the AI…"; saveHistory(history); render(); toLatest();
+        history[i].offerExternal = false; history[i].externalAsked = true;
+        busy = true; typing = t.dataset.ext === "web" ? "Searching the web…" : "Asking the AI…"; saveHistory(history); render(); toLatest();
         const reply = await answerOutside(history, i);
         if (id !== chatId) return;
         busy = false; history.push(reply); saveHistory(history); render(); toLatest();
@@ -257,6 +283,81 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
     $("#ask-backdrop").addEventListener("click", closeSheet);
     addEventListener("keydown", (ev) => { if (ev.key === "Escape" && !sheet.hidden) closeSheet(); });
 
+    // ---------- tutorial: opens by itself on the first visit; the ? button opens it again ----------
+    const TOUR_SEEN = "nicuAsk.tour";
+    const TOUR = [
+      { icon: "chat-square-text", title: "Ask the NICU Manual",
+        text: "Ask a question the way you'd ask a colleague. The answer comes from KP Riverside's NICU manual, and Ask shows which sections it used.",
+        mock: `<div class="nc-msg nc-user">Minimum KVO rate for a UVC in an ELBW baby?</div>
+          <div class="nc-msg nc-bot"><span class="tour-line"></span><span class="tour-line short"></span>
+          <div class="nc-src"><b>Sources</b> <span class="nc-chip">NICU line KVO rates</span></div></div>` },
+      { icon: "shield-lock", title: "Never enter patient information",
+        text: "Leave out names, MRNs, dates of birth, bed numbers and phone numbers. Describe the situation instead: gestational age, weight, day of life and lab values are fine." +
+          (STUDY ? " Ask also removes such details before sending, as a safety net, but don't rely on it." : ""),
+        mock: `<p class="tour-eg no"><i class="bi bi-x-circle"></i> Baby Girl Smith, MRN 1234567, needs surfactant?</p>
+          <p class="tour-eg yes"><i class="bi bi-check-circle"></i> 32 weeker on 28% FiO2 with increased work of breathing. Surfactant?</p>` },
+      { icon: "mic", title: "Type, tap or talk",
+        text: "Type your question, tap one of the examples, or tap the microphone to dictate. Dictation goes through your phone's or browser's speech service, so the same rule applies: no patient details.",
+        mock: `<div class="tour-box">Ask about any unit protocol…<i class="bi bi-mic"></i><i class="bi bi-arrow-up send"></i></div>` },
+      { icon: "book", title: "Check the source",
+        text: "Under each answer, tap a source to read that part of the manual beside the answer, with the supporting text highlighted. Open in manual takes you to the full page.",
+        mock: `<div class="nc-src"><b>Sources</b> <span class="nc-chip">Line KVO rates</span> <span class="nc-chip">UVC placement</span></div>
+          <span class="ask-btn tour-static"><i class="bi bi-book"></i> Open in manual</span>` },
+      { icon: "search", title: "When the manual doesn't cover it",
+        text: "Ask says so, then looks in In[Neo]Sight research summaries, clearly marked as not from the KP manual. If you still need more, the AI can search the web and summarize what it finds, with links to each page (neonatal-perinatal and maternal-fetal medicine questions only), or you can tap Let's discuss to email the question to the manual team. When the manual does answer, tap Check In[Neo]Sight research to see the research beside it.",
+        mock: `<div class="msg-acts"><span class="tour-chip"><i class="bi bi-globe"></i> Search the web (AI summary)</span>
+          <span class="tour-chip"><i class="bi bi-person-raised-hand"></i> Let's discuss</span></div>` },
+      { icon: "person-raised-hand", title: "Evidence checks: Let's discuss",
+        text: "Some manual sections end with an Evidence check, an AI comparison of that section with current published evidence. If an item in it is worth a conversation, tap the ✋ next to it. The protocol leads see the counts for every section on the Evidence checks page, under Tools.",
+        mock: `<div class="tour-ev"><span class="tour-ev-badge">Evidence check</span>
+          <span class="tour-ev-total">✋ 3 to discuss</span>
+          <p><span class="tour-ev-chip">Evidence differs</span> <span class="tour-line short"></span> <span class="tour-chip on"><span aria-hidden="true">✋</span> 3</span></p>
+          <p><span class="tour-ev-chip partly">Partly supported</span> <span class="tour-line short"></span> <span class="tour-chip"><span aria-hidden="true">✋</span></span></p></div>` },
+      { icon: "lightbulb", title: "Good to know",
+        text: "Answers can be wrong, and Ask is not medical advice. Check the source before acting on an answer.",
+        mock: `<ul class="tour-list">
+          <li><i class="bi bi-clipboard"></i> Copy or Share an answer; its source comes with it.</li>
+          <li><i class="bi bi-pencil-square"></i> New chat starts over.</li>
+          <li><i class="bi bi-gear"></i> Settings: ${STUDY ? "whether the source opens by itself." : "your AI model and API key."}</li>
+          <li><i class="bi bi-question-circle"></i> Opens this guide again.</li>
+          <li><i class="bi bi-info-circle"></i> Disclaimer, under the box: the AI model, its limits${STUDY ? ", and what is saved for the quality review" : ""}.</li></ul>` },
+    ];
+    const tour = $("#ask-tour");
+    let slide = 0;
+    function showSlide(n) {
+      slide = Math.max(0, Math.min(TOUR.length - 1, n));
+      const s = TOUR[slide], last = slide === TOUR.length - 1;
+      $("#tour-slide").innerHTML = `<i class="bi bi-${s.icon} tour-icon"></i>
+        <p class="tour-title" id="tour-title">${esc(s.title)}</p><p class="tour-text">${esc(s.text)}</p>
+        <div class="tour-mock" aria-hidden="true">${s.mock}</div>`;
+      $("#tour-dots").innerHTML = TOUR.map((_, i) => `<span${i === slide ? ' class="on"' : ""}></span>`).join("");
+      $("#tour-dots").setAttribute("aria-label", `Step ${slide + 1} of ${TOUR.length}`);
+      tour.querySelector('[data-tour="back"]').style.visibility = slide ? "" : "hidden";
+      tour.querySelector('[data-tour="next"]').textContent = last ? "Start asking" : "Next";
+    }
+    function openTour() { showSlide(0); tour.showModal(); tour.querySelector('[data-tour="next"]').focus(); }
+    tour.addEventListener("click", (ev) => {
+      if (ev.target === tour) return tour.close(); // the backdrop
+      const go = ev.target.closest("[data-tour]")?.dataset.tour;
+      if (go === "close" || (go === "next" && slide === TOUR.length - 1)) return tour.close();
+      if (go) showSlide(slide + (go === "next" ? 1 : -1));
+    });
+    tour.addEventListener("keydown", (ev) => {
+      if (ev.key === "ArrowRight") showSlide(slide + 1);
+      if (ev.key === "ArrowLeft") showSlide(slide - 1);
+    });
+    let touchX = null; // swipe between slides on phones
+    tour.addEventListener("touchstart", (ev) => { touchX = ev.touches[0].clientX; }, { passive: true });
+    tour.addEventListener("touchend", (ev) => {
+      const dx = ev.changedTouches[0].clientX - (touchX ?? ev.changedTouches[0].clientX);
+      if (Math.abs(dx) > 50) showSlide(slide + (dx < 0 ? 1 : -1));
+      touchX = null;
+    });
+    tour.addEventListener("close", () => { store.set(L, TOUR_SEEN, "1"); if (!composer.hidden) input.focus(); });
+
+    // disclaimer under the box: the model and its limits, not medical advice, and (the study) that questions are saved
+    composer.insertAdjacentHTML("beforeend", `<details class="ask-disc"><summary>Disclaimer</summary><div class="ask-disc-body"></div></details>`);
+
     // the chat fills the screen below its title: messages scroll inside, the text box stays at the bottom
     const fit = () => app.style.setProperty("--ask-top", Math.max(0, app.getBoundingClientRect().top + scrollY) + "px");
     fit();
@@ -265,5 +366,6 @@ const askOn = process.env.ASK !== "off"; // ASK=off at build time: Ask is announ
     if (!hasKey()) showSettings(true);
     else render();
     requestAnimationFrame(() => toLatest(false)); // open at the newest message
+    if (!store.get(L, TOUR_SEEN)) openTour();
   }
 </script>

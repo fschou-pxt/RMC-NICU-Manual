@@ -1,6 +1,6 @@
 # KP Riverside Neonatal ICU Manual — knowledge export
 
-Source: https://fschou-pxt.github.io/RMC-NICU-Manual/ (exported October 25, 2026).
+Source: https://fschou-pxt.github.io/RMC-NICU-Manual/ (exported October 31, 2026).
 Each section starts with a '## breadcrumb' line and its 'URL:' on the live site.
 
 # KP Riverside Neonatal ICU Manual
