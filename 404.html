@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The NICU Manual has moved</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://nicu-manual.pages.dev/">
+<script>
+  // Send each old page to the same page on the new site (respiratory.html -> /respiratory), keeping any #section
+  var p = location.pathname.replace(/^\/RMC-NICU-Manual/, "").replace(/\.html$/, "").replace(/\/index$/, "/");
+  location.replace("https://nicu-manual.pages.dev" + (p || "/") + location.hash);
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://nicu-manual.pages.dev/"></noscript>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f4f7f9; color: #12304a;
+         font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 34rem; margin: 16px; padding: 32px; background: #fff; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,59,113,.12); }
+  h1 { margin: 0 0 8px; font-size: 1.5rem; color: #003b71; }
+  a.btn { display: inline-block; margin-top: 16px; padding: 10px 18px; border-radius: 8px; background: #003b71; color: #fff; text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>The NICU Manual has moved</h1>
+  <p>The KP Riverside NICU Manual now lives at a new address. Please update your bookmarks.</p>
+  <a class="btn" href="https://nicu-manual.pages.dev/">Go to nicu-manual.pages.dev</a>
+</main>
+</body>
+</html>
