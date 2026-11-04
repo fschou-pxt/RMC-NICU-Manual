@@ -1,0 +1,11 @@
+# Cloudflare Pages settings for the hosted scoring app (deploy from this folder; see README.md).
+# The passcode (SCORING_PASSCODE) is a secret set in Cloudflare, not here.
+name = "nicu-evidence-scoring"
+pages_build_output_dir = "../../../research/evidence-scores/cloud-build"
+compatibility_date = "2026-10-01"
+
+# Reviewers' scores (functions/api/score.js; schema in schema.sql); free-tier D1
+[[d1_databases]]
+binding = "SCORES"
+database_name = "evidence-scores"
+database_id = "cbea4503-5be8-4784-9cb7-504270d5373f"
