@@ -15,8 +15,10 @@ Project root: `/Users/fschou/Documents/Claude/Projects/RMC-NICU-Handbook` (git b
 
 ## Steps
 
-1. **Is the night's run finished?** If `evidence/_work/nightly.lock` exists and is less than 10 hours old, or any
-   item in `evidence/queue.json` is `running`, the Mini is still working: report that and stop.
+1. **Is the night's run finished?** If `evidence/_work/nightly.lock` exists and is less than 10 hours old, the Mini
+   is still working: report that and stop. With no lock, the run is over. An item still marked `running` then means
+   the run stopped early (for example at a usage limit) and the next run resets it: name it in the report and go on
+   to step 2, so the approved notes still publish. Do not change the item.
 2. **What's new?** `git status --short evidence/` lists the changes. New or changed `evidence/<chapter>/*.json` files
    are newly approved notes. Read the last entry of `evidence/_work/nightly-log.md` for the night's summary.
    During the redo, a note with no `scope` block is an old-rule note, not new: do not count, check or report it.

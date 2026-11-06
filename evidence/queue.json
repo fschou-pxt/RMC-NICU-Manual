@@ -6,7 +6,7 @@
    "chapter": "respiratory",
    "section": "Respiratory Support Guide",
    "anchor": "respiratory.html#respiratory-support-guide",
-   "lines": "27-50",
+   "lines": "27-49",
    "file": "site/src/content/docs/respiratory.mdx",
    "slug": "respiratory-support-guide",
    "previous": {
@@ -15,14 +15,17 @@
     "finished": "2026-10-28T00:15:56-07:00",
     "result": "No clinical claims in text (all clinical content is in images/linked files). Triage: clinical 0, operational 3, definition 0, context 9."
    },
-   "status": "pending"
+   "status": "no_clinical",
+   "started": "2026-11-06T00:13:29-08:00",
+   "finished": "2026-11-06T00:15:21-08:00",
+   "result": "No clinical claims in text (all clinical content is in images/linked files, not checked). Triage: clinical 0, operational 3, definition 0, context 9."
   },
   {
    "n": 2,
    "chapter": "neurology",
    "section": "Passive Cooling for Hypoxic Ischemic Encephalopathy",
    "anchor": "neurology.html#sec-passive-cooling",
-   "lines": "362-469",
+   "lines": "362-468",
    "file": "site/src/content/docs/neurology.mdx",
    "slug": "passive-cooling-for-hypoxic-ischemic",
    "previous": {
@@ -31,14 +34,17 @@
     "finished": "2026-10-28T00:54:03-07:00",
     "result": "APPROVED after 2 reviews (1 revision). 23 claims: 11 concordant, 7 partly_concordant, 1 practice_varies, 4 insufficient; 0 discordant. 223 quotes checked."
    },
-   "status": "pending"
+   "status": "approved",
+   "started": "2026-11-06T00:13:29-08:00",
+   "finished": "2026-11-06T01:11:50-08:00",
+   "result": "APPROVED after 3 reviews (2 revisions). 30 claims: 17 concordant, 6 partly_concordant, 4 practice_varies, 3 insufficient; 0 discordant; 1 omission. 326 quotes checked, 42 references published."
   },
   {
    "n": 3,
    "chapter": "infectious-disease",
    "section": "Antibiotic Management of Suspected Sepsis in the NICU › Background, Flowchart: Antibiotic Management in NICU Suspected Bacterial Sepsis, Flowchart: Interpretation of Primary Blood Culture Results, Flowchart: Interpretation of Follow-up Blood Culture Results, Further Considerations",
    "anchor": "infectious-disease.html#further-considerations",
-   "lines": "15-60",
+   "lines": "15-59",
    "file": "site/src/content/docs/infectious-disease.mdx",
    "slug": "sepsis-antibiotic-management",
    "previous": {
@@ -47,14 +53,15 @@
     "finished": "2026-10-28T01:17:44-07:00",
     "result": "APPROVED after 2 reviews (1 revision). 26 claims: 2 concordant, 15 partly_concordant, 9 insufficient; 0 discordant. 258 quotes checked."
    },
-   "status": "pending"
+   "status": "running",
+   "started": "2026-11-06T00:13:29-08:00"
   },
   {
    "n": 4,
    "chapter": "hemonc",
    "section": "Neonatal Indirect Hyperbilirubinemia",
    "anchor": "hemonc.html#neonatal-indirect-hyperbilirubinemia",
-   "lines": "6-85",
+   "lines": "6-84",
    "file": "site/src/content/docs/hemonc.mdx",
    "slug": "neonatal-indirect-hyperbilirubinemia",
    "previous": {
@@ -63,7 +70,10 @@
     "finished": "2026-10-28T00:46:19-07:00",
     "result": "APPROVED after 2 reviews (1 revision). 8 claims: 2 concordant, 2 partly_concordant, 1 discordant, 2 practice_varies, 1 insufficient; 1 omission. 165 quotes checked, 15 references."
    },
-   "status": "pending"
+   "status": "approved",
+   "started": "2026-11-06T00:13:29-08:00",
+   "finished": "2026-11-06T01:29:45-08:00",
+   "result": "APPROVED after 4 reviews (3 revisions). 18 claims: 1 concordant, 2 partly_concordant, 1 discordant, 12 practice_varies, 2 insufficient; 2 omissions. 385 quotes checked, 29 references published."
   },
   {
    "n": 5,
