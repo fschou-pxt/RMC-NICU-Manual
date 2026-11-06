@@ -15,7 +15,7 @@ shown beside the manual as labeled, AI-generated evidence notes.
 
 The orchestrator (the main session) creates the workspace, runs the agents in order, routes Reviewer
 items back (Researcher for evidence/ref problems, Comparer for wording/verdict problems; at most 2
-revision rounds), and on APPROVED writes the published file `evidence/<chapter>/<section>.json`.
+revision rounds, plus one text-only round when no verdict is in dispute), and on APPROVED writes the published file `evidence/<chapter>/<section>.json`.
 
 ## Paths
 
@@ -37,6 +37,10 @@ and auditably:
 - `definition`: a local definition or label with no clinical recommendation.
 - `context`: background prose with no recommendation.
 
+A line is `clinical` only if the section's stated purpose is to recommend it. An item listed for another purpose
+(a product in a table of weights to subtract) is `operational`, even if it implies a clinical choice; it is
+checked where the manual recommends it.
+
 A list's lead-in ("Either of the following:") is kept with its items: a claim's text quotes the lead-in and
 the items together so any/all logic is preserved.
 
@@ -57,14 +61,18 @@ and be quoted verbatim with its location. A search snippet is a lead, never evid
 
 | Verdict | Meaning |
 |---|---|
-| `concordant` | Current evidence supports the manual's statement as written. |
-| `partly_concordant` | Supported in direction, but evidence differs on a threshold, population, or detail, or is narrower/broader. |
-| `discordant` | Current evidence recommends otherwise. |
+| `concordant` | Current evidence supports the manual's statement as written; a gap for part of the population does not change this, and the summary names it. |
+| `partly_concordant` | Supported in direction, but evidence for the section's population differs on a threshold, population, or detail. A gap alone is not a difference. |
+| `discordant` | Current evidence recommends otherwise, or no current guideline keeps the manual's specific criterion, even if the general direction is shared. |
 | `insufficient` | No adequate evidence either way (local practice choice). |
 | `practice_varies` | Guidelines or trials legitimately differ; the manual follows one accepted option. |
 
-`partly_concordant` and `discordant` get an **evidence note**: 1–3 plain sentences starting "Current
-evidence suggests…", each claim in it cited. Every verdict gets a one-sentence `summary` with citations.
+A gap alone, a non-significant result or a label that differs while the values match never lowers a verdict; the
+summary reports it. `concordant` needs a
+guideline, tested evidence or a published protocol: a line in a trial's Methods alone gives `insufficient`.
+
+`partly_concordant` and `discordant` get an **evidence note**: 1–3 plain sentences, about 600 characters at
+most, starting "Current evidence suggests…", each claim in it cited. Every verdict gets a one-sentence `summary` with citations.
 Notes describe evidence; they never instruct ("consider", not "do") and never restate the manual.
 
 ## Output schema (`comparison.json` → published `<section>.json`)
@@ -78,6 +86,12 @@ Notes describe evidence; they never instruct ("consider", not "do") and never re
   "checked": "YYYY-MM-DD",
   "generated_with": "<model names of the three agents>",
   "triage": { "clinical": 0, "operational": 0, "definition": 0, "context": 0 },
+  "scope": {
+    "population": "who the section covers, with gestational-age or weight limits",
+    "topic": "what the section is for",
+    "basis": "the heading or line that says so",
+    "set_aside": [ { "ref": "Key2023", "population": "who it studied", "reason": "why it does not match" } ]
+  },
   "claims": [
     {
       "id": "c1",
@@ -88,6 +102,7 @@ Notes describe evidence; they never instruct ("consider", not "do") and never re
       "evidence": [ { "ref": "Key2023", "quote": "verbatim", "location": "Recommendation 4.2 / Abstract / Table 2" } ]
     }
   ],
+  "omissions": [ { "id": "o1", "related_claim": "c1", "topic": "short label", "note": "Current evidence suggests … [Key2023].", "evidence": [ { "ref": "Key2023", "quote": "verbatim", "location": "…" } ] } ],
   "references": [ "<entries from refs.json, as refs.py writes them>" ],
   "review": { "verdict": "APPROVED", "rounds": 1, "date": "YYYY-MM-DD" }
 }

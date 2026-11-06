@@ -19,6 +19,7 @@ Project root: `/Users/fschou/Documents/Claude/Projects/RMC-NICU-Handbook` (git b
    item in `evidence/queue.json` is `running`, the Mini is still working: report that and stop.
 2. **What's new?** `git status --short evidence/` lists the changes. New or changed `evidence/<chapter>/*.json` files
    are newly approved notes. Read the last entry of `evidence/_work/nightly-log.md` for the night's summary.
+   During the redo, a note with no `scope` block is an old-rule note, not new: do not count, check or report it.
    - Nothing changed in `evidence/`: report "nothing new" (with the queue's counts by status) and stop.
    - Only `queue.json` or the instruction files changed (no new notes): commit them (step 4) and stop; no deploy.
 3. **Check each new note** before anything is published: it parses as JSON, `review.verdict` is `APPROVED`, its
@@ -35,8 +36,10 @@ Project root: `/Users/fschou/Documents/Claude/Projects/RMC-NICU-Handbook` (git b
 7. **Deploy**:
    - preview, from `preview/`: `npx -y wrangler@4 pages deploy ../site/dist --project-name nicu-manual-preview --branch main --commit-dirty=true`
    - public, from `public-site/`: `npx -y wrangler@4 pages deploy ../site/dist-public.nosync --project-name nicu-manual --branch main --commit-dirty=true`
+   - scoring app, from the project root: `node tools/evidence-scoring/server.mjs --build-cloud`, then from
+     `tools/evidence-scoring/cloud/`: `npx -y wrangler@4 pages deploy --project-name nicu-evidence-scoring --branch main --commit-dirty=true`
    Then confirm `https://nicu-manual.pages.dev/<page>/` returns 200 and contains the new evidence box.
-8. **Report**: the sections published (chapter › section, verdict counts), anything left out and why, and the queue's
+8. **Report**: the sections published (chapter › section, verdict counts), the scoring app's new item count, anything left out and why, and the queue's
    progress (approved / no_clinical / needs_review / error / pending).
 
 **Every report, including the ones that stop early** ("still running", "nothing new", a failed step), ends with the

@@ -1,5 +1,5 @@
 {
- "about": "Evidence-check queue (evidence/NIGHTLY.md). Taken in order of n. status: pending, running, approved, no_clinical (nothing checkable), needs_review (not approved after the revision rounds), error. Done before the queue: respiratory/lisa (2026-10-24). Left out on purpose: operational sections, the 'Old' sections (old NAS management, old early- and late-onset sepsis), the LLUCH genetics chapter and formulary.",
+ "about": "Evidence-check queue (evidence/NIGHTLY.md). Taken in order of n. status: pending, running, approved, no_clinical (nothing checkable), needs_review (not approved after the revision rounds), error. respiratory/lisa, first done before the queue (2026-10-24), is the last item. Left out on purpose: operational sections, the 'Old' sections (old NAS management, old early- and late-onset sepsis), the LLUCH genetics chapter and formulary. Redo under the section-scope rule began 2026-11-05: every item was reset to pending, and `previous` keeps its old-rule status.",
  "items": [
   {
    "n": 1,
@@ -8,11 +8,14 @@
    "anchor": "respiratory.html#respiratory-support-guide",
    "lines": "27-50",
    "file": "site/src/content/docs/respiratory.mdx",
-   "status": "no_clinical",
    "slug": "respiratory-support-guide",
-   "started": "2026-10-28T00:14:20-07:00",
-   "finished": "2026-10-28T00:15:56-07:00",
-   "result": "No clinical claims in text (all clinical content is in images/linked files). Triage: clinical 0, operational 3, definition 0, context 9."
+   "previous": {
+    "status": "no_clinical",
+    "started": "2026-10-28T00:14:20-07:00",
+    "finished": "2026-10-28T00:15:56-07:00",
+    "result": "No clinical claims in text (all clinical content is in images/linked files). Triage: clinical 0, operational 3, definition 0, context 9."
+   },
+   "status": "pending"
   },
   {
    "n": 2,
@@ -21,11 +24,14 @@
    "anchor": "neurology.html#sec-passive-cooling",
    "lines": "362-469",
    "file": "site/src/content/docs/neurology.mdx",
-   "status": "approved",
    "slug": "passive-cooling-for-hypoxic-ischemic",
-   "started": "2026-10-28T00:14:20-07:00",
-   "finished": "2026-10-28T00:54:03-07:00",
-   "result": "APPROVED after 2 reviews (1 revision). 23 claims: 11 concordant, 7 partly_concordant, 1 practice_varies, 4 insufficient; 0 discordant. 223 quotes checked."
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-28T00:14:20-07:00",
+    "finished": "2026-10-28T00:54:03-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 23 claims: 11 concordant, 7 partly_concordant, 1 practice_varies, 4 insufficient; 0 discordant. 223 quotes checked."
+   },
+   "status": "pending"
   },
   {
    "n": 3,
@@ -34,11 +40,14 @@
    "anchor": "infectious-disease.html#further-considerations",
    "lines": "15-60",
    "file": "site/src/content/docs/infectious-disease.mdx",
-   "status": "approved",
    "slug": "sepsis-antibiotic-management",
-   "started": "2026-10-28T00:14:20-07:00",
-   "finished": "2026-10-28T01:17:44-07:00",
-   "result": "APPROVED after 2 reviews (1 revision). 26 claims: 2 concordant, 15 partly_concordant, 9 insufficient; 0 discordant. 258 quotes checked."
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-28T00:14:20-07:00",
+    "finished": "2026-10-28T01:17:44-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 26 claims: 2 concordant, 15 partly_concordant, 9 insufficient; 0 discordant. 258 quotes checked."
+   },
+   "status": "pending"
   },
   {
    "n": 4,
@@ -47,11 +56,14 @@
    "anchor": "hemonc.html#neonatal-indirect-hyperbilirubinemia",
    "lines": "6-85",
    "file": "site/src/content/docs/hemonc.mdx",
-   "status": "approved",
    "slug": "neonatal-indirect-hyperbilirubinemia",
-   "started": "2026-10-28T00:14:20-07:00",
-   "finished": "2026-10-28T00:46:19-07:00",
-   "result": "APPROVED after 2 reviews (1 revision). 8 claims: 2 concordant, 2 partly_concordant, 1 discordant, 2 practice_varies, 1 insufficient; 1 omission. 165 quotes checked, 15 references."
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-28T00:14:20-07:00",
+    "finished": "2026-10-28T00:46:19-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 8 claims: 2 concordant, 2 partly_concordant, 1 discordant, 2 practice_varies, 1 insufficient; 1 omission. 165 quotes checked, 15 references."
+   },
+   "status": "pending"
   },
   {
    "n": 5,
@@ -60,11 +72,14 @@
    "anchor": "endocrine.html#hypoglycemia",
    "lines": "6-135",
    "file": "site/src/content/docs/endocrine.mdx",
-   "status": "pending",
    "slug": "hypoglycemia",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-29T00:12:43-07:00",
+    "finished": "2026-10-29T00:50:52-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 13 claims: 2 concordant, 8 partly_concordant, 2 practice_varies, 1 insufficient; 0 discordant; 2 omissions. 84 quotes checked, 9 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 6,
@@ -73,11 +88,14 @@
    "anchor": "nutrition-fluid.html#fluid-management",
    "lines": "14-73",
    "file": "site/src/content/docs/nutrition-fluid.mdx",
-   "status": "pending",
    "slug": "fluid-management",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-29T00:12:43-07:00",
+    "finished": "2026-10-29T00:50:05-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 14 claims: 3 concordant, 6 partly_concordant, 5 insufficient; 0 discordant. 156 quotes checked, 20 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 7,
@@ -86,11 +104,14 @@
    "anchor": "cardiovascular.html#hemodynamic-support",
    "lines": "8-81",
    "file": "site/src/content/docs/cardiovascular.mdx",
-   "status": "pending",
    "slug": "pphn-oxygen-airway-hemodynamics",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-29T00:12:43-07:00",
+    "finished": "2026-10-29T00:51:31-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 30 claims: 11 concordant, 13 partly_concordant, 1 discordant, 3 practice_varies, 2 insufficient. 112 quotes checked, 22 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 8,
@@ -99,11 +120,14 @@
    "anchor": "VLBW.html#thermoregulation-and-heat-loss-prevention",
    "lines": "10-54",
    "file": "site/src/content/docs/VLBW.mdx",
-   "status": "pending",
    "slug": "thermoregulation-and-heat-loss",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-29T00:12:43-07:00",
+    "finished": "2026-10-29T00:47:54-07:00",
+    "result": "APPROVED after 3 reviews (2 revisions). 20 claims: 8 concordant, 6 partly_concordant, 1 practice_varies, 5 insufficient; 0 discordant; 1 omission. 204 quotes checked, 17 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 9,
@@ -112,11 +136,14 @@
    "anchor": "DR.html#sec-dr-attendance",
    "lines": "6-54",
    "file": "site/src/content/docs/DR.mdx",
-   "status": "pending",
    "slug": "delivery-room-attendance",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-30T00:14:10-07:00",
+    "finished": "2026-10-30T01:00:06-07:00",
+    "result": "Approved after 3 reviews (2 revisions). 27 claims: 8 concordant, 12 partly_concordant, 2 practice_varies, 5 insufficient, 0 discordant; 1 omission. Triage: clinical 27, operational 1, definition 0, context 1."
+   },
+   "status": "pending"
   },
   {
    "n": 10,
@@ -125,24 +152,30 @@
    "anchor": "periviability.html#sec-antenatal-consult",
    "lines": "20-54",
    "file": "site/src/content/docs/periviability.mdx",
-   "status": "pending",
    "slug": "antenatal-consult",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-30T00:14:10-07:00",
+    "finished": "2026-10-30T00:51:36-07:00",
+    "result": "Approved after 3 reviews (2 revisions). 9 claims: 6 concordant, 2 partly_concordant, 1 practice_varies, 0 discordant (c7 moved from discordant to partly_concordant in revision); 2 omissions. Triage: clinical 9, operational 2, definition 0, context 0."
+   },
+   "status": "pending"
   },
   {
    "n": 11,
    "chapter": "gastrointestinal",
    "section": "Necrotizing Enterocolitis (NEC)",
    "anchor": "gastrointestinal.html#sec-nec",
-   "lines": "50-83",
+   "lines": "50-82",
    "file": "site/src/content/docs/gastrointestinal.mdx",
-   "status": "pending",
    "slug": "necrotizing-enterocolitis",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-30T00:14:10-07:00",
+    "finished": "2026-10-30T00:54:22-07:00",
+    "result": "Approved after 3 reviews (2 revisions). 11 claims: 5 concordant, 4 partly_concordant, 2 insufficient, 0 discordant; 1 omission. Triage: clinical 11, operational 1, definition 0, context 2. Bell criteria and antibiotic algorithm are images (not checked)."
+   },
+   "status": "pending"
   },
   {
    "n": 12,
@@ -151,11 +184,14 @@
    "anchor": "renal-urology.html#hydronephrosis",
    "lines": "6-47",
    "file": "site/src/content/docs/renal-urology.mdx",
-   "status": "pending",
    "slug": "hydronephrosis",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-30T00:14:10-07:00",
+    "finished": "2026-10-30T00:50:53-07:00",
+    "result": "Approved after 2 reviews (1 revision). 11 claims: 2 concordant, 5 partly_concordant, 3 practice_varies, 1 insufficient, 0 discordant; 1 omission. Triage: clinical 11, operational 2, definition 0, context 1. 13 refs published."
+   },
+   "status": "pending"
   },
   {
    "n": 13,
@@ -164,11 +200,14 @@
    "anchor": "surgical.html#surgery",
    "lines": "6-107",
    "file": "site/src/content/docs/surgical.mdx",
-   "status": "pending",
    "slug": "surgery",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-31T00:14:14-07:00",
+    "finished": "2026-10-31T00:47:59-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 12 claims: 7 concordant, 2 partly_concordant, 3 insufficient; 0 discordant; 0 omissions. 145 quotes checked, 15 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 14,
@@ -177,11 +216,14 @@
    "anchor": "admission.html#central-line-placement",
    "lines": "28-106",
    "file": "site/src/content/docs/admission.mdx",
-   "status": "pending",
    "slug": "central-line-placement",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-31T00:14:14-07:00",
+    "finished": "2026-10-31T00:52:50-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 9 claims: 6 partly_concordant, 3 insufficient; 0 discordant; 0 omissions. 128 quotes checked, 26 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 15,
@@ -190,11 +232,14 @@
    "anchor": "discharge.html#sec-discharge-criteria",
    "lines": "7-25",
    "file": "site/src/content/docs/discharge.mdx",
-   "status": "pending",
    "slug": "general-discharge-criteria",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-31T00:14:14-07:00",
+    "finished": "2026-10-31T00:39:52-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 7 claims: 4 concordant, 1 partly_concordant, 2 insufficient; 0 discordant; 2 omissions. 73 quotes checked, 11 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 16,
@@ -203,11 +248,14 @@
    "anchor": "respiratory.html#sec-nava",
    "lines": "51-150",
    "file": "site/src/content/docs/respiratory.mdx",
-   "status": "pending",
    "slug": "neurally-adjusted-ventilatory-assist",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-10-31T00:14:14-07:00",
+    "finished": "2026-10-31T00:46:09-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 18 claims: 9 concordant, 8 partly_concordant, 1 practice_varies; 0 discordant; 0 omissions. 216 quotes checked, 14 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 17,
@@ -216,11 +264,14 @@
    "anchor": "neurology.html#sec-th-protocol",
    "lines": "470-553",
    "file": "site/src/content/docs/neurology.mdx",
-   "status": "pending",
    "slug": "practice-guideline-therapeutic",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-01T00:14:18-07:00",
+    "finished": "2026-11-01T00:34:38-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 16 claims: 10 concordant, 5 partly_concordant, 1 insufficient; 0 discordant; 0 omissions. 128 quotes checked, 12 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 18,
@@ -229,11 +280,14 @@
    "anchor": "infectious-disease.html#sec-antibiotics-sepsis",
    "lines": "61-116",
    "file": "site/src/content/docs/infectious-disease.mdx",
-   "status": "pending",
    "slug": "sepsis-antibiotic-dosing",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-01T00:14:18-07:00",
+    "finished": "2026-11-01T00:46:03-07:00",
+    "result": "APPROVED after 3 reviews (2 revisions). 9 claims: 6 partly_concordant, 2 discordant, 1 practice_varies; 0 omissions. 154 quotes checked, 16 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 19,
@@ -242,11 +296,14 @@
    "anchor": "hemonc.html#anemia-of-prematurity-management-for-elganelbw",
    "lines": "140-291",
    "file": "site/src/content/docs/hemonc.mdx",
-   "status": "pending",
    "slug": "anemia-of-prematurity-management-for",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-01T00:14:18-07:00",
+    "finished": "2026-11-01T00:55:39-07:00",
+    "result": "APPROVED after 3 reviews (2 revisions). 16 claims: 3 concordant, 8 partly_concordant, 5 insufficient; 0 discordant; 1 omission. 149 quotes checked, 27 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 20,
@@ -255,11 +312,14 @@
    "anchor": "endocrine.html#secondary-screening-for-neonatal-thyroid-conditions",
    "lines": "136-222",
    "file": "site/src/content/docs/endocrine.mdx",
-   "status": "pending",
    "slug": "secondary-screening-for-neonatal",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-01T00:14:18-07:00",
+    "finished": "2026-11-01T00:41:22-07:00",
+    "result": "APPROVED after 2 reviews (1 revision). 15 claims: 5 concordant, 8 partly_concordant, 2 practice_varies; 0 discordant; 0 omissions. 171 quotes checked, 16 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 21,
@@ -268,11 +328,14 @@
    "anchor": "nutrition-fluid.html#total-parenteral-nutrition-tpn",
    "lines": "74-89",
    "file": "site/src/content/docs/nutrition-fluid.mdx",
-   "status": "pending",
    "slug": "total-parenteral-nutrition",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-02T00:13:15-08:00",
+    "finished": "2026-11-02T00:36:38-08:00",
+    "result": "APPROVED after 2 reviews (1 revision). 4 claims: 3 partly_concordant, 1 insufficient; 0 discordant; 1 omission. 50 quotes checked, 6 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 22,
@@ -281,11 +344,14 @@
    "anchor": "cardiovascular.html#sec-pphn",
    "lines": "82-202",
    "file": "site/src/content/docs/cardiovascular.mdx",
-   "status": "pending",
    "slug": "pphn-sedation-ino-transfer",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-02T00:13:15-08:00",
+    "finished": "2026-11-02T00:48:18-08:00",
+    "result": "APPROVED after 2 reviews (1 revision). 29 claims: 3 concordant, 21 partly_concordant, 1 discordant, 1 practice_varies, 3 insufficient; 2 omissions. 129 quotes checked, 24 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 23,
@@ -294,37 +360,46 @@
    "anchor": "VLBW.html#sec-elgan-elbw-screening",
    "lines": "79-181",
    "file": "site/src/content/docs/VLBW.mdx",
-   "status": "pending",
    "slug": "screening",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-02T00:13:15-08:00",
+    "finished": "2026-11-02T00:45:03-08:00",
+    "result": "APPROVED after 1 reviews (0 revisions). 13 claims: 3 concordant, 6 partly_concordant, 1 practice_varies, 3 insufficient; 0 discordant; 1 omission. 58 quotes checked, 23 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 24,
    "chapter": "DR",
    "section": "Thermoregulation and Heat Loss Prevention",
    "anchor": "DR.html#thermoregulation-and-heat-loss-prevention",
-   "lines": "55-77",
+   "lines": "55-76",
    "file": "site/src/content/docs/DR.mdx",
-   "status": "pending",
    "slug": "thermoregulation-and-heat-loss",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-02T00:13:15-08:00",
+    "finished": "2026-11-02T00:36:53-08:00",
+    "result": "APPROVED after 2 reviews (1 revision). 12 claims: 4 concordant, 7 partly_concordant, 1 insufficient; 0 discordant; 1 omission. 68 quotes checked, 16 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 25,
    "chapter": "periviability",
    "section": "Neonatologists’ Role",
    "anchor": "periviability.html#sec-neo-role",
-   "lines": "55-72",
+   "lines": "55-71",
    "file": "site/src/content/docs/periviability.mdx",
-   "status": "pending",
    "slug": "neonatologists-role",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-03T00:13:04-08:00",
+    "finished": "2026-11-03T00:40:04-08:00",
+    "result": "APPROVED after 3 reviews (2 revisions). 3 claims: 1 concordant, 2 partly_concordant; 0 discordant; 1 omission. 60 quotes checked, 7 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 26,
@@ -333,11 +408,14 @@
    "anchor": "gastrointestinal.html#cholestasis",
    "lines": "6-37",
    "file": "site/src/content/docs/gastrointestinal.mdx",
-   "status": "pending",
    "slug": "cholestasis",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-03T00:13:04-08:00",
+    "finished": "2026-11-03T00:40:30-08:00",
+    "result": "APPROVED after 3 reviews (2 revisions). 19 claims: 9 concordant, 10 partly_concordant; 0 discordant; 1 omission. 152 quotes checked, 14 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 27,
@@ -346,11 +424,14 @@
    "anchor": "renal-urology.html#cryptorchidism",
    "lines": "48-53",
    "file": "site/src/content/docs/renal-urology.mdx",
-   "status": "pending",
    "slug": "cryptorchidism",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-03T00:13:04-08:00",
+    "finished": "2026-11-03T00:27:45-08:00",
+    "result": "APPROVED after 2 reviews (1 revision). 4 claims: 1 concordant, 3 partly_concordant; 0 discordant; 1 omission. 71 quotes checked, 8 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 28,
@@ -359,115 +440,142 @@
    "anchor": "admission.html#birth-size-measurements",
    "lines": "6-27",
    "file": "site/src/content/docs/admission.mdx",
-   "status": "pending",
    "slug": "birth-size-measurements",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-03T00:13:04-08:00",
+    "finished": "2026-11-03T00:31:07-08:00",
+    "result": "APPROVED after 3 reviews (2 revisions). 2 claims: 1 partly_concordant, 1 practice_varies; 0 discordant; 1 omission. 58 quotes checked, 5 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 29,
    "chapter": "discharge",
    "section": "Discharge Diet",
    "anchor": "discharge.html#discharge-diet",
-   "lines": "26-111",
+   "lines": "26-110",
    "file": "site/src/content/docs/discharge.mdx",
-   "status": "pending",
    "slug": "discharge-diet",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-04T00:13:02-08:00",
+    "finished": "2026-11-04T01:35:01-08:00",
+    "result": "17 claims: 4 concordant, 10 partly_concordant, 1 practice_varies, 2 insufficient; 1 omissions; 3 reviews"
+   },
+   "status": "pending"
   },
   {
    "n": 30,
    "chapter": "respiratory",
    "section": "High-Frequency Jet Ventilator (HFJV)",
    "anchor": "respiratory.html#high-frequency-jet-ventilator-hfjv",
-   "lines": "151-260",
+   "lines": "151-259",
    "file": "site/src/content/docs/respiratory.mdx",
-   "status": "pending",
    "slug": "high-frequency-jet-ventilator",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-04T00:13:02-08:00",
+    "finished": "2026-11-04T01:27:47-08:00",
+    "result": "35 claims: 11 concordant, 16 partly_concordant, 1 discordant, 3 practice_varies, 4 insufficient; 3 omissions; 3 reviews"
+   },
+   "status": "pending"
   },
   {
    "n": 31,
    "chapter": "neurology",
    "section": "Neonatal Abstinence Syndrome - Eat, Sleep, Console",
    "anchor": "neurology.html#sec-nas-esc",
-   "lines": "6-204",
+   "lines": "6-203",
    "file": "site/src/content/docs/neurology.mdx",
-   "status": "pending",
    "slug": "neonatal-abstinence-syndrome-eat-sleep",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-04T00:13:02-08:00",
+    "finished": "2026-11-04T01:12:58-08:00",
+    "result": "38 claims: 10 concordant, 19 partly_concordant, 5 practice_varies, 4 insufficient; 2 omissions; 2 reviews"
+   },
+   "status": "pending"
   },
   {
    "n": 32,
    "chapter": "infectious-disease",
    "section": "Urinary Tract Infection",
    "anchor": "infectious-disease.html#sec-urinary-tract-infection",
-   "lines": "190-217",
+   "lines": "190-216",
    "file": "site/src/content/docs/infectious-disease.mdx",
-   "status": "pending",
    "slug": "urinary-tract-infection",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "needs_review",
+    "started": "2026-11-04T00:13:02-08:00",
+    "finished": "2026-11-04T00:52:37-08:00",
+    "result": "Not approved after 3 reviews (2 revisions); nothing published. 6 claims: 4 concordant, 1 partly_concordant, 1 insufficient; 0 discordant; 2 omissions. Open mandatory item (round 3, Comparer 1): o1 note, first sentence: change \"in the two guidelines that could be read in full:\" to \"in the two national or society guidelines that could be read in full:\". Gaps: NICE NG224 withdrawn and NG195 not retrievable (403); AAP 2026 abstract only."
+   },
+   "status": "pending"
   },
   {
    "n": 33,
    "chapter": "hemonc",
    "section": "Vitamin K Administration at Birth",
    "anchor": "hemonc.html#sec-vitK",
-   "lines": "304-330",
+   "lines": "304-329",
    "file": "site/src/content/docs/hemonc.mdx",
-   "status": "pending",
    "slug": "vitamin-k-administration-at-birth",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "needs_review",
+    "started": "2026-11-05T00:12:59-08:00",
+    "finished": "2026-11-05T01:52:36-08:00",
+    "result": "NOT APPROVED after 3 reviews (2 revisions); not published. 11 claims: 4 concordant, 5 partly_concordant, 2 practice_varies; 0 discordant; 2 omissions. One open mandatory item (reviews/round_3.md, COMPARER-FIX 1): c1 note sentence 2, replace 'it adds that there are no randomized head-to-head trials, that surveillance data are at risk of underreporting, and that the oral route is not appropriate for preterm infants [Mihatsch2016].' with 'it adds that the efficiency of individual policies can only be assessed by surveillance data, which are at risk of underreporting, and that the oral route is not appropriate for preterm infants [Mihatsch2016].' and change that quote's location to 'Oral Supplementation of Vitamin K, following the sentence on the 3 oral prophylaxis patterns'."
+   },
+   "status": "pending"
   },
   {
    "n": 34,
    "chapter": "endocrine",
    "section": "Screening Guidelines for Neonatal Graves Disease",
    "anchor": "endocrine.html#screening-guidelines-for-neonatal-graves-disease",
-   "lines": "223-247",
+   "lines": "223-246",
    "file": "site/src/content/docs/endocrine.mdx",
-   "status": "pending",
    "slug": "screening-guidelines-for-neonatal",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-05T00:12:59-08:00",
+    "finished": "2026-11-05T01:22:46-08:00",
+    "result": "APPROVED after 2 reviews (1 revision). 12 claims: 5 concordant, 5 partly_concordant, 1 discordant, 1 insufficient; 0 omissions. 223 quotes checked, 15 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 35,
    "chapter": "nutrition-fluid",
    "section": "Postnatal Enteral Nutrition and Growth",
    "anchor": "nutrition-fluid.html#postnatal-enteral-nutrition-and-growth",
-   "lines": "144-166",
+   "lines": "144-165",
    "file": "site/src/content/docs/nutrition-fluid.mdx",
-   "status": "pending",
    "slug": "postnatal-enteral-nutrition-and-growth",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-05T00:12:59-08:00",
+    "finished": "2026-11-05T01:12:24-08:00",
+    "result": "APPROVED after 3 reviews (2 revisions). 8 claims: 2 concordant, 6 partly_concordant; 0 discordant; 1 omission. 176 quotes checked, 14 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 36,
    "chapter": "cardiovascular",
    "section": "Supraventricular Tachyarrhythmia",
    "anchor": "cardiovascular.html#supraventricular-tachyarrhythmia",
-   "lines": "203-216",
+   "lines": "203-215",
    "file": "site/src/content/docs/cardiovascular.mdx",
-   "status": "pending",
    "slug": "supraventricular-tachyarrhythmia",
-   "started": null,
-   "finished": null,
-   "result": null
+   "previous": {
+    "status": "approved",
+    "started": "2026-11-05T00:12:59-08:00",
+    "finished": "2026-11-05T02:19:50-08:00",
+    "result": "APPROVED after 3 reviews (2 revisions). 4 claims: 1 concordant, 3 partly_concordant; 0 discordant; 3 omissions. 206 quotes checked, 31 references published."
+   },
+   "status": "pending"
   },
   {
    "n": 37,
@@ -975,6 +1083,20 @@
    "started": null,
    "finished": null,
    "result": null
+  },
+  {
+   "n": 76,
+   "chapter": "respiratory",
+   "section": "Least Invasive Surfactant Administration",
+   "anchor": "respiratory.html#least-invasive-surfactant-administration",
+   "lines": "7-36",
+   "file": "site/src/content/docs/respiratory.mdx",
+   "status": "pending",
+   "slug": "lisa",
+   "previous": {
+    "status": "approved",
+    "finished": "2026-10-24"
+   }
   }
  ]
 }

@@ -24,12 +24,18 @@ Write: `reviews/round_<N>.md` only.
 4. **Coverage:** judge whether the search in `queries.md` was adequate for each claim (current guideline
    version found? a major trial or review missing that you can name from the retrieved documents' own reference
    lists?). Inadequate search: RESEARCHER-FIX with the specific gap.
-5. **Verdicts:** for every claim, re-derive the verdict from the evidence and the manual's exact text,
+5. **Scope:** confirm `scope` matches the section's headings, chapter, `brief.md` and `## Population context`,
+   and that a line's broad wording was not read as infants of every gestational age. Check that context's
+   quotes like any other, and that they support the reading. For every quote in `comparison.json`, confirm from the source that its population matches the scope;
+   evidence from another care setting counts if the infants match and the ruling states the setting. For
+   every `set_aside` entry, confirm it was rightly left out. Errors: COMPARER-FIX. Do not ask for evidence
+   or claims outside the scope (steps 2 and 4).
+6. **Verdicts:** for every claim, re-derive the verdict from the matching evidence and the manual's exact text,
    including any/all logic. Disagreement: COMPARER-FIX with your reasoning and the verdict you would assign.
-6. **Notes and summaries:** every sentence cited, the citation supports that exact sentence, numbers match the
-   source, notes start "Current evidence suggests…", describe rather than instruct, and do not restate the
-   manual. Problems: COMPARER-FIX.
-7. **Write `reviews/round_<N>.md`:**
+7. **Notes and summaries:** every sentence cited, the citation supports that exact sentence, numbers match the
+   source, notes start "Current evidence suggests…", stay within about 600 characters, describe rather than
+   instruct, and do not restate the manual. Apply PIPELINE's verdict rules on gaps, non-significant results, labels and Methods lines. Problems: COMPARER-FIX.
+8. **Write `reviews/round_<N>.md`:**
 
 ```
 # Review round N: <chapter> / <section>

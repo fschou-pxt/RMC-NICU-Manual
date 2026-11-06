@@ -15,25 +15,43 @@ Read `evidence/PIPELINE.md` (Verdicts, Output schema) before starting.
 ## Output
 
 `comparison.json` in the PIPELINE.md schema (fill `chapter`, `section`, `anchor`, `source`, `checked`,
-`generated_with` with the model you run as, `triage` counts from `triage.json`, and `claims`; leave
+`generated_with` with the model you run as, `triage` counts from `triage.json`, `scope`, and `claims`; leave
 `references` as `[]` and `review` as `null`: the orchestrator fills them).
 
 ## Procedure
 
-1. For each clinical claim in `triage.json`, read the manual text exactly as written, including its lead-in
+1. **State the scope first.** Before reading any evidence, fill `scope` in `comparison.json`: `population` (who
+   the section covers, from its headings and chapter, with gestational-age or weight limits), `topic` (what the
+   section is for) and `basis` (the heading or line that says so). A broad phrase on one line ("any baby", "all
+   infants") does not mean infants of every gestational age: use the reading in `## Population context` of
+   `evidence_sheet.md` and name that group in `population`. Otherwise only a named group (a gestational age,
+   weight or diagnosis) changes the population for that line.
+2. For each clinical claim in `triage.json`, read the manual text exactly as written, including its lead-in
    and any/all logic ("Either of the following" means one criterion suffices).
-2. Read its evidence in `evidence_sheet.md` and, for each quote you rely on, confirm it in the source text or
+3. Read its evidence in `evidence_sheet.md` and, for each quote you rely on, confirm it in the source text or
    abstract yourself.
-3. Assign one verdict (`concordant`, `partly_concordant`, `discordant`, `insufficient`, `practice_varies`).
-   Judge the claim as written: a threshold, population, timing, or technique detail that differs from the
-   evidence makes it at most `partly_concordant`. Something the manual simply does not mention is not a
-   discordance; you may add it as an `omission` entry only if a current guideline makes it a core part of the
-   same recommendation (for example a premedication or pressure requirement attached to the same indication).
-4. Write `summary` (one sentence, every factual statement cited as [Key]) for every claim. For
-   `partly_concordant` and `discordant`, write `note`: 1–3 plain sentences that start "Current evidence
-   suggests…", describe the evidence rather than instruct, and cite each statement.
-5. Fill `evidence` with the quotes you relied on (`ref`, verbatim `quote`, `location`).
-6. Return: counts by verdict, any claim you could not judge and why, and any omission entries.
+4. Use only evidence that matches the scope: its population is the section's or contains it (a <34-week
+   guideline matches an ELGAN section). Evidence covering part of the population counts for that part. Evidence from
+   another care setting counts if the infants match, and the ruling states the setting. Do not cite evidence that covers only other infants, or
+   evidence from adults, older children or animals, and do not let it affect the verdict; list it in
+   `scope.set_aside` (`ref`, `population`, `reason`). A mixed study counts only if it reports this section's
+   infants separately (older NICU infants count for a birth-time line only if newborns at birth are reported
+   separately); a label or manufacturer document counts only where it addresses them.
+5. Assign one verdict (`concordant`, `partly_concordant`, `discordant`, `insufficient`, `practice_varies`).
+   Judge the claim as written, within the scope: a threshold, population, timing, or technique detail that
+   differs from the matching evidence makes it at most `partly_concordant`. A gap alone (no evidence for part of
+   the population) never lowers a verdict: the `summary` names the gap. A non-significant result, or a label that differs while the
+   values match, never lowers a verdict either: it stays in the `summary`. If no matching evidence addresses the claim's
+   specific content, or the only source is a line in a trial's Methods, the verdict is `insufficient`. Something the manual simply does not mention is not a discordance; you may add it
+   as an `omission` entry only if it falls within the section's `topic` and a current guideline makes it a core
+   part of the same recommendation (for example a premedication or pressure requirement attached to the same
+   indication).
+6. Write `summary` (one sentence, every factual statement cited as [Key]) for every claim. For
+   `partly_concordant` and `discordant`, write `note`: 1–3 plain sentences, about 600 characters at most, that
+   start "Current evidence suggests…", give the main point, describe the evidence rather than instruct, and cite
+   each statement. Details stay in the `summary` and `evidence`.
+7. Fill `evidence` with the quotes you relied on (`ref`, verbatim `quote`, `location`).
+8. Return: the scope, what was set aside, counts by verdict, any claim you could not judge and why, and any omission entries.
 
 ## Writing rules
 

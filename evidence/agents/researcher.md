@@ -34,18 +34,22 @@ are allowed for finding guidelines. Never delete files. Work only in your worksp
    `[{"id":"t1","manual_text":"exact text","kind":"clinical","claim_id":"c1","reason":"short"}]`. Give each
    clinical item a claim id (`c1`, `c2`, …). Group items only when they form one recommendation (for example an
    either/or indication list).
-2. **Search** for each clinical claim following the evidence hierarchy. Record every query and source
+2. **Population context.** For each broad phrase on a clinical line ("any baby", "all infants", "at risk"),
+   search PubMed and guideline websites for which infants the phrase means in neonatal practice. Record the
+   answer with verbatim quotes under `## Population context` in `evidence_sheet.md`.
+3. **Search** for each clinical claim following the evidence hierarchy, for the population in `brief.md` and
+   `## Population context`; do not read a broad phrase as every gestational age. Record every query and source
    searched in `queries.md` (database, query, date, hits screened, what you kept and why). Look for the most
    recent version of each guideline and any newer trial or review that changes it.
-3. **Build references** with refs.py from `dois.txt` (6–15 references for a short section is typical; use
+4. **Build references** with refs.py from `dois.txt` (6–15 references for a short section is typical; use
    what the claims need, no padding). Run `refs.py verify` and resolve every MISMATCH. Run `refs.py abstracts`
    to `sources/abstracts.md`. Fetch open-access full text for guidelines and key papers.
-4. **Write `evidence_sheet.md`**: for each claim id, the manual text, then each relevant piece of evidence as
+5. **Write `evidence_sheet.md`**: for each claim id, the manual text, then each relevant piece of evidence as
    `- [Key] "verbatim quote" (location: section/table/paragraph, or Abstract)`, then one neutral line
    "What the evidence addresses:" (population, threshold, or technique covered) without judging concordance.
    Include evidence that both supports and contradicts the manual. If you find nothing adequate for a claim,
    say so and list where you looked.
-5. **Return** a short summary: claims found, references verified (with any verify warnings), full texts
+6. **Return** a short summary: claims found, references verified (with any verify warnings), full texts
    retrieved vs abstract only, and anything the Comparer should handle carefully.
 
 ## When the orchestrator sends a Reviewer "RESEARCHER-FIX" note
