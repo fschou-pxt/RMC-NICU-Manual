@@ -53,8 +53,10 @@
     "finished": "2026-10-28T01:17:44-07:00",
     "result": "APPROVED after 2 reviews (1 revision). 26 claims: 2 concordant, 15 partly_concordant, 9 insufficient; 0 discordant. 258 quotes checked."
    },
-   "status": "running",
-   "started": "2026-11-06T00:13:29-08:00"
+   "status": "approved",
+   "started": "2026-11-07T00:13:51-08:00",
+   "finished": "2026-11-07T00:19:53-08:00",
+   "result": "APPROVED after 4 reviews (3 revisions). 33 claims: 12 concordant, 6 partly_concordant, 2 practice_varies, 13 insufficient; 0 discordant; 0 omissions. 353 quotes checked, 46 references published."
   },
   {
    "n": 4,
@@ -89,7 +91,10 @@
     "finished": "2026-10-29T00:50:52-07:00",
     "result": "APPROVED after 2 reviews (1 revision). 13 claims: 2 concordant, 8 partly_concordant, 2 practice_varies, 1 insufficient; 0 discordant; 2 omissions. 84 quotes checked, 9 references published."
    },
-   "status": "pending"
+   "status": "approved",
+   "started": "2026-11-07T00:13:51-08:00",
+   "finished": "2026-11-07T01:18:17-08:00",
+   "result": "APPROVED after 3 reviews (2 revisions). 13 claims: 2 concordant, 7 partly_concordant, 4 practice_varies; 0 discordant; 2 omissions. 431 quotes checked, 19 references published."
   },
   {
    "n": 6,
@@ -105,7 +110,10 @@
     "finished": "2026-10-29T00:50:05-07:00",
     "result": "APPROVED after 2 reviews (1 revision). 14 claims: 3 concordant, 6 partly_concordant, 5 insufficient; 0 discordant. 156 quotes checked, 20 references published."
    },
-   "status": "pending"
+   "status": "approved",
+   "started": "2026-11-07T00:13:51-08:00",
+   "finished": "2026-11-07T01:13:46-08:00",
+   "result": "APPROVED after 3 reviews (2 revisions). 14 claims: 5 concordant, 6 partly_concordant, 2 practice_varies, 1 insufficient; 0 discordant; 1 omission. 286 quotes checked, 40 references published."
   },
   {
    "n": 7,
@@ -121,7 +129,10 @@
     "finished": "2026-10-29T00:51:31-07:00",
     "result": "APPROVED after 2 reviews (1 revision). 30 claims: 11 concordant, 13 partly_concordant, 1 discordant, 3 practice_varies, 2 insufficient. 112 quotes checked, 22 references published."
    },
-   "status": "pending"
+   "status": "approved",
+   "started": "2026-11-07T00:13:51-08:00",
+   "finished": "2026-11-07T01:16:44-08:00",
+   "result": "APPROVED after 3 reviews (2 revisions). 33 claims: 12 concordant, 14 partly_concordant, 1 discordant, 5 practice_varies, 1 insufficient; 2 omissions. 418 quotes checked, 29 references published."
   },
   {
    "n": 8,

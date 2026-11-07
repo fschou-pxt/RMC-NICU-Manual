@@ -1,0 +1,1862 @@
+{
+ "chapter": "cardiovascular",
+ "section": "Persistent Pulmonary Hypertension of Newborn (PPHN) › Oxygenation index, Diagnosis modality, Oxygen therapy (intentional use of increased FiO2), Airway management, Hemodynamic support",
+ "anchor": "cardiovascular.html#hemodynamic-support",
+ "source": {
+  "file": "site/src/content/docs/cardiovascular.mdx",
+  "lines": "8-81",
+  "manual_commit": "398c583"
+ },
+ "checked": "2026-11-07",
+ "generated_with": "Researcher, Comparer, Reviewer: claude-opus-5-5",
+ "triage": {
+  "clinical": 33,
+  "operational": 0,
+  "definition": 1,
+  "context": 3
+ },
+ "scope": {
+  "population": "Term and near-term (late preterm) newborn infants, about ≥34 weeks' gestation, with suspected or confirmed PPHN, without congenital diaphragmatic hernia unless stated. The manual limits its airway and iNO lines to ≥35 weeks; line 46 separately names infants <35 weeks, so evidence on preterm infants counts for that line only.",
+  "topic": "Grading, recognition and acute management of PPHN: oxygenation index, diagnosis, intentional oxygen therapy, airway and arterial access, and hemodynamic support with vasoactive drugs.",
+  "basis": "Cardiovascular chapter, heading 'Persistent Pulmonary Hypertension of Newborn (PPHN)' (line 6) and subheadings at lines 8, 19, 25, 42 and 48, read with '## Population context' of evidence_sheet.md.",
+  "set_aside": [
+   {
+    "ref": "Lesneski2020",
+    "population": "Lamb model of PPHN",
+    "reason": "Animal study; not used for c5, c11 or c12."
+   },
+   {
+    "ref": "Amer2019",
+    "population": "Piglet model of PPHN",
+    "reason": "Animal study; not used for c27."
+   },
+   {
+    "ref": "Liet2002",
+    "population": "Hypotensive preterm infants with a patent ductus arteriosus",
+    "reason": "Preterm infants only; not used for c22."
+   },
+   {
+    "ref": "Noori2006",
+    "population": "15 preterm and 5 term vasopressor-treated neonates without a patent ductus arteriosus",
+    "reason": "Mixed study, mostly preterm; the abstract gives no separate values for the 5 term infants; not used for c25."
+   },
+   {
+    "ref": "Budniok2021",
+    "population": "All neonates given vasopressin in two level III units, median postnatal age 14 days",
+    "reason": "Mixed cohort with no separate report for term or near-term infants with PPHN; not used for c28 or c29."
+   },
+   {
+    "ref": "Matsushita2024",
+    "population": "Neonates and children with heart failure or pulmonary hypertension",
+    "reason": "Mixed paediatric meta-analysis with no separately usable result in the abstract for this section's infants; not used for c30."
+   },
+   {
+    "ref": "Baczynski2025",
+    "population": "Very preterm neonates (<32 weeks) with acute pulmonary hypertension treated with iNO",
+    "reason": "Prognostic cohort of very preterm infants all treated with iNO; it has no untreated comparison and does not test the unit's 35-week limit, and it is not in the sheet's c14 evidence."
+   },
+   {
+    "ref": "Siefkes2022",
+    "population": "Protocol for a saturation-target trial in neonates with PH",
+    "reason": "No results; its 95-99% arm is a hypothesis, not evidence; not used for c8."
+   },
+   {
+    "ref": "Lakshminrusimha2024",
+    "population": "BPD-associated and CDH-associated pulmonary hypertension (its subgroup targets only)",
+    "reason": "Only those subgroup targets are set aside; the acute PPHN targets for late preterm and term infants are used."
+   },
+   {
+    "ref": "Hilgendorff2016",
+    "population": "BPD-associated pulmonary hypertension (its BPD targets only)",
+    "reason": "Only those targets are set aside; recommendations for PPHN are used."
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "$Oxygenation\\ index\\ (OI)\\ =\\ \\frac{FiO_{2}\\times{MAP}}{PaO_{2}}$",
+   "verdict": "partly_concordant",
+   "summary": "Published definitions carry a ×100 term when FiO2 is a fraction, or enter FiO2 as a percentage [ELSO2013; Rawat2015; Ball2023; Mohamed2026; Hilgendorff2016], and the PaO2 site varies, post-ductal in ELSO and typically pre-ductal in one review [ELSO2013; Chandrasekharan2020].",
+   "note": "Current evidence suggests the index is calculated with a ×100 term when FiO2 is a fraction, or with FiO2 entered as a percentage, the scale on which published severity and ECMO values are set [ELSO2013; Rawat2015; Ball2023; Hilgendorff2016]. The sampling site also affects the value: ELSO specifies post-ductal PaO2, and a UK review advises recording the site [ELSO2013; Mohamed2026].",
+   "evidence": [
+    {
+     "ref": "ELSO2013",
+     "quote": "Oxygenation Index: Mean airway P x FiO2 x 100",
+     "location": "I.A Indications, p3"
+    },
+    {
+     "ref": "ELSO2013",
+     "quote": "Post ductal PaO2",
+     "location": "I.A Indications, p3 (denominator of the OI formula)"
+    },
+    {
+     "ref": "Rawat2015",
+     "quote": "Oxygenation index (OI=mean airway pressure MAP × FiO2 × 100÷PaO2) is used to assess severity of hypoxic respiratory failure (HRF) and persistent pulmonary hypertension of the newborn (PPHN).",
+     "location": "Background"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "For this calculation, the fraction of inspired oxygen (FiO2) is entered as a percentage",
+     "location": "Equipment and Monitoring: Monitoring"
+    },
+    {
+     "ref": "Hilgendorff2016",
+     "quote": "(OI): FiO 2%×MAP/pO2",
+     "location": "Oxygenation index definition in the iNO paragraph"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "FiO₂ should be expressed as a fraction.",
+     "location": "Review: oxygenation index (formula with ×100)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "The sampling site must therefore be stated whenever the index is recorded or handed over",
+     "location": "Review: oxygenation index"
+    },
+    {
+     "ref": "Chandrasekharan2020",
+     "quote": "Preductal arterial oxygenation (PaO2) is typically used to assess the severity (based on oxygenation index), management, and evaluate response to therapy in PPHN",
+     "location": "Section 2.9, Arterial Oxygen Tension and Its Effect on PPHN"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "Severity: - 5-15: Mild - 15-25: Moderate - 25-40: Severe",
+   "verdict": "practice_varies",
+   "summary": "A pooled analysis of three iNO trials in infants ≥34 weeks stratified OI as ≤15 mild, >15 to ≤25 moderate, >25 to ≤40 severe and >40 very severe [Golombek2010], a 2025 review instead grades <10, 10-25 and >25 [Chojnacka2025], and no guideline grading of OI bands was among the retrieved sources.",
+   "evidence": [
+    {
+     "ref": "Golombek2010",
+     "quote": "stratified based on the OI (< or = 15 = mild, >15 to < or = 25 = moderate, >25 to < or = 40 = severe, >40 = very severe)",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Chojnacka2025",
+     "quote": "OI < 10: This range suggests mild hypoxemia.",
+     "location": "Section 4, Clinical Presentation and Diagnosis"
+    },
+    {
+     "ref": "Chojnacka2025",
+     "quote": "OI 10–25: Values within this range represent moderate hypoxemia.",
+     "location": "Section 4, Clinical Presentation and Diagnosis"
+    },
+    {
+     "ref": "Chojnacka2025",
+     "quote": "OI > 25: An OI greater than 25 indicates severe hypoxemia and implies a significant risk of pulmonary dysfunction.",
+     "location": "Section 4, Clinical Presentation and Diagnosis"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "Severity: - &gt;40: Consider ECMO if all interventions exhausted",
+   "verdict": "partly_concordant",
+   "summary": "ELSO v1.3 (2013) and a one-centre guideline give OI >40 for >4 hours or OI >20 without improvement after about 24 hours [ELSO2013; Ball2023], CHOP treats OI >25 over 4-6 hours as a referral trajectory, separate from cannulation [CHOP2026], and the current 2020 ELSO guideline lists an OI with sustained elevation and no improvement among its indications without a numerical threshold [Wild2020; Mohamed2026]; AHA/ATS guidance, as reported in a review, gives OI >40 as an indication to consider referral [Mohamed2026], and another review calls OI >40 a generally accepted criterion to start ECMO [Lakshminrusimha2015].",
+   "note": "Current evidence suggests OI >40 remains a recognized ECMO trigger, as an indication to consider referral in AHA/ATS guidance reported in a review and as a generally accepted criterion in another review [Mohamed2026; Lakshminrusimha2015], with ELSO v1.3 and one guideline adding a duration of >4 hours and a second route of OI >20 without improvement after about 24 hours [ELSO2013; Ball2023]. Referral to an ECMO-capable centre is treated as a separate, earlier step, at OI >25 and while stabilization options remain [CHOP2026; Chojnacka2025]. The 2020 ELSO guideline gives no OI number [Wild2020].",
+   "evidence": [
+    {
+     "ref": "ELSO2013",
+     "quote": "Neonates with severe respiratory failure,  refractory to maximal medical management, with a potentially reversible etiology.",
+     "location": "I.A Indications, p3"
+    },
+    {
+     "ref": "ELSO2013",
+     "quote": "1.  Oxygenation Index > 40 for >4 hours",
+     "location": "I.A Indications, p3"
+    },
+    {
+     "ref": "ELSO2013",
+     "quote": "2. Oxygenation Index >20 with lack of improvement despite prolonged (>24h) maximal medical therapy or persistent episodes of decompensation",
+     "location": "I.A Indications, p3"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Typically, an OI threshold of 40 for at least 4 hours, or over 20 for 24 hours despite medical optimization, is utilized for ECMO therapy.",
+     "location": "Equipment and Monitoring: Monitoring"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Oxygenation Index exceeding 25 over 4-6 hours despite implemented changes.",
+     "location": "Referral to an ECMO-Capable Center (Conditional Recommendation: trajectories that may prompt ECMO referral)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Referral to an ECMO-capable center should occur while additional stabilization options remain available and before the development of refractory hypoxemia or circulatory collapse.",
+     "location": "Referral to an ECMO-Capable Center (Strong Recommendation)"
+    },
+    {
+     "ref": "Chojnacka2025",
+     "quote": "The traditional ECMO OI starting threshold was 40 for more than 4 h; however, it is reasonable to consider contacting the ECMO center when, despite implemented therapies, OI still remains above 25, in order to prepare earlier for transportation logistics [28].",
+     "location": "Section 5.1"
+    },
+    {
+     "ref": "Wild2020",
+     "quote": "3. Oxygenation Index with sustained elevation and no improvement",
+     "location": "Figure 1, Indications, contraindications, and modes of support (transcribed from the figure image)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "The current 2020 guideline describes the criterion as sustained elevation of the OI without improvement, without specifying a numerical threshold",
+     "location": "Review: oxygenation index (ELSO documents, reported second-hand)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "An OI above 40 is an indication to consider referral to an ECMO center [13].",
+     "location": "Review: Quantifying Severity: The Oxygenation Index in Kilopascals (AHA/ATS guideline, reported second-hand)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Across the documents examined, however, thresholds above 25, 30, and 40 are used, and no single figure represents a universal ECMO criterion.",
+     "location": "Review: Quantifying Severity: The Oxygenation Index in Kilopascals"
+    },
+    {
+     "ref": "Lakshminrusimha2015",
+     "quote": "Generally accepted criteria to start ECMO are persistent hypoxemia (with an OI of >40 or alveolar-arterial gradient >600 despite aggressive medical management of PPHN with mechanical ventilation and iNO) and the presence of hemodynamic instability (Fig 6).",
+     "location": "ECMO paragraph, after heading \"Chronic Pulmonary Hypertension in Neonates\""
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "- Clinical suspicion: high oxygen needs, labile $SpO_{2}$ (huge swing)",
+   "verdict": "concordant",
+   "summary": "Labile hypoxemia is described as characteristic of PPHN and the basis of clinical diagnosis [Lakshminrusimha2015; Singh2021; Ball2023], and difficulty maintaining oxygenation despite escalating support is called the most important clinical feature [Mohamed2026].",
+   "evidence": [
+    {
+     "ref": "Lakshminrusimha2015",
+     "quote": "Labile hypoxemia (marked change in oxygen saturation with minimal or no change in ventilator settings or fraction of inspired oxygen [FIO2]) is characteristic of PPHN",
+     "location": "Etiology and Pathophysiology of PPHN"
+    },
+    {
+     "ref": "Lakshminrusimha2015",
+     "quote": "The diagnosis of PPHN is based on clinical evidence of labile hypoxemia often associated with differential cyanosis and confirmed by echocardiography.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Singh2021",
+     "quote": "Hypoxemia is often labile in PPHN, unlike fixed hypoxemia seen in cyanotic CHD (4–6).",
+     "location": "Diagnosis of PPHN"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Newborns with PPHN are typically labile, secondary to their “reactive” pulmonary vascular bed.",
+     "location": "Considerations in Acute PPHN Management"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "However, the most important clinical feature is difficulty maintaining adequate oxygenation despite escalating respiratory support [3].",
+     "location": "Review: Recognizing PPHN in a level 2 unit"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "- Pre- and post-ductal $SpO_{2}$ differential &gt;&nbsp;10%",
+   "verdict": "practice_varies",
+   "summary": "CHOP, a one-centre guideline and a review use a gap of 5-10% or >5-10% [CHOP2026; Ball2023; Singh2021], while the EPPVDN algorithm and one UK network use >10% [Hilgendorff2016; Mohamed2026]; the gap can be absent with a closed duct or atrial shunting, so its absence does not exclude PPHN [Lakshminrusimha2015; Mohamed2026].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Clinical guidance: A pre- to post-ductal SpO₂ gradient >5–10% supports right-to-left shunting consistent with PPHN physiology.",
+     "location": "Clinical Recognition and Monitoring"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "A pre-ductal saturation measuring 5 to 10% over the post-ductal saturation is highly suggestive of PPHN.",
+     "location": "Equipment and Monitoring: Monitoring"
+    },
+    {
+     "ref": "Singh2021",
+     "quote": "Saturation differences of greater than 5%–10% or PaO2 differences of 10–20 mm Hg between right upper limb and lower limbs, with pre-ductal levels being higher than post-ductal levels, are considered significant.",
+     "location": "Diagnosis of PPHN"
+    },
+    {
+     "ref": "Hilgendorff2016",
+     "quote": "PH needs to be considered when tricuspid regurgitation (TR) jet >2.5m/sec (Echo) and preductal/postductal oxygen saturation differences >10%.",
+     "location": "Figure 1 legend"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Pre- to post-ductal gap above 10% marks significant right-to-left shunting.",
+     "location": "Table 2, section B (regional network, reported second-hand)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "The UK guidelines examined are clear that the absence of a saturation gap does not exclude PPHN [1,3].",
+     "location": "Review: Figure 2 discussion"
+    },
+    {
+     "ref": "Lakshminrusimha2015",
+     "quote": "If the PDA is closed and the shunt exclusively is at the PFO level, the degree of cyanosis is similar in both the upper and lower limbs.",
+     "location": "Etiology and Pathophysiology of PPHN"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "- Echocardiography STAT",
+   "verdict": "concordant",
+   "summary": "Echocardiography is the diagnostic gold standard [Singh2021; Lakshminrusimha2015] and CHOP asks for it urgently, with a goal of before or within 6-12 hours of diagnosis or iNO initiation [CHOP2026].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Echocardiography is the diagnostic gold standard for PPHN and should be obtained urgently (goal: prior to or within 6-12 hours of diagnosis or iNO initiation)",
+     "location": "Diagnostic Evaluation (Strong Recommendation)"
+    },
+    {
+     "ref": "Singh2021",
+     "quote": "Echocardiography is the gold standard to confirm the diagnosis of PPHN, monitor the response to the therapeutic interventions and rule out underlying cyanotic or critical CHD.",
+     "location": "Diagnosis of PPHN"
+    },
+    {
+     "ref": "Lakshminrusimha2015",
+     "quote": "Echocardiography is the gold standard to confirm the diagnosis and to monitor the efficacy of specific therapeutic interventions in PPHN (Fig 3).",
+     "location": "Diagnosis"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "- Oxygen is the first-line therapy for PPHN.",
+   "verdict": "concordant",
+   "summary": "Oxygen is described as a potent pulmonary vasodilator and adequate oxygenation as the mainstay or cornerstone of care, and the EPPVDN gives oxygen to a pre-ductal target a Class I recommendation [Singh2021; Chandrasekharan2020; Hilgendorff2016]; no retrieved guideline uses the words first-line for oxygen, and iNO is named the first-line pulmonary vasodilator [CHOP2026].",
+   "evidence": [
+    {
+     "ref": "Singh2021",
+     "quote": "Oxygen is one of the most potent pulmonary vasodilators and increased oxygenation is the primary mediator of the reduction in PVR at birth.",
+     "location": "Mechanism of pulmonary vasculature remodeling section"
+    },
+    {
+     "ref": "Singh2021",
+     "quote": "Avoiding hypoxemia by mechanical ventilation and high concentrations of oxygen is the mainstay of PPHN management (5, 12).",
+     "location": "Mechanism of pulmonary vasculature remodeling section"
+    },
+    {
+     "ref": "Chandrasekharan2020",
+     "quote": "Adequate oxygenation to achieve preductal PaO2 in the 50–80 mmHg range (similar to normal neonates) remains the cornerstone of PPHN management",
+     "location": "Section 2.7, Oxygen Tension and PPHN"
+    },
+    {
+     "ref": "Hilgendorff2016",
+     "quote": "the term or preterm newborn infant should receive oxygen, ventilatory support and/or surfactant if needed to achieve a preductal SpO 2 between 91% and 95% when PH is suspected or established",
+     "location": "Table of recommendations (Class I, Level A)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Inhaled nitric oxide is supported by high-quality evidence demonstrating improved oxygenation and reduced ECMO utilization, establishing it as first-line pulmonary vasodilator therapy in term and near-term neonates.",
+     "location": "Literature Summary"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "- If an infant has the following documented in the ECHO report, it is reasonable to keep FiO<sub>2</sub> at 0.4-0.6 (or higher if needed) with a post-ductal SpO<sub>2</sub> goal of ≥ 92-95% for 24-48 hrs until a repeat ECHO for reassessment is performed: - Estimated right ventricular (RV) pressure &gt;&nbsp;2/3 of systemic mean blood pressure (SBP<sup>mean</sup>) taken at the time of the ECHO study, (and/or) - Bidirectional PDA shunt.",
+   "verdict": "discordant",
+   "summary": "Guidance sets the target at the pre-ductal site (91-95% EPPVDN, 92-97% Ball, 93-97% CHOP, 90-97% in an expert review, which suggests 93-98% in selected cases of acute severe PPHN, including FiO2 <0.6, and 95-98% in one UK network as reported in a review) and CHOP says post-ductal saturation should not independently guide decisions [Hilgendorff2016; Ball2023; CHOP2026; Lakshminrusimha2024; Mohamed2026]; RV pressure ≥2/3 systemic (systolic) and bidirectional ductal shunting appear only as trial entry criteria or severity markers [ElKhuffash2023; Titolo2025], and no retrieved source ties an FiO2 range or a 24-48 hour oxygen course to those findings.",
+   "note": "Current evidence suggests oxygen is titrated to pre-ductal SpO2, mostly within 90-97%, with values above 97% avoided in most guidance, although one review suggests 93-98% in selected severe cases, including when FiO2 is <0.6, and one UK network uses 95-98% [Hilgendorff2016; Ball2023; CHOP2026; Lakshminrusimha2024; Mohamed2026]; post-ductal saturation tracks shunting [Ball2023; CHOP2026]. No randomized trial defines the best target [Lakshminrusimha2024]. A review quotes an AHA/ATS caution that FiO2 >0.6 may be ineffective and may aggravate lung injury [Lakshminrusimha2024].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Target pre-ductal oxygen saturation of 93–97% should guide oxygen titration and ventilator adjustments.",
+     "location": "Oxygen Saturation Targets (Strong Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Post-ductal oxygen saturation should be monitored to assess differential shunting but should not independently guide therapeutic decisions.",
+     "location": "Oxygen Saturation Targets (Conditional Recommendation)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Target pre-ductal saturations between 92 and 97%.",
+     "location": "Pulmonary Optimization: Pre-ductal saturation targeting"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "In our unit, we utilize post-ductal saturations to trend shunting indicating PH severity, but titrate supplemental oxygen based on pre-ductal saturation goals.",
+     "location": "Equipment and Monitoring: Monitoring"
+    },
+    {
+     "ref": "Hilgendorff2016",
+     "quote": "preductal SpO 2 between 91% and 95% when PH is suspected or established; lung hyperinflation and atelectasis, or lung collapse and intermittent desaturations below 85%, or hyperoxia with preductal SpO 2 above 97% should be avoided",
+     "location": "Table of recommendations (Class I, Level A)"
+    },
+    {
+     "ref": "Lakshminrusimha2024",
+     "quote": "There are no randomized clinical trials guiding optimal SpO2 targets in the management of PH in neonates.",
+     "location": "Conclusion"
+    },
+    {
+     "ref": "Lakshminrusimha2024",
+     "quote": "Based on available evidence from animal studies and expert opinion, we recommend preductal SpO2 target of 90–97% in the management of acute PPHN in late preterm and term infants.",
+     "location": "Conclusion"
+    },
+    {
+     "ref": "Lakshminrusimha2024",
+     "quote": "The American Heart Association (AHA) and American Thoracic Society (ATS) caution that extreme hyperoxia (FiO2 > 0.6) may be ineffective owing to extrapulmonary shunt in PPHN and aggravate lung injury.46",
+     "location": "Upper limit of oxygen target range: Oxygen toxicity and lung"
+    },
+    {
+     "ref": "ElKhuffash2023",
+     "quote": "A tricuspid regurgitant jet with a pressure gradient ≥ 2/3 systemic systolic blood pressure",
+     "location": "Methods, trial eligibility criteria (MINT 1)"
+    },
+    {
+     "ref": "ElKhuffash2023",
+     "quote": "Patent ductus arteriosus bidirectional shunting or predominant right to left shunting",
+     "location": "Methods, trial eligibility criteria (MINT 1)"
+    },
+    {
+     "ref": "Titolo2025",
+     "quote": "bidirectional or right-to-left shunting suggests suprasystemic PH requiring aggressive vasodilation and inotropic support, while left-to-right shunting reflects milder disease.",
+     "location": "Section 6.4"
+    },
+    {
+     "ref": "Lakshminrusimha2024",
+     "quote": "Targeting slightly higher range at 93–98% may be prudent in the following situations with acute severe PPHN: (a) when FiO2 is <0.6 and risk of lung toxicity is low, (b) pH < 7.25, (c) therapeutic hypothermia, (d) lactic acidosis, and (e) probably in patients with dark skin pigmentation.",
+     "location": "Conclusion"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Pre-ductal SpO₂ 95-98%, aiming to narrow the pre- to post-ductal gap to below 5%",
+     "location": "Table 2, section A (UK regional network guideline v2, 2024, reported second-hand)"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "*Note: PDA in an infant ≥&nbsp;35 weeks’ GA with severe PPHN may serve as a pop-off valve and therefore should not be managed the same way as a PDA in a very preterm infant with significant respiratory support requirement.*",
+   "verdict": "concordant",
+   "summary": "A patent duct is described as a pop-off for a failing, pressure-loaded right ventricle, and guidance allows PGE1 to keep it open in selected infants [Singh2021; Siefkes2021; CHOP2026; Hilgendorff2016; Titolo2025]; no source sets a gestational-age limit or compares this with duct management in very preterm infants.",
+   "evidence": [
+    {
+     "ref": "Singh2021",
+     "quote": "Critically unwell infants with failing right ventricle may benefit from a patent ductus arteriosus (PDA), which can work as a “pop off” valve in cases with severely elated PVR.",
+     "location": "Role of prostaglandin E1 in management of PPHN"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "An open PDA might benefit the RV by providing a pop-off mechanism to reduce RV afterload.",
+     "location": "Figure legend (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Prostaglandin E₁ may be used to maintain ductal patency in select neonates with right ventricular dysfunction.",
+     "location": "Prostaglandin E₁ (Strong Recommendation)"
+    },
+    {
+     "ref": "Hilgendorff2016",
+     "quote": "The preterm and term neonate with severe PH (PPHN) and no post-tricuspid-unrestrictive shunt (e.g, no VSD) may receive Prostaglandin E (PGE) 1 or PGE2 to maintain ductal patency in right heart failure",
+     "location": "Table of recommendations (Class IIa, Level B)"
+    },
+    {
+     "ref": "Titolo2025",
+     "quote": "Prostaglandin E1 (PGE1) represents another valuable adjunct in infants with a constricting ductus arteriosus and RV failure, as maintaining ductal patency can create a “pop-off” mechanism that reduces RV afterload via right-to-left shunting.",
+     "location": "Section 7.3"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "- If oxygen therapy is the only intervention for PPHN, consider discontinuing when RV pressure is &lt;&nbsp;1/3 of SBP<sup>mean</sup>:",
+   "verdict": "insufficient",
+   "summary": "No retrieved source gives an RV-pressure threshold for stopping oxygen; CHOP lists optimal timing of repeat echocardiography as an evidence gap [CHOP2026], and the nearest advice is to avoid rapid weans [Ball2023].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Evidence Gap: Minimum echocardiographic requirements in resource-limited settings, optimal timing for repeat echocardiography following initiation of pulmonary vasodilators, and routine necessity of pre-discharge echocardiography in all neonates.",
+     "location": "Timing and Frequency of Echocardiography"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Finally, avoid rapid weans, which may precipitate rapid decompensation.",
+     "location": "Clinical Pearls"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "manual_text": "- It will become evident that oxygen therapy is working in this respect when the pre-ductal and post-ductal SpO<sub>2</sub> show decreasing discrepancy and eventually equate to each other. This point signifies that shunting from right to left across the PDA has essentially been counterbalanced by pulmonary vasodilation.",
+   "verdict": "partly_concordant",
+   "summary": "The pre- to post-ductal split is used as a marker of PH severity and of response to therapy, and a narrowing gap as a bedside sign of improving pulmonary blood flow [Ball2023; Mohamed2026], but the gap can also be absent with low RV output, a small or closed duct, or atrial or balanced shunting [Mohamed2026; Lakshminrusimha2015].",
+   "note": "Current evidence suggests a narrowing gap tracks improving pulmonary blood flow [Ball2023; Mohamed2026]. Equal saturations do not by themselves show that right-to-left shunting has resolved, because the gap can also disappear with low RV output, a small or closed duct, or atrial or balanced shunting [Mohamed2026; Lakshminrusimha2015].",
+   "evidence": [
+    {
+     "ref": "Ball2023",
+     "quote": "Trending this degree of “split” between pre-ductal and post-ductal saturations is a helpful longitudinal marker of pulmonary hypertension (PH) severity and can demonstrate important minute-to-minute changes in pulmonary vasoconstriction in response to therapies or environment.",
+     "location": "Equipment and Monitoring: Monitoring"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Conversely, a narrowing gap during treatment is a useful bedside sign of improving pulmonary blood flow [1].",
+     "location": "Review: Figure 2 discussion (UK network guidance, reported second-hand)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "The gap may be absent when right ventricular output is low, the ductus is small or closed, or shunting is predominantly atrial or balanced across both shunts [1,3].",
+     "location": "Review: Figure 2 discussion (UK guidelines, reported second-hand)"
+    },
+    {
+     "ref": "Lakshminrusimha2015",
+     "quote": "If the PDA is closed and the shunt exclusively is at the PFO level, the degree of cyanosis is similar in both the upper and lower limbs.",
+     "location": "Etiology and Pathophysiology of PPHN"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "manual_text": "- One of the major goals of any PPHN intervention is to equalize pre-ductal and post-ductal SpO<sub>2</sub> (within 2 points).",
+   "verdict": "partly_concordant",
+   "summary": "No source gives a target of within 2 points; one UK network, reported second-hand, aims for a gap below 5% [Mohamed2026], a one-centre guideline trends the gap as a severity marker [Ball2023], and CHOP says post-ductal saturation should not independently guide decisions [CHOP2026].",
+   "note": "Current evidence suggests the saturation gap is followed as a marker of shunting and response, and CHOP advises that post-ductal saturation not independently guide decisions [Ball2023; CHOP2026]. One UK network, reported in a review, sets a gap below 5% as a treatment aim, the only numeric aim found [Mohamed2026].",
+   "evidence": [
+    {
+     "ref": "Mohamed2026",
+     "quote": "Pre-ductal SpO₂ 95-98%, aiming to narrow the pre- to post-ductal gap to below 5%",
+     "location": "Table 2, section A (UK regional network guideline v2, 2024, reported second-hand)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Trending this degree of “split” between pre-ductal and post-ductal saturations is a helpful longitudinal marker of pulmonary hypertension (PH) severity",
+     "location": "Equipment and Monitoring: Monitoring"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Post-ductal oxygen saturation should be monitored to assess differential shunting but should not independently guide therapeutic decisions.",
+     "location": "Oxygen Saturation Targets (Conditional Recommendation)"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "manual_text": "- All infants ≥&nbsp;35 weeks’ GA needing FiO<sub>2</sub> &gt;&nbsp;0.8 for over 1 hr should be intubated and arterial access secured in anticipation of requiring iNO therapy and frequent blood tests while receiving iNO therapy.",
+   "verdict": "partly_concordant",
+   "summary": "Arterial access is recommended for ventilated or severe PPHN [CHOP2026; Ball2023], but no source was found for FiO2 >0.8 for over 1 hour as an intubation trigger; the only numeric figure is one UK network's 45-50% oxygen on non-invasive support, reported second-hand [Mohamed2026].",
+   "note": "Current evidence suggests arterial access for blood pressure monitoring and frequent sampling in PPHN [CHOP2026; Ball2023]. Intubation thresholds are sparsely defined: UK network guidance, reported in a review, advises a low threshold, with one network considering intubation above 45-50% oxygen on non-invasive support [Mohamed2026].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Arterial access is recommended for continuous blood pressure monitoring and frequent blood sampling, with prioritization of the right upper extremity when feasible.",
+     "location": "Vascular Access (Strong Recommendation)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Umbilical Arterial Catheters (UAC) are indicated for all ventilated PPHN patients to permit monitoring of serial blood gases and blood pressure.",
+     "location": "Vascular Access"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Network guidance advises a low threshold for intubation. One network recommends considering intubation in an infant requiring more than 45-50% oxygen to maintain saturations on non-invasive support [1].",
+     "location": "Review: ventilation"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "manual_text": "*iNO therapy is not indicated in infants &lt;&nbsp;35 weeks’ GA per unit policy.*",
+   "verdict": "partly_concordant",
+   "summary": "The iNO boundary sits between 34 and 35 weeks: FDA labelling as cited in a review gives >34 weeks and the pooled pivotal trials enrolled ≥34 weeks [Singh2021; Golombek2010], while AAP refers to preterm infants as ≤34 weeks and CPS uses a <35-week heading, under which it does not recommend routine use but allows rescue use in selected cases [Kumar2014; Mitra2023]; Cochrane finds rescue iNO does not appear effective in very ill preterm infants [Barrington2017].",
+   "note": "Current evidence suggests rescue iNO may be considered below 35 weeks in selected cases: CPS names early-onset refractory HRF after PROM or oligohydramnios, and HRF or severe RV failure in BPD-PH [Mitra2023]. Cochrane finds rescue iNO does not appear effective in the very ill preterm infant [Barrington2017]. FDA labelling, as cited in a review, and the pivotal trials begin at about 34 weeks [Singh2021; Golombek2010].",
+   "evidence": [
+    {
+     "ref": "Singh2021",
+     "quote": "iNO is the only therapy approved by the US Food and Drug Administration for clinical use in term or near-term newborn infants (>34 weeks’ gestation) with hypoxemic respiratory failure with clinical or echocardiographic evidence of PPHN (5).",
+     "location": "Inhaled nitric oxide"
+    },
+    {
+     "ref": "Golombek2010",
+     "quote": "in term and late preterm (gestational age > or = 34 weeks) infants with HRF who required mechanical ventilation",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Kumar2014",
+     "quote": "Several randomized controlled trials have evaluated its role in the management of preterm infants ≤ 34 weeks' gestational age with varying results.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Mitra2023",
+     "quote": "Routine iNO use in preterm infants on respiratory support is not recommended. iNO may be considered as a rescue modality in preterm infants with early-onset refractory HRF when associated with PROM or oligohydramnios.",
+     "location": "Use in preterm infants born <35 weeks gestational age"
+    },
+    {
+     "ref": "Mitra2023",
+     "quote": "Recommendation: In preterm infants with HRF or severe RV failure in the context of BPD-PH, rescue therapy with iNO may be considered if other respiratory management strategies, such as optimized ventilator support or postnatal corticosteroids (or both), have failed to resolve the hypoxemic crisis or RV failure.",
+     "location": "Use in preterm infants born <35 weeks gestational age"
+    },
+    {
+     "ref": "Barrington2017",
+     "quote": "iNO does not appear to be effective as rescue therapy for the very ill preterm infant.",
+     "location": "Abstract, Authors' conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "manual_text": "- Infants with clinical suspicion of PPHN must have an ECHO done as soon as possible but should not wait for ECHO to initiate oxygen therapy.",
+   "verdict": "concordant",
+   "summary": "CHOP gives a strong recommendation for echocardiography as soon as possible in suspected PPHN and allows for iNO started before echo [CHOP2026], and avoiding hypoxemia is described as the mainstay of care [Singh2021]; no recommendation addresses delaying oxygen for echo directly.",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Echocardiography should be obtained as soon as possible in neonates with suspected PPHN, particularly in neonates ≥ 34 weeks gestation with significant hypoxemia or a pre- to post-ductal saturation gradient.",
+     "location": "Initial Evaluation and Echocardiography (Strong Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "If iNO is initiated prior to echocardiographic assessment and severe left ventricular dysfunction is subsequently identified, discontinuation of iNO is recommended.",
+     "location": "Inhaled Nitric Oxide (iNO) (Strong Recommendation)"
+    },
+    {
+     "ref": "Singh2021",
+     "quote": "Avoiding hypoxemia by mechanical ventilation and high concentrations of oxygen is the mainstay of PPHN management (5, 12).",
+     "location": "Mechanism of pulmonary vasculature remodeling section"
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "manual_text": "- Initial ECHO is also used to rule out congenital heart disease, shunting, and left ventricular (LV) function (see contraindications).",
+   "verdict": "concordant",
+   "summary": "Guidance asks the first echo to exclude congenital heart disease, define shunts and assess left ventricular function before pulmonary vasodilators [CHOP2026; Ball2023; Mitra2023].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Echocardiographic assessment should include evaluation of right and left ventricular systolic function, shunt direction and magnitude, and estimation of pulmonary artery pressure.",
+     "location": "Initial Evaluation and Echocardiography (Strong Recommendation)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Finally, cyanotic CCHD is a major disease process in the differential diagnosis of PPHN, so complete echocardiograms should be obtained to fully evaluate the cardiac and vascular anatomy.",
+     "location": "Diagnosis and Evaluation: Echocardiogram"
+    },
+    {
+     "ref": "Mitra2023",
+     "quote": "Echocardiographic confirmation of normal left ventricular function and absence of congenital heart disease characterized by ductal-dependent systemic blood flow before initiating iNO are recommended.",
+     "location": "Recommendation, Use in late-preterm and term infants"
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "manual_text": "- Infants with ECHO-confirmed PPHN should have serial ECHOs every 24-72 hours until complete resolution of PPHN.",
+   "verdict": "partly_concordant",
+   "summary": "Repeat echocardiography is supported, especially in moderate to severe PPHN with hemodynamic instability [Singh2021], but CHOP ties it to clinical change or therapy changes and lists optimal timing as an evidence gap [CHOP2026], and no retrieved source gives a 24-72 hour interval.",
+   "note": "Current evidence suggests serial echocardiography timed by clinical change, changes in therapy, poor vasodilator response or planned iNO weaning rather than by a fixed interval [Singh2021; CHOP2026]. CHOP lists optimal repeat timing as an evidence gap and recommends a pre-discharge study to confirm resolution [CHOP2026].",
+   "evidence": [
+    {
+     "ref": "Singh2021",
+     "quote": "We recommend serial echocardiography (Figure 5) assessment to monitor the disease progress, changing pathophysiology and response to treatment in PPHN, especially in infants with moderate to severe PPHN with hemodynamic instability (Figure 6).",
+     "location": "Diagnosis of PPHN"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Repeat echocardiography should be guided by clinical change, escalation or de-escalation of therapy, lack of response to pulmonary vasodilators, or planned weaning of inhaled nitric oxide.",
+     "location": "Timing and Frequency of Echocardiography (Conditional Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "A pre-discharge echocardiogram, ideally obtained off respiratory support, is recommended by pediatric cardiology to confirm resolution of pulmonary hypertension and guide outpatient follow-up.",
+     "location": "Timing and Frequency of Echocardiography (Strong Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Evidence Gap: Minimum echocardiographic requirements in resource-limited settings, optimal timing for repeat echocardiography following initiation of pulmonary vasodilators, and routine necessity of pre-discharge echocardiography in all neonates.",
+     "location": "Timing and Frequency of Echocardiography"
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "manual_text": "- Correct pH to &gt;&nbsp;7.30. Maintaining pH as close to physiological range as possible is crucial for achieving hemodynamic stability. Forced alkalosis does not lead to further improvement.",
+   "verdict": "concordant",
+   "summary": "CHOP and a one-centre guideline set pH at 7.30-7.40 or ≥7.3 in critically ill infants, others accept >7.25 with 7.30-7.40 preferred, and UK guidance cites 7.35-7.45 [CHOP2026; Ball2023; Lakshminrusimha2015; Hilgendorff2016; Mohamed2026]; induced alkalosis is discouraged, Ball noting it lowers PVR but reduces tissue oxygen delivery [Ball2023; Lakshminrusimha2015; Mohamed2026], although body text in the EPPVDN paper names pH 7.45-7.55, against its own table [Hilgendorff2016].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Arterial pH should be maintained within the target range of 7.30–7.40 to support myocardial performance and limit pulmonary vasoconstriction.",
+     "location": "Acid-Base Management and Sodium Bicarbonate (Strong Recommendation)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Goal arterial pH ≥ 7.3 while critically ill. A more permissive pH >7.25 target may be acceptable once clinical stability has been achieved.",
+     "location": "Acid-Base status"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "While alkalosis effectively decreases PVR, it decreases tissue oxygen delivery, impairs cerebral perfusion and is associated with hearing loss and poorer neurodevelopmental outcomes.1,37",
+     "location": "Acid-Base status"
+    },
+    {
+     "ref": "Lakshminrusimha2015",
+     "quote": "We recommend maintaining pH greater than 7.25, preferably 7.30 to 7.40, during the acute phase of PPHN.",
+     "location": "Supportive Therapy"
+    },
+    {
+     "ref": "Lakshminrusimha2015",
+     "quote": "Hyperventilation and infusion of alkali were used in the past but should be avoided because of adverse effects on cerebral perfusion and increased risk of sensorineural deafness.",
+     "location": "Supportive Therapy"
+    },
+    {
+     "ref": "Hilgendorff2016",
+     "quote": "a pCO 2 between 45 and 60 mm Hg and a target pH >7.25 with lactate <5 mmol/L can be considered as target values.",
+     "location": "Table of recommendations (Class IIa, Level B)"
+    },
+    {
+     "ref": "Hilgendorff2016",
+     "quote": "Optimisation of the acid-base balance ( pH range 7.45 –7.55) to control PVR may require repetitive doses of sodium bicarbonate",
+     "location": "Body text on PPHN treatment"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "PaCO₂ 4.5-5.5 kPa with pH 7.35-7.45",
+     "location": "Table 2, section A (regional network, reported second-hand)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Routine hyperventilation to induce respiratory alkalosis is not recommended: it has not demonstrated long-term benefit, and hypocapnia may adversely affect the cerebral and pulmonary circulation [3,13].",
+     "location": "Review: ventilation"
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "manual_text": "- SBP may need to be much higher than the infant’s GA to achieve hemodynamic stability.",
+   "verdict": "practice_varies",
+   "summary": "Reading SBP as mean pressure, as the manual defines it at line 31, targets differ: 45-55 mmHg for most term infants [Ball2023; CHOP2026], about 10 mmHg above gestational age in one UK guideline, and above 60 mmHg or above estimated pulmonary pressure in two others, which a UK review calls genuine variation in practice [Mohamed2026]; supraphysiologic pressure is advised against [CHOP2026; Siefkes2021; Ball2023], and in one retrospective cohort (109 infants ≥35 weeks) a clinician-selected MAP target ≥50 mmHg was associated with ECMO or death [Oren2026].",
+   "evidence": [
+    {
+     "ref": "Ball2023",
+     "quote": "Because no studies to date have specifically addressed optimal blood pressure goals for PPHN management, we target an appropriate mean arterial blood pressure for gestational age, usually 45-55 mmHg for most term newborns.",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "However, with advancement in PH-specific therapeutic options and an improved understanding of physiologic consequences, this is no longer standard of care for PPHNz.14",
+     "location": "Cardiovascular Optimization: Blood Pressure (refers to pharmacologically induced hypertension)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "A target mean arterial pressure (MAP) of 45–55 mmHg is appropriate for most term neonates with PPHN.",
+     "location": "Hemodynamic Goals (Conditional Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Pharmacologic hypertension should be avoided, as excessive systemic vasoconstriction may increase right ventricular afterload and worsen right ventricular failure.",
+     "location": "Hemodynamic Goals (Strong Recommendation)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "The use of vasoactives to increase systemic blood pressure to supraphysiological levels (higher than the means shown in table 2 ) to minimize right-to-left shunt is not appropriate. Such practice increases RV afterload and hastens RV failure. 19",
+     "location": "Management (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "Oren2026",
+     "quote": "After adjustment for HIE, pneumothorax, and initial oxygenation index, the ≥ 50 mmHg MAP target remained associated with ECMO cannulation (aOR 4.8; 95% CI 1.6, 15.0) and ECMO/death (aOR 5.9; 95% CI 2.0, 17.3).",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Oren2026",
+     "quote": "Randomized trials are needed to define safe MAP targets in PPHN.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Mean arterial pressure above 60 mmHg, or higher if calculated right ventricular pressure exceeds this",
+     "location": "Table 2, section A (UK guideline, reported second-hand)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Mean arterial pressure above the estimated pulmonary pressure, which may require above 60 mmHg",
+     "location": "Table 2, section A (UK transport service guideline v4, 2020, reported second-hand)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Upper end of the normal range for gestation, about 10 mmHg above the gestational age in weeks",
+     "location": "Table 2, section A (UK regional network guideline, reviewed 2024, reported second-hand)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "This represents genuine variation in practice, so local policy should determine the target.",
+     "location": "Review: Circulation, Blood Pressure, and Inotropes"
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "manual_text": "- For hypotension/hypoperfusion, consider the following order in choosing a vasopressor: - **Dopamine (may be considered for first line therapy)**: - **Epinephrine (may be considered as first line therapy)**: - **Hydrocortisone** : - **Vasopressin** :",
+   "verdict": "practice_varies",
+   "summary": "Institutional and pathway documents differ on the first agent: epinephrine with dopamine not preferred at CHOP and in Ball's unit [CHOP2026; Ball2023], dopamine or dobutamine in UK level 2 pathways, attributed to familiarity rather than evidence [Mohamed2026], vasopressin with concurrent pulmonary hypertension in Iowa [IowaHandbook], and hydrocortisone first-line in Ball's unit [Ball2023]; a review grades dopamine and epinephrine both Class IIb [Siefkes2021], CHOP's later steps run hydrocortisone then vasopressin [CHOP2026], and no randomized comparison or national guideline was found.",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Epinephrine is recommended as the preferred initial vasoactive agent in hypotensive neonates with PPHN, given its combined inotropic and chronotropic effects.",
+     "location": "Initial Vasoactive Agent (Strong Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Dopamine is not preferred due to its potential to increase pulmonary vascular resistance; if used, doses should be limited to ≤ 5-10 mcg/kg/min.",
+     "location": "Adjunctive Therapies (Strong Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Initiate vasopressin for persistent hypotension despite catecholamine and hydrocortisone support.",
+     "location": "Suggested Vasoactive Sequence (Conditional Recommendation)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "we have transitioned from dopamine to epinephrine as a first-line agent for blood pressure support in PPHN.",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "In our unit, we consider hydrocortisone as a first-line therapy for hypotension, using caution in the setting of known or suspected infectious conditions.",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Dopamine and dobutamine are the usual first agents in UK level 2 pathways, reflecting practitioner familiarity, not evidence that either is superior [1].",
+     "location": "Review: circulation"
+    },
+    {
+     "ref": "IowaHandbook",
+     "quote": "First line - Term or preterm infants with hypotension [particularly low diastolic and/or mean arterial pressure] and known or suspected concurrent pulmonary hypertension",
+     "location": "Guidelines for the Use of Vasopressin in the NICU, Therapeutic Use (Iowa_Vasopressin.txt)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "Class IIb – Usefulness/efficacy is less well established by evidence/opinion. May be considered",
+     "location": "Box 1 Dopamine; same class in Box 3 Epinephrine (Siefkes2021_pmc.txt)"
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "manual_text": "- Begin at 5mcg/kg/min, increase by 1-2mcg/kg/min q 15min until BP goal is achieved. The typical maximum dose is 10mcg/kg/min. If BP goal is still not achieved, consider a second agent.",
+   "verdict": "practice_varies",
+   "summary": "Sources differ: CHOP limits dopamine to ≤5-10 mcg/kg/min if used [CHOP2026], the Iowa table gives a start of 5 and a maximum of 10 but lists dopamine for sepsis with no pulmonary hypertension [IowaHandbook], the UK formulary gives 5 to a maximum of 20 while the UK guidelines reviewed start at 10 [Mohamed2026], a review lists 2-20 [Siefkes2021], and no PPHN source gives the 1-2 mcg/kg/min step every 15 minutes.",
+   "evidence": [
+    {
+     "ref": "IowaHandbook",
+     "quote": "5 mcg/kg/min 10 ↑ ↑↑ ↑↑ ↑↑↑ Sepsis, no pulmonary hypertension",
+     "location": "Inotropes and Vasopressor Table, dopamine row: initial dose, max dose, contractility, HR, SVR, PVR, example indications (Iowa_Inotropes.txt)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "The British National Formulary for Children gives a starting dose of 5 µg/kg/min for both dopamine and dobutamine, adjusted to a response to a maximum of 20, whereas the documents examined here begin at 10 [16].",
+     "location": "Review: circulation"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "One network starts dopamine at 10 µg/kg/min and adds dobutamine at 10 µg/kg/min if the response is inadequate.",
+     "location": "Review: Circulation, Blood Pressure, and Inotropes"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Dopamine is not preferred due to its potential to increase pulmonary vascular resistance; if used, doses should be limited to ≤ 5-10 mcg/kg/min.",
+     "location": "Adjunctive Therapies (Strong Recommendation)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "2 to 20 mcg/kg/min (doses > 10-15 mcg/kg/min likely to have pulmonary vasoconstriction)",
+     "location": "Box 1 Dopamine (Siefkes2021_pmc.txt)"
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "manual_text": "- Note that dopamine is reported to have a vasoconstrictive effect on the pulmonary vasculature, so it may potentially make PPHN worse, where a higher SBP will be required to overcome the pressure gradient.",
+   "verdict": "concordant",
+   "summary": "Guidance and reviews state dopamine may raise pulmonary pressure or PVR, most of all among the catecholamines at CHOP [CHOP2026; Siefkes2021; Ball2023; IowaHandbook], though this rests on consensus and review statements rather than trials in term infants with PPHN.",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Clinicians should recognize that norepinephrine, dopamine, and epinephrine demonstrate dose-dependent increases in pulmonary arterial pressure, most pronounced with dopamine, and dosing should therefore be balanced against potential effects on pulmonary vascular resistance.",
+     "location": "Initial Vasoactive Agent (Conditional Recommendation)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "May increase pulmonary pressure further adding to RV afterload",
+     "location": "Box 1 Dopamine, Precautions (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Escalating dopamine doses may negatively impact cardiac output secondary to increased PVR and progressive imbalance of its relative inotropic and vasopressor effects.46,52",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "IowaHandbook",
+     "quote": "5 mcg/kg/min 10 ↑ ↑↑ ↑↑ ↑↑↑ Sepsis, no pulmonary hypertension",
+     "location": "Inotropes and Vasopressor Table, dopamine row: PVR column ↑↑↑ (Iowa_Inotropes.txt)"
+    }
+   ]
+  },
+  {
+   "id": "c23",
+   "manual_text": "- Because of the stronger α effect at a dose &gt;&nbsp;10mcg/kg/min, it is generally discouraged to exceed this limit, unless for transient use.",
+   "verdict": "concordant",
+   "summary": "Sources place concern about dopamine's pulmonary vasoconstriction above about 10-15 mcg/kg/min, with CHOP limiting doses to ≤5-10 and a UK network warning above 15 [Siefkes2021; CHOP2026; Mohamed2026]; they frame the concern as pulmonary vasoconstriction, the Iowa table calls relative effects at different doses uncertain [IowaHandbook], and transient use above the limit is not addressed.",
+   "evidence": [
+    {
+     "ref": "Siefkes2021",
+     "quote": "2 to 20 mcg/kg/min (doses > 10-15 mcg/kg/min likely to have pulmonary vasoconstriction)",
+     "location": "Box 1 Dopamine (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Dopamine is not preferred due to its potential to increase pulmonary vascular resistance; if used, doses should be limited to ≤ 5-10 mcg/kg/min.",
+     "location": "Adjunctive Therapies (Strong Recommendation)"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Network guidance warns that dopamine above 15 µg/kg/min and adrenaline above 0.5 µg/kg/min can cause pulmonary vasoconstriction, reducing pulmonary blood flow and worsening oxygenation [1].",
+     "location": "Review: circulation"
+    },
+    {
+     "ref": "IowaHandbook",
+     "quote": "Relative effects at different doses are uncertain",
+     "location": "Inotropes and Vasopressor Table, dopamine row (Iowa_Inotropes.txt)"
+    }
+   ]
+  },
+  {
+   "id": "c24",
+   "manual_text": "- May initiate at 0.02mcg/kg/min, increase by 0.01-0.02 mcg/kg/min q 15min until BP goal is achieved. Typical maximum dose is 0.2mcg/kg/min.",
+   "verdict": "partly_concordant",
+   "summary": "CHOP starts at 0.03 mcg/kg/min with 0.01-0.02 steps every 3-5 minutes to a maximum of 0.1 [CHOP2026], Ball adds a second agent beyond 0.1 [Ball2023], and general ranges run 0.05-0.3 and 0.03-0.05 starting to a maximum of 0.3 [Siefkes2021; IowaHandbook].",
+   "note": "Current evidence suggests starting doses of 0.03-0.05 mcg/kg/min [CHOP2026; IowaHandbook]. PPHN guidance treats about 0.1 mcg/kg/min as the point to stop escalating or add a second agent [CHOP2026; Ball2023], while general ranges reach 0.3 mcg/kg/min [Siefkes2021; IowaHandbook]. CHOP titrates in the same step size but every 3-5 minutes [CHOP2026].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Initiate low-dose epinephrine (0.03 mcg/kg/min) and titrate in increments of 0.01-0.02 mcg/kg/min every 3-5 minutes to a maximum recommended dose of 0.1 mcg/kg/min. Escalation of epinephrine beyond 0.1 mcg/kg/min should be avoided.",
+     "location": "Suggested Vasoactive Sequence (Conditional Recommendation)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Because high-dose epinephrine can additionally cause iatrogenic lactic acidosis,17 we utilize it to optimize effects in the lower dose ranges and consider addition of a second blood pressure agent beyond infusion rates of 0.1mcg/kg/min.",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "0.05 to 0.3 mcg/kg/min",
+     "location": "Box 3 Epinephrine, Dose (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "IowaHandbook",
+     "quote": "0.03-0.05 mcg/kg/min 0.3 ↑↑↑ ↑ ↑↑↑ ↑↑ Severe heart dysfunction, low BP, HIE",
+     "location": "Inotropes and Vasopressor Table, epinephrine row: initial dose, max dose (Iowa_Inotropes.txt)"
+    }
+   ]
+  },
+  {
+   "id": "c25",
+   "manual_text": "- May load with 2mg/kg, followed by 1mg/kg q6-8hr. Keep in mind that hydrocortisone effect takes time (usually 3-4 hours).",
+   "verdict": "partly_concordant",
+   "summary": "The 2 mg/kg load then 1 mg/kg matches one-centre guidance, which doses every 6 hours and reports an anecdotal response around the second dose [Ball2023]; CHOP uses 1 mg/kg every 6 hours and calls the load uncertain [CHOP2026], other regimens load with 4 mg/kg [Siefkes2021; Alsaleem2019], and neither every-8-hour dosing nor a 3-4 hour onset was found.",
+   "note": "Current evidence suggests 1 mg/kg every 6 hours, with the need for a load uncertain and loads of 2-4 mg/kg where one is used [CHOP2026; Ball2023; Siefkes2021]. Onset is described differently: anecdotally around the second dose in one guideline [Ball2023] and as rapid in a review [Siefkes2021].",
+   "evidence": [
+    {
+     "ref": "Ball2023",
+     "quote": "Hydrocortisone initial dose: 2 mg/kg, followed by 1 mg/kg every 6 hours throughout the acute stabilization phase. Anticipate a delayed time to effect, with anecdotal BP response typically achieved around the time of the second dose.",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "We currently recommend hydrocortisone 1mg/kg/dose every 6 hours for 48 hours (may extend duration if clinically indicated)",
+     "location": "Suggested Vasoactive Sequence (Conditional Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "The need for a hydrocortisone loading dose remains uncertain and may be individualized based on illness severity and institutional practice.",
+     "location": "Adjunctive Therapies (Clinical Guidance)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "Acute crisis: 1 mg/kg/dose q 6 h Maintenance: 1 mg/kg/day in divided doses Severe PPHN not due to infection – 4 mg/kg/dose x 1 followed by 1 mg/kg q 6h x 4 doses followed by maintenance",
+     "location": "Box 8 Hydrocortisone, Dose (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "non-genomic effects such as better capillary integrity, inhibition of catecholamine metabolism and increase in intracellular calcium may be mainly responsible for the rapid onset of the hydrocortisone-induced BP improvement. 51",
+     "location": "Hydrocortisone (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "Alsaleem2019",
+     "quote": "started on IV HC (initial dose of 4 mg/kg/dose followed by 1 mg/kg/dose given every 6 hours for 48 hours)",
+     "location": "Methods"
+    }
+   ]
+  },
+  {
+   "id": "c26",
+   "manual_text": "- Recommended when infant requires 2 pressor drips, especially if a plan has been made to transfer the infant to a higher-level unit.",
+   "verdict": "partly_concordant",
+   "summary": "CHOP considers hydrocortisone for escalating catecholamine doses or an inadequate response to epinephrine, a one-centre guideline uses it early or first-line, and a review lists catecholamine-resistant hypotension [CHOP2026; Ball2023; Siefkes2021]; outcome data are observational and mixed [Aleem2021; Alsaleem2019], and no source ties it to two drips or a planned transfer.",
+   "note": "Current evidence suggests hydrocortisone is considered earlier than a second vasoactive agent is established, at escalating catecholamine doses or an inadequate response to epinephrine [CHOP2026], or as early therapy in one unit [Ball2023]. CHOP places it before vasopressin [CHOP2026].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Hydrocortisone should be considered in neonates requiring escalating doses of catecholamines or demonstrating inadequate response to epinephrine.",
+     "location": "Adjunctive Therapies (Strong Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Initiate hydrocortisone early if epinephrine requirements escalate or response is inadequate.",
+     "location": "Suggested Vasoactive Sequence (Conditional Recommendation)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Consider early hydrocortisone therapy for BP support.",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "Catecholamine-resistant systemic hypotension Refractory pulmonary hypertension not responsive to inhaled nitric oxide",
+     "location": "Box 8 Hydrocortisone, Indication (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "Aleem2021",
+     "quote": "There was no association between hydrocortisone receipt and death, CLD, or oxygen at discharge",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Alsaleem2019",
+     "quote": "In conclusion, hydrocortisone increased systolic blood pressure and improved oxygenation in term and near-term infants",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c27",
+   "manual_text": "- May decrease pulmonary vascular resistance and increase systemic vascular resistance. The evidence reported in the literature is less comprehensive than for other pressors.",
+   "verdict": "concordant",
+   "summary": "Cohorts and case series report better echocardiographic PH indices or oxygenation after vasopressin [Santelices2024; Ouellet2024], guidance describes systemic pressor effect without a rise in PVR [Ball2023; CHOP2026] and the Iowa table lists SVR up and PVR down [IowaHandbook]; a scoping review of 12 neonatal studies calls the evidence limited and heterogeneous [Surak2026].",
+   "evidence": [
+    {
+     "ref": "Santelices2024",
+     "quote": "Echocardiographic indices of pulmonary hypertension progressively improved after vasopressin infusion with a significant decrease of tricuspid ingurgitation velocities and the rate of right-to- left ductal shunt through the ductus arteriosus.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Ouellet2024",
+     "quote": "The use of vasopressin may be associated with improvement in oxygenation and hemodynamic status of neonatal patients with aPH refractory to initial therapy.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "we have adopted vasopressin for its relatively pure effects on systemic blood pressure without associated increases in heart rate or PVR.",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Vasopressin may be added for persistent hypotension as a non-catecholamine vasopressor that preserves pulmonary and cerebral blood flow.",
+     "location": "Adjunctive Therapies (Strong Recommendation)"
+    },
+    {
+     "ref": "IowaHandbook",
+     "quote": "0.3 milli- units/kg/min 2.5 ↔ ↔/↓ ↑↑↑ ↓ Pulmonary hypertension, low BP",
+     "location": "Inotropes and Vasopressor Table, vasopressin row: initial dose, max dose, contractility, HR, SVR ↑↑↑, PVR ↓ (Iowa_Inotropes.txt)"
+    },
+    {
+     "ref": "Surak2026",
+     "quote": "Vasopressin may improve short-term hemodynamic parameters, but evidence is limited and heterogeneous, with insufficient data to guide optimal use.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Surak2026",
+     "quote": "Twelve studies were included (one randomized trial, eleven observational), encompassing heterogeneous neonatal populations.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c28",
+   "manual_text": "- May initiate at 0.1 milliunit/kg/min (0.0001 unit/kg/min), increase by doubling the dose. Typical maximum dose is 1.2 milliunit/kg/min (0.0012 unit/kg/min), but some studies reported maximum dose of 2.0 milliunit/kg/min.",
+   "verdict": "partly_concordant",
+   "summary": "After conversion, the maximum of 1.2 mU/kg/min matches Iowa and CHOP (72 mU/kg/hr ÷ 60 = 1.2 mU/kg/min), 2 mU/kg/min matches a review's upper limit and the Iowa table lists 2.5 [IowaHandbook; CHOP2026; Siefkes2021], and a UK figure of 0.02-0.1 units/kg/hour equals about 0.33-1.67 mU/kg/min, with network caution above 0.04 units/kg/hour (about 0.67 mU/kg/min) [Mohamed2026]; 0.1 mU/kg/min is the low end of the ranges, but stated starts are 0.2 (CHOP, 12 mU/kg/hr ÷ 60; a case series, 0.0002 U/kg/min) and 0.3 (Iowa) [CHOP2026; Mohamed2014; IowaHandbook], with fixed increments and no doubling [CHOP2026; IowaHandbook].",
+   "note": "Current evidence suggests starting at about 0.2-0.3 mU/kg/min and titrating in fixed increments, 0.1-0.2 mU/kg/min every 15 minutes at CHOP (6-12 mU/kg/hr ÷ 60) and 0.2-0.3 mU/kg/min every 15-60 minutes in Iowa [CHOP2026; IowaHandbook].",
+   "evidence": [
+    {
+     "ref": "IowaHandbook",
+     "quote": "The usual therapeutic dose is between 0.1 and 1.2mU/kg/min. Recommended starting dose is 0.3mU/kg/min with titration up every 15-60 minutes [depending on the magnitude of the illness severity] in intervals of 0.2-0.3mU/kg/min to achieve target arterial pressure.",
+     "location": "Guidelines for the Use of Vasopressin in the NICU, Dosing Range (Iowa_Vasopressin.txt)"
+    },
+    {
+     "ref": "IowaHandbook",
+     "quote": "0.3 milli- units/kg/min 2.5 ↔ ↔/↓ ↑↑↑ ↓ Pulmonary hypertension, low BP",
+     "location": "Inotropes and Vasopressor Table, vasopressin row: initial dose, max dose (Iowa_Inotropes.txt)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Initiate vasopressin at 12 milli-units/kg/hr (0.2 milli-units/kg/min) and titrate in increments of 6-12 mU/kg/hr every 15 minutes to a maximum recommended dose of 72 mU/kg/hr.",
+     "location": "Suggested Vasoactive Sequence (Conditional Recommendation)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "0.1 to 2 milliunits (mU)/kg/min",
+     "location": "Box 7 Vasopressin, Dose (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "Mohamed2014",
+     "quote": "Vasopressin was initiated at a mean dose of 0.0002 ± 0.0002 U/kg/min for a median (interquartile range) duration of 49 hours (13-95 hr).",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Mohamed2026",
+     "quote": "Vasopressin, at 0.02-0.1 units/kg/hour, is generally started only after discussion with the ECMO team. Network guidance advises caution above 0.04 units/kg/hour because of the risk of adverse effects [1].",
+     "location": "After handover: management beyond the level 2 unit"
+    }
+   ]
+  },
+  {
+   "id": "c29",
+   "manual_text": "- Potential side effects include: decreased urine output, hyponatremia, elevated lactate, severe vasoconstriction.",
+   "verdict": "partly_concordant",
+   "summary": "Hyponatremia is well documented (68% in one newborn cohort whose abstract gives no gestational ages) and CHOP monitors for it, although a 10-infant series saw no sodium drop [Ouellet2024; CHOP2026; Mohamed2014]; PPHN cohorts report urine output rising and lactate falling or not worsening [Santelices2024; Mohamed2014], antidiuretic oliguria is described in the Iowa guideline [IowaHandbook], and mesenteric vasoconstriction is a listed precaution [Siefkes2021].",
+   "note": "Current evidence suggests hyponatremia is the most commonly described adverse effect across heterogeneous neonatal studies [Surak2026; Ouellet2024; CHOP2026]. Effects on urine output were variable across studies, and serious ischemic complications were rarely reported [Surak2026]. In PPHN cohorts urine output rose and lactate fell or did not worsen after vasopressin [Santelices2024; Mohamed2014], although oliguria is described in one institutional guideline [IowaHandbook]. Systemic vasoconstriction affecting mesenteric perfusion is a listed precaution [Siefkes2021].",
+   "evidence": [
+    {
+     "ref": "Ouellet2024",
+     "quote": "In our cohort, 68% of patients presented an episode of hyponatremia (serum sodium <130 mmol/L).",
+     "location": "Abstract"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Close monitoring of serum sodium is recommended during vasopressin therapy due to the risk of hyponatremia; fluid restriction or sodium supplementation may be required.",
+     "location": "Adjunctive Therapies (Conditional Recommendation)"
+    },
+    {
+     "ref": "Surak2026",
+     "quote": "Effects on urine output were variable. Safety reporting was inconsistent; hyponatremia was the most commonly described adverse event, while serious ischemic complications were rarely reported.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Mohamed2014",
+     "quote": "There was a concomitant improvement in blood pressure (p < 0.05) and urine output (p < 0.05), without drop in the serum sodium level or worsening in serum lactate level.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Santelices2024",
+     "quote": "diastolic, systolic, and median systemic pressure significantly increased during the first 4 h of treatment, as well as arterial pH and urine output.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Santelices2024",
+     "quote": "lactate and Vasoactive Inotropic Score (VIS) score decreased after 4 and 8 h, respectively, after vasopressin was started.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "IowaHandbook",
+     "quote": "Oliguric patients being treated with vasopressin may have a dilutional hyponatremia if fluids are not appropriately adjusted.",
+     "location": "Guidelines for the Use of Vasopressin in the NICU, Considerations 3b (Iowa_Vasopressin.txt)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "Hyponatremia, systemic vasoconstriction may affect mesenteric perfusion and tolerance/safety of feeding, and may be deleterious in the setting of LV dysfunction.",
+     "location": "Box 7 Vasopressin, Precautions (Siefkes2021_pmc.txt)"
+    }
+   ]
+  },
+  {
+   "id": "c30",
+   "manual_text": "- For cardiac dysfunction, consider using milrinone once the BP goal has been achieved with the vasopressors listed above:",
+   "verdict": "concordant",
+   "summary": "CHOP considers milrinone for left or biventricular dysfunction and places inotropic support before or with pulmonary vasodilation in hypotension, and reviews favour it when blood pressure is normal or hypotension is mild or treatable [CHOP2026; Singh2021; Siefkes2021]; evidence for milrinone is limited, with a scoping review saying so and a pilot RCT stopped early for poor recruitment [Galis2024; ElKhuffash2023].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Milrinone should be considered in neonates with left or biventricular dysfunction to improve myocardial contractility and lusitropy.",
+     "location": "Milrinone (Strong Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "In neonates with combined pulmonary hypertension and systemic hypotension, initiation or escalation of inotropic support should precede or accompany pulmonary vasodilation.",
+     "location": "Integration with Systemic Vasoactive Support (Conditional Recommendation)"
+    },
+    {
+     "ref": "Singh2021",
+     "quote": "If blood pressure is normal but there is evidence of ventricular dysfunction, a pulmonary vasodilator and an inodilator such as milrinone might be the preferred therapeutic agent in PPHN (5, 36).",
+     "location": "Milrinone"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "Hypoxemia, decreased cardiac function, normal blood pressure or hypotension that is either mild or can be treated with another agent",
+     "location": "Box 5 Milrinone, Indication (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "Galis2024",
+     "quote": "The available evidence for milrinone remains limited both as monotherapy and as an adjuvant to iNO.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "ElKhuffash2023",
+     "quote": "The trial was terminated early after 4 years of enrollment due to poor recruitment.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c31",
+   "manual_text": "- Begin at 0.25-0.33 mcg/kg/min. Do NOT administer bolus. May increase to a maximum dose of 0.75 mcg/kg/min.",
+   "verdict": "partly_concordant",
+   "summary": "A start of 0.25 mcg/kg/min at CHOP and 0.25-0.33 in the Iowa table fits, and infusion without a load matches CHOP and a review, while another review calls a load optional with a higher risk of hypotension [CHOP2026; IowaHandbook; Singh2021; Siefkes2021], but the maximum is 1 mcg/kg/min in CHOP, Iowa and another review [CHOP2026; IowaHandbook; Siefkes2021], with 0.75 only in a pilot RCT that gave a 50 mcg/kg load [ElKhuffash2023]; 0.33-0.99 was used after a load in one study [McNamara2013].",
+   "note": "Current evidence suggests a maximum of about 1 mcg/kg/min in dosing guidance [CHOP2026; IowaHandbook; Siefkes2021]; 0.75 mcg/kg/min was the ceiling in one pilot RCT [ElKhuffash2023].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Milrinone should be initiated at 0.25 mcg/kg/min without a loading dose and titrated in increments of 0.125–0.25 mcg/kg/min based on echocardiographic findings and clinical response, to a suggested maximum of 1 mcg/kg/min.",
+     "location": "Milrinone (Conditional Recommendation)"
+    },
+    {
+     "ref": "Singh2021",
+     "quote": "We recommend using intravenous infusion without loading dose in neonates because of the risk of systemic hypotension.",
+     "location": "Milrinone"
+    },
+    {
+     "ref": "IowaHandbook",
+     "quote": "0.25-0.33 mcg/kg/min 1 ↑↑ ↔ ↓↓ ↓↓ Pulmonary hypertension, normal or high BP",
+     "location": "Inotropes and Vasopressor Table, milrinone row: initial dose, max dose (Iowa_Inotropes.txt)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "0.25 to 1.0 mcg/kg/min (a loading dose is optional 25-75 mcg/kg and carries a higher risk of hypotension)",
+     "location": "Box 5 Milrinone, Dose (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "McNamara2013",
+     "quote": "Patients received an intravenous loading dose of milrinone (50 μg/kg) over 60 mins followed by a maintenance infusion (0.33-0.99 μg/kg/min) for 24-72 hrs.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "ElKhuffash2023",
+     "quote": "Infants in the intervention arm received an intravenous loading dose of milrinone at a dose of 50 µg/kg administered over 60 min followed by a maintenance infusion, beginning at 0.375 µg/kg/min to a maximum 0.750 µg/kg/min.",
+     "location": "Methods, Study intervention"
+    }
+   ]
+  },
+  {
+   "id": "c32",
+   "manual_text": "- Hypotension may occur due to its vasodilatory effect but is typically transient. Once cardiac function improves, blood pressure should also improve. To avoid any hypotensive side effects, consider having a vasopressor available at the bedside or start a low-dose infusion before administering milrinone.",
+   "verdict": "concordant",
+   "summary": "Hypotension from vasodilation is a recognized effect [Siefkes2021; CHOP2026], reported as transient in small series, one after a bolus and one that excluded hypotensive infants [McNamara2013; Siefkes2021], and a review describes stabilizing blood pressure with low-dose epinephrine or giving fluid before starting milrinone [Singh2021].",
+   "evidence": [
+    {
+     "ref": "Siefkes2021",
+     "quote": "May cause or worsen systemic hypotension due to vasodilation",
+     "location": "Box 5 Milrinone, Precautions (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "while the newborns experienced transient decrease in systemic arterial pressures, overall hemodynamics improved as noted by decreased lactic acid and a trend towards decreased inotropic score. 34 However, this study excluded infants with systemic hypotension.",
+     "location": "Milrinone (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Hypotension is a known adverse effect. Dose titrations should be adjusted cautiously, particularly in the setting of renal dysfunction.",
+     "location": "Milrinone (Clinical Guidance)"
+    },
+    {
+     "ref": "McNamara2013",
+     "quote": "Although a transient reduction in systolic arterial pressure (p < 0.001) was seen following the bolus",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Singh2021",
+     "quote": "Optimal cardiac filling may help in reducing the risk of hypotension and a 10ml/kg fluid bolus may be given prior to commencing milrinone infusion, especially if decreased preload is suspected (5), or stabilizing blood pressure with low dose of epinephrine before commencing milrinone infusion.",
+     "location": "Milrinone"
+    }
+   ]
+  },
+  {
+   "id": "c33",
+   "manual_text": "In general, infants requiring two cardiac medication drips should be considered for transfer to a higher-level facility with 24-hr inpatient pediatric cardiology coverage.",
+   "verdict": "partly_concordant",
+   "summary": "In a single-institution consensus, persistent hypotension despite two vasoactive agents and hydrocortisone is a trajectory for ECMO referral, escalating vasoactive needs prompt early transfer planning, and level II units are encouraged to refer early to ECMO-capable centres [CHOP2026]; no source addresses inpatient cardiology coverage as the destination criterion.",
+   "note": "Current evidence suggests a similar vasoactive trigger for referral, with the destination named as an ECMO-capable centre, and early referral from level II units to avoid sequential or double transfers [CHOP2026].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Persistent systemic hypotension despite treatment with two vasoactive agents and initiation of hydrocortisone therapy",
+     "location": "Referral to an ECMO-Capable Center (Conditional Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "Lack of response to iNO, progressive ventricular dysfunction, or escalating vasoactive requirements should prompt early consultation and transfer planning.",
+     "location": "Early Transfer and Escalation of Care (Conditional Recommendation)"
+    },
+    {
+     "ref": "CHOP2026",
+     "quote": "For level II NICUs, early referrals to ECMO capable centers are encouraged when advanced respiratory or vasoactive support is anticipated to avoid sequential or double transfers.",
+     "location": "Referral for Advanced Respiratory and Cardiovascular Support (Conditional Recommendation)"
+    }
+   ]
+  }
+ ],
+ "omissions": [
+  {
+   "id": "o1",
+   "related_claim": "c26",
+   "topic": "Infection caution with hydrocortisone",
+   "note": "Current evidence suggests caution with hydrocortisone in known or suspected infection, which one review lists as a contraindication [Ball2023; Siefkes2021].",
+   "evidence": [
+    {
+     "ref": "Ball2023",
+     "quote": "In our unit, we consider hydrocortisone as a first-line therapy for hypotension, using caution in the setting of known or suspected infectious conditions.",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "Occult infection – fungal, viral (herpes simplex, CMV etc.,), bacterial can be exacerbated with steroid therapy",
+     "location": "Box 8 Hydrocortisone, Precautions (Siefkes2021_pmc.txt)"
+    },
+    {
+     "ref": "Siefkes2021",
+     "quote": "Known or suspected infection",
+     "location": "Box 8 Hydrocortisone, Contraindications (Siefkes2021_pmc.txt)"
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "related_claim": "c29",
+   "topic": "Serum sodium monitoring during vasopressin",
+   "note": "Current evidence suggests close, serial serum sodium monitoring during vasopressin therapy [CHOP2026; Ball2023; IowaHandbook].",
+   "evidence": [
+    {
+     "ref": "CHOP2026",
+     "quote": "Close monitoring of serum sodium is recommended during vasopressin therapy due to the risk of hyponatremia; fluid restriction or sodium supplementation may be required.",
+     "location": "Adjunctive Therapies (Conditional Recommendation)"
+    },
+    {
+     "ref": "Ball2023",
+     "quote": "Because vasopressin may be associated with hyponatremia, serial monitoring of serum sodium levels is necessary.",
+     "location": "Cardiovascular Optimization: Blood Pressure"
+    },
+    {
+     "ref": "IowaHandbook",
+     "quote": "Follow serum sodium closely.",
+     "location": "Guidelines for the Use of Vasopressin in the NICU, Monitoring (Iowa_Vasopressin.txt)"
+    }
+   ]
+  }
+ ],
+ "references": [
+  {
+   "key": "Ball2023",
+   "role": "source",
+   "authors": "Ball MK, Seabrook RB, Bonachea EM, et al.",
+   "title": "Evidence-Based Guidelines for Acute Stabilization and Management of Neonates with Persistent Pulmonary Hypertension of the Newborn",
+   "journal": "Am J Perinatol",
+   "year": "2023",
+   "volume": "40",
+   "issue": "14",
+   "pages": "1495-1508",
+   "doi": "10.1055/a-1711-0778",
+   "pmid": "34852367",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34852367/",
+    "https://api.crossref.org/works/10.1055/a-1711-0778"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Hilgendorff2016",
+   "role": "source",
+   "authors": "Hilgendorff A, Apitz C, Bonnet D, Hansmann G",
+   "title": "Pulmonary hypertension associated with acute or chronic lung diseases in the preterm and term neonate and infant. The European Paediatric Pulmonary Vascular Disease Network, endorsed by ISHLT and DGPK",
+   "journal": "Heart",
+   "year": "2016",
+   "volume": "102 Suppl 2",
+   "issue": "",
+   "pages": "ii49-56",
+   "doi": "10.1136/heartjnl-2015-308591",
+   "pmid": "27053698",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/27053698/",
+    "https://api.crossref.org/works/10.1136/heartjnl-2015-308591"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Mitra2023",
+   "role": "source",
+   "authors": "Mitra S, Altit G",
+   "title": "Inhaled nitric oxide use in newborns",
+   "journal": "Paediatr Child Health",
+   "year": "2023",
+   "volume": "28",
+   "issue": "2",
+   "pages": "119-127",
+   "doi": "10.1093/pch/pxac107",
+   "pmid": "37151928",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37151928/",
+    "https://api.crossref.org/works/10.1093/pch/pxac107"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Kumar2014",
+   "role": "source",
+   "authors": "Kumar P",
+   "title": "Use of inhaled nitric oxide in preterm infants",
+   "journal": "Pediatrics",
+   "year": "2014",
+   "volume": "133",
+   "issue": "1",
+   "pages": "164-170",
+   "doi": "10.1542/peds.2013-3444",
+   "pmid": "24379225",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24379225/",
+    "https://api.crossref.org/works/10.1542/peds.2013-3444"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Wild2020",
+   "role": "source",
+   "authors": "Wild KT, Rintoul N, Kattan J, Gray B",
+   "title": "Extracorporeal Life Support Organization (ELSO): Guidelines for Neonatal Respiratory Failure",
+   "journal": "ASAIO J",
+   "year": "2020",
+   "volume": "66",
+   "issue": "5",
+   "pages": "463-470",
+   "doi": "10.1097/MAT.0000000000001153",
+   "pmid": "32282347",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/32282347/",
+    "https://api.crossref.org/works/10.1097/MAT.0000000000001153"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Siefkes2021",
+   "role": "source",
+   "authors": "Siefkes HM, Lakshminrusimha S",
+   "title": "Management of systemic hypotension in term infants with persistent pulmonary hypertension of the newborn: an illustrated review",
+   "journal": "Arch Dis Child Fetal Neonatal Ed",
+   "year": "2021",
+   "volume": "106",
+   "issue": "4",
+   "pages": "446-455",
+   "doi": "10.1136/archdischild-2020-319705",
+   "pmid": "33478959",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33478959/",
+    "https://api.crossref.org/works/10.1136/archdischild-2020-319705"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Singh2021",
+   "role": "source",
+   "authors": "Singh Y, Lakshminrusimha S",
+   "title": "Pathophysiology and Management of Persistent Pulmonary Hypertension of the Newborn",
+   "journal": "Clin Perinatol",
+   "year": "2021",
+   "volume": "48",
+   "issue": "3",
+   "pages": "595-618",
+   "doi": "10.1016/j.clp.2021.05.009",
+   "pmid": "34353582",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34353582/",
+    "https://api.crossref.org/works/10.1016/j.clp.2021.05.009"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Lakshminrusimha2015",
+   "role": "source",
+   "authors": "Lakshminrusimha S, Keszler M",
+   "title": "Persistent Pulmonary Hypertension of the Newborn",
+   "journal": "Neoreviews",
+   "year": "2015",
+   "volume": "16",
+   "issue": "12",
+   "pages": "e680-e692",
+   "doi": "10.1542/neo.16-12-e680",
+   "pmid": "26783388",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/26783388/",
+    "https://api.crossref.org/works/10.1542/neo.16-12-e680"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Lakshminrusimha2024",
+   "role": "source",
+   "authors": "Lakshminrusimha S, Abman SH",
+   "title": "Oxygen Targets in Neonatal Pulmonary Hypertension: Individualized, \"Precision-Medicine\" Approach",
+   "journal": "Clin Perinatol",
+   "year": "2024",
+   "volume": "51",
+   "issue": "1",
+   "pages": "77-94",
+   "doi": "10.1016/j.clp.2023.12.003",
+   "pmid": "38325948",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38325948/",
+    "https://api.crossref.org/works/10.1016/j.clp.2023.12.003"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Chandrasekharan2020",
+   "role": "source",
+   "authors": "Chandrasekharan P, Rawat M, Lakshminrusimha S",
+   "title": "How Do We Monitor Oxygenation during the Management of PPHN? Alveolar, Arterial, Mixed Venous Oxygen Tension or Peripheral Saturation?",
+   "journal": "Children (Basel)",
+   "year": "2020",
+   "volume": "7",
+   "issue": "10",
+   "pages": "180",
+   "doi": "10.3390/children7100180",
+   "pmid": "33066076",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33066076/",
+    "https://api.crossref.org/works/10.3390/children7100180"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Rawat2015",
+   "role": "source",
+   "authors": "Rawat M, Chandrasekharan PK, Williams A, et al.",
+   "title": "Oxygen saturation index and severity of hypoxic respiratory failure",
+   "journal": "Neonatology",
+   "year": "2015",
+   "volume": "107",
+   "issue": "3",
+   "pages": "161-166",
+   "doi": "10.1159/000369774",
+   "pmid": "25592054",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/25592054/",
+    "https://api.crossref.org/works/10.1159/000369774"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Chojnacka2025",
+   "role": "source",
+   "authors": "Chojnacka K, Singh Y, Gahlaut S, Blaz W, Jerzak A, Szczapa T",
+   "title": "Persistent Pulmonary Hypertension of the Newborn: A Pragmatic Review of Pathophysiology, Diagnosis, and Advances in Management",
+   "journal": "Biomedicines",
+   "year": "2025",
+   "volume": "13",
+   "issue": "10",
+   "pages": "2332",
+   "doi": "10.3390/biomedicines13102332",
+   "pmid": "41153619",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41153619/",
+    "https://api.crossref.org/works/10.3390/biomedicines13102332"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Mohamed2026",
+   "role": "source",
+   "authors": "Mohamed E",
+   "title": "Persistent Pulmonary Hypertension of the Newborn: A Practical Review for UK Level 2 Local Neonatal Units",
+   "journal": "Cureus",
+   "year": "2026",
+   "volume": "18",
+   "issue": "9",
+   "pages": "e116003",
+   "doi": "10.7759/cureus.116003",
+   "pmid": "42857722",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42857722/",
+    "https://api.crossref.org/works/10.7759/cureus.116003"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Titolo2025",
+   "role": "source",
+   "authors": "Titolo AC, Ferrocino M, Biagi E, et al.",
+   "title": "Neonatologist-Performed Echocardiography in Neonatal Pulmonary Hypertension: A Narrative Review of the Literature",
+   "journal": "Diagnostics (Basel)",
+   "year": "2025",
+   "volume": "15",
+   "issue": "24",
+   "pages": "3154",
+   "doi": "10.3390/diagnostics15243154",
+   "pmid": "41464155",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41464155/",
+    "https://api.crossref.org/works/10.3390/diagnostics15243154"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Surak2026",
+   "role": "source",
+   "authors": "Surak A, Sewidan M, Kuan MTY, Kennedy M, Kumar M, Ting JY",
+   "title": "Vasopressin for hemodynamic support in neonates: current evidence and clinical applications",
+   "journal": "J Perinatol",
+   "year": "2026",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "doi": "10.1038/s41372-026-02837-0",
+   "pmid": "42557365",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42557365/",
+    "https://api.crossref.org/works/10.1038/s41372-026-02837-0"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Santelices2024",
+   "role": "source",
+   "authors": "Santelices F, Masoli D, Kattan J, Toso A, Luco M",
+   "title": "Vasopressin as adjunctive therapy in pulmonary hypertension associated with refractory systemic hypotension in term newborns",
+   "journal": "J Perinatol",
+   "year": "2024",
+   "volume": "44",
+   "issue": "10",
+   "pages": "1448-1453",
+   "doi": "10.1038/s41372-024-02015-0",
+   "pmid": "38965377",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38965377/",
+    "https://api.crossref.org/works/10.1038/s41372-024-02015-0"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Ouellet2024",
+   "role": "source",
+   "authors": "Ouellet S, Drolet C, Morissette G, Pellerin A, Hébert A",
+   "title": "Vasopressin in newborns with refractory acute pulmonary hypertension",
+   "journal": "Pediatr Res",
+   "year": "2024",
+   "volume": "95",
+   "issue": "6",
+   "pages": "1572-1577",
+   "doi": "10.1038/s41390-023-02995-3",
+   "pmid": "38212386",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38212386/",
+    "https://api.crossref.org/works/10.1038/s41390-023-02995-3"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Mohamed2014",
+   "role": "source",
+   "authors": "Mohamed A, Nasef N, Shah V, McNamara PJ",
+   "title": "Vasopressin as a rescue therapy for refractory pulmonary hypertension in neonates: case series",
+   "journal": "Pediatr Crit Care Med",
+   "year": "2014",
+   "volume": "15",
+   "issue": "2",
+   "pages": "148-154",
+   "doi": "10.1097/PCC.0b013e31829f5fce",
+   "pmid": "24141655",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24141655/",
+    "https://api.crossref.org/works/10.1097/PCC.0b013e31829f5fce"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Aleem2021",
+   "role": "source",
+   "authors": "Aleem S, Robbins C, Murphy B, et al.",
+   "title": "The use of supplemental hydrocortisone in the management of persistent pulmonary hypertension of the newborn",
+   "journal": "J Perinatol",
+   "year": "2021",
+   "volume": "41",
+   "issue": "4",
+   "pages": "794-800",
+   "doi": "10.1038/s41372-021-00943-9",
+   "pmid": "33589734",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33589734/",
+    "https://api.crossref.org/works/10.1038/s41372-021-00943-9"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Alsaleem2019",
+   "role": "source",
+   "authors": "Alsaleem M, Malik A, Lakshminrusimha S, Kumar VH",
+   "title": "Hydrocortisone Improves Oxygenation Index and Systolic Blood Pressure in Term Infants With Persistent Pulmonary Hypertension",
+   "journal": "Clin Med Insights Pediatr",
+   "year": "2019",
+   "volume": "13",
+   "issue": "",
+   "pages": "1179556519888918",
+   "doi": "10.1177/1179556519888918",
+   "pmid": "31798307",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/31798307/",
+    "https://api.crossref.org/works/10.1177/1179556519888918"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Oren2026",
+   "role": "source",
+   "authors": "Oren MS, Lakshminrusimha S, Bautista L, et al.",
+   "title": "Systemic Arterial Blood Pressure Targets and Extracorporeal Membrane Oxygenation or Death in Persistent Pulmonary Hypertension of Newborns: A Cohort Analysis",
+   "journal": "Neonatology",
+   "year": "2026",
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "doi": "10.1159/neo/adsag033",
+   "pmid": "42905643",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42905643/",
+    "https://api.crossref.org/works/10.1159/neo/adsag033"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Galis2024",
+   "role": "source",
+   "authors": "Galis R, Mudura D, Trif P, et al.",
+   "title": "Milrinone in persistent pulmonary hypertension of newborn: a scoping review",
+   "journal": "Pediatr Res",
+   "year": "2024",
+   "volume": "96",
+   "issue": "5",
+   "pages": "1172-1179",
+   "doi": "10.1038/s41390-024-03234-z",
+   "pmid": "38745027",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38745027/",
+    "https://api.crossref.org/works/10.1038/s41390-024-03234-z"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "McNamara2013",
+   "role": "source",
+   "authors": "McNamara PJ, Shivananda SP, Sahni M, Freeman D, Taddio A",
+   "title": "Pharmacology of milrinone in neonates with persistent pulmonary hypertension of the newborn and suboptimal response to inhaled nitric oxide",
+   "journal": "Pediatr Crit Care Med",
+   "year": "2013",
+   "volume": "14",
+   "issue": "1",
+   "pages": "74-84",
+   "doi": "10.1097/PCC.0b013e31824ea2cd",
+   "pmid": "23132395",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/23132395/",
+    "https://api.crossref.org/works/10.1097/PCC.0b013e31824ea2cd"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "ElKhuffash2023",
+   "role": "source",
+   "authors": "El-Khuffash A, McNamara PJ, Breatnach C, et al.",
+   "title": "The use of milrinone in neonates with persistent pulmonary hypertension of the newborn - a randomised controlled trial pilot study (MINT 1)",
+   "journal": "J Perinatol",
+   "year": "2023",
+   "volume": "43",
+   "issue": "2",
+   "pages": "168-173",
+   "doi": "10.1038/s41372-022-01562-8",
+   "pmid": "36385642",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36385642/",
+    "https://api.crossref.org/works/10.1038/s41372-022-01562-8"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Barrington2017",
+   "role": "source",
+   "authors": "Barrington KJ, Finer N, Pennaforte T",
+   "title": "Inhaled nitric oxide for respiratory failure in preterm infants",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2017",
+   "volume": "1",
+   "issue": "1",
+   "pages": "CD000509",
+   "doi": "10.1002/14651858.CD000509.pub5",
+   "pmid": "28045472",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/28045472/",
+    "https://api.crossref.org/works/10.1002/14651858.CD000509.pub5"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Golombek2010",
+   "role": "source",
+   "authors": "Golombek SG, Young JN",
+   "title": "Efficacy of inhaled nitric oxide for hypoxic respiratory failure in term and late preterm infants by baseline severity of illness: a pooled analysis of three clinical trials",
+   "journal": "Clin Ther",
+   "year": "2010",
+   "volume": "32",
+   "issue": "5",
+   "pages": "939-948",
+   "doi": "10.1016/j.clinthera.2010.04.023",
+   "pmid": "20685502",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/20685502/",
+    "https://api.crossref.org/works/10.1016/j.clinthera.2010.04.023"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "CHOP2026",
+   "role": "source",
+   "citation": "Corder W, Roumiantsev S, et al. Multidisciplinary Consensus Recommendations for the Diagnosis and Management of Persistent Pulmonary Hypertension of the Newborn (PPHN). Children's Hospital of Philadelphia, Division of Neonatology; May 2026 (reviewed May 29, 2026).",
+   "url": "https://www.chop.edu/multidisciplinary-consensus-recommendations-diagnosis-and-management-persistent-pulmonary",
+   "doi": null,
+   "verified_against": [
+    "https://www.chop.edu/multidisciplinary-consensus-recommendations-diagnosis-and-management-persistent-pulmonary"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "ELSO2013",
+   "role": "source",
+   "citation": "Extracorporeal Life Support Organization. ELSO Guidelines for Neonatal Respiratory Failure: Supplement to the ELSO General Guidelines. Version 1.3, December 2013.",
+   "url": "https://www.elso.org/Portals/0/IGD/Archive/FileManager/8588d1a580cusersshyerdocumentselsoguidelinesforneonatalrespiratoryfailure13.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.elso.org/Portals/0/IGD/Archive/FileManager/8588d1a580cusersshyerdocumentselsoguidelinesforneonatalrespiratoryfailure13.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "IowaHandbook",
+   "role": "source",
+   "citation": "Giesinger R, McNamara P, Tierney S, Klein J. Guidelines for the Use of Vasopressin in the NICU. Iowa Neonatology Handbook, University of Iowa Stead Family Children's Hospital (undated; references accessed 2018); with Iowa Neonatology Handbook Inotropes and Vasopressor Table (PDF created December 2022), https://www.healthcare.uiowa.edu/marcom/uichildrens/neonatology-handbook/Inotropes-and-Vasopressor-Table.pdf.",
+   "url": "https://www.healthcare.uiowa.edu/marcom/uichildrens/neonatology-handbook/VasopressinGuidelines.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.healthcare.uiowa.edu/marcom/uichildrens/neonatology-handbook/VasopressinGuidelines.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 3,
+  "date": "2026-11-07",
+  "quotes_checked": 418,
+  "references_verified": 29,
+  "known_limitations": [
+   "Several hemodynamic sources are single-institution or pathway documents (CHOP2026, Ball2023, Iowa Neonatology Handbook) and UK network values are reported second-hand in Mohamed2026; AHA/ATS content appears only as quoted in reviews.",
+   "ELSO OI thresholds come from the ELSO neonatal supplement v1.3 (2013); Mohamed2026's 'v1.4 (2017)' label for the same URL could not be confirmed. Wild2020 (ELSO 2020) Figure 1 is an image, transcribed by hand.",
+   "Iowa Inotropes and Vasopressor Table quotes are read from a PDF table's text extraction, checked against a rendered image.",
+   "Omission o1 (infection caution with hydrocortisone) passes the omission test narrowly and rests on a one-centre guideline and a review.",
+   "The saved Abman2015 page was a bot check, logged and not worked around; Abman2015 and Hansmann2019 were read as abstracts only.",
+   "Kumar2014's citation leaves out the corporate author (Committee on Fetus and Newborn, AAP); refs.py does not carry PubMed collective names."
+  ]
+ }
+}

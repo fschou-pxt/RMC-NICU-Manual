@@ -1,0 +1,1387 @@
+{
+ "chapter": "nutrition-fluid",
+ "section": "Fluid Management",
+ "anchor": "nutrition-fluid.html#fluid-management",
+ "source": {
+  "file": "site/src/content/docs/nutrition-fluid.mdx",
+  "lines": "14-73",
+  "manual_commit": "398c583"
+ },
+ "checked": "2026-11-07",
+ "generated_with": "Researcher, Comparer, Reviewer: claude-opus-5-5",
+ "triage": {
+  "clinical": 14,
+  "operational": 2,
+  "definition": 1,
+  "context": 4
+ },
+ "scope": {
+  "population": "Term and preterm newborn infants receiving IV fluids or with vascular lines in the NICU, in the section's own groups: term, preterm ≥ 28 weeks and preterm < 28 weeks, with ELBW (< 1,000 g) / ELGAN (< 28 weeks) limits in the KVO table.",
+  "topic": "Starting total fluid volume, glucose infusion rate calculation, line KVO rates and solutions, heparin in central line fluid, alprostadil minimum rate and the osmolality limit for non-central infusions.",
+  "basis": "Chapter Nutrition and Fluids, heading \"Fluid Management\", with subheadings \"Initial total fluid guide\" (term, preterm ≥ GA 28 weeks, preterm < GA 28 weeks), \"Glucose infusion rate (GIR)\" and \"Line KVO rates\" (\"NICU Line KVO Rates Quick Reference\").",
+  "set_aside": [
+   {
+    "ref": "Feld2018",
+    "population": "Children 28 days to 18 years",
+    "reason": "Excludes neonates younger than 28 days and infants in the NICU."
+   },
+   {
+    "ref": "Randolph1998",
+    "population": "Patients with peripheral venous or arterial catheters, not neonate-specific",
+    "reason": "The abstract does not report newborns separately."
+   },
+   {
+    "ref": "Dugan2014",
+    "population": "Patients ≤ 18 years on peripheral parenteral nutrition",
+    "reason": "Mixed pediatric cohort; the abstract does not report neonates separately."
+   },
+   {
+    "ref": "Bartels2009",
+    "population": "Laboratory model of a pediatric central venous infusion system, not infants",
+    "reason": "Tests a model drug, not alprostadil, and no minimum rate by access type."
+   },
+   {
+    "ref": "Baeckert2020",
+    "population": "In vitro syringe pump assemblies, perioperative setting, not infants",
+    "reason": "Does not test alprostadil or a minimum rate by access type."
+   },
+   {
+    "ref": "Levi2010",
+    "population": "In vitro infusion circuits, not infants",
+    "reason": "Does not test alprostadil or a minimum rate by access type."
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "Initial total fluid guide: Term: 60-80 ml/kg/day",
+   "verdict": "partly_concordant",
+   "summary": "For term neonates, day 1 volumes are 40–60 ml/kg/d in ESPGHAN, reaching 60–80 on day 3 [Jochum2018], 50 to 60 ml/kg/day in NICE, reaching 70 to 80 on day 2 [NICE2015], and 60 mL/kg/d in a Western Australian NICU guideline [WAFluid2024]; one US unit starts at 60 mL/kg/day [UNCNutrition2026], a transport quick reference from the same Western Australian service, written for transport purposes only, gives 60-80mL/kg/day on day 1 for ≥ 35 weeks [NETSWA2026], and a retrospective cohort of 174 infants ≥ 34 weeks found that current fluid strategies may overestimate needs, particularly in term infants not receiving enteral feeds [Chang2025].",
+   "note": "Current evidence suggests lower first-day volumes for term neonates: 40–60 ml/kg/d in ESPGHAN [Jochum2018], 50 to 60 ml/kg/day in NICE [NICE2015] and 60 mL/kg/d in a Western Australian NICU guideline [WAFluid2024]. The 60-80mL/kg/day day 1 figure appears only in a transport quick reference from the same service [NETSWA2026]. A single-center cohort suggests standard rates may overestimate term infants' needs [Chang2025].",
+   "evidence": [
+    {
+     "ref": "Jochum2018",
+     "quote": "Term neonate\t40–60\t50–70\t60–80\t60–100\t100–140",
+     "location": "Table 1, columns Day 1 to Day 5"
+    },
+    {
+     "ref": "NICE2015",
+     "quote": "From birth to day 1: 50 to 60 ml/kg/day.",
+     "location": "Recommendation 1.4.2, term neonates"
+    },
+    {
+     "ref": "NICE2015",
+     "quote": "Day 2: 70 to 80 ml/kg/day.",
+     "location": "Recommendation 1.4.2, term neonates"
+    },
+    {
+     "ref": "NETSWA2026",
+     "quote": "Neonates ≥35 weeks require 60-80mL/kg/day on day 1.",
+     "location": "Fluid Management, Maintenance fluids (quick reference for transport)"
+    },
+    {
+     "ref": "NETSWA2026",
+     "quote": "This is a quick reference guide for transportation purposes only.",
+     "location": "Fluid Management (the same paragraph refers the reader to the Fluid and Nutrition Requirements, and Enteral Feeding guideline)"
+    },
+    {
+     "ref": "WAFluid2024",
+     "quote": "Term infants • 60 mL/kg/d",
+     "location": "Volume and Glucose requirements, Day 1 Fluids, p. 2"
+    },
+    {
+     "ref": "UNCNutrition2026",
+     "quote": "≥ 37 weeks = 60 mL/kg/day",
+     "location": "Intravenous Fluid Volume (Day of Birth)"
+    },
+    {
+     "ref": "Chang2025",
+     "quote": "Positive FB was common and strongly associated with hyponatremia in infants receiving standard IVF rates. These effects were most significant in term and unfed infants. Current fluid strategies may overestimate needs, particularly for term infants not receiving enteral feeds.",
+     "location": "Abstract, Conclusion"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "Initial total fluid guide: Preterm ≥ GA 28 weeks: 80 ml/kg/day",
+   "verdict": "concordant",
+   "summary": "80 mL/kg/day lies within the European guideline's 70–80 mL/kg/day start for preterm infants with RDS in a humidified incubator [Sweet2026], ESPGHAN's day 1 ranges of 60–80 ml/kg/d for > 1500 g and 70–90 for 1000–1500 g [Jochum2018] and a transport guideline's 80-100mL/kg/day for 27 to 34+6 weeks [NETSWA2026], and it equals the day 1 volume for preterm infants born > 25 weeks in a Western Australian NICU guideline [WAFluid2024] and one US unit's start for < 37 weeks [UNCNutrition2026]; none of these sources uses a 28-week split.",
+   "evidence": [
+    {
+     "ref": "Sweet2026",
+     "quote": "Most babies should be started on intravenous fluids of 70–80 mL/kg/day in a humidified incubator although some very immature babies may need more (C1). Fluids must be tailored individually according to serum sodium levels, urine output and weight loss (D1).",
+     "location": "Early Fluids and Nutritional Support, Recommendation 2"
+    },
+    {
+     "ref": "Jochum2018",
+     "quote": "Preterm neonate >1500 g\t60–80\t80–100\t100–120\t120–140\t140–160",
+     "location": "Table 1, columns Day 1 to Day 5"
+    },
+    {
+     "ref": "Jochum2018",
+     "quote": "Preterm neonate 1000–1500 g\t70–90\t90–110\t110–130\t130–150\t160–180",
+     "location": "Table 1, columns Day 1 to Day 5"
+    },
+    {
+     "ref": "NETSWA2026",
+     "quote": "Preterm neonates 27 to 34+6 weeks require 80-100mL/kg/day on day 1.",
+     "location": "Fluid Management, Maintenance fluids (quick reference for transport)"
+    },
+    {
+     "ref": "WAFluid2024",
+     "quote": "Preterm infants born >25 weeks gestation • 80 mL/kg/d",
+     "location": "Volume and Glucose requirements, Day 1 Fluids, p. 2"
+    },
+    {
+     "ref": "UNCNutrition2026",
+     "quote": "˂ 37 weeks = 80 mL/kg/day",
+     "location": "Intravenous Fluid Volume (Day of Birth)"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "Initial total fluid guide: Preterm < GA 28 weeks: 90-100 ml/kg/day",
+   "verdict": "practice_varies",
+   "summary": "Published starts for the smallest infants differ: 70–80 mL/kg/day for most babies in a humidified incubator, with more for some very immature babies [Sweet2026], 80 mL/kg/day in one US ELBW protocol [UNCELBW], 80–100 ml/kg/d on day 1 for < 1000 g [Jochum2018], 100 mL/kg/d for preterm infants born < 25 weeks and 80 mL/kg/d for those born > 25 weeks in a Western Australian NICU guideline that does not assign infants born at 25 weeks [WAFluid2024], 100 mL/kg/d at 26-27 wk and 110 mL/kg/d at 24-25 wk in a narrative review that notes most such advice lacks trial evidence [Prakash2025] and 100-120mL/kg/day for ≤ 27 weeks in a transport guideline [NETSWA2026]; a two-era cohort of infants 22–26 weeks at 85% humidity found no clinically important difference between a restricted start of 65 mL/kg/day and a liberal start of 85–95 mL/kg/day [Diderholm2022], and Cochrane found that restricted water intake in preterm infants reduced patent ductus arteriosus and necrotizing enterocolitis [Bell2014].",
+   "evidence": [
+    {
+     "ref": "Sweet2026",
+     "quote": "Most babies should be started on intravenous fluids of 70–80 mL/kg/day in a humidified incubator although some very immature babies may need more (C1). Fluids must be tailored individually according to serum sodium levels, urine output and weight loss (D1).",
+     "location": "Early Fluids and Nutritional Support, Recommendation 2"
+    },
+    {
+     "ref": "UNCELBW",
+     "quote": "Initial fluid rate = 80mL/kg/day (briefly 60mL/kg/day via PIV until central access obtained)",
+     "location": "Parenteral Nutrition: Initial Orders"
+    },
+    {
+     "ref": "Jochum2018",
+     "quote": "Preterm neonate <1000 g\t80–100\t100–120\t120–140\t140–160\t160–180",
+     "location": "Table 1, columns Day 1 to Day 5"
+    },
+    {
+     "ref": "WAFluid2024",
+     "quote": "Preterm infants born <25 weeks gestation • 100 mL/kg/d",
+     "location": "Volume and Glucose requirements, Day 1 Fluids, p. 2"
+    },
+    {
+     "ref": "WAFluid2024",
+     "quote": "Preterm infants born >25 weeks gestation • 80 mL/kg/d",
+     "location": "Volume and Glucose requirements, Day 1 Fluids, p. 2"
+    },
+    {
+     "ref": "Prakash2025",
+     "quote": "the authors recommend initiating total fluids on the first day of life at 100 mL/kg/d in neonates at 26-27 wk gestation and 110 mL/kg/d at 24-25 wk gestation.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Prakash2025",
+     "quote": "Since most of these recommendations are not based on concrete evidence from trials, it is advisable to periodically audit the outcomes and devise a unit-specific fluid strategy.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "NETSWA2026",
+     "quote": "Extreme Preterm neonate’s ≤ 27 weeks require 100-120mL/kg/day due to increased insensible fluid losses",
+     "location": "Fluid Management, Maintenance fluids (quick reference for transport)"
+    },
+    {
+     "ref": "Diderholm2022",
+     "quote": "In the RESTRICTED group an initial total fluid volume of 65 mL/kg/day was recommended",
+     "location": "Methods"
+    },
+    {
+     "ref": "Diderholm2022",
+     "quote": "In the LIBERAL group total fluids were started at 95 mL/kg/day (GA 22–24 weeks) and 85 mL/kg/d (GA 25–26 weeks), respectively.",
+     "location": "Methods"
+    },
+    {
+     "ref": "Diderholm2022",
+     "quote": "All infants were cared for in closed intensive care incubators set at a high relative humidity of 85% during the first week",
+     "location": "Methods"
+    },
+    {
+     "ref": "Diderholm2022",
+     "quote": "We conclude that in this cohort of extremely preterm infants a more liberal vs. a restricted fluid allowance during the first week had no clinically important influence on early changes in body weight, sodium homeostasis, or hospital morbidities.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Bell2014",
+     "quote": "restricted water intake significantly increased postnatal weight loss and significantly reduced the risks of patent ductus arteriosus and necrotizing enterocolitis.",
+     "location": "Abstract, Main results"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "Formula 1: mg/kg/min = (% Dextrose) × total fluid (ml/kg/day) / 144",
+   "verdict": "concordant",
+   "summary": "A neonatal house staff manual gives the same formula [UCSFICN], ESPGHAN's conversion of 10 mg/kg per min to 14.4 g/kg per day fits it [Mesotten2018], and a unit protocol's example of D10 at 120 ml/kg/day giving GIR 8.3 mg/kg/min fits it [UNCNutrition2026].",
+   "evidence": [
+    {
+     "ref": "UCSFICN",
+     "quote": "% glucose x mL/kg/d = glucose infusion rate (mg/kg/min) 144",
+     "location": "Footnote, formulas (printed as a fraction, numerator over 144)"
+    },
+    {
+     "ref": "Mesotten2018",
+     "quote": "usually up to 10 mg/kg per min (14.4 g/kg per day)",
+     "location": "Body text"
+    },
+    {
+     "ref": "UNCNutrition2026",
+     "quote": "D10 with 10 mEq NaCl and 10 mEq KCl per 500 mL bag at 120 ml/kg/day gives GIR 8.3 mg/kg/min",
+     "location": "Parenteral Nutrition - Clear Fluids"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "Formula 2: mg/kg/min = (% Dextrose) × hourly rate (ml/hr) / (6 × weight)",
+   "verdict": "concordant",
+   "summary": "A neonatal house staff manual gives the same formula and specifies body weight in kg [UCSFICN].",
+   "evidence": [
+    {
+     "ref": "UCSFICN",
+     "quote": "% glucose x mL/h = glucose infusion rate (mg/kg/min) 6 x body weight (kg)",
+     "location": "Footnote, formulas (printed as a fraction, numerator over 6 x body weight)"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "Line KVO table, Minimum KVO rate / ELBW / ELGAN minimum: PICC (single or double lumen): 1 mL/hr; ELBW / ELGAN minimum: —",
+   "verdict": "partly_concordant",
+   "summary": "The retrieved sources are a consensus formulary giving 0.5–1 mL/hour for venous catheters [ANMFHeparin2026] and 0.5 mL/hour in arterial or central venous lines up to 1.5 kg, up to 1 mL/hour above 1.5 kg with metabolic acidosis [ANMFAcetate2026], one unit's protocol for 1 Fr catheters on parenteral nutrition that stays at 0.5 ml/h or above [DAndrea2026] and an institutional document using a minimum of 1 ml/h for 1 Fr PICCs not in use [CHI1Fr]; none is a trial of a minimum rate.",
+   "note": "Current evidence suggests a venous catheter rate of 0.5–1 mL/hour, given as a simplified pragmatic consensus [ANMFHeparin2026]. One unit keeps 1 Fr catheters on parenteral nutrition at 0.5 ml/h or above [DAndrea2026], and one institutional document uses a minimum of 1 ml/h for 1 Fr PICCs not in use [CHI1Fr].",
+   "evidence": [
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "0.5 unit/mL of heparinised saline to run at 0.5 –1 mL/hour.",
+     "location": "Dose, Venous catheter patency maintenance"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "ANMF consensus on the strength and infusion rate of heparinised IV fluid for catheter patency is a simplified pragmatic recommendation from the evidence.",
+     "location": "Evidence, and again in Practice points"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "< 1 Kg: sodium acetate half strength* with heparin 1 unit/mL at 0.5 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "1-1.5 Kg: sodium acetate standard strength* with heparin 1 unit/mL at 0.5 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": ">1.5 kg with metabolic acidosis: sodium acetate standard strength* with heparin 1 unit/mL up to 1 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "DAndrea2026",
+     "quote": "Consequently, infusion rates are never reduced below 0.5 ml/h during catheter dwell.",
+     "location": "Methods (unit protocol, 1 Fr epicutaneo-caval catheters)"
+    },
+    {
+     "ref": "CHI1Fr",
+     "quote": "So if a PICC line is not in use it needs to be continuously infusing heparin 1u/ml @ min rate 1ml/h, which needs to be started immediately.",
+     "location": "Page 1, item 5 (1 Fr lines)"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "Line KVO table, Minimum KVO rate / ELBW / ELGAN minimum: UVC (single or double lumen): 0.5–1 mL/hr; ELBW / ELGAN minimum: 0.3 mL/hr",
+   "verdict": "partly_concordant",
+   "summary": "0.5–1 mL/hour matches a consensus formulary for venous catheters [ANMFHeparin2026], whose sodium acetate monograph gives 0.5 mL/hour for infants < 1 Kg in arterial or central venous lines [ANMFAcetate2026]; 1 mL/hr appears in a neonatal UVC procedure as the rate before X-ray confirmation of placement [WAUVC2026], and the only published 0.3 mL/hr figure retrieved is for a UAC in an ELBW protocol [UNCELBW].",
+   "note": "Current evidence suggests 0.5–1 mL/hour as a consensus rate for venous catheters [ANMFHeparin2026], and the same formulary gives 0.5 mL/hour for infants < 1 Kg in arterial or central venous lines [ANMFAcetate2026]. The only published 0.3 mL/hr figure retrieved concerns a UAC in ELBW infants, not a UVC [UNCELBW].",
+   "evidence": [
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "0.5 unit/mL of heparinised saline to run at 0.5 –1 mL/hour.",
+     "location": "Dose, Venous catheter patency maintenance"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "< 1 Kg: sodium acetate half strength* with heparin 1 unit/mL at 0.5 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "WAUVC2026",
+     "quote": "Commence infusions at 1mL/hr through the catheter prior to x-ray placement confirmation to avoid blocking of the line.",
+     "location": "Procedure (rate before X-ray confirmation of placement)"
+    },
+    {
+     "ref": "UNCELBW",
+     "quote": "Infuse isotonic amino acids 3.6% with 1 unit heparin/mL via UAC at 0.3-0.5mL/hr",
+     "location": "Parenteral Nutrition: Initial Orders"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "Line KVO table, Minimum KVO rate / ELBW / ELGAN minimum: UAC: 0.5–1 mL/hr; ELBW / ELGAN minimum: —",
+   "verdict": "concordant",
+   "summary": "A consensus formulary gives 0.5–1 mL/hour for arterial catheters [ANMFHeparin2026] and 0.5 mL/hour in arterial or central venous lines at < 1 Kg [ANMFAcetate2026], a neonatal UAC guideline starts the infusion at 0.5-1ml/hr before X-ray confirmation of placement [WAUAC2026], a US UAC cohort that excluded rates above 1 mL/hr ran 86.1% of infants at 1 mL/hr and 13.9% at 0.5 mL/hr [Qian2026], and a cohort of infants 22–26 weeks used 0.5 mL/h [Diderholm2022]; one ELBW protocol runs lower, at 0.3-0.5mL/hr [UNCELBW], and no trial comparing UAC rates was retrieved.",
+   "evidence": [
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "1 unit/mL of heparinised saline to run at 0.5 – 1 mL/hour.",
+     "location": "Dose, Arterial catheter patency maintenance"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "< 1 Kg: sodium acetate half strength* with heparin 1 unit/mL at 0.5 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "WAUAC2026",
+     "quote": "commence infusion at 0.5-1ml/hr prior to x-ray confirmation of placement",
+     "location": "Procedure, p. 8 (rate before X-ray confirmation of placement)"
+    },
+    {
+     "ref": "Qian2026",
+     "quote": "The median number of days with a UAC line was 3.1 (1.9–4.4) and the majority of patients received UAC fluids at 1 mL/hr (86.1%).",
+     "location": "Results"
+    },
+    {
+     "ref": "Qian2026",
+     "quote": "0.5 mL/hr, n (%)\t28 (13.9)\t9 (9.0)\t19 (18.6)\t0.048",
+     "location": "Table 1 (columns total, dextrose, sodium acetate, p)"
+    },
+    {
+     "ref": "Qian2026",
+     "quote": "receiving UAC fluids at a rate of > 1 mL/hr",
+     "location": "Methods, exclusion criteria"
+    },
+    {
+     "ref": "Diderholm2022",
+     "quote": "a standard flush solution (NaCl 9 mg/mL at 0.5 mL/h) for umbilical arterial lines",
+     "location": "Methods"
+    },
+    {
+     "ref": "UNCELBW",
+     "quote": "Infuse isotonic amino acids 3.6% with 1 unit heparin/mL via UAC at 0.3-0.5mL/hr",
+     "location": "Parenteral Nutrition: Initial Orders"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "Line KVO table, Minimum KVO rate / ELBW / ELGAN minimum: PAL: 1 mL/hr; ELBW / ELGAN minimum: 0.5 mL/hr",
+   "verdict": "concordant",
+   "summary": "The ACCP guideline recommends heparin infusion at 1 mL/h for peripheral arterial catheters in neonates and children (Grade 1A) [Monagle2012], a consensus formulary's Practice points recommend 0.5 units/mL at 1 mL/hour for peripheral arterial catheters (LOE II, GOR B) [ANMFHeparin2026], a neonatal procedure runs a PAL at 1mL/hr [WAPAC2024], and the same formulary gives 0.5 mL/hour for arterial or central venous lines at < 1 Kg [ANMFAcetate2026], within its 0.5–1 mL/hour arterial catheter range [ANMFHeparin2026]; the one neonatal trial retrieved ran 1 to 2 ml/hr and its conclusion names infants of 1500 gm or more, so 0.5 mL/hr in ELBW infants with a PAL is untested [RaisBahrami1990].",
+   "evidence": [
+    {
+     "ref": "Monagle2012",
+     "quote": "For neonates and children with peripheral arterial catheters in situ, we recommend UFH continuous infusion at 0.5 units/mL at 1 mL/h compared with normal saline (Grade 1A).",
+     "location": "Summary of Recommendations 2.11"
+    },
+    {
+     "ref": "WAPAC2024",
+     "quote": "Immediately commence heparinised saline infusion. Run at 1mL/hr.",
+     "location": "Procedure"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "Heparin infusions at 0.5 units/mL at 1 mL/hour are recommended",
+     "location": "Practice points, Peripheral arterial catheters (LOE II, GOR B)"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "< 1 Kg: sodium acetate half strength* with heparin 1 unit/mL at 0.5 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "1 unit/mL of heparinised saline to run at 0.5 – 1 mL/hour.",
+     "location": "Dose, Arterial catheter patency maintenance"
+    },
+    {
+     "ref": "RaisBahrami1990",
+     "quote": "This study examines the effect of two different fluids to maintain peripheral arterial line patency at 1 to 2 ml/hr in a randomized controlled trial.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "RaisBahrami1990",
+     "quote": "saves the infant (1500 gm or more) from the unnecessary stress of multiple peripheral punctures for blood glucose measurements",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "Standard KVO solution — all NICU lines (UVC, UAC, PICC, PAL): ½ Na-Acetate with heparin 0.5 units/mL to infuse at 1 mL/hr",
+   "verdict": "partly_concordant",
+   "summary": "A consensus formulary gives sodium acetate for arterial or central venous line patency by weight, half strength below 1 Kg and standard strength from 1 Kg, with heparin 1 unit/mL at 0.5 mL/hour, or up to 1 mL/hour above 1.5 kg with metabolic acidosis [ANMFAcetate2026], while its heparin monographs use heparinised saline at 0.5 unit/mL for venous and 1 unit/mL for arterial catheters, each at 0.5–1 mL/hour [ANMFHeparin2026; ANMFHeparinStd2026]; a UAC cohort using sodium acetate 77 mEq/L called it safe but saw more hypernatremia in infants < 28 weeks (47.2% vs 14.8% with dextrose) [Qian2026], and one ELBW protocol avoids sodium acetate and sodium chloride alike in arterial lines for the first 72 hours [UNCELBW]; a transport guideline gives heparin 0.5 units/mL for umbilical catheters [NETSWA2026], the Western Australian UAC and PAL guidelines use 0.45% or 0.9% saline with 0.5 units/mL heparin [WAUAC2026; WAPAC2024], and ACCP gives 0.25-1 unit/mL for UACs and 0.5 units/mL at 1 mL/h for peripheral arterial catheters [Monagle2012].",
+   "note": "Current evidence suggests sodium acetate is used as a line fluid for arterial and central venous lines in a consensus formulary, by weight, with heparin 1 unit/mL at 0.5 mL/hour, up to 1 mL/hour above 1.5 kg with acidosis [ANMFAcetate2026]; a UAC cohort saw more hypernatremia below 28 weeks than with dextrose [Qian2026]. Other neonatal sources give heparin 0.5 units/mL for umbilical catheters [NETSWA2026], add it to saline for UACs and PALs [WAUAC2026; WAPAC2024], and the same formulary's heparin monograph uses heparinised saline at 0.5 or 1 unit/mL for venous or arterial catheters [ANMFHeparin2026].",
+   "evidence": [
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "Maintenance of arterial line or central venous line patency",
+     "location": "Indication 3"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "Arterial line or central venous line patency (ANMF consensus)",
+     "location": "Dose section heading"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "< 1 Kg: sodium acetate half strength* with heparin 1 unit/mL at 0.5 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "1-1.5 Kg: sodium acetate standard strength* with heparin 1 unit/mL at 0.5 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": ">1.5 kg with metabolic acidosis: sodium acetate standard strength* with heparin 1 unit/mL up to 1 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "0.5 unit/mL of heparinised saline to run at 0.5 –1 mL/hour.",
+     "location": "Dose, Venous catheter patency maintenance"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "1 unit/mL of heparinised saline to run at 0.5 – 1 mL/hour.",
+     "location": "Dose, Arterial catheter patency maintenance"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "Add 25 units (2.5 mL) of heparinised saline to 47.5 mL of sodium chloride 0.9% or 0.45% to make a final volume of 50 mL with a concentration of 0.5 unit/mL.",
+     "location": "Preparation, Venous catheter patency"
+    },
+    {
+     "ref": "ANMFHeparinStd2026",
+     "quote": "0.5 unit/mL of heparinised saline to run at 0.5 –1 mL/hour.",
+     "location": "Dose, Venous catheter patency maintenance"
+    },
+    {
+     "ref": "ANMFHeparinStd2026",
+     "quote": "1 unit/mL of heparinised saline to run at 0.5 – 1 mL/hour.",
+     "location": "Dose, Arterial catheter patency maintenance"
+    },
+    {
+     "ref": "Qian2026",
+     "quote": "This single-center, retrospective cohort study included neonates receiving dextrose 5% or sodium acetate 77 mEq/L heparinized fluid for UAC patency.",
+     "location": "Abstract, Methods"
+    },
+    {
+     "ref": "Qian2026",
+     "quote": "Using sodium acetate for UAC patency is safe and may decrease the number of painful capillary heel sticks.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Qian2026",
+     "quote": "For secondary outcomes, extremely preterm infants < 28 weeks GA receiving sodium acetate experienced a higher incidence of hypernatremia (4 [14.8%] vs 17 [47.2%]; p = 0.007).",
+     "location": "Results"
+    },
+    {
+     "ref": "UNCELBW",
+     "quote": "Avoid infusing NaAcetate or NaCl via arterial line during the first 72 hours",
+     "location": "Sodium (ELBW infants; names sodium acetate and sodium chloride alike)"
+    },
+    {
+     "ref": "NETSWA2026",
+     "quote": "Centrally inserted catheters require heparin added to the infusion fluid to maintain patency of line. Dose = Heparin Sodium 0.5 units / mL of fluid",
+     "location": "Heparinising infusion fluid for umbilical catheters"
+    },
+    {
+     "ref": "WAUAC2026",
+     "quote": "≤27 weeks - Sodium Chloride 0.45% + 0.5 u/mL Heparin",
+     "location": "Equipment, Fluids, p. 4"
+    },
+    {
+     "ref": "WAUAC2026",
+     "quote": ">27 weeks - Sodium Chloride 0.9% + 0.5 u/mL Heparin",
+     "location": "Equipment, Fluids, p. 4"
+    },
+    {
+     "ref": "WAPAC2024",
+     "quote": "Only infuse heparinised saline through a PAL. Never use glucose solutions.",
+     "location": "Key Points"
+    },
+    {
+     "ref": "WAPAC2024",
+     "quote": "0.45% saline + 0.5 units/mL heparin for preterm infants ≤27 weeks",
+     "location": "Equipment"
+    },
+    {
+     "ref": "WAPAC2024",
+     "quote": "0.9% saline + 0.5 units/mL heparin for infants >27 weeks",
+     "location": "Equipment"
+    },
+    {
+     "ref": "Monagle2012",
+     "quote": "For neonates with UAC, we suggest prophylaxis with a low-dose UFH infusion via the UAC (heparin concentration of 0.25-1 unit/mL, total heparin dose of 25-200 units/kg per day) to maintain patency (Grade 2A).",
+     "location": "Summary of Recommendations 2.14"
+    },
+    {
+     "ref": "Monagle2012",
+     "quote": "For neonates and children with peripheral arterial catheters in situ, we recommend UFH continuous infusion at 0.5 units/mL at 1 mL/h compared with normal saline (Grade 1A).",
+     "location": "Summary of Recommendations 2.11"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "manual_text": "Heparin reminder — central lines: Fluid must be heparinized at a minimum of 0.5 units/mL.",
+   "verdict": "practice_varies",
+   "summary": "ACCP recommends heparin for neonatal CVADs at 0.5 units/kg per h (Grade 1A) and suggests 0.25-1 unit/mL for UACs (Grade 2A) [Monagle2012], Cochrane supports 0.5 IU/kg/hr for PCVCs [Shah2008], an RCT of 246 neonates with PCVCs found 0.5 IU/kg/h within TPN reduced occlusion without more adverse effects [Uslu2010], a consensus formulary recommends 0.5 units/kg per hour for CVADs (LOE I, GOR B) and uses 0.5 unit/mL for venous and 1 unit/mL for arterial catheters [ANMFHeparin2026], and 0.5 units/mL is used in a transport guideline for umbilical catheters and a UAC guideline [NETSWA2026; WAUAC2026], whereas ESPGHAN does not recommend routine heparin for PICCs in newborns because its risks are undefined [Kolacek2018], two recent PICC cohorts found no difference with heparin [Li2025; Wackernagel2025] and a study of 46 term and near-term neonates found no effect on UVC thrombosis [Unal2012]; 0.25 units/mL has been effective in UACs [Barrington2000], and the per-kg doses are not per-mL rules (0.5 units/mL at 1 mL/hr equals 0.5 units/kg/hr only at 1 kg).",
+   "evidence": [
+    {
+     "ref": "Monagle2012",
+     "quote": "For neonates with CVADs, we recommend to maintain CVAD patency with UFH continuous infusion at 0.5 units/kg per h over no prophylaxis (Grade 1A) or intermittent local thrombolysis (Grade 2C).",
+     "location": "Summary of Recommendations 2.4"
+    },
+    {
+     "ref": "Monagle2012",
+     "quote": "For neonates with UAC, we suggest prophylaxis with a low-dose UFH infusion via the UAC (heparin concentration of 0.25-1 unit/mL, total heparin dose of 25-200 units/kg per day) to maintain patency (Grade 2A).",
+     "location": "Summary of Recommendations 2.14"
+    },
+    {
+     "ref": "Shah2008",
+     "quote": "Evidence from this systematic review support the prophylactic use of heparin for PCVC in neonates at a dose of 0.5 IU/kg/hr.",
+     "location": "Abstract, Implications for practice"
+    },
+    {
+     "ref": "Uslu2010",
+     "quote": "Our research was a prospective, randomized, controlled, double-blind clinical study including 246 eligible neonates with PCVCs.",
+     "location": "Abstract, Study design"
+    },
+    {
+     "ref": "Uslu2010",
+     "quote": "In neonates with PCVCs, low-dose continuous infusion of heparin (0.5 IU kg ⁻¹h⁻¹ within TPN fluids is an effective measure in terms of reducing catheter occlusion, allowing successful completion of the therapy, without increasing adverse effects.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "Heparin infusions at 0.5 units/kg per hour are recommended to maintain CVAD patency",
+     "location": "Practice points, Central vascular catheters (LOE I, GOR B)"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "0.5 unit/mL of heparinised saline to run at 0.5 –1 mL/hour.",
+     "location": "Dose, Venous catheter patency maintenance"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "1 unit/mL of heparinised saline to run at 0.5 – 1 mL/hour.",
+     "location": "Dose, Arterial catheter patency maintenance"
+    },
+    {
+     "ref": "NETSWA2026",
+     "quote": "Centrally inserted catheters require heparin added to the infusion fluid to maintain patency of line. Dose = Heparin Sodium 0.5 units / mL of fluid",
+     "location": "Heparinising infusion fluid for umbilical catheters"
+    },
+    {
+     "ref": "WAUAC2026",
+     "quote": "≤27 weeks - Sodium Chloride 0.45% + 0.5 u/mL Heparin",
+     "location": "Equipment, Fluids, p. 4"
+    },
+    {
+     "ref": "WAUAC2026",
+     "quote": ">27 weeks - Sodium Chloride 0.9% + 0.5 u/mL Heparin",
+     "location": "Equipment, Fluids, p. 4"
+    },
+    {
+     "ref": "Kolacek2018",
+     "quote": "Routine use of heparin has been shown to be effective in prevention of PICC occlusion in newborns, but since the potential risks have not been defined, its routine use cannot be recommended (LoE 3, RG 0, recommendation for research, strong consensus)",
+     "location": "R 10.28"
+    },
+    {
+     "ref": "Li2025",
+     "quote": "Parenteral nutrition without heparin was noninferior to the addition of heparin during infusion through peripherally inserted central catheter on the risk of catheter-related complications in very preterm infants.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Wackernagel2025",
+     "quote": "In our retrospective analysis, adding heparin to admixtures infused via PICCs did not alter the odds of elective removals or complication rates.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Unal2012",
+     "quote": "This study demonstrated that heparin infusion of 0.5 IU/mL through the UVC had no effect on catheter-related thrombosis in term and near-term neonates.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Barrington2000",
+     "quote": "The lowest concentration tested so far (0.25 units/mL) has been shown to be effective.",
+     "location": "Abstract, Reviewer's conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "manual_text": "Heparin reminder — central lines: Rate < 1 mL/hr → increase heparin to 1 unit/mL.",
+   "verdict": "partly_concordant",
+   "summary": "At rates below 1 mL/hr, 1 unit/mL is published for arterial or central venous lines at 0.5 mL/hour in a consensus formulary's sodium acetate monograph [ANMFAcetate2026] and via UAC at 0.3-0.5mL/hr in one ELBW protocol [UNCELBW], and lies within the ACCP UAC range of 0.25-1 unit/mL [Monagle2012]; across the same 0.5–1 mL/hour range, the formulary's heparin monograph keeps 0.5 unit/mL for venous catheters and 1 unit/mL for arterial catheters [ANMFHeparin2026], and a UAC guideline uses 0.5 u/mL at 0.5-1ml/hr before X-ray confirmation [WAUAC2026]; the ELBW protocol uses 0.5 unit heparin/mL in its UVC fluid at an unstated rate [UNCELBW]; in these sources the concentration follows the line type or fluid, and none raises it because the rate falls.",
+   "note": "Current evidence suggests 1 unit/mL is used at rates below 1 mL/hr in some neonatal sources, for arterial or central venous lines at 0.5 mL/hour [ANMFAcetate2026] and for UACs at 0.3-0.5mL/hr [UNCELBW]. Other sources keep 0.5 unit/mL across the same rates, for venous catheters [ANMFHeparin2026] and UACs before X-ray confirmation of placement [WAUAC2026]; none of them makes the rate the reason to change concentration [ANMFHeparin2026; ANMFAcetate2026; WAUAC2026; UNCELBW].",
+   "evidence": [
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "0.5 unit/mL of heparinised saline to run at 0.5 –1 mL/hour.",
+     "location": "Dose, Venous catheter patency maintenance"
+    },
+    {
+     "ref": "ANMFHeparin2026",
+     "quote": "1 unit/mL of heparinised saline to run at 0.5 – 1 mL/hour.",
+     "location": "Dose, Arterial catheter patency maintenance"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "< 1 Kg: sodium acetate half strength* with heparin 1 unit/mL at 0.5 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "ANMFAcetate2026",
+     "quote": "1-1.5 Kg: sodium acetate standard strength* with heparin 1 unit/mL at 0.5 mL/hour.",
+     "location": "Dose, Arterial line or central venous line patency (ANMF consensus)"
+    },
+    {
+     "ref": "WAUAC2026",
+     "quote": "≤27 weeks - Sodium Chloride 0.45% + 0.5 u/mL Heparin",
+     "location": "Equipment, Fluids, p. 4"
+    },
+    {
+     "ref": "WAUAC2026",
+     "quote": "commence infusion at 0.5-1ml/hr prior to x-ray confirmation of placement",
+     "location": "Procedure, p. 8 (rate before X-ray confirmation of placement)"
+    },
+    {
+     "ref": "UNCELBW",
+     "quote": "Infuse isotonic amino acids 3.6% with 1 unit heparin/mL via UAC at 0.3-0.5mL/hr",
+     "location": "Parenteral Nutrition: Initial Orders"
+    },
+    {
+     "ref": "UNCELBW",
+     "quote": "Infuse D10W with 2.5% AA & 0.5 unit heparin/mL via UVC (PIV if unable to obtain UVC)",
+     "location": "Parenteral Nutrition: Initial Orders"
+    },
+    {
+     "ref": "Monagle2012",
+     "quote": "For neonates with UAC, we suggest prophylaxis with a low-dose UFH infusion via the UAC (heparin concentration of 0.25-1 unit/mL, total heparin dose of 25-200 units/kg per day) to maintain patency (Grade 2A).",
+     "location": "Summary of Recommendations 2.14"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "manual_text": "Alprostadil (Prostin) minimum rate: Central line 1 mL/hr · Peripheral line 2 mL/hr",
+   "verdict": "insufficient",
+   "summary": "The US label, a consensus formulary and a unit guideline give no minimum mL/hr for central or peripheral access: the label says to dilute to volumes appropriate for the pump [Prostin2026], the formulary asks for a vein with good blood flow [ANMFAlprostadil2025], and the unit guideline says a carrier fluid may be needed depending on infusion rate and line access [UNCAlprostadil2021].",
+   "evidence": [
+    {
+     "ref": "Prostin2026",
+     "quote": "Dilute to volumes appropriate for the pump delivery system available.",
+     "location": "Dilution Instructions"
+    },
+    {
+     "ref": "ANMFAlprostadil2025",
+     "quote": "Ensure administration is via a vein that has a good blood flow. This can be achieved by peripheral cannula if the limb is adequately perfused or via UVC.",
+     "location": "Administration"
+    },
+    {
+     "ref": "UNCAlprostadil2021",
+     "quote": "A compatible carrier fluid MAY be needed depending on infusion rate and line access.",
+     "location": "Drug Information"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "manual_text": "Non-central infusions: Max osmolality 900–1,000 with Neonatology collaboration",
+   "verdict": "partly_concordant",
+   "summary": "For peripheral parenteral nutrition, ASPEN, in a general PN recommendation, suggests up to 900 mOsm/L and says a safe higher limit is unproven [Boullata2014], NICE declined to set a concentration [NICE2020], ESPEN is reported at 850 mOsm/L and NICUs frequently use 1000 mOsm/L [Fessler2021], and retrospective neonatal data found no more line events above 900 mOsm/L [Cies2014] or at 1000 to 1250 mOsm/L, although the only 2 patients with severity score 4 were at ≥ 1000 mOsm/L [Fessler2021], and no fewer infiltrates after a limit of 1000 was lowered to 900 mOsm/L [Szachnowicz2024]; for other infusions, a neonatal vascular access consensus lists drugs with osmolarity > 600 mOsm/L among non-peripherally compatible solutions, as an example within a UVC indication that cites general infusion standards [Barone2023]; all these values are osmolarity, not osmolality.",
+   "note": "Current evidence suggests no agreed peripheral limit for parenteral nutrition in neonates: guidance gives 850 to 900 mOsm/L, NICUs often use 1000 mOsm/L, and retrospective neonatal data show no clear rise in line events above 900 or 1000 mOsm/L [Boullata2014; Fessler2021; Cies2014; Szachnowicz2024]. For infusions other than parenteral nutrition, a neonatal consensus gives osmolarity > 600 mOsm/L as an example of a solution not compatible with peripheral access [Barone2023].",
+   "evidence": [
+    {
+     "ref": "Barone2023",
+     "quote": "non-peripherally compatible solutions (as for instance IV solutions with pH < 5 or > 9; drugs with osmolarity > 600 mOsm/L; vesicant drugs, drugs potentially associated with endothelial damage)",
+     "location": "Q1, Special considerations, p. 3388 (an example within a UVC indication; cites INS standards [45-47])"
+    },
+    {
+     "ref": "Boullata2014",
+     "quote": "We suggest that PN with an osmolarity up to 900 mOsm/L can be safely infused peripherally. Higher osmolarity limits, especially when peripheral PN is prepared as a TNA, may also be tolerated, but the evidence to support a safe limit is lacking.",
+     "location": "Summary table, Question 2, grade Weak (general PN recommendation, not shown as neonate-specific)"
+    },
+    {
+     "ref": "NICE2020",
+     "quote": "the committee agreed that it was not possible to recommend a specific safe concentration for parenteral nutrition delivered peripherally because of the wide range of concentrations used in the different groups in the study.",
+     "location": "Rationale and impact, Venous access (recommendations 1.2.1 and 1.2.2)"
+    },
+    {
+     "ref": "Fessler2021",
+     "quote": "Moreover, the European Society for Parenteral and Enteral Nutrition recommends an even more conservative cutoff (i.e., 850 mOsm/L) for PPN.6",
+     "location": "Introduction (secondary citation)"
+    },
+    {
+     "ref": "Fessler2021",
+     "quote": "Neonatal intensive care units frequently use higher osmolarity cutoffs (e.g., 1000 mOsm/L) than recommended by ASPEN in order to avoid placing central catheters for short-term PN administration.4,5",
+     "location": "Introduction"
+    },
+    {
+     "ref": "Fessler2021",
+     "quote": "There were no significant differences in the incidence of line-related complications in NICU patients receiving PPN with osmolarities 1000 to 1250 versus < 1000 mOsm/L.",
+     "location": "Abstract, Conclusions and recommendations"
+    },
+    {
+     "ref": "Fessler2021",
+     "quote": "However, 2 patients in the ≥ 1000 mOsm/L group had a complication severity score of 4, whereas there were none in the < 1000 mOsm/L group (see Tables 5 and 6).",
+     "location": "Results"
+    },
+    {
+     "ref": "Cies2014",
+     "quote": "For neonatal PPNs, the incidence of line-related events was 50 per 100 patient days and 52 per 100 patient days for PPNs ≤ 900 and > 900 mOsm/L (RR = 1.02, 95% CI 0.88-1.18).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Szachnowicz2024",
+     "quote": "A lower PPN osmolarity limit of 900 mOsm/L significantly limited the ability to provide goal amino acid and IVFE doses to NICU patients compared to the previous osmolarity limit of 1000 mOsm/L without reducing the incidence of PIV infiltration or extravasation.",
+     "location": "Abstract, Conclusion"
+    }
+   ]
+  }
+ ],
+ "omissions": [
+  {
+   "id": "o1",
+   "related_claim": "c3",
+   "topic": "Humidity and individual tailoring of starting fluids",
+   "note": "Current evidence suggests the European guideline attaches its starting volume to a humidified incubator and to tailoring by serum sodium, urine output and weight loss (D1) [Sweet2026].",
+   "evidence": [
+    {
+     "ref": "Sweet2026",
+     "quote": "Most babies should be started on intravenous fluids of 70–80 mL/kg/day in a humidified incubator although some very immature babies may need more (C1). Fluids must be tailored individually according to serum sodium levels, urine output and weight loss (D1).",
+     "location": "Early Fluids and Nutritional Support, Recommendation 2"
+    }
+   ]
+  }
+ ],
+ "references": [
+  {
+   "key": "Sweet2026",
+   "role": "source",
+   "authors": "Sweet DG, Carnielli VP, Greisen G, et al.",
+   "title": "European Consensus Guidelines on the Management of Respiratory Distress Syndrome: 2025",
+   "journal": "Neonatology",
+   "year": "2026",
+   "volume": "123",
+   "issue": "4",
+   "pages": "514-539",
+   "doi": "10.1159/000551062",
+   "pmid": "41802129",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41802129/",
+    "https://api.crossref.org/works/10.1159/000551062"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Jochum2018",
+   "role": "source",
+   "authors": "Jochum F, Moltu SJ, Senterre T, Nomayo A, Goulet O, Iacobelli S",
+   "title": "ESPGHAN/ESPEN/ESPR/CSPEN guidelines on pediatric parenteral nutrition: Fluid and electrolytes",
+   "journal": "Clin Nutr",
+   "year": "2018",
+   "volume": "37",
+   "issue": "6 Pt B",
+   "pages": "2344-2353",
+   "doi": "10.1016/j.clnu.2018.06.948",
+   "pmid": "30064846",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/30064846/",
+    "https://api.crossref.org/works/10.1016/j.clnu.2018.06.948"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Mesotten2018",
+   "role": "source",
+   "authors": "Mesotten D, Joosten K, van Kempen A, Verbruggen S",
+   "title": "ESPGHAN/ESPEN/ESPR/CSPEN guidelines on pediatric parenteral nutrition: Carbohydrates",
+   "journal": "Clin Nutr",
+   "year": "2018",
+   "volume": "37",
+   "issue": "6 Pt B",
+   "pages": "2337-2343",
+   "doi": "10.1016/j.clnu.2018.06.947",
+   "pmid": "30037708",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/30037708/",
+    "https://api.crossref.org/works/10.1016/j.clnu.2018.06.947"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Kolacek2018",
+   "role": "source",
+   "authors": "Kolaček S, Puntis JWL, Hojsak I",
+   "title": "ESPGHAN/ESPEN/ESPR/CSPEN guidelines on pediatric parenteral nutrition: Venous access",
+   "journal": "Clin Nutr",
+   "year": "2018",
+   "volume": "37",
+   "issue": "6 Pt B",
+   "pages": "2379-2391",
+   "doi": "10.1016/j.clnu.2018.06.952",
+   "pmid": "30055869",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/30055869/",
+    "https://api.crossref.org/works/10.1016/j.clnu.2018.06.952"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Bell2014",
+   "role": "source",
+   "authors": "Bell EF, Acarregui MJ",
+   "title": "Restricted versus liberal water intake for preventing morbidity and mortality in preterm infants",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2014",
+   "volume": "2014",
+   "issue": "12",
+   "pages": "CD000503",
+   "doi": "10.1002/14651858.CD000503.pub3",
+   "pmid": "25473815",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/25473815/",
+    "https://api.crossref.org/works/10.1002/14651858.CD000503.pub3"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Diderholm2022",
+   "role": "source",
+   "authors": "Diderholm B, Normann E, Ahlsson F, Sindelar R, Ågren J",
+   "title": "The Impact of Restricted versus Liberal Early Fluid Volumes on Plasma Sodium, Weight Change, and Short-Term Outcomes in Extremely Preterm Infants",
+   "journal": "Nutrients",
+   "year": "2022",
+   "volume": "14",
+   "issue": "4",
+   "pages": "795",
+   "doi": "10.3390/nu14040795",
+   "pmid": "35215444",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35215444/",
+    "https://api.crossref.org/works/10.3390/nu14040795"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Prakash2025",
+   "role": "source",
+   "authors": "Prakash S, Kainth D, Verma A, Agarwal R, Thukral A, Sankar MJ",
+   "title": "Fluid Management in ELGANs: Striking the Perfect Balance!",
+   "journal": "Indian J Pediatr",
+   "year": "2025",
+   "volume": "92",
+   "issue": "12",
+   "pages": "1337-1344",
+   "doi": "10.1007/s12098-025-05439-4",
+   "pmid": "39903354",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/39903354/",
+    "https://api.crossref.org/works/10.1007/s12098-025-05439-4"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Chang2025",
+   "role": "source",
+   "authors": "Chang AJ, York DJ, Chen W, Heidenreich KN, Shah MD",
+   "title": "Maintenance Fluids for Late Preterm and Term Infants: Is it Time to Reconsider?",
+   "journal": "Pediatr Open Sci",
+   "year": "2025",
+   "volume": "1",
+   "issue": "2",
+   "pages": "1-9",
+   "doi": "10.1542/pedsos.2024-000372",
+   "pmid": "40458622",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40458622/",
+    "https://api.crossref.org/works/10.1542/pedsos.2024-000372"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Monagle2012",
+   "role": "source",
+   "authors": "Monagle P, Chan AKC, Goldenberg NA, et al.",
+   "title": "Antithrombotic therapy in neonates and children: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines",
+   "journal": "Chest",
+   "year": "2012",
+   "volume": "141",
+   "issue": "2 Suppl",
+   "pages": "e737S-e801S",
+   "doi": "10.1378/chest.11-2308",
+   "pmid": "22315277",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/22315277/",
+    "https://api.crossref.org/works/10.1378/chest.11-2308"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Barrington2000",
+   "role": "source",
+   "authors": "Barrington KJ",
+   "title": "Umbilical artery catheters in the newborn: effects of heparin",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2000",
+   "volume": "1999",
+   "issue": "2",
+   "pages": "CD000507",
+   "doi": "10.1002/14651858.CD000507",
+   "pmid": "10796377",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/10796377/",
+    "https://api.crossref.org/works/10.1002/14651858.CD000507"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Shah2008",
+   "role": "source",
+   "authors": "Shah PS, Shah VS",
+   "title": "Continuous heparin infusion to prevent thrombosis and catheter occlusion in neonates with peripherally placed percutaneous central venous catheters",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2008",
+   "volume": "2008",
+   "issue": "2",
+   "pages": "CD002772",
+   "doi": "10.1002/14651858.CD002772.pub3",
+   "pmid": "18425882",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/18425882/",
+    "https://api.crossref.org/works/10.1002/14651858.CD002772.pub3"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Unal2012",
+   "role": "source",
+   "authors": "Unal S, Ekici F, Cetin İİ, Bilgin L",
+   "title": "Heparin infusion to prevent umbilical venous catheter related thrombosis in neonates",
+   "journal": "Thromb Res",
+   "year": "2012",
+   "volume": "130",
+   "issue": "5",
+   "pages": "725-728",
+   "doi": "10.1016/j.thromres.2012.07.018",
+   "pmid": "22901699",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/22901699/",
+    "https://api.crossref.org/works/10.1016/j.thromres.2012.07.018"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "RaisBahrami1990",
+   "role": "source",
+   "authors": "Rais-Bahrami K, Karna P, Dolanski EA",
+   "title": "Effect of fluids on life span of peripheral arterial lines",
+   "journal": "Am J Perinatol",
+   "year": "1990",
+   "volume": "7",
+   "issue": "2",
+   "pages": "122-124",
+   "doi": "10.1055/s-2007-999461",
+   "pmid": "2184811",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/2184811/",
+    "https://api.crossref.org/works/10.1055/s-2007-999461"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Uslu2010",
+   "role": "source",
+   "authors": "Uslu S, Ozdemir H, Comert S, Bolat F, Nuhoglu A",
+   "title": "The effect of low-dose heparin on maintaining peripherally inserted percutaneous central venous catheters in neonates",
+   "journal": "J Perinatol",
+   "year": "2010",
+   "volume": "30",
+   "issue": "12",
+   "pages": "794-799",
+   "doi": "10.1038/jp.2010.46",
+   "pmid": "20376059",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/20376059/",
+    "https://api.crossref.org/works/10.1038/jp.2010.46"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Li2025",
+   "role": "source",
+   "authors": "Li J, Shi J, Li X, et al.",
+   "title": "Association between heparin addition to parenteral nutrition and catheter-related complications in very preterm infants: A retrospective cohort study",
+   "journal": "JPEN J Parenter Enteral Nutr",
+   "year": "2025",
+   "volume": "49",
+   "issue": "7",
+   "pages": "855-864",
+   "doi": "10.1002/jpen.2779",
+   "pmid": "40426327",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40426327/",
+    "https://api.crossref.org/works/10.1002/jpen.2779"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Wackernagel2025",
+   "role": "source",
+   "authors": "Wackernagel D, Gavelli V, Nydert P",
+   "title": "Heparin in peripherally inserted central catheters did not alter elective removal and complication rates in preterm infants",
+   "journal": "Clin Nutr ESPEN",
+   "year": "2025",
+   "volume": "67",
+   "issue": "",
+   "pages": "200-205",
+   "doi": "10.1016/j.clnesp.2025.03.024",
+   "pmid": "40112921",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40112921/",
+    "https://api.crossref.org/works/10.1016/j.clnesp.2025.03.024"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "DAndrea2026",
+   "role": "source",
+   "authors": "D'Andrea V, Prontera G, Monachini C, et al.",
+   "title": "Epicutaneo-caval catheter occlusion in neonates without heparin infusion during parenteral nutrition: A descriptive cohort study",
+   "journal": "JPEN J Parenter Enteral Nutr",
+   "year": "2026",
+   "volume": "50",
+   "issue": "2",
+   "pages": "247-251",
+   "doi": "10.1002/jpen.70037",
+   "pmid": "41387712",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41387712/",
+    "https://api.crossref.org/works/10.1002/jpen.70037"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Qian2026",
+   "role": "source",
+   "authors": "Qian R, Desai PV, Shah A, Tracy J, Bashqoy F",
+   "title": "Sweet or Salty: Comparing Dextrose and Sodium Acetate Umbilical Arterial Catheter Fluids",
+   "journal": "J Pediatr Pharmacol Ther",
+   "year": "2026",
+   "volume": "31",
+   "issue": "3",
+   "pages": "390-398",
+   "doi": "10.5863/JPPT-25-00071",
+   "pmid": "42267073",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42267073/",
+    "https://api.crossref.org/works/10.5863/JPPT-25-00071"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Boullata2014",
+   "role": "source",
+   "authors": "Boullata JI, Gilbert K, Sacks G, et al.",
+   "title": "A.S.P.E.N. clinical guidelines: parenteral nutrition ordering, order review, compounding, labeling, and dispensing",
+   "journal": "JPEN J Parenter Enteral Nutr",
+   "year": "2014",
+   "volume": "38",
+   "issue": "3",
+   "pages": "334-377",
+   "doi": "10.1177/0148607114521833",
+   "pmid": "24531708",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24531708/",
+    "https://api.crossref.org/works/10.1177/0148607114521833"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Fessler2021",
+   "role": "source",
+   "authors": "Fessler AG, Rejrat CE",
+   "title": "Re-evaluating Safe Osmolarity for Peripheral Parenteral Nutrition in Neonatal Intensive Care Patients",
+   "journal": "J Pediatr Pharmacol Ther",
+   "year": "2021",
+   "volume": "26",
+   "issue": "6",
+   "pages": "632-637",
+   "doi": "10.5863/1551-6776-26.6.632",
+   "pmid": "34421414",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34421414/",
+    "https://api.crossref.org/works/10.5863/1551-6776-26.6.632"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Cies2014",
+   "role": "source",
+   "authors": "Cies JJ, Moore WS 2nd",
+   "title": "Neonatal and pediatric peripheral parenteral nutrition: what is a safe osmolarity?",
+   "journal": "Nutr Clin Pract",
+   "year": "2014",
+   "volume": "29",
+   "issue": "1",
+   "pages": "118-124",
+   "doi": "10.1177/0884533613510947",
+   "pmid": "24336401",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24336401/",
+    "https://api.crossref.org/works/10.1177/0884533613510947"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Szachnowicz2024",
+   "role": "source",
+   "authors": "Szachnowicz B, Chalk B, Allan K, Lochen H, Liang C",
+   "title": "Evaluation of the clinical impact of decreasing the maximum osmolarity of neonatal peripheral parenteral nutrition",
+   "journal": "J Pediatr Gastroenterol Nutr",
+   "year": "2024",
+   "volume": "79",
+   "issue": "3",
+   "pages": "674-678",
+   "doi": "10.1002/jpn3.12259",
+   "pmid": "38801057",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38801057/",
+    "https://api.crossref.org/works/10.1002/jpn3.12259"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Barone2023",
+   "role": "source",
+   "authors": "Barone G, D'Andrea V, Ancora G, et al.",
+   "title": "The neonatal DAV-expert algorithm: a GAVeCeLT/GAVePed consensus for the choice of the most appropriate venous access in newborns",
+   "journal": "Eur J Pediatr",
+   "year": "2023",
+   "volume": "182",
+   "issue": "8",
+   "pages": "3385-3395",
+   "doi": "10.1007/s00431-023-04984-4",
+   "pmid": "37195350",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37195350/",
+    "https://api.crossref.org/works/10.1007/s00431-023-04984-4"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "NICE2015",
+   "role": "source",
+   "citation": "National Institute for Health and Care Excellence. Intravenous fluid therapy in children and young people in hospital. NICE guideline NG29. Published 9 December 2015; last updated 11 June 2020.",
+   "url": "https://www.nice.org.uk/guidance/ng29/chapter/Recommendations",
+   "doi": null,
+   "verified_against": [
+    "https://www.nice.org.uk/guidance/ng29/chapter/Recommendations"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "NICE2020",
+   "role": "source",
+   "citation": "National Institute for Health and Care Excellence. Neonatal parenteral nutrition. NICE guideline NG154. Published 26 February 2020.",
+   "url": "https://www.nice.org.uk/guidance/ng154/chapter/Recommendations",
+   "doi": null,
+   "verified_against": [
+    "https://www.nice.org.uk/guidance/ng154/chapter/Recommendations"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "UNCNutrition2026",
+   "role": "source",
+   "citation": "UNC Newborn Critical Care Center. Parenteral and Enteral Nutrition Guidelines. Revised 2026.",
+   "url": "https://www.mombaby.org/wp-content/uploads/2025/09/2026-Parenteral-and-Enteral-Nutrition-Guidelines.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.mombaby.org/wp-content/uploads/2025/09/2026-Parenteral-and-Enteral-Nutrition-Guidelines.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "UNCELBW",
+   "role": "source",
+   "citation": "UNC Newborn Critical Care Center. Extremely Premature, Extremely Low Birthweight Nutritional Recommendations (ELBW Nutrition Guidelines). Revised May 2026.",
+   "url": "https://www.mombaby.org/wp-content/uploads/2026/08/ELBW-Nutrition-Guidelines.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.mombaby.org/wp-content/uploads/2026/08/ELBW-Nutrition-Guidelines.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "UNCAlprostadil2021",
+   "role": "source",
+   "citation": "UNC Newborn Critical Care Center. Alprostadil (Prostin) Administration for Congenital Heart Disease (CHD). Clinical guideline. Revised February 2021.",
+   "url": "https://www.med.unc.edu/pediatrics/cccp/wp-content/uploads/sites/1156/2025/06/Alprostadil-Infusion-Guidelines-2021.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.med.unc.edu/pediatrics/cccp/wp-content/uploads/sites/1156/2025/06/Alprostadil-Infusion-Guidelines-2021.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "NETSWA2026",
+   "role": "source",
+   "citation": "Child and Adolescent Health Service, Western Australia (NETS WA). Venous and Arterial Access & Fluid Management on Retrievals. NETS WA Guideline. Last reviewed April 2026.",
+   "url": "https://www.cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/NETS/Venous-and-Arterial-Access-and-Fluid-Management.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/NETS/Venous-and-Arterial-Access-and-Fluid-Management.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "WAPAC2024",
+   "role": "source",
+   "citation": "Child and Adolescent Health Service, Western Australia, Neonatology. Peripheral Arterial Catheter Insertion, Sampling and Removal. Neonatal Guideline. Last reviewed November 2024.",
+   "url": "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Peripheral-Arterial-Catheter-Insertion-and-Removal.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Peripheral-Arterial-Catheter-Insertion-and-Removal.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "WAUVC2026",
+   "role": "source",
+   "citation": "Child and Adolescent Health Service, Western Australia, Neonatology. Central Venous Access Device: Umbilical Venous Catheter (UVC) Insertion and Management. Neonatal Guideline. Last reviewed September 2026.",
+   "url": "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Umbilical-Venous-Catheter.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Umbilical-Venous-Catheter.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "ANMFHeparin2026",
+   "role": "source",
+   "citation": "Australasian Neonatal Medicines Formulary (ANMF) consensus group. Heparin: Newborn use only. Version 5.1, 18 June 2026.",
+   "url": "https://www.anmfonline.org/wp-content/uploads/2022/10/Heparin_ANMFv5.1_20260618.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.anmfonline.org/wp-content/uploads/2022/10/Heparin_ANMFv5.1_20260618.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "ANMFHeparinStd2026",
+   "role": "source",
+   "citation": "Australasian Neonatal Medicines Formulary (ANMF) consensus group. Heparin – Standard concentration: Newborn use only. Version 1.3, 30 July 2026.",
+   "url": "https://www.anmfonline.org/wp-content/uploads/2026/06/Heparin-Standard-concentration_ANMFv1.3_20260730.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.anmfonline.org/wp-content/uploads/2026/06/Heparin-Standard-concentration_ANMFv1.3_20260730.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "ANMFAcetate2026",
+   "role": "source",
+   "citation": "Australasian Neonatal Medicines Formulary (ANMF) consensus group. Sodium acetate: Newborn use only. Version 3.0 (minor errata), 5 February 2026.",
+   "url": "https://www.anmfonline.org/wp-content/uploads/2026/02/Sodium-acetate_-ANMFv3.0_20260205-1.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.anmfonline.org/wp-content/uploads/2026/02/Sodium-acetate_-ANMFv3.0_20260205-1.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "ANMFAlprostadil2025",
+   "role": "source",
+   "citation": "Australasian Neonatal Medicines Formulary (ANMF) consensus group. Alprostadil (Prostaglandin E1): Newborn use only. Version 3.0, 26 September 2025.",
+   "url": "https://www.seslhd.health.nsw.gov.au/sites/default/files/groups/Royal_Hospital_for_Women/Neonatal/Neomed/Alprostadil_ANMFv3.0_20250925.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.seslhd.health.nsw.gov.au/sites/default/files/groups/Royal_Hospital_for_Women/Neonatal/Neomed/Alprostadil_ANMFv3.0_20250925.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Prostin2026",
+   "role": "source",
+   "citation": "Pfizer. PROSTIN VR PEDIATRIC (alprostadil injection) prescribing information. LAB-1522-3.0, revised April 2026. DailyMed.",
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3",
+   "doi": null,
+   "verified_against": [
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "UCSFICN",
+   "role": "source",
+   "citation": "UCSF Benioff Children's Hospital. Neonatal Hypoglycemia. In: Intensive Care Nursery House Staff Manual. The Regents of the University of California; 2004 (made accessible 2/24). pp. 153-154.",
+   "url": "https://kids.ucsfbenioffchildrens.org/-/media/project/ucsf/ucsf-bch/pdf/manuals/52_hypoglycemia.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://kids.ucsfbenioffchildrens.org/-/media/project/ucsf/ucsf-bch/pdf/manuals/52_hypoglycemia.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "CHI1Fr",
+   "role": "source",
+   "citation": "Children's Health Ireland. 1 Fr PICC Lines: Special Consideration. PICC Pack 10. Undated institutional document.",
+   "url": "https://childrenshealthireland.ie/documents/1025/picc-pack-10-1-fr-picc-lines-special-considerations.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://childrenshealthireland.ie/documents/1025/picc-pack-10-1-fr-picc-lines-special-considerations.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "WAFluid2024",
+   "role": "source",
+   "citation": "Child and Adolescent Health Service, Western Australia, Neonatology. Fluid and Nutrition Requirements, and Enteral Feeding. Neonatology Guideline. Last reviewed July 2024; last amended October 2026.",
+   "url": "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Fluid-and-Nutrition-Requirements-and-Enteral-Feeding.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Fluid-and-Nutrition-Requirements-and-Enteral-Feeding.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "WAUAC2026",
+   "role": "source",
+   "citation": "Child and Adolescent Health Service, Western Australia, Neonatology. Umbilical Arterial Catheter (UAC). Neonatal Guideline. Last reviewed September 2026.",
+   "url": "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Umbilical-Arterial-Catheter.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Umbilical-Arterial-Catheter.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 3,
+  "date": "2026-11-07",
+  "quotes_checked": 286,
+  "references_verified": 40,
+  "known_limitations": [
+   "Jochum2018, Mesotten2018, Kolacek2018 and Boullata2014 quotes were checked only against excerpt files saved 2026-10-29; the original pages were not re-opened.",
+   "Several line-rate and heparin sources are formularies, consensus monographs or local protocols (ANMF, WA CAHS, NETS WA, UNC); NETS WA is a transport quick reference.",
+   "Refused or unreadable, logged and not worked around: Queensland and Canberra documents (HTTP 403), Safer Care Victoria (no connection), Springer sign-in for Barone2026, INS Standards 2024, and UNC alprostadil, clinicalnutritionjournal.com, Wiley ASPEN and AAP pages (HTTP 403 in review).",
+   "fetch_fulltext.py wrongly reported 'too little text' for the readable Barone2023 PDF; other sections may have missed readable PDFs the same way.",
+   "c14 sources give osmolarity (mOsm/L) while the manual says osmolality."
+  ]
+ }
+}

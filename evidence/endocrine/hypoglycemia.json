@@ -1,0 +1,1261 @@
+{
+ "chapter": "endocrine",
+ "section": "Hypoglycemia",
+ "anchor": "endocrine.html#hypoglycemia",
+ "source": {
+  "file": "site/src/content/docs/endocrine.mdx",
+  "lines": "6-135",
+  "manual_commit": "f112cde"
+ },
+ "checked": "2026-11-07",
+ "generated_with": "Researcher, Comparer, Reviewer: claude-opus-5-5",
+ "triage": {
+  "clinical": 13,
+  "operational": 5,
+  "definition": 0,
+  "context": 6
+ },
+ "scope": {
+  "population": "Newborn infants in the first days of life at KP Riverside and Moreno Valley, with no gestational-age or weight limit stated for the section as a whole. The Family Care Center subsection covers asymptomatic at-risk newborns (GA <37 weeks, BW ≥4,000 g, BW ≤2,500 g, IDM, others at provider discretion) in the first 24 hours; the critical labs subsection covers infants with refractory hypoglycemia who need a glucose infusion rate >10 mg/kg/min when they would not typically need IV fluids; the sliding scale covers infants on IV dextrose.",
+  "topic": "Age-based glucose thresholds, screening and glucose goals for at-risk newborns in the first 24 hours, the critical laboratory work-up and provoked hypoglycemia for refractory hypoglycemia, and weaning of IV dextrose with monitoring after it stops.",
+  "basis": "Chapter \"Endocrinology\", heading \"Hypoglycemia\" with subheadings \"Hypoglycemia definition\", \"Family Care Center approach to hypoglycemia screening\" (figure captions \"asymptomatic at risk newborns\"), \"Critical labs for refractory hypoglycemia\" and \"Sliding scale for IV dextrose weaning\"; the brief's unit context and ## Population context of evidence_sheet.md.",
+  "set_aside": [
+   {
+    "ref": "Morris1996",
+    "population": "138 diagnostic fasts in patients of a neonatal intensive care unit and a programmed investigation unit; ages mixed",
+    "reason": "Only the abstract was available and it reports no results for newborns separately, so its safety statement did not affect c9."
+   },
+   {
+    "ref": "Sakakibara2018",
+    "population": "298 patients with congenital hyperinsulinism and 58 controls; diagnostic cut-offs reported for patients after 5 months",
+    "reason": "The cut-offs concern older infants, and newborns are not reported separately in the abstract, so it did not affect c6."
+   },
+   {
+    "ref": "SPEGV2",
+    "population": "Children with hypoglycaemia (Scottish paediatric endocrine guideline, not neonate-specific; undated)",
+    "reason": "It does not report newborns separately, so its sample lists did not affect c6, c7 or c8."
+   },
+   {
+    "ref": "Rossi2026",
+    "population": "Patients of all ages with inherited metabolic causes of hypoglycemia (review)",
+    "reason": "Newborns are not addressed separately, so its list of blood investigations, including blood gases, did not affect c7 or c8."
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "Age-dependent criteria (based on regional agreement): Birth to < 48 hrs of life: 45mg/dL; ≥ 48 hrs of life: 60mg/dL",
+   "verdict": "practice_varies",
+   "summary": "Named values differ: a pre-feed target of 45 mg/dL in late preterm and at-risk term infants [Adamkin2011], >50 mg/dL then >60 mg/dL at 48 hours in high-risk neonates [Thornton2015], 2.6 mmol/L then 3.3 mmol/L at 72 hours [Narvey2019], and 2.6 mmol/L then 3.4 mmol/L at 72 hours [TeTohu2025], with no consensus on thresholds in guideline reviews [Luo2024][Rusu2026]; the manual's pair takes the AAP value before 48 hours [Adamkin2011] and the PES value and change point after it [Thornton2015].",
+   "evidence": [
+    {
+     "ref": "Adamkin2011",
+     "quote": "The target glucose concentration is greater than 45 mg/dL before each feeding.",
+     "location": "Figure 1 discussion"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "After 24 hours, repeated screening before feedings should be continued if plasma glucose concentrations remain lower than 45 mg/dL.",
+     "location": "When to Screen"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "Current evidence does not support a specific concentration of glucose that can discriminate euglycemia from hypoglycemia or can predict that acute or chronic irreversible neurologic damage will result.",
+     "location": "Summary"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "For high-risk neonates without a suspected congenital hypoglycemia disorder, we suggest the goal of treatment be to maintain a PG concentration >50 mg/dL (>2.8 mmol/L) for those aged <48 hours and >60 mg/dL (>3.3 mmol/L) for those aged >48 hours.",
+     "location": "Recommendation 3.2"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "While the PES statement used a cut-off of 48 hours rather than 72 hours, the transition point likely lies somewhere between these periods.",
+     "location": "Beyond 72 hours post-birth, after Table 3"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "In the first 72 hours post-birth, at-risk infants with one measured glucose reading <2.6 mmol/L (assuming one effective feed) require intervention (Grade C recommendation).",
+     "location": "Recommendations"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "Infants with persistent hypoglycemia (beyond 72 hours post-birth) should have a therapeutic glucose target of ≥3.3 mmol/L.",
+     "location": "Recommendations"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "A blood glucose concentration of <2.6 mmol/L should be used as the definition (operational threshold) for neonatal hypoglycaemia.",
+     "location": "Recommendation 16"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "A target blood glucose of ≥2.6 mmol/L should be used for treating neonatal hypoglycaemia within the first 72 hours after birth.  A target blood glucose of ≥3.4 mmol/L should be used for treating neonatal hypoglycaemia after the first 72 hours after birth.",
+     "location": "Recommendation 21"
+    },
+    {
+     "ref": "Luo2024",
+     "quote": "There is still a lack of consensus on thresholds for the clinical management of hypoglycemia and target glucose ranges for its control",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Rusu2026",
+     "quote": "no universal agreement exists concerning the timing of the first postnatal BG measurement in at-risk neonates, the optimal frequency of BG monitoring, or the minimum BG value at which therapy should be initiated during the transitional period.",
+     "location": "Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "Target population: GA < 37 weeks; BW ≥ 4,000g; BW ≤ 2,500g; IDM; Other infants identified at the discretion of the provider",
+   "verdict": "partly_concordant",
+   "summary": "Preterm birth <37 weeks and maternal diabetes are guideline screening criteria [Narvey2019][TeTohu2025] and <2,500 g appears in ABM's list [Wight2021] and, if gestation is unknown, in NZ's [TeTohu2025], but size is otherwise set by percentile, the heavy absolute cut-off in the retrieved criteria is >4,500 g [TeTohu2025][OBrien2023], and screening of LGA infants without maternal diabetes is contested [Adamkin2011][BAPM2024], although 16% of tested term LGA infants of nondiabetic mothers had capillary glucose ≤30 mg/dL in one cohort [SchaeferGraf2002].",
+   "note": "Current evidence suggests at-risk size is set by birth-weight percentile for gestational age, <10th and >90th [Narvey2019][TeTohu2025]; absolute weights appear as <2,500 g and >4,500 g, not 4,000 g [TeTohu2025][OBrien2023][Wight2021]. Routine screening of large infants without maternal diabetes is debated [Adamkin2011][BAPM2024].",
+   "evidence": [
+    {
+     "ref": "Narvey2019",
+     "quote": "Infants of diabetic (gestational or type 1 or 2) mothers (IDMs), asphyxiated infants, preterm infants (<37 weeks gestational age (GA)) and small-for-gestational-age (SGA) infants (weight <10th %ile) should be routinely screened for neonatal hypoglycemia (Grade C recommendation). Until further data are available, large-for-gestational-age (LGA) infants (weight >90th %ile) should also be considered at risk for neonatal hypoglycemia (Grade D recommendation).",
+     "location": "Recommendations"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Small for gestational age (<10th percentile using customised or population growth charts);",
+     "location": "Recommendation 12"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Large for gestational age (>90th percentile using customised or population growth charts);",
+     "location": "Recommendation 12"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "If gestation unknown: low birthweight (<2500 g) or macrosomia (>4500 g);",
+     "location": "Recommendation 12"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Preterm birth (<37 weeks’ gestation);",
+     "location": "Recommendation 12"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Maternal diabetes (any type);",
+     "location": "Recommendation 12"
+    },
+    {
+     "ref": "OBrien2023",
+     "quote": "The highest-scoring guideline defined screening criteria as: IDM, preterm (less than 37 weeks' gestation), SGA (less than 10th percentile), birth weight of less than 2500 g or more than 4500 g, LGA (more than 90th percentile), or gestational age more than 42 weeks.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Wight2021",
+     "quote": "Low birth weight ( <2,500 g)",
+     "location": "Table 2"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "It remains controversial whether otherwise normal infants who are large for gestational age are at risk of NH, largely because it is difficult to exclude maternal diabetes or maternal hyperglycemia (prediabetes) with standard glucose-tolerance tests.",
+     "location": "Which Infants to Screen"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "for practicality, “at risk” in the management approach outlined in Fig 1 includes only infants who are small for gestational age, infants who are large for gestational age, infants who were born to mothers who have diabetes, and late-preterm infants.",
+     "location": "Which Infants to Screen"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "The working group considers that if there is no evidence of maternal diabetes and the baby does not have features suggestive of Beckwith-Wiedemann syndrome, then routine screening of LGA infants for hypoglycaemia is not indicated.",
+     "location": "Section B, evidence for practice point 1; term infants"
+    },
+    {
+     "ref": "SchaeferGraf2002",
+     "quote": "In the remaining 887 infants, hypoglycemia occurred in 142 infants (16%) within the first 24 hours of life.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "0-4 hours of life. Goal: Glucose ≥ 35 mg/dL",
+   "verdict": "partly_concordant",
+   "summary": "From birth to 4 hours AAP acts on <25 mg/dL and 25-40 mg/dL in asymptomatic at-risk infants, uses 35 mg/dL only from 4 to 24 hours and shows a target of ≥45 mg/dL before routine feeds [Adamkin2011]; goals whose windows include 0 to 4 hours are >50 mg/dL in the first 48 hours [Thornton2015] and 2.6 mmol/L from birth to 72 hours as therapeutic goal and intervention threshold [Narvey2019][TeTohu2025], with CPS supplementing enterally at 1.8 to 2.5 mmol/L before IV dextrose [Narvey2019]; BAPM first measures at 2 to 4 hours in term infants and uses 2.0 mmol/L [BAPM2024], and a trial tested 36 mg per deciliter from 3 to 24 hours in infants ≥35 weeks [vanKempen2020], so no retrieved source states 35 mg/dL as a goal for this window.",
+   "note": "Current evidence suggests goals that span this window are higher: ≥45 mg/dL before routine feeds [Adamkin2011], >50 mg/dL [Thornton2015] and 2.6 mmol/L [Narvey2019][TeTohu2025]. AAP uses 35 mg/dL only from 4 to 24 hours; from birth to 4 hours its values are <25 and 25-40 mg/dL [Adamkin2011]. The nearest values are 2.0 mmol/L in term infants, first measured at 2 to 4 hours [BAPM2024], and 36 mg per deciliter tested from 3 to 24 hours in infants ≥35 weeks [vanKempen2020].",
+   "evidence": [
+    {
+     "ref": "Adamkin2011",
+     "quote": "It is recommended that the at-risk asymptomatic infant who has glucose concentrations of less than 25 mg/dL (birth to 4 hours of age) or less than 35 mg/dL (4 –24 hours of age) be refed and that the glucose value be rechecked 1 hour after refeeding.",
+     "location": "Figure 1 discussion"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "Initial screen <25 mg/dL",
+     "location": "Figure 1 (image, sources/Adamkin2011_Fig1.jpg, read by eye), Birth to 4 hours of age column"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "25–40 mg/dL",
+     "location": "Figure 1 (image, sources/Adamkin2011_Fig1.jpg, read by eye), Birth to 4 hours of age column, leading to \"Refeed/IV glucose as needed\""
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "Target glucose screen ≥45 mg/dL prior to routine feeds",
+     "location": "Figure 1 (image, sources/Adamkin2011_Fig1.jpg, read by eye)"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "No studies have demonstrated harm from a few hours of asymptomatic hypoglycemia during this normal postnatal period of establishing “physiologic glucose homeostasis.”",
+     "location": "When to Screen"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "Lack of evidence for adverse effects of glucose levels between 1.8 mmol/L and 2.5 mmol/L in asymptomatic infants at several hours of age suggests that a staged approach to screening and intervention is reasonable.",
+     "location": "Screening at-risk infants"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "To augment caloric intake and before starting intravenous (IV) dextrose, enteral supplementation should be provided for asymptomatic infants with blood glucose levels of 1.8 mmol/L to 2.5 mmol/L.",
+     "location": "Recommendations"
+    },
+    {
+     "ref": "vanKempen2020",
+     "quote": "a lower glucose treatment threshold (36 mg per deciliter) was noninferior to a traditional threshold (47 mg per deciliter) with regard to psychomotor development at 18 months.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "vanKempen2020",
+     "quote": "Newborns found to have asymptomatic moderate hypoglycemia between 3 and 24 hours after birth were randomly assigned in a 1:1 ratio (with the use of Web-based block randomization) to receive treatment when the glucose concentration was lower than 36 mg per deciliter (lower-threshold group) or to receive treatment when the glucose concentration was lower than 47 mg per deciliter (traditional-threshold group)",
+     "location": "Methods, Randomization and Treatment Strategies"
+    },
+    {
+     "ref": "vanKempen2020",
+     "quote": "if they were born at 35 weeks or more of gestation, had a birth weight of 2000 g or more, and had an indication for routine screening for hypoglycemia.",
+     "location": "Methods, Participants"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "For high-risk neonates without a suspected congenital hypoglycemia disorder, we suggest the goal of treatment be to maintain a PG concentration >50 mg/dL (>2.8 mmol/L) for those aged <48 hours and >60 mg/dL (>3.3 mmol/L) for those aged >48 hours.",
+     "location": "Recommendation 3.2"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "Table 3. Thresholds for investigation and treatment of hypoglycaemia Birth to 72 hours of age ≥72 hours of age Therapeutic goal 2.6 3.3 Investigation threshold 2.6 2.8*",
+     "location": "Table 3 (values in mmol/L), section Beyond 72 hours post-birth; table cells joined"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "In the first 72 hours post-birth, at-risk infants with one measured glucose reading <2.6 mmol/L (assuming one effective feed) require intervention (Grade C recommendation).",
+     "location": "Recommendations"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "A target blood glucose of ≥2.6 mmol/L should be used for treating neonatal hypoglycaemia within the first 72 hours after birth.",
+     "location": "Recommendation 21"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Measure the BG level before the second feed (2 to 4 hours after birth).",
+     "location": "Practice point 15; term infants"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Flowchart A, if BG >2.0mmol/L",
+     "location": "Practice point 16; term infants"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "More than two measurements <2.0mmol/L in a baby with a risk factor for impaired metabolic adaptation and hypoglycaemia but without abnormal clinical signs",
+     "location": "Executive Summary point 6, among the values needing interventions intended to raise BG; term infants"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "4-24 hours of life. Goal: Glucose ≥ 45 mg/dL",
+   "verdict": "practice_varies",
+   "summary": "The goal matches AAP's target of ≥45 mg/dL before routine feeds at 4 to 24 hours [Adamkin2011], while other targets for this period are >50 mg/dL [Thornton2015], 2.6 mmol/L [Narvey2019][TeTohu2025] and BG above 2.0 mmol/L in term infants [BAPM2024], and in infants ≥35 weeks 36 mg per deciliter was noninferior to 47 mg per deciliter for psychomotor development at 18 months [vanKempen2020].",
+   "evidence": [
+    {
+     "ref": "Adamkin2011",
+     "quote": "Target glucose screen ≥45 mg/dL prior to routine feeds",
+     "location": "Figure 1 (image, sources/Adamkin2011_Fig1.jpg, read by eye)"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "Screen <35 mg/dL",
+     "location": "Figure 1 (image, sources/Adamkin2011_Fig1.jpg, read by eye), 4 to 24 hours of age column"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "35 – 45 mg/dL",
+     "location": "Figure 1 (image, sources/Adamkin2011_Fig1.jpg, read by eye), 4 to 24 hours of age column, leading to \"Refeed/IV glucose as needed\""
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "The target glucose concentration is greater than 45 mg/dL before each feeding.",
+     "location": "Figure 1 discussion"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "during the first 48 hours of life, for a high-risk neonate without a suspected congenital hypoglycemia disorder and on normal feedings, a safe target PG concentration should be close to the mean for healthy newborns on the first day of life and above the threshold for neuroglycopenic symptoms (>50 mg/dL [2.8 mmol/L]).",
+     "location": "Treatment evidence"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "In the first 72 hours post-birth, at-risk infants with one measured glucose reading <2.6 mmol/L (assuming one effective feed) require intervention (Grade C recommendation).",
+     "location": "Recommendations"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "A target blood glucose of ≥2.6 mmol/L should be used for treating neonatal hypoglycaemia within the first 72 hours after birth.  A target blood glucose of ≥3.4 mmol/L should be used for treating neonatal hypoglycaemia after the first 72 hours after birth.",
+     "location": "Recommendation 21"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "until BG measurements have been above 2.0mmol/L on two consecutive occasions.",
+     "location": "Practice point 11; term infants"
+    },
+    {
+     "ref": "vanKempen2020",
+     "quote": "a lower glucose treatment threshold (36 mg per deciliter) was noninferior to a traditional threshold (47 mg per deciliter) with regard to psychomotor development at 18 months.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "vanKempen2020",
+     "quote": "if they were born at 35 weeks or more of gestation, had a birth weight of 2000 g or more, and had an indication for routine screening for hypoglycemia.",
+     "location": "Methods, Participants"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "Consider obtaining critical laboratory tests for infants requiring a glucose infusion rate greater than 10 mg/kg/min, when, based on gestational and chronological age, they would not typically require intravenous fluids.",
+   "verdict": "practice_varies",
+   "summary": "CPS names >10 mg/kg/min and ABM >10-12 mg/kg/min as prompts for further investigation [Narvey2019][Wight2021], while BAPM and the hyperinsulinism guidelines use >8 mg/kg/min [BAPM2024][DeLeon2024][UKCHI2023]; two regional neonatal guidelines name >10 mg/kg/min, for a hypoglycaemia screen [WACAHS2026] or for considering hyperinsulinism irrespective of age, and the second applies its persistent hypoglycaemia guideline from >8 mg/kg/min or hypoglycaemia lasting beyond 2 days [WoS2020]; on timing, CPS and NZ look to 72 hours [Narvey2019][TeTohu2025] and PES to 2-3 days after birth [Thornton2015], with CPS allowing earlier work-up if a disorder is strongly suspected [Narvey2019].",
+   "evidence": [
+    {
+     "ref": "Narvey2019",
+     "quote": "When infusions fail to maintain blood glucose at appropriate levels or an especially high rate (>10 mg/kg/min) of infusion is required, further investigation, specialist referral, and/or pharmacological intervention (e.g., IV glucagon) should be considered [68]–[72] (Level 4).",
+     "location": "Symptomatic hypoglycemia"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "In most cases, referral to endocrinology and investigation for cause of persistent hypoglycemia should wait until the infant is 72 hours old unless the presence of an endocrine or metabolic condition is also strongly suspected.",
+     "location": "Symptomatic hypoglycemia"
+    },
+    {
+     "ref": "Wight2021",
+     "quote": "If persistent (>72 h) or severe (>10-12 mg/kg/min) glucose requirement, further investigation required.",
+     "location": "Algorithm figure, page 11"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Hyperinsulinism should be considered if BG concentration remains low (<2.0mmol/L on >2 occasions in first 72 hours despite adequate energy provision and a feeding plan), or if a glucose dose greater than 8mg/kg/min is required.",
+     "location": "Practice point 24; term infants"
+    },
+    {
+     "ref": "DeLeon2024",
+     "quote": "Increased insulin action can be demonstrated by increased glucose requirement (e.g., >8 mg/kg/min in a neonate normal 4–6 mg/kg/mi [4])",
+     "location": "Recommendation 1.1; \"mg/kg/mi\" as printed in the retrieved text"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "A normal GIR in the neonatal period is 4-6 mg/kg/min; rates exceeding 8 mg/kg/min suggest the diagnosis of CHI (9, 17).",
+     "location": "Diagnosis"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "Because of the difficulty in distinguishing a suspected persistent hypoglycemia disorder from transitional neonatal glucose concentrations during the first 48 hours of life, we suggest delaying diagnostic evaluations until 2–3 days after birth.",
+     "location": "Evidence, neonates aged <48 hours"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Consider additional investigations (see recommendation 18) and consultation with an paediatric endocrinologist or other relevant specialist if hypoglycaemia persists after 72 hours of age.",
+     "location": "Question 16, implementation"
+    },
+    {
+     "ref": "WoS2020",
+     "quote": "This guideline should be used for infants who require high levels of glucose intake to maintain normoglycaemia (>8mg/kg/min), or whose hypoglycaemia fails to resolve in the usual timescale of 2 days.",
+     "location": "page 1, scope paragraph before Contents; regional neonatal guideline, last reviewed 2020"
+    },
+    {
+     "ref": "WoS2020",
+     "quote": "If the neonate is requiring high infusion rates of dextrose (>10mg/kg/minute) to maintain normoglycaemia hyperinsulinism should be considered, irrespective of age.",
+     "location": "Introduction, page 1"
+    },
+    {
+     "ref": "WACAHS2026",
+     "quote": "If hypoglycaemia is persistent/recurrent (≥ 2 episodes), resistant to treatment, or glucose delivery rate is > 10mg/kg/min then investigate further with a hypoglycaemia screen.",
+     "location": "Investigation of Neonatal Hypoglycaemia, \"Hypoglycaemia Screen\", page 6"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "Tier 1: Serum glucose; Insulin; Cortisol; Beta-hydroxybutyric acid; Human growth hormone; Electrolyte panel",
+   "verdict": "concordant",
+   "summary": "All six tests appear in guideline work-ups, with insulin, beta-hydroxybutyrate, cortisol and growth hormone measured at the time of hypoglycemia [DeLeon2024][BAPM2024][UKCHI2023][Narvey2019] and electrolytes in the UK screen, where they may be taken after correction [UKCHI2023], and one regional neonatal guideline lists the five other tests in its critical sample without electrolytes [WACAHS2026]; NZ advises against routine ketone and insulin measurement in the first 72 hours and suggests considering them when hypoglycemia persists beyond 72 hours [TeTohu2025], and the manual does not define its tiers, so sampling order was not judged.",
+   "evidence": [
+    {
+     "ref": "DeLeon2024",
+     "quote": "We Recommend Making a Specific Diagnosis of Hyperinsulinism Based on Measurements, at a Time of Hypoglycemia, of Plasma Levels of Metabolic Fuels (Beta-Hydroxybutyrate [BOHB] and Free Fatty Acids [FFA]) and Hormones (Insulin, Growth Hormone, Cortisol) and Determination of the Glycemic Response to a Pharmacologic Dose of Glucagon [Grade 1 ⊕⊕⊕○]",
+     "location": "Recommendation 1.1"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Blood samples for the following investigations should be taken before hypoglycaemia is treated. However, do not delay the treatment to complete investigations and prioritise those marked “*”",
+     "location": "Practice point 21"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Insulin and C-peptide*",
+     "location": "Practice point 21, blood list"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Beta-hydroxy butyrate (or point of care blood ketones, if available) *",
+     "location": "Practice point 21, blood list"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Cortisol",
+     "location": "Practice point 21, blood list"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Growth hormone",
+     "location": "Practice point 21, blood list"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "- Glucose, lactate- Insulin, C-peptide - FFA, BOHB- Cortisol *- GH *",
+     "location": "Table 1, column \"Samples taken at the time of hypoglycaemia\""
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "- Acylcarnitine- Plasma amino acids- Ammonia- Electrolytes- Liver function",
+     "location": "Table 1, column \"May be taken after hypoglycaemia correction\""
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "The workup should include a confirmatory plasma glucose, beta-hydroxybutyrate, bicarbonate, lactate, free fatty acids, insulin, growth hormone, cortisol, carnitine, and acylcarnitine profiling.",
+     "location": "Investigating causes of persistent hypoglycemia"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Ketones, lactate, and insulin concentrations should not be measured routinely in addition to glucose for the diagnosis and monitoring of neonatal hypoglycaemia in the first 72 hours.",
+     "location": "Recommendation 19"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Consider measuring glucose, beta-hydroxybutyrate, and insulin concentrations in babies with hypoglycaemia that persists beyond 72 hours to help distinguish between those with congenital hyperinsulinemia and those with other causes.",
+     "location": "Recommendation 19"
+    },
+    {
+     "ref": "WACAHS2026",
+     "quote": "Request insulin, cortisol, growth hormone, glucose, ketones or β-hydroxybutyrate.",
+     "location": "Hypoglycaemia Screen, critical blood samples; regional neonatal guideline"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "Tier 2: Pyruvic acid; Ammonia; ACTH; Cortisol, Neonatal; TSH; T4, free; Free fatty acids; Acylcarnitine profile, plasma; Amino acids, plasma; Organic acids, urine",
+   "verdict": "partly_concordant",
+   "summary": "Free fatty acids are measured at the time of hypoglycemia with insulin and beta-hydroxybutyrate [DeLeon2024][BAPM2024][UKCHI2023][Narvey2019], as is cortisol [DeLeon2024][BAPM2024][UKCHI2023], ammonia, acylcarnitine, amino acids and urine organic acids are in the BAPM and UK lists [BAPM2024][UKCHI2023], ACTH is measured with cortisol if primary adrenal insufficiency is suspected [Thornton2015] or, in one regional guideline, if the cortisol response is equivocal or low [WoS2020], and pyruvate, TSH and free T4 are not in the work-up lists of the national and international guidelines [Thornton2015][DeLeon2024][BAPM2024][UKCHI2023][Narvey2019], while TSH and free T4 appear as a non-priority row in one regional neonatal guideline [WoS2020] and in congenital hypopituitarism reviews when hypopituitarism is suspected [Parks2018][BoschIAra2021]; the manual does not define its tiers, so sampling order was not judged.",
+   "note": "Current evidence suggests pyruvate, TSH and free T4 are not in national or international work-up lists [Thornton2015][DeLeon2024][BAPM2024][UKCHI2023][Narvey2019]; thyroid tests appear without priority in one regional list [WoS2020] and in hypopituitarism reviews [Parks2018][BoschIAra2021]. ACTH is paired with cortisol when primary adrenal insufficiency is suspected [Thornton2015]. Free fatty acids are sampled at the time of hypoglycemia, a BAPM priority [DeLeon2024][BAPM2024][UKCHI2023]; ammonia, acylcarnitine and amino acids may follow correction [UKCHI2023].",
+   "evidence": [
+    {
+     "ref": "DeLeon2024",
+     "quote": "We Recommend Making a Specific Diagnosis of Hyperinsulinism Based on Measurements, at a Time of Hypoglycemia, of Plasma Levels of Metabolic Fuels (Beta-Hydroxybutyrate [BOHB] and Free Fatty Acids [FFA]) and Hormones (Insulin, Growth Hormone, Cortisol) and Determination of the Glycemic Response to a Pharmacologic Dose of Glucagon [Grade 1 ⊕⊕⊕○]",
+     "location": "Recommendation 1.1"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Blood samples for the following investigations should be taken before hypoglycaemia is treated. However, do not delay the treatment to complete investigations and prioritise those marked “*”",
+     "location": "Practice point 21"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Free fatty acids*",
+     "location": "Practice point 21, blood list"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "- Glucose, lactate- Insulin, C-peptide - FFA, BOHB- Cortisol *- GH *",
+     "location": "Table 1, column \"Samples taken at the time of hypoglycaemia\""
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "- Acylcarnitine- Plasma amino acids- Ammonia- Electrolytes- Liver function",
+     "location": "Table 1, column \"May be taken after hypoglycaemia correction\""
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "- Urine organic acids",
+     "location": "Table 1, column \"First urine after hypoglycaemia\""
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "The workup should include a confirmatory plasma glucose, beta-hydroxybutyrate, bicarbonate, lactate, free fatty acids, insulin, growth hormone, cortisol, carnitine, and acylcarnitine profiling.",
+     "location": "Investigating causes of persistent hypoglycemia"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Acylcarnitine profile",
+     "location": "Practice point 21, blood list"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Amino acids",
+     "location": "Practice point 21, blood list"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Ammonia",
+     "location": "Practice point 21, blood list"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Organic acids",
+     "location": "Practice point 21, urine list"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "Simultaneous measurement of plasma adrenocorticotropic hormone and cortisol is recommended if primary adrenal insufficiency is suspected.",
+     "location": "Recommendation 2.1, workup"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "Because plasma insulin concentration is sometimes not above the lower limit of detection,34 it is important to include the following tests when assessing the possibility of hypoglycemia due to hyperinsulinism: plasma BOHB and FFA (both inappropriately low; BOHB <1.5 mmol/L [<15 mg/dL] and FFA <1.0–1.5 mmol/L [<28–42 mg/dL]), and an increased glycemic response to glucagon.",
+     "location": "Fasting test"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Cortisol",
+     "location": "Practice point 21, blood list, not marked *"
+    },
+    {
+     "ref": "WoS2020",
+     "quote": "Thyroid function tests",
+     "location": "Table 1, page 4, row in the extended list (not bold)"
+    },
+    {
+     "ref": "WoS2020",
+     "quote": "Low free T4 and TSH in hypopituiarism",
+     "location": "Table 1, page 4, thyroid function tests row; \"hypopituiarism\" as printed"
+    },
+    {
+     "ref": "WoS2020",
+     "quote": "the investigations outlined in bold in the table below should be prioritised.",
+     "location": "Investigations, page 3; regional neonatal guideline, last reviewed 2020"
+    },
+    {
+     "ref": "WoS2020",
+     "quote": "ACTH Only if cortisol response equivocal/low",
+     "location": "Table 1, page 5; table cells joined"
+    },
+    {
+     "ref": "Parks2018",
+     "quote": "Clinical suspicion should prompt assessment of cortisol, free T4, thyroid-stimulating hormone, and growth hormone levels together with MRI of the hypothalamic and pituitary regions.",
+     "location": "Abstract (congenital hypopituitarism review; abstract only)"
+    },
+    {
+     "ref": "BoschIAra2021",
+     "quote": "If onset is acute with hypoglycaemia, cortisol deficiency should be excluded, and if identified this should be rapidly treated, as should TSH deficiency.",
+     "location": "Abstract (congenital hypopituitarism in the neonatal period)"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "Tier 3: Blood gas for pH, BE, and lactate",
+   "verdict": "concordant",
+   "summary": "Lactate is in the sample taken at the time of hypoglycemia in the UK screen [UKCHI2023], among the first assays in PES [Thornton2015], in the CPS work-up [Narvey2019] and on the BAPM list without priority [BAPM2024], and PES and CPS name bicarbonate while no national or international guideline names a blood gas, pH or base excess [Thornton2015][Narvey2019][BAPM2024][UKCHI2023], although two regional neonatal guidelines take a capillary blood gas as a priority test for metabolic acidosis [WoS2020] or measure lactate by blood gas analysis [WACAHS2026]; NZ advises against routine lactate measurement in the first 72 hours [TeTohu2025], and the manual does not define its tiers, so sampling order was not judged.",
+   "evidence": [
+    {
+     "ref": "Thornton2015",
+     "quote": "Assays for PG, bicarbonate, BOHB, and lactate are readily available and useful for distinguishing categories of hypoglycemia disorders (Figure).",
+     "location": "Recommendation 2.1, critical sample"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "The workup should include a confirmatory plasma glucose, beta-hydroxybutyrate, bicarbonate, lactate, free fatty acids, insulin, growth hormone, cortisol, carnitine, and acylcarnitine profiling.",
+     "location": "Investigating causes of persistent hypoglycemia"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "- Glucose, lactate- Insulin, C-peptide - FFA, BOHB- Cortisol *- GH *",
+     "location": "Table 1, column \"Samples taken at the time of hypoglycaemia\""
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Lactate",
+     "location": "Practice point 21, blood list, not marked *"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Blood samples for the following investigations should be taken before hypoglycaemia is treated. However, do not delay the treatment to complete investigations and prioritise those marked “*”",
+     "location": "Practice point 21"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "The possibility of an underlying metabolic disorder should also be considered, particularly if serum ammonia levels are raised or if there is lactic acidosis.",
+     "location": "Diagnosis"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Ketones, lactate, and insulin concentrations should not be measured routinely in addition to glucose for the diagnosis and monitoring of neonatal hypoglycaemia in the first 72 hours.",
+     "location": "Recommendation 19"
+    },
+    {
+     "ref": "WoS2020",
+     "quote": "Capillary blood gas Take in capillary tube Blood gas machine Metabolic acidosis in severe ketosis, lactic acidosis or organic acidaemia",
+     "location": "Table 1, page 3, bold (priority) row; table cells joined; regional neonatal guideline, last reviewed 2020"
+    },
+    {
+     "ref": "WACAHS2026",
+     "quote": "Blood gas analysis: lactate.",
+     "location": "Hypoglycaemia Screen, critical blood samples; regional neonatal guideline"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "5. Discontinue IV fluid. 6. Check POC glucose every 30min until level < 55mg/dL. 7. Check POC glucose every 15min until level < 45mg/dL. 8. Obtain blood specimen.",
+   "verdict": "partly_concordant",
+   "summary": "A sample at spontaneous hypoglycemia is preferred, and a fasting test or induced hypoglycemia is described when that sample is missing [Thornton2015][UKCHI2023], but the named sampling glucose is 50 mg/dL in PES [Thornton2015], an investigation threshold of 2.6 mmol/L before 72 hours and <2.8 mmol/L at ≥72 hours in CPS [Narvey2019], at or below 3.0 mmol/L in the UK consensus [UKCHI2023] and <40 mg/dL for insulin in AAP [Adamkin2011], and no retrieved source describes stopping IV fluids in a neonate, a 55 mg/dL step or 30- and 15-minute checks.",
+   "note": "Current evidence suggests diagnostic samples are drawn at 50 mg/dL in a fasting test [Thornton2015], at an investigation threshold of 2.6 mmol/L before 72 hours and <2.8 mmol/L after [Narvey2019], or at or below 3.0 mmol/L [UKCHI2023], with AAP naming <40 mg/dL for insulin [Adamkin2011]. Induced hypoglycemia is described for doubtful cases after discussion with a specialist centre [UKCHI2023]. These sources ask for frequent or careful monitoring without giving an interval [Thornton2015][UKCHI2023].",
+   "evidence": [
+    {
+     "ref": "Thornton2015",
+     "quote": "Whenever possible, specimens (a “critical sample”) for identifying the etiology of hypoglycemia should be obtained at the time of spontaneous presentation and before treatment that may rapidly alter the levels of BOHB, FFA, and insulin.",
+     "location": "Recommendation 2.1, critical sample"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "In the absence of a “critical sample,” a provocative fasting test is the most informative method for identifying the etiology of hypoglycemia disorders.",
+     "location": "Fasting test"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "For safety, a fasting test should be done with frequent monitoring of vital signs, PG, and BOHB concentrations. A PG concentration of 50 mg/dL (2.8 mmol/L) is sufficiently low to elicit the metabolic and neuroendocrine responses required for diagnosis.",
+     "location": "Fasting test"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "If no definitive test is available (which is often the case with hyperinsulinism), then the fasting test should be extended to exclude diagnostic features of the suspected disorder following the paradigm shown in the Figure.",
+     "location": "Technical suggestions, neonates aged >48 hours"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "If insulin samples cannot be obtained at the time of hypoglycaemia and the diagnosis of CHI is doubtful, hypoglycaemia may need to be induced with careful glucose monitoring to reach a diagnosis after discussion with the regional endocrine/CHI centre.",
+     "location": "Diagnosis"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "A critical sample to aid diagnosis for persistent hypoglycemia at ≥72 hours should be collected whenever a point-of-care glucose is <2.8 mmol/L.",
+     "location": "Beyond 72 hours post-birth"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "A blood sample should be sent for measurement of insulin along with a glucose concentration at the time when a bedside blood glucose concentration is less than 40 mg/dL, and an endocrinologist should be consulted.",
+     "location": "Figure 1 discussion"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "Table 3. Thresholds for investigation and treatment of hypoglycaemia Birth to 72 hours of age ≥72 hours of age Therapeutic goal 2.6 3.3 Investigation threshold 2.6 2.8*",
+     "location": "Table 3 (values in mmol/L), section Beyond 72 hours post-birth; table cells joined"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "*A critical sample should be sent to help determine etiology and confirm lab glucose level.",
+     "location": "Table 3 footnote"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "the combination of hypoglycaemia (at or below 3.0 mmol/L), suppressed ketones and fatty acids as well as an increased GIR is diagnostic of CHI.",
+     "location": "Diagnosis"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "4. D10W 2mL/kg bolus syringe available at bedside. 9. Check POC glucose. If < 40mg/dL, administer D10W 2mL/kg bolus once.",
+   "verdict": "partly_concordant",
+   "summary": "A dose of 2 mL/kg of 10% dextrose is described by AAP and the hyperinsulinism guideline [Adamkin2011][DeLeon2024] and lies within 1-2 mL/kg in ABM and NZ [Wight2021][TeTohu2025] (2.5 mL/kg in the UK consensus [UKCHI2023]), but triggers differ, with NZ limiting a bolus to <1 mmol/L or severe symptomatic hypoglycaemia [TeTohu2025], CPS calling its benefit in asymptomatic infants unclear [Narvey2019], AAP's 40 mg/dL applying to symptomatic infants [Adamkin2011], and no retrieved source addressing a bolus after a provoked fall in glucose.",
+   "note": "Current evidence suggests 2 mL/kg of 10% dextrose is a usual dose [Adamkin2011][DeLeon2024] but the trigger varies: NZ limits a bolus to glucose <1 mmol/L or severe symptomatic hypoglycaemia [TeTohu2025], CPS finds the benefit in asymptomatic infants unclear [Narvey2019], and AAP's 40 mg/dL cutoff applies to symptomatic infants [Adamkin2011].",
+   "evidence": [
+    {
+     "ref": "Adamkin2011",
+     "quote": "Persistent hypoglycemia can be treated with a minibolus (200 mg/kg [2 mL/kg] D10W) and/or intravenous infusion of D10W at 5 to 8 mg/kg per minute, 80 to 100 mL/kg per day; the goal is to achieve a plasma glucose concentration of 40 to 50 mg/dL (higher concentrations will only stimulate further insulin secretion).",
+     "location": "Figure 1 discussion"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "A reasonable (although arbitrary) cutoff for treating symptomatic infants is 40 mg/dL.",
+     "location": "Management"
+    },
+    {
+     "ref": "Adamkin2011",
+     "quote": "Symptomatic and <40 mg/dL",
+     "location": "Figure 1 (image, sources/Adamkin2011_Fig1.jpg, read by eye)"
+    },
+    {
+     "ref": "DeLeon2024",
+     "quote": "The usual dose is 200 mg/kg (2 mL/kg of 10% dextrose solution), followed by continuous infusion of dextrose at a rate sufficient to maintain plasma glucose above 70 mg/dL (typically 8 mg/kg/min or greater) [97].",
+     "location": "Treatment; hyperinsulinism"
+    },
+    {
+     "ref": "Wight2021",
+     "quote": "Initiate IV 10% glucose solution with a bolus of 1–2 mL/kg and continuous IV at 5–8 mg/(kg·min).",
+     "location": "Management B.1; \"·\" as printed on the page image of sources/manual_dl/ABM2021.pdf page 6"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "A bolus of 2.5mls/kg of 10% glucose is recommended (24) to treat acute hypoglycaemia followed by a continuous glucose infusion to prevent rebound hypoglycaemia.",
+     "location": "Treatment"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Do not give an initial bolus of IV dextrose routinely.",
+     "location": "Recommendation 24"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Consider an initial bolus of 1-2ml/kg of 10% dextrose over 10min only if the initial blood glucose concentration is very low (<1 mmol/L) or the baby has severe symptomatic hypoglycaemia (seizures or reduced consciousness).",
+     "location": "Question 24, implementation"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "A single bolus of 2 mL/kg of 10% dextrose at the start of an infusion can achieve steady-state levels more rapidly, but the benefits of this practice for asymptomatic infants are unclear (Level 4).",
+     "location": "Interventions, Asymptomatic hypoglycemia"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "manual_text": "10. Restart IV fluid. 11. Check POC glucose every 30min until > 60mg/dL.",
+   "verdict": "partly_concordant",
+   "summary": "A recheck 30 minutes after IV glucose is the CPS interval and 1 hour the NZ interval [Narvey2019][TeTohu2025], and >60 mg/dL is the PES initial target for at-risk neonates needing IV dextrose in the first 48 hours, but for suspected congenital disorders or hyperinsulinism the goals are >70 mg/dL [Thornton2015], 70-100 mg/dL [DeLeon2024], ≥3.5 mmol/L [UKCHI2023] and >3.0 mmol/L in the first 48 hours and >3.5 mmol/L after 48 hours in term infants [BAPM2024].",
+   "note": "Current evidence suggests a higher glucose goal when a congenital hypoglycemia disorder or hyperinsulinism is suspected: >70 mg/dL [Thornton2015], 70-100 mg/dL [DeLeon2024] or ≥3.5 mmol/L [UKCHI2023]. PES gives >60 mg/dL as the initial target for at-risk neonates on IV dextrose in the first 48 hours [Thornton2015].",
+   "evidence": [
+    {
+     "ref": "Narvey2019",
+     "quote": "Response to IV glucose should be rechecked after 30 minutes.",
+     "location": "Symptomatic hypoglycemia"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Check blood glucose concentration after 1 hour and adjust infusion rate as necessary.",
+     "location": "Question 24, monitoring and evaluation"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "Because at-risk neonates who require interventions beyond normal feedings, such as IV dextrose, to treat hypoglycemia in the first 48 hours of life are likely to have more severe and prolonged hypoglycemia, the initial treatment target should be above the thresholds for both neurogenic and neuroglycopenic symptoms (>60 mg/dL [3.3 mmol/L]).",
+     "location": "Treatment evidence"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "For neonates with a suspected congenital hypoglycemia disorder and older infants and children with a confirmed hypoglycemia disorder, we recommend that the goal of treatment be to maintain a PG concentration >70 mg/dL (3.9 mmol/L).",
+     "location": "Recommendation 3.1"
+    },
+    {
+     "ref": "DeLeon2024",
+     "quote": "We Recommend that the Goal of Treatment for Hyperinsulinism Is to Maintain Plasma Glucose Concentrations within the Normal Range of 70–100 mg/dL (3.9–5.6 mmol/L) [Grade 1⊕⊕○○]",
+     "location": "Recommendation, treatment goal"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "by consensus a practical therapeutic glucose threshold level of ≥3.5 mmol/L was agreed.",
+     "location": "Glucose threshold for treatment"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "In cases of suspected or confirmed hyperinsulinism, aim to maintain BG concentration >3.0mmol/L in the first 48 hours and >3.5mmol/L after 48 hours from birth.",
+     "location": "Practice point 25; term infants"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "manual_text": "Wean by 2ml/hr for AC POC Glucose >80 (or 75); Wean by 1mL/hr for AC POC Glucose 70-80 (or 65-75); Increase by 1mL/hr for AC POC glucose 50-60 (or 45-55); Increase by 2mL/hr for AC POC Glucose < 50 (or <45), and notify MD",
+   "verdict": "partly_concordant",
+   "summary": "Titration of IV dextrose by glucose is described in mg/kg/min rather than mL/hr, as an increase of 2 mg/kg/min at 1.0-2.5 mmol/L and a slow wean above 2.5 mmol/L in term infants [BAPM2024] and an increase of 1-2 mg/kg/min below 45 mg/dL with a stepwise decrease at 50-70 mg/dL in one review [Garg2025], so reduction starts at lower values than in either of the manual's value sets (>80, 70-80, 50-60, <50 or >75, 65-75, 45-55, <45); CPS weans after 12 hours of stable levels [Narvey2019], ABM weans gradually as glucose normalizes and feedings increase [Wight2021], PES allows transition to normal feedings once plasma glucose is stabilized at >60 mg/dL [Thornton2015], and NZ lists the optimal weaning strategy as a research need [TeTohu2025].",
+   "evidence": [
+    {
+     "ref": "Wight2021",
+     "quote": "Gradually wean the IV glucose as serum glucose normalizes and feedings increase. [B]",
+     "location": "Management A.7"
+    },
+    {
+     "ref": "Wight2021",
+     "quote": "If glucose remains low despite feedings, begin intravenous (IV) glucose therapy, and adjust IV rate by blood glucose concentration.",
+     "location": "Management A.5"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "For neonates who require dextrose infusion, transitioning to normal feedings alone can be attempted once PG concentration is stabilized at >60 mg/dL (>3.3 mmol/L).",
+     "location": "Treatment evidence"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "The optimal strategies for weaning babies off IV dextrose and onto full oral feeds.",
+     "location": "Question 24, research priorities"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Blood glucose 1.0 to 2.5mmol/l and no abnormal clinical signs?",
+     "location": "Flowchart C, page 40; term infants"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Increase glucose delivery rate by 2mg/kg/minute by increasing volume and/or concentration of glucose infusion*.",
+     "location": "Flowchart C, page 40; term infants"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Blood glucose >2.5mmol/l.",
+     "location": "Flowchart C, page 40; term infants"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Slow wean of IV infusion.",
+     "location": "Flowchart C, page 40; term infants"
+    },
+    {
+     "ref": "Garg2025",
+     "quote": "the infusion rate should be increased by 1 to 2 mg/kg per minute if the glucose concentration remains below 45 mg/dL (2.5 mmol/L). If the glucose concentration is between 50 and 70 mg/dL (2.8 to 3.9 mmol/L), the infusion rate should be decreased stepwise at a similar rate.",
+     "location": "Management, Intravenous glucose infusions; narrative review"
+    },
+    {
+     "ref": "Narvey2019",
+     "quote": "IV dextrose can be weaned when levels have been stable for 12 hours.",
+     "location": "Interventions, Symptomatic hypoglycemia"
+    }
+   ],
+   "note": "Current evidence suggests IV dextrose is titrated by glucose in mg/kg/min: an increase of 2 mg/kg/min at 1.0-2.5 mmol/L and a slow wean above 2.5 mmol/L in term infants [BAPM2024], and an increase of 1-2 mg/kg/min below 45 mg/dL with stepwise decrease at 50-70 mg/dL in one review [Garg2025]. PES allows transition to feeds once stabilized at >60 mg/dL [Thornton2015], and NZ lists the optimal weaning strategy as a research need [TeTohu2025]."
+  },
+  {
+   "id": "c13",
+   "manual_text": "Once off IV, continue to check sugars until >60 on 3 consecutive checks.",
+   "verdict": "practice_varies",
+   "summary": "Stopping rules differ: at least 3 feed-fast periods [Adamkin2011] and at least three satisfactory measurements [Wight2021] match the manual's count and >60 mg/dL matches the PES safety-fast value [Thornton2015], while NZ uses 12 hours at ≥2.6 mmol/L and not a number of tests [TeTohu2025], CPS two samples in range as tabulated in a review [Harding2024], and ABM >70 mg/dL through several fast-feed cycles after IV glucose [Wight2021].",
+   "evidence": [
+    {
+     "ref": "Adamkin2011",
+     "quote": "If inadequate postnatal glucose homeostasis is documented, the clinician must be certain that the infant can maintain normal plasma glucose concentrations on a routine diet for a reasonably extended period (through at least 3 feed-fast periods) before discharge.",
+     "location": "Figure 1 discussion"
+    },
+    {
+     "ref": "Wight2021",
+     "quote": "Monitoring should continue until acceptable preprandial levels are consistently obtained (until the infant has had at least three satisfactory measurements).",
+     "location": "Monitoring item 2"
+    },
+    {
+     "ref": "Wight2021",
+     "quote": "Any infant with persistent hypoglycemia ( >4 days) or requiring IV glucose therapy for symptomatic or asymptomatic low glucose levels should not be discharged until reasonable levels of blood glucose (>70 mg/dL; 3.9mmol/L) are maintained through several fast-feed cycles.",
+     "location": "Management A.9"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "For at-risk neonates without a suspected persistent hypoglycemia disorder and in whom hypoglycemia is considered likely to resolve within a short time, a “safety” fast of 6–8 hours should be considered before discharge, to determine whether a PG concentration >60 mg/dL can be maintained, or whether additional management or investigations may be required.",
+     "location": "Technical suggestions"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "Babies who have required intravenous dextrose or supplemental feeds for the treatment of neonatal hypoglycaemia should have 12 hours of blood glucose concentrations ≥2.6 mmol/L after these additional measures have ended before testing is stopped.",
+     "location": "Recommendation 13, monitoring"
+    },
+    {
+     "ref": "TeTohu2025",
+     "quote": "The criteria for stopping testing should be 12 hours of blood glucose concentrations ≥2.6 mmol/L with adequate feeding, not the number of tests conducted.",
+     "location": "Recommendation 13, implementation"
+    },
+    {
+     "ref": "Harding2024",
+     "quote": "Until two samples in normal range taken before feeds",
+     "location": "Table 3, Canada 2019, length of monitoring after last low glucose measurement"
+    }
+   ]
+  }
+ ],
+ "omissions": [
+  {
+   "id": "o1",
+   "related_claim": "c6",
+   "topic": "C-peptide with insulin",
+   "note": "Current evidence suggests C-peptide is sent with insulin in the sample taken at the time of hypoglycemia, and BAPM and the UK consensus give it priority [BAPM2024][UKCHI2023].",
+   "evidence": [
+    {
+     "ref": "BAPM2024",
+     "quote": "Blood samples for the following investigations should be taken before hypoglycaemia is treated. However, do not delay the treatment to complete investigations and prioritise those marked “*”",
+     "location": "Practice point 21"
+    },
+    {
+     "ref": "BAPM2024",
+     "quote": "Insulin and C-peptide*",
+     "location": "Practice point 21, blood list"
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "- Glucose, lactate- Insulin, C-peptide - FFA, BOHB- Cortisol *- GH *",
+     "location": "Table 1, column \"Samples taken at the time of hypoglycaemia\""
+    },
+    {
+     "ref": "UKCHI2023",
+     "quote": "Initial hypo screen investigations (those in bold indicate a higher priority).",
+     "location": "Table 1 caption; Glucose, Insulin and C-peptide are bold in UKCHI2023.xml"
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "related_claim": "c6",
+   "topic": "Glycemic response to glucagon",
+   "note": "Current evidence suggests the diagnosis of hyperinsulinism also rests on the glycemic response to a pharmacologic dose of glucagon at the time of hypoglycemia [DeLeon2024][Thornton2015].",
+   "evidence": [
+    {
+     "ref": "DeLeon2024",
+     "quote": "We Recommend Making a Specific Diagnosis of Hyperinsulinism Based on Measurements, at a Time of Hypoglycemia, of Plasma Levels of Metabolic Fuels (Beta-Hydroxybutyrate [BOHB] and Free Fatty Acids [FFA]) and Hormones (Insulin, Growth Hormone, Cortisol) and Determination of the Glycemic Response to a Pharmacologic Dose of Glucagon [Grade 1 ⊕⊕⊕○]",
+     "location": "Recommendation 1.1"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "it is important to include the following tests when assessing the possibility of hypoglycemia due to hyperinsulinism: plasma BOHB and FFA (both inappropriately low; BOHB <1.5 mmol/L [<15 mg/dL] and FFA <1.0–1.5 mmol/L [<28–42 mg/dL]), and an increased glycemic response to glucagon.",
+     "location": "Fasting test"
+    }
+   ]
+  }
+ ],
+ "references": [
+  {
+   "key": "Adamkin2011",
+   "role": "source",
+   "authors": "Adamkin DH",
+   "title": "Postnatal glucose homeostasis in late-preterm and term infants",
+   "journal": "Pediatrics",
+   "year": "2011",
+   "volume": "127",
+   "issue": "3",
+   "pages": "575-579",
+   "doi": "10.1542/peds.2010-3851",
+   "pmid": "21357346",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/21357346/",
+    "https://api.crossref.org/works/10.1542/peds.2010-3851"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Thornton2015",
+   "role": "source",
+   "authors": "Thornton PS, Stanley CA, De Leon DD, et al.",
+   "title": "Recommendations from the Pediatric Endocrine Society for Evaluation and Management of Persistent Hypoglycemia in Neonates, Infants, and Children",
+   "journal": "J Pediatr",
+   "year": "2015",
+   "volume": "167",
+   "issue": "2",
+   "pages": "238-245",
+   "doi": "10.1016/j.jpeds.2015.03.057",
+   "pmid": "25957977",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/25957977/",
+    "https://api.crossref.org/works/10.1016/j.jpeds.2015.03.057"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "DeLeon2024",
+   "role": "source",
+   "authors": "De Leon DD, Arnoux JB, Banerjee I, et al.",
+   "title": "International Guidelines for the Diagnosis and Management of Hyperinsulinism",
+   "journal": "Horm Res Paediatr",
+   "year": "2024",
+   "volume": "97",
+   "issue": "3",
+   "pages": "279-298",
+   "doi": "10.1159/000531766",
+   "pmid": "37454648",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37454648/",
+    "https://api.crossref.org/works/10.1159/000531766"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "UKCHI2023",
+   "role": "source",
+   "authors": "Shaikh MG, Lucas-Herald AK, Dastamani A, et al.",
+   "title": "Standardised practices in the networked management of congenital hyperinsulinism: a UK national collaborative consensus",
+   "journal": "Front Endocrinol (Lausanne)",
+   "year": "2023",
+   "volume": "14",
+   "issue": "",
+   "pages": "1231043",
+   "doi": "10.3389/fendo.2023.1231043",
+   "pmid": "38027197",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38027197/",
+    "https://api.crossref.org/works/10.3389/fendo.2023.1231043"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Narvey2019",
+   "role": "source",
+   "authors": "Narvey MR, Marks SD",
+   "title": "The screening and management of newborns at risk for low blood glucose",
+   "journal": "Paediatr Child Health",
+   "year": "2019",
+   "volume": "24",
+   "issue": "8",
+   "pages": "536-554",
+   "doi": "10.1093/pch/pxz134",
+   "pmid": "31844395",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/31844395/",
+    "https://api.crossref.org/works/10.1093/pch/pxz134"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "vanKempen2020",
+   "role": "source",
+   "authors": "van Kempen AAMW, Eskes PF, Nuytemans DHGM, et al.",
+   "title": "Lower versus Traditional Treatment Threshold for Neonatal Hypoglycemia",
+   "journal": "N Engl J Med",
+   "year": "2020",
+   "volume": "382",
+   "issue": "6",
+   "pages": "534-544",
+   "doi": "10.1056/NEJMoa1905593",
+   "pmid": "32023373",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/32023373/",
+    "https://api.crossref.org/works/10.1056/NEJMoa1905593"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Luo2024",
+   "role": "source",
+   "authors": "Luo K, Tang J, Zhang M, He Y",
+   "title": "Systematic review of guidelines on neonatal hypoglycemia",
+   "journal": "Clin Endocrinol (Oxf)",
+   "year": "2024",
+   "volume": "100",
+   "issue": "1",
+   "pages": "36-49",
+   "doi": "10.1111/cen.14995",
+   "pmid": "37997458",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37997458/",
+    "https://api.crossref.org/works/10.1111/cen.14995"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "OBrien2023",
+   "role": "source",
+   "authors": "O'Brien M, Gilchrist C, Sadler L, Hegarty JE, Alsweiler JM",
+   "title": "Infants Eligible for Neonatal Hypoglycemia Screening: A Systematic Review",
+   "journal": "JAMA Pediatr",
+   "year": "2023",
+   "volume": "177",
+   "issue": "11",
+   "pages": "1187-1196",
+   "doi": "10.1001/jamapediatrics.2023.3957",
+   "pmid": "37782488",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37782488/",
+    "https://api.crossref.org/works/10.1001/jamapediatrics.2023.3957"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Rusu2026",
+   "role": "source",
+   "authors": "Rusu C, Matyas M, Kramer BW, Dorobanțu FR, Bodog A",
+   "title": "Neonatal Hypoglycemia: A Systematic Review of International and Local Clinical Guidelines with Clinical Implications",
+   "journal": "J Clin Med",
+   "year": "2026",
+   "volume": "15",
+   "issue": "10",
+   "pages": "3921",
+   "doi": "10.3390/jcm15103921",
+   "pmid": "42194883",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42194883/",
+    "https://api.crossref.org/works/10.3390/jcm15103921"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Harding2024",
+   "role": "source",
+   "authors": "Harding JE, Alsweiler JM, Edwards TE, McKinlay CJ",
+   "title": "Neonatal hypoglycaemia",
+   "journal": "BMJ Med",
+   "year": "2024",
+   "volume": "3",
+   "issue": "1",
+   "pages": "e000544",
+   "doi": "10.1136/bmjmed-2023-000544",
+   "pmid": "38618170",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38618170/",
+    "https://api.crossref.org/works/10.1136/bmjmed-2023-000544"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Wight2021",
+   "role": "source",
+   "authors": "Wight NE",
+   "title": "ABM Clinical Protocol #1: Guidelines for Glucose Monitoring and Treatment of Hypoglycemia in Term and Late Preterm Neonates, Revised 2021",
+   "journal": "Breastfeed Med",
+   "year": "2021",
+   "volume": "16",
+   "issue": "5",
+   "pages": "353-365",
+   "doi": "10.1089/bfm.2021.29178.new",
+   "pmid": "33835840",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33835840/",
+    "https://api.crossref.org/works/10.1089/bfm.2021.29178.new"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "SchaeferGraf2002",
+   "role": "source",
+   "authors": "Schaefer-Graf UM, Rossi R, Bührer C, et al.",
+   "title": "Rate and risk factors of hypoglycemia in large-for-gestational-age newborn infants of nondiabetic mothers",
+   "journal": "Am J Obstet Gynecol",
+   "year": "2002",
+   "volume": "187",
+   "issue": "4",
+   "pages": "913-917",
+   "doi": "10.1067/mob.2002.126962",
+   "pmid": "12388976",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/12388976/",
+    "https://api.crossref.org/works/10.1067/mob.2002.126962"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Garg2025",
+   "role": "source",
+   "authors": "Garg M, Devaskar SU",
+   "title": "Exploring the long-term impacts of neonatal hypoglycemia to determine a safe threshold for glucose concentrations",
+   "journal": "Eur J Pediatr",
+   "year": "2025",
+   "volume": "184",
+   "issue": "4",
+   "pages": "263",
+   "doi": "10.1007/s00431-025-06082-z",
+   "pmid": "40119223",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40119223/",
+    "https://api.crossref.org/works/10.1007/s00431-025-06082-z"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "BAPM2024",
+   "role": "context",
+   "citation": "British Association of Perinatal Medicine. Identification and Management of Neonatal Hypoglycaemia in the Full-Term Infant (Birth to 72 hours): A BAPM Framework for Practice. London: BAPM; January 2024.",
+   "url": "https://www.bapm.org/resources/identification-and-management-of-neonatal-hypoglycaemia-in-the-full-term-infant-birth-72-hours",
+   "doi": null,
+   "verified_against": [
+    "https://www.bapm.org/resources/identification-and-management-of-neonatal-hypoglycaemia-in-the-full-term-infant-birth-72-hours"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "TeTohu2025",
+   "role": "context",
+   "citation": "Te Tohu Waihonga Guideline Group. Te Tohu Waihonga-Aotearoa New Zealand Clinical Practice Guideline for Neonatal Hypoglycaemia. Liggins Institute, University of Auckland; 2025. ISBN 978-0-473-74241-6.",
+   "url": "https://www.auckland.ac.nz/hypoglycaemia",
+   "doi": null,
+   "verified_against": [
+    "https://www.auckland.ac.nz/hypoglycaemia"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "BoschIAra2021",
+   "role": "source",
+   "authors": "Bosch I Ara L, Katugampola H, Dattani MT",
+   "title": "Congenital Hypopituitarism During the Neonatal Period: Epidemiology, Pathogenesis, Therapeutic Options, and Outcome",
+   "journal": "Front Pediatr",
+   "year": "2020",
+   "volume": "8",
+   "issue": "",
+   "pages": "600962",
+   "doi": "10.3389/fped.2020.600962",
+   "pmid": "33634051",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33634051/",
+    "https://api.crossref.org/works/10.3389/fped.2020.600962"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "Parks2018",
+   "role": "source",
+   "authors": "Parks JS",
+   "title": "Congenital Hypopituitarism",
+   "journal": "Clin Perinatol",
+   "year": "2018",
+   "volume": "45",
+   "issue": "1",
+   "pages": "75-91",
+   "doi": "10.1016/j.clp.2017.11.001",
+   "pmid": "29406008",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/29406008/",
+    "https://api.crossref.org/works/10.1016/j.clp.2017.11.001"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "WoS2020",
+   "role": "source",
+   "citation": "West of Scotland Managed Clinical Network for Neonatology (Lucas-Herald A, Shaikh G, Cozens A, Powls A). Persistent or refractory hypoglycaemia in the neonate: a guideline for management. West of Scotland Neonatal Guideline. Implementation 01/03/2014; latest review 03/07/2020; next review 01/07/2023.",
+   "url": "https://www.perinatalnetwork.nhs.scot/wp-content/uploads/2022/06/Hypoglycaemia-Persistent-or-Refractory-in-the-Neonate_WoS.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.perinatalnetwork.nhs.scot/wp-content/uploads/2022/06/Hypoglycaemia-Persistent-or-Refractory-in-the-Neonate_WoS.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  },
+  {
+   "key": "WACAHS2026",
+   "role": "source",
+   "citation": "Child and Adolescent Health Service, Western Australia, Neonatology. Guideline: Hypoglycaemia. First issued July 2006; last reviewed August 2026; next review August 2029.",
+   "url": "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Hypoglycaemia.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://cahs.health.wa.gov.au/~/media/HSPs/CAHS/Documents/Health-Professionals/Neonatology-guidelines/Hypoglycaemia.pdf"
+   ],
+   "verified_date": "2026-11-07"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 3,
+  "date": "2026-11-07",
+  "quotes_checked": 431,
+  "references_verified": 19,
+  "known_limitations": [
+   "AAP (Adamkin2011) Figure 1 values exist only as an image; those quotes were confirmed by eye, not by text match.",
+   "ABM (Wight2021) and Te Tohu Waihonga text layers use substitute glyphs; quotes print the page's ≥ and · as shown on the page image.",
+   "Several work-up and weaning sources are regional guidelines (WoS2020, past its review date; WACAHS2026); Parks2018 was read as an abstract only.",
+   "Te Tohu Waihonga is cited from Revision 1.2 (August 2026).",
+   "Refused or unreachable, logged and not worked around: Queensland guideline (HTTP 403), Safer Care Victoria (timeout), auckland.ac.nz page (HTTP 406)."
+  ]
+ }
+}
