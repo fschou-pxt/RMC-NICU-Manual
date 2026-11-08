@@ -1,0 +1,787 @@
+{
+ "chapter": "gastrointestinal",
+ "section": "Necrotizing Enterocolitis (NEC)",
+ "anchor": "gastrointestinal.html#sec-nec",
+ "source": {
+  "file": "site/src/content/docs/gastrointestinal.mdx",
+  "lines": "50-82",
+  "manual_commit": "f112cde"
+ },
+ "checked": "2026-11-08",
+ "generated_with": "Researcher: Claude Opus 5.5 (claude-opus-5-5); Comparer: Claude Opus 5.5 (claude-opus-5-5); Reviewer: Claude Opus 5.5 (claude-opus-5-5)",
+ "triage": {
+  "clinical": 12,
+  "operational": 2,
+  "definition": 1,
+  "context": 3
+ },
+ "scope": {
+  "population": "Newborn infants in the NICU with suspected or confirmed necrotizing enterocolitis, mainly preterm infants (about 90% of cases) but including term infants with NEC; no gestational-age or weight limit stated. NEC usually begins after the first week of life (median onset 23 days below 26 weeks' and 11 days above 31 weeks' gestation, 7-12 days on average in term infants) [TNS2021], although a subset of infants develops it within the first week [Devi2026], and its empirical antibiotics cover pathogens of late-onset bacteremia [TNS2021], so late-onset neonatal infection evidence in NICU infants applies.",
+  "topic": "Laboratory, culture and imaging work-up of NEC and antibiotic management (dosing, culture-directed changes, lumbar puncture for bacteremia, duration, escalation, choice of Gram-negative and Gram-positive agents).",
+  "basis": "Chapter Gastroenterology, heading \"## Necrotizing Enterocolitis (NEC)\" with subheadings \"### Workup\" and \"### Antibiotics Use\" / \"Further Considerations\"; population reading from the evidence sheet's Population context.",
+  "set_aside": [
+   {
+    "ref": "IDSA2024BC",
+    "population": "Adults, children and pregnant people with complicated intra-abdominal infection",
+    "reason": "Retrieved abstract describes only the guideline's scope, with no recommendation text, and neonates are not reported separately; it cannot support a verdict."
+   },
+   {
+    "ref": "IDSA2024IAF",
+    "population": "Adults, children and pregnant people with complicated intra-abdominal infection",
+    "reason": "Retrieved abstract describes only the guideline's scope, with no recommendation text, and neonates are not reported separately; it cannot support a verdict."
+   },
+   {
+    "ref": "SIS2025",
+    "population": "Pediatric patients with intra-abdominal infection",
+    "reason": "Retrieved abstract lists recommendation topics only, with no recommendation text, and does not report neonates or NEC separately; it cannot support a verdict."
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "### Workup\n- CBC/D\n- CRP\n- Chemistry",
+   "verdict": "concordant",
+   "summary": "The Turkish Neonatal Society guideline lists a complete blood count and serum chemistries when NEC is suspected [TNS2021], NICE advises a baseline C-reactive protein when starting antibiotics for possible neonatal infection, not used alone for antibiotic decisions [NICE_NG195], and a meta-analysis and a review link CRP to NEC severity and need for surgery [CRP2025MA] [Hackam2026].",
+   "evidence": [
+    {
+     "ref": "TNS2021",
+     "quote": "Complete blood count, serum chemistries (serum electrolytes, blood urea nitrogen, creatinine), coagulation studies, and blood gas analysis are performed when NEC is suspected.",
+     "location": "Laboratory Findings"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+     "location": "Recommendation 1.13.2"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "Do not use C-reactive protein results alone to make decisions about starting, continuing or stopping antibiotics. [2026]",
+     "location": "Recommendation 1.15.3"
+    },
+    {
+     "ref": "CRP2025MA",
+     "quote": "CRP has significant clinical value in predicting the occurrence of NEC, disease progression, and the timing of surgical intervention.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Hackam2026",
+     "quote": "laboratory tests have low specificity for NEC190, although the presence of progressive thrombocytopenia191 and high CRP (>7–8 mg/dL)192,193 have diagnostic value in predicting more severe disease requiring surgery.",
+     "location": "Outlook, Diagnosis"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "- Blood Culture - Repeat culture at time of surgery if an infection is present",
+   "verdict": "insufficient",
+   "summary": "A blood culture before the first antibiotic dose is recommended in suspected NEC and neonatal infection [TNS2021] [NICE_NG195], but no retrieved guideline, trial or protocol addresses repeating the blood culture at the time of surgery.",
+   "evidence": [
+    {
+     "ref": "TNS2021",
+     "quote": "Sepsis evaluation is performed because sepsis is a common concomitant finding or one of the main differential diagnoses.",
+     "location": "Laboratory Findings"
+    },
+    {
+     "ref": "TNS2021",
+     "quote": "After obtaining appropriate samples for culture, broad-spectrum antibiotics, with gram-negative and anaerobic bacteria (often intestinal bacterial flora) coverage, should be initiated.",
+     "location": "Antibiotic Treatment"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "When starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]",
+     "location": "Recommendation 1.13.1"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "- Serial KUB",
+   "verdict": "concordant",
+   "summary": "A guideline and recent reviews describe serial abdominal radiographs to follow NEC progression and detect perforation, with abdominal ultrasound as a complementary modality where expertise exists [TNS2021] [Hackam2026] [Devi2026] [Imaging2026].",
+   "evidence": [
+    {
+     "ref": "TNS2021",
+     "quote": "Abdominal radiographs are usually used to confirm the diagnosis of NEC and follow the progression of the disease. However, they often lack sensitivity and specificity.",
+     "location": "Radiological Findings"
+    },
+    {
+     "ref": "Hackam2026",
+     "quote": "If NEC Bell stage >1 is confirmed, repetitive abdominal radiological examination every 8–12h may assist in evaluating progress of the disease, and aid in the early detection of pneumoperitoneum or fixed bowel loop. Imaging protocols vary by institution138.",
+     "location": "Management, Supportive Care, Other supportive measures"
+    },
+    {
+     "ref": "Devi2026",
+     "quote": "A normal or nonspecific first radiograph does not exclude NEC. Serial films may reveal evolving bowel wall gas, fixed dilated loops, portal venous gas, ascites, or free air. Serial imaging and pattern recognition is important.",
+     "location": "Section 7.3"
+    },
+    {
+     "ref": "Imaging2026",
+     "quote": "Historically, the diagnostic standard has been plain abdominal radiography. However, the availability of abdominal ultrasound has been emerging as a complementary diagnostic tool allowing for direct visualization of the bowel and abdominal cavity.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "Antibiotic dosing should be based on the patient’s age, weight, and gestational age.",
+   "verdict": "concordant",
+   "summary": "Pharmacology reviews in preterm infants identify gestational age, postnatal age and weight as the main determinants of drug disposition and antibiotic pharmacokinetics [vandenAnker2021] [Butranova2023], and NICE adds gentamicin trough monitoring to adjust the dose interval [NICE_NG195].",
+   "evidence": [
+    {
+     "ref": "vandenAnker2021",
+     "quote": "Differences in gestational and postnatal age or weight are the major determinants of the observed variability in drug disposition and effect in these infants.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Butranova2023",
+     "quote": "Population pharmacokinetics can help to prognosis outcomes of antibiotic therapy, but it should be considered that the neonatal population is heterogeneous, and this heterogeneity is mainly determined by gestational and postnatal age.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "Adjust the gentamicin dose interval, aiming to achieve trough concentrations of less than 2 mg/litre. If the course of gentamicin lasts for more than 3 doses, aim for a trough concentration of less than 1 mg/litre. [2012]",
+     "location": "Recommendation 1.35.4"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "If clinical worsening occurs the Bell stage classification should be re-evaluated.",
+   "verdict": "concordant",
+   "summary": "The Turkish Neonatal Society guideline uses serial examination, laboratory and radiological studies to detect deterioration and keeps modified Bell staging as the basis for severity decisions [TNS2021], and a 2026 review notes that NEC progression is not reliably linear and diagnostic certainty changes with serial findings [Devi2026]; a quality-improvement study found Bell stage stratification effective for antibiotic selection [Pace2023].",
+   "evidence": [
+    {
+     "ref": "TNS2021",
+     "quote": "Serial physical examination, laboratory, and radiological studies are used to help monitor the course of the disease and to determine whether there is clinical improvement or deterioration.",
+     "location": "Monitoring Response to Treatment"
+    },
+    {
+     "ref": "TNS2021",
+     "quote": "Therefore, modified Bell staging criteria continue to be used to make decisions regarding the severity of the disease.15-17",
+     "location": "Treatment"
+    },
+    {
+     "ref": "Devi2026",
+     "quote": "Bell staging suggests that the disease progresses from suspected NEC to definite NEC to advanced disease. In day-to-day practice, however, NEC progression is not reliably linear.",
+     "location": "Section 2, The “Broken Bell”: Rethinking Traditional Bell Staging"
+    },
+    {
+     "ref": "Pace2023",
+     "quote": "Bell stage stratification appears to be an effective method for antibiotic selection.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "If peritonitis or purulence is noted during surgery, consider sending cultures to guide antibiotic management.",
+   "verdict": "concordant",
+   "summary": "The Turkish Neonatal Society guideline states that cultures of peritoneal fluid or surgical specimens help narrow antimicrobial coverage and guide duration, while not recommending peritoneal culture routinely in the initial work-up [TNS2021].",
+   "evidence": [
+    {
+     "ref": "TNS2021",
+     "quote": "The results of cultures of blood, peritoneal fluid, or surgical specimens will help to narrow the antimicrobial coverage and guide the duration of treatment.8,24",
+     "location": "Antibiotic Treatment"
+    },
+    {
+     "ref": "TNS2021",
+     "quote": "Peritoneal culture is not routinely recommended.11",
+     "location": "Laboratory Findings"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "Antibiotics should be modified based on blood culture or sterile site culture results.",
+   "verdict": "concordant",
+   "summary": "The Turkish Neonatal Society guideline uses blood, peritoneal and surgical-specimen culture results to narrow coverage [TNS2021], and NICE advises reassessing the regimen in light of microbiological results [NICE_NG195].",
+   "evidence": [
+    {
+     "ref": "TNS2021",
+     "quote": "The results of cultures of blood, peritoneal fluid, or surgical specimens will help to narrow the antimicrobial coverage and guide the duration of treatment.8,24",
+     "location": "Antibiotic Treatment"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: the baby's clinical condition (for example, if there is no improvement) the results of microbiological investigations expert microbiological advice, including local surveillance data. [2012]",
+     "location": "Recommendation 1.15.4"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "Patients with bacteremia typically require evaluation for meningitis with a lumbar puncture.",
+   "verdict": "partly_concordant",
+   "summary": "UK NICE guidance advises considering lumbar puncture, when safe, in a baby on antibiotics who did not have one at presentation and has a positive blood culture other than coagulase-negative staphylococcus, a poor response to antibiotics, a strong clinical suspicion of infection or signs of meningitis [NICE_NG195]; one third of VLBW infants with late-onset meningitis had negative blood cultures [Stoll2004], and a 1987 cohort of 238 infants with NEC found meningitis in four and recommended lumbar puncture for all suspected NEC [Kliegman1987].",
+   "note": "Current evidence suggests lumbar puncture is considered, when safe, in a baby on antibiotics without one at presentation who has a positive blood culture other than coagulase-negative staphylococcus, and also for a poor response to antibiotics, a strong clinical suspicion of infection or signs of meningitis [NICE_NG195]. One third of very low birth weight infants with late-onset meningitis had negative blood cultures [Stoll2004]. An older NEC cohort recommended lumbar puncture for all infants with suspected NEC [Kliegman1987].",
+   "evidence": [
+    {
+     "ref": "NICE_NG195",
+     "quote": "Consider performing a lumbar puncture to obtain a cerebrospinal fluid sample in a baby who did not have a lumbar puncture at presentation who is receiving antibiotics, if it is thought safe to do so and if: the baby has a positive blood culture (other than coagulase negative staphylococcus) or the baby does not respond satisfactorily to antibiotic treatment, or there is a strong clinical suspicion of infection or there are clinical symptoms or signs suggesting meningitis. [2021]",
+     "location": "Recommendation 1.17.2"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "If it is safe to do so, perform a lumbar puncture to obtain a cerebrospinal fluid sample when: there is a strong clinical suspicion of neonatal infection or there are clinical symptoms or signs suggesting meningitis. [2021]",
+     "location": "Recommendation 1.14.1"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "Treat and stabilise any of the following before performing a lumbar puncture: unprotected airway respiratory compromise shock uncontrolled seizures bleeding risk. [2024]",
+     "location": "Recommendation 1.14.2"
+    },
+    {
+     "ref": "Stoll2004",
+     "quote": "One third (45 of 134) of the infants with meningitis had negative BCs.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Stoll2004",
+     "quote": "Because CSF cultures were performed only half as often as BCs, this discordance in blood and CSF culture results suggests that meningitis may be underdiagnosed among VLBW infants.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Kliegman1987",
+     "quote": "We report four patients who had meningitis during the course of illness among 238 patients with documented NEC. We recommend that all patients with suspected NEC have a lumbar puncture as part of the diagnostic work-up, as meningitis may require different and prolonged therapy, and will necessitate more specific follow-up for neurodevelopmental problems.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "Duration of antibiotics for severe and perforated NEC is dependent on extent of infection, severity of illness, and if adequate source control was obtained.",
+   "verdict": "concordant",
+   "summary": "The Turkish Neonatal Society guideline gives 10-14 days for stage ≥2 NEC with longer treatment when an abscess forms [TNS2021] and UK NICE guidance extends courses beyond 7 days when the baby has not recovered or because of the infection site, naming NEC [NICE_NG195], while a systematic review and a 2026 review find insufficient evidence for any specific duration [BMC2022SR] [Hackam2026] and durations vary widely across NICUs [Duration2022]; no retrieved source names source control as a duration determinant in NEC.",
+   "evidence": [
+    {
+     "ref": "TNS2021",
+     "quote": "Unless complicated by abdominal abscess formation, a treatment regimen of 10-14 days is usually sufficient. For NEC stage ≥ 2, treatment is continued for a total of 10-14 days, even if the culture results are negative.",
+     "location": "Antibiotic Treatment"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "Give antibiotic treatment for 7 days for babies with a positive blood culture. Consider continuing antibiotic treatment for more than 7 days if: the baby has not yet fully recovered or longer treatment is needed because of the pathogen identified on blood culture (for example, Gram-negative bacteria or Staphylococcus aureus; seek expert microbiological advice if necessary) or longer treatment is needed because of the site of the infection (such as intra-abdominal co-pathology, necrotising enterocolitis, osteomyelitis or infection of a central venous catheter). [2021]",
+     "location": "Recommendation 1.25.1"
+    },
+    {
+     "ref": "BMC2022SR",
+     "quote": "No sufficient evidence was found for any recommendation on the choice of antibiotics, the route of administration or the duration in infants treated for NEC with Bell’s stage II and III.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Hackam2026",
+     "quote": "However, evidence is insufficient to recommend specific antibiotics, administration routes, or treatment durations for infants with NEC.137",
+     "location": "Management, Supportive Care, Other supportive measures"
+    },
+    {
+     "ref": "Duration2022",
+     "quote": "Antibiotic duration for both medical and surgical NEC remains variable within and among high level NICUs.",
+     "location": "Abstract, Conclusion"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "For worsening severity of illness despite surgical management and treatment with Piperacillin tazobactam, consider discussing broadening antibiotic therapy with Pediatric Infectious Diseases.",
+   "verdict": "concordant",
+   "summary": "NICE advises reassessing and considering a change of regimen when there is no improvement, with expert microbiological advice and daily access to clinical microbiology or paediatric infectious disease advice [NICE_NG195]; no trial compares broadening strategies after piperacillin-tazobactam in NEC, and no regimen has proven superior [AJP2023SR] [Shah2012].",
+   "evidence": [
+    {
+     "ref": "NICE_NG195",
+     "quote": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: the baby's clinical condition (for example, if there is no improvement) the results of microbiological investigations expert microbiological advice, including local surveillance data. [2012]",
+     "location": "Recommendation 1.15.4"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "Healthcare professionals with specific experience in neonatal infection should be available every day to give clinical microbiology or paediatric infectious disease advice. [2021]",
+     "location": "Recommendation 1.16.2"
+    },
+    {
+     "ref": "AJP2023SR",
+     "quote": "No antimicrobial regimen has been shown to be superior to ampicillin and gentamicin in decreasing mortality and preventing clinical deterioration in NEC.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Shah2012",
+     "quote": "There was insufficient evidence to recommend a particular antibiotic regimen for the treatment of NEC.",
+     "location": "Abstract, Authors' conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "manual_text": "Consider using ceftazidime in place of gentamicin in patients with recent or extensive prior exposure to gentamicin.",
+   "verdict": "insufficient",
+   "summary": "No retrieved source evaluates ceftazidime in place of gentamicin after prior gentamicin exposure; neither a VLBW case-control study, which found no case-control difference in cumulative gentamicin dose, treatment duration (median 3 days in both) or predicted trough levels [Gent2016Hearing], nor a 330-NICU cohort [PuiaDumitrescu2018] found gentamicin dose or duration associated with hearing loss or failed hearing screens, and broad-spectrum antibiotic use was associated with invasive candidiasis in ELBW infants [Cotten2006].",
+   "evidence": [
+    {
+     "ref": "Gent2016Hearing",
+     "quote": "The total cumulated dose of gentamicin administered did not differ between the study group (median 10.2 mg/kg, Q1-Q3 1.6–13.2) and the control group (median 7.9 mg/kg, Q1-Q3 0–12.8, p = 0.47).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Gent2016Hearing",
+     "quote": "The median duration of gentamicin treatment was 3 days both in the study group and the control group (p = 0.58). Maximum predicted trough serum levels of gentamicin, cumulative area under the curve and gentamicin clearance were not different between cases and controls.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "PuiaDumitrescu2018",
+     "quote": "Gentamicin dosing and duration of treatment were not associated with increased odds of failed hearing screen at the time of discharge from initial neonatal intensive care unit stay.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Cotten2006",
+     "quote": "Broad-spectrum antibiotics use was associated with candidiasis for individual infants.",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "manual_text": "Consider starting vancomycin in septic patients with central lines to cover methicillin resistant Staphylococcus species. If started, consider stopping vancomycin if cultures are negative at 48 hours.",
+   "verdict": "partly_concordant",
+   "summary": "UK NICE guidance advises narrow-spectrum first-line antibiotics for late-onset infection in a neonatal unit, chosen with local resistance data, and considers stopping at 48 hours only when the culture is negative, suspicion was not strong, and the clinical course and C-reactive protein are reassuring [NICE_NG195]; a US late-onset bacteremia cohort (median gestational age 26 weeks) supports 48 hours when therapy targets coagulase-negative staphylococci and found central lines not independently associated with longer time to positivity [TTP2022LOS], and a level IV NICU quality project notes recommendations to limit vancomycin to known resistant infections [Hamdy2020].",
+   "note": "Current evidence suggests first-line cover for late-onset infection in a neonatal unit is a narrow-spectrum combination chosen with local resistance data, and stopping at 48 hours also requires a reassuring clinical course and C-reactive protein [NICE_NG195]. A 48-hour stop is supported when therapy targets coagulase-negative staphylococci, and central lines were not independently linked to later culture positivity [TTP2022LOS].",
+   "evidence": [
+    {
+     "ref": "NICE_NG195",
+     "quote": "For babies with suspected late-onset neonatal infection who are already in a neonatal unit: give a combination of narrow-spectrum antibiotics (such as intravenous flucloxacillin plus gentamicin) as first-line treatment use local antibiotic susceptibility and resistance data (or national data if local data are inadequate) when deciding which antibiotics to use give antibiotics that are effective against both Gram-negative and Gram-positive bacteria if necrotising enterocolitis is suspected, also include an antibiotic that is active against anaerobic bacteria (such as metronidazole). [2021]",
+     "location": "Recommendation 1.23.1"
+    },
+    {
+     "ref": "NICE_NG195",
+     "quote": "For babies given antibiotics because of suspected late-onset infection, consider stopping the antibiotics at 48 hours if: the blood culture is negative and the initial clinical suspicion of infection was not strong and the baby's clinical condition is reassuring, with no clinical indicators of possible infection and the levels and trends of C‑reactive protein concentration are reassuring. [2021]",
+     "location": "Recommendation 1.24.1"
+    },
+    {
+     "ref": "TTP2022LOS",
+     "quote": "Empiric antibiotic administration in late-onset infection evaluations (not targeting CoNS) can be stopped at 36 hours. Longer durations (48 hours) should be considered when there is pretreatment or antibiotic therapy is directed at CoNS.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "TTP2022LOS",
+     "quote": "In multivariable analysis, CoNS and pretreatment remained significantly associated with a TTP >36, but central line presence did not.",
+     "location": "Results"
+    },
+    {
+     "ref": "Hamdy2020",
+     "quote": "Vancomycin remains one of the most commonly prescribed antibiotics in NICUs despite recommendations to limit its use for known resistant infections.",
+     "location": "Abstract, Background and Objectives"
+    }
+   ]
+  }
+ ],
+ "omissions": [
+  {
+   "id": "o1",
+   "related_claim": "c1",
+   "topic": "Coagulation studies and blood gas in the initial work-up",
+   "note": "Current evidence suggests coagulation studies and blood gas analysis are also part of the laboratory evaluation when NEC is suspected [TNS2021].",
+   "evidence": [
+    {
+     "ref": "TNS2021",
+     "quote": "Complete blood count, serum chemistries (serum electrolytes, blood urea nitrogen, creatinine), coagulation studies, and blood gas analysis are performed when NEC is suspected.",
+     "location": "Laboratory Findings"
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "related_claim": "c10",
+   "topic": "Antifungal therapy for non-response",
+   "note": "Current evidence suggests antifungal drugs are considered for severely ill infants with NEC or those who do not respond to antibiotic treatment [TNS2021].",
+   "evidence": [
+    {
+     "ref": "TNS2021",
+     "quote": "Antifungal drugs should be considered in severely ill patients or patients who do not respond to antibiotic treatment.8,23",
+     "location": "Antibiotic Treatment"
+    }
+   ]
+  }
+ ],
+ "references": [
+  {
+   "key": "TNS2021",
+   "role": "source",
+   "authors": "Ergenekon E, Tayman C, Özkan H",
+   "title": "Turkish Neonatal Society Necrotizing Enterocolitis Diagnosis, Treatment and Prevention Guidelines",
+   "journal": "Turk Arch Pediatr",
+   "year": "2021",
+   "volume": "56",
+   "issue": "5",
+   "pages": "513-524",
+   "doi": "10.5152/TurkArchPediatr.2021.21164",
+   "pmid": "35110122",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35110122/",
+    "https://api.crossref.org/works/10.5152/TurkArchPediatr.2021.21164"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "AJP2023SR",
+   "role": "source",
+   "authors": "Donà D, Gastaldi A, Barbieri E, Bonadies L, Aluvaala J, English M",
+   "title": "Empirical Antimicrobial Therapy of Neonates with Necrotizing Enterocolitis: A Systematic Review",
+   "journal": "Am J Perinatol",
+   "year": "2023",
+   "volume": "40",
+   "issue": "6",
+   "pages": "646-656",
+   "doi": "10.1055/s-0041-1730364",
+   "pmid": "34126646",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34126646/",
+    "https://api.crossref.org/works/10.1055/s-0041-1730364"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "BMC2022SR",
+   "role": "source",
+   "authors": "Gill EM, Jung K, Qvist N, Ellebæk MB",
+   "title": "Antibiotics in the medical and surgical treatment of necrotizing enterocolitis. A systematic review",
+   "journal": "BMC Pediatr",
+   "year": "2022",
+   "volume": "22",
+   "issue": "1",
+   "pages": "66",
+   "doi": "10.1186/s12887-022-03120-9",
+   "pmid": "35086498",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35086498/",
+    "https://api.crossref.org/works/10.1186/s12887-022-03120-9"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Shah2012",
+   "role": "source",
+   "authors": "Shah D, Sinn JK",
+   "title": "Antibiotic regimens for the empirical treatment of newborn infants with necrotising enterocolitis",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2012",
+   "volume": "2012",
+   "issue": "8",
+   "pages": "CD007448",
+   "doi": "10.1002/14651858.CD007448.pub2",
+   "pmid": "22895960",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/22895960/",
+    "https://api.crossref.org/works/10.1002/14651858.CD007448.pub2"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "CRP2025MA",
+   "role": "source",
+   "authors": "Cheng H, Yu J, Dai L",
+   "title": "A meta-analysis on the predictive role of CRP in NEC diagnosis and prognosis",
+   "journal": "Ital J Pediatr",
+   "year": "2025",
+   "volume": "51",
+   "issue": "1",
+   "pages": "244",
+   "doi": "10.1186/s13052-025-02081-w",
+   "pmid": "40713747",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40713747/",
+    "https://api.crossref.org/works/10.1186/s13052-025-02081-w"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Imaging2026",
+   "role": "source",
+   "authors": "Pham E, Cuna A, Chan SS, Le Cacheux C",
+   "title": "Abdominal Radiograph and Abdominal Ultrasound for Necrotizing Enterocolitis Diagnosis and Management",
+   "journal": "Clin Perinatol",
+   "year": "2026",
+   "volume": "53",
+   "issue": "4",
+   "pages": "889-907",
+   "doi": "10.1016/j.clp.2026.07.007",
+   "pmid": "42919498",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42919498/",
+    "https://api.crossref.org/works/10.1016/j.clp.2026.07.007"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Devi2026",
+   "role": "source",
+   "authors": "Devi U, Weitkamp JH, Shenberger JS, Garg PM",
+   "title": "Diagnosis and Staging of Necrotizing Enterocolitis: Current Controversies and a Phenotype-Based Framework",
+   "journal": "Children (Basel)",
+   "year": "2026",
+   "volume": "13",
+   "issue": "6",
+   "pages": "758",
+   "doi": "10.3390/children13060758",
+   "pmid": "42353928",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42353928/",
+    "https://api.crossref.org/works/10.3390/children13060758"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Hackam2026",
+   "role": "source",
+   "authors": "Hackam DJ, Modi N, Hulscher J, Kooi EMW, Ishiyama A",
+   "title": "Necrotizing enterocolitis",
+   "journal": "Nat Rev Dis Primers",
+   "year": "2026",
+   "volume": "12",
+   "issue": "1",
+   "pages": "21",
+   "doi": "10.1038/s41572-026-00698-7",
+   "pmid": "42062305",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42062305/",
+    "https://api.crossref.org/works/10.1038/s41572-026-00698-7"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Kliegman1987",
+   "role": "source",
+   "authors": "Kliegman RM, Walsh MC",
+   "title": "The incidence of meningitis in neonates with necrotizing enterocolitis",
+   "journal": "Am J Perinatol",
+   "year": "1987",
+   "volume": "4",
+   "issue": "3",
+   "pages": "245-248",
+   "doi": "10.1055/s-2007-999783",
+   "pmid": "3606758",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/3606758/",
+    "https://api.crossref.org/works/10.1055/s-2007-999783"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Stoll2004",
+   "role": "source",
+   "authors": "Stoll BJ, Hansen N, Fanaroff AA, et al.",
+   "title": "To tap or not to tap: high likelihood of meningitis without sepsis among very low birth weight infants",
+   "journal": "Pediatrics",
+   "year": "2004",
+   "volume": "113",
+   "issue": "5",
+   "pages": "1181-1186",
+   "doi": "10.1542/peds.113.5.1181",
+   "pmid": "15121927",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/15121927/",
+    "https://api.crossref.org/works/10.1542/peds.113.5.1181"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Duration2022",
+   "role": "source",
+   "authors": "Ahmad I, Premkumar MH, Hair AB, et al.",
+   "title": "Variability in antibiotic duration for necrotizing enterocolitis and outcomes in a large multicenter cohort",
+   "journal": "J Perinatol",
+   "year": "2022",
+   "volume": "42",
+   "issue": "11",
+   "pages": "1458-1464",
+   "doi": "10.1038/s41372-022-01433-2",
+   "pmid": "35760891",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35760891/",
+    "https://api.crossref.org/works/10.1038/s41372-022-01433-2"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Pace2023",
+   "role": "source",
+   "authors": "Pace D, Mack SJ, Chan S, et al.",
+   "title": "Antimicrobial Stewardship in Neonates with Necrotizing Enterocolitis: A Quality Improvement Initiative",
+   "journal": "J Pediatr Surg",
+   "year": "2023",
+   "volume": "58",
+   "issue": "10",
+   "pages": "1982-1989",
+   "doi": "10.1016/j.jpedsurg.2023.06.009",
+   "pmid": "37479571",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37479571/",
+    "https://api.crossref.org/works/10.1016/j.jpedsurg.2023.06.009"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Gent2016Hearing",
+   "role": "source",
+   "authors": "Fuchs A, Zimmermann L, Bickle Graz M, et al.",
+   "title": "Gentamicin Exposure and Sensorineural Hearing Loss in Preterm Infants",
+   "journal": "PLoS One",
+   "year": "2016",
+   "volume": "11",
+   "issue": "7",
+   "pages": "e0158806",
+   "doi": "10.1371/journal.pone.0158806",
+   "pmid": "27390846",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/27390846/",
+    "https://api.crossref.org/works/10.1371/journal.pone.0158806"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "PuiaDumitrescu2018",
+   "role": "source",
+   "authors": "Puia-Dumitrescu M, Bretzius OM, Brown N, et al.",
+   "title": "Evaluation of Gentamicin Exposure in the Neonatal Intensive Care Unit and Hearing Function at Discharge",
+   "journal": "J Pediatr",
+   "year": "2018",
+   "volume": "203",
+   "issue": "",
+   "pages": "131-136",
+   "doi": "10.1016/j.jpeds.2018.07.101",
+   "pmid": "30244991",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/30244991/",
+    "https://api.crossref.org/works/10.1016/j.jpeds.2018.07.101"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Cotten2006",
+   "role": "source",
+   "authors": "Cotten CM, McDonald S, Stoll B, Goldberg RN, Poole K, Benjamin DK Jr",
+   "title": "The association of third-generation cephalosporin use and invasive candidiasis in extremely low birth-weight infants",
+   "journal": "Pediatrics",
+   "year": "2006",
+   "volume": "118",
+   "issue": "2",
+   "pages": "717-722",
+   "doi": "10.1542/peds.2005-2677",
+   "pmid": "16882828",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/16882828/",
+    "https://api.crossref.org/works/10.1542/peds.2005-2677"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Hamdy2020",
+   "role": "source",
+   "authors": "Hamdy RF, Bhattarai S, Basu SK, et al.",
+   "title": "Reducing Vancomycin Use in a Level IV NICU",
+   "journal": "Pediatrics",
+   "year": "2020",
+   "volume": "146",
+   "issue": "2",
+   "pages": "e20192963",
+   "doi": "10.1542/peds.2019-2963",
+   "pmid": "32611807",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/32611807/",
+    "https://api.crossref.org/works/10.1542/peds.2019-2963"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "TTP2022LOS",
+   "role": "source",
+   "authors": "Mukhopadhyay S, Briker SM, Flannery DD, et al.",
+   "title": "Time to positivity of blood cultures in neonatal late-onset bacteraemia",
+   "journal": "Arch Dis Child Fetal Neonatal Ed",
+   "year": "2022",
+   "volume": "107",
+   "issue": "6",
+   "pages": "583-588",
+   "doi": "10.1136/archdischild-2021-323416",
+   "pmid": "35273079",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35273079/",
+    "https://api.crossref.org/works/10.1136/archdischild-2021-323416"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "vandenAnker2021",
+   "role": "source",
+   "authors": "van den Anker J, Allegaert K",
+   "title": "Considerations for Drug Dosing in Premature Infants",
+   "journal": "J Clin Pharmacol",
+   "year": "2021",
+   "volume": "61 Suppl 1",
+   "issue": "",
+   "pages": "S141-S151",
+   "doi": "10.1002/jcph.1884",
+   "pmid": "34185893",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34185893/",
+    "https://api.crossref.org/works/10.1002/jcph.1884"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Butranova2023",
+   "role": "source",
+   "authors": "Butranova OI, Ushkalova EA, Zyryanov SK, Chenkurov MS",
+   "title": "Developmental Pharmacokinetics of Antibiotics Used in Neonatal ICU: Focus on Preterm Infants",
+   "journal": "Biomedicines",
+   "year": "2023",
+   "volume": "11",
+   "issue": "3",
+   "pages": "940",
+   "doi": "10.3390/biomedicines11030940",
+   "pmid": "36979919",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36979919/",
+    "https://api.crossref.org/works/10.3390/biomedicines11030940"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "NICE_NG195",
+   "role": "context",
+   "citation": "National Institute for Health and Care Excellence. Neonatal infection: antibiotics for prevention and treatment. NICE guideline NG195. Published 20 April 2021; last updated 13 May 2026.",
+   "url": "https://www.nice.org.uk/guidance/ng195",
+   "doi": null,
+   "verified_against": [
+    "https://www.nice.org.uk/guidance/ng195"
+   ],
+   "verified_date": "2026-11-08"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 2,
+  "date": "2026-11-08",
+  "quotes_checked": 131,
+  "references_verified": 20,
+  "known_limitations": [
+   {
+    "item": "Images",
+    "note": "The Modified Bell's criteria table and the antibiotic management algorithm are images and were not checked; the Resources slide link was not checked."
+   },
+   {
+    "item": "NICE_NG195",
+    "note": "Guideline chapters were saved as HTML before a later WebFetch of nice.org.uk returned HTTP 403. The 'Terms used' page was saved about 10 minutes later and its retrieval could not be shown to precede the refusal, so it is not used. Recs 1.17.1-1.17.2 were extracted from the already-saved HTML (the first text extraction was empty)."
+   },
+   {
+    "item": "IDSA2024BC, IDSA2024IAF, SIS2025",
+    "note": "Abstracts describe scope only; recommendation text not retrieved; set aside."
+   },
+   {
+    "item": "Aurora2022",
+    "note": "The NEC protocol is in Figure 2, an image not in the extracted text; only its narrative text is quoted."
+   },
+   {
+    "item": "Round 1-2 suggested items",
+    "note": "Not applied: c9 wording ('extends', abscess), c12 summary length (674 characters), Devi2026 quote for c5, Cotten2006 author list; evidence_sheet.md keeps older Hackam2026/Devi2026 location wording and c11 'mixed' wording (comparison.json is correct)."
+   }
+  ]
+ }
+}

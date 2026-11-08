@@ -148,7 +148,10 @@
     "finished": "2026-10-29T00:47:54-07:00",
     "result": "APPROVED after 3 reviews (2 revisions). 20 claims: 8 concordant, 6 partly_concordant, 1 practice_varies, 5 insufficient; 0 discordant; 1 omission. 204 quotes checked, 17 references published."
    },
-   "status": "pending"
+   "status": "approved",
+   "started": "2026-11-08T00:13:56-08:00",
+   "finished": "2026-11-08T00:47:30-08:00",
+   "result": "APPROVED after 2 reviews (1 revision). 20 claims: 11 concordant, 4 partly_concordant, 2 discordant, 1 practice_varies, 2 insufficient; 1 omission. 201 quotes checked, 18 references published."
   },
   {
    "n": 9,
@@ -164,7 +167,10 @@
     "finished": "2026-10-30T01:00:06-07:00",
     "result": "Approved after 3 reviews (2 revisions). 27 claims: 8 concordant, 12 partly_concordant, 2 practice_varies, 5 insufficient, 0 discordant; 1 omission. Triage: clinical 27, operational 1, definition 0, context 1."
    },
-   "status": "pending"
+   "status": "approved",
+   "started": "2026-11-08T00:13:56-08:00",
+   "finished": "2026-11-08T00:54:47-08:00",
+   "result": "APPROVED after 3 reviews (2 revisions). 30 claims: 20 concordant, 3 partly_concordant, 7 insufficient; 0 discordant; 3 omissions. 240 quotes checked, 32 references published."
   },
   {
    "n": 10,
@@ -180,7 +186,10 @@
     "finished": "2026-10-30T00:51:36-07:00",
     "result": "Approved after 3 reviews (2 revisions). 9 claims: 6 concordant, 2 partly_concordant, 1 practice_varies, 0 discordant (c7 moved from discordant to partly_concordant in revision); 2 omissions. Triage: clinical 9, operational 2, definition 0, context 0."
    },
-   "status": "pending"
+   "status": "approved",
+   "started": "2026-11-08T00:13:56-08:00",
+   "finished": "2026-11-08T00:53:26-08:00",
+   "result": "APPROVED after 3 reviews (2 revisions). 15 claims: 12 concordant, 1 discordant, 2 practice_varies; 0 omissions. 267 quotes checked, 16 references published."
   },
   {
    "n": 11,
@@ -196,7 +205,10 @@
     "finished": "2026-10-30T00:54:22-07:00",
     "result": "Approved after 3 reviews (2 revisions). 11 claims: 5 concordant, 4 partly_concordant, 2 insufficient, 0 discordant; 1 omission. Triage: clinical 11, operational 1, definition 0, context 2. Bell criteria and antibiotic algorithm are images (not checked)."
    },
-   "status": "pending"
+   "status": "approved",
+   "started": "2026-11-08T00:13:56-08:00",
+   "finished": "2026-11-08T00:50:16-08:00",
+   "result": "APPROVED after 2 reviews (1 revision). 12 claims: 8 concordant, 2 partly_concordant, 2 insufficient; 0 discordant; 2 omissions. 131 quotes checked, 20 references published."
   },
   {
    "n": 12,

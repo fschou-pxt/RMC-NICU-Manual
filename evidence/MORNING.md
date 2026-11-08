@@ -40,6 +40,8 @@ Project root: `/Users/fschou/Documents/Claude/Projects/RMC-NICU-Handbook` (git b
    - public, from `public-site/`: `npx -y wrangler@4 pages deploy ../site/dist-public.nosync --project-name nicu-manual --branch main --commit-dirty=true`
    - scoring app, from the project root: `node tools/evidence-scoring/server.mjs --build-cloud`, then from
      `tools/evidence-scoring/cloud/`: `npx -y wrangler@4 pages deploy --project-name nicu-evidence-scoring --branch main --commit-dirty=true`
+   Run each deploy exactly as written, as its own command after `cd` to its folder (`cd <folder> && npx ...`):
+   `.claude/settings.local.json` allows these exact commands, so they run without a permission prompt.
    Then confirm `https://nicu-manual.pages.dev/<page>/` returns 200 and contains the new evidence box.
 8. **Report**: the sections published (chapter › section, verdict counts), the scoring app's new item count, anything left out and why, and the queue's
    progress (approved / no_clinical / needs_review / error / pending).

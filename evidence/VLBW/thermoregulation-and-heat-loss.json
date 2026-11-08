@@ -1,0 +1,990 @@
+{
+ "chapter": "VLBW",
+ "section": "Thermoregulation and Heat Loss Prevention",
+ "anchor": "VLBW.html#thermoregulation-and-heat-loss-prevention",
+ "source": {
+  "file": "site/src/content/docs/VLBW.mdx",
+  "lines": "10-54",
+  "manual_commit": "398c583"
+ },
+ "checked": "2026-11-08",
+ "generated_with": "Researcher, Comparer, Reviewer: claude-opus-5-5",
+ "triage": {
+  "clinical": 20,
+  "operational": 1,
+  "definition": 0,
+  "context": 5
+ },
+ "scope": {
+  "population": "Very low birth weight (<1,500 g), extremely low gestational age and extremely low birth weight infants, from birth in L&D/OR through transport and NICU admission; the plastic bag or wrap line is limited to <28 weeks and/or <1,000 g and the incubator humidity line to <30 weeks and/or <1,000 g.",
+  "topic": "Thermoregulation: preventing heat loss and keeping temperature in the normal range from the delivery room through transport and early NICU care.",
+  "basis": "Chapter \"VLBW/ELGAN/ELBW Infants\" (VLBW.mdx), section heading \"## Thermoregulation and Heat Loss Prevention\" with subheadings \"### Labor & Delivery / OR\", \"### Transport\" and \"### NICU\"; limits on lines 22 and 48.",
+  "set_aside": [
+   {
+    "ref": "Ambia2024",
+    "population": "All cesarean births in a cluster-randomized operating room temperature trial",
+    "reason": "Mostly term infants; very low birth weight infants not reported separately in the retrieved abstract."
+   },
+   {
+    "ref": "Abiramalatha2021",
+    "population": "Preterm neonates born at ≤36 weeks (network meta-analysis)",
+    "reason": "Results not reported separately for very low birth weight or very preterm infants in the retrieved abstract."
+   },
+   {
+    "ref": "Gopalakrishnan2022",
+    "population": "Low birth weight neonates 1500-2499 g, historical controls",
+    "reason": "Outside the section's weight range."
+   },
+   {
+    "ref": "Angadi2024",
+    "population": "27 stable preterm neonates (mean 30.7 ± 3.0 wk, 1468 ± 535 g), before-and-after design",
+    "reason": "Mixed preterm group; very low birth weight infants not reported separately."
+   },
+   {
+    "ref": "Restrepo2012",
+    "population": "Invasively and noninvasively ventilated patients of all ages (AARC guideline)",
+    "reason": "Not neonatal-specific; newborns not addressed separately."
+   },
+   {
+    "ref": "Owen2014",
+    "population": "In vitro bench model of a neonatal resuscitation circuit",
+    "reason": "No infants studied."
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "Maintain L&D/OR temperature at 70-74℉",
+   "verdict": "discordant",
+   "summary": "ILCOR suggests a room temperature of ≥23 °C at birth for preterm infants <34 weeks [Liley2025], the European RDS guideline advises ≥23 °C for babies <32 weeks [Sweet2025], and the Resuscitation Council UK 2025 guideline advises 23-25 °C above 28 weeks and >25 °C at or below 28 weeks [RCUK2025].",
+   "note": "Current evidence suggests a delivery room temperature of at least 23 °C (73.4 °F) for preterm infants [Liley2025][Sweet2025]. The Resuscitation Council UK 2025 guideline advises 23-25 °C (73.4-77 °F) above 28 weeks and above 25 °C (77 °F) at or below 28 weeks [RCUK2025]. A systematic review found that a room of ≥23 °C improved temperature outcomes without more hyperthermia [Ramaswamy2023].",
+   "evidence": [
+    {
+     "ref": "Liley2025",
+     "quote": "In preterm infants (<34 weeks’ gestation), as for late preterm and term infants (≥34 weeks’ gestation), we suggest the use of room temperatures of ≥23 °C compared with 20 °C at birth in order to maintain normal temperature (weak recommendation, very low–certainty evidence).",
+     "location": "NLS 5101, Treatment Recommendations (2023)"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "In infants > 28 weeks, keep the delivery area at 23-25°C.",
+     "location": "Thermal control, Environment"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "In infants ≤ 28 weeks, keep the delivery area at > 25°C.",
+     "location": "Thermal control, Environment"
+    },
+    {
+     "ref": "Sweet2025",
+     "quote": "Room temperature (≥23°C), plastic bags, or occlusive wrapping under radiant warmers and humidified gas should be used during stabilisation for babies <32 weeks of gestation to reduce the risk of hypothermia.",
+     "location": "Delivery room recommendations, item 6"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "DR temperature of ≥23 °C compared to standard care improved temperature outcomes without an increased risk of hyperthermia (low certainty)",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "DunneReview2024",
+     "quote": "A randomized trial of 96 infants born at <32 weeks’ GA compared DR temperatures of 20–23 °C versus 24–26 °C.",
+     "location": "Room temperature section"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "Preheat the radiant warmer before birth and set on servo-control mode",
+   "verdict": "partly_concordant",
+   "summary": "Guidelines advise a preheated radiant warmer for infants <32 weeks [RCUK2025][Sweet2025]; for servo versus manual mode ILCOR finds insufficient evidence [Liley2025], a systematic review found servo mode lowered mean body temperature [Ramaswamy2023], and an RCT in very low birth weight infants found no advantage for servo control and more mild hypothermia [Cavallin2021].",
+   "note": "Current evidence suggests preheating the radiant warmer before birth for very preterm infants [RCUK2025][Sweet2025]. In the delivery room, ILCOR finds insufficient evidence for or against servo-controlled mode [Liley2025]; a systematic review found servo mode decreased mean body temperature compared with manual mode and suggested manual mode for infants <34 weeks [Ramaswamy2023], and an RCT in very low birth weight infants found no benefit and more mild hypothermia with servo control [Cavallin2021].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Use a preheated heat source (e.g. radiant warmer).",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    },
+    {
+     "ref": "Sweet2025",
+     "quote": "preterm babies ≤32 weeks should be stabilised inside plastic bags under pre-heated radiant warmers in warm delivery rooms (≥23°C) to maintain a normal body temperature",
+     "location": "Thermal Care section"
+    },
+    {
+     "ref": "Liley2025",
+     "quote": "In preterm infants (<34 weeks’ gestation) immediately after birth, there is insufficient published evidence to suggest for or against the use of a radiant warmer in servo-controlled mode compared with manual mode for maintaining normal temperature.",
+     "location": "NLS 5101, Treatment Recommendations (2023)"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "radiant warmer in servo mode compared to manual mode decreased mean body temperature (MBT) (moderate certainty)",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "DR temperature of ≥23 °C, radiant warmer in manual mode, use of a PBW and a head covering is suggested for preterm newborn infants <34 weeks' gestation.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Cavallin2021",
+     "quote": "In very low birthweight infants, thermal management with the servo-controlled system conferred no advantage in maintaining normothermia at NICU admission, while it was associated with increased mild hypothermia.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "DunneReview2024",
+     "quote": "Servo control should be considered where time under radiant heat is prolonged (i.e., extensive resuscitation), as these infants may be at risk of iatrogenic hyperthermia.",
+     "location": "Radiant heat / servo-control paragraph"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "Use prewarmed blanket to dry the newborn during delayed cord clamping",
+   "verdict": "partly_concordant",
+   "summary": "For infants <32 weeks a UK guideline advises drying only the head and placing the body in a plastic bag or wrap without drying, while listing warm blankets among additional measures during delayed cord clamping [RCUK2025]; an RCT in very preterm infants found that drying before plastic wrapping did not improve normothermia at NICU admission [Cavallin2026].",
+   "note": "Current evidence suggests that for infants <32 weeks only the head is dried and the body is placed in a plastic bag or wrap without drying [RCUK2025]. The same guideline lists warm blankets and a thermal mattress among additional thermal measures during delayed cord clamping [RCUK2025]. A multicenter RCT in very preterm infants found no benefit of drying before plastic wrapping for normothermia at NICU admission [Cavallin2026].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Dry the infant’s head and cover with a hat.",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Put the infant’s body in a plastic (polyethene) bag or wrap without drying.",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Consider the use of additional measures during delayed cord clamping to ensure thermal stability (e.g. increasing room temperature, warm blankets, and a thermal mattress).",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    },
+    {
+     "ref": "Sweet2025",
+     "quote": "Additional measures during delayed cord clamping to ensure thermal stability (e.g., thermal mattress) are taken.",
+     "location": "Delivery room recommendations, item 6"
+    },
+    {
+     "ref": "Cavallin2026",
+     "quote": "Normothermia at NICU admission was achieved in 81 of 177 dried infants (45.8%) and 82 of 177 undried infants (46.3%; risk ratio, 0.99; 95% CI, 0.79-1.24).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Cavallin2026",
+     "quote": "Our findings suggest that drying should not be performed prior to placing the neonate in a polyethylene bag.",
+     "location": "Discussion"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "use prewarmed blanket to receive the newborn and dry under the warmer",
+   "verdict": "partly_concordant",
+   "summary": "For infants <32 weeks a UK guideline advises placing the body in a plastic bag or wrap without drying [RCUK2025], an RCT in very preterm infants found no benefit of drying before wrapping [Cavallin2026], and a very low birth weight quality-improvement bundle used prewarmed blankets together with immediate polyethylene wrapping without drying [Wang2022].",
+   "note": "Current evidence suggests that infants <32 weeks are placed in a plastic bag or wrap without drying the body [RCUK2025], and an RCT in very preterm infants found no benefit of drying before wrapping [Cavallin2026]. A very low birth weight quality-improvement bundle used prewarmed blankets together with immediate polyethylene wrapping without drying [Wang2022].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Put the infant’s body in a plastic (polyethene) bag or wrap without drying.",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    },
+    {
+     "ref": "Cavallin2026",
+     "quote": "In this multicenter randomized clinical trial, drying before plastic wrapping provided no benefit to very preterm infants in maintaining normothermia at NICU admission.",
+     "location": "Abstract, Conclusions and Relevance"
+    },
+    {
+     "ref": "Wang2022",
+     "quote": "(3) infant is wrapped in a polyethylene wrap immediately after birth, without drying; (4) infant is quickly weighed after being placed in a prewarmed blanket;",
+     "location": "Methods, Interventions (bundle elements)"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "Place temperature probe as soon as baby is under the warmer",
+   "verdict": "concordant",
+   "summary": "A UK guideline advises monitoring temperature regularly or continuously after birth [RCUK2025] and ILCOR advises careful monitoring to prevent hyperthermia [Liley2025]; in an RCT of very preterm infants the probe was secured as soon as the infant was placed on the resuscitaire [Jani2024], and no retrieved study compared probe timing.",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Monitor the infant’s temperature regularly or continuously after birth.",
+     "location": "Thermal control"
+    },
+    {
+     "ref": "Liley2025",
+     "quote": "Temperature should be carefully monitored and managed to prevent hyperthermia (good practice statement).",
+     "location": "NLS 5101, Treatment Recommendations (2023)"
+    },
+    {
+     "ref": "Jani2024",
+     "quote": "Immediately after the birth the infant was placed supine on the resuscitaire, the nursing team member secured the temperature probe to the allocated site using a soft silicone tape, and a reflector cover (Fig. 1).",
+     "location": "Methods, Intervention"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "Monitor temperature frequently (every 5-10 minutes) prior to transfer to the NICU",
+   "verdict": "concordant",
+   "summary": "Guidelines advise regular or continuous temperature monitoring after birth [RCUK2025] and careful monitoring to prevent hyperthermia [Liley2025][Ramaswamy2023]; a very low birth weight quality-improvement bundle documented temperature 10 min after birth and on NICU arrival [Wang2022], and no retrieved source sets a 5-10 minute interval.",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Monitor the infant’s temperature regularly or continuously after birth.",
+     "location": "Thermal control"
+    },
+    {
+     "ref": "Liley2025",
+     "quote": "Temperature should be carefully monitored and managed to prevent hyperthermia (good practice statement).",
+     "location": "NLS 5101, Treatment Recommendations (2023)"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "Careful monitoring to avoid hyperthermia is needed.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Wang2022",
+     "quote": "(8) document temperature (10 min after birth, on arrival at the NICU, every 30 min thereafter)",
+     "location": "Methods, Interventions (bundle elements)"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "Maintain axillary temperature between 36.5℃ - 37.5℃",
+   "verdict": "concordant",
+   "summary": "The European RDS guideline (citing WHO) and a UK guideline set the newborn temperature target at 36.5-37.5 °C [Sweet2025][RCUK2025], and an RCT in very low birth weight infants defined normothermia as an axillary temperature of 36.5-37.5 °C [Cavallin2021]; the European guideline calls this the core temperature.",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Maintain the temperature of newborn infants between 36.5°C and 37.5°C.",
+     "location": "Thermal control"
+    },
+    {
+     "ref": "Sweet2025",
+     "quote": "Core temperature should be maintained between 36.5°C and 37.5°C at all times (C1).",
+     "location": "Supportive care recommendations, item 1"
+    },
+    {
+     "ref": "Sweet2025",
+     "quote": "The World Health Organization (WHO) recommends that the temperature of newborn infants is maintained between 36.5 and 37.5°C after birth.",
+     "location": "Thermal Care section"
+    },
+    {
+     "ref": "Cavallin2021",
+     "quote": "Proportion of normothermia at NICU admission (axillary temperature 36.5°C-37.5°C).",
+     "location": "Abstract, Primary outcome"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "Place a thermal mattress under the blanket on the radiant warmer",
+   "verdict": "partly_concordant",
+   "summary": "ILCOR makes thermal mattress use for infants <34 weeks conditional on hypothermia on admission being a problem and notes a risk of hyperthermia [Liley2025]; a Cochrane review found a thermal mattress kept infants ≤1500 g warmer, but adding one to plastic bags for infants <31 weeks increased hyperthermia [McCall2018], and a UK guideline warns of hyperthermia when a thermal mattress is combined with other measures [RCUK2025].",
+   "note": "Current evidence suggests a thermal mattress raises admission temperature in infants ≤1500 g [McCall2018], but ILCOR advises considering it for infants <34 weeks where hypothermia on admission is identified as a problem and notes a risk of hyperthermia [Liley2025]. Adding a thermal mattress to plastic bags in infants <31 weeks increased hyperthermia [McCall2018], and a UK guideline warns of this risk when several heat-preservation measures are combined [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "Liley2025",
+     "quote": "In preterm infants (<34 weeks’ gestation) immediately after birth, where hypothermia on admission is identified as a problem, it is reasonable to consider the addition of a thermal mattress, but there is a risk of hyperthermia (conditional recommendation, low-certainty evidence).",
+     "location": "NLS 5101, Treatment Recommendations (2023)"
+    },
+    {
+     "ref": "McCall2018",
+     "quote": "Thermal (transwarmer) mattress significantly kept infants ≤ 1500 grams warmer (MD 0.65°C, 95% CI 0.36 to 0.94) and reduced the incidence of hypothermia on admission to the NICU, with no significant difference in hyperthermia risk.",
+     "location": "Abstract, Main results"
+    },
+    {
+     "ref": "McCall2018",
+     "quote": "Two additional studies (119 infants) compared plastic bags and thermal mattresses versus plastic bags alone for infants at < 31 weeks' gestation. Meta-analysis of these two studies showed improvement in core body temperature on admission to the NICU or up to two hours after birth, but an increase in hyperthermia.",
+     "location": "Abstract, Main results"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "Though thermal mattress (TM) improved MBT, it increased risk of hyperthermia (low certainty).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Be aware of the risk of hyperthermia when multiple heat-preservation interventions are used simultaneously, especially while using a thermal mattress in hospital.",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "Wrap the baby in a polyethylene plastic bag or wrap (&lt;28 weeks and/or &lt;&nbsp;1,000 grams)",
+   "verdict": "discordant",
+   "summary": "ILCOR strongly recommends a plastic bag or wrap immediately after birth for preterm infants <34 weeks [Liley2025], UK and European guidelines advise it for infants <32 weeks [RCUK2025][Sweet2025], and a Cochrane review found higher admission temperatures with less hypothermia, particularly in extremely preterm infants [McCall2018].",
+   "note": "Current evidence suggests a plastic bag or wrap immediately after birth for all preterm infants <34 weeks (strong recommendation, moderate-certainty evidence) [Liley2025], and UK and European guidelines advise it for infants <32 weeks [RCUK2025][Sweet2025]. The benefit is greatest in extremely preterm infants [McCall2018], and a systematic review found an increased risk of hyperthermia with wrapping [Ramaswamy2023].",
+   "evidence": [
+    {
+     "ref": "Liley2025",
+     "quote": "In preterm infants (<34 weeks’ gestation) immediately after birth, we recommend the use of a plastic bag or wrap to maintain normal temperature (strong recommendation, moderate- certainty evidence).",
+     "location": "NLS 5101, Treatment Recommendations (2023)"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Put the infant’s body in a plastic (polyethene) bag or wrap without drying.",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    },
+    {
+     "ref": "Sweet2025",
+     "quote": "Room temperature (≥23°C), plastic bags, or occlusive wrapping under radiant warmers and humidified gas should be used during stabilisation for babies <32 weeks of gestation to reduce the risk of hypothermia.",
+     "location": "Delivery room recommendations, item 6"
+    },
+    {
+     "ref": "McCall2018",
+     "quote": "Evidence of moderate quality shows that use of plastic wraps or bags compared with routine care led to higher temperatures on admission to NICUs with less hypothermia, particularly for extremely preterm infants.",
+     "location": "Abstract, Authors' conclusions"
+    },
+    {
+     "ref": "Ramaswamy2023",
+     "quote": "Use of a plastic bag or wrap (PBW) improved normothermia (low certainty), but with an increased risk of hyperthermia (moderate certainty).",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "Place a prewarmed hat on the baby’s head (as soon as possible)",
+   "verdict": "concordant",
+   "summary": "ILCOR suggests a head covering for preterm infants <34 weeks [Liley2025], the European RDS guideline advises placing a hat immediately after birth [Sweet2025], and a prewarmed hat was part of a very low birth weight quality-improvement bundle [Wang2022], although prewarming the hat has not been tested on its own.",
+   "evidence": [
+    {
+     "ref": "Liley2025",
+     "quote": "In preterm infants (<34 weeks’ gestation) immediately after birth, we suggest the use of a head covering to maintain normal temperature (strong recommendation, moderate-certainty evidence).",
+     "location": "NLS 5101, Treatment Recommendations (2023)"
+    },
+    {
+     "ref": "Sweet2025",
+     "quote": "A hat should be placed immediately after birth",
+     "location": "Thermal Care section"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Dry the infant’s head and cover with a hat.",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    },
+    {
+     "ref": "Wang2022",
+     "quote": "(5) a prewarmed hat is placed on the infant’s head;",
+     "location": "Methods, Interventions (bundle elements)"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "manual_text": "Keep the newborn fully covered during resuscitation and stabilization",
+   "verdict": "concordant",
+   "summary": "ILCOR strongly recommends a plastic bag or wrap for preterm infants <34 weeks immediately after birth [Liley2025], and expert guidance advises polyethylene wrapping for very preterm infants and continuing it for procedural access [Andersen2026]; no retrieved study tests full covering as a separate intervention.",
+   "evidence": [
+    {
+     "ref": "Liley2025",
+     "quote": "In preterm infants (<34 weeks’ gestation) immediately after birth, we recommend the use of a plastic bag or wrap to maintain normal temperature (strong recommendation, moderate- certainty evidence).",
+     "location": "NLS 5101, Treatment Recommendations (2023)"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Put the infant’s body in a plastic (polyethene) bag or wrap without drying.",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    },
+    {
+     "ref": "Andersen2026",
+     "quote": "Use cling wrap or polyethylene to create a proximate microenvironment that reduces both thermal and humidity gradients, particularly in very preterm infants. Consider continuing this practice for procedural access.",
+     "location": "Principles, Equipment and environmental measures (expert guidance)"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "manual_text": "Prewarm transport incubator",
+   "verdict": "concordant",
+   "summary": "A very low birth weight quality-improvement bundle that reduced admission hypothermia included transport in a heated transport incubator [Wang2022], and an RCT of occlusively wrapped infants <28 weeks found the same median arrival temperature after incubator or radiant warmer transport [Meyer2007]; no retrieved guideline or trial tests prewarming itself.",
+   "evidence": [
+    {
+     "ref": "Wang2022",
+     "quote": "(7) infant is transported in a heated transport incubator;",
+     "location": "Methods, Interventions (bundle elements)"
+    },
+    {
+     "ref": "Wang2022",
+     "quote": "The incidence of hypothermia decreased significantly, from 92.3% to 62% (p<0.001), and the mean body temperature on admission to the NICU increased significantly, from 35.5°C to 36°C±0.7°C (p<0.001).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Meyer2007",
+     "quote": "Sixty two infants <28 weeks were occlusively wrapped and randomised to radiant warmer or incubator transport to the neonatal unit. Median axillary temperature on arrival was 36.8 degrees C in both groups.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "manual_text": "Use warming measures such as thermal mattress during transport",
+   "verdict": "concordant",
+   "summary": "In an RCT of infants <30 weeks, heated-humidified gases during delivery room stabilization and transport to the NICU reduced hypothermia on admission without more hyperthermia [McGrory2018], and a meta-analysis found the same for infants <32 weeks [Meyer2018]; no retrieved study tested a thermal mattress during transport in very low birth weight infants, and a UK guideline warns of hyperthermia when a thermal mattress is combined with other measures [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "McGrory2018",
+     "quote": "Infants <30 weeks of GA were randomly assigned to receive either heated-humidified gases or unconditioned gases during stabilization in the delivery room and during transport to NICU.",
+     "location": "Abstract, Study design"
+    },
+    {
+     "ref": "McGrory2018",
+     "quote": "Fewer infants in the heated-humidified group were hypothermic on admission to NICU (36/132 [27%]) compared with controls (61/141 [43%], P < .01).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Meyer2018",
+     "quote": "Heating and humidification of inspired gases immediately after birth and during transport to the neonatal unit improves admission temperature in preterm infants.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Be aware of the risk of hyperthermia when multiple heat-preservation interventions are used simultaneously, especially while using a thermal mattress in hospital.",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "manual_text": "Prewarm the incubator before the infant arrives in the NICU",
+   "verdict": "insufficient",
+   "summary": "The European RDS guideline advises servo-controlled incubators with relatively high humidity after admission [Sweet2025] and expert guidance advises prewarming isolettes before procedures [Andersen2026], but no retrieved guideline or study addresses prewarming the incubator before NICU admission.",
+   "evidence": [
+    {
+     "ref": "Sweet2025",
+     "quote": "After admission, infants should be maintained in servo-controlled incubators initially with relatively high humidity, interspersed with periods of skin-to-skin care when it is safe to do so, even in the tiniest infants [212].",
+     "location": "Temperature Control section"
+    },
+    {
+     "ref": "Andersen2026",
+     "quote": "Pre-warm isolettes before procedures to prevent hypothermia and maintain stable gradients. Avoid increasing air flow.",
+     "location": "Principles, Equipment and environmental measures (expert guidance)"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "manual_text": "Keep incubator humidity at 80% (&lt;30 weeks and/or &lt;&nbsp;1,000 grams)",
+   "verdict": "practice_varies",
+   "summary": "Sources differ on the level: expert guidance gives 80-95% relative humidity in the first week for infants <28 weeks [Andersen2026], a nursing (AWHONN) guideline cited in a systematic review gives 70-85% for extremely low birth weight infants [Chen2025], and the European RDS guideline advises relatively high humidity without a figure [Sweet2025]; that review found high humidity associated with more infection [Chen2025], and an RCT in infants <28 weeks found no benefit in continuing humidity beyond day 7 [Noreiks2024].",
+   "evidence": [
+    {
+     "ref": "Andersen2026",
+     "quote": "Maintain RH of 80–95% during the first week of life for infants <28 weeks’ gestation.",
+     "location": "Principles, Minimisation of evaporative heat loss (expert guidance)"
+    },
+    {
+     "ref": "Chen2025",
+     "quote": "The Association of Women's Health, Obstetric and Neonatal Nurses (AWHONN) suggested that infants with extremely low birth weight should be kept in an incubator with an ambient humidity level that ranges from 70 to 85%, depending on gestational age [17].",
+     "location": "Methods"
+    },
+    {
+     "ref": "Sweet2025",
+     "quote": "After admission, infants should be maintained in servo-controlled incubators initially with relatively high humidity",
+     "location": "Temperature Control section"
+    },
+    {
+     "ref": "Chen2025",
+     "quote": "Findings revealed that a high humidity level increased the incidence of infection in preterm infants (RR = 1.26, 95% CI 1.02, 1.55, P = 0.03).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Noreiks2024",
+     "quote": "There is no apparent benefit in prolonging incubator humidity beyond day 7 of life in these EPTI.",
+     "location": "Abstract, What is new"
+    },
+    {
+     "ref": "Dereddy2025",
+     "quote": "Extremely preterm infants nursed in incubator with 70% RH have higher IWL than infants nursed in 90% RH.",
+     "location": "Abstract, Conclusion"
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "manual_text": "Prewarm linens and other items",
+   "verdict": "concordant",
+   "summary": "A very low birth weight quality-improvement bundle that reduced admission hypothermia warmed hats and blankets half an hour before birth in the delivery room [Wang2022], and expert guidance advises insulating contact surfaces with prewarmed mattresses, towels or blankets to reduce conductive loss [Andersen2026]; no retrieved trial tested this in the NICU.",
+   "evidence": [
+    {
+     "ref": "Wang2022",
+     "quote": "After discussion, our team decided to increase the ambient temperature and warm up the hat and blanket half an hour before birth.",
+     "location": "Methods, first PDSA bundle"
+    },
+    {
+     "ref": "Andersen2026",
+     "quote": "Pre-warm the resuscitaire (open radiant warmer) and insulate all contact surfaces with a pre-warmed gel or foam mattress, towels, or blankets, and polyethylene wraps to reduce conductive and EHL.",
+     "location": "Principles, Equipment and environmental measures (expert guidance)"
+    },
+    {
+     "ref": "Andersen2026",
+     "quote": "Conductive losses occur through contact with cooler materials, including underheated mattresses or inadequately insulated ventilator circuits.",
+     "location": "Main text"
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "manual_text": "Use thermal mattress if temperature is below 36.5℃",
+   "verdict": "concordant",
+   "summary": "A UK guideline advises rewarming when temperature is below 36.5 °C [RCUK2025] and ILCOR advises starting rewarming with a protocol and frequent or continuous monitoring because of the risk of hyperthermia [Liley2025]; no retrieved study tests a thermal mattress as the NICU rewarming method in very low birth weight infants.",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Maintain temperature between 36.5°C and 37.5°C and rewarm if the temperature is below this.",
+     "location": "Post-resuscitation care, Thermal care"
+    },
+    {
+     "ref": "Liley2025",
+     "quote": "In newborn infants who are unintentionally hypothermic after birth, rewarming should be started, but there is insufficient evidence to recommend either rapid (≥0.5 °C/h) or slow (<0.5 °C/h) rates of rewarming.",
+     "location": "Rate of Rewarming Hypothermic Newborns (NLS 5700), Treatment Recommendations (2024)"
+    },
+    {
+     "ref": "Liley2025",
+     "quote": "Regardless of the rewarming rate chosen, a protocol for rewarming should be used.",
+     "location": "Rate of Rewarming Hypothermic Newborns (NLS 5700), Treatment Recommendations (2024)"
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "manual_text": "Monitor temperature closely throughout procedures",
+   "verdict": "concordant",
+   "summary": "In infants <32 weeks, hypothermia was present in 69% before umbilical catheterization and in 89% during it [DubbinkVerheij2021], and expert guidance advises keeping the core-to-ambient temperature gradient within 1.5 °C and wrapping during procedural access [Andersen2026]; no retrieved trial compares monitoring strategies.",
+   "evidence": [
+    {
+     "ref": "DubbinkVerheij2021",
+     "quote": "Hypothermia already existed in 69% (38/55) of the infants before start of UC, which increased to 89% (49/55) during UC (p = .001).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "DubbinkVerheij2021",
+     "quote": "Hypothermia was frequent in preterm infants before start of UC and increased during UC.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Andersen2026",
+     "quote": "Maintain the core-to-ambient temperature gradient within 1.5°C [14]. Again, consider wrapping the infant in cling wrap, particularly during procedural access.",
+     "location": "Principles, Management of gradients (expert guidance)"
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "manual_text": "prewarm IV fluids",
+   "verdict": "insufficient",
+   "summary": "No retrieved guideline or study in very low birth weight infants addresses prewarming IV fluids; the one before-and-after study found enrolled a broader group of stable preterm neonates without reporting very low birth weight infants separately and is set aside.",
+   "evidence": []
+  },
+  {
+   "id": "c20",
+   "manual_text": "Ensure ventilator heaters are set at a warm temperature before use",
+   "verdict": "concordant",
+   "summary": "The European RDS guideline advises heated and humidified delivery room gases [Sweet2025], heating and humidifying gases after birth and during transport improved admission temperature in preterm infants [Meyer2018], and a review describes NICU gases as standardly heated to 37 °C with 100% relative humidity and notes at least 8 min to reach steady state [DunneReview2024].",
+   "evidence": [
+    {
+     "ref": "Sweet2025",
+     "quote": "Delivery room gases should be heated and humidified",
+     "location": "Thermal Care section"
+    },
+    {
+     "ref": "Meyer2018",
+     "quote": "Heating and humidification of inspired gases immediately after birth and during transport to the neonatal unit improves admission temperature in preterm infants.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "DunneReview2024",
+     "quote": "In the NICU, it is standard practice for gases to be heated and humidified (HH) to 37 °C with 100% relative humidity for infants on respiratory support.",
+     "location": "Heated, humidified gases section"
+    },
+    {
+     "ref": "DunneReview2024",
+     "quote": "A benchtop study reported that the minimum time to steady state heating and humidification of gases is 8 min,75 and an uninterrupted power supply is needed.",
+     "location": "Heated, humidified gases section"
+    }
+   ]
+  }
+ ],
+ "omissions": [
+  {
+   "id": "o1",
+   "related_claim": "c9",
+   "topic": "Heated humidified gases in the delivery room",
+   "note": "Current evidence suggests heated humidified gas during delivery room stabilization for babies <32 weeks, in the same recommendation as a room temperature of ≥23 °C and plastic wrapping [Sweet2025]. ILCOR makes this conditional on an audit showing admission hypothermia is a problem [Liley2025], and in an RCT of infants <30 weeks it reduced hypothermia on admission [McGrory2018].",
+   "evidence": [
+    {
+     "ref": "Sweet2025",
+     "quote": "Room temperature (≥23°C), plastic bags, or occlusive wrapping under radiant warmers and humidified gas should be used during stabilisation for babies <32 weeks of gestation to reduce the risk of hypothermia.",
+     "location": "Delivery room recommendations, item 6"
+    },
+    {
+     "ref": "Liley2025",
+     "quote": "In preterm infants (<34 weeks’ gestation) immediately after birth, we suggest that heated and humidified gases for respiratory support in the delivery room can be used when an audit shows that admission hypothermia is a problem and resources allow (conditional recommendation, very low–certainty evidence).",
+     "location": "NLS 5101, Treatment Recommendations (2023)"
+    },
+    {
+     "ref": "McGrory2018",
+     "quote": "Fewer infants in the heated-humidified group were hypothermic on admission to NICU (36/132 [27%]) compared with controls (61/141 [43%], P < .01).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Consider the use of heated humidiﬁed respiratory gases for infants receiving respiratory support.",
+     "location": "Thermal control, Newborn infants < 32 weeks"
+    }
+   ]
+  }
+ ],
+ "references": [
+  {
+   "key": "Liley2025",
+   "role": "source",
+   "authors": "Liley HG, Weiner GM, Wyckoff MH, et al.",
+   "title": "Neonatal Life Support: 2025 International Liaison Committee on Resuscitation Consensus on Science With Treatment Recommendations",
+   "journal": "Circulation",
+   "year": "2025",
+   "volume": "152",
+   "issue": "16_suppl_1",
+   "pages": "S165-S204",
+   "doi": "10.1161/CIR.0000000000001363",
+   "pmid": "41122846",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41122846/",
+    "https://api.crossref.org/works/10.1161/CIR.0000000000001363"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Sweet2025",
+   "role": "source",
+   "authors": "Sweet DG, Carnielli VP, Greisen G, et al.",
+   "title": "European Consensus Guidelines on the Management of Respiratory Distress Syndrome: 2025",
+   "journal": "Neonatology",
+   "year": "2026",
+   "volume": "123",
+   "issue": "4",
+   "pages": "514-539",
+   "doi": "10.1159/000551062",
+   "pmid": "41802129",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41802129/",
+    "https://api.crossref.org/works/10.1159/000551062"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Ramaswamy2023",
+   "role": "source",
+   "authors": "Ramaswamy VV, Dawson JA, de Almeida MF, et al.",
+   "title": "Maintaining normothermia immediately after birth in preterm infants <34 weeks' gestation: A systematic review and meta-analysis",
+   "journal": "Resuscitation",
+   "year": "2023",
+   "volume": "191",
+   "issue": "",
+   "pages": "109934",
+   "doi": "10.1016/j.resuscitation.2023.109934",
+   "pmid": "37597649",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37597649/",
+    "https://api.crossref.org/works/10.1016/j.resuscitation.2023.109934"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "McCall2018",
+   "role": "source",
+   "authors": "McCall EM, Alderdice F, Halliday HL, Vohra S, Johnston L",
+   "title": "Interventions to prevent hypothermia at birth in preterm and/or low birth weight infants",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2018",
+   "volume": "2",
+   "issue": "2",
+   "pages": "CD004210",
+   "doi": "10.1002/14651858.CD004210.pub5",
+   "pmid": "29431872",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/29431872/",
+    "https://api.crossref.org/works/10.1002/14651858.CD004210.pub5"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Chen2025",
+   "role": "source",
+   "authors": "Chen Z, Lin R, Wang H, Shi B, Chen Q",
+   "title": "The effect of incubator humidity on morbidity and mortality in preterm infants: a systematic review",
+   "journal": "BMC Pediatr",
+   "year": "2025",
+   "volume": "25",
+   "issue": "1",
+   "pages": "262",
+   "doi": "10.1186/s12887-025-05538-3",
+   "pmid": "40165097",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40165097/",
+    "https://api.crossref.org/works/10.1186/s12887-025-05538-3"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Meyer2018",
+   "role": "source",
+   "authors": "Meyer MP, Owen LS, Te Pas AB",
+   "title": "Use of Heated Humidified Gases for Early Stabilization of Preterm Infants: A Meta-Analysis",
+   "journal": "Front Pediatr",
+   "year": "2018",
+   "volume": "6",
+   "issue": "",
+   "pages": "319",
+   "doi": "10.3389/fped.2018.00319",
+   "pmid": "30410876",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/30410876/",
+    "https://api.crossref.org/works/10.3389/fped.2018.00319"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Cavallin2021",
+   "role": "source",
+   "authors": "Cavallin F, Doglioni N, Allodi A, et al.",
+   "title": "Thermal management with and without servo-controlled system in preterm infants immediately after birth: a multicentre, randomised controlled study",
+   "journal": "Arch Dis Child Fetal Neonatal Ed",
+   "year": "2021",
+   "volume": "106",
+   "issue": "6",
+   "pages": "572-577",
+   "doi": "10.1136/archdischild-2020-320567",
+   "pmid": "33597230",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33597230/",
+    "https://api.crossref.org/works/10.1136/archdischild-2020-320567"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Jani2024",
+   "role": "source",
+   "authors": "Jani PR, Maheshwari R, Skelton H, et al.",
+   "title": "Temperature probe placement in very preterm infants during delivery room stabilization: an open-label randomized trial",
+   "journal": "Pediatr Res",
+   "year": "2024",
+   "volume": "96",
+   "issue": "1",
+   "pages": "190-198",
+   "doi": "10.1038/s41390-024-03115-5",
+   "pmid": "38443526",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38443526/",
+    "https://api.crossref.org/works/10.1038/s41390-024-03115-5"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Cavallin2026",
+   "role": "source",
+   "authors": "Cavallin F, Doglioni N, Risso FM, et al.",
+   "title": "Drying Very Preterm Infants Before Plastic Wrapping at Birth: A Randomized Clinical Trial",
+   "journal": "JAMA Netw Open",
+   "year": "2026",
+   "volume": "9",
+   "issue": "3",
+   "pages": "e2556902",
+   "doi": "10.1001/jamanetworkopen.2025.56902",
+   "pmid": "41774445",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41774445/",
+    "https://api.crossref.org/works/10.1001/jamanetworkopen.2025.56902"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "McGrory2018",
+   "role": "source",
+   "authors": "McGrory L, Owen LS, Thio M, et al.",
+   "title": "A Randomized Trial of Conditioned or Unconditioned Gases for Stabilizing Preterm Infants at Birth",
+   "journal": "J Pediatr",
+   "year": "2018",
+   "volume": "193",
+   "issue": "",
+   "pages": "47-53",
+   "doi": "10.1016/j.jpeds.2017.09.006",
+   "pmid": "29106924",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/29106924/",
+    "https://api.crossref.org/works/10.1016/j.jpeds.2017.09.006"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Noreiks2024",
+   "role": "source",
+   "authors": "Noreiks G, August D, Lai M, Davies MW",
+   "title": "Ceasing or gradually reducing incubator humidity after 7 days for extremely preterm infants: a randomised clinical trial",
+   "journal": "Eur J Pediatr",
+   "year": "2024",
+   "volume": "184",
+   "issue": "1",
+   "pages": "66",
+   "doi": "10.1007/s00431-024-05893-w",
+   "pmid": "39641809",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/39641809/",
+    "https://api.crossref.org/works/10.1007/s00431-024-05893-w"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Dereddy2025",
+   "role": "source",
+   "authors": "Dereddy N, Ruth D, Zhu J, Pepe J, Oh W",
+   "title": "Insensible water loss in extremely preterm infants cared for in incubators with 70% and 90% relative humidity",
+   "journal": "J Perinatol",
+   "year": "2025",
+   "volume": "45",
+   "issue": "11",
+   "pages": "1548-1551",
+   "doi": "10.1038/s41372-025-02261-w",
+   "pmid": "40089583",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40089583/",
+    "https://api.crossref.org/works/10.1038/s41372-025-02261-w"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Meyer2007",
+   "role": "source",
+   "authors": "Meyer MP, Bold GT",
+   "title": "Admission temperatures following radiant warmer or incubator transport for preterm infants <28 weeks: a randomised study",
+   "journal": "Arch Dis Child Fetal Neonatal Ed",
+   "year": "2007",
+   "volume": "92",
+   "issue": "4",
+   "pages": "F295-297",
+   "doi": "10.1136/adc.2006.107128",
+   "pmid": "17158144",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/17158144/",
+    "https://api.crossref.org/works/10.1136/adc.2006.107128"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Wang2022",
+   "role": "source",
+   "authors": "Wang L, Liu ZJ, Liu FM, et al.",
+   "title": "Implementation of a temperature bundle improves admission hypothermia in very-low-birth-weight infants in China: a multicentre study",
+   "journal": "BMJ Open Qual",
+   "year": "2022",
+   "volume": "11",
+   "issue": "2",
+   "pages": "e001407",
+   "doi": "10.1136/bmjoq-2021-001407",
+   "pmid": "35500935",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35500935/",
+    "https://api.crossref.org/works/10.1136/bmjoq-2021-001407"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "DubbinkVerheij2021",
+   "role": "source",
+   "authors": "Dubbink-Verheij GH, van Westerop TAJWM, Lopriore E, Te Pas AB",
+   "title": "Hypothermia during umbilical catheterization in preterm infants",
+   "journal": "J Matern Fetal Neonatal Med",
+   "year": "2021",
+   "volume": "34",
+   "issue": "1",
+   "pages": "87-92",
+   "doi": "10.1080/14767058.2019.1598365",
+   "pmid": "30939959",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/30939959/",
+    "https://api.crossref.org/works/10.1080/14767058.2019.1598365"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "DunneReview2024",
+   "role": "source",
+   "authors": "Dunne EA, O'Donnell CPF, Nakstad B, McCarthy LK",
+   "title": "Thermoregulation for very preterm infants in the delivery room: a narrative review",
+   "journal": "Pediatr Res",
+   "year": "2024",
+   "volume": "95",
+   "issue": "6",
+   "pages": "1448-1454",
+   "doi": "10.1038/s41390-023-02902-w",
+   "pmid": "38253875",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38253875/",
+    "https://api.crossref.org/works/10.1038/s41390-023-02902-w"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Andersen2026",
+   "role": "source",
+   "authors": "Andersen CC, Crawford TM, Bailey DN, Stark MJ",
+   "title": "Contemporary Challenges in Thermal Homeostasis: Time for a Rethink?",
+   "journal": "Neonatology",
+   "year": "2026",
+   "volume": "123",
+   "issue": "4",
+   "pages": "508-513",
+   "doi": "10.1159/000550872",
+   "pmid": "41678435",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41678435/",
+    "https://api.crossref.org/works/10.1159/000550872"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "RCUK2025",
+   "role": "source",
+   "citation": "Fawke J, Monnelly V, Madar J, et al. Newborn resuscitation and support of transition of infants at birth Guidelines. In: 2025 Resuscitation Guidelines. Resuscitation Council UK; published 27 October 2025.",
+   "url": "https://www.resus.org.uk/node/36506",
+   "doi": null,
+   "verified_against": [
+    "https://www.resus.org.uk/node/36506"
+   ],
+   "verified_date": "2026-11-08"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 2,
+  "date": "2026-11-08",
+  "quotes_checked": 201,
+  "references_verified": 18,
+  "known_limitations": [
+   {
+    "item": "Lee2025 (AHA/AAP 2025 neonatal resuscitation guideline)",
+    "note": "Full text refused (HTTP 403 at cpr.heart.org and ahajournals.org); read as abstract only, so no AHA/AAP thermal-care text is quoted. Retry on the next re-check."
+   },
+   {
+    "item": "ERC2025",
+    "note": "Full text not available; the Resuscitation Council UK 2025 guideline (RCUK2025), which cites ERC 2025, is quoted instead."
+   },
+   {
+    "item": "Angadi2024",
+    "note": "Two quotes match the source only after rejoining PDF line-end hyphenation; the study was set aside from the scope (mixed preterm group)."
+   },
+   {
+    "item": "Embedded videos",
+    "note": "The two NeoDrape wrapping videos (lines 28-38) are not checkable."
+   },
+   {
+    "item": "Round 1 suggested items",
+    "note": "Not applied: c3/c4 drying closeness to discordant, c2 Wang2022 manual-mode addition, c19 wording, c15 possible concordant reading."
+   }
+  ]
+ }
+}

@@ -1,0 +1,948 @@
+{
+ "chapter": "periviability",
+ "section": "Antenatal Consult",
+ "anchor": "periviability.html#sec-antenatal-consult",
+ "source": {
+  "file": "site/src/content/docs/periviability.mdx",
+  "lines": "20-54",
+  "manual_commit": "f112cde"
+ },
+ "checked": "2026-11-08",
+ "generated_with": "Researcher, Comparer, Reviewer: Claude Opus 5.5 (claude-opus-5-5)",
+ "triage": {
+  "clinical": 17,
+  "operational": 3,
+  "definition": 3,
+  "context": 2
+ },
+ "scope": {
+  "population": "Pregnant patients with threatened periviable birth and their infants, by gestational-age band (<22 0/7, 22 0/7-22 6/7, 23 0/7-23 6/7 and ≥24 0/7 weeks; for the broad \"any infant born at or after 24w0d\", the periviable range of 24 0/7-25 6/7 weeks addressed by the guidelines); the autism subsection covers infants by gestational age at birth from 22 to 41 weeks.",
+  "topic": "Antenatal consultation at the limit of viability: whether resuscitation is offered by gestational age, parental counseling, and obstetric interventions (antenatal corticosteroids, tocolysis, magnesium sulfate, fetal monitoring, cesarean) when resuscitation is chosen; autism risk by gestational age for counseling.",
+  "basis": "Chapter \"Periviability\", heading \"## Antenatal Consult\" with subheadings \"<GA22w0d\", \"GA22w0d-22w6d\", \"GA23w0d-23w6d\", \"≥GA24w0d\" and \"Risks of Autism Spectrum Disorder by GA\" (lines 20-54).",
+  "set_aside": [
+   {
+    "ref": "Wilson2022",
+    "population": "Women with threatened preterm birth, mostly 24-34 weeks of gestation",
+    "reason": "Does not report pregnancies at 22-23 weeks, the bands where the manual discusses tocolysis; not used for any verdict."
+   },
+   {
+    "ref": "ACOG2016",
+    "population": "Pregnancies in preterm labor (Practice Bulletin 171)",
+    "reason": "Only the abstract was retrieved and it has no recommendation text for 22-23 weeks; not used."
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "<GA22w0d: DO NOT OFFER or recommend resuscitation.",
+   "verdict": "concordant",
+   "summary": "US guidance does not recommend neonatal assessment for resuscitation before 22 0/7 weeks (1A) or antenatal corticosteroids at 20 0/7-21 6/7 weeks, the 2026 BAPM framework states that survival focused care should not be offered before 22+0 weeks, and the Canadian statement describes palliative care as the accepted usual approach at ≤21 weeks [ACOG2017; ACOG2021Advisory; BAPM2026; Lemyre2017]; one single-centre case series reports 35% survival to discharge with selective resuscitation at 21 weeks [Hyland2025].",
+   "evidence": [
+    {
+     "ref": "ACOG2017",
+     "quote": "Neonatal assessment Not recommended Consider Consider Recommended Recommended for resuscitation* 1A 2B 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 20 0/7-21 6/7 weeks: Not recommended, 1A"
+    },
+    {
+     "ref": "ACOG2021Advisory",
+     "quote": "The recommendation regarding antenatal corticosteroid administration at 20 0/7 weeks to 21 6/7 weeks of gestation remains unchanged: Antenatal corticosteroids are not recommended during this time period because of the absence of data to suggest benefit",
+     "location": "Updated Recommendation"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Survival focused care should not be offered for babies born before 22+0 weeks gestation.",
+     "location": "Executive summary, point 1"
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "Nationally, palliative care is accepted as the usual approach when an infant is born ≤21 weeks GA.",
+     "location": "Introduction"
+    },
+    {
+     "ref": "Hyland2025",
+     "quote": "In this case series of infants born alive at 21 weeks' gestational age, selective resuscitation resulted in 35% survival to discharge, in some cases with minimal morbidities.",
+     "location": "Abstract, Conclusions (single centre, University of Iowa)"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "All bands (22, 23 and ≥24 weeks): Counsel parents regarding NICHD statistics AND KPSD NICU/region statistics.",
+   "verdict": "concordant",
+   "summary": "US guidance cites the NICHD Neonatal Research Network outcome tool and notes that international, national, regional and single-institution data reflect local practice [ACOG2017], the Canadian statement considers population-specific and ideally local institution rates most relevant [Lemyre2017], and the birth hospital contributes substantially to outcome prediction [Rysavy2020; Rysavy2015]; the KPSD regional data themselves could not be checked.",
+   "evidence": [
+    {
+     "ref": "ACOG2017",
+     "quote": "the NICHD Neonatal Research Network developed a tool to estimate outcomes among liveborn infants that was based on prospectively collected information for live births at 22–25 weeks of gestation in 19 academic NICU centers (available at https://neonatal.rti.org).",
+     "location": "Text before Table 1"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Data source International, national, regional, and single-institution data reflect variations in regional and local practices.",
+     "location": "Table 1, Factors Affecting Reliability of Estimates"
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "The most relevant data for parents in Canada are population-specific (i.e., Canadian) and, ideally, based on local institution rates.",
+     "location": "Section on outcome data"
+    },
+    {
+     "ref": "Rysavy2020",
+     "quote": "Because survival rates change over time, the model requires periodic updating. The hospital of birth contributed substantially to outcome prediction.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Rysavy2015",
+     "quote": "Hospital-level outcomes data that are used to counsel families about the benefits and burdens of initiating treatment are influenced by local approaches to initiating treatment.",
+     "location": "Discussion"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "GA22w0d-22w6d: In general discourage resuscitation/intervention",
+   "verdict": "practice_varies",
+   "summary": "At 22 0/7-22 6/7 weeks the Canadian statement recommends palliative care while allowing parents to choose otherwise [Lemyre2017], US guidance grades neonatal assessment for resuscitation as \"Consider\" (2B) [ACOG2017], and the 2026 BAPM framework assigns comfort care with unfavourable risk factors and a joint decision with favourable risk factors [BAPM2026]; with active treatment, survival at 22 weeks was 35.4% in a 2020-2022 US network and 33.2% in California 2011-2019 [Edwards2024; Higgins2024].",
+   "evidence": [
+    {
+     "ref": "Lemyre2017",
+     "quote": "Infant born at 22 weeks GA, irrespective of additional risk factors***",
+     "location": "Table 4, row \"Palliative care is recommended**\""
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "**Given the lack of moral authority on the suggested level of care, parents may choose a nonrecommended option.",
+     "location": "Table 4 footnote"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Neonatal assessment Not recommended Consider Consider Recommended Recommended for resuscitation* 1A 2B 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 22 0/7-22 6/7 weeks: Consider, 2B"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Babies born at 22+0 - 22+6 weeks of gestation with unfavourable risk factors (for example, those born in hospitals without a NICU and/or in the first half of the week, and/or in the absence of antenatal steroids).",
+     "location": "Box 1, Extremely high risk examples"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Babies at 22+0 - 23+6 weeks of gestation with favourable risk factors.",
+     "location": "Box 1, High risk examples"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Parents should be counselled carefully and parental wishes should inform a joint decision to provide either survival focused or comfort focused care.",
+     "location": "Risk profiles, High risk (before Box 1)"
+    },
+    {
+     "ref": "Edwards2024",
+     "quote": "Among infants receiving postnatal life support, survival ranged from 35.4% at 22 weeks to 82.0% at 25 weeks.",
+     "location": "Abstract, Results (Vermont Oxford Network, 2020-2022)"
+    },
+    {
+     "ref": "Higgins2024",
+     "quote": "Among those infants resuscitated at 22 weeks, 74.0% survived to 1 day, 35.7% to 28 days, and 33.2% to hospital discharge.",
+     "location": "Results (California, 2011-2019)"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "GA22w0d-22w6d: but after counseling with NICU, if parents opt for it, then perinatology team will administer steroids",
+   "verdict": "concordant",
+   "summary": "ACOG/SMFM revised their guidance in 2021 so that antenatal corticosteroids may be considered at 22 0/7-22 6/7 weeks if resuscitation is planned after counseling (2C) [ACOG2021Advisory], the Canadian statement recommends them from 22 0/7 weeks when intensive care is a management option [Lemyre2017], and BAPM supports them when parents want survival focused care [BAPM2026]; observational data show about twice the survival with exposure at 22 weeks [Backes2021; Ehret2018].",
+   "evidence": [
+    {
+     "ref": "ACOG2021Advisory",
+     "quote": "Antenatal corticosteroids may be considered at 22 0/7 weeks to 22 6/7 weeks of gestation if neonatal resuscitation is planned and after appropriate counseling (2C; weak recommendation, low-quality evidence)",
+     "location": "Updated Recommendation"
+    },
+    {
+     "ref": "ACOG2021Advisory",
+     "quote": "A decision regarding whether or not to administer antenatal corticosteroids will be linked to the decision regarding resuscitation and support and should be considered in that context.",
+     "location": "Counseling and Special Considerations"
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "ANCS should be given between 22 0 and 25 6 weeks GA when early intensive care is a management option and, in the opinion of the obstetrical HCP, the risk of extremely preterm birth is high.",
+     "location": "Recommendations (superscripts lost in extraction: 22 0/7 and 25 6/7)"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "As a general principle, It would be appropriate to provide antenatal steroids if a baby is anticipated to be high (or lower) risk if they deliver in the next 48 hours, and parents would wish for survival focused care to be provided in such a scenario.",
+     "location": "Obstetric management focused on maternal wellbeing and neonatal survival"
+    },
+    {
+     "ref": "Backes2021",
+     "quote": "Survival among infants born to mothers receiving antenatal corticosteroids was twice the survival of infants born to mothers not receiving antenatal corticosteroids (39.0% vs 19.5%; P<.01).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Ehret2018",
+     "quote": "the adjusted risk ratio for 22 weeks was 2.11 (95% CI, 1.68-2.65), for 23 weeks was 1.54 (95% CI, 1.40-1.70)",
+     "location": "Abstract, Results (infants receiving postnatal life support)"
+    },
+    {
+     "ref": "Ehret2018",
+     "quote": "Although statistically higher with ANS, survival without major morbidities remains low at 22 and 23 weeks.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "GA22w0d-22w6d: and discuss other interventions such as tocolysis, mag for neuroprotection, fetal monitoring and c/s (also classical) if clinically indicated ... Perinatology team will offer everything if patients elect for resuscitation.",
+   "verdict": "practice_varies",
+   "summary": "US guidance lists tocolysis, magnesium sulfate for neuroprotection and cesarean for fetal indication as \"Not recommended\" (1A) at 22 0/7-22 6/7 weeks while linking these decisions to the resuscitation plan and recommending magnesium when delivery of a potentially viable infant is anticipated [ACOG2017], whereas the 2026 BAPM framework offers an individualised obstetric package, including tocolysis and magnesium, not excluded by gestational age alone once survival focused care is agreed, noting a paucity of data below 24 weeks [BAPM2026]; magnesium trials mostly enrolled from 24 weeks [Shepherd2026], and both guidelines describe the higher maternal risk of classical cesarean at the earliest gestations [ACOG2017; BAPM2026].",
+   "evidence": [
+    {
+     "ref": "ACOG2017",
+     "quote": "Tocolysis for preterm labor Not recommended Not recommended Consider Recommended Recommended to allow for antenatal 1A 1A 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 22 0/7-22 6/7 weeks: Not recommended, 1A"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Magnesium sulfate for Not recommended Not recommended Consider Recommended Recommended neuroprotection 1A 1A 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 22 0/7-22 6/7 weeks: Not recommended, 1A"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Cesarean delivery for fetal Not recommended Not recommended Consider Consider Recommended indication‡ 1A 1A 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 22 0/7-22 6/7 weeks: Not recommended, 1A"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Many of the other decisions on this table will be linked to decisions regarding resuscitation and support",
+     "location": "Table 3 footnote"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Given these findings, magnesium sulfate prophylaxis is recommended if periviable delivery of a potentially viable infant is anticipated.",
+     "location": "Magnesium Sulfate for Neuroprotection"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Even if cesarean delivery for fetal indication is not planned, if arrangements have been made for resuscitation of a potentially viable liveborn neonate, electronic fetal heart rate monitoring may be considered if it is believed that intrauterine resuscitation will affect the newborn’s outcome.",
+     "location": "Text before Table 3"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "delivery for women in the periviable period should be individualized, recognizing increased maternal morbidity associated with cesarean delivery, particularly if the need for classical cesarean delivery is anticipated",
+     "location": "Cesarean Delivery"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "The potential for each component intervention to optimise the condition of the individual baby at birth should be considered, and not excluded on the basis of gestational age alone.",
+     "location": "Obstetric management focused on maternal wellbeing and neonatal survival"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Optimally timed course of intrapartum antenatal steroids, tocolysis, magnesium sulphate for neuroprotection. Parents should be made aware that there is a paucity of data in relation to the magnitude of benefit and risks of these interventions, particularly below 24",
+     "location": "Obstetric management focused on maternal wellbeing and neonatal survival (sentence continues \"weeks of gestation\" after a page break)"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "If the baby is deemed extremely high risk for a poor outcome, a decision for a caesarean section should only made if there are benefits for the woman, or this is her choice following informed counselling of the above risks.",
+     "location": "Mode of birth (\"should only made\" is in source)"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "the likelihood of classical caesarean section, with its increased risk of serious maternal complications, is greatest at the most preterm gestations (Reddy, 2015, Blanc, 2019).",
+     "location": "Mode of birth"
+    },
+    {
+     "ref": "Shepherd2026",
+     "quote": "The lower limit of gestational age was 24 weeks' gestation (Mittendorf 2002; Rouse 2008; Wolf 2020) or above (30 weeks' gestation in Crowther 2023), but no lower limit was set for two studies (Crowther 2003; Marret 2006).",
+     "location": "Included studies"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "GA23w0d-23w6d: After counseling with NICU, if parents opt for it, then perinatology team will administer steroids",
+   "verdict": "concordant",
+   "summary": "Antenatal corticosteroids are graded \"Consider\" (2B) at 23 0/7-23 6/7 weeks in US guidance when resuscitation is planned [ACOG2017; ACOG2021Advisory], are recommended in the Canadian statement when intensive care is a management option [Lemyre2017] and are supported by BAPM when parents want survival focused care [BAPM2026]; exposure was associated with higher survival at 23 weeks (adjusted RR 1.54) [Ehret2018].",
+   "evidence": [
+    {
+     "ref": "ACOG2017",
+     "quote": "Antenatal Not recommended Not recommended Consider Recommended Recommended corticosteroids 1A 1A 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 23 0/7-23 6/7 weeks: Consider, 2B"
+    },
+    {
+     "ref": "ACOG2021Advisory",
+     "quote": "antenatal corticosteroids have been recommended at 24 0/7 weeks to 25 6/7 weeks of gestation and may be considered at 23 0/7 weeks to 23 6/7 weeks of gestation",
+     "location": "Background"
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "ANCS should be given between 22 0 and 25 6 weeks GA when early intensive care is a management option and, in the opinion of the obstetrical HCP, the risk of extremely preterm birth is high.",
+     "location": "Recommendations (22 0/7 and 25 6/7)"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "It would be appropriate to provide antenatal steroids if a baby is anticipated to be high (or lower) risk if they deliver in the next 48 hours, and parents would wish for survival focused care to be provided in such a scenario.",
+     "location": "Obstetric management focused on maternal wellbeing and neonatal survival"
+    },
+    {
+     "ref": "Ehret2018",
+     "quote": "the adjusted risk ratio for 22 weeks was 2.11 (95% CI, 1.68-2.65), for 23 weeks was 1.54 (95% CI, 1.40-1.70)",
+     "location": "Abstract, Results (infants receiving postnatal life support)"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "GA23w0d-23w6d: and discuss other interventions such as tocolysis, mag for neuroprotection, fetal monitoring and c/s (also classical) if indicated ... Perinatology team will offer everything if patients elect for resuscitation.",
+   "verdict": "concordant",
+   "summary": "At 23 0/7-23 6/7 weeks US guidance grades tocolysis, magnesium sulfate for neuroprotection and cesarean for fetal indication as \"Consider\" (2B), recommends magnesium when delivery of a potentially viable infant is anticipated and allows fetal heart rate monitoring when resuscitation is planned [ACOG2017], and BAPM offers an individualised package once survival focused care is agreed [BAPM2026]; trial data below 24 weeks are sparse [Shepherd2026; BAPM2026] and classical cesarean carries higher maternal risk at these gestations [ACOG2017; BAPM2026].",
+   "evidence": [
+    {
+     "ref": "ACOG2017",
+     "quote": "Tocolysis for preterm labor Not recommended Not recommended Consider Recommended Recommended to allow for antenatal 1A 1A 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 23 0/7-23 6/7 weeks: Consider, 2B"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Magnesium sulfate for Not recommended Not recommended Consider Recommended Recommended neuroprotection 1A 1A 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 23 0/7-23 6/7 weeks: Consider, 2B"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Cesarean delivery for fetal Not recommended Not recommended Consider Consider Recommended indication‡ 1A 1A 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 23 0/7-23 6/7 weeks: Consider, 2B"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Given these findings, magnesium sulfate prophylaxis is recommended if periviable delivery of a potentially viable infant is anticipated.",
+     "location": "Magnesium Sulfate for Neuroprotection"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Even if cesarean delivery for fetal indication is not planned, if arrangements have been made for resuscitation of a potentially viable liveborn neonate, electronic fetal heart rate monitoring may be considered if it is believed that intrauterine resuscitation will affect the newborn’s outcome.",
+     "location": "Text before Table 3"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "delivery for women in the periviable period should be individualized, recognizing increased maternal morbidity associated with cesarean delivery, particularly if the need for classical cesarean delivery is anticipated",
+     "location": "Cesarean Delivery"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "The potential for each component intervention to optimise the condition of the individual baby at birth should be considered, and not excluded on the basis of gestational age alone.",
+     "location": "Obstetric management focused on maternal wellbeing and neonatal survival"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Optimally timed course of intrapartum antenatal steroids, tocolysis, magnesium sulphate for neuroprotection. Parents should be made aware that there is a paucity of data in relation to the magnitude of benefit and risks of these interventions, particularly below 24",
+     "location": "Obstetric management focused on maternal wellbeing and neonatal survival (sentence continues \"weeks of gestation\" after a page break)"
+    },
+    {
+     "ref": "Shepherd2026",
+     "quote": "The lower limit of gestational age was 24 weeks' gestation (Mittendorf 2002; Rouse 2008; Wolf 2020) or above (30 weeks' gestation in Crowther 2023), but no lower limit was set for two studies (Crowther 2003; Marret 2006).",
+     "location": "Included studies"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "GA23w0d-23w6d: Parents may elect to NOT intervene/resuscitate until 24 weeks.",
+   "verdict": "concordant",
+   "summary": "US guidance grades assessment for resuscitation as \"Consider\" at 23 weeks and notes that some families may choose to forgo resuscitation [ACOG2017], the Canadian statement lists intensive or palliative care as usual options at 23-24 weeks [Lemyre2017], and BAPM bases the decision on parental wishes for 23-week babies with favourable risk factors in its high-risk group, although it places some 23-week babies with favourable risk factors in the moderate-risk group, where it recommends survival focused care, as in its worked case at 23+6 weeks [BAPM2026].",
+   "evidence": [
+    {
+     "ref": "ACOG2017",
+     "quote": "Neonatal assessment Not recommended Consider Consider Recommended Recommended for resuscitation* 1A 2B 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 23 0/7-23 6/7 weeks: Consider, 2B"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Importantly, some families, concordant with their values and preferences, may choose to forgo such resuscitation and support.",
+     "location": "Table 3 footnote"
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "Infant born at 23–24 weeks GA, irrespective of most additional risk factors***",
+     "location": "Table 4, row \"Intensive care or palliative care are both usual care options\""
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Babies at 22+0 - 23+6 weeks of gestation with favourable risk factors.",
+     "location": "Box 1, High risk examples"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Some babies at 23+0 – 23+6 weeks of gestation with favourable risk factors.",
+     "location": "Box 1, Moderate risk examples"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "High risk: For babies with a > 50% risk of death or of surviving with unacceptably severe impairment despite treatment, it is uncertain whether survival focused care is in the best interests of the baby and their family. Parents should be counselled carefully and parental wishes should inform a joint decision to provide either survival focused or comfort focused care.",
+     "location": "Risk categories, paragraph preceding Box 1"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Moderate risk: For babies with a < 50% risk of death or of survival with unacceptably severe impairment, survival focused care would be in the best interests of the baby.",
+     "location": "Risk categories, paragraph preceding Box 1"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "They should advise the couple that, taking all factors into account, her baby would have a moderate risk of dying or of severe disability.",
+     "location": "Appendix 2, case C2 (counselling at 23+6 weeks, favourable risk factors, mother requesting comfort focused care)"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "It would be recommended to provide survival focused care of the baby in this situation, with the knowledge that if complications develop in the neonatal intensive care unit, there would be the option of later withdrawal of life-prolonging treatment.",
+     "location": "Appendix 2, case C2 (counselling at 23+6 weeks, favourable risk factors, mother requesting comfort focused care)"
+    },
+    {
+     "ref": "Cummings2015",
+     "quote": "In most cases, the approach should be shared decision-making with the family, guided by considering both the likelihood of death or morbidity and the parents' desires for their unborn child.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "≥GA24w0d: In general, the NICU team 100% of the time will resuscitate any infant born at or after 24w0d regardless of parents’ desires.",
+   "verdict": "discordant",
+   "summary": "Assessment for resuscitation is recommended at 24 0/7-25 6/7 weeks (1B) in US guidance [ACOG2017], BAPM provides survival focused care initially at moderate risk (most babies ≥24+0 weeks) and handles a parental request for comfort care as a disagreement to resolve by addressing parents' concerns, with RCPCH conflict guidance if agreement is not reached [BAPM2026], and 93.1% of 24-week infants in California were actively resuscitated [Higgins2024], but no retrieved guideline supports resuscitation regardless of parental wishes: US guidance states that some families at 22-25 weeks may choose to forgo resuscitation [ACOG2017], Canadian guidance lists intensive or palliative care as usual options at 23-24 weeks and accepts that parents may choose a nonrecommended option after further discussion [Lemyre2017], and BAPM lists exceptions at ≥24 weeks [BAPM2026].",
+   "note": "Current evidence suggests that at 24 weeks assessment for resuscitation is recommended [ACOG2017] and survival focused care is provided for most infants [BAPM2026], while US and Canadian guidance accept that families may forgo resuscitation or choose a nonrecommended option after further discussion [ACOG2017; Lemyre2017]. BAPM seeks agreement on parental requests for comfort care at moderate risk by addressing parents' concerns, with RCPCH conflict guidance if needed [BAPM2026]. Canadian guidance adds a second opinion, ethics consultation or institutional review if disagreement persists [Lemyre2017].",
+   "evidence": [
+    {
+     "ref": "ACOG2017",
+     "quote": "Neonatal assessment Not recommended Consider Consider Recommended Recommended for resuscitation* 1A 2B 2B 1B 1B",
+     "location": "Table 3 (columns 20 0/7-21 6/7, 22 0/7-22 6/7, 23 0/7-23 6/7, 24 0/7-24 6/7, 25 0/7-25 6/7 weeks); 24 0/7-24 6/7 and 25 0/7-25 6/7 weeks: Recommended, 1B"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "lines offer recommendations with regard to the gestational ages at which assessment for resuscitation rather than resuscitation itself should be undertaken.",
+     "location": "Text before Table 3 (sentence begins \"Accordingly, the guide-\" across a line break)"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "Importantly, some families, concordant with their values and preferences, may choose to forgo such resuscitation and support.",
+     "location": "Table 3 footnote (applies between 22 and 25 weeks)"
+    },
+    {
+     "ref": "ACOG2017",
+     "quote": "A decision to proceed with resuscitation always should be informed by individual circumstances, including specific clinical issues (especially, for example, estimated fetal weight and the most pre- cise estimate of gestational age), family values and wishes, and ongoing evaluation of fetal or neonatal condition.",
+     "location": "Text before Table 3 (\"pre- cise\" is a line-break hyphen)"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Most babies ≥ 24 +0 weeks of gestation.",
+     "location": "Box 1, Moderate risk examples"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "(Rarely) babies born at or after 24+0 weeks of gestation with significant unfavourable risk factors, including very severe fetal growth restriction.",
+     "location": "Box 1, Extremely high risk examples"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Some babies ≥ 24+0 weeks of gestation with unfavourable risk factors and/or co- morbidities.",
+     "location": "Box 1, High risk examples (\"co- morbidities\" is a line break)"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "survival focused care should be provided initially. Ongoing treatment in intensive care should be reviewed regularly and discussed with parents subsequently, particularly if complications arise",
+     "location": "Executive summary, point 6 (the point begins \"Fo r babies at moderate risk,\" as extracted)"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "Where preterm birth is anticipated and has been assessed to be at moderate risk of poor outcome, survival focused care would be appropriate, and the rationale for providing this should be explained. Rarely, parents may request or insist that comfort focused care be provided notwithstanding the clinical recommendation (see Appendix 2, Case 2).",
+     "location": "Appendix 3, S6. Parents requesting comfort focused care in settings of moderate risk"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "In such situations, identifying and addressing parents’ concerns will usually enable agreement to be reached.",
+     "location": "Appendix 3, S6"
+    },
+    {
+     "ref": "BAPM2026",
+     "quote": "When parents do not agree with the perinatal team, RCPCH guidance around dealing with conflict may be helpful (RCPCH 2019).",
+     "location": "Appendix 3, S6"
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "Infant born at 24 weeks GA, with an estimated weight of 350 g",
+     "location": "Table 4, row \"Palliative care is recommended**\""
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "Infant born at 23–24 weeks GA, irrespective of most additional risk factors***",
+     "location": "Table 4, row \"Intensive care or palliative care are both usual care options\""
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "A parent may disagree with the option that is recommended. Given the lack of a moral authority regarding standard of care in this complex area, a ‘non-recommended’ option is sometimes instituted after further informed discussion, time to think and conflict resolution",
+     "location": "Management decisions, including ethical considerations (paragraph after Table 4)"
+    },
+    {
+     "ref": "Lemyre2017",
+     "quote": "In such situations, consider seeking a second opinion from a colleague and/or support from an ethics consultation, or applying for an institutional board review to determine the infant’s and family’s best interests.",
+     "location": "Management decisions, including ethical considerations"
+    },
+    {
+     "ref": "Higgins2024",
+     "quote": "Active resuscitation was performed in 16.9% of 22-week infants, 67.8% of 23-week infants, 93.1% of 24-week infants, and 98.1% of 25-week infants.",
+     "location": "Results (California, 2011-2019)"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "ASD prevalences by gestational age at birth: Preterm: overall 1 in 48 or 2.1% for all preterm (<37 weeks)",
+   "verdict": "concordant",
+   "summary": "A Swedish national cohort of 4,061,795 singletons reports 2.1% for all preterm births (<37 weeks), the source of the manual's percentage [Crump2021], and a meta-analysis also reports 2.1% for preterm births [Guo2024], while Kaiser Permanente Northern California reported 1.78% at <37 weeks [Kuzniewicz2014]; the \"1 in 48\" form is a conversion (about 2.08%) not stated in the source.",
+   "evidence": [
+    {
+     "ref": "Crump2021",
+     "quote": "ASD prevalences by gestational age at birth were 6.1% for extremely preterm (22–27 weeks), 2.6% for very to moderate preterm (28–33 weeks), 1.9% for late preterm (34–36 weeks), 2.1% for all preterm (<37 weeks), 1.6% for early term (37–38 weeks), and 1.4% for full-term (39–41 weeks).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Crump2021",
+     "quote": "A national cohort study was conducted of all 4,061,795 singletons born in Sweden during 1973–2013 who survived to age 1 year, who were followed up for ASD identified from nationwide outpatient and inpatient diagnoses through 2015.",
+     "location": "Abstract, Methods"
+    },
+    {
+     "ref": "Guo2024",
+     "quote": "preterm, 2.1% (19 672 ASD/1 725 244 individuals)",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Kuzniewicz2014",
+     "quote": "The prevalence of ASD in infants <37 weeks was 1.78% compared with 1.22% in infants born ≥ 37 weeks (P < .001).",
+     "location": "Abstract, Results (Kaiser Permanente Northern California, births ≥24 weeks)"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "manual_text": "ASD prevalences by gestational age at birth: 1 in 16 or 6.1% for extremely preterm (22–27 weeks)",
+   "verdict": "concordant",
+   "summary": "A Swedish national cohort reports ASD prevalence of 6.1% after extremely preterm birth (22-27 weeks) [Crump2021], and a Kaiser Permanente Northern California cohort found ASD about 3 times more prevalent at <27 weeks than at term [Kuzniewicz2014]; the \"1 in 16\" form is a rounded conversion (1 in 16 is 6.25%) not stated in the source.",
+   "evidence": [
+    {
+     "ref": "Crump2021",
+     "quote": "ASD prevalences by gestational age at birth were 6.1% for extremely preterm (22–27 weeks), 2.6% for very to moderate preterm (28–33 weeks), 1.9% for late preterm (34–36 weeks), 2.1% for all preterm (<37 weeks), 1.6% for early term (37–38 weeks), and 1.4% for full-term (39–41 weeks).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Crump2021",
+     "quote": "A national cohort study was conducted of all 4,061,795 singletons born in Sweden during 1973–2013 who survived to age 1 year, who were followed up for ASD identified from nationwide outpatient and inpatient diagnoses through 2015.",
+     "location": "Abstract, Methods"
+    },
+    {
+     "ref": "Kuzniewicz2014",
+     "quote": "ASD was ~ 3 times more prevalent in infants <27 weeks compared with term infants.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "manual_text": "ASD prevalences by gestational age at birth: 1 in 38 or 2.6% for very to moderate preterm (28–33 weeks)",
+   "verdict": "concordant",
+   "summary": "A Swedish national cohort reports 2.6% for very to moderate preterm birth (28-33 weeks) [Crump2021], close to the 2.8% pooled for very preterm births in a meta-analysis [Guo2024]; the \"1 in 38\" form is a conversion (about 2.63%) not stated in the source.",
+   "evidence": [
+    {
+     "ref": "Crump2021",
+     "quote": "ASD prevalences by gestational age at birth were 6.1% for extremely preterm (22–27 weeks), 2.6% for very to moderate preterm (28–33 weeks), 1.9% for late preterm (34–36 weeks), 2.1% for all preterm (<37 weeks), 1.6% for early term (37–38 weeks), and 1.4% for full-term (39–41 weeks).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Crump2021",
+     "quote": "A national cohort study was conducted of all 4,061,795 singletons born in Sweden during 1973–2013 who survived to age 1 year, who were followed up for ASD identified from nationwide outpatient and inpatient diagnoses through 2015.",
+     "location": "Abstract, Methods"
+    },
+    {
+     "ref": "Guo2024",
+     "quote": "very preterm, 2.8% (2113 ASD/128,513 individuals)",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "manual_text": "ASD prevalences by gestational age at birth: 1 in 53 or 1.9% for late preterm (34–36 weeks)",
+   "verdict": "concordant",
+   "summary": "A Swedish national cohort reports 1.9% for late preterm birth (34-36 weeks) [Crump2021], and a Kaiser Permanente Northern California cohort also found increased risk at 34-36 weeks (adjusted HR 1.3) [Kuzniewicz2014]; the \"1 in 53\" form is a conversion (about 1.89%) not stated in the source.",
+   "evidence": [
+    {
+     "ref": "Crump2021",
+     "quote": "ASD prevalences by gestational age at birth were 6.1% for extremely preterm (22–27 weeks), 2.6% for very to moderate preterm (28–33 weeks), 1.9% for late preterm (34–36 weeks), 2.1% for all preterm (<37 weeks), 1.6% for early term (37–38 weeks), and 1.4% for full-term (39–41 weeks).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Crump2021",
+     "quote": "A national cohort study was conducted of all 4,061,795 singletons born in Sweden during 1973–2013 who survived to age 1 year, who were followed up for ASD identified from nationwide outpatient and inpatient diagnoses through 2015.",
+     "location": "Abstract, Methods"
+    },
+    {
+     "ref": "Kuzniewicz2014",
+     "quote": "Infants born at 27-33 weeks (adjusted HR 1.4, 95% CI 1.1-1.8) and 34-36 weeks (adjusted HR 1.3, 95% CI 1.1-1.4) were also at increased risk.",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "manual_text": "ASD prevalences by gestational age at birth: Term: 1 in 62 or 1.6% for early term (37–38 weeks)",
+   "verdict": "concordant",
+   "summary": "A Swedish national cohort reports 1.6% for early term birth (37-38 weeks) [Crump2021], the only retrieved source reporting this band; the \"1 in 62\" form is a conversion (about 1.61%) not stated in the source.",
+   "evidence": [
+    {
+     "ref": "Crump2021",
+     "quote": "ASD prevalences by gestational age at birth were 6.1% for extremely preterm (22–27 weeks), 2.6% for very to moderate preterm (28–33 weeks), 1.9% for late preterm (34–36 weeks), 2.1% for all preterm (<37 weeks), 1.6% for early term (37–38 weeks), and 1.4% for full-term (39–41 weeks).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Crump2021",
+     "quote": "A national cohort study was conducted of all 4,061,795 singletons born in Sweden during 1973–2013 who survived to age 1 year, who were followed up for ASD identified from nationwide outpatient and inpatient diagnoses through 2015.",
+     "location": "Abstract, Methods"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "manual_text": "ASD prevalences by gestational age at birth: Term: 1 in 71 or 1.4% for full-term (39–41 weeks)",
+   "verdict": "concordant",
+   "summary": "A Swedish national cohort reports 1.4% for full-term birth (39-41 weeks) [Crump2021], while reference values at term differ by cohort and era, 1.22% at ≥37 weeks in Kaiser Permanente Northern California and 0.6% in a meta-analysis [Kuzniewicz2014; Guo2024]; the \"1 in 71\" form is a conversion (about 1.41%) not stated in the source.",
+   "evidence": [
+    {
+     "ref": "Crump2021",
+     "quote": "ASD prevalences by gestational age at birth were 6.1% for extremely preterm (22–27 weeks), 2.6% for very to moderate preterm (28–33 weeks), 1.9% for late preterm (34–36 weeks), 2.1% for all preterm (<37 weeks), 1.6% for early term (37–38 weeks), and 1.4% for full-term (39–41 weeks).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Crump2021",
+     "quote": "A national cohort study was conducted of all 4,061,795 singletons born in Sweden during 1973–2013 who survived to age 1 year, who were followed up for ASD identified from nationwide outpatient and inpatient diagnoses through 2015.",
+     "location": "Abstract, Methods"
+    },
+    {
+     "ref": "Kuzniewicz2014",
+     "quote": "The prevalence of ASD in infants <37 weeks was 1.78% compared with 1.22% in infants born ≥ 37 weeks (P < .001).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Guo2024",
+     "quote": "term, 0.6% (113,261 ASD/15,297,259 individuals)",
+     "location": "Abstract"
+    }
+   ]
+  }
+ ],
+ "omissions": [],
+ "references": [
+  {
+   "key": "ACOG2017",
+   "role": "source",
+   "authors": "American College of Obstetricians and Gynecologists, Society for Maternal-Fetal Medicine",
+   "title": "Obstetric Care consensus No. 6: Periviable Birth",
+   "journal": "Obstet Gynecol",
+   "year": "2017",
+   "volume": "130",
+   "issue": "4",
+   "pages": "e187-e199",
+   "doi": "10.1097/AOG.0000000000002352",
+   "pmid": "28937572",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/28937572/",
+    "https://api.crossref.org/works/10.1097/AOG.0000000000002352"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Cummings2015",
+   "role": "source",
+   "authors": "Cummings J",
+   "title": "Antenatal Counseling Regarding Resuscitation and Intensive Care Before 25 Weeks of Gestation",
+   "journal": "Pediatrics",
+   "year": "2015",
+   "volume": "136",
+   "issue": "3",
+   "pages": "588-595",
+   "doi": "10.1542/peds.2015-2336",
+   "pmid": "26324869",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/26324869/",
+    "https://api.crossref.org/works/10.1542/peds.2015-2336"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Lemyre2017",
+   "role": "source",
+   "authors": "Lemyre B, Moore G",
+   "title": "Counselling and management for anticipated extremely preterm birth",
+   "journal": "Paediatr Child Health",
+   "year": "2017",
+   "volume": "22",
+   "issue": "6",
+   "pages": "334-341",
+   "doi": "10.1093/pch/pxx058",
+   "pmid": "29485138",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/29485138/",
+    "https://api.crossref.org/works/10.1093/pch/pxx058"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Shepherd2026",
+   "role": "source",
+   "authors": "Shepherd ES, Goldsmith S, Doyle LW, et al.",
+   "title": "Magnesium sulphate for women at risk of preterm birth for neuroprotection of the fetus",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2026",
+   "volume": "9",
+   "issue": "9",
+   "pages": "CD004661",
+   "doi": "10.1002/14651858.CD004661.pub5",
+   "pmid": "42689525",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42689525/",
+    "https://api.crossref.org/works/10.1002/14651858.CD004661.pub5"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Backes2021",
+   "role": "source",
+   "authors": "Backes CH, Rivera BK, Pavlek L, et al.",
+   "title": "Proactive neonatal treatment at 22 weeks of gestation: a systematic review and meta-analysis",
+   "journal": "Am J Obstet Gynecol",
+   "year": "2021",
+   "volume": "224",
+   "issue": "2",
+   "pages": "158-174",
+   "doi": "10.1016/j.ajog.2020.07.051",
+   "pmid": "32745459",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/32745459/",
+    "https://api.crossref.org/works/10.1016/j.ajog.2020.07.051"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Ehret2018",
+   "role": "source",
+   "authors": "Ehret DEY, Edwards EM, Greenberg LT, et al.",
+   "title": "Association of Antenatal Steroid Exposure With Survival Among Infants Receiving Postnatal Life Support at 22 to 25 Weeks' Gestation",
+   "journal": "JAMA Netw Open",
+   "year": "2018",
+   "volume": "1",
+   "issue": "6",
+   "pages": "e183235",
+   "doi": "10.1001/jamanetworkopen.2018.3235",
+   "pmid": "30646235",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/30646235/",
+    "https://api.crossref.org/works/10.1001/jamanetworkopen.2018.3235"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Edwards2024",
+   "role": "source",
+   "authors": "Edwards EM, Ehret DEY, Soll RF, Horbar JD",
+   "title": "Survival of Infants Born at 22 to 25 Weeks' Gestation Receiving Care in the NICU: 2020-2022",
+   "journal": "Pediatrics",
+   "year": "2024",
+   "volume": "154",
+   "issue": "4",
+   "pages": "e2024065963",
+   "doi": "10.1542/peds.2024-065963",
+   "pmid": "39323403",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/39323403/",
+    "https://api.crossref.org/works/10.1542/peds.2024-065963"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Higgins2024",
+   "role": "source",
+   "authors": "Higgins BV, Baer RJ, Steurer MA, et al.",
+   "title": "Resuscitation, survival and morbidity of extremely preterm infants in California 2011-2019",
+   "journal": "J Perinatol",
+   "year": "2024",
+   "volume": "44",
+   "issue": "2",
+   "pages": "209-216",
+   "doi": "10.1038/s41372-023-01774-6",
+   "pmid": "37689808",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37689808/",
+    "https://api.crossref.org/works/10.1038/s41372-023-01774-6"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Hyland2025",
+   "role": "source",
+   "authors": "Hyland RM, Mat HD, Boly TJ, et al.",
+   "title": "Outcomes of Infants Born at 21 Weeks' Gestational Age",
+   "journal": "JAMA Netw Open",
+   "year": "2025",
+   "volume": "8",
+   "issue": "12",
+   "pages": "e2548211",
+   "doi": "10.1001/jamanetworkopen.2025.48211",
+   "pmid": "41385227",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41385227/",
+    "https://api.crossref.org/works/10.1001/jamanetworkopen.2025.48211"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Rysavy2015",
+   "role": "source",
+   "authors": "Rysavy MA, Li L, Bell EF, et al.",
+   "title": "Between-hospital variation in treatment and outcomes in extremely preterm infants",
+   "journal": "N Engl J Med",
+   "year": "2015",
+   "volume": "372",
+   "issue": "19",
+   "pages": "1801-1811",
+   "doi": "10.1056/NEJMoa1410689",
+   "pmid": "25946279",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/25946279/",
+    "https://api.crossref.org/works/10.1056/NEJMoa1410689"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Rysavy2020",
+   "role": "source",
+   "authors": "Rysavy MA, Horbar JD, Bell EF, et al.",
+   "title": "Assessment of an Updated Neonatal Research Network Extremely Preterm Birth Outcome Model in the Vermont Oxford Network",
+   "journal": "JAMA Pediatr",
+   "year": "2020",
+   "volume": "174",
+   "issue": "5",
+   "pages": "e196294",
+   "doi": "10.1001/jamapediatrics.2019.6294",
+   "pmid": "32119065",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/32119065/",
+    "https://api.crossref.org/works/10.1001/jamapediatrics.2019.6294"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Crump2021",
+   "role": "source",
+   "authors": "Crump C, Sundquist J, Sundquist K",
+   "title": "Preterm or Early Term Birth and Risk of Autism",
+   "journal": "Pediatrics",
+   "year": "2021",
+   "volume": "148",
+   "issue": "3",
+   "pages": "e2020032300",
+   "doi": "10.1542/peds.2020-032300",
+   "pmid": "34380775",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34380775/",
+    "https://api.crossref.org/works/10.1542/peds.2020-032300"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Guo2024",
+   "role": "source",
+   "authors": "Guo BQ, Li HB, Zhai DS, Yang LQ",
+   "title": "Prevalence of autism spectrum disorder diagnosis by birth weight, gestational age, and size for gestational age: a systematic review, meta-analysis, and meta-regression",
+   "journal": "Eur Child Adolesc Psychiatry",
+   "year": "2024",
+   "volume": "33",
+   "issue": "7",
+   "pages": "2035-2049",
+   "doi": "10.1007/s00787-022-02078-4",
+   "pmid": "36066648",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36066648/",
+    "https://api.crossref.org/works/10.1007/s00787-022-02078-4"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Kuzniewicz2014",
+   "role": "source",
+   "authors": "Kuzniewicz MW, Wi S, Qian Y, Walsh EM, Armstrong MA, Croen LA",
+   "title": "Prevalence and neonatal factors associated with autism spectrum disorders in preterm infants",
+   "journal": "J Pediatr",
+   "year": "2014",
+   "volume": "164",
+   "issue": "1",
+   "pages": "20-25",
+   "doi": "10.1016/j.jpeds.2013.09.021",
+   "pmid": "24161222",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24161222/",
+    "https://api.crossref.org/works/10.1016/j.jpeds.2013.09.021"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "BAPM2026",
+   "role": "source",
+   "citation": "British Association of Perinatal Medicine (Working Group chair: Battersby C). Perinatal management of extreme preterm birth before 27 weeks of gestation (2026): a BAPM Framework for Practice. British Association of Perinatal Medicine; 9 February 2026.",
+   "url": "https://www.bapm.org/resources/perinatal-management-of-extreme-preterm-birth-before-27-weeks-of-gestation",
+   "doi": null,
+   "verified_against": [
+    "https://www.bapm.org/resources/perinatal-management-of-extreme-preterm-birth-before-27-weeks-of-gestation"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "ACOG2021Advisory",
+   "role": "source",
+   "citation": "American College of Obstetricians and Gynecologists, Society for Maternal-Fetal Medicine. Use of Antenatal Corticosteroids at 22 Weeks of Gestation. Practice Advisory. September 2021 (reaffirmed October 2022).",
+   "url": "https://www.acog.org/clinical/clinical-guidance/practice-advisory/articles/2021/09/use-of-antenatal-corticosteroids-at-22-weeks-of-gestation",
+   "doi": null,
+   "verified_against": [
+    "https://www.acog.org/clinical/clinical-guidance/practice-advisory/articles/2021/09/use-of-antenatal-corticosteroids-at-22-weeks-of-gestation"
+   ],
+   "verified_date": "2026-11-08"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 3,
+  "date": "2026-11-08",
+  "quotes_checked": 267,
+  "references_verified": 16,
+  "known_limitations": [
+   {
+    "item": "KPSD NICU/region statistics",
+    "note": "Local outcome data are not available to the check; only the principle of counselling with national plus local data was checked."
+   },
+   {
+    "item": "NICHD Extremely Preterm Birth Outcomes Tool link",
+    "note": "Not checkable (link)."
+   },
+   {
+    "item": "AHA/AAP 2025 and ILCOR 2025",
+    "note": "Full texts not retrieved (cpr.heart.org HTTP 403); their abstracts do not address periviability, so neither is used."
+   },
+   {
+    "item": "ACOG2016 (PB 171)",
+    "note": "Abstract only; no recommendation text retrieved; set aside. ACOG 2021 Practice Advisory read from a saved page (WebFetch of the issuer page returned HTTP 402)."
+   },
+   {
+    "item": "Extraction artifacts",
+    "note": "Some quotes keep PDF/HTML extraction artifacts as extracted (line-break hyphens such as 'pre- cise'; lost superscripts in Lemyre2017, where '22 0' means 22 0/7)."
+   },
+   {
+    "item": "ASD figures",
+    "note": "The manual's '1 in N' forms are its own conversions of Crump2021's percentages (e.g. 1 in 16 = 6.25% vs 6.1%)."
+   }
+  ]
+ }
+}

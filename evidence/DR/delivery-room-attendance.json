@@ -1,0 +1,1476 @@
+{
+ "chapter": "DR",
+ "section": "Delivery Room Attendance",
+ "anchor": "DR.html#sec-dr-attendance",
+ "source": {
+  "file": "site/src/content/docs/DR.mdx",
+  "lines": "6-54",
+  "manual_commit": "f112cde"
+ },
+ "checked": "2026-11-08",
+ "generated_with": "Researcher: Claude Opus 5.5 (claude-opus-5-5); Comparer: Claude Opus 5.5 (claude-opus-5-5); Reviewer: Claude Opus 5.5 (claude-opus-5-5)",
+ "triage": {
+  "clinical": 30,
+  "operational": 1,
+  "definition": 0,
+  "context": 1
+ },
+ "scope": {
+  "population": "All newborn infants at birth in the units' hospitals (KP Riverside and Moreno Valley), of any gestational age, grouped by antenatal and intrapartum risk factors into Levels 0-III; individual items name their own subgroups (35-36 weeks, < 35 weeks, < 25 weeks, 25-27 weeks).",
+  "topic": "Which team attends a birth, according to the anticipated need for and complexity of newborn resuscitation, and which risk factors place a birth in each level.",
+  "basis": "Heading \"Delivery Room Attendance\" in the chapter \"Delivery Room Management\" and the level headings (Level 0: Routine delivery; Level I: low risk for resuscitation; Level II: high risk for resuscitation; Level III: complex resuscitation).",
+  "set_aside": [
+   {
+    "ref": "FishelBartal2022",
+    "population": "Women with eclampsia (review of maternal outcomes)",
+    "reason": "The retrieved statement concerns maternal mortality and morbidity, not newborn outcomes or resuscitation."
+   },
+   {
+    "ref": "Battin2021",
+    "population": "Infants with moderate or severe neonatal encephalopathy after shoulder dystocia",
+    "reason": "Reports cord gases in a selected encephalopathy group; does not address the need for resuscitation at birth."
+   },
+   {
+    "ref": "Berazategui2017",
+    "population": "Births at ≥34 weeks in 16 centres",
+    "reason": "Its ten risk factors are not named in the retrieved abstract, so it cannot inform any specific item."
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "Level 0: Routine delivery / Attendance: L&D RN with or without RT",
+   "verdict": "insufficient",
+   "summary": "Guidance leaves the choice of attendants to local guidelines that consider risk factors, asks for a process to mobilise extra skilled staff quickly and names no professions [RCUK2025], and asks that individuals and teams caring for newborns be prepared for neonatal resuscitation [Lee2025]; about 7% of term infants without identified risk factors needed PPV or intubation in one tertiary centre [Aziz2008].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Any infant may develop problems during birth. Local guidelines indicating who should attend deliveries should be developed, based on current understanding of best practice and clinical audit, and considering identified risk factors.",
+     "location": "Factors before birth: Staff attending births in hospital"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "A process should be in place for rapidly mobilising extra team members with adequate resuscitation skills for any birth.",
+     "location": "Factors before birth: Staff attending births in hospital"
+    },
+    {
+     "ref": "Lee2025",
+     "quote": "In this context, individuals, teams, and health care settings that care for newborn infants should be prepared and have access to appropriate training and resources for neonatal resuscitation.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "In the absence of identified risk factors, 7% of term newly borns require PPV-ETT (positive pressure ventilation and/or endotracheal intubation).",
+     "location": "Abstract, Background"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "Level I: low risk for resuscitation / Attendance: NICU RN & RT",
+   "verdict": "insufficient",
+   "summary": "Guidance asks for an interprofessional team trained in newborn life support in proportion to the expected risk and a team briefing when resuscitation is anticipated, but no retrieved source specifies which professions or how many staff attend low-risk births [RCUK2025; Liley2025].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "An interprofessional team with appropriate experience and training in NLS proportionate to the expected risk should attend the birth.",
+     "location": "Factors before birth: Staff attending births in hospital"
+    },
+    {
+     "ref": "Liley2025",
+     "quote": "Whenever the need for resuscitation of a newborn is anticipated, there should be a briefing of the neonatal team that includes communication with the obstetric and/or midwifery team to inform the neonatal management plan (good practice statement).",
+     "location": "Anticipation and Preparation (NLS 5002), Treatment Recommendation (2025)"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "Level I: low risk for resuscitation / Attendance: NICU RN & RT / - 35-36 weeks",
+   "verdict": "concordant",
+   "summary": "Birth before 37 weeks is a guideline-listed risk factor for needing stabilisation or resuscitation [RCUK2025], gestation under 37 weeks was associated with PPV at birth in infants of 2,500 g or more (OR 3.54) [Sousa2016], preterm birth under 36 weeks predicted PPV or intubation [Aziz2008], and in at-risk births from 35 weeks the crude risk of instability fell with increasing gestation (crude RR 0.85) [Santomartino2023].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Common factors associated with an increased risk of a need for stabilisation or resuscitation at birth.",
+     "location": "Factors before birth: risk factors table"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "< 37 weeks’ gestation",
+     "location": "Factors before birth: risk factors table (antepartum, fetal)"
+    },
+    {
+     "ref": "Sousa2016",
+     "quote": "Risk variables for positive-pressure ventilation at birth were a gestational age <37 weeks (OR: 3.54; 95% CI: 1.14-10.92) and meconium-stained amniotic fluid (8.53; 4.17-17.47).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "intra-partum factors were preterm delivery at <36 weeks, breech presentation, meconium-stained amniotic fluid (MSAF), non-reassuring fetal heart rate, emergency Caesarean section (EmCS), shoulder dystocia, and opiates in normal labour.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Santomartino2023",
+     "quote": "Gestation at birth--0.85(0.74–0.97)0.036",
+     "location": "Table 2 (crude risk ratio, gestation at birth, continuous)"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "Level I: low risk for resuscitation / Attendance: NICU RN & RT / - < 2kg",
+   "verdict": "partly_concordant",
+   "summary": "Intrauterine growth restriction is a guideline-listed risk factor [RCUK2025] and suspected growth restriction was associated with a 5-minute Apgar score under 7 in term vaginal births (OR 1.34) [Jindal2023], while fetal growth restriction did not reach significance in a ≥35-week at-risk cohort [Santomartino2023]; no retrieved source tested a 2 kg birth-weight threshold.",
+   "note": "Current evidence suggests that growth restriction, rather than a birth-weight cut-off, is the listed risk factor for needing stabilisation or resuscitation [RCUK2025], with higher odds of a low 5-minute Apgar score after suspected growth restriction in term vaginal births [Jindal2023]; neither source tests a 2 kg threshold [RCUK2025; Jindal2023].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Intrauterine growth restriction",
+     "location": "Factors before birth: risk factors table (antepartum, fetal)"
+    },
+    {
+     "ref": "Jindal2023",
+     "quote": "We found a higher odds of Apgar score at 5 minutes <7 with suspected fetal growth restriction (OR 1.34, 95% CI 1.16–1.53)",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Santomartino2023",
+     "quote": "| - Fetal growth restriction | 4(5) | 23(6) | 0.87(0.34–2.20) | 1.000c |  |  |",
+     "location": "Table 2 (crude risk ratio)"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "Level I: low risk for resuscitation / Attendance: NICU RN & RT / - Breech C/S",
+   "verdict": "partly_concordant",
+   "summary": "In at-risk births from 35 weeks, breech or unstable lie (crude RR 1.99 for instability; crude RR 2.11 for respiratory support) and planned caesarean, 81% of them for breech or unstable lie (crude RR 1.80), were associated with more delivery-room support [Santomartino2023; Badurdeen2021], and breech presentation was an independent predictor of PPV or intubation [Aziz2008]; these estimates were crude, and the same cohort found elective caesarean protective [Aziz2008].",
+   "note": "Current evidence suggests that breech presentation is associated with more delivery-room support in at-risk births [Aziz2008] and in at-risk births from 35 weeks [Santomartino2023; Badurdeen2021], but elective caesarean was protective in one cohort [Aziz2008], and the ERC/RCUK list names vaginal breech birth and caesarean before 39 weeks rather than breech caesarean [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Birth by vaginal breech",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "C-section before 39 weeks",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    },
+    {
+     "ref": "Santomartino2023",
+     "quote": "| Breech/transverse lie/unstable lief | 24(30) | 60(15) | 1.99(1.31–3.01) | 0.002 |  |  |",
+     "location": "Table 2 (crude risk ratio)"
+    },
+    {
+     "ref": "Santomartino2023",
+     "quote": "63 (81%) planned caesareans were for breech/transverse lie/unstable lie",
+     "location": "Table 2, footnote f"
+    },
+    {
+     "ref": "Santomartino2023",
+     "quote": "Planned CSf21(26)57(15)1.80(1.17–2.78)0.010",
+     "location": "Table 2 (crude risk ratio)"
+    },
+    {
+     "ref": "Badurdeen2021",
+     "quote": "| Breech/transverse lie | 45 | 12 (27) | 2.11 (1.18 to 3.78) | 0.015 | – | – |",
+     "location": "Table 2 (crude risk ratio)"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "intra-partum factors were preterm delivery at <36 weeks, breech presentation, meconium-stained amniotic fluid (MSAF), non-reassuring fetal heart rate, emergency Caesarean section (EmCS), shoulder dystocia, and opiates in normal labour.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "Elective Caesarean section (ElCS) was protective.",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "Level I: low risk for resuscitation / Attendance: NICU RN & RT / - Maternal meds: opiates/ SSRI/ Mg/ etc.",
+   "verdict": "concordant",
+   "summary": "Opiates in labour independently predicted PPV or intubation [Aziz2008], antenatal serotonin reuptake inhibitor exposure was associated with low Apgar scores in a meta-analysis of low-quality data [Kautzky2022], and delivery-room intubation rose with maternal serum magnesium after treatment for preeclampsia [AbbassiGhanavati2012], although antenatal magnesium was not associated with intubation in VLBW infants [Okito2023]; none of these drugs is in the ERC/RCUK risk-factor list, and \"etc.\" cannot be checked [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "Aziz2008",
+     "quote": "intra-partum factors were preterm delivery at <36 weeks, breech presentation, meconium-stained amniotic fluid (MSAF), non-reassuring fetal heart rate, emergency Caesarean section (EmCS), shoulder dystocia, and opiates in normal labour.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Kautzky2022",
+     "quote": "Meta-analytical evaluation showed increased symptom occurrence or severity in exposed neonates for low APGAR scores, birth weight, size for gestational age, preterm delivery, neuromuscular and autonomous regulation, and higher rates of admission to specialized care.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Kautzky2022",
+     "quote": "the clinical relevance remains unresolved because of inherently low data quality in this research domain and insufficiently defined samples and outcomes.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "AbbassiGhanavati2012",
+     "quote": "Lower 1-minute and 5-minute Apgar scores, intubation in the delivery room, admission to special care nursery, and hypotonia were all significantly increased as maternal serum magnesium concentrations increased before birth.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Okito2023",
+     "quote": "Regardless of dose or duration of infusion, antenatal MgSO4 exposure is not associated with increased intubation or mechanical ventilation early in life.",
+     "location": "Abstract, Conclusion"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "Level I: low risk for resuscitation / Attendance: NICU RN & RT / - Maternal exposure to illicit drugs (+U tox on admission)",
+   "verdict": "concordant",
+   "summary": "In a US single-site cohort, a methamphetamine-positive urine drug screen at delivery was associated with preterm birth (OR 3.10), lower 1- and 5-minute Apgar scores, abruption (OR 5.63) and perinatal mortality (OR 6.9) [Pham2020]; no retrieved study addressed other illicit drugs or delivery-room resuscitation directly, and illicit drug exposure is not in the ERC/RCUK risk-factor list [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "Pham2020",
+     "quote": "A methamphetamine-positive urine drug screen at the time of delivery carries an increased risk of abruption (odds ratio, 5.63; confidence interval, 1.21-26.21)",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Pham2020",
+     "quote": "Additional associated risks include preterm birth (odds ratio, 3.10; confidence interval, 1.44-6.68), lower Apgar scores at 1 and 5 minutes (P=.012 and P=.02, respectively), and increased perinatal mortality (odds ratio, 6.9; confidence interval, 1.01-47.4).",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "Level I: low risk for resuscitation / Attendance: NICU RN & RT / - Presence of meconium",
+   "verdict": "concordant",
+   "summary": "Meconium-stained amniotic fluid is a risk factor for advanced resuscitation in ILCOR 2025 and the ERC/RCUK list [Liley2025; RCUK2025] and predicted PPV in two cohorts (OR 8.53 in infants of 2,500 g or more) [Aziz2008; Sousa2016]; within meconium births, the need for resuscitation depended on added factors such as thick meconium and fetal distress [Chiruvolu2023], and meconium alone was not significant in one at-risk cohort [Santomartino2023].",
+   "evidence": [
+    {
+     "ref": "Liley2025",
+     "quote": "Meconium-stained amniotic fluid remains a significant risk factor for receiving advanced resuscitation in the delivery room.",
+     "location": "Meconium, Treatment Recommendations"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Meconium-stained amniotic fluid",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    },
+    {
+     "ref": "Sousa2016",
+     "quote": "Risk variables for positive-pressure ventilation at birth were a gestational age <37 weeks (OR: 3.54; 95% CI: 1.14-10.92) and meconium-stained amniotic fluid (8.53; 4.17-17.47).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "intra-partum factors were preterm delivery at <36 weeks, breech presentation, meconium-stained amniotic fluid (MSAF), non-reassuring fetal heart rate, emergency Caesarean section (EmCS), shoulder dystocia, and opiates in normal labour.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Chiruvolu2023",
+     "quote": "Logistic regression analysis revealed that among various perinatal factors, primigravida, thick meconium, fetal distress, chorioamnionitis, rupture of membranes ≥ 18 hours, post-term (gestational age ≥ 42 weeks), cesarean section or shoulder dystocia independently significantly increased the odds of a meconium-stained newborn needing resuscitation.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Santomartino2023",
+     "quote": "| - Meconium-stained amniotic fluid | 16(20) | 112(28) | 0.67(0.41–1.12) | 0.119 |  |  |",
+     "location": "Table 2 (crude risk ratio)"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "Level I: low risk for resuscitation / Attendance: NICU RN & RT / - No prenatal care",
+   "verdict": "insufficient",
+   "summary": "Lack of prenatal care was associated with more neonatal deaths in older US national data (RR 2.1 at 36 weeks or more) [Vintzileos2002], but no retrieved study examined delivery-room resuscitation need by prenatal-care status, and it is not in the ERC/RCUK risk-factor list [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "Vintzileos2002",
+     "quote": "Lack of prenatal care was associated with an increase in neonatal deaths, which was greater for infants born at > or =36 weeks of gestation (relative risk, 2.1; 95% CI, 1.8, 2.4).",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "Level I: low risk for resuscitation / Attendance: NICU RN & RT / - Multiples",
+   "verdict": "concordant",
+   "summary": "Multiple pregnancy is a guideline-listed risk factor for needing stabilisation or resuscitation [RCUK2025]; in one cohort the independent association with PPV or intubation was for multiple pregnancy under 35 weeks [Aziz2008], and second twins had lower cord pH and birth weight [Rahman2024].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Common factors associated with an increased risk of a need for stabilisation or resuscitation at birth.",
+     "location": "Factors before birth: risk factors table"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Multiple pregnancies",
+     "location": "Factors before birth: risk factors table (antepartum, fetal)"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "significant ante-partum risk factors for PPV-ETT included multiple pregnancy <35 weeks, maternal infection, hypertension, and oligohydramnios",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Rahman2024",
+     "quote": "The second twin is associated with lower birthweight, small for gestational age and arterial cord pH<7.25.",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD",
+   "verdict": "insufficient",
+   "summary": "Guidance asks for a team whose experience and training are proportionate to the expected risk, and higher-risk births are described as needing individuals with advanced resuscitation skills, but no retrieved source specifies a physician or a team composition for high-risk births [RCUK2025; Aziz2008].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "An interprofessional team with appropriate experience and training in NLS proportionate to the expected risk should attend the birth.",
+     "location": "Factors before birth: Staff attending births in hospital"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "Factors increasing need for resuscitation, and therefore for individuals with advanced resuscitation skills, require further evaluation.",
+     "location": "Abstract, Background"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "Given the baseline risk (22%), factors that increase need for resuscitation in a tertiary centre may not alter the practice of the NRT attending all \"at-risk\" deliveries, with the exception of ElCS.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - < 35 weeks GA",
+   "verdict": "concordant",
+   "summary": "Preterm birth is a guideline-listed risk factor [RCUK2025] and, with emergency caesarean, the main predictor of PPV or intubation, low Apgar scores and NICU admission or death [Aziz2008]; no retrieved source sets 35 weeks as the boundary between lower and higher risk.",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "< 37 weeks’ gestation",
+     "location": "Factors before birth: risk factors table (antepartum, fetal)"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "EmCS and preterm birth predicted PPV-ETT, low Apgar scores, and admission to neonatal intensive care (or death), and along with MSAF, made up the majority of \"at-risk\" babies.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Cortes2026",
+     "quote": "At 32 to 36 weeks, CANO occur in approximately 8% of neonates",
+     "location": "Abstract, Key points"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Category III FHR tracing",
+   "verdict": "concordant",
+   "summary": "Compared with Category I, Category III tracings at term had far higher rates of a 5-minute Apgar score under 7 (14.63% vs 0.74%) and of HIE (18.97% vs 0%), with wide confidence intervals [Zullo2023], and evidence of fetal compromise is a guideline-listed risk factor [RCUK2025]; at 32-36 weeks the association with composite adverse outcome was not significant [Cortes2026].",
+   "evidence": [
+    {
+     "ref": "Zullo2023",
+     "quote": "When compared with category I fetal heart rate tracings (0.74%), the incidence of an Apgar score <7 at 5 minutes were significantly higher among deliveries with category II fetal heart rate tracings (1.51%) (odds ratio, 1.56; 95% confidence interval, 1.23-1.99) and among those with category III tracings (14.63%) (odds ratio, 14.46; 95% confidence interval, 2.77-75.39).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Zullo2023",
+     "quote": "Hypoxic-ischemic encephalopathy occurred with similar frequency among those with categories I and those with category II tracings (0 vs 0.81%; odds ratio, 5.86; 95% confidence interval, 0.75-45.89) but was significantly more common among those with category III tracings (0 vs 18.97%; odds ratio, 61.43; 95% confidence interval, 7.49-503.50).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Evidence of fetal compromise",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    },
+    {
+     "ref": "Cortes2026",
+     "quote": "Category III FHRT pattern was also associated with an increased posttest probably of CANO (0.3 vs. 1.8%, p = 0.12, PLR = 5.39, PPTP = 27%).",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Vacuum / forceps delivery",
+   "verdict": "concordant",
+   "summary": "Forceps or vacuum delivery is in the ERC/RCUK risk-factor list [RCUK2025], but instrumental birth did not increase the need for PPV or intubation in at-risk births [Aziz2008] or for respiratory support in at-risk births from 35 weeks [Badurdeen2021], and was associated with less instability (crude RR 0.49), whereas difficult extraction roughly doubled the risk [Santomartino2023].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Forceps or vacuum delivery",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "Forceps, vacuum, and regional or general anaesthesia did not increase risk.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Badurdeen2021",
+     "quote": "| Instrumental | 113 | 4 (9) | 1.17 (0.14 to 10.1) | 0.887 | 1.34 (0.18 to 14.55) | 0.794 |",
+     "location": "Table 2 (crude and adjusted risk ratio vs unassisted vaginal birth)"
+    },
+    {
+     "ref": "Santomartino2023",
+     "quote": "Instrumental20(25)172(44)0.49(0.30–0.78)0.002",
+     "location": "Table 2 (crude risk ratio)"
+    },
+    {
+     "ref": "Santomartino2023",
+     "quote": "The risk of clinical instability was approximately doubled among infants whose mother had a medical pregnancy complication, infants who had a difficult extraction at birth, and infants born via unplanned caesarean section in labour, compared to infants who did not have these risk factors.",
+     "location": "Results, Table 2 text"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Vaginal breech",
+   "verdict": "concordant",
+   "summary": "Vaginal breech birth is in the ERC/RCUK risk-factor list [RCUK2025], and at term planned vaginal breech birth carried higher risks of perinatal death (RR 5.48), birth trauma and low Apgar scores than planned caesarean [FernandezCarrasco2022]; breech presentation independently predicted PPV or intubation [Aziz2008].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Birth by vaginal breech",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    },
+    {
+     "ref": "FernandezCarrasco2022",
+     "quote": "The relative risk of perinatal mortality was 5.48 (95% confidence interval (CI) = 2.61-11.51) times higher in the vaginal delivery group, 4.12 (95% CI = 2.46-6.89) for birth trauma and 3.33 (95% CI = 1.95-5.67) for Apgar results.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "intra-partum factors were preterm delivery at <36 weeks, breech presentation, meconium-stained amniotic fluid (MSAF), non-reassuring fetal heart rate, emergency Caesarean section (EmCS), shoulder dystocia, and opiates in normal labour.",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Urgent or Emergent C/S",
+   "verdict": "concordant",
+   "summary": "Emergency caesarean is in the ERC/RCUK risk-factor list [RCUK2025], predicted PPV or intubation, low Apgar scores and NICU admission or death [Aziz2008], and unplanned caesarean in labour was an independent risk factor for instability and respiratory support in at-risk births from 35 weeks [Santomartino2023; Badurdeen2021].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Emergency C-section",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "EmCS and preterm birth predicted PPV-ETT, low Apgar scores, and admission to neonatal intensive care (or death)",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Santomartino2023",
+     "quote": "Independent risk factors for clinical instability were labour without oxytocin administration, presence of a medical pregnancy complication, difficult extraction at birth and unplanned caesarean section in labour.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Badurdeen2021",
+     "quote": "| Unplanned CS in labour | 54 | 14 (32) | 8.56 (1.18 to 62.1) | 0.006 | 8.21 (1.85 to 25.61) | 0.027 |",
+     "location": "Table 2 (crude and adjusted risk ratio vs unassisted vaginal birth)"
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Hydrops with minimal fluid",
+   "verdict": "concordant",
+   "summary": "In non-immune hydrops, prognosis depends on factors including the number and types of effusions and the resuscitation required at birth, and multidisciplinary counselling with neonatology to plan the degree of neonatal resuscitation is recommended [Sparks2026; Dunn2024]; no retrieved source grades hydrops by effusion size into delivery-room team levels.",
+   "evidence": [
+    {
+     "ref": "Sparks2026",
+     "quote": "Comprehensive multidisciplinary counseling, including representatives from maternal‐fetal medicine and neonatology, is important to determine optimal management options for continuing pregnancies, such as mode of delivery, the gestational age at which neonatal resuscitation would be offered, the degree of neonatal resuscitation desired, plans for relevant neonatal interventions, and options for palliative care.",
+     "location": "Pregnancy management"
+    },
+    {
+     "ref": "Sparks2026",
+     "quote": "Among live births, the prognosis of NIHF has been reported to depend on the underlying etiology as well as additional factors, such as the presence of other anomalies or genetic diagnoses, number and types of fetal effusions, spontaneous improvement in fetal effusions, response to in utero interventions, gestational age at detection of NIHF, gestational age at delivery, birthweight, resuscitation required at birth, low serum albumin level, and the presence of severe acidemia",
+     "location": "Prognosis"
+    },
+    {
+     "ref": "Dunn2024",
+     "quote": "Prognosis depends on factors such as gestational age at diagnosis and the extent of resuscitation needed, with challenges remaining in improving outcomes for affected infants.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Mother under general anesthesia",
+   "verdict": "concordant",
+   "summary": "General anaesthesia is in the ERC/RCUK risk-factor list [RCUK2025], and a meta-analysis of 36 RCTs of caesarean delivery found respiratory support less often needed with regional anaesthesia (RR 0.62), with all trials at high or unclear risk of bias [Langer2026]; one older at-risk cohort found no added risk from general anaesthesia [Aziz2008].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "General anaesthesia",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    },
+    {
+     "ref": "Langer2026",
+     "quote": "Respiratory support was less often required with regional anesthesia (risk ratio, 0.62; 95% CI, 0.40 to 0.94; P = 0.03).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Langer2026",
+     "quote": "All studies had high or unclear risk of bias.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "Forceps, vacuum, and regional or general anaesthesia did not increase risk.",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Placenta previa",
+   "verdict": "partly_concordant",
+   "summary": "The ERC/RCUK risk-factor list names significant bleeding rather than placenta previa [RCUK2025], and among 493 previa cases neonatal asphyxia (about 3-fold) and NICU admission (about 2.5-fold) were higher in women with repeated antepartum bleeding than in those without bleeding [Huang2022].",
+   "note": "Current evidence suggests that in placenta previa the added neonatal risk is concentrated in pregnancies with repeated antepartum bleeding, with about threefold higher asphyxia and 2.5-fold higher NICU admission than previa without bleeding [Huang2022]. The ERC/RCUK risk-factor list names significant bleeding rather than previa itself [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Significant bleeding",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    },
+    {
+     "ref": "Huang2022",
+     "quote": "As for the neonatal outcomes, the risk of asphyxia was 2.970 times and the risk of neonatal intensive care unit (NICU) admission was 2.542-fold higher in repeated bleeding group compared to non-bleeding group, respectively.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Huang2022",
+     "quote": "These women have higher possibility of emergency C-section and need preterm newborn resuscitation.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Placental abruption",
+   "verdict": "concordant",
+   "summary": "Abruption was associated with more newborn resuscitation (RR 1.5), apnea and asphyxia in 223,341 US singleton deliveries [Downes2017], 29% of live-born infants after clinical abruption had HIE or died [Parc2023], and significant bleeding is a guideline-listed risk factor [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "Downes2017",
+     "quote": "Abruption was associated with an elevated risk of newborn resuscitation (relative risk (RR) = 1.5, 99% confidence interval (CI): 1.5, 1.6), apnea (RR = 5.8, 99% CI: 5.1, 6.5), asphyxia (RR = 8.5, 99% CI: 5.7, 11.3)",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Parc2023",
+     "quote": "Among 152 patients, the infants of 44 (29%) had HIE or death.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Significant bleeding",
+     "location": "Factors before birth: risk factors table (intrapartum)"
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Placenta percreta/ increta/ accreta",
+   "verdict": "concordant",
+   "summary": "Placenta accreta spectrum births had more composite adverse neonatal outcomes (33.6% vs 18.7%), low 5-minute Apgar scores and NICU admission than matched controls, and 73.2% were under general anaesthesia; mechanical ventilation (9.8% vs 3.8%) was not independently associated after adjustment [ToussiaCohen2024].",
+   "evidence": [
+    {
+     "ref": "ToussiaCohen2024",
+     "quote": "In the PAS group compared with controls, the rate of composite adverse neonatal outcomes was significantly higher (33.6% vs. 18.7%, respectively, p < 0.001).",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "ToussiaCohen2024",
+     "quote": "In a multivariable logistic regression analysis, Apgar score < 7 at 5 min, NICU admission and composite adverse neonatal outcome were independently associated with PAS.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "ToussiaCohen2024",
+     "quote": "had higher rates of general anesthesia in the current CD (73.2% vs. 16.3%, respectively, p < 0.001)",
+     "location": "Results, maternal characteristics"
+    },
+    {
+     "ref": "ToussiaCohen2024",
+     "quote": "NICU admission (29.8% vs. 18.2%, respectively, p < 0.001), mechanical ventilation (9.8% vs. 3.8%, respectively, p < 0.001)",
+     "location": "Results, neonatal outcomes"
+    },
+    {
+     "ref": "ToussiaCohen2024",
+     "quote": "| Mechanical ventilationc | 1.58 | 0.77–3.24 | 0.213 |",
+     "location": "Table 3 (adjusted odds ratio)"
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Shoulder dystocia",
+   "verdict": "concordant",
+   "summary": "Shoulder dystocia independently predicted PPV or intubation in at-risk deliveries [Aziz2008] and the need for resuscitation in infants born through meconium-stained fluid [Chiruvolu2023]; it is not named in the ERC/RCUK risk-factor list [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "Aziz2008",
+     "quote": "intra-partum factors were preterm delivery at <36 weeks, breech presentation, meconium-stained amniotic fluid (MSAF), non-reassuring fetal heart rate, emergency Caesarean section (EmCS), shoulder dystocia, and opiates in normal labour.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Chiruvolu2023",
+     "quote": "cesarean section or shoulder dystocia independently significantly increased the odds of a meconium-stained newborn needing resuscitation.",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "c23",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Cardiac dysrhythmia (tachyarrhythmia, bradycardia, heart block, etc.)",
+   "verdict": "concordant",
+   "summary": "In an 11-year single-centre series of congenital complete heart block, 10 of 14 infants needed delivery-room respiratory support and two needed intubation, pacing and isoproterenol [Sarrato2026], and an AHA statement describes delivery-room planning for fetal cardiac disease by severity [Donofrio2014]; no retrieved source addressed fetal tachyarrhythmia or other rhythm disorders.",
+   "evidence": [
+    {
+     "ref": "Sarrato2026",
+     "quote": "Respiratory support in the delivery room was required in 10/14 infants. Two infants with severe cardiorespiratory instability required intubation, TCP, and isoproterenol in the delivery room.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Sarrato2026",
+     "quote": "Newborns with CCHB may require advanced stabilization at birth.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Donofrio2014",
+     "quote": "Recommendations for delivery planning strategies for fetuses with congenital heart disease including models based on classification of disease severity and delivery room treatment will be highlighted.",
+     "location": "Abstract, Methods and Results"
+    }
+   ]
+  },
+  {
+   "id": "c24",
+   "manual_text": "Level II: high risk for resuscitation / Attendance: NICU RN, RT and MD / - Eclampsia",
+   "verdict": "concordant",
+   "summary": "Compared with preeclampsia, eclampsia was associated with low cord arterial pH, low 5-minute Apgar scores, respiratory distress syndrome (OR 5.5) and seizures [Lal2013], prolonged fetal decelerations followed 79% of eclamptic seizures [Ambia2022], and pre-eclampsia is a guideline-listed risk factor [RCUK2025].",
+   "evidence": [
+    {
+     "ref": "Lal2013",
+     "quote": "A multivariate analysis revealed that low cord arterial pH, low 5min Apgar score, respiratory distress syndrome OR 5.5, (1.11-27.66) and seizures OR 10.3 (3.12-33.68), p<0.05, were significantly elevated in the eclampsia cohort.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Ambia2022",
+     "quote": "After an eclamptic seizure, 79% of fetuses demonstrated prolonged decelerations, and half of the fetuses developed fetal tachycardia after recovery from the episode of bradycardia.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Pre-eclampsia",
+     "location": "Factors before birth: risk factors table (antepartum, maternal)"
+    }
+   ]
+  },
+  {
+   "id": "c25",
+   "manual_text": "Level III: complex resuscitation / Attendance: 2 NICU RNs, RT, and MD",
+   "verdict": "insufficient",
+   "summary": "Guidance asks for a team proportionate to the expected risk, senior clinicians in decisions on extremely preterm or clinically complex infants, and a team briefing when resuscitation is anticipated, but no retrieved source gives a team size or composition for complex resuscitations [RCUK2025; Liley2025].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "An interprofessional team with appropriate experience and training in NLS proportionate to the expected risk should attend the birth.",
+     "location": "Factors before birth: Staff attending births in hospital"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "The decision to attempt resuscitation of an extremely preterm or clinically complex infant should be taken in close consultation with the parents and senior clinicians, e.g. paediatricians, midwives, and obstetricians.",
+     "location": "Communication with the parents: Where intervention is anticipated"
+    },
+    {
+     "ref": "Liley2025",
+     "quote": "Whenever the need for resuscitation of a newborn is anticipated, there should be a briefing of the neonatal team that includes communication with the obstetric and/or midwifery team to inform the neonatal management plan (good practice statement).",
+     "location": "Anticipation and Preparation (NLS 5002), Treatment Recommendation (2025)"
+    }
+   ]
+  },
+  {
+   "id": "c26",
+   "manual_text": "Level III: complex resuscitation / Attendance: 2 NICU RNs, RT, and MD / - 2 RNs & 2 RTs **required** for < 25 weeks GA unless staffing shortage",
+   "verdict": "insufficient",
+   "summary": "Team composition and experience are described as important for periviable births, but resuscitation data below 25 weeks are scarce and no retrieved guideline, trial or published protocol specifies the number of nurses or respiratory therapists [RCUK2025; Wyckoff2014].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "An interprofessional team with appropriate experience and training in NLS proportionate to the expected risk should attend the birth.",
+     "location": "Factors before birth: Staff attending births in hospital"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "The guideline acknowledges the paucity of resuscitation data available from extremely preterm infants, especially those < 25 weeks",
+     "location": "Key points"
+    },
+    {
+     "ref": "Wyckoff2014",
+     "quote": "The importance of delivery at a tertiary center with adequate experience, resuscitation team composition, and training for a periviable birth is reviewed.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Wyckoff2014",
+     "quote": "There is a paucity of data to support recommendations for stabilization and resuscitation of the periviable neonate in the delivery room.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c27",
+   "manual_text": "Level III: complex resuscitation / Attendance: 2 NICU RNs, RT, and MD / - 2 RNs & 2 RTs recommended for 25 - 27 weeks GA",
+   "verdict": "insufficient",
+   "summary": "Guidance asks for a team proportionate to the expected risk, but no retrieved source addresses team size for births at 25-27 weeks [RCUK2025; Wyckoff2014].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "An interprofessional team with appropriate experience and training in NLS proportionate to the expected risk should attend the birth.",
+     "location": "Factors before birth: Staff attending births in hospital"
+    },
+    {
+     "ref": "Wyckoff2014",
+     "quote": "The importance of delivery at a tertiary center with adequate experience, resuscitation team composition, and training for a periviable birth is reviewed.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c28",
+   "manual_text": "Level III: complex resuscitation / Attendance: 2 NICU RNs, RT, and MD / - Hydrops with projected need for tapping",
+   "verdict": "concordant",
+   "summary": "The SMFM consult series notes that draining a large fetal pleural effusion or ascites before delivery may be considered to improve the efficacy of neonatal resuscitation [Sparks2026], and neonatal care of hydrops includes treating fluid collections [Dunn2024]; no source specifies the delivery-room team for postnatal drainage.",
+   "evidence": [
+    {
+     "ref": "Sparks2026",
+     "quote": "Prior to delivery of the hydropic fetus, consideration can be given to whether drainage of a fetal effusion (such as a large pleural effusion or ascites) will prevent dystocia or improve the efficacy of neonatal resuscitative efforts.",
+     "location": "Delivery"
+    },
+    {
+     "ref": "Dunn2024",
+     "quote": "neonatal care involves assessing and treating fluid collections and identifying underlying causes.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c29",
+   "manual_text": "Level III: complex resuscitation / Attendance: 2 NICU RNs, RT, and MD / - Multiple congenital defects",
+   "verdict": "concordant",
+   "summary": "Serious congenital abnormality is a guideline-listed risk factor for needing stabilisation or resuscitation and can make tracheal intubation impossible or unsafe [RCUK2025], and newborns with congenital anomalies need special considerations during resuscitation [Ali2022]; no source treats multiple defects as a separate category.",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Serious congenital abnormality",
+     "location": "Factors before birth: risk factors table (antepartum, fetal)"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Where tracheal intubation is not possible or deemed unsafe because of a congenital abnormality, a lack of equipment, or a lack of skill.",
+     "location": "Airway"
+    },
+    {
+     "ref": "Ali2022",
+     "quote": "Special considerations are needed when resuscitating newborns in locations other than the delivery room and for newborns with congenital anomalies.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c30",
+   "manual_text": "Level III: complex resuscitation / Attendance: 2 NICU RNs, RT, and MD / - Projected severe/ compromised/ lethal outcome",
+   "verdict": "concordant",
+   "summary": "For births with anticipated poor or life-limiting outcomes, guidance supports antenatal palliative care, a coordinated birth plan with newborn caregivers, and involvement of senior paediatric or neonatal staff when resuscitation is withheld or discontinued [RCUK2025; Garten2022]; no source addresses the size of the attending team.",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "When discontinuing, withdrawing or withholding resuscitation, care should be focused on the comfort and dignity of the infant and family and should ideally involve senior paediatric/neonatal staff.",
+     "location": "Withholding or discontinuing resuscitation"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Provision of antenatal palliative care support can be beneficial to parents in the face of certain or uncertain poor outcomes.",
+     "location": "Withholding or discontinuing resuscitation"
+    },
+    {
+     "ref": "Garten2022",
+     "quote": "the development of a coordinated birth plan between the family, their obstetrician, and newborn caregivers; accessibility when needed to additional neonatal and pediatric specialists",
+     "location": "Section 3, perinatal palliative care"
+    }
+   ]
+  }
+ ],
+ "omissions": [
+  {
+   "id": "o1",
+   "related_claim": "c2",
+   "topic": "Maternal infection",
+   "note": "Current evidence suggests that maternal infection is a listed risk factor for needing stabilisation or resuscitation at birth [RCUK2025] and independently predicted PPV or intubation in at-risk deliveries [Aziz2008]; chorioamnionitis also raised the odds of resuscitation in meconium births [Chiruvolu2023].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Infection",
+     "location": "Factors before birth: risk factors table (antepartum, maternal)"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "significant ante-partum risk factors for PPV-ETT included multiple pregnancy <35 weeks, maternal infection, hypertension, and oligohydramnios",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Chiruvolu2023",
+     "quote": "Logistic regression analysis revealed that among various perinatal factors, primigravida, thick meconium, fetal distress, chorioamnionitis, rupture of membranes ≥ 18 hours, post-term (gestational age ≥ 42 weeks), cesarean section or shoulder dystocia independently significantly increased the odds of a meconium-stained newborn needing resuscitation.",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "related_claim": "c2",
+   "topic": "Oligohydramnios or polyhydramnios",
+   "note": "Current evidence suggests that oligohydramnios and polyhydramnios are listed risk factors for needing stabilisation or resuscitation at birth [RCUK2025], and oligohydramnios independently predicted PPV or intubation in at-risk deliveries [Aziz2008].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Oligo and polyhydramnios",
+     "location": "Factors before birth: risk factors table (antepartum, fetal)"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "significant ante-partum risk factors for PPV-ETT included multiple pregnancy <35 weeks, maternal infection, hypertension, and oligohydramnios",
+     "location": "Abstract, Results"
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "related_claim": "c24",
+   "topic": "Maternal hypertension and pre-eclampsia",
+   "note": "Current evidence suggests that pregnancy-induced hypertension and pre-eclampsia, not only eclampsia, are listed risk factors for needing stabilisation or resuscitation at birth [RCUK2025], and maternal hypertension independently predicted PPV or intubation in at-risk deliveries [Aziz2008].",
+   "evidence": [
+    {
+     "ref": "RCUK2025",
+     "quote": "Pregnancy-induced hypertension",
+     "location": "Factors before birth: risk factors table (antepartum, maternal)"
+    },
+    {
+     "ref": "RCUK2025",
+     "quote": "Pre-eclampsia",
+     "location": "Factors before birth: risk factors table (antepartum, maternal)"
+    },
+    {
+     "ref": "Aziz2008",
+     "quote": "significant ante-partum risk factors for PPV-ETT included multiple pregnancy <35 weeks, maternal infection, hypertension, and oligohydramnios",
+     "location": "Abstract, Results"
+    }
+   ]
+  }
+ ],
+ "references": [
+  {
+   "key": "Lee2025",
+   "role": "source",
+   "authors": "Lee HC, Strand ML, Finan E, et al.",
+   "title": "Part 5: Neonatal Resuscitation: 2025 American Heart Association and American Academy of Pediatrics Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care",
+   "journal": "Circulation",
+   "year": "2025",
+   "volume": "152",
+   "issue": "16_suppl_2",
+   "pages": "S385-S423",
+   "doi": "10.1161/CIR.0000000000001367",
+   "pmid": "41122887",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41122887/",
+    "https://api.crossref.org/works/10.1161/CIR.0000000000001367"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Liley2025",
+   "role": "source",
+   "authors": "Liley HG, Weiner GM, Wyckoff MH, et al.",
+   "title": "Neonatal Life Support: 2025 International Liaison Committee on Resuscitation Consensus on Science With Treatment Recommendations",
+   "journal": "Circulation",
+   "year": "2025",
+   "volume": "152",
+   "issue": "16_suppl_1",
+   "pages": "S165-S204",
+   "doi": "10.1161/CIR.0000000000001363",
+   "pmid": "41122846",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41122846/",
+    "https://api.crossref.org/works/10.1161/CIR.0000000000001363"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Aziz2008",
+   "role": "source",
+   "authors": "Aziz K, Chadwick M, Baker M, Andrews W",
+   "title": "Ante- and intra-partum factors that predict increased need for neonatal resuscitation",
+   "journal": "Resuscitation",
+   "year": "2008",
+   "volume": "79",
+   "issue": "3",
+   "pages": "444-452",
+   "doi": "10.1016/j.resuscitation.2008.08.004",
+   "pmid": "18952348",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/18952348/",
+    "https://api.crossref.org/works/10.1016/j.resuscitation.2008.08.004"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Santomartino2023",
+   "role": "source",
+   "authors": "Santomartino GA, Blank DA, Heng A, et al.",
+   "title": "Perinatal predictors of clinical instability at birth in late-preterm and term infants",
+   "journal": "Eur J Pediatr",
+   "year": "2023",
+   "volume": "182",
+   "issue": "3",
+   "pages": "987-995",
+   "doi": "10.1007/s00431-022-04684-5",
+   "pmid": "36418782",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36418782/",
+    "https://api.crossref.org/works/10.1007/s00431-022-04684-5"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Badurdeen2021",
+   "role": "source",
+   "authors": "Badurdeen S, Santomartino GA, Thio M, et al.",
+   "title": "Respiratory support after delayed cord clamping: a prospective cohort study of at-risk births at ≥35(+0) weeks gestation",
+   "journal": "Arch Dis Child Fetal Neonatal Ed",
+   "year": "2021",
+   "volume": "106",
+   "issue": "6",
+   "pages": "627-634",
+   "doi": "10.1136/archdischild-2020-321503",
+   "pmid": "34112723",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34112723/",
+    "https://api.crossref.org/works/10.1136/archdischild-2020-321503"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Sousa2016",
+   "role": "source",
+   "authors": "Sousa JR, Leite ÁJ, Sanudo A, Guinsburg R",
+   "title": "Factors associated with the need for ventilation at birth of neonates weighing ≥2,500 g",
+   "journal": "Clinics (Sao Paulo)",
+   "year": "2016",
+   "volume": "71",
+   "issue": "7",
+   "pages": "381-386",
+   "doi": "10.6061/clinics/2016(07)05",
+   "pmid": "27464294",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/27464294/",
+    "https://api.crossref.org/works/10.6061/clinics/2016(07)05"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Chiruvolu2023",
+   "role": "source",
+   "authors": "Chiruvolu A, Fine S, Miklis KK, Desai S",
+   "title": "Perinatal risk factors associated with the need for resuscitation in newborns born through meconium-stained amniotic fluid",
+   "journal": "Resuscitation",
+   "year": "2023",
+   "volume": "185",
+   "issue": "",
+   "pages": "109728",
+   "doi": "10.1016/j.resuscitation.2023.109728",
+   "pmid": "36773837",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36773837/",
+    "https://api.crossref.org/works/10.1016/j.resuscitation.2023.109728"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Jindal2023",
+   "role": "source",
+   "authors": "Jindal S, Steer PJ, Savvidou M, et al.",
+   "title": "Risk factors for a serious adverse outcome in neonates: a retrospective cohort study of vaginal births",
+   "journal": "BJOG",
+   "year": "2023",
+   "volume": "130",
+   "issue": "12",
+   "pages": "1521-1530",
+   "doi": "10.1111/1471-0528.17531",
+   "pmid": "37156754",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37156754/",
+    "https://api.crossref.org/works/10.1111/1471-0528.17531"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Kautzky2022",
+   "role": "source",
+   "authors": "Kautzky A, Slamanig R, Unger A, Höflich A",
+   "title": "Neonatal outcome and adaption after in utero exposure to antidepressants: A systematic review and meta-analysis",
+   "journal": "Acta Psychiatr Scand",
+   "year": "2022",
+   "volume": "145",
+   "issue": "1",
+   "pages": "6-28",
+   "doi": "10.1111/acps.13367",
+   "pmid": "34486740",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34486740/",
+    "https://api.crossref.org/works/10.1111/acps.13367"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "AbbassiGhanavati2012",
+   "role": "source",
+   "authors": "Abbassi-Ghanavati M, Alexander JM, McIntire DD, Savani RC, Leveno KJ",
+   "title": "Neonatal effects of magnesium sulfate given to the mother",
+   "journal": "Am J Perinatol",
+   "year": "2012",
+   "volume": "29",
+   "issue": "10",
+   "pages": "795-799",
+   "doi": "10.1055/s-0032-1316440",
+   "pmid": "22773290",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/22773290/",
+    "https://api.crossref.org/works/10.1055/s-0032-1316440"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Okito2023",
+   "role": "source",
+   "authors": "Okito O, Aromolaran A, Massa-Buck B, Abdelatif D, Aly H, Mohamed MA",
+   "title": "Antenatal magnesium sulfate and the need for mechanical ventilation in the first three days of life",
+   "journal": "Pediatr Neonatol",
+   "year": "2023",
+   "volume": "64",
+   "issue": "6",
+   "pages": "644-650",
+   "doi": "10.1016/j.pedneo.2022.10.008",
+   "pmid": "37280122",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37280122/",
+    "https://api.crossref.org/works/10.1016/j.pedneo.2022.10.008"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Pham2020",
+   "role": "source",
+   "authors": "Pham T, Tinajero Y, Mo L, et al.",
+   "title": "Obstetrical and perinatal outcomes of patients with methamphetamine-positive drug screen on labor and delivery",
+   "journal": "Am J Obstet Gynecol MFM",
+   "year": "2020",
+   "volume": "2",
+   "issue": "4",
+   "pages": "100195",
+   "doi": "10.1016/j.ajogmf.2020.100195",
+   "pmid": "33345915",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33345915/",
+    "https://api.crossref.org/works/10.1016/j.ajogmf.2020.100195"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Vintzileos2002",
+   "role": "source",
+   "authors": "Vintzileos AM, Ananth CV, Smulian JC, Scorza WE, Knuppel RA",
+   "title": "The impact of prenatal care on neonatal deaths in the presence and absence of antenatal high-risk conditions",
+   "journal": "Am J Obstet Gynecol",
+   "year": "2002",
+   "volume": "186",
+   "issue": "5",
+   "pages": "1011-1016",
+   "doi": "10.1067/mob.2002.122446",
+   "pmid": "12015529",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/12015529/",
+    "https://api.crossref.org/works/10.1067/mob.2002.122446"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Rahman2024",
+   "role": "source",
+   "authors": "Rahman RA, Mohammed Nawi A, Ishak S, et al.",
+   "title": "Second twin outcome at birth: retrospective analysis in a single tertiary centre in Malaysia",
+   "journal": "J Perinat Med",
+   "year": "2024",
+   "volume": "52",
+   "issue": "4",
+   "pages": "385-391",
+   "doi": "10.1515/jpm-2023-0449",
+   "pmid": "38511669",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38511669/",
+    "https://api.crossref.org/works/10.1515/jpm-2023-0449"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Zullo2023",
+   "role": "source",
+   "authors": "Zullo F, Di Mascio D, Raghuraman N, et al.",
+   "title": "Three-tiered fetal heart rate interpretation system and adverse neonatal and maternal outcomes: a systematic review and meta-analysis",
+   "journal": "Am J Obstet Gynecol",
+   "year": "2023",
+   "volume": "229",
+   "issue": "4",
+   "pages": "377-387",
+   "doi": "10.1016/j.ajog.2023.04.008",
+   "pmid": "37044237",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37044237/",
+    "https://api.crossref.org/works/10.1016/j.ajog.2023.04.008"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Cortes2026",
+   "role": "source",
+   "authors": "Cortes CN, Cagino KA, Roberts AW, et al.",
+   "title": "Association of Fetal Heart Rate Tracing with Adverse Neonatal Outcomes at 320/7 to 366/7 Weeks",
+   "journal": "Am J Perinatol",
+   "year": "2026",
+   "volume": "43",
+   "issue": "10",
+   "pages": "1299-1307",
+   "doi": "10.1055/a-2748-7043",
+   "pmid": "41253280",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41253280/",
+    "https://api.crossref.org/works/10.1055/a-2748-7043"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "FernandezCarrasco2022",
+   "role": "source",
+   "authors": "Fernández-Carrasco FJ, Cristóbal-Cañadas D, Gómez-Salgado J, Vázquez-Lara JM, Rodríguez-Díaz L, Parrón-Carreño T",
+   "title": "Maternal and fetal risks of planned vaginal breech delivery vs planned caesarean section for term breech birth: A systematic review and meta-analysis",
+   "journal": "J Glob Health",
+   "year": "2022",
+   "volume": "12",
+   "issue": "",
+   "pages": "04055",
+   "doi": "10.7189/jogh.12.04055",
+   "pmid": "35976004",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35976004/",
+    "https://api.crossref.org/works/10.7189/jogh.12.04055"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Langer2026",
+   "role": "source",
+   "authors": "Langer S, Lim G, Qiu Y, Biaesch J, Neuman MD",
+   "title": "Neonatal Outcomes with Regional versus General Anesthesia for Cesarean Delivery: A Meta-analysis of Randomized Controlled Trials",
+   "journal": "Anesthesiology",
+   "year": "2026",
+   "volume": "144",
+   "issue": "2",
+   "pages": "325-336",
+   "doi": "10.1097/ALN.0000000000005785",
+   "pmid": "41051355",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41051355/",
+    "https://api.crossref.org/works/10.1097/ALN.0000000000005785"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Huang2022",
+   "role": "source",
+   "authors": "Huang S, Zuo Q, Wang T, et al.",
+   "title": "Maternal and neonatal outcomes of repeated antepartum bleeding in 493 placenta previa cases: a retrospective study",
+   "journal": "J Matern Fetal Neonatal Med",
+   "year": "2022",
+   "volume": "35",
+   "issue": "25",
+   "pages": "5318-5323",
+   "doi": "10.1080/14767058.2021.1878495",
+   "pmid": "33522347",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/33522347/",
+    "https://api.crossref.org/works/10.1080/14767058.2021.1878495"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Downes2017",
+   "role": "source",
+   "authors": "Downes KL, Shenassa ED, Grantz KL",
+   "title": "Neonatal Outcomes Associated With Placental Abruption",
+   "journal": "Am J Epidemiol",
+   "year": "2017",
+   "volume": "186",
+   "issue": "12",
+   "pages": "1319-1328",
+   "doi": "10.1093/aje/kwx202",
+   "pmid": "28595292",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/28595292/",
+    "https://api.crossref.org/works/10.1093/aje/kwx202"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Parc2023",
+   "role": "source",
+   "authors": "Parc E, Benin A, Lecarpentier E, Goffinet F, Lepercq J",
+   "title": "Risk factors for hypoxic-ischemic encephalopathy or neonatal death in placental abruption",
+   "journal": "J Gynecol Obstet Hum Reprod",
+   "year": "2023",
+   "volume": "52",
+   "issue": "1",
+   "pages": "102498",
+   "doi": "10.1016/j.jogoh.2022.102498",
+   "pmid": "36336280",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36336280/",
+    "https://api.crossref.org/works/10.1016/j.jogoh.2022.102498"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "ToussiaCohen2024",
+   "role": "source",
+   "authors": "Toussia-Cohen S, Castel E, Friedrich L, et al.",
+   "title": "Neonatal outcomes in pregnancies complicated by placenta accreta- a matched cohort study",
+   "journal": "Arch Gynecol Obstet",
+   "year": "2024",
+   "volume": "310",
+   "issue": "1",
+   "pages": "269-275",
+   "doi": "10.1007/s00404-023-07353-6",
+   "pmid": "38260996",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38260996/",
+    "https://api.crossref.org/works/10.1007/s00404-023-07353-6"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Sparks2026",
+   "role": "source",
+   "authors": "Sparks TN, Norton ME",
+   "title": "Society for Maternal-Fetal Medicine Consult Series #75: Evaluation and management of non-immune hydrops fetalis",
+   "journal": "Pregnancy (Hoboken)",
+   "year": "2026",
+   "volume": "2",
+   "issue": "2",
+   "pages": "e70208",
+   "doi": "10.1002/pmf2.70208",
+   "pmid": "42596935",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42596935/",
+    "https://api.crossref.org/works/10.1002/pmf2.70208"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Dunn2024",
+   "role": "source",
+   "authors": "Dunn SB, Whittington JR",
+   "title": "Nonimmune Hydrops Fetalis",
+   "journal": "Neoreviews",
+   "year": "2024",
+   "volume": "25",
+   "issue": "8",
+   "pages": "e475-e485",
+   "doi": "10.1542/neo.25-8-e475",
+   "pmid": "39085173",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/39085173/",
+    "https://api.crossref.org/works/10.1542/neo.25-8-e475"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Donofrio2014",
+   "role": "source",
+   "authors": "Donofrio MT, Moon-Grady AJ, Hornberger LK, et al.",
+   "title": "Diagnosis and treatment of fetal cardiac disease: a scientific statement from the American Heart Association",
+   "journal": "Circulation",
+   "year": "2014",
+   "volume": "129",
+   "issue": "21",
+   "pages": "2183-2242",
+   "doi": "10.1161/01.cir.0000437597.44550.5d",
+   "pmid": "24763516",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24763516/",
+    "https://api.crossref.org/works/10.1161/01.cir.0000437597.44550.5d"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Sarrato2026",
+   "role": "source",
+   "authors": "Sarrato SEZ, Martín TÁ, Chamorro IP, Sarrato GZ, Bravo DB, Luna MS",
+   "title": "Perinatal management and delivery-room stabilization in congenital complete heart block: an 11-year experience at a tertiary center",
+   "journal": "Eur J Pediatr",
+   "year": "2026",
+   "volume": "185",
+   "issue": "11",
+   "pages": "848",
+   "doi": "10.1007/s00431-026-07532-y",
+   "pmid": "42878774",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42878774/",
+    "https://api.crossref.org/works/10.1007/s00431-026-07532-y"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Wyckoff2014",
+   "role": "source",
+   "authors": "Wyckoff MH",
+   "title": "Initial resuscitation and stabilization of the periviable neonate: the Golden-Hour approach",
+   "journal": "Semin Perinatol",
+   "year": "2014",
+   "volume": "38",
+   "issue": "1",
+   "pages": "12-16",
+   "doi": "10.1053/j.semperi.2013.07.003",
+   "pmid": "24468564",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24468564/",
+    "https://api.crossref.org/works/10.1053/j.semperi.2013.07.003"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Ali2022",
+   "role": "source",
+   "authors": "Ali N, Sawyer T",
+   "title": "Special consideration in neonatal resuscitation",
+   "journal": "Semin Perinatol",
+   "year": "2022",
+   "volume": "46",
+   "issue": "6",
+   "pages": "151626",
+   "doi": "10.1016/j.semperi.2022.151626",
+   "pmid": "35738945",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35738945/",
+    "https://api.crossref.org/works/10.1016/j.semperi.2022.151626"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Garten2022",
+   "role": "source",
+   "authors": "Garten L, von der Hude K",
+   "title": "Palliative Care in the Delivery Room: Challenges and Recommendations",
+   "journal": "Children (Basel)",
+   "year": "2022",
+   "volume": "10",
+   "issue": "1",
+   "pages": "15",
+   "doi": "10.3390/children10010015",
+   "pmid": "36670565",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36670565/",
+    "https://api.crossref.org/works/10.3390/children10010015"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "RCUK2025",
+   "role": "context",
+   "citation": "Resuscitation Council UK. Newborn resuscitation and support of transition of infants at birth Guidelines (2025 Resuscitation Guidelines; based on ERC Guidelines 2025, Hogeveen M et al.). Published 27 October 2025.",
+   "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/newborn-resuscitation-and-support-transition-infants-birth",
+   "doi": null,
+   "verified_against": [
+    "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/newborn-resuscitation-and-support-transition-infants-birth"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Lal2013",
+   "role": "source",
+   "authors": "Lal AK, Gao W, Hibbard JU",
+   "title": "Eclampsia: Maternal and neonatal outcomes",
+   "journal": "Pregnancy Hypertens",
+   "year": "2013",
+   "volume": "3",
+   "issue": "3",
+   "pages": "186-190",
+   "doi": "10.1016/j.preghy.2013.04.013",
+   "pmid": "26106032",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/26106032/",
+    "https://api.crossref.org/works/10.1016/j.preghy.2013.04.013"
+   ],
+   "verified_date": "2026-11-08"
+  },
+  {
+   "key": "Ambia2022",
+   "role": "source",
+   "authors": "Ambia AM, Wells CE, Yule CS, McIntire DD, Cunningham FG",
+   "title": "Fetal heart rate tracings associated with eclamptic seizures",
+   "journal": "Am J Obstet Gynecol",
+   "year": "2022",
+   "volume": "227",
+   "issue": "4",
+   "pages": "622.e1-622.e6",
+   "doi": "10.1016/j.ajog.2022.05.058",
+   "pmid": "35662632",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35662632/",
+    "https://api.crossref.org/works/10.1016/j.ajog.2022.05.058"
+   ],
+   "verified_date": "2026-11-08"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 3,
+  "date": "2026-11-08",
+  "quotes_checked": 240,
+  "references_verified": 32,
+  "known_limitations": [
+   {
+    "item": "Sparks2026",
+    "note": "Collective authors: PubMed (PMID 42596935) and CrossRef list 'Society for Maternal-Fetal Medicine (SMFM)' first, then Sparks TN, Norton ME, then 'SMFM Publications Committee' last. refs.py cannot represent a leading collective (corporate) author, so its first-author MISMATCH for this entry is expected; DOI, PMID, title, journal, volume, issue and pages match. The Reviewer's requested fix (authors 'Sparks TN, Norton ME, et al.' plus a note field) could not be applied: refs.py has no command or option to set an entry's authors or note (build formats authors from PubMed; add-manual takes only key, citation, url, doi, role), and refs.json is never hand-edited. refs.json is therefore unchanged and still lists 'Sparks TN, Norton ME', which also leaves the WARN 'CrossRef lists 4 authors; entry lists 2 without et al.'."
+   },
+   {
+    "item": "Lee2025 (AHA/AAP 2025 neonatal resuscitation guideline)",
+    "note": "Full text refused (cpr.heart.org HTTP 403; an ahajournals.org fetch was blocked as bot-check circumvention); read as abstract only, so US guidance on risk factors and on who attends births could not be checked. A factor absent from the RCUK 2025 list was not treated as absent from US guidance."
+   },
+   {
+    "item": "PDF postcard link",
+    "note": "Not checkable (link)."
+   },
+   {
+    "item": "Team composition",
+    "note": "No retrieved source names professions or staff counts, so the attendance lines (c1, c2, c11, c25) and the 2 RN / 2 RT items (c26, c27) are insufficient."
+   },
+   {
+    "item": "Round 1 suggested items",
+    "note": "Not applied: RCUK table quotes for c6, c7, c9 and c22 (summaries cite RCUK for an item's absence from its list), some finer locations."
+   }
+  ]
+ }
+}
