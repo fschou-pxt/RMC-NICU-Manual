@@ -1,0 +1,736 @@
+{
+ "chapter": "renal-urology",
+ "section": "Hydronephrosis",
+ "anchor": "renal-urology.html#hydronephrosis",
+ "source": {
+  "file": "site/src/content/docs/renal-urology.mdx",
+  "lines": "6-47",
+  "manual_commit": "398c583"
+ },
+ "checked": "2026-11-10",
+ "generated_with": "Researcher: Claude Opus 5.5 (claude-opus-5-5); Comparer: Claude Opus 5.5 (claude-opus-5-5); Reviewer: Claude Opus 5.5 (claude-opus-5-5)",
+ "triage": {
+  "clinical": 13,
+  "operational": 3,
+  "definition": 0,
+  "context": 1
+ },
+ "scope": {
+  "population": "Newborns with prenatally detected (antenatal) hydronephrosis, without gestational-age or weight limits, from the birth hospitalization (NICU or newborn nursery) through outpatient follow-up in early infancy (the section's last scheduled scan is at 3 months of age); no source gives separate recommendations for preterm infants.",
+  "topic": "Postnatal ultrasound follow-up, VCUG indications and timing, peri-VCUG and continuous antibiotic prophylaxis, and pediatric urology referral for antenatal hydronephrosis graded by APD.",
+  "basis": "Headings \"## Hydronephrosis\" and \"### Prenatal Hydronephrosis\" (lines 6-8); lines 10-25 address babies after a prenatal ultrasound finding, in the NICU/newborn nursery and as outpatients.",
+  "set_aside": [
+   {
+    "ref": "Sinha2018",
+    "population": "120 children aged 2 months-5 years (median 8 months) undergoing VCUG, most for prior UTI",
+    "reason": "No neonates; infants with antenatal hydronephrosis are not reported separately"
+   },
+   {
+    "ref": "Johnson2017",
+    "population": "1108 children (median age 1.1 years) undergoing cystography",
+    "reason": "Older children; newborns and young infants are not reported separately"
+   },
+   {
+    "ref": "Widhe2026",
+    "population": "1001 VCUGs in children <15 years (median age 1 year)",
+    "reason": "Older children; newborns and young infants are not reported separately"
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "If prenatal ultrasound measures **&gt;7mm & &lt;10mm in third trimester**, please obtain a postnatal US at 2-4 weeks of age as an outpatient",
+   "verdict": "partly_concordant",
+   "summary": "The UTD consensus and Swiss consensus define the low-risk third-trimester band as APRPD 7 to <10 mm (≥7 mm) at ≥28 weeks and place the first postnatal US at >48 h to <1 month [Nguyen2014] or at day 15-30 of life [Swiss2024], CUA leaves the timing to the physician [CUA2018], and the 2013 Indian guideline recommends the first week [Sinha2013].",
+   "note": "Current evidence suggests the low-risk third-trimester band starts at 7 mm inclusive (7 to <10 mm at ≥28 weeks), so a measurement of exactly 7 mm falls in it [Nguyen2014][Swiss2024][CUA2018]. A first postnatal US at day 15-30 of life is recommended for this group by the Swiss consensus, and at >48 h to <1 month by the UTD consensus [Swiss2024][Nguyen2014].",
+   "evidence": [
+    {
+     "ref": "Nguyen2014",
+     "quote": "With UTD A1 the APRPD considered to be low risk for postnatal uropathies is 4 to <7 mm at <28 weeks (Fig. 4A and B), and 7 to <10 mm at 28 weeks",
+     "location": "Recommendation #3, prenatal presentation"
+    },
+    {
+     "ref": "Nguyen2014",
+     "quote": "Postnatal evaluation should include two US evaluations: the first at >48 h but less than 1 month after birth; and the second 1e6 months later.",
+     "location": "Recommendation #4, proposed management scheme"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "Prenatally, a low-risk US is defined by a unilateral or bilateral APRPD of ≥7 mm and <10 mm at ≥28 weeks + 0 days",
+     "location": "Section 4, definitions"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "Our study group recommends performing a follow-up postnatal US between the 15th and 30th day of life in low-risk groups. Evidence quality: moderate; recommendation: strong.",
+     "location": "Section 8, When to Refer"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "Most centres define significant AHN in the third trimester as APD ≥7 mm (Level 3 evidence; Grade C recommendation).",
+     "location": "Summary of recommendations"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "The timing of the first postnatal US is open to debate and left to the discretion of the treating physician.",
+     "location": "Followup protocols, SFU Grade 1 and 2, APD <10 mm, LGHN"
+    },
+    {
+     "ref": "Sinha2013",
+     "quote": "We recommend that all newborns with history of antenatal hydronephrosis should have postnatal ultrasound examination within the first week of life (1B).",
+     "location": "Guideline 5, Timing of initial ultrasound"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "If first postnatal ultrasound (kidney + bladder ultrasound \\#1) continues to show a dilated pelvis **&lt;10mm**, please obtain another ultrasound (#2) at 3 months of age and refer to pediatric urology after 3-month ultrasound if there is a persistent dilatation.",
+   "verdict": "partly_concordant",
+   "summary": "A postnatal APRPD <10 mm is defined as normal [Nguyen2014][Swiss2024]; a second US 1-6 months after the first fits the UTD scheme [Nguyen2014], the Swiss consensus suggests stopping follow-up after two normal scans at least 2 months apart [Swiss2024], and isolated mild dilation is followed with ultrasound alone [Sinha2013][CUA2018]; no source found recommends urology referral for persistent postnatal dilation <10 mm without other findings.",
+   "note": "Current evidence suggests a postnatal APRPD <10 mm without other abnormal findings is classified as normal, and follow-up may be stopped after two such scans at least 2 months apart [Swiss2024][Nguyen2014]. Guidelines follow isolated mild dilation (APD <10 mm, SFU 1-2) with sequential ultrasound alone [Sinha2013][CUA2018].",
+   "evidence": [
+    {
+     "ref": "Nguyen2014",
+     "quote": "Postnatal evaluation should include two US evaluations: the first at >48 h but less than 1 month after birth; and the second 1e6 months later.",
+     "location": "Recommendation #4"
+    },
+    {
+     "ref": "Nguyen2014",
+     "quote": "<10 mm postnatally",
+     "location": "Recommendation #3, classification system (normal values)"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "A normal anterior–posterior renal pelvis diameter (APRPD) is defined as a diameter of <10 mm postnatally (at >48 h of life).",
+     "location": "Section 6, Postnatal Follow-Up"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "Our study group suggests discontinuing follow-up in low-risk groups (excluding single kidney), after two normal USs at least 2 months apart, defined as an APRPD of <10 mm with a full bladder, the absence of peripheral calyceal dilation, normal parenchymal thickness and appearance, the absence of ureteral dilation, and normal appearance of the bladder. Evidence quality: moderate; recommendation: weak.",
+     "location": "Section 8"
+    },
+    {
+     "ref": "Sinha2013",
+     "quote": "We recommend that infants with isolated mild unilateral or bilateral hydronephrosis (APD <10 mm or SFU grade 1-2) should be followed by sequential ultrasound alone, for resolution or progression of findings (1C).",
+     "location": "Guideline 7, Postnatal monitoring"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "Most physicians will obtain an US within the first months of life and a followup can be obtained six months later. In the absence of deterioration, followup US can then be performed on an annual basis. VCUG and MAG3 are not required.",
+     "location": "Followup protocols, SFU Grade 1 and 2, APD <10 mm, LGHN"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "If the postnatal ultrasound (#1 or \\#2) shows a dilated pelvis **≥10mm** or read as **“severe hydronephrosis”**, please order a VCUG and refer patient to pediatric urology.",
+   "verdict": "partly_concordant",
+   "summary": "Guidelines tie VCUG to SFU grade 3-4 or UTD P3 dilation, hydroureter, bladder abnormality or UTI [AUA2017][CUA2018][Nguyen2014][EAU2026] or to severe pelvicalyceal dilatation [Damasio2024] and make it discretionary or unnecessary for isolated postnatal APRPD 10-15 mm (UTD P1, SFU 1-2) [Nguyen2014][CUA2018][Swiss2024], while the 2013 Indian guideline uses APD >10 mm as its VCUG threshold [Sinha2013].",
+   "note": "Current evidence suggests VCUG is recommended for high-grade dilation (SFU 3-4, UTD P3), ureteral dilation or bladder abnormality [AUA2017][CUA2018][Nguyen2014]. For isolated postnatal APRPD 10-15 mm with otherwise normal kidneys and bladder, VCUG is left to clinician discretion or not required, and the Swiss consensus recommends follow-up US at 3-6 months [Nguyen2014][CUA2018][Swiss2024]; the 2013 Indian guideline uses APD >10 mm [Sinha2013].",
+   "evidence": [
+    {
+     "ref": "Nguyen2014",
+     "quote": "For UTD P1, a follow-up US is recommended in 1e6 months (Fig. 11). As there is significant controversy regarding the clinical importance of diagnosing VUR and the effectiveness of prophylactic antibiotics, recommendations for evaluation with VCUG and the use of prophylactic",
+     "location": "Recommendation #4 (sentence ends after a figure legend: \"antibiotics are left to the discretion of the clinician.\")"
+    },
+    {
+     "ref": "Nguyen2014",
+     "quote": "As with UTD 1, recommendations for evaluation with VCUG and the use of prophylactic antibiotics are left to the discretion of the clinician.",
+     "location": "Recommendation #4, p. 992"
+    },
+    {
+     "ref": "Nguyen2014",
+     "quote": "For UTD P3, a follow-up US is recommended within 1 month. Evaluation with VCUG and the use of prophylactic antibiotics is recommended in this group, depending in part on the pathology suspected.",
+     "location": "Recommendation #4"
+    },
+    {
+     "ref": "AUA2017",
+     "quote": "Recommendation: Voiding cystourethrogram is recommended for children with high-grade ((Society of Fetal Urology grade 3 and 4) hydronephrosis, hydroureter or an abnormal bladder on ultrasound (late-term prenatal or postnatal), or who develop a urinary tract infection on observation.",
+     "location": "Screening in the neonate with a history of prenatal hydronephrosis"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "VCUG is not necessary in the evaluation of isolated LGHN (SFU 1–2) with normal renal parenchyma and symmetric renal size (Level 3 evidence; Grade C recommendation).",
+     "location": "Summary of recommendations"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "HGHN (SFU 3–4) should be investigated with a VCUG, followed by diuretic renography if the HN cannot be explained by VUR (Level 4 evidence; Grade D recommendation).",
+     "location": "Summary of recommendations"
+    },
+    {
+     "ref": "EAU2026",
+     "quote": "The use of VCUG is recommended in patients with US findings of bilateral high-grade hydronephrosis, duplex kidneys with hydronephrosis, ureterocele, ureteric dilatation, and abnormal bladders, because the likelihood of VUR is much higher. In all other conditions, the use of VCUG to detect reflux is optional",
+     "location": "Section 17.2.2"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "Postnatally, if APRPD is between 10 and 15 mm and there is an absence of peripheral calyceal dilation, normal parenchymal thickness and appearance, an absence of ureteral dilation, and a normal appearance of the bladder (excluding single kidney), our study group recommends follow-up with US between 3 and 6 months of life. Evidence quality: high; recommendation: strong.",
+     "location": "Section 8"
+    },
+    {
+     "ref": "Sinha2013",
+     "quote": "We recommend that a micturating cystourethrogram (MCU) be performed in patients with unilateral or bilateral hydronephrosis with renal pelvic APD >10 mm, SFU grade 3-4 or ureteric dilatation (1B).",
+     "location": "Guideline 8, Micturating cystourethrogram"
+    },
+    {
+     "ref": "Damasio2024",
+     "quote": "In severe pelvicalyceal dilatation, VCUG is indicated to rule out bladder outlet obstruction and VUR, especially when it is associated with kidney and urinary tract US abnormalities or febrile UTIs.",
+     "location": "Text following Table 2 (Main indications to perform VCUG/contrast-enhanced VUS), p. 611"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "Please cover patients with 3 days of antibiotics around the time of the procedure (pre, day of, post).",
+   "verdict": "practice_varies",
+   "summary": "The European Society of Paediatric Radiology states there is no consensus on antibiotic prophylaxis for VCUG, with practice varying in necessity, drug, timing and dose, and recommends no routine prophylaxis but increased vigilance or antibiotics in high-risk patients [Damasio2024]; the 2013 Indian guideline recommends prophylaxis for infants with postnatal APD >10 mm while awaiting evaluation [Sinha2013]; no guideline found specifies a 3-day peri-VCUG course or addresses neonates separately.",
+   "evidence": [
+    {
+     "ref": "Damasio2024",
+     "quote": "To date, there is no consensus about the use of antibiotic prophylaxis and practice varies among different institutions, regarding necessity, type of antibiotics, timing, and dose.",
+     "location": "Procedural recommendations, p. 611"
+    },
+    {
+     "ref": "Damasio2024",
+     "quote": "routine prophylaxis is not mandatory, but increased caution is encouraged in children with known urinary tract pathology",
+     "location": "Procedural recommendations, p. 611"
+    },
+    {
+     "ref": "Damasio2024",
+     "quote": "• Increased vigilance or AB in high-risk patients",
+     "location": "Table 3, ppUTI"
+    },
+    {
+     "ref": "Damasio2024",
+     "quote": "• No routine AB prophylaxis",
+     "location": "Table 3, ppUTI"
+    },
+    {
+     "ref": "Sinha2013",
+     "quote": "We recommend that infants with postnatally confirmed moderate or severe hydronephrosis (SFU 3-4; renal APD >10 mm) or dilated ureter receive antibiotic prophylaxis while awaiting evaluation (1C).",
+     "location": "Guideline 11(b)"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "Please arrange for the baby to be placed on antibiotics for UTI prophylaxis (cephalexin 10-20 mg/kg/day in 1-2 doses) for patients with Grade 4-5 VUR",
+   "verdict": "partly_concordant",
+   "summary": "CAP for screening-detected VUR is recommended for grades III-V in infants under 1 year by the AUA [AUA2017], for grade 4 or 5 reflux by the Swiss consensus [Swiss2024] and for all VUR in the first year by the 2013 Indian guideline [Sinha2013], and an RCT in infants aged 1-5 months with grade III-V VUR found a small reduction in first UTI without a difference in new scars [Morello2023]; the only cephalexin dose found is 10 mg/kg/d in the first 3 months [Sinha2013], and the Swiss consensus recommends amoxicillin 10 mg/kg/dose twice daily for newborns [Swiss2024].",
+   "note": "Current evidence suggests the VUR grades that warrant prophylaxis differ between guidelines: the AUA recommends it for grades III-V in infants under 1 year and the Swiss consensus for grade 4 or 5 [AUA2017][Swiss2024]. The one guideline giving a cephalexin dose uses 10 mg/kg/d in the first 3 months [Sinha2013]; the Swiss consensus recommends amoxicillin 10 mg/kg/dose twice daily for newborns [Swiss2024].",
+   "evidence": [
+    {
+     "ref": "AUA2017",
+     "quote": "Recommendation: In the absence of a history of febrile urinary tract infections, continuous antibiotic prophylaxis is recommended for the child less than one year of age with VUR grades III–V who is identified through screening.",
+     "location": "The child with VUR less than one year of age"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "Our study group suggests antibiotic prophylaxis in any of the following situations: APRPD > 20 mm prenatally or postnatally, megaureter ≥ 7 mm, high-grade (4 or 5) reflux, bladder anomaly. Evidence quality: high; recommendation: weak.",
+     "location": "Section 7, Antibiotic Prophylaxis"
+    },
+    {
+     "ref": "Sinha2013",
+     "quote": "We recommend that all patients detected to have VUR receive antibiotic prophylaxis through the first year of life (1B).",
+     "location": "Guideline 11(c)"
+    },
+    {
+     "ref": "Morello2023",
+     "quote": "In infants with grade III, IV, or V vesicoureteral reflux and no previous UTIs, continuous antibiotic prophylaxis provided a small but significant benefit in preventing a first UTI despite an increased occurrence of non-E. coli organisms and antibiotic resistance.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Morello2023",
+     "quote": "The incidence of new kidney scars and the estimated GFR at 24 months did not differ substantially between the two groups.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Sinha2013",
+     "quote": "Antibiotics that are preferred include cephalexin (10 mg/ kg/d) during the first 3 months of life, and cotrimoxazole (1-2 mg/kg/d) or nitrofurantoin (1 mg/kg/d) later.",
+     "location": "Guideline 11 rationale"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "Our study group recommends the use of amoxicillin at 10 mg/kg/dose BID as antibiotic prophylaxis for newborns and trimethoprim (TM)–sulfamethoxazole at 2 mg/kg/dose of TM once daily after 1 month of life. Evidence quality: moderate; recommendation: strong.",
+     "location": "Section 7"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "Commonly used prophylaxes in the neonate include amoxicillin, cephalexin and trimethoprim.",
+     "location": "CAP section (CUA2018_pdf.txt)"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "If prenatal ultrasound measures **≥10mm or “severe” hydronephrosis**, please obtain a kidney + bladder sonogram in the NICU/newborn nursery after birth.",
+   "verdict": "partly_concordant",
+   "summary": "A postnatal kidney and bladder US is recommended for prenatal APRPD ≥10 mm at ≥28 weeks [Nguyen2014][CUA2018][EAU2026], timed after 48 h of life [Nguyen2014][EAU2026], as soon as feasible after day 2 [CUA2018], not before day 3 [ESR2026], at day 5-7 for Swiss high-risk cases [Swiss2024] or at 3-7 days or before discharge [Sinha2013], with earlier imaging for suspected urethral obstruction, bilateral severe dilation, oligohydramnios or solitary kidney [Nguyen2014][EAU2026][Sinha2013].",
+   "note": "Current evidence suggests the first postnatal US be done after 48 h of life, because earlier scans tend to underestimate dilation, unless there is suspected urethral obstruction, bilateral high-grade dilation, oligohydramnios or a solitary kidney [Nguyen2014][EAU2026][ESR2026]. The 2013 Indian guideline accepts a scan at 3-7 days or before hospital discharge [Sinha2013].",
+   "evidence": [
+    {
+     "ref": "Nguyen2014",
+     "quote": "After birth, a follow-up US is recommended at >48 h of life but before 1 month.",
+     "location": "Recommendation #4, UTD A2-3"
+    },
+    {
+     "ref": "Nguyen2014",
+     "quote": "Up to 48 h after birth, there is a tendency to underestimate the severity of hydronephrosis, in part because of dehydration [41,42].",
+     "location": "Background and summary of the literature, Postnatal imaging"
+    },
+    {
+     "ref": "Nguyen2014",
+     "quote": "It is generally recommended that the first postnatal US be delayed for at least 48 h after birth, except for cases of oligohydramnios, urethral obstruction, bilateral high-grade dilation, and concerns about patient compliance with postnatal evaluation [43].",
+     "location": "Background and summary of the literature, Postnatal imaging"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "The initial postnatal RBUS should be done as soon as feasible after Day 2 of life, as this represents the cohort most likely to require surgery and to experience UTI.",
+     "location": "Followup protocols, SFU Grades 3 and 4, APD >15 mm, HGHN"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "All children with AHN should have a complete abdominopelvic US, with particular attention to both the kidneys and bladder.",
+     "location": "Postnatal ultrasound section"
+    },
+    {
+     "ref": "EAU2026",
+     "quote": "Since transitory neonatal dehydration lasts approximately 48 hours after birth, imaging should be performed following this period of postnatal oliguria. However, in severe cases (bilateral dilatation, solitary kidney, oligohydramnios), immediate postnatal sonography is recommended",
+     "location": "Section 16.2.2, Postnatal ultrasound"
+    },
+    {
+     "ref": "ESR2026",
+     "quote": "In order to avoid underestimating the degree of dilatation, US should not be performed before the third postnatal day.",
+     "location": "Renal imaging in the paediatric pelvicalyceal dilatation"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "Our study group recommends performing a postnatal US between the 5th and 7th day of life in high-risk groups. Evidence quality: moderate; recommendation: strong.",
+     "location": "Section 8"
+    },
+    {
+     "ref": "Sinha2013",
+     "quote": "In neonates with suspected posterior urethral valves, oligohydramnios or severe bilateral hydronephrosis, ultrasonography should be performed within 24-48 hr of birth (1C).",
+     "location": "Guideline 5(b)"
+    },
+    {
+     "ref": "Sinha2013",
+     "quote": "In all other cases, the ultrasound should be performed preferably within 3-7 days, or before hospital discharge (1C).",
+     "location": "Guideline 5(c)"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "If postnatal ultrasound confirms the measurements of **≥10mm** or **“severe”**, please obtain a VCUG prior to discharge.",
+   "verdict": "discordant",
+   "summary": "Guidelines call for an urgent VCUG in the newborn period when bladder outlet obstruction or PUV is suspected [CUA2018][Swiss2024][Gnech2025][Sinha2013], and the 2013 Indian guideline places VCUG for other indications at 4-6 weeks of age [Sinha2013]; no guideline found recommends a pre-discharge VCUG for every newborn with postnatal APRPD ≥10 mm.",
+   "note": "Current evidence suggests an urgent newborn VCUG (within 24-72 hours) is recommended when lower urinary tract obstruction such as PUV is suspected [Sinha2013][CUA2018][Gnech2025], while for other indications the 2013 Indian guideline places it at 4-6 weeks of age [Sinha2013]. In high-grade hydronephrosis the VCUG is used to separate obstruction from VUR and guide follow-up imaging rather than because of UTI concern [CUA2018].",
+   "evidence": [
+    {
+     "ref": "Sinha2013",
+     "quote": "We recommend that MCU be performed early, within 24-72 hours of life, in patients with suspected lower urinary tract obstruction (1D). In other cases, the procedure should be done at 4-6 weeks of age.",
+     "location": "Guideline 8(b)"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "Certainly, any infant with suspected bladder outlet obstruction (e.g., PUV) should have an urgent VCUG.",
+     "location": "VCUG section"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "It is important to note that the clinical utility of a VCUG in HGHN is not due to concern over UTI, rather it helps to distinguish an obstructive cause of AHN from one due to VUR, thus helping to tailor the frequency and type of serial imaging studies.",
+     "location": "VCUG section"
+    },
+    {
+     "ref": "Gnech2025",
+     "quote": "Voiding cystography should be conducted as soon as possible in cases where posterior urethral valves (PUVs) are suspected.",
+     "location": "Abstract, Key findings"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "Infants with suspected bladder outlet obstruction should obtain an urgent VCUG.",
+     "location": "Section 6.1"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "Please arrange for a repeat ultrasound at 1 month of age and refer to Pediatric Urology.",
+   "verdict": "practice_varies",
+   "summary": "For postnatal dilation ≥10 mm the UTD consensus recommends follow-up US within 1 month for P3, in 1-3 months for P2 and in 1-6 months for P1 [Nguyen2014], so a 1-month US falls within each of these intervals, the Swiss consensus recommends US at 1 month with uro-nephrology input for ≥15 mm or ≥10 mm with other findings but at 3-6 months for isolated 10-15 mm [Swiss2024], and CUA refers persistent high-grade hydronephrosis to pediatric urology for immediate consultation [CUA2018].",
+   "evidence": [
+    {
+     "ref": "Nguyen2014",
+     "quote": "For UTD P2, a follow-up US is recommended in 1e3 months.",
+     "location": "Recommendation #4"
+    },
+    {
+     "ref": "Nguyen2014",
+     "quote": "For UTD P3, a follow-up US is recommended within 1 month.",
+     "location": "Recommendation #4"
+    },
+    {
+     "ref": "Nguyen2014",
+     "quote": "For UTD P1, a follow-up US is recommended in 1e6 months (Fig. 11).",
+     "location": "Recommendation #4"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "Postnatally, if APRPD upon US is ≥15 mm alone or ≥10 mm with at least one of the stated criteria—peripheral calyceal dilation, abnormal parenchymal thickness or appearance, ureteral dilation, or abnormal appearance of the bladder—our study group recommends follow-up with US at 1 month of life with complimentary investigations to be discussed with a uro-nephrology team. Evidence quality: moderate; recommendation: strong.",
+     "location": "Section 6"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "our study group recommends follow-up with US between 3 and 6 months of life. Evidence quality: high; recommendation: strong.",
+     "location": "Section 8 (isolated APRPD 10-15 mm)"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "If the postnatal US reveals persistent HGHN, these cases should be referred to a pediatric urologist for immediate consultation.",
+     "location": "Followup protocols, HGHN"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "If postnatal US does NOT confirm the measurements of ≥10mm, please have a repeat US (kidney + bladder) scheduled for 2-4 weeks as an outpatient.",
+   "verdict": "practice_varies",
+   "summary": "A repeat scan after an early normal or low-grade postnatal US is supported [Nguyen2014][EAU2026]; CUA cites SFU guidance for a repeat within the first month [CUA2018], while the 2013 Indian guideline places the repeat at 4-6 weeks after a normal first-week scan [Sinha2013].",
+   "evidence": [
+    {
+     "ref": "Nguyen2014",
+     "quote": "Again it should be emphasized that the first postnatal US should be done more than 48 h after birth to ensure it does not underestimate dilation, and be repeated once to ensure the appropriate management.",
+     "location": "Recommendation #3, postnatal presentation"
+    },
+    {
+     "ref": "EAU2026",
+     "quote": "The first two US scans within the first one to two months of life are highly accurate for defining the presence or absence of renal pathology.",
+     "location": "Section 17.2.2"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "Such transient HN is also the subject of controversy, with the SFU guidelines recommending a repeat US within the first month of life.",
+     "location": "Followup protocols, SFU Grade 0"
+    },
+    {
+     "ref": "Sinha2013",
+     "quote": "We recommend that neonates with normal ultrasound examination in the first week of life should undergo a repeat study at 4-6 weeks (1C).",
+     "location": "Guideline 7(a)"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "Please contact Pediatric Urology during the admission for all patients with a severe (unilateral or bilateral) hydronephrosis **(&gt;15mm)**.",
+   "verdict": "concordant",
+   "summary": "APRPD >15 mm is the published severe band in the third trimester [Nguyen2014] and predicts postnatal pathology [CUA2018]; CUA recommends immediate pediatric urology consultation for persistent postnatal high-grade hydronephrosis (SFU 3-4, APD >15 mm) and more urgent consultation when bilateral [CUA2018], and the UTD and Swiss consensuses recommend early specialist discussion [Nguyen2014][Swiss2024]; sources do not state that unilateral cases need consultation during the birth admission.",
+   "evidence": [
+    {
+     "ref": "Nguyen2014",
+     "quote": "During the third trimester, mild is defined as APRPD of 7 to <9 mm, moderate as 9 to 15 mm, and severe as >15 mm.",
+     "location": "Background on APRPD grading"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "In a meta-analysis, Lee et al demonstrated that antenatal APD >15 mm in the third trimester predicted an 88% chance of postnatal pathology.",
+     "location": "Antenatal vs. postnatal followup"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "If the postnatal US reveals persistent HGHN, these cases should be referred to a pediatric urologist for immediate consultation.",
+     "location": "Followup protocols, SFU Grades 3 and 4, APD >15 mm, HGHN"
+    },
+    {
+     "ref": "CUA2018",
+     "quote": "Bilateral HGHN requires more urgent consultation, including a VCUG to exclude PUV.",
+     "location": "Followup protocols, HGHN"
+    },
+    {
+     "ref": "Nguyen2014",
+     "quote": "Prenatal consultation with a pediatric urologist and/or pediatric nephrologist is recommended in situations where there is substantial risk for surgery or renal dysfunction.",
+     "location": "Recommendation #4"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "All prenatally diagnosed kidney anomalies should be discussed with a pediatric nephrologist/urologist to anticipate immediate postnatal management.",
+     "location": "Section 8"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "manual_text": "Please contact Pediatric Urology during the admission for all patients with posterior urethral valves on VCUG.",
+   "verdict": "concordant",
+   "summary": "Guidelines call for immediate newborn management of PUV with bladder drainage, valve ablation and multidisciplinary care including a pediatric nephrologist [EAU2026][Swiss2024], and the AAP report advises immediate nephrology/urology consultation for boys at high risk of bladder outlet obstruction [AAP2025]; these actions start when PUV is suspected, which may precede the VCUG [EAU2026][Gnech2025].",
+   "evidence": [
+    {
+     "ref": "EAU2026",
+     "quote": "Attempt endoscopic valve ablation after bladder drainage and stabilisation of the child.",
+     "location": "Section 21.6, Recommendations (Strong)"
+    },
+    {
+     "ref": "EAU2026",
+     "quote": "Initial management involving a multidisciplinary team including a paediatric nephrologist.",
+     "location": "Section 21.3"
+    },
+    {
+     "ref": "Swiss2024",
+     "quote": "The postnatal management of severe PUVs has to be immediate and may necessitate transfer to a tertiary care facility for the management of post-obstructive diuresis.",
+     "location": "Section 4.2.2"
+    },
+    {
+     "ref": "AAP2025",
+     "quote": "Any concern for this entity should prompt an immediate consultation with a nephrology/urology specialist.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Gnech2025",
+     "quote": "In newborns with a suspected diagnosis of infravesical obstruction, bladder drainage should be performed and antibiotic prophylaxis initiated.",
+     "location": "Abstract, Key findings"
+    }
+   ]
+  }
+ ],
+ "omissions": [
+  {
+   "id": "o1",
+   "related_claim": "c11",
+   "topic": "Bladder drainage and antibiotic prophylaxis for suspected PUV",
+   "note": "Current evidence suggests newborns with suspected infravesical obstruction such as PUV have bladder drainage and start antibiotic prophylaxis, with renal function and electrolytes monitored closely over the first days [EAU2026][Gnech2025].",
+   "evidence": [
+    {
+     "ref": "EAU2026",
+     "quote": "Drain the bladder in newborns with a suspected diagnosis of infravesical obstruction and place on antibiotic prophylaxis.",
+     "location": "Section 21.6, Recommendations (Strong)"
+    },
+    {
+     "ref": "EAU2026",
+     "quote": "Postnatally, creatinine, blood urea nitrogen and electrolytes should be monitored closely during the first few days.",
+     "location": "Section 21.3"
+    },
+    {
+     "ref": "Gnech2025",
+     "quote": "In newborns with a suspected diagnosis of infravesical obstruction, bladder drainage should be performed and antibiotic prophylaxis initiated.",
+     "location": "Abstract, Key findings"
+    }
+   ]
+  }
+ ],
+ "references": [
+  {
+   "key": "Nguyen2014",
+   "role": "source",
+   "authors": "Nguyen HT, Benson CB, Bromley B, et al.",
+   "title": "Multidisciplinary consensus on the classification of prenatal and postnatal urinary tract dilation (UTD classification system)",
+   "journal": "J Pediatr Urol",
+   "year": "2014",
+   "volume": "10",
+   "issue": "6",
+   "pages": "982-998",
+   "doi": "10.1016/j.jpurol.2014.10.002",
+   "pmid": "25435247",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/25435247/",
+    "https://api.crossref.org/works/10.1016/j.jpurol.2014.10.002"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "AAP2025",
+   "role": "source",
+   "authors": "Anthony Herndon CD, Otero HJ, Hains D, Sweeney RM, Lockwood GM",
+   "title": "Perinatal Urinary Tract Dilation: Recommendations on Pre-/Postnatal Imaging, Prophylactic Antibiotics, and Follow-up: Clinical Report",
+   "journal": "Pediatrics",
+   "year": "2025",
+   "volume": "156",
+   "issue": "1",
+   "pages": "e2025071814",
+   "doi": "10.1542/peds.2025-071814",
+   "pmid": "40518141",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40518141/",
+    "https://api.crossref.org/works/10.1542/peds.2025-071814"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "CUA2018",
+   "role": "source",
+   "authors": "Capolicchio JP, Braga LH, Szymanski KM",
+   "title": "Canadian Urological Association/Pediatric Urologists of Canada guideline on the investigation and management of antenatally detected hydronephrosis",
+   "journal": "Can Urol Assoc J",
+   "year": "2018",
+   "volume": "12",
+   "issue": "4",
+   "pages": "85-92",
+   "doi": "10.5489/cuaj.5094",
+   "pmid": "29319488",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/29319488/",
+    "https://api.crossref.org/works/10.5489/cuaj.5094"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Swiss2024",
+   "role": "source",
+   "authors": "Bahadori A, Wilhelm-Bals A, Caccia J, et al.",
+   "title": "Swiss Consensus on Prenatal and Early Postnatal Urinary Tract Dilation: Practical Approach and When to Refer",
+   "journal": "Children (Basel)",
+   "year": "2024",
+   "volume": "11",
+   "issue": "12",
+   "pages": "1561",
+   "doi": "10.3390/children11121561",
+   "pmid": "39767990",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/39767990/",
+    "https://api.crossref.org/works/10.3390/children11121561"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Sinha2013",
+   "role": "source",
+   "authors": "Sinha A, Bagga A, Krishna A, et al.",
+   "title": "Revised guidelines on management of antenatal hydronephrosis",
+   "journal": "Indian Pediatr",
+   "year": "2013",
+   "volume": "50",
+   "issue": "2",
+   "pages": "215-231",
+   "doi": "10.1007/s13312-013-0064-6",
+   "pmid": "23474928",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/23474928/",
+    "https://api.crossref.org/works/10.1007/s13312-013-0064-6"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Gnech2025",
+   "role": "source",
+   "authors": "Gnech M, 't Hoen L, Radmayr C, et al.",
+   "title": "Congenital Lower Urinary Tract Obstruction: Update and Summary of the European Association of Urology and European Society for Paediatric Urology Guidelines",
+   "journal": "Eur Urol Focus",
+   "year": "2025",
+   "volume": "11",
+   "issue": "3",
+   "pages": "519-527",
+   "doi": "10.1016/j.euf.2025.01.012",
+   "pmid": "39909817",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/39909817/",
+    "https://api.crossref.org/works/10.1016/j.euf.2025.01.012"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Damasio2024",
+   "role": "source",
+   "authors": "Damasio MB, Donati F, Bruno C, et al.",
+   "title": "Update on imaging recommendations in paediatric uroradiology: the European Society of Paediatric Radiology workgroup session on voiding cystourethrography",
+   "journal": "Pediatr Radiol",
+   "year": "2024",
+   "volume": "54",
+   "issue": "4",
+   "pages": "606-619",
+   "doi": "10.1007/s00247-024-05883-y",
+   "pmid": "38467874",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/38467874/",
+    "https://api.crossref.org/works/10.1007/s00247-024-05883-y"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "ESR2026",
+   "role": "source",
+   "authors": "Woźniak MM, Ključevšek D, Damasio MB, et al.",
+   "title": "ESR Essentials: renal imaging in children-practice recommendations by the European Society of Paediatric Radiology",
+   "journal": "Eur Radiol",
+   "year": "2026",
+   "volume": "36",
+   "issue": "5",
+   "pages": "3611-3627",
+   "doi": "10.1007/s00330-025-12100-3",
+   "pmid": "41348211",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41348211/",
+    "https://api.crossref.org/works/10.1007/s00330-025-12100-3"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Morello2023",
+   "role": "source",
+   "authors": "Morello W, Baskin E, Jankauskiene A, et al.",
+   "title": "Antibiotic Prophylaxis in Infants with Grade III, IV, or V Vesicoureteral Reflux",
+   "journal": "N Engl J Med",
+   "year": "2023",
+   "volume": "389",
+   "issue": "11",
+   "pages": "987-997",
+   "doi": "10.1056/NEJMoa2300161",
+   "pmid": "37702442",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37702442/",
+    "https://api.crossref.org/works/10.1056/NEJMoa2300161"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "EAU2026",
+   "role": "source",
+   "citation": "Radmayr C, Bogaert G, Bujons A, et al. EAU Guidelines on Paediatric Urology. Limited update March 2026. European Association of Urology; 2026.",
+   "url": "https://d56bochluxqnz.cloudfront.net/documents/full-guideline/EAU-Guidelines-on-Paediatric-Urology-2026.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://d56bochluxqnz.cloudfront.net/documents/full-guideline/EAU-Guidelines-on-Paediatric-Urology-2026.pdf"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "AUA2017",
+   "role": "source",
+   "citation": "Peters CA, Skoog SJ, Arant BS Jr, et al. Management and Screening of Primary Vesicoureteral Reflux in Children: AUA Guideline. American Urological Association; published 2010, amended 2017.",
+   "url": "https://www.auanet.org/guidelines-and-quality/guidelines/vesicoureteral-reflux-guideline",
+   "doi": null,
+   "verified_against": [
+    "https://www.auanet.org/guidelines-and-quality/guidelines/vesicoureteral-reflux-guideline"
+   ],
+   "verified_date": "2026-11-10"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 2,
+  "date": "2026-11-10",
+  "quotes_checked": 193,
+  "references_verified": 11,
+  "known_limitations": [
+   {
+    "item": "Flowchart and links",
+    "note": "The mermaid flowchart restates the bulleted text and was triaged as context; the 'New Diagnosis After Birth' pointer to separate Urology guidelines was not checked."
+   },
+   {
+    "item": "AAP2025",
+    "note": "The 2025 AAP clinical report on perinatal urinary tract dilation was read as abstract only: no PMC copy, and the publisher's landing page and PDF returned a Cloudflare bot check (HTTP 403); logged and not worked around. Its specific thresholds could not be checked."
+   },
+   {
+    "item": "Sinha2013",
+    "note": "The 2013 Indian Society of Pediatric Nephrology guideline is the only source keeping several of the manual's criteria; four logged PubMed searches (2013-2026) found no newer version."
+   },
+   {
+    "item": "AUA2017",
+    "note": "The AUA guideline web page states its content may not be uploaded into external applications, including AI tools, without permission; whether quoting it in a published AI-generated note is acceptable is for the protocol leads to confirm."
+   },
+   {
+    "item": "Round 1-2 suggested items",
+    "note": "Not applied: c8 summary comma splice ('..., so a 1-month US falls within each of these intervals, the Swiss consensus recommends'), Damasio hedge and hyphenation in location fields, position of the [Swiss2024] citation in the c11 summary."
+   }
+  ]
+ }
+}

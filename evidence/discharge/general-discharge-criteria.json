@@ -1,0 +1,507 @@
+{
+ "chapter": "discharge",
+ "section": "General Discharge Criteria (preliminary)",
+ "anchor": "discharge.html#sec-discharge-criteria",
+ "source": {
+  "file": "site/src/content/docs/discharge.mdx",
+  "lines": "7-25",
+  "manual_commit": "398c583"
+ },
+ "checked": "2026-11-10",
+ "generated_with": "Researcher: Claude Opus 5.5 (claude-opus-5-5); Comparer: Claude Opus 5.5 (claude-opus-5-5); Reviewer: Claude Opus 5.5 (claude-opus-5-5)",
+ "triage": {
+  "clinical": 7,
+  "operational": 0,
+  "definition": 0,
+  "context": 4
+ },
+ "scope": {
+  "population": "NICU infants approaching discharge home, mostly preterm infants born before 37 weeks (criteria refer to corrected gestational age); c2 and c3 apply to the subgroup discharged on home oxygen, in this literature infants with BPD / chronic neonatal lung disease",
+  "topic": "Physiologic readiness criteria (respiratory, feeding, glucose, thermoregulation) for NICU discharge, including preconditions for discharge on home oxygen",
+  "basis": "Heading 'General Discharge Criteria (preliminary)' in the discharge chapter, with sub-headings Respiratory, Dietary and Thermoregulation and the lead-in 'If discharged home on oxygen'",
+  "set_aside": [
+   {
+    "ref": "Adamkin2011",
+    "population": "Late-preterm and term newborns in the early postnatal period (transitional glucose homeostasis)",
+    "reason": "Addresses glucose screening in the first hours after birth, not glucose at discharge in convalescent NICU infants"
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "In room air for at least 24 hrs, or",
+   "verdict": "concordant",
+   "summary": "The 2022 Canadian statement defines respiratory stability before discharge of preterm infants as no ventilatory support and, preferably, no supplemental oxygen, and regards home oxygen as preferable to a prolonged NICU stay for appropriate infants and families [Anderson2022]; an Australasian position statement describes room-air oximetry periods of typically up to 30 min to judge readiness to stop oxygen before discharge [Kapur2020], and no retrieved source specifies a minimum time in room air before discharge.",
+   "evidence": [
+    {
+     "ref": "Anderson2022",
+     "quote": "Respiratory stability is achieved when an infant no longer requires ventilatory support and (preferably) is not receiving supplemental oxygenation.",
+     "location": "Physiological maturity > Respiratory stability"
+    },
+    {
+     "ref": "Anderson2022",
+     "quote": "For appropriate infants and families, home oxygen is preferable to a prolonged NICU admission.",
+     "location": "Physiological maturity > Respiratory stability"
+    },
+    {
+     "ref": "Kapur2020",
+     "quote": "Shorter periods of oxygen saturation monitoring in air, typically up to 30 min, are used for monitoring readiness for discontinuation of supplemental oxygen prior to discharge or in outpatient clinic reviews.",
+     "location": "Monitoring peri-discharge and at home"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "If discharged home on oxygen: All DME and supplies have been delivered, and parental education has been completed by the vendor",
+   "verdict": "concordant",
+   "summary": "The ATS home oxygen guideline calls for age-appropriate equipment and supplies, education of all home caregivers on the equipment with documented competency, and communication between the prescriber and the durable medical equipment agency [Hayes2019], and a 2026 review describes equipment delivery arranged through a home care company and caregiver training on oxygen equipment and pulse oximeters [Dawson2026]; neither source specifies who provides the education.",
+   "evidence": [
+    {
+     "ref": "Hayes2019",
+     "quote": "All children require access to age-appropriate equipment and supplies that will meet their supplemental oxygen needs.",
+     "location": "Providing HOT > Equipment"
+    },
+    {
+     "ref": "Hayes2019",
+     "quote": "The panel recommends documentation of competency in the delivery of HOT to a child once all home caregivers have completed education.",
+     "location": "Providing HOT > Home Safety"
+    },
+    {
+     "ref": "Hayes2019",
+     "quote": "Communication between the prescribing healthcare provider, durable medical equipment agency, and other key parties is important to provide appropriate care to these medically complex patients.",
+     "location": "Providing HOT > Home Safety"
+    },
+    {
+     "ref": "Dawson2026",
+     "quote": "Any NICU that regularly discharges patients with HOT should have a case management team that can coordinate all necessary equipment and arrange for its delivery through a home care company.",
+     "location": "Preparing For Home Oxygen Prior to Discharge"
+    },
+    {
+     "ref": "Dawson2026",
+     "quote": "Caregivers must be trained on the equipment they will be utilizing. This includes both the physical equipment used to deliver home oxygen and pulse oximeters.",
+     "location": "Preparing For Home Oxygen Prior to Discharge"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "If discharged home on oxygen: CXR and blood gas within 1 week of discharge date available in baby’s chart",
+   "verdict": "partly_concordant",
+   "summary": "A US expert Delphi survey on infants <32 weeks with BPD reached consensus on a routine chest radiograph prior to or soon after discharge for infants on home oxygen but not on a blood gas or bicarbonate, which it left to individual judgment [Levin2023], a cohort of infants <32 weeks with BPD on home oxygen found no association between predischarge pCO2 and respiratory readmissions [Dawson2020], and the ATS guideline uses capillary blood gas or bicarbonate when hypoventilation is a concern [Hayes2019]; no retrieved source specifies a 1-week window.",
+   "note": "Current evidence suggests that a routine chest radiograph prior to or soon after discharge reached expert consensus for infants with BPD on home oxygen, whereas a blood gas or bicarbonate did not and could be considered on an individualized basis [Levin2023]; a 2026 review also advises a baseline chest x-ray before discharge [Dawson2026]. Predischarge pCO2 was not associated with respiratory readmissions or emergency visits in a BPD home-oxygen cohort [Dawson2020] and may be less predictive than once thought [Dawson2026]. The ATS guideline links blood gas testing to concern about hypoventilation [Hayes2019].",
+   "evidence": [
+    {
+     "ref": "Levin2023",
+     "quote": "Consensus was also gained on obtaining an echocardiogram after 36 weeks PMA, prior to discharge, and obtaining a routine chest radiograph prior to or soon after discharge. There was not consensus (22/30, 73%) on whether a blood gas or chemistry (for bicarbonate) should be obtained; some suggested end-tidal carbon dioxide as a non-invasive alternative.",
+     "location": "Results > Discharge on home oxygen"
+    },
+    {
+     "ref": "Levin2023",
+     "quote": "Other routine tests were suggested by some participants but did not reach consensus, such as blood gas or bicarbonate (on a serum chemistry panel), but could be considered on an individualized basis.",
+     "location": "Discussion"
+    },
+    {
+     "ref": "Dawson2020",
+     "quote": "There was no significant association between predischarge or 36-week pCO2 and respiratory readmissions, emergency room visits, new or increased bronchodilators, or diuretics.",
+     "location": "Abstract > Results"
+    },
+    {
+     "ref": "Hayes2019",
+     "quote": "Any concern of hypoventilation should be investigated with capillary blood gas analysis or serum bicarbonate determination, which are widely available, or with end-tidal or transcutaneous CO2 measurements",
+     "location": "Providing HOT > Follow-up"
+    },
+    {
+     "ref": "Dawson2026",
+     "quote": "A baseline chest x-ray should be performed before discharge to serve as a comparison when infants present with an illness.",
+     "location": "Preparing For Home Oxygen Prior to Discharge"
+    },
+    {
+     "ref": "Dawson2026",
+     "quote": "Predischarge pCO2 has been utilized in some centers to determine appropriateness for discharge, but it may not be as predictive of adverse respiratory outcomes as once thought.",
+     "location": "Preparing For Home Oxygen Prior to Discharge"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "Off IV fluid with post-IVF glucose levels within age-appropriate normal range",
+   "verdict": "concordant",
+   "summary": "The 2022 Canadian statement lists euglycemia among the requirements before discharge of late preterm infants [Anderson2022], and the Pediatric Endocrine Society suggests plasma glucose goals of >50 mg/dL before 48 hours and >60 mg/dL after 48 hours in high-risk neonates and a 6–8 hour safety fast before discharge for at-risk neonates whose hypoglycemia is expected to resolve [Thornton2015]; no retrieved source addresses glucose checks after IV fluids stop in convalescent preterm infants.",
+   "evidence": [
+    {
+     "ref": "Anderson2022",
+     "quote": "Before discharge, late preterm newborns must demonstrate respiratory and temperature stability, adequate feeding skills, and euglycemia.",
+     "location": "Late preterm infants"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "3.2. For high-risk neonates without a suspected congenital hypoglycemia disorder, we suggest the goal of treatment be to maintain a PG concentration >50 mg/dL (>2.8 mmol/L) for those aged <48 hours and >60 mg/dL (>3.3 mmol/L) for those aged >48 hours.",
+     "location": "Management of Neonates, Infants, and Children with a Persistent Hypoglycemia Disorder"
+    },
+    {
+     "ref": "Thornton2015",
+     "quote": "For at-risk neonates without a suspected persistent hypoglycemia disorder and in whom hypoglycemia is considered likely to resolve within a short time, a “safety” fast of 6–8 hours should be considered before discharge, to determine whether a PG concentration >60 mg/dL can be maintained, or whether additional management or investigations may be required.",
+     "location": "Neonates Aged >48 Hours Who May Be at Risk for Persistent Hypoglycemia Disorders"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "On-demand feeds of at least 150ml/kg/day for 24 hrs if CGA ≥&nbsp;36 weeks, or 48 hrs if CGA &lt;&nbsp;36 weeks",
+   "verdict": "insufficient",
+   "summary": "ESPGHAN 2022 states that most stable growing preterm infants require 150-180 mL/kg/d and that intakes as low as 135 ml/kg/d may be safe if nutrition needs are met [Embleton2023], a Cochrane review found that responsive feeding may shorten the transition to oral feeding with slightly slower weight gain and no consistent effect on length of stay [Watson2016], and 9 of 36 Swedish units, where early discharge to neonatal home care (including with an enteral feeding tube) is common, required a specified breast- or bottle-feeding amount before transition to home care [Arwehed2026]; no retrieved guideline sets an oral intake volume, observation period or corrected-age cut-off as a discharge criterion.",
+   "evidence": [
+    {
+     "ref": "Embleton2023",
+     "quote": "R1: Most stable growing infants will require fluid intakes of 150-180 mL/kg/d to achieve appropriate nutrient intakes. GOR B",
+     "location": "Fluid recommendations (PDF p. 13)"
+    },
+    {
+     "ref": "Embleton2023",
+     "quote": "R2: If nutrition needs can be met, fluid intake as low as 135 ml/kg/d may be considered safe to maintain body homeostasis and avoid renal compromise. GPP",
+     "location": "Fluid recommendations (PDF p. 13)"
+    },
+    {
+     "ref": "Watson2016",
+     "quote": "Meta-analyses, although limited by data quality and availability, suggest that responsive feeding results in slightly slower rates of weight gain (MD -1.36, 95% CI -2.44 to -0.29 g/kg/day), and provide some evidence that responsive feeding reduces the time taken for infants to transition from enteral tube to oral feeding (MD -5.53, 95% CI -6.80 to -4.25 days).",
+     "location": "Abstract > Main results"
+    },
+    {
+     "ref": "Watson2016",
+     "quote": "The importance of this finding is uncertain as the trials did not find a strong or consistent effect on the duration of hospitalisation.",
+     "location": "Abstract > Main results"
+    },
+    {
+     "ref": "Arwehed2026",
+     "quote": "Practices varied between units as to whether the infant should be able to breast- or bottle feed a certain amount before transition to home care, or only considered to be respiratory stable during feeding (Table 1).",
+     "location": "Results > Feeding and nutrition"
+    },
+    {
+     "ref": "Arwehed2026",
+     "quote": "| Breast or bottle feed specified amount | 9 (25) |",
+     "location": "Table 1"
+    },
+    {
+     "ref": "Arwehed2026",
+     "quote": "While early discharge to NH, including with enteral feeding tube, is common practice in most Swedish units, there are currently no nationally defined discharge criteria or guidelines.",
+     "location": "Introduction"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "On discharge feeding regimen for at least 24 hrs",
+   "verdict": "insufficient",
+   "summary": "The 2022 Canadian statement recommends planning the post-discharge feeding regimen with parents and having caregivers prepare fortified or formula feeds before NICU discharge [Anderson2022], but no retrieved source specifies a minimum time on that regimen before discharge.",
+   "evidence": [
+    {
+     "ref": "Anderson2022",
+     "quote": "Ensure appropriate weight gain and maintenance, and plan a post-discharge feeding regimen with parents.",
+     "location": "A checklist of recommendations > Before discharge"
+    },
+    {
+     "ref": "Anderson2022",
+     "quote": "For infants requiring additives to human milk or formula feeding, caregivers should be taught and given opportunities to prepare feeds before NICU discharge [60].",
+     "location": "Physiological maturity > Feeding and weight gain"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "In open crib swaddled with one layer of clothes for at least 24 hrs with normal temperature",
+   "verdict": "concordant",
+   "summary": "The 2022 Canadian statement recommends maintaining body temperature within 36.5°C to 37.5°C when appropriately dressed for the ambient temperature before discharge [Anderson2022], a Cochrane review describes maintaining temperature after transfer to an open cot as a key discharge criterion [New2011], and all 36 Swedish units, which commonly discharge to neonatal home care, required normal temperature without a heated mattress [Arwehed2026]; no retrieved guideline specifies an observation period or the number of clothing layers.",
+   "evidence": [
+    {
+     "ref": "Anderson2022",
+     "quote": "Maintain the infant’s body temperature within normal range (36.5°C to 37.5°C) when appropriately dressed for the ambient temperature.",
+     "location": "A checklist of recommendations > Before discharge"
+    },
+    {
+     "ref": "New2011",
+     "quote": "A key criterion for discharging preterm infants home from nurseries is their ability to maintain temperature once transferred from incubators to open cots.",
+     "location": "Abstract > Background"
+    },
+    {
+     "ref": "Arwehed2026",
+     "quote": "Cardiorespiratory stability and maintenance of normal body temperature without a heated mattress were minimum discharge requirements in all units (Table 1).",
+     "location": "Results"
+    }
+   ]
+  }
+ ],
+ "omissions": [
+  {
+   "id": "o1",
+   "related_claim": "c3",
+   "topic": "Screening for BPD-associated pulmonary hypertension before discharge on oxygen",
+   "note": "Current evidence suggests that the 2022 Canadian statement lists evaluation for BPD-associated hypertension before discharge [Anderson2022], and a US expert Delphi survey reached consensus on an echocardiogram after 36 weeks PMA, prior to discharge, for infants with BPD discharged on home oxygen [Levin2023].",
+   "evidence": [
+    {
+     "ref": "Anderson2022",
+     "quote": "Evaluate infants for broncho-pulmonary dysplasia (BPD)-associated hypertension and, if present, arrange appropriate follow-up.",
+     "location": "A checklist of recommendations > Before discharge"
+    },
+    {
+     "ref": "Levin2023",
+     "quote": "Consensus was also gained on obtaining an echocardiogram after 36 weeks PMA, prior to discharge, and obtaining a routine chest radiograph prior to or soon after discharge.",
+     "location": "Results > Discharge on home oxygen"
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "related_claim": "c2",
+   "topic": "Home pulse oximetry and pre-discharge oximetry for infants discharged on oxygen",
+   "note": "Current evidence suggests that guidelines differ on home pulse oximetry for infants on home oxygen [Hayes2019; Kapur2020]. The ATS guideline recommends pulse oximetry monitoring in the home, with caregiver training in its use [Hayes2019]. An Australasian position statement does not recommend routine home oximeter monitoring, but recommends assessing the safety of short-term disconnection from oxygen and overnight oximetry in the days before discharge [Kapur2020].",
+   "evidence": [
+    {
+     "ref": "Hayes2019",
+     "quote": "With the panel recommending the monitoring of children on HOT with pulse oximetry in the home, appropriate caregiver training is required for its use and application.",
+     "location": "Providing HOT > Monitoring"
+    },
+    {
+     "ref": "Kapur2020",
+     "quote": "It is recommended that the safety of short‐term disconnection from supplemental oxygen is assessed before discharge.",
+     "location": "Box 3, Summary main statements"
+    },
+    {
+     "ref": "Kapur2020",
+     "quote": "SpO2 should be assessed by overnight oximetry in the days prior to discharge and have the first clinical review in a 4–6 week window.",
+     "location": "Box 1, item 2"
+    },
+    {
+     "ref": "Kapur2020",
+     "quote": "Routine monitoring with an oximeter at home is not recommended.",
+     "location": "Monitoring peri-discharge and at home"
+    }
+   ]
+  }
+ ],
+ "references": [
+  {
+   "key": "Anderson2022",
+   "role": "source",
+   "authors": "Anderson N, Narvey M",
+   "title": "Discharge planning of the preterm infant",
+   "journal": "Paediatr Child Health",
+   "year": "2022",
+   "volume": "27",
+   "issue": "2",
+   "pages": "129-130",
+   "doi": "10.1093/pch/pxac001",
+   "pmid": "35599674",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35599674/",
+    "https://api.crossref.org/works/10.1093/pch/pxac001"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Hayes2019",
+   "role": "source",
+   "authors": "Hayes D Jr, Wilson KC, Krivchenia K, et al.",
+   "title": "Home Oxygen Therapy for Children. An Official American Thoracic Society Clinical Practice Guideline",
+   "journal": "Am J Respir Crit Care Med",
+   "year": "2019",
+   "volume": "199",
+   "issue": "3",
+   "pages": "e5-e23",
+   "doi": "10.1164/rccm.201812-2276ST",
+   "pmid": "30707039",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/30707039/",
+    "https://api.crossref.org/works/10.1164/rccm.201812-2276ST"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Kapur2020",
+   "role": "source",
+   "authors": "Kapur N, Nixon G, Robinson P, et al.",
+   "title": "Respiratory management of infants with chronic neonatal lung disease beyond the NICU: A position statement from the Thoracic Society of Australia and New Zealand",
+   "journal": "Respirology",
+   "year": "2020",
+   "volume": "25",
+   "issue": "8",
+   "pages": "880-888",
+   "doi": "10.1111/resp.13876",
+   "pmid": "32510776",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/32510776/",
+    "https://api.crossref.org/works/10.1111/resp.13876"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Levin2023",
+   "role": "source",
+   "authors": "Levin JC, Annesi CA, Williams DN, et al.",
+   "title": "Discharge Practices for Infants with Bronchopulmonary Dysplasia: A Survey of National Experts",
+   "journal": "J Pediatr",
+   "year": "2023",
+   "volume": "253",
+   "issue": "",
+   "pages": "72-78.e3",
+   "doi": "10.1016/j.jpeds.2022.09.018",
+   "pmid": "36126730",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36126730/",
+    "https://api.crossref.org/works/10.1016/j.jpeds.2022.09.018"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Dawson2026",
+   "role": "source",
+   "authors": "Dawson S, Berlin K, Brewer B, Lagatta J",
+   "title": "Home Oxygen Use and Post-Discharge Management of Infants with Bronchopulmonary Dysplasia",
+   "journal": "Clin Perinatol",
+   "year": "2026",
+   "volume": "53",
+   "issue": "2",
+   "pages": "263-275",
+   "doi": "10.1016/j.clp.2026.02.009",
+   "pmid": "42276720",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42276720/",
+    "https://api.crossref.org/works/10.1016/j.clp.2026.02.009"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Dawson2020",
+   "role": "source",
+   "authors": "Dawson SK, D'Andrea LA, Lau R, Lagatta JM",
+   "title": "Using a home oxygen weaning protocol and pCO(2) to evaluate outcomes for infants with bronchopulmonary dysplasia discharged on home oxygen",
+   "journal": "Pediatr Pulmonol",
+   "year": "2020",
+   "volume": "55",
+   "issue": "12",
+   "pages": "3293-3303",
+   "doi": "10.1002/ppul.25057",
+   "pmid": "32897654",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/32897654/",
+    "https://api.crossref.org/works/10.1002/ppul.25057"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Thornton2015",
+   "role": "source",
+   "authors": "Thornton PS, Stanley CA, De Leon DD, et al.",
+   "title": "Recommendations from the Pediatric Endocrine Society for Evaluation and Management of Persistent Hypoglycemia in Neonates, Infants, and Children",
+   "journal": "J Pediatr",
+   "year": "2015",
+   "volume": "167",
+   "issue": "2",
+   "pages": "238-245",
+   "doi": "10.1016/j.jpeds.2015.03.057",
+   "pmid": "25957977",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/25957977/",
+    "https://api.crossref.org/works/10.1016/j.jpeds.2015.03.057"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Embleton2023",
+   "role": "source",
+   "authors": "Embleton ND, Jennifer Moltu S, Lapillonne A, et al.",
+   "title": "Enteral Nutrition in Preterm Infants (2022): A Position Paper From the ESPGHAN Committee on Nutrition and Invited Experts",
+   "journal": "J Pediatr Gastroenterol Nutr",
+   "year": "2023",
+   "volume": "76",
+   "issue": "2",
+   "pages": "248-268",
+   "doi": "10.1097/MPG.0000000000003642",
+   "pmid": "36705703",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/36705703/",
+    "https://api.crossref.org/works/10.1097/MPG.0000000000003642"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Watson2016",
+   "role": "source",
+   "authors": "Watson J, McGuire W",
+   "title": "Responsive versus scheduled feeding for preterm infants",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2016",
+   "volume": "2016",
+   "issue": "8",
+   "pages": "CD005255",
+   "doi": "10.1002/14651858.CD005255.pub5",
+   "pmid": "27580199",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/27580199/",
+    "https://api.crossref.org/works/10.1002/14651858.CD005255.pub5"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "New2011",
+   "role": "source",
+   "authors": "New K, Flenady V, Davies MW",
+   "title": "Transfer of preterm infants from incubator to open cot at lower versus higher body weight",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2011",
+   "volume": "2011",
+   "issue": "9",
+   "pages": "CD004214",
+   "doi": "10.1002/14651858.CD004214.pub4",
+   "pmid": "21901688",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/21901688/",
+    "https://api.crossref.org/works/10.1002/14651858.CD004214.pub4"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Arwehed2026",
+   "role": "source",
+   "authors": "Arwehed S, Axelin A, Ågren J, Blomqvist YT",
+   "title": "Discharge criteria, practices, and decision-making in the transition of preterm infants to home",
+   "journal": "Pediatr Res",
+   "year": "2026",
+   "volume": "99",
+   "issue": "2",
+   "pages": "670-677",
+   "doi": "10.1038/s41390-024-03752-w",
+   "pmid": "39604520",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/39604520/",
+    "https://api.crossref.org/works/10.1038/s41390-024-03752-w"
+   ],
+   "verified_date": "2026-11-10"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 3,
+  "date": "2026-11-10",
+  "quotes_checked": 104,
+  "references_verified": 11,
+  "known_limitations": [
+   {
+    "item": "AAPCFN2008",
+    "note": "The AAP 2008 hospital-discharge statement was available as abstract only (the saved page was a bot-check page); it is not cited."
+   },
+   {
+    "item": "Cochrane PDFs",
+    "note": "Cochrane full-text PDFs returned HTTP 412/403; abstracts were used. Logged and not worked around."
+   },
+   {
+    "item": "First-pass Comparer",
+    "note": "The first-pass Comparer read the earlier old-rule published note before assigning verdicts. The Reviewer was told not to read it and re-derived all 7 verdicts independently from the workspace evidence in round 1."
+   },
+   {
+    "item": "Round 1-3 suggested items",
+    "note": "Not applied: Talej2022 for c5, Shankaran2019 protocol for c7, Watson2016 full text, Goodstein2021 swaddling check, 'no significant association' wording for Dawson2020 in c3."
+   }
+  ]
+ }
+}

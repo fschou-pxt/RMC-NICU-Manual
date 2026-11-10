@@ -1,0 +1,774 @@
+{
+ "chapter": "admission",
+ "section": "Central line placement",
+ "anchor": "admission.html#central-line-placement",
+ "source": {
+  "file": "site/src/content/docs/admission.mdx",
+  "lines": "28-106",
+  "manual_commit": "f112cde"
+ },
+ "checked": "2026-11-10",
+ "generated_with": "Researcher: Claude Opus 5.5 (claude-opus-5-5); Comparer: Claude Opus 5.5 (claude-opus-5-5); Reviewer: Claude Opus 5.5 (claude-opus-5-5)",
+ "triage": {
+  "clinical": 10,
+  "operational": 5,
+  "definition": 0,
+  "context": 2
+ },
+ "scope": {
+  "population": "Newborn infants admitted to the KP Riverside/Moreno Valley NICUs who receive a UVC, UAC or PICC, mostly preterm and very low birth weight infants; the UVC criteria cover infants <28 weeks, infants >=28 weeks with birth weight <1,250 g, and larger infants with clinical indications.",
+  "topic": "Indications for umbilical venous and arterial catheters, initial UVC infusates and heparin, UAC blood-sampling setup, PICC tip-position imaging, and closed normal-saline flush systems for central lines.",
+  "basis": "Heading \"## Central line placement\" in the admission chapter, with subheadings UVC Placement, UAC Placement, PICC placement and Closed NS flush system; brief unit context (newborn NICU admissions).",
+  "set_aside": [
+   {
+    "ref": "Faraone2026",
+    "population": "Patients of all ages with central venous access devices (Italian expert consensus)",
+    "reason": "Abstract does not report neonatal recommendations separately."
+   },
+   {
+    "ref": "Bradford2020",
+    "population": "Infants and children with long-term central venous catheters; temporary CVCs and PICCs excluded",
+    "reason": "Does not cover the section's umbilical catheters or neonatal PICCs."
+   }
+  ]
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "Criteria for UVC: [flowchart] Birth GA <28 weeks -> UVC placement; Birth GA >=28 weeks -> Birth weight <1,250g -> UVC placement; Birth weight >=1,250g -> Clinically indicated: Severe respiratory disease, Clinically unstable, IUGR, etc... -> UVC placement",
+   "verdict": "partly_concordant",
+   "summary": "A 2023 GAVeCeLT/GAVePed consensus lists UVC indications as birth at or below 28 weeks, severe respiratory distress (intubated or NIV with FiO2 > 40%), hemodynamic instability, difficult peripheral access and therapeutic hypothermia, and adds neonates needing PN at birth such as growth-restricted preterm infants with abnormal Doppler [Barone2023]; standardized indications reduced umbilical catheter use in infants <33 weeks [Shahid2014]; no retrieved source uses a birth-weight cut-off of 1,250 g, and the consensus gestational-age boundary is at or less than 28 weeks rather than <28 weeks [Barone2023].",
+   "note": "Current evidence suggests UVC placement for infants born at or below 28 weeks, for severe respiratory distress defined as intubation or non-invasive ventilation with FiO2 > 40%, for hemodynamic instability or difficult peripheral access, and for therapeutic hypothermia [Barone2023]. The same consensus suggests UVC for neonates needing PN at birth, such as growth-restricted preterm infants with abnormal antenatal Doppler, and names no birth-weight threshold [Barone2023].",
+   "evidence": [
+    {
+     "ref": "Barone2023",
+     "quote": "Appropriate indications for UVC include (a) preterm infants born at or less than 28 weeks of gestation at the time of birth; (b) neonates with severe respiratory distress (intubated or on non-invasive ventilation with FiO2 > 40%), or with hemodynamic instability, or with difficulty in finding peripheral venous access at the time of birth; (c) neonates affected by asphyxia requiring therapeutic hypothermia.",
+     "location": "Q1 Panel recommendations, item 1"
+    },
+    {
+     "ref": "Barone2023",
+     "quote": "The use of UVC should also be considered in neonates who need PN at birth but are not included in the categories mentioned above [43, 44], such as preterm infants with severe growth restriction and abnormal antenatal Doppler.",
+     "location": "Q1 Special considerations"
+    },
+    {
+     "ref": "Shahid2014",
+     "quote": "Implementation of guidelines standardizing the use of umbilical catheters in the NICU is feasible. Fewer infants were exposed to the risk of UVC or UAC, and fewer resources were used.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "Initial fluid - Port 1: D10AA or D5AA",
+   "verdict": "concordant",
+   "summary": "The European RDS guideline recommends starting PN from birth with amino acids from day one in preterm infants [Sweet2026], and ASPEN found very low-quality evidence with few outcome differences by timing of PN or amino acid dose [Robinson2023]; no retrieved source addresses the dextrose concentration (D10 versus D5) of the starter solution, and evidence for term infants was not found.",
+   "evidence": [
+    {
+     "ref": "Sweet2026",
+     "quote": "PN should be started from birth. Amino acids 1.5–2 g/kg/d should be started from day one and quickly built up to 3.0 g/kg/d and not exceed 3.5 g/kg/day (B2).",
+     "location": "Early Fluids and Nutritional Support, Recommendation 3"
+    },
+    {
+     "ref": "Robinson2023",
+     "quote": "Most clinical outcomes were not significantly different between comparison groups when evaluating timing of PN initiation, amino acid dose, and ILE composition.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Barone2023",
+     "quote": "Double lumen UVCs should be preferred (a) in infants requiring repeated blood samples; (b) in infants requiring multiple continuous infusions; (c) in infants simultaneously requiring parenteral nutrition (PN) + intravenous drugs not compatible with PN.",
+     "location": "Q1 Panel recommendations, item 4"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "Port 1: D10AA or D5AA - 0.5U/mL heparin at 1mL/hr - 1U/mL heparin at 0.5mL/hr",
+   "verdict": "partly_concordant",
+   "summary": "ACCP guidance recommends continuous heparin at 0.5 units/kg per h to maintain neonatal CVAD patency [Monagle2012], supported by a Cochrane review of neonatal PICCs [Shah2008] and an RCT using 0.5 units/mL through neonatal long lines [Monagle2012]; one small study of 0.5 IU/mL at 1 mL/hr through UVCs in term and near-term neonates found no effect on thrombosis [Unal2012], and no trial of UVC heparin in preterm infants was retrieved.",
+   "note": "Current evidence suggests continuous heparin at 0.5 units/kg per h, a weight-based dose, to maintain patency of neonatal central venous access devices, based mainly on studies of percutaneous central catheters [Monagle2012] [Shah2008]. The one UVC study, in term and near-term neonates, found no effect of 0.5 IU/mL at 1 mL/hr on thrombosis [Unal2012].",
+   "evidence": [
+    {
+     "ref": "Monagle2012",
+     "quote": "For neonates with CVADs, we recommend to maintain CVAD patency with UFH continuous infusion at 0.5 units/kg per h over no prophylaxis (Grade 1A) or intermittent local thrombolysis (Grade 2C).",
+     "location": "Summary of Recommendations 2.4"
+    },
+    {
+     "ref": "Monagle2012",
+     "quote": "A 2008 Cochrane review of peripherally placed central venous catheters in neonates confirms the value of UFH continuous infusion at 0.5 units/kg per h compared with no treatment.",
+     "location": "Section 2.4-2.5, CVAD prophylaxis in neonates"
+    },
+    {
+     "ref": "Shah2008",
+     "quote": "Evidence from this systematic review support the prophylactic use of heparin for PCVC in neonates at a dose of 0.5 IU/kg/hr.",
+     "location": "Abstract, Implications for practice"
+    },
+    {
+     "ref": "Monagle2012",
+     "quote": "A subsequent randomized controlled trial (RCT) demonstrated reduced infection with 0.5 units/mL heparin through a neonatal long line compared with no heparin (RR, 0.57; 95% CI, 0.32-0.98; number needed to treat, 9; 95% CI, 5-212).",
+     "location": "Section 2.4-2.5, CVAD prophylaxis in neonates"
+    },
+    {
+     "ref": "Unal2012",
+     "quote": "Heparin or placebo (0.5 IU/mL) was infused at a rate of 1 mL/hr to the study and control group.",
+     "location": "Abstract, Methods"
+    },
+    {
+     "ref": "Unal2012",
+     "quote": "This study demonstrated that heparin infusion of 0.5 IU/mL through the UVC had no effect on catheter-related thrombosis in term and near-term neonates.",
+     "location": "Abstract, Conclusion"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "Port 2: NaAce 77mEq/L or 154mEq/L",
+   "verdict": "partly_concordant",
+   "summary": "Acetate replacing chloride in preterm PN reduced metabolic acidosis [Peters1997] [Ali2020], and sodium acetate 77 mEq/L was used safely as a heparinized UAC patency fluid in a retrospective neonatal cohort [Qian2026], but the European RDS guideline states that sodium is usually withheld over the first 2 days and that fluids are tailored to serum sodium [Sweet2026]; no study of 154 mEq/L or of sodium acetate in a UVC lumen was retrieved.",
+   "note": "Current evidence suggests acetate is a suitable sodium salt for preterm infants, with less metabolic acidosis than chloride in PN [Peters1997] [Ali2020], and sodium acetate 77 mEq/L has been used as a heparinized UAC patency fluid [Qian2026]. The European RDS guideline states that sodium is usually withheld over the first 2 days, with fluids tailored to serum sodium [Sweet2026].",
+   "evidence": [
+    {
+     "ref": "Sweet2026",
+     "quote": "Sodium is usually withheld over the first 2 days [217] and insensible losses minimised by humidification [218].",
+     "location": "Early Fluids and Nutritional Support"
+    },
+    {
+     "ref": "Sweet2026",
+     "quote": "Fluids must be tailored individually according to serum sodium levels, urine output and weight loss (D1).",
+     "location": "Early Fluids and Nutritional Support, Recommendation 2"
+    },
+    {
+     "ref": "Peters1997",
+     "quote": "Acetate in neonatal parenteral nutrition reduces metabolic acidosis and hyperchloraemia.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Ali2020",
+     "quote": "The use of SA in PN was associated with reduced metabolic acidosis and fewer BPD.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Qian2026",
+     "quote": "This single-center, retrospective cohort study included neonates receiving dextrose 5% or sodium acetate 77 mEq/L heparinized fluid for UAC patency.",
+     "location": "Abstract, Methods"
+    },
+    {
+     "ref": "Qian2026",
+     "quote": "Using sodium acetate for UAC patency is safe and may decrease the number of painful capillary heel sticks.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "Port 2: NaAce 77mEq/L or 154mEq/L - 1U/mL heparin at 0.3mL/hr - 1U/mL heparin at 0.5mL/hr - 0.5U/mL heparin at 1mL/hr",
+   "verdict": "partly_concordant",
+   "summary": "As for port 1, ACCP guidance [Monagle2012] and a Cochrane review of neonatal percutaneous catheters [Shah2008] support continuous heparin at 0.5 units/kg per h for neonatal central venous access devices; the only UVC study used 0.5 IU/mL at 1 mL/hr in term and near-term neonates and found no effect on thrombosis [Unal2012], and no evidence on heparin in a second UVC lumen, or in both lumens at once, was retrieved.",
+   "note": "Current evidence suggests continuous heparin at 0.5 units/kg per h, a weight-based dose, to maintain patency of neonatal central venous access devices, based mainly on studies of percutaneous central catheters [Monagle2012] [Shah2008]. The one UVC study, in term and near-term neonates, found no effect of 0.5 IU/mL at 1 mL/hr on thrombosis [Unal2012].",
+   "evidence": [
+    {
+     "ref": "Monagle2012",
+     "quote": "For neonates with CVADs, we recommend to maintain CVAD patency with UFH continuous infusion at 0.5 units/kg per h over no prophylaxis (Grade 1A) or intermittent local thrombolysis (Grade 2C).",
+     "location": "Summary of Recommendations 2.4"
+    },
+    {
+     "ref": "Monagle2012",
+     "quote": "A 2008 Cochrane review of peripherally placed central venous catheters in neonates confirms the value of UFH continuous infusion at 0.5 units/kg per h compared with no treatment.",
+     "location": "Section 2.4-2.5, CVAD prophylaxis in neonates"
+    },
+    {
+     "ref": "Shah2008",
+     "quote": "Evidence from this systematic review support the prophylactic use of heparin for PCVC in neonates at a dose of 0.5 IU/kg/hr.",
+     "location": "Abstract, Implications for practice"
+    },
+    {
+     "ref": "Unal2012",
+     "quote": "Heparin or placebo (0.5 IU/mL) was infused at a rate of 1 mL/hr to the study and control group.",
+     "location": "Abstract, Methods"
+    },
+    {
+     "ref": "Unal2012",
+     "quote": "This study demonstrated that heparin infusion of 0.5 IU/mL through the UVC had no effect on catheter-related thrombosis in term and near-term neonates.",
+     "location": "Abstract, Conclusion"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "UAC Placement - Indication - Either of the following: Frequent blood draw; Hemodynamic monitoring",
+   "verdict": "concordant",
+   "summary": "The European RDS guideline states that umbilical or peripheral arterial cannulation is desirable for preterm infants needing frequent blood gases, particularly with a need for continuous blood pressure monitoring [Sweet2026], and non-invasive blood pressure in infants <32 weeks showed large, inconsistent errors compared with UAC readings [Konig2012]; the guideline names frequent blood gases rather than blood draws in general [Sweet2026], and evidence for term infants was not retrieved.",
+   "evidence": [
+    {
+     "ref": "Sweet2026",
+     "quote": "Arterial blood gases are best; therefore, for babies who require frequent blood gases, umbilical or peripheral arterial cannulation is desirable, particularly if there is a need for continuous blood pressure monitoring.",
+     "location": "Monitoring and Supportive Care"
+    },
+    {
+     "ref": "Konig2012",
+     "quote": "Although the average differences between invasive and non-invasive BP measurements are acceptable, the range of under- and overestimation of non-invasive BP measurements is large and not consistent, making reliance on non-invasive modalities to guide circulatory management problematic.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "Connect UAC to the Split Septum Micro T-Connector: The Hummi Micro-Draw Blood Transfer Device allows the nurses the ability to draw blood from the UAC with reduced clearance and NS flush volumes, minimized infection risk, and decreased alteration in cerebral hemodynamics during the blood sampling process.",
+   "verdict": "insufficient",
+   "summary": "A 2026 Cochrane review found the evidence very uncertain for devices that reintroduce blood after sampling in preterm infants [Nissimov2026]; physiological studies show UAC sampling lowers cerebral oxygenation, with the fall depending on volume withdrawn [Roll2006] or prevented by slower withdrawal [Schulz2003], a needleless-connector RCT on central lines (not UAC sampling) showed only a non-significant trend to fewer CLABSI with split septum [Marsubrin2026], and no study of the named device was retrieved.",
+   "evidence": [
+    {
+     "ref": "Nissimov2026",
+     "quote": "The evidence is very uncertain regarding the effects on mortality and major morbidities of (1) devices that reintroduce blood after analysis and (2) strict sampling protocols.",
+     "location": "Abstract, Authors' conclusions"
+    },
+    {
+     "ref": "Roll2006",
+     "quote": "Blood sampling from umbilical artery catheters induces a decrease in cerebral blood volume and cerebral oxygenation. The magnitude of the decrease depends on the blood volume withdrawn but not on sampling velocity.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Schulz2003",
+     "quote": "Our results show that blood withdrawal over 20 seconds from a UAC in high position significantly decreases cerebral O2Hb and TOI in preterm infants. Prolonging sampling time to 40 seconds can prevent this phenomenon.",
+     "location": "Abstract, Conclusion"
+    },
+    {
+     "ref": "Marsubrin2026",
+     "quote": "Split septum demonstrated a trend in lower incidence of CLABSI. This result should be weighed carefully in determining the needleless connector type best suited for very preterm or VLBW neonates.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "Confirm tip position: Obtain both AP and cross-table views upon placement",
+   "verdict": "partly_concordant",
+   "summary": "Two-view radiographs are supported mainly for saphenous (lower-limb) PICCs, from a case report and a narrative review [Coit2005] [Sneath2010], while a neonatal meta-analysis links ultrasound tip location to fewer malpositions and less radiation (low certainty) [Mohamed2025], a multicentre study found ultrasound accurate for neonatal PICC tip location [Grasso2025], and a European neonatal position paper calls for systematic ultrasound [NEVAT2026].",
+   "note": "Current evidence suggests a lateral view in addition to AP mainly for lower-limb (saphenous) PICCs, based on a case report and a narrative review [Coit2005] [Sneath2010]. Ultrasound tip location in neonates is accurate and is associated with fewer malpositions and less radiation (low certainty) [Grasso2025] [Mohamed2025], and a European neonatal position paper calls for systematic ultrasound [NEVAT2026].",
+   "evidence": [
+    {
+     "ref": "Sneath2010",
+     "quote": "Supine chest radiograph is the most widely used method and is convenient, but when line tip position is unclear, contrast or ultrasound confirmation can be used. When PICC lines are placed in the saphenous vein, infants may benefit from supine and lateral abdominal radiographs to ensure placement in the inferior vena cava.",
+     "location": "Abstract, Results"
+    },
+    {
+     "ref": "Coit2005",
+     "quote": "Two-view radiographs should be considered to assure the proper catheter tip placement.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Mohamed2025",
+     "quote": "The use of ultrasound-guided CC tip-position in neonates is associated with a reduction in malposition rates and radiation exposure (low certainty evidence).",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Grasso2025",
+     "quote": "Ultrasound is a highly feasible and accurate method for n-PICC tip location.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "NEVAT2026",
+     "quote": "Key elements include evidence-based selection of the device, structured preprocedural evaluation, maximal aseptic precautions, systematic use of ultrasound, securement with cyanoacrylate and semipermeable dressings, and structured post-insertion surveillance.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "Confirm tip position: Obtain an AP view q Monday",
+   "verdict": "practice_varies",
+   "summary": "A single-centre neonatal cohort found PICCs mostly migrate outwards over their dwell and that this can be monitored by weekly radiographs, while noting no prior evidence for routine surveillance [Stekhova2023]; a prospective multicentre study found migration most often in the first 2 h and recommends serial ultrasound monitoring instead [Grasso2025].",
+   "evidence": [
+    {
+     "ref": "Stekhova2023",
+     "quote": "PICCs predominantly migrate outwards over their entire in situ duration. This can be monitored by weekly radiograph surveillance.",
+     "location": "Conclusion"
+    },
+    {
+     "ref": "Stekhova2023",
+     "quote": "To the best of our knowledge, there is no evidence in the literature on the utility of regular surveillance of PICC to identify migration in newborn infants.",
+     "location": "Discussion"
+    },
+    {
+     "ref": "Grasso2025",
+     "quote": "Tip migration is a frequent event, particularly towards the heart in upper limbs/scalp insertions and within the first 2 h. We recommend serial ultrasound monitoring to detect tip migration and potentially reduce catheter-related complications.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "Closed NS flush system is to be ordered when a central line is in place:",
+   "verdict": "concordant",
+   "summary": "Closed or pre-assembled infusion systems were associated with lower CLABSI rates in neonates with PICCs [vanRens2023] [Dacquino2026], and a European neonatal position paper emphasizes closed systems for infusion line management [NEVAT2026]; both studies were observational and limited to PICCs, so umbilical lines were not studied [vanRens2023] [Dacquino2026], no retrieved study tested normal-saline flushing itself, and the manual's flush dose range is in an image and was not checked.",
+   "evidence": [
+    {
+     "ref": "vanRens2023",
+     "quote": "Utilization of a pre-assembled closed IV administration set was associated with a reduction in CLABSI rates.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "vanRens2023",
+     "quote": "PIVCs, extended-dwell catheters, umbilical lines, and surgically inserted catheters are included in the database but are excluded from this initial analysis.",
+     "location": "Methods"
+    },
+    {
+     "ref": "Dacquino2026",
+     "quote": "CMLIS implementation was associated with lower CLABSI incidence density and reduced antibiotic exposure.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Dacquino2026",
+     "quote": "Eligibility required admission within the first 24 hours of life, the placement of a neonatal peripherally inserted central catheter (n-PICC), and survival beyond the initial 72 hours of life.",
+     "location": "Methods, Patients and settings"
+    },
+    {
+     "ref": "NEVAT2026",
+     "quote": "Infusion line management emphasizes the use of closed systems, passive disinfection caps, and checklists.",
+     "location": "Abstract"
+    }
+   ]
+  }
+ ],
+ "omissions": [],
+ "references": [
+  {
+   "key": "NEVAT2026",
+   "role": "source",
+   "authors": "Barone G, Piersigilli F, Pittiruti M",
+   "title": "Vascular access in the newborn: a position paper of Neonatal European Vascular Access Teams (NEVAT)",
+   "journal": "Eur J Pediatr",
+   "year": "2026",
+   "volume": "185",
+   "issue": "2",
+   "pages": "71",
+   "doi": "10.1007/s00431-025-06717-1",
+   "pmid": "41524806",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41524806/",
+    "https://api.crossref.org/works/10.1007/s00431-025-06717-1"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Barone2023",
+   "role": "source",
+   "authors": "Barone G, D'Andrea V, Ancora G, et al.",
+   "title": "The neonatal DAV-expert algorithm: a GAVeCeLT/GAVePed consensus for the choice of the most appropriate venous access in newborns",
+   "journal": "Eur J Pediatr",
+   "year": "2023",
+   "volume": "182",
+   "issue": "8",
+   "pages": "3385-3395",
+   "doi": "10.1007/s00431-023-04984-4",
+   "pmid": "37195350",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37195350/",
+    "https://api.crossref.org/works/10.1007/s00431-023-04984-4"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Shahid2014",
+   "role": "source",
+   "authors": "Shahid S, Dutta S, Symington A, Shivananda S",
+   "title": "Standardizing umbilical catheter usage in preterm infants",
+   "journal": "Pediatrics",
+   "year": "2014",
+   "volume": "133",
+   "issue": "6",
+   "pages": "e1742-1752",
+   "doi": "10.1542/peds.2013-1373",
+   "pmid": "24843063",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/24843063/",
+    "https://api.crossref.org/works/10.1542/peds.2013-1373"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Sweet2026",
+   "role": "source",
+   "authors": "Sweet DG, Carnielli VP, Greisen G, et al.",
+   "title": "European Consensus Guidelines on the Management of Respiratory Distress Syndrome: 2025",
+   "journal": "Neonatology",
+   "year": "2026",
+   "volume": "123",
+   "issue": "4",
+   "pages": "514-539",
+   "doi": "10.1159/000551062",
+   "pmid": "41802129",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41802129/",
+    "https://api.crossref.org/works/10.1159/000551062"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Robinson2023",
+   "role": "source",
+   "authors": "Robinson DT, Calkins KL, Chen Y, et al.",
+   "title": "Guidelines for parenteral nutrition in preterm infants: The American Society for Parenteral and Enteral Nutrition",
+   "journal": "JPEN J Parenter Enteral Nutr",
+   "year": "2023",
+   "volume": "47",
+   "issue": "7",
+   "pages": "830-858",
+   "doi": "10.1002/jpen.2550",
+   "pmid": "37610837",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37610837/",
+    "https://api.crossref.org/works/10.1002/jpen.2550"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Peters1997",
+   "role": "source",
+   "authors": "Peters O, Ryan S, Matthew L, Cheng K, Lunn J",
+   "title": "Randomised controlled trial of acetate in preterm neonates receiving parenteral nutrition",
+   "journal": "Arch Dis Child Fetal Neonatal Ed",
+   "year": "1997",
+   "volume": "77",
+   "issue": "1",
+   "pages": "F12-15",
+   "doi": "10.1136/fn.77.1.f12",
+   "pmid": "9279176",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/9279176/",
+    "https://api.crossref.org/works/10.1136/fn.77.1.f12"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Ali2020",
+   "role": "source",
+   "authors": "Ali A, Ong EY, Sadu Singh BK, Cheah FC",
+   "title": "Comparison Between Sodium Acetate and Sodium Chloride in Parenteral Nutrition for Very Preterm Infants on the Acid-Base Status and Neonatal Outcomes",
+   "journal": "Pediatr Gastroenterol Hepatol Nutr",
+   "year": "2020",
+   "volume": "23",
+   "issue": "4",
+   "pages": "377-387",
+   "doi": "10.5223/pghn.2020.23.4.377",
+   "pmid": "32704498",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/32704498/",
+    "https://api.crossref.org/works/10.5223/pghn.2020.23.4.377"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Qian2026",
+   "role": "source",
+   "authors": "Qian R, Desai PV, Shah A, Tracy J, Bashqoy F",
+   "title": "Sweet or Salty: Comparing Dextrose and Sodium Acetate Umbilical Arterial Catheter Fluids",
+   "journal": "J Pediatr Pharmacol Ther",
+   "year": "2026",
+   "volume": "31",
+   "issue": "3",
+   "pages": "390-398",
+   "doi": "10.5863/JPPT-25-00071",
+   "pmid": "42267073",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42267073/",
+    "https://api.crossref.org/works/10.5863/JPPT-25-00071"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Monagle2012",
+   "role": "source",
+   "authors": "Monagle P, Chan AKC, Goldenberg NA, et al.",
+   "title": "Antithrombotic therapy in neonates and children: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines",
+   "journal": "Chest",
+   "year": "2012",
+   "volume": "141",
+   "issue": "2 Suppl",
+   "pages": "e737S-e801S",
+   "doi": "10.1378/chest.11-2308",
+   "pmid": "22315277",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/22315277/",
+    "https://api.crossref.org/works/10.1378/chest.11-2308"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Shah2008",
+   "role": "source",
+   "authors": "Shah PS, Shah VS",
+   "title": "Continuous heparin infusion to prevent thrombosis and catheter occlusion in neonates with peripherally placed percutaneous central venous catheters",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2008",
+   "volume": "2008",
+   "issue": "2",
+   "pages": "CD002772",
+   "doi": "10.1002/14651858.CD002772.pub3",
+   "pmid": "18425882",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/18425882/",
+    "https://api.crossref.org/works/10.1002/14651858.CD002772.pub3"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Unal2012",
+   "role": "source",
+   "authors": "Unal S, Ekici F, Cetin İİ, Bilgin L",
+   "title": "Heparin infusion to prevent umbilical venous catheter related thrombosis in neonates",
+   "journal": "Thromb Res",
+   "year": "2012",
+   "volume": "130",
+   "issue": "5",
+   "pages": "725-728",
+   "doi": "10.1016/j.thromres.2012.07.018",
+   "pmid": "22901699",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/22901699/",
+    "https://api.crossref.org/works/10.1016/j.thromres.2012.07.018"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Konig2012",
+   "role": "source",
+   "authors": "König K, Casalaz DM, Burke EJ, Watkins A",
+   "title": "Accuracy of non-invasive blood pressure monitoring in very preterm infants",
+   "journal": "Intensive Care Med",
+   "year": "2012",
+   "volume": "38",
+   "issue": "4",
+   "pages": "670-676",
+   "doi": "10.1007/s00134-012-2499-y",
+   "pmid": "22392028",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/22392028/",
+    "https://api.crossref.org/works/10.1007/s00134-012-2499-y"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Nissimov2026",
+   "role": "source",
+   "authors": "Nissimov S, Sibrecht G, Weerasekara I, Bartocci M, Bruschettini M",
+   "title": "Minimizing blood sampling in preterm infants",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2026",
+   "volume": "8",
+   "issue": "8",
+   "pages": "CD016077",
+   "doi": "10.1002/14651858.CD016077.pub2",
+   "pmid": "42644552",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42644552/",
+    "https://api.crossref.org/works/10.1002/14651858.CD016077.pub2"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Schulz2003",
+   "role": "source",
+   "authors": "Schulz G, Keller E, Haensse D, Arlettaz R, Bucher HU, Fauchère JC",
+   "title": "Slow blood sampling from an umbilical artery catheter prevents a decrease in cerebral oxygenation in the preterm newborn",
+   "journal": "Pediatrics",
+   "year": "2003",
+   "volume": "111",
+   "issue": "1",
+   "pages": "e73-76",
+   "doi": "10.1542/peds.111.1.e73",
+   "pmid": "12509598",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/12509598/",
+    "https://api.crossref.org/works/10.1542/peds.111.1.e73"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Roll2006",
+   "role": "source",
+   "authors": "Roll C, Hüning B, Käunicke M, Krug J, Horsch S",
+   "title": "Umbilical artery catheter blood sampling volume and velocity: impact on cerebral blood volume and oxygenation in very-low-birthweight infants",
+   "journal": "Acta Paediatr",
+   "year": "2006",
+   "volume": "95",
+   "issue": "1",
+   "pages": "68-73",
+   "doi": "10.1080/08035250500369577",
+   "pmid": "16373299",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/16373299/",
+    "https://api.crossref.org/works/10.1080/08035250500369577"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Marsubrin2026",
+   "role": "source",
+   "authors": "Marsubrin PMT, Sjahrullah MAR, Widyasari NF, et al.",
+   "title": "The efficacy of needleless connector designs (split septum vs mechanical valve) on preventing central line-associated bloodstream infection (CLABSI) in very preterm or very low-birth-weight neonates: a randomized clinical trial",
+   "journal": "Infect Control Hosp Epidemiol",
+   "year": "2026",
+   "volume": "47",
+   "issue": "10",
+   "pages": "985-991",
+   "doi": "10.1017/ice.2026.10447",
+   "pmid": "42557878",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42557878/",
+    "https://api.crossref.org/works/10.1017/ice.2026.10447"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Stekhova2023",
+   "role": "source",
+   "authors": "Stekhova Y, Kodur V, Lowe G, et al.",
+   "title": "Role of a radiopaque agent and surveillance radiographs for peripherally inserted central catheters in newborn infants",
+   "journal": "Pediatr Radiol",
+   "year": "2023",
+   "volume": "53",
+   "issue": "11",
+   "pages": "2235-2244",
+   "doi": "10.1007/s00247-023-05705-7",
+   "pmid": "37490126",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37490126/",
+    "https://api.crossref.org/works/10.1007/s00247-023-05705-7"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Grasso2025",
+   "role": "source",
+   "authors": "Grasso F, Capasso A, Dolce P, et al.",
+   "title": "Ultrasound-guided tip location and detection of tip migration of neonatal peripherally inserted central catheters: a prospective, multicenter study (DISLOTIP study)",
+   "journal": "Crit Care",
+   "year": "2025",
+   "volume": "29",
+   "issue": "1",
+   "pages": "532",
+   "doi": "10.1186/s13054-025-05800-1",
+   "pmid": "41422244",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/41422244/",
+    "https://api.crossref.org/works/10.1186/s13054-025-05800-1"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Mohamed2025",
+   "role": "source",
+   "authors": "Mohamed A, Mohamed A, Mohsen N, Solis-Garcia G, Nasef N, Shah P",
+   "title": "Comparing Malposition and Complications Associated with Ultrasound-Guided versus Radiography-Guided Central Catheter Tip-Position in Neonates: A Systematic Review and Meta-Analysis",
+   "journal": "Neonatology",
+   "year": "2025",
+   "volume": "122",
+   "issue": "5",
+   "pages": "537-547",
+   "doi": "10.1159/000545772",
+   "pmid": "40203814",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40203814/",
+    "https://api.crossref.org/works/10.1159/000545772"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Coit2005",
+   "role": "source",
+   "authors": "Coit AK, Kamitsuka MD",
+   "title": "Peripherally inserted central catheter using the saphenous vein: importance of two-view radiographs to determine the tip location",
+   "journal": "J Perinatol",
+   "year": "2005",
+   "volume": "25",
+   "issue": "10",
+   "pages": "674-676",
+   "doi": "10.1038/sj.jp.7211363",
+   "pmid": "16193078",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/16193078/",
+    "https://api.crossref.org/works/10.1038/sj.jp.7211363"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Sneath2010",
+   "role": "source",
+   "authors": "Sneath N",
+   "title": "Are supine chest and abdominal radiographs the best way to confirm PICC placement in neonates?",
+   "journal": "Neonatal Netw",
+   "year": "2010",
+   "volume": "29",
+   "issue": "1",
+   "pages": "23-35",
+   "doi": "10.1891/0730-0832.29.1.23",
+   "pmid": "20085874",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/20085874/",
+    "https://api.crossref.org/works/10.1891/0730-0832.29.1.23"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "vanRens2023",
+   "role": "source",
+   "authors": "van Rens MFPT, Hugill K, Francia ALV, et al.",
+   "title": "Closed intravenous systems for central vascular access: A difference maker for CLABSI rates in neonates?",
+   "journal": "J Vasc Access",
+   "year": "2023",
+   "volume": "24",
+   "issue": "6",
+   "pages": "1390-1397",
+   "doi": "10.1177/11297298221085480",
+   "pmid": "35435032",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/35435032/",
+    "https://api.crossref.org/works/10.1177/11297298221085480"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Dacquino2026",
+   "role": "source",
+   "authors": "Dacquino FM, Gotchac J, Le Cabec E, Pauquet E, Gérard R",
+   "title": "Closed multilumen infusion system reduces CLABSI and antibiotic exposure in very preterm neonates",
+   "journal": "BMJ Paediatr Open",
+   "year": "2026",
+   "volume": "10",
+   "issue": "1",
+   "pages": "e005071",
+   "doi": "10.1136/bmjpo-2026-005071",
+   "pmid": "42901874",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42901874/",
+    "https://api.crossref.org/works/10.1136/bmjpo-2026-005071"
+   ],
+   "verified_date": "2026-11-10"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 2,
+  "date": "2026-11-10",
+  "quotes_checked": 116,
+  "references_verified": 23,
+  "known_limitations": [
+   {
+    "item": "Images",
+    "note": "The UVC securement image, the Split Septum Micro T-Connector and UAC stopcock photos, and the NS flush order screenshots (including the flush dose range) are images and were not checked."
+   },
+   {
+    "item": "vanGoudoever2018, Mesotten2018, Jochum2018",
+    "note": "ESPGHAN/ESPEN/ESPR/CSPEN 2018 parenteral nutrition chapters: no PubMed abstract and full text blocked, so nothing was quotable; they are not cited."
+   },
+   {
+    "item": "Access refusals",
+    "note": "StatPearls UAC chapter (reCAPTCHA), the ORBi copy of ESPGHAN, the Wiley PDF of Robinson2023 and the Safer Care Victoria guideline (connection failed) could not be retrieved; logged and not worked around. NEVAT2026 was read as abstract only."
+   },
+   {
+    "item": "Round 1-2 suggested items",
+    "note": "Not applied: Robinson2023 very-low-quality quote for c2, Qian2026 hypernatremia result for c4, Acun/Gupta2016 migration-timing evidence for c9."
+   }
+  ]
+ }
+}

@@ -1,0 +1,749 @@
+{
+ "chapter": "surgical",
+ "section": "Surgery",
+ "anchor": "surgical.html#surgery",
+ "source": {
+  "file": "site/src/content/docs/surgical.mdx",
+  "lines": "6-107",
+  "manual_commit": "f112cde"
+ },
+ "checked": "2026-11-10",
+ "generated_with": "Researcher: Claude Opus 5.5 (claude-opus-5-5); Comparer: Claude Opus 5.5 (claude-opus-5-5); Reviewer: Claude Opus 5.5 (claude-opus-5-5)",
+ "triage": {
+  "clinical": 13,
+  "operational": 14,
+  "definition": 0,
+  "context": 2
+ },
+ "scope": {
+  "population": "Newborns and young infants of any gestational age with cleft lip and/or cleft palate (isolated or syndromic, including Robin sequence), cared for in the NICU and followed after discharge; for the CT item, infants with Pierre Robin sequence being planned for mandibular distraction.",
+  "topic": "Inpatient feeding support, nutrition, referral and follow-up arrangements for infants with clefts, CT ordering for mandibular distraction planning in Pierre Robin sequence, and gastrostomy referral.",
+  "basis": "Headings \"Surgery\" > \"Craniofacial abnormalities\" > \"Cleft lip and/or palate\", \"Pierre Robin Sequence and Mandibular Distraction\" > \"Ordering CT scan for surgical planning\", and \"Gastrostomy Tube\" (lines 6-107 of surgical.mdx).",
+  "set_aside": []
+ },
+ "claims": [
+  {
+   "id": "c1",
+   "manual_text": "Consult genetics for workup.",
+   "verdict": "concordant",
+   "summary": "Cleft care guidance states that a comprehensive genetic evaluation can help determine whether a cleft is isolated or part of a syndrome, that any patient with a craniofacial difference may benefit from a genetics consultation, and that syndromic forms carry a higher risk of neonatal complications [ACPA2024]; a national guideline states that genetic testing may in principle be performed on all patients with cleft lip and palate, with an 'ought to' recommendation for geneticist counseling when additional malformations are seen on prenatal ultrasound and, before or after birth, when there is a positive family history [Sander2025], and the Robin sequence guideline refers all affected neonates to a clinical geneticist [Breugem2024]; an AAP clinical report notes that clefts may be associated with one of many syndromes, although its abstract gives no genetics-referral recommendation [Lewis2017].",
+   "evidence": [
+    {
+     "ref": "ACPA2024",
+     "quote": "a comprehensive genetic evaluation can help determine if the patient has an isolated difference or if the condition is part of a syndrome.",
+     "location": "Section 5, Genetic Evaluation and Genetic Counseling, p. 27 [PDF 29]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Syndromic forms of craniofacial differences can present with a higher risk for complications including in the immediate neonatal period.",
+     "location": "Section 5, Genetic Evaluation and Genetic Counseling, p. 27 [PDF 29]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Although any patient with a craniofacial difference may benefit from a consultation with a genetics provider, there are certain patient subgroups that may particularly benefit from genetic evaluation.",
+     "location": "Section 5, Genetic Evaluation and Genetic Counseling, p. 28 [PDF 30]"
+    },
+    {
+     "ref": "Sander2025",
+     "quote": "In principle, however, genetic testing for syndromic diseases caused by chromosomal aberrations or single-gene mutations may be performed on all CLPD patients.",
+     "location": "Human genetic testing, p. 329"
+    },
+    {
+     "ref": "Sander2025",
+     "quote": "Currently, a pathogenic genetic variant can be identified in about 10% of patients primarily presenting as non-syndromic (9).",
+     "location": "Human genetic testing, p. 329"
+    },
+    {
+     "ref": "Sander2025",
+     "quote": "Thus, the recommendation is to offer parents prenatal counseling and potentially further diagnostic testing by a clinical human geneticist, if additional malformations are detected by prenatal ultrasound.",
+     "location": "Human genetic testing, p. 329"
+    },
+    {
+     "ref": "Sander2025",
+     "quote": "The same applies pre- and postnatally to patients with clinically non-syndromic CLPD and a positive family history (EBR↑, “ought to “ recommendation).",
+     "location": "Human genetic testing, p. 329"
+    },
+    {
+     "ref": "Breugem2024",
+     "quote": "Refer all neonates/infants with Robin Sequence (RS) as soon as possible to a clinical geneticist within a center of expertise.",
+     "location": "Summary of recommendations, Chapter 3 Genetics"
+    },
+    {
+     "ref": "Lewis2017",
+     "quote": "CL/P may be associated with one of many syndromes that could further complicate a child's needs.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "manual_text": "Consult craniofacial team at West LA for feeding and follow-up instructions",
+   "verdict": "concordant",
+   "summary": "Cleft care guidance places the first cleft team evaluation within the first few weeks of life and, whenever possible, the first few days, with feeding support from team-based feeding specialists and cleft team outreach to NICUs so that cleft feeding care starts immediately after birth [ACPA2024]; a children's hospital pathway asks for a cleft team referral as soon as possible [ChildrensColorado2025].",
+   "evidence": [
+    {
+     "ref": "ACPA2024",
+     "quote": "The optimal time for the first evaluation is within the first few weeks of life and, whenever possible, within the first few days.",
+     "location": "Section 2, Principle III, p. 5 [PDF 7]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "This support should be provided by one or more team-based feeding specialists who are experienced with the needs of this patient population",
+     "location": "Section 5, Feeding, Growth, and Nutrition, p. 23 [PDF 25]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Cleft teams often collaborate with providers in neonatal intensive care units and newborn nurseries to provide education and outreach services that ensure appropriate cleft feeding care is provided immediately following birth whether diagnosis is made prenatally or postnatally.",
+     "location": "Feeding, Growth, and Nutrition, The Prenatal Period, p. 24 [PDF 26]"
+    },
+    {
+     "ref": "ChildrensColorado2025",
+     "quote": "A referral for a Cleft Lip and Palate team evaluation should be placed as soon as possible.",
+     "location": "Summary of recommendations, p. 4"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "manual_text": "make an inpatient Occupational Therapy referral for all cleft babies for a cleft feeding assessment.",
+   "verdict": "concordant",
+   "summary": "Cleft care guidance calls for a specialized feeding assessment for infants with clefts and lists occupational therapists among the disciplines that provide it, alongside speech-language pathologists, dietitians, nurses and lactation professionals [ACPA2024], and a children's hospital pathway asks for a feeding assessment within the first week, with occupational therapy and/or speech-language pathology support with cleft expertise in the NICU [ChildrensColorado2025]; evidence on the effect of the assessment itself is limited, with benefit shown for maternal education programmes [Penny2022] and no trials of maternal advice or support found in a Cochrane review [Bessell2011].",
+   "evidence": [
+    {
+     "ref": "ACPA2024",
+     "quote": "A specialized assessment is needed to ensure that appropriate feeding systems and recommendations are provided for patients and their families.",
+     "location": "Section 5, Feeding, Growth, and Nutrition, p. 23 [PDF 25]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Team members who often provide feeding support include speech-language pathologists, dietitians, pediatricians and primary care providers, advanced practice providers, occupational therapists, nurses, and lactation counselors or consultants.",
+     "location": "Section 5, Feeding, Growth, and Nutrition, p. 23 [PDF 25]"
+    },
+    {
+     "ref": "ChildrensColorado2025",
+     "quote": "Within the first week of the infant’s life, an airway, feeding and growth assessment should be completed.",
+     "location": "Summary of recommendations, p. 4"
+    },
+    {
+     "ref": "ChildrensColorado2025",
+     "quote": "Occupational therapy and/or speech-language pathology support with cleft expertise",
+     "location": "Algorithm 1, NICU resources, p. 1"
+    },
+    {
+     "ref": "Penny2022",
+     "quote": "Designated education programs for the mothers of infants with clefts had a positive impact on infant growth.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Bessell2011",
+     "quote": "No evidence was found to assess the use of any types of maternal advice and/or support for these babies.",
+     "location": "Abstract, Authors' conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "manual_text": "Newborns with isolated cleft lip can breastfeed, but we still recommend occupational therapy and lactation involvement.",
+   "verdict": "concordant",
+   "summary": "A breastfeeding protocol reports that infants with cleft lip may generate sufficient suction and often breastfeed successfully, and that access to a professional specialising in cleft lip/palate and breastfeeding, such as a lactation specialist, is beneficial [Boyce2019]; cleft care guidance states that infants with cleft lip only may feed at the breast with positioning or other modifications [ACPA2024], and a meta-analysis found more breastfeeding and fewer breastfeeding challenges with cleft lip than with cleft palate, at low or very low certainty [BeckerdeOliveira2024]; no source names occupational therapy specifically for cleft lip only.",
+   "evidence": [
+    {
+     "ref": "Boyce2019",
+     "quote": "There is moderate evidence to suggest that infants with CL may be able to generate sufficient suction",
+     "location": "Recommendation A3, p. 439 [PDF 3]"
+    },
+    {
+     "ref": "Boyce2019",
+     "quote": "descriptive reports suggest that these infants are often able to breastfeed successfully",
+     "location": "Recommendation A3, p. 439 [PDF 3]"
+    },
+    {
+     "ref": "Boyce2019",
+     "quote": "Several studies have suggested that there are benefits from having access to a health professional who specializes in CL/P and breastfeeding, such as a clinical nurse specialist or lactation specialist",
+     "location": "Recommendation B2, p. 439 [PDF 3]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Infants with cleft lip only may be able to feed at the breast and with standard feeding systems, although some alterations in positioning or other modifications may be needed to provide appropriate feeding support.",
+     "location": "Section 5, Feeding, Growth, and Nutrition, p. 23 [PDF 25]"
+    },
+    {
+     "ref": "BeckerdeOliveira2024",
+     "quote": "Individuals with cleft palate with or without cleft lip (CP ± L) had a significantly lower frequency of BF (OR = 5.93; 95% CI 4.30-8.16) and a significantly higher frequency of BF challenges (OR = 13.55; 95% CI 4.91-37.43) compared to individuals with CL.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "BeckerdeOliveira2024",
+     "quote": "Certainty of the evidence was low or very low in all analyses.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "manual_text": "Newborns with cleft palate need extensive feeding support, including cleft-specific bottle systems. This is provided prenatally and all Kaiser NICUs have in-house supplies.",
+   "verdict": "concordant",
+   "summary": "Cleft care guidance states that infants with cleft palate cannot sustain the suction needed for exclusive breast or standard bottle feeding, require cleft-specific feeding systems, and that families should receive these systems or information on obtaining them before birth [ACPA2024]; systematic reviews found squeezable bottles easier to use but no difference in growth between bottle types [Bessell2011], and no significant growth benefit from specialized feeding delivery systems [Penny2022].",
+   "evidence": [
+    {
+     "ref": "ACPA2024",
+     "quote": "Because infants with cleft palate cannot sustain the suction needed to maintain nutrition exclusively from the breast or standard bottle, they typically require specialized feeding systems to achieve adequate nutrition and hydration.",
+     "location": "Section 5, Feeding, Growth, and Nutrition, p. 23 [PDF 25]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Infants with cleft palate require cleft-specific feeding systems.",
+     "location": "Feeding Support, p. 24 [PDF 26]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Prior to the infant’s birth, families should be provided with cleft-specific feeding systems and/or information for how to obtain these systems.",
+     "location": "The Prenatal Period, p. 24 [PDF 26]"
+    },
+    {
+     "ref": "Bessell2011",
+     "quote": "Squeezable bottles appear easier to use than rigid feeding bottles for babies born with clefts of the lip and/or palate, however, there is no evidence of a difference in growth outcomes between the bottle types.",
+     "location": "Abstract, Authors' conclusions"
+    },
+    {
+     "ref": "Penny2022",
+     "quote": "While it does not appear that specialized feeding delivery systems or palatal obturators significantly improve growth in infants with clefts compared to children without cleft conditions, education programs do appear to be beneficial.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "manual_text": "Cleft infants may need extra inpatient days to establish metabolically effective feeding.\n  - Babies feeding less than 30 ml each feed after 3 days are at risk for poor weight gain.",
+   "verdict": "insufficient",
+   "summary": "No retrieved source tests an intake threshold of 30 mL per feed at 3 days or the effect of extra inpatient days; guidance sets return to birth weight by two weeks as the initial growth goal [ACPA2024], one cohort found return to birth weight took about 14 days in cleft lip, 16 days in cleft lip and palate and 22 days in cleft palate [Kaye2017], a breastfeeding protocol asks that hydration and weight gain be monitored while a feeding method is established [Boyce2019], and one children's hospital pathway flags effortful feeds of 20 mL or less for urgent feeding evaluation, and gain below 20 to 30 g per day in the first 4 weeks as a sign of clinical instability warranting evaluation [ChildrensColorado2025].",
+   "evidence": [
+    {
+     "ref": "ACPA2024",
+     "quote": "The initial goal following birth is the return to birth weight by two weeks of age.",
+     "location": "Growth, p. 26 [PDF 28]"
+    },
+    {
+     "ref": "Kaye2017",
+     "quote": "The calculated age (in days) for return to birth weight was significantly different between cleft types: CL = 13.58 days, CLP = 15.88 days, and CP = 21.93 days.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Boyce2019",
+     "quote": "An infant’s hydration and weight gain should be monitored while a feeding method is being established.",
+     "location": "Recommendation B4, p. 439 [PDF 3]"
+    },
+    {
+     "ref": "ChildrensColorado2025",
+     "quote": "Feeding completed in less than 30 minutes; however, feeding is characterized as effortful and/or infant is taking small amounts (20 mLs or less)",
+     "location": "Clinically stable infant, criteria for urgent feeding evaluation, p. 10"
+    },
+    {
+     "ref": "ChildrensColorado2025",
+     "quote": "Weight gain pattern shows less than 20 to 30 grams per day gain (goal of 30 grams per day) for the infant less than 4 weeks of age",
+     "location": "Clinically unstable criteria warranting clinical evaluation (infant may likely require hospitalization), p. 9"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "manual_text": "Consider using fortified breast milk or 22-kcal concentrated formula if cleft baby not adequately gaining weight after several days of occupational therapy-led feeding.\n  - This is usually continued until cleft surgical repair.",
+   "verdict": "concordant",
+   "summary": "Cleft care guidance asks providers to evaluate changes to the feeding and nutrition plan when the growth goal is not met and to review milk or formula preparation against caloric needs [ACPA2024], a breastfeeding protocol notes that infants with cleft lip/palate may need supplemental feeds for adequate growth [Boyce2019], and the Robin sequence guideline advises considering hypercaloric feeds when growth remains insufficient [Breugem2024]; no source specifies 22 kcal formula or continuing fortification until cleft repair.",
+   "evidence": [
+    {
+     "ref": "ACPA2024",
+     "quote": "If this milestone is not met, providers should evaluate whether alterations to the feeding and nutrition plan are needed to ensure optimal growth trajectories are established.",
+     "location": "Growth, p. 26 [PDF 28]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "During infancy, there should also be discussion about how families are preparing the milk or formula to ensure proper measurements are used given the infant’s caloric needs.",
+     "location": "Nutrition, p. 26 [PDF 28]"
+    },
+    {
+     "ref": "Boyce2019",
+     "quote": "Infants with CL/P may require supplemental feeds for adequate growth and nutrition",
+     "location": "Recommendation B4, p. 440 [PDF 4]"
+    },
+    {
+     "ref": "Breugem2024",
+     "quote": "Consider using hypercaloric feeds if growth remains insufficient with standard feeds.",
+     "location": "Chapter 7 Feeding and Growth, Treatment of Feeding Problems"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "manual_text": "Please make sure you have consulted with an experienced OT, communicate with Dr. Guillen, Craniofacial Speech Coordinator, or place an outpatient referral/Dr. Advice to the craniofacial team prior to placing a G-Tube.",
+   "verdict": "concordant",
+   "summary": "Cleft care guidance asks that families be referred to an appropriately trained and experienced feeding professional when the team has none [ACPA2024]; in a cohort of infants with cleft palate, gastrostomy rates ranged from 3% without comorbidity to 94% with respiratory comorbidity, and the authors called for more persistent nonsurgical therapy before gastrostomy [Cu2011]; the Robin sequence guideline gives the multidisciplinary team the decision on nonsurgical and surgical feeding interventions [Breugem2024].",
+   "evidence": [
+    {
+     "ref": "ACPA2024",
+     "quote": "If a team does not have a feeding specialist, the family should be referred to a professional who has the appropriate training and experience to provide high quality feeding support.",
+     "location": "Section 5, Feeding, Growth, and Nutrition, p. 23 [PDF 25]"
+    },
+    {
+     "ref": "Cu2011",
+     "quote": "Rates of G-tube placement ranged from 3% in infants without any comorbidity to 94% in infants with respiratory comorbidity.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Cu2011",
+     "quote": "These data should help identify children at greatest risk for G-tubes and those expected to overcome feeding difficulties, leading to more persistent use of nonsurgical therapy before resorting to G-tubes.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "Breugem2024",
+     "quote": "MDT to determine which patients may benefit from nonsurgical and surgical interventions to improve feeding.",
+     "location": "Chapter 7, Treatment of Feeding Problems"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "manual_text": "Close coordination with the baby’s primary pediatrician and frequent weight checks are vital as the babies are discharged home. Please consider getting them directly involved as discharge approaches.",
+   "verdict": "concordant",
+   "summary": "Cleft care guidance calls close growth monitoring essential in early infancy, early and clear communication between the primary care provider, family and cleft team, and regular assessment of intake and weight gain in the first month [ACPA2024]; a children's hospital pathway specifies weekly primary care assessments of intake and weight for at least the first month [ChildrensColorado2025]; an AAP clinical report describes the primary care pediatrician as a liaison between the family and the cleft or craniofacial team, although its abstract does not address weight monitoring [Lewis2017].",
+   "evidence": [
+    {
+     "ref": "ACPA2024",
+     "quote": "Close monitoring of growth metrics, including weight, length, and weight-for-length ratio, is essential in early infancy.",
+     "location": "Growth, p. 26 [PDF 28]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Early and clear communication should be performed between the primary care provider, the family, and the cleft and/or craniofacial team.",
+     "location": "Growth, p. 26 [PDF 28]"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Ensure regular assessment of nutritional intake and weight gain during the first month of life",
+     "location": "Table 2, Nursing Care and Care Coordination, p. 13 [PDF 15]"
+    },
+    {
+     "ref": "ChildrensColorado2025",
+     "quote": "Infants with a cleft diagnosis require weekly assessments of nutritional intake and weight gain for a minimum of the first month of life by the primary care provider.",
+     "location": "Summary of recommendations, p. 4"
+    },
+    {
+     "ref": "Lewis2017",
+     "quote": "functioning as an advocate for the patient and a liaison between the family and the craniofacial/cleft team",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "manual_text": "Cleft babies with underlying cardiac genetic conditions or prematurity are at higher risk for poor weight gain and warrant close follow up.",
+   "verdict": "partly_concordant",
+   "summary": "In infants with cleft palate, syndromes or chromosomal anomalies and cardiac, respiratory, neurologic or lower esophageal sphincter comorbidity raised the risk of gastrostomy [Cu2011], syndromic forms carry a higher risk of complications, including in the neonatal period [ACPA2024], and one pathway lists an underlying or suspected genetic diagnosis among signs of clinical instability warranting evaluation [ChildrensColorado2025]; for prematurity, a cohort of nonsyndromic patients with cleft palate followed from infancy to adolescence found that those born preterm or with repaired cardiac anomalies grew well over the long term [Jeon2023], and no retrieved study isolates prematurity as a risk factor for poor weight gain.",
+   "note": "Current evidence suggests that syndromes, chromosomal anomalies and cardiac or other major comorbidity raise the risk of gastrostomy in infants with cleft palate [Cu2011]. In one cohort of nonsyndromic patients with cleft palate followed from infancy to adolescence, those born preterm or with repaired cardiac anomalies grew well over the long term, and catch-up growth could occur before palatoplasty with comprehensive cleft care [Jeon2023].",
+   "evidence": [
+    {
+     "ref": "Cu2011",
+     "quote": "Relative risks of G-tube placement with syn/chrom, 1 system comorbidity, and multisystem comorbidities were 5.68 (95% confidence interval, 3.18-10.16), 21.79 (8.76-54.17), and 29.66 (12.18-72.21), respectively.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Cu2011",
+     "quote": "Regardless of syn/chrom association, problems affecting the heart, respiratory system, central nervous system, and lower esophageal sphincter are the most significant risk factors",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Syndromic forms of craniofacial differences can present with a higher risk for complications including in the immediate neonatal period.",
+     "location": "Genetic Evaluation and Genetic Counseling, p. 27 [PDF 29]"
+    },
+    {
+     "ref": "ChildrensColorado2025",
+     "quote": "Underlying or suspected genetic/other medical diagnosis",
+     "location": "Clinically unstable criteria warranting clinical evaluation, p. 9"
+    },
+    {
+     "ref": "Jeon2023",
+     "quote": "Patients who were born at preterm stage or had surgically repaired cardiac anomalies grew well.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Jeon2023",
+     "quote": "Even in infants with CP and malnutrition, preterm birth, or cardiac anomalies, rapid catch-up growth can occur prior to palatoplasty with the help of comprehensive cleft care.",
+     "location": "Abstract, Conclusions"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "manual_text": "Please call or place a tapestry referral for all cleft babies to the Regional Cleft & Craniofacial Team before discharge. Note this requires an outpatient order only encounter to West LA Plastic Surgery subcategory craniofacial. This will allow us to see the referral even while baby is in hospital and set up a telephone visit with the family.",
+   "verdict": "concordant",
+   "summary": "Cleft care guidance places the first cleft team evaluation shortly after birth, ideally within the first few days or weeks of life [ACPA2024], and a children's hospital pathway asks for a cleft team referral as soon as possible and, for infants admitted to its NICU, schedules the team appointment before NICU discharge [ChildrensColorado2025]; an AAP clinical report states that children with clefts should receive specialty care from a multidisciplinary cleft or craniofacial team and gives the primary care pediatrician a role in timely referral [Lewis2017].",
+   "evidence": [
+    {
+     "ref": "ACPA2024",
+     "quote": "the first evaluation of a child with a cleft or other craniofacial difference occurs shortly after birth, ideally within the first few days or weeks of life (Table 2).",
+     "location": "Section 4, Establishing Care with the Cleft/Craniofacial Team, p. 12 [PDF 14]"
+    },
+    {
+     "ref": "ChildrensColorado2025",
+     "quote": "A referral for a Cleft Lip and Palate team evaluation should be placed as soon as possible.",
+     "location": "Summary of recommendations, p. 4"
+    },
+    {
+     "ref": "ChildrensColorado2025",
+     "quote": "Prior to discharge from NICU, infant is scheduled for appointment in CHCO Cleft Lip and Palate Clinic for multidisciplinary team evaluation.",
+     "location": "Intervention for clinically unstable infant, p. 10"
+    },
+    {
+     "ref": "Lewis2017",
+     "quote": "Children with CL/P should receive their specialty cleft-related care from a multidisciplinary cleft or craniofacial team with sufficient patient and surgical volume to promote successful outcomes.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Lewis2017",
+     "quote": "The primary care pediatrician at the child's medical home has an essential role in making a timely diagnosis and referral",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "manual_text": "Cleft babies may have more feeding and weight gain concerns around 4-6 months of age as the jaw and oral structure changes. If you are starting to see an emerging concern, please contact the team for assistance.",
+   "verdict": "insufficient",
+   "summary": "No retrieved source shows a rise in feeding or weight concerns at 4 to 6 months or links one to jaw or oral changes; in a multicentre cohort 25.9% of infants with cleft lip and/or palate were underweight at 4 months, with early growth measures identifying those at risk [Ormanidou2026], and guidance asks for close monitoring throughout infancy for new feeding problems related to developmental progression, surgery or the underlying diagnosis [ACPA2024].",
+   "evidence": [
+    {
+     "ref": "Ormanidou2026",
+     "quote": "Among 5717 infants with CL/P (19% cleft lip, 35% cleft lip and palate, 46% cleft palate), 25.9% were underweight at 4 months.",
+     "location": "Abstract"
+    },
+    {
+     "ref": "Ormanidou2026",
+     "quote": "Routine early-life growth measures (WAZ, LAZ, and their trajectories), together with neighborhood socioeconomic status, can identify infants with cleft at elevated risk of being underweight before 4 months, helping craniofacial and primary care teams provide timelier feeding and nutrition support and referrals to the highest-risk infants.",
+     "location": "Abstract, Conclusions"
+    },
+    {
+     "ref": "ACPA2024",
+     "quote": "Following initial assessment, close monitoring is needed throughout infancy to assess any additional feeding problems that may be related to developmental progression, surgical intervention, or underlying diagnosis.",
+     "location": "Feeding Support, p. 24 [PDF 26]"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "manual_text": "CT scan head and facial bones, non-contrast, vertex to menton, thin 1 mm slices, using Stryker protocol. Need measurements of mandibular rami.",
+   "verdict": "practice_varies",
+   "summary": "Preoperative maxillofacial CT is used for virtual surgical planning of mandibular distraction in infants with Robin sequence, at the cost of ionizing radiation and possible sedation or intubation [Resnick2017], and the Robin sequence guideline notes that CT-based virtual planning could help with planning the distraction vector with internal devices [Breugem2024]; a two-centre series using external devices found that omitting preoperative CT did not compromise outcomes [Mingo2016]; no source specifies slice thickness, scan range or a vendor protocol.",
+   "evidence": [
+    {
+     "ref": "Resnick2017",
+     "quote": "A preoperative maxillofacial CT is obtained utilizing head stabilization with or without sedation and intubation to reduce motion artifact.",
+     "location": "VSP and Device Preparation"
+    },
+    {
+     "ref": "Resnick2017",
+     "quote": "Disadvantages to VSP include exposure to ionizing radiation, possible need for anesthesia and intubation to obtain the CT imaging, and a potential delay in treatment due to the time required to perform the planning and fabricate the guides.",
+     "location": "Discussion"
+    },
+    {
+     "ref": "Breugem2024",
+     "quote": "Virtual computer planning based on CT-scans could help avoiding damage to teeth and with planning the desired vector for the distraction with an internal device.",
+     "location": "Chapter 12 Surgical Treatment of Mandibular-Related Problems, Professional Perspective"
+    },
+    {
+     "ref": "Mingo2016",
+     "quote": "This series suggests that the absence of preoperative CT does not compromise functional or aesthetic outcomes in mandibular distraction with external distraction devices in infants with isolated Pierre Robin sequence or Stickler syndrome.",
+     "location": "Abstract, Conclusions and Relevance"
+    }
+   ]
+  }
+ ],
+ "omissions": [],
+ "references": [
+  {
+   "key": "Boyce2019",
+   "role": "source",
+   "authors": "Boyce JO, Reilly S, Skeat J, Cahir P",
+   "title": "ABM Clinical Protocol #17: Guidelines for Breastfeeding Infants with Cleft Lip, Cleft Palate, or Cleft Lip and Palate-Revised 2019",
+   "journal": "Breastfeed Med",
+   "year": "2019",
+   "volume": "14",
+   "issue": "7",
+   "pages": "437-444",
+   "doi": "10.1089/bfm.2019.29132.job",
+   "pmid": "31408356",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/31408356/",
+    "https://api.crossref.org/works/10.1089/bfm.2019.29132.job"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Bessell2011",
+   "role": "source",
+   "authors": "Bessell A, Hooper L, Shaw WC, Reilly S, Reid J, Glenny AM",
+   "title": "Feeding interventions for growth and development in infants with cleft lip, cleft palate or cleft lip and palate",
+   "journal": "Cochrane Database Syst Rev",
+   "year": "2011",
+   "volume": "2011",
+   "issue": "2",
+   "pages": "CD003315",
+   "doi": "10.1002/14651858.CD003315.pub3",
+   "pmid": "21328261",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/21328261/",
+    "https://api.crossref.org/works/10.1002/14651858.CD003315.pub3"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Penny2022",
+   "role": "source",
+   "authors": "Penny C, McGuire C, Bezuhly M",
+   "title": "A Systematic Review of Feeding Interventions for Infants with Cleft Palate",
+   "journal": "Cleft Palate Craniofac J",
+   "year": "2022",
+   "volume": "59",
+   "issue": "12",
+   "pages": "1527-1536",
+   "doi": "10.1177/10556656211051216",
+   "pmid": "34714161",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/34714161/",
+    "https://api.crossref.org/works/10.1177/10556656211051216"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "BeckerdeOliveira2024",
+   "role": "source",
+   "authors": "Becker de Oliveira L, Fonseca-Souza G, Rolim TZC, Scariot R, Feltrin-Souza J",
+   "title": "Breastfeeding and Cleft Lip and Palate: A Systematic Review and Meta-Analysis",
+   "journal": "Cleft Palate Craniofac J",
+   "year": "2024",
+   "volume": "61",
+   "issue": "8",
+   "pages": "1344-1355",
+   "doi": "10.1177/10556656231170137",
+   "pmid": "37078146",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37078146/",
+    "https://api.crossref.org/works/10.1177/10556656231170137"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Sander2025",
+   "role": "source",
+   "authors": "Sander AK, Muche-Borowski C, Lethaus B",
+   "title": "Clinical Practice Guideline: The Treatment of Cleft Lip and Palate Deformities",
+   "journal": "Dtsch Arztebl Int",
+   "year": "2025",
+   "volume": "122",
+   "issue": "12",
+   "pages": "328-333",
+   "doi": "10.3238/arztebl.m2025.0052",
+   "pmid": "40232200",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/40232200/",
+    "https://api.crossref.org/works/10.3238/arztebl.m2025.0052"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Kaye2017",
+   "role": "source",
+   "authors": "Kaye A, Thaete K, Snell A, Chesser C, Goldak C, Huff H",
+   "title": "Initial Nutritional Assessment of Infants With Cleft Lip and/or Palate: Interventions and Return to Birth Weight",
+   "journal": "Cleft Palate Craniofac J",
+   "year": "2017",
+   "volume": "54",
+   "issue": "2",
+   "pages": "127-136",
+   "doi": "10.1597/15-163",
+   "pmid": "26882024",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/26882024/",
+    "https://api.crossref.org/works/10.1597/15-163"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Ormanidou2026",
+   "role": "source",
+   "authors": "Ormanidou I, Howard W, Bijlani K, et al.",
+   "title": "Predicting Underweight Status in Infants With Cleft Lip and/or Palate in 10 US Children's Hospitals",
+   "journal": "Cleft Palate Craniofac J",
+   "year": "2026",
+   "volume": "",
+   "issue": "",
+   "pages": "10556656261494318",
+   "doi": "10.1177/10556656261494318",
+   "pmid": "42852973",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/42852973/",
+    "https://api.crossref.org/works/10.1177/10556656261494318"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Jeon2023",
+   "role": "source",
+   "authors": "Jeon S, Baek SH, Jang J, et al.",
+   "title": "Catch-Up Growth Pattern in Cleft Palate: A Longitudinal Study from Infancy to Adolescence",
+   "journal": "J Pediatr",
+   "year": "2023",
+   "volume": "263",
+   "issue": "",
+   "pages": "113683",
+   "doi": "10.1016/j.jpeds.2023.113683",
+   "pmid": "37611739",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37611739/",
+    "https://api.crossref.org/works/10.1016/j.jpeds.2023.113683"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Cu2011",
+   "role": "source",
+   "authors": "Cu SR, Sidman JD",
+   "title": "Rates and risks of gastrostomy tubes in infants with cleft palate",
+   "journal": "Arch Otolaryngol Head Neck Surg",
+   "year": "2011",
+   "volume": "137",
+   "issue": "3",
+   "pages": "275-281",
+   "doi": "10.1001/archoto.2011.18",
+   "pmid": "21422313",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/21422313/",
+    "https://api.crossref.org/works/10.1001/archoto.2011.18"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Breugem2024",
+   "role": "source",
+   "authors": "By the Working Group on Writing a European Guideline on Robin Sequence",
+   "title": "European Guideline Robin Sequence An Initiative From the European Reference Network for Rare Craniofacial Anomalies and Ear, Nose and Throat Disorders (ERN-CRANIO)",
+   "journal": "J Craniofac Surg",
+   "year": "2024",
+   "volume": "35",
+   "issue": "1",
+   "pages": "279-361",
+   "doi": "10.1097/SCS.0000000000009701",
+   "pmid": "37811988",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/37811988/",
+    "https://api.crossref.org/works/10.1097/SCS.0000000000009701"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Resnick2017",
+   "role": "source",
+   "authors": "Resnick CM",
+   "title": "Virtual Surgical Planning for Mandibular Distraction in Infants with Robin Sequence",
+   "journal": "Plast Reconstr Surg Glob Open",
+   "year": "2017",
+   "volume": "5",
+   "issue": "6",
+   "pages": "e1379",
+   "doi": "10.1097/GOX.0000000000001379",
+   "pmid": "28740786",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/28740786/",
+    "https://api.crossref.org/works/10.1097/GOX.0000000000001379"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Mingo2016",
+   "role": "source",
+   "authors": "Mingo KM, Sidman JD, Sampson DE, Lander TA, Tibesar RJ, Scott AR",
+   "title": "Use of External Distractors and the Role of Imaging Prior to Mandibular Distraction in Infants With Isolated Pierre Robin Sequence and Stickler Syndrome",
+   "journal": "JAMA Facial Plast Surg",
+   "year": "2016",
+   "volume": "18",
+   "issue": "2",
+   "pages": "95-100",
+   "doi": "10.1001/jamafacial.2015.1658",
+   "pmid": "26540157",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/26540157/",
+    "https://api.crossref.org/works/10.1001/jamafacial.2015.1658"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "Lewis2017",
+   "role": "source",
+   "authors": "Lewis CW, Jacob LS, Lehmann CU",
+   "title": "The Primary Care Pediatrician and the Care of Children With Cleft Lip and/or Cleft Palate",
+   "journal": "Pediatrics",
+   "year": "2017",
+   "volume": "139",
+   "issue": "5",
+   "pages": "e20170628",
+   "doi": "10.1542/peds.2017-0628",
+   "pmid": "28557774",
+   "verified_against": [
+    "https://pubmed.ncbi.nlm.nih.gov/28557774/",
+    "https://api.crossref.org/works/10.1542/peds.2017-0628"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "ACPA2024",
+   "role": "source",
+   "citation": "American Cleft Palate Craniofacial Association. Parameters of Care for Evaluation and Treatment of Individuals with Cleft Lip/Palate and/or Other Craniofacial Conditions. 2024 update. ACPA; 2024.",
+   "url": "https://acpacares.org/wp-content/uploads/2025/02/2024-ACPA_ParametersOfCare_Final.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://acpacares.org/wp-content/uploads/2025/02/2024-ACPA_ParametersOfCare_Final.pdf"
+   ],
+   "verified_date": "2026-11-10"
+  },
+  {
+   "key": "ChildrensColorado2025",
+   "role": "source",
+   "citation": "Children's Hospital Colorado. Clinical Pathway: Infants with a Cleft Lip and/or Cleft Palate. Origination January 14, 2019; last review or revision February 24, 2025. Children's Hospital Colorado; 2025.",
+   "url": "https://www.childrenscolorado.org/globalassets/healthcare-professionals/clinical-pathways/cleft-lip-or-palate.pdf",
+   "doi": null,
+   "verified_against": [
+    "https://www.childrenscolorado.org/globalassets/healthcare-professionals/clinical-pathways/cleft-lip-or-palate.pdf"
+   ],
+   "verified_date": "2026-11-10"
+  }
+ ],
+ "review": {
+  "verdict": "APPROVED",
+  "rounds": 2,
+  "date": "2026-11-10",
+  "quotes_checked": 150,
+  "references_verified": 15,
+  "known_limitations": [
+   {
+    "item": "Links and protocol",
+    "note": "The 2024 KPSC Pierre Robin presentation (PDF/PPTX) and the G-tube parent-education booklet are links and were not checked; the Stryker CT acquisition and data protocol was triaged as operational and not checked."
+   },
+   {
+    "item": "Lewis2017",
+    "note": "AAP 2017 clinical report read as abstract only (publisher returned HTTP 403; not open access; logged and not worked around). No reaffirmed or newer version was found."
+   },
+   {
+    "item": "Sander2025",
+    "note": "The PDF's nutrition section extracts as garbled text; it was used as a lead only and not quoted. Genetics section and abstract are quoted."
+   },
+   {
+    "item": "refs.json rebuild",
+    "note": "refs.py cannot edit an existing entry, so the orchestrator rebuilt refs.json entirely with refs.py (build from dois.txt, then add-manual) to correct the ACPA2024 and ChildrensColorado2025 citations; a field diff showed no other changes. The previous file is kept in the workspace."
+   },
+   {
+    "item": "Round 1-2 suggested items",
+    "note": "Not applied: Narayan2026 volume/issue (refs.py has no edit command), Lewis2017 group author and erratum, extra feeding sources (Baylis 2018, Duarte 2016, Marques 2004), evidence_sheet.md c1 'What the evidence addresses' wording (comparison.json is correct)."
+   }
+  ]
+ }
+}
