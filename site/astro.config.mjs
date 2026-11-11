@@ -55,7 +55,7 @@ export default defineConfig({
         { tag: "meta", attrs: { name: "apple-mobile-web-app-title", content: "NICU Manual" } },
         { tag: "meta", attrs: { name: "apple-mobile-web-app-status-bar-style", content: "default" } },
       ],
-      components: { PageTitle: "./src/components/PageTitle.astro", Footer: "./src/components/Footer.astro" },
+      components: { PageTitle: "./src/components/PageTitle.astro", Footer: "./src/components/Footer.astro", SocialIcons: "./src/components/SocialIcons.astro" },
       sidebar,
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 }, // main sections only: a short, scannable rail
       lastUpdated: false,

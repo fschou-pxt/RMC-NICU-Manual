@@ -29,7 +29,8 @@ self.addEventListener("message", (event) => {
 });
 
 const isPage = (req, url) => req.mode === "navigate" || url.pathname.endsWith(".html") ||
-  url.pathname.endsWith("/") || url.pathname.endsWith(".md") || url.pathname.endsWith("search.json");
+  url.pathname.endsWith("/") || url.pathname.endsWith(".md") || url.pathname.endsWith("search.json") ||
+  url.pathname.includes("/chatbot/"); // Ask's scripts keep their names between builds: fetch fresh, fall back to the offline copy
 
 self.addEventListener("fetch", (event) => {
   const req = event.request;

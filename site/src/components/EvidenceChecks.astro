@@ -81,6 +81,7 @@ const shortTitle = (s) => s.split(" › ")[0];
           box.querySelector("b").textContent = String(n(r));
           box.classList.toggle("zero", !n(r));
           box.hidden = false;
+          r.hidden = !n(r); // only sections someone has raised a hand on
           // the section's most-tapped items (up to 3), each linking to its line in the evidence box
           const top = (JSON.parse(r.dataset.items || "[]") as string[][]).map(([item, label, tone, text]) => ({ item, label, tone, text, k: Number(per(r)[item]) || 0 }))
             .filter((x) => x.k).sort((a, b) => b.k - a.k).slice(0, 3);
@@ -89,7 +90,9 @@ const shortTitle = (s) => s.split(" › ")[0];
           ul.hidden = !top.length;
         }
         rows.sort((a, b) => n(b) - n(a) || Number(a.dataset.rank) - Number(b.dataset.rank)).forEach((r) => list.append(r));
-        document.querySelector<HTMLElement>(".evx-sorted").hidden = false;
+        const sorted = document.querySelector<HTMLElement>(".evx-sorted");
+        if (!rows.some((r) => n(r))) sorted.textContent = "No hands raised yet.";
+        sorted.hidden = false;
       }).catch(() => {});
   }
 </script>

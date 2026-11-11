@@ -1,7 +1,7 @@
 // Anonymous section-view counts (D1 binding STATS; table in stats/schema.sql). The site's pages POST
 // {page, section, source, ask, device} when a section has been on screen for a few seconds. Only those values,
-// the day and the hour are kept, as a count: no person, device ID, IP address or question text. Nothing is readable
-// from the web; the owner queries the database with wrangler (see README.md).
+// the day and the hour are kept, as a count: no person, device ID, IP address or question text. The owner queries
+// the database with wrangler (see README.md); on the public site, /api/report also reads the counts with a secret key.
 const NAME = /^[A-Za-z0-9_-]{1,80}$/;
 // how the reader got to the section
 const SOURCES = new Set([

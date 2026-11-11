@@ -8,6 +8,7 @@ and any file over 25 MB (Cloudflare Pages' per-file limit), listing what it remo
 """
 import os
 import re
+import shutil
 import urllib.parse
 
 # SITE_DIST picks the build folder (the public build uses its own, see package.json "build:public")
@@ -16,6 +17,8 @@ LIMIT = 25 * 1024 * 1024
 
 
 def main():
+    # public/tools links to the repo's tools/ for feeding.js; the reviewer scoring app there is not part of the site
+    shutil.rmtree(os.path.join(DIST, "tools", "evidence-scoring"), ignore_errors=True)
     text = []
     for dirpath, _, files in os.walk(DIST):
         for f in files:
